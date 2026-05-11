@@ -1,0 +1,718 @@
+{
+  "allTime": {
+    "highestScore": {
+      "score": 297.72,
+      "team": "Weenie Hut Jr's",
+      "teamId": 9,
+      "owner": "Ray Engleking",
+      "opponent": "Pussy Power",
+      "opponentScore": 269.94,
+      "year": 2019,
+      "week": 15,
+      "matchupPeriodId": 15
+    },
+    "lowestScore": {
+      "score": 12.0,
+      "team": "Its Mike Vick In a Box!",
+      "teamId": 2,
+      "owner": "Mike Kovacs",
+      "opponent": "T'EOMINATOR 2 RESURRECTION",
+      "opponentScore": 15.0,
+      "year": 2014,
+      "week": 13,
+      "matchupPeriodId": 13
+    },
+    "top10HighestScores": [
+      {
+        "score": 297.72,
+        "team": "Weenie Hut Jr's",
+        "teamId": 9,
+        "owner": "Ray Engleking",
+        "opponent": "Pussy Power",
+        "opponentScore": 269.94,
+        "year": 2019,
+        "week": 15,
+        "matchupPeriodId": 15
+      },
+      {
+        "score": 287.0,
+        "team": "Plainsboro Owls",
+        "teamId": 11,
+        "owner": "Brian Dorward",
+        "opponent": "Christmas Devil Krampus",
+        "opponentScore": 162.0,
+        "year": 2014,
+        "week": 14,
+        "matchupPeriodId": 14
+      },
+      {
+        "score": 282.4,
+        "team": "Saquonda Forever",
+        "teamId": 2,
+        "owner": "Mike Kovacs",
+        "opponent": "Wade Boggs Memorial Team",
+        "opponentScore": 248.34,
+        "year": 2019,
+        "week": 15,
+        "matchupPeriodId": 15
+      },
+      {
+        "score": 272.74,
+        "team": "Rex Grossman Fan Club",
+        "teamId": 9,
+        "owner": "Ray Engleking",
+        "opponent": "The Mixon Administration ",
+        "opponentScore": 192.76,
+        "year": 2018,
+        "week": 14,
+        "matchupPeriodId": 14
+      },
+      {
+        "score": 269.94,
+        "team": "Pussy Power",
+        "teamId": 3,
+        "owner": "Carl Cummins",
+        "opponent": "Weenie Hut Jr's",
+        "opponentScore": 297.72,
+        "year": 2019,
+        "week": 15,
+        "matchupPeriodId": 15
+      },
+      {
+        "score": 265.18,
+        "team": "I wanta Free the NewtMan! ",
+        "teamId": 2,
+        "owner": "Mike Kovacs",
+        "opponent": "Plainsboro Owls",
+        "opponentScore": 263.91999999999996,
+        "year": 2015,
+        "week": 14,
+        "matchupPeriodId": 14
+      },
+      {
+        "score": 265.0,
+        "team": "Its Mike Vick In a Box!",
+        "teamId": 2,
+        "owner": "Mike Kovacs",
+        "opponent": "Kish and Tell",
+        "opponentScore": 172.0,
+        "year": 2014,
+        "week": 14,
+        "matchupPeriodId": 14
+      },
+      {
+        "score": 263.91999999999996,
+        "team": "Plainsboro Owls",
+        "teamId": 11,
+        "owner": "Brian Dorward",
+        "opponent": "I wanta Free the NewtMan! ",
+        "opponentScore": 265.18,
+        "year": 2015,
+        "week": 14,
+        "matchupPeriodId": 14
+      },
+      {
+        "score": 260.16,
+        "team": "The Mixon Administration ",
+        "teamId": 12,
+        "owner": "Ben Bingert",
+        "opponent": "Wade Boggs Memorial Team",
+        "opponentScore": 258.48,
+        "year": 2018,
+        "week": 13,
+        "matchupPeriodId": 13
+      },
+      {
+        "score": 258.48,
+        "team": "Wade Boggs Memorial Team",
+        "teamId": 1,
+        "owner": "Bill Solecki",
+        "opponent": "The Mixon Administration ",
+        "opponentScore": 260.16,
+        "year": 2018,
+        "week": 13,
+        "matchupPeriodId": 13
+      }
+    ],
+    "top10LowestScores": [
+      {
+        "score": 12.0,
+        "team": "Its Mike Vick In a Box!",
+        "teamId": 2,
+        "owner": "Mike Kovacs",
+        "opponent": "T'EOMINATOR 2 RESURRECTION",
+        "opponentScore": 15.0,
+        "year": 2014,
+        "week": 13,
+        "matchupPeriodId": 13
+      },
+      {
+        "score": 15.0,
+        "team": "T'EOMINATOR 2 RESURRECTION",
+        "teamId": 8,
+        "owner": "Keegan Hayes",
+        "opponent": "Its Mike Vick In a Box!",
+        "opponentScore": 12.0,
+        "year": 2014,
+        "week": 13,
+        "matchupPeriodId": 13
+      },
+      {
+        "score": 34.42,
+        "team": "Plainsboro Owls",
+        "teamId": 11,
+        "owner": "Brian Dorward",
+        "opponent": "The Recycling Ben",
+        "opponentScore": 86.72,
+        "year": 2017,
+        "week": 9,
+        "matchupPeriodId": 9
+      },
+      {
+        "score": 40.0,
+        "team": "TDs In Your Face",
+        "teamId": 7,
+        "owner": "Danielle Prizzi",
+        "opponent": "Voodoo Mama Juju",
+        "opponentScore": 111.0,
+        "year": 2014,
+        "week": 2,
+        "matchupPeriodId": 2
+      },
+      {
+        "score": 40.46,
+        "team": "Kish and Tell",
+        "teamId": 12,
+        "owner": "Brandon Kish",
+        "opponent": "Duke Nukems",
+        "opponentScore": 115.88,
+        "year": 2016,
+        "week": 5,
+        "matchupPeriodId": 5
+      },
+      {
+        "score": 43.0,
+        "team": "Kish and Tell",
+        "teamId": 12,
+        "owner": "Brandon Kish",
+        "opponent": "TDs In Your Face",
+        "opponentScore": 67.0,
+        "year": 2014,
+        "week": 3,
+        "matchupPeriodId": 3
+      },
+      {
+        "score": 45.58,
+        "team": "Go Fudge Yourselves",
+        "teamId": 4,
+        "owner": "Phil Torres",
+        "opponent": "Insane in the  Ukraine",
+        "opponentScore": 98.38,
+        "year": 2022,
+        "week": 17,
+        "matchupPeriodId": 17
+      },
+      {
+        "score": 46.0,
+        "team": "Voodoo Mama Juju",
+        "teamId": 10,
+        "owner": "BAHB Kerwersker",
+        "opponent": "Its Mike Vick In a Box!",
+        "opponentScore": 114.0,
+        "year": 2014,
+        "week": 10,
+        "matchupPeriodId": 10
+      },
+      {
+        "score": 49.22,
+        "team": "Peyton the Professor",
+        "teamId": 13,
+        "owner": "john crawford",
+        "opponent": "Insane in the  Ukraine",
+        "opponentScore": 96.22,
+        "year": 2023,
+        "week": 9,
+        "matchupPeriodId": 9
+      },
+      {
+        "score": 50.16,
+        "team": "Mail Fairy",
+        "teamId": 12,
+        "owner": "Ben Bingert",
+        "opponent": "Paintin Peyton",
+        "opponentScore": 140.74,
+        "year": 2025,
+        "week": 3,
+        "matchupPeriodId": 3
+      }
+    ],
+    "closestWin": {
+      "margin": 0.01999999999999602,
+      "winner": "All You Need is Love",
+      "winnerTeamId": 11,
+      "winnerScore": 109.7,
+      "loser": "We played Week 7, 8 and 13",
+      "loserScore": 109.68,
+      "year": 2023,
+      "week": 16,
+      "matchupPeriodId": 16
+    },
+    "biggestBlowout": {
+      "margin": 125.0,
+      "winner": "Plainsboro Owls",
+      "winnerTeamId": 11,
+      "winnerScore": 287.0,
+      "loser": "Christmas Devil Krampus",
+      "loserScore": 162.0,
+      "year": 2014,
+      "week": 14,
+      "matchupPeriodId": 14
+    },
+    "highestScoringGame": {
+      "total": 567.6600000000001,
+      "team1": "Pussy Power",
+      "owner1": "Carl Cummins",
+      "score1": 269.94,
+      "team2": "Weenie Hut Jr's",
+      "owner2": "Ray Engleking",
+      "score2": 297.72,
+      "year": 2019,
+      "week": 15,
+      "matchupPeriodId": 15
+    },
+    "lowestScoringGame": {
+      "total": 27.0,
+      "team1": "Its Mike Vick In a Box!",
+      "owner1": "Mike Kovacs",
+      "score1": 12.0,
+      "team2": "T'EOMINATOR 2 RESURRECTION",
+      "owner2": "Keegan Hayes",
+      "score2": 15.0,
+      "year": 2014,
+      "week": 13,
+      "matchupPeriodId": 13
+    },
+    "longestWinStreak": {
+      "owner": "Bill Solecki",
+      "length": 10,
+      "teamName": "Why's This So Sticky?",
+      "startYear": 2023,
+      "startWeek": 5,
+      "endYear": 2023,
+      "endWeek": 14,
+      "isOngoing": false
+    },
+    "longestLossStreak": {
+      "owner": "john crawford",
+      "length": 13,
+      "teamName": "Paintin Peyton",
+      "startYear": 2023,
+      "startWeek": 12,
+      "endYear": 2024,
+      "endWeek": 7,
+      "isOngoing": false
+    },
+    "mostWeeklyHighScores": {
+      "owner": "Bill Solecki",
+      "count": 36
+    },
+    "mostWeeklyLowScores": {
+      "owner": "Randell Crawford",
+      "count": 22
+    },
+    "mostConsolationDollars": {
+      "owner": "Bill Solecki",
+      "count": 6
+    }
+  },
+  "regularSeason": {
+    "highestScore": {
+      "score": 203.12,
+      "team": "RADrigo Is My Homeboy",
+      "teamId": 11,
+      "owner": "John Artiglier",
+      "opponent": "19 Problems and Covid is One",
+      "opponentScore": 107.7,
+      "year": 2020,
+      "week": 4,
+      "matchupPeriodId": 4
+    },
+    "lowestScore": {
+      "score": 12.0,
+      "team": "Its Mike Vick In a Box!",
+      "teamId": 2,
+      "owner": "Mike Kovacs",
+      "opponent": "T'EOMINATOR 2 RESURRECTION",
+      "opponentScore": 15.0,
+      "year": 2014,
+      "week": 13,
+      "matchupPeriodId": 13
+    },
+    "top10HighestScores": [
+      {
+        "score": 203.12,
+        "team": "RADrigo Is My Homeboy",
+        "teamId": 11,
+        "owner": "John Artiglier",
+        "opponent": "19 Problems and Covid is One",
+        "opponentScore": 107.7,
+        "year": 2020,
+        "week": 4,
+        "matchupPeriodId": 4
+      },
+      {
+        "score": 193.9,
+        "team": "Go Fudge Yourselves",
+        "teamId": 4,
+        "owner": "Phil Torres",
+        "opponent": "All Aboard The J Train",
+        "opponentScore": 99.18,
+        "year": 2020,
+        "week": 3,
+        "matchupPeriodId": 3
+      },
+      {
+        "score": 191.2,
+        "team": "Saquonda Forever",
+        "teamId": 2,
+        "owner": "Mike Kovacs",
+        "opponent": "Pussy Power",
+        "opponentScore": 123.8,
+        "year": 2019,
+        "week": 8,
+        "matchupPeriodId": 8
+      },
+      {
+        "score": 188.5,
+        "team": "Salty Spitoon",
+        "teamId": 9,
+        "owner": "Ray Engleking",
+        "opponent": "All Aboard The J Train",
+        "opponentScore": 119.92,
+        "year": 2020,
+        "week": 12,
+        "matchupPeriodId": 12
+      },
+      {
+        "score": 186.0,
+        "team": "Less Morals Than Mike Vick",
+        "teamId": 2,
+        "owner": "Mike Kovacs",
+        "opponent": "Da Kessell Krew",
+        "opponentScore": 102.0,
+        "year": 2013,
+        "week": 9,
+        "matchupPeriodId": 9
+      },
+      {
+        "score": 183.94,
+        "team": "Saquonda Forever",
+        "teamId": 2,
+        "owner": "Mike Kovacs",
+        "opponent": "Two Girls One Kupp",
+        "opponentScore": 98.4,
+        "year": 2019,
+        "week": 6,
+        "matchupPeriodId": 6
+      },
+      {
+        "score": 180.0,
+        "team": "Benching the  Whole Team",
+        "teamId": 3,
+        "owner": "Carl Cummins",
+        "opponent": "Rafi Bombs",
+        "opponentScore": 151.0,
+        "year": 2013,
+        "week": 4,
+        "matchupPeriodId": 4
+      },
+      {
+        "score": 179.0,
+        "team": "Rafi Bombs",
+        "teamId": 4,
+        "owner": "Phil Torres",
+        "opponent": "DidntSetLineUp InPlayoffs",
+        "opponentScore": 139.0,
+        "year": 2013,
+        "week": 13,
+        "matchupPeriodId": 13
+      },
+      {
+        "score": 178.62,
+        "team": "Insane in the  Ukraine",
+        "teamId": 6,
+        "owner": "Randell Crawford",
+        "opponent": "Go Fudge Yourselves",
+        "opponentScore": 146.28,
+        "year": 2023,
+        "week": 3,
+        "matchupPeriodId": 3
+      },
+      {
+        "score": 177.18,
+        "team": "Salty Spitoon",
+        "teamId": 9,
+        "owner": "Ray Engleking",
+        "opponent": "Wade Boggs Memorial Team",
+        "opponentScore": 87.76,
+        "year": 2021,
+        "week": 5,
+        "matchupPeriodId": 5
+      }
+    ],
+    "top10LowestScores": [
+      {
+        "score": 12.0,
+        "team": "Its Mike Vick In a Box!",
+        "teamId": 2,
+        "owner": "Mike Kovacs",
+        "opponent": "T'EOMINATOR 2 RESURRECTION",
+        "opponentScore": 15.0,
+        "year": 2014,
+        "week": 13,
+        "matchupPeriodId": 13
+      },
+      {
+        "score": 15.0,
+        "team": "T'EOMINATOR 2 RESURRECTION",
+        "teamId": 8,
+        "owner": "Keegan Hayes",
+        "opponent": "Its Mike Vick In a Box!",
+        "opponentScore": 12.0,
+        "year": 2014,
+        "week": 13,
+        "matchupPeriodId": 13
+      },
+      {
+        "score": 34.42,
+        "team": "Plainsboro Owls",
+        "teamId": 11,
+        "owner": "Brian Dorward",
+        "opponent": "The Recycling Ben",
+        "opponentScore": 86.72,
+        "year": 2017,
+        "week": 9,
+        "matchupPeriodId": 9
+      },
+      {
+        "score": 40.0,
+        "team": "TDs In Your Face",
+        "teamId": 7,
+        "owner": "Danielle Prizzi",
+        "opponent": "Voodoo Mama Juju",
+        "opponentScore": 111.0,
+        "year": 2014,
+        "week": 2,
+        "matchupPeriodId": 2
+      },
+      {
+        "score": 40.46,
+        "team": "Kish and Tell",
+        "teamId": 12,
+        "owner": "Brandon Kish",
+        "opponent": "Duke Nukems",
+        "opponentScore": 115.88,
+        "year": 2016,
+        "week": 5,
+        "matchupPeriodId": 5
+      },
+      {
+        "score": 43.0,
+        "team": "Kish and Tell",
+        "teamId": 12,
+        "owner": "Brandon Kish",
+        "opponent": "TDs In Your Face",
+        "opponentScore": 67.0,
+        "year": 2014,
+        "week": 3,
+        "matchupPeriodId": 3
+      },
+      {
+        "score": 46.0,
+        "team": "Voodoo Mama Juju",
+        "teamId": 10,
+        "owner": "BAHB Kerwersker",
+        "opponent": "Its Mike Vick In a Box!",
+        "opponentScore": 114.0,
+        "year": 2014,
+        "week": 10,
+        "matchupPeriodId": 10
+      },
+      {
+        "score": 49.22,
+        "team": "Peyton the Professor",
+        "teamId": 13,
+        "owner": "john crawford",
+        "opponent": "Insane in the  Ukraine",
+        "opponentScore": 96.22,
+        "year": 2023,
+        "week": 9,
+        "matchupPeriodId": 9
+      },
+      {
+        "score": 50.16,
+        "team": "Mail Fairy",
+        "teamId": 12,
+        "owner": "Ben Bingert",
+        "opponent": "Paintin Peyton",
+        "opponentScore": 140.74,
+        "year": 2025,
+        "week": 3,
+        "matchupPeriodId": 3
+      },
+      {
+        "score": 51.0,
+        "team": "Voodoo Mama Juju",
+        "teamId": 10,
+        "owner": "BAHB Kerwersker",
+        "opponent": "Erection Protection",
+        "opponentScore": 106.0,
+        "year": 2014,
+        "week": 7,
+        "matchupPeriodId": 7
+      }
+    ],
+    "closestWin": {
+      "margin": 0.03999999999999204,
+      "winner": "Go Fudge Yourselves",
+      "winnerTeamId": 4,
+      "winnerScore": 116.52,
+      "loser": "Salty Spitoon",
+      "loserScore": 116.48,
+      "year": 2022,
+      "week": 14,
+      "matchupPeriodId": 14
+    },
+    "biggestBlowout": {
+      "margin": 98.43999999999998,
+      "winner": "Taylor Swift ",
+      "winnerTeamId": 3,
+      "winnerScore": 162.98,
+      "loser": "Paintin Peyton",
+      "loserScore": 64.54,
+      "year": 2024,
+      "week": 3,
+      "matchupPeriodId": 3
+    },
+    "highestScoringGame": {
+      "total": 331.0,
+      "team1": "Benching the  Whole Team",
+      "owner1": "Carl Cummins",
+      "score1": 180.0,
+      "team2": "Rafi Bombs",
+      "owner2": "Phil Torres",
+      "score2": 151.0,
+      "year": 2013,
+      "week": 4,
+      "matchupPeriodId": 4
+    },
+    "lowestScoringGame": {
+      "total": 27.0,
+      "team1": "Its Mike Vick In a Box!",
+      "owner1": "Mike Kovacs",
+      "score1": 12.0,
+      "team2": "T'EOMINATOR 2 RESURRECTION",
+      "owner2": "Keegan Hayes",
+      "score2": 15.0,
+      "year": 2014,
+      "week": 13,
+      "matchupPeriodId": 13
+    },
+    "longestWinStreak": {
+      "owner": "Bill Solecki",
+      "length": 18,
+      "teamName": "Bovine University Stampede",
+      "startYear": 2023,
+      "startWeek": 5,
+      "endYear": 2024,
+      "endWeek": 8,
+      "isOngoing": false
+    },
+    "longestLossStreak": {
+      "owner": "john crawford",
+      "length": 10,
+      "teamName": "Paintin Peyton",
+      "startYear": 2023,
+      "startWeek": 12,
+      "endYear": 2024,
+      "endWeek": 7,
+      "isOngoing": false
+    },
+    "mostWeeklyHighScores": {
+      "owner": "Ray Engleking",
+      "count": 30
+    },
+    "mostWeeklyLowScores": {
+      "owner": "Randell Crawford",
+      "count": 20
+    },
+    "mostConsolationDollars": {
+      "owner": "Bill Solecki",
+      "count": 5
+    },
+    "mostPointsAgainstSeasons": [
+      {
+        "owner": "Mike Kovacs",
+        "teamName": "Less Morals Than Mike Vick",
+        "year": 2013,
+        "pointsAgainst": 1823.0
+      },
+      {
+        "owner": "Mike Kovacs",
+        "teamName": "Al Tuck And No Action",
+        "year": 2022,
+        "pointsAgainst": 1820.98
+      },
+      {
+        "owner": "Mike Kovacs",
+        "teamName": "Colonel Sanders McCaffreys",
+        "year": 2021,
+        "pointsAgainst": 1819.4599999999996
+      },
+      {
+        "owner": "Phil Torres",
+        "teamName": "Rafi Bombs",
+        "year": 2013,
+        "pointsAgainst": 1805.0
+      },
+      {
+        "owner": "Bill Solecki",
+        "teamName": "Wade Boggs Memorial Team",
+        "year": 2021,
+        "pointsAgainst": 1774.7199999999998
+      }
+    ],
+    "fewestPointsAgainstSeasons": [
+      {
+        "owner": "Randell Crawford",
+        "teamName": "oh no its John Snooooooow",
+        "year": 2015,
+        "pointsAgainst": 979.26
+      },
+      {
+        "owner": "Carl Cummins",
+        "teamName": "Duckman Kowalski",
+        "year": 2017,
+        "pointsAgainst": 1008.84
+      },
+      {
+        "owner": "Ray Engleking",
+        "teamName": "Rex Grossman Fan Club",
+        "year": 2017,
+        "pointsAgainst": 1032.1999999999998
+      },
+      {
+        "owner": "Loren Kessell",
+        "teamName": "Really Just Sean Kessell",
+        "year": 2015,
+        "pointsAgainst": 1063.92
+      },
+      {
+        "owner": "Mike Kovacs",
+        "teamName": "Why Pass to Top Wide Receivers?",
+        "year": 2017,
+        "pointsAgainst": 1065.4
+      }
+    ]
+  }
+}

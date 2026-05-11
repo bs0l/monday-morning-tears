@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roast Central - Monday Morning Tears</title>
+    <style>
+        :root {
+            --electric-blue: #00d4ff;
+            --gold: #ffd700;
+            --dark-bg: #0a0e27;
+            --card-bg: #1a1f3a;
+            --text: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.7);
+            --roast-red: #ff6b6b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(255, 215, 0, 0.1));
+            border-radius: 20px;
+            border: 2px solid rgba(255, 107, 107, 0.3);
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3.5rem;
+            background: linear-gradient(135deg, var(--roast-red), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            padding: 12px 25px;
+            background: rgba(0, 212, 255, 0.1);
+            border: 2px solid var(--electric-blue);
+            border-radius: 10px;
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            background: var(--electric-blue);
+            color: var(--dark-bg);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 212, 255, 0.4);
+        }
+
+        .roast-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+        }
+
+        .roast-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid rgba(255, 107, 107, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .roast-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--roast-red), var(--gold));
+        }
+
+        .roast-header {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            color: var(--roast-red);
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(255, 107, 107, 0.2);
+        }
+
+        .roast-item {
+            background: rgba(255, 107, 107, 0.05);
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 3px solid var(--roast-red);
+            margin-bottom: 15px;
+        }
+
+        .roast-text {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: var(--text);
+        }
+
+        .roast-emoji {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .roast-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Roast Central 🔥</h1>
+            <div class="subtitle">Where Stats Meet Savagery</div>
+        </header>
+
+        <nav>
+            <a href="index.html">All-Time Records</a>
+            <a href="regular-season.html">Regular Season</a>
+            <a href="teams.html">Owner Stats</a>
+            <a href="head-to-head.html">Head-to-Head</a>
+            <a href="season-stats.html">Season Stats</a>
+            <a href="league-history.html">League History</a>
+			<a href="rosters.html">Rosters</a>
+            <a href="roasts.html" class="active">Roasts</a>
+        </nav>
+
+        <div id="roasts-container" class="roast-grid"></div>
+    </div>
+
+    <script>
+        async function loadData() {
+            try {
+                const [teamStats, superlatives, seasonStats] = await Promise.all([
+                    fetch('output/team_stats.json').then(r => r.json()),
+                    fetch('output/superlatives.json').then(r => r.json()),
+                    fetch('output/season_stats.json').then(r => r.json())
+                ]);
+
+                renderRoasts(teamStats, superlatives, seasonStats);
+            } catch (error) {
+                console.error('Error loading data:', error);
+            }
+        }
+
+        function generateRoasts(owner, stats, superlatives, seasonStats) {
+            const roasts = [];
+            
+            // Roast 1: Win percentage
+            if (stats.overall.winPercentage < 0.45) {
+                roasts.push(`<span class="roast-emoji">📉</span>With a ${(stats.overall.winPercentage * 100).toFixed(1)}% win rate, you've mastered the art of losing. Truly inspirational!`);
+            } else if (stats.overall.winPercentage > 0.60) {
+                roasts.push(`<span class="roast-emoji">🤓</span>A ${(stats.overall.winPercentage * 100).toFixed(1)}% win rate? Imagine having this much time to obsess over fantasy football.`);
+            } else {
+                roasts.push(`<span class="roast-emoji">😴</span>${(stats.overall.winPercentage * 100).toFixed(1)}% win rate? The definition of mediocrity. Not good enough to brag, not bad enough to be funny.`);
+            }
+
+            // Roast 2: Championships
+            if (stats.championships === 0) {
+                roasts.push(`<span class="roast-emoji">🏆❌</span>${stats.seasonsPlayed} seasons, 0 championships. Some people are just destined to be bridesmaids.`);
+            } else if (stats.championships === 1) {
+                roasts.push(`<span class="roast-emoji">🎖️</span>One championship in ${stats.seasonsPlayed} seasons. Still dining out on that fluke, huh?`);
+            } else {
+                roasts.push(`<span class="roast-emoji">💰</span>${stats.championships} championships? Must be nice having the commissioner's phone number on speed dial.`);
+            }
+
+            // Roast 3: Worst opponent
+            if (stats.worstOpponent) {
+                const record = stats.worstOpponentRecord.split('-');
+                roasts.push(`<span class="roast-emoji">😱</span>Going ${stats.worstOpponentRecord} against ${stats.worstOpponent}... have you considered just forfeiting when you see their name on the schedule?`);
+            }
+
+            // Roast 4: Playoff appearances
+            const playoffPct = stats.playoffAppearances / stats.seasonsPlayed;
+            if (playoffPct < 0.3) {
+                roasts.push(`<span class="roast-emoji">🎪</span>Made the playoffs ${stats.playoffAppearances} times in ${stats.seasonsPlayed} seasons. The regular season must feel like your comfort zone!`);
+            } else if (playoffPct === 1) {
+                roasts.push(`<span class="roast-emoji">🚨</span>Perfect playoff attendance but only ${stats.championships} championship${stats.championships === 1 ? '' : 's'}? All show, no go.`);
+            }
+
+            // Roast 5: Points against
+            if (stats.avgPointsAgainst > 100) {
+                roasts.push(`<span class="roast-emoji">🎯</span>Averaging ${stats.avgPointsAgainst.toFixed(2)} points against per week. Your opponents see you on the schedule and start celebrating early.`);
+            }
+
+            // Roast 6: Longest loss streak
+            if (stats.longestLossStreak >= 5) {
+                roasts.push(`<span class="roast-emoji">📅</span>A ${stats.longestLossStreak}-game losing streak? That's not bad luck, that's a lifestyle choice.`);
+            }
+
+            // Roast 7: Moves/trades
+            if (stats.mostMovesSeason && stats.mostMovesSeason > 60) {
+                roasts.push(`<span class="roast-emoji">🎰</span>${stats.mostMovesSeason} moves in a single season? The waiver wire isn't a slot machine, my friend.`);
+            }
+
+            // Roast 8: Most loyal player
+            if (stats.mostLoyalPlayerSeasons && stats.mostLoyalPlayerSeasons >= 4) {
+                roasts.push(`<span class="roast-emoji">💔</span>Rostering ${stats.mostLoyalPlayer} for ${stats.mostLoyalPlayerSeasons} seasons? That's not loyalty, that's Stockholm syndrome.`);
+            }
+
+            // Roast 9: Playoff win%
+            if (stats.playoffs.winPercentage < 0.3 && stats.playoffs.wins + stats.playoffs.losses >= 5) {
+                roasts.push(`<span class="roast-emoji">🎁</span>${(stats.playoffs.winPercentage * 100).toFixed(1)}% playoff win rate. You're basically just donating your buy-in to the rest of us. Thanks!`);
+            }
+
+            // Roast 10: Best vs worst season gap
+            if (stats.bestSeasonWinPct && stats.worstSeasonWinPct) {
+                const gap = stats.bestSeasonWinPct - stats.worstSeasonWinPct;
+                if (gap > 0.5) {
+                    roasts.push(`<span class="roast-emoji">🎢</span>From ${(stats.bestSeasonWinPct * 100).toFixed(0)}% to ${(stats.worstSeasonWinPct * 100).toFixed(0)}%? The only thing more inconsistent than your performance is your excuses.`);
+                }
+            }
+
+            // Return best 4 roasts
+            return roasts.slice(0, 4);
+        }
+
+        function renderRoasts(teamStats, superlatives, seasonStats) {
+            const container = document.getElementById('roasts-container');
+            const activeOwners = Object.values(teamStats).filter(t => t.isActive);
+            
+            // Sort by owner name
+            activeOwners.sort((a, b) => a.owner.localeCompare(b.owner));
+
+            container.innerHTML = activeOwners.map(owner => {
+                const roasts = generateRoasts(owner.owner, owner, superlatives, seasonStats);
+                
+                return `
+                    <div class="roast-card">
+                        <div class="roast-header">${owner.owner}</div>
+                        ${roasts.map(roast => `
+                            <div class="roast-item">
+                                <div class="roast-text">${roast}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            }).join('');
+        }
+
+        loadData();
+    </script>
+</body>
+</html>

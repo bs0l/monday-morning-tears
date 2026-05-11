@@ -1,0 +1,208 @@
+{
+  "twoWeekPlayoffYears": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019
+  ],
+  "totalTwoWeekMatchups": 8,
+  "comebacks": 0,
+  "comebackRate": 0.0,
+  "matchups": [
+    {
+      "year": 2019,
+      "week1": 13,
+      "week2": 14,
+      "teamA": {
+        "name": "Saquonda Forever",
+        "owner": "Mike Kovacs",
+        "week1Score": 94.6,
+        "week2Score": 103.1,
+        "totalScore": 197.7
+      },
+      "teamB": {
+        "name": "Go Fudge Yourselves",
+        "owner": "Phil Torres",
+        "week1Score": 103.66,
+        "week2Score": 144.24,
+        "totalScore": 247.9
+      },
+      "week1Leader": "team_b",
+      "finalWinner": "team_b",
+      "comeback": false,
+      "week1Margin": 9.060000000000002,
+      "finalMargin": 50.20000000000002
+    },
+    {
+      "year": 2019,
+      "week1": 13,
+      "week2": 14,
+      "teamA": {
+        "name": "Wade Boggs Memorial Team",
+        "owner": "Bill Solecki",
+        "week1Score": 82.38,
+        "week2Score": 124.04,
+        "totalScore": 206.42
+      },
+      "teamB": {
+        "name": "Two Girls One Kupp",
+        "owner": "Ben Bingert",
+        "week1Score": 99.94,
+        "week2Score": 126.4,
+        "totalScore": 226.34
+      },
+      "week1Leader": "team_b",
+      "finalWinner": "team_b",
+      "comeback": false,
+      "week1Margin": 17.560000000000002,
+      "finalMargin": 19.920000000000016
+    },
+    {
+      "year": 2019,
+      "week1": 13,
+      "week2": 14,
+      "teamA": {
+        "name": "Pussy Power",
+        "owner": "Carl Cummins",
+        "week1Score": 106.8,
+        "week2Score": 129.0,
+        "totalScore": 235.8
+      },
+      "teamB": {
+        "name": "Hubba Chubba",
+        "owner": "John Artiglier",
+        "week1Score": 73.6,
+        "week2Score": 94.72,
+        "totalScore": 168.32
+      },
+      "week1Leader": "team_a",
+      "finalWinner": "team_a",
+      "comeback": false,
+      "week1Margin": 33.2,
+      "finalMargin": 67.48000000000002
+    },
+    {
+      "year": 2019,
+      "week1": 13,
+      "week2": 14,
+      "teamA": {
+        "name": "The HipShire Hobbits",
+        "owner": "Randell Crawford",
+        "week1Score": 81.6,
+        "week2Score": 81.78,
+        "totalScore": 163.38
+      },
+      "teamB": {
+        "name": "Weenie Hut Jr's",
+        "owner": "Ray Engleking",
+        "week1Score": 102.94,
+        "week2Score": 82.64,
+        "totalScore": 185.58
+      },
+      "week1Leader": "team_b",
+      "finalWinner": "team_b",
+      "comeback": false,
+      "week1Margin": 21.340000000000003,
+      "finalMargin": 22.200000000000017
+    },
+    {
+      "year": 2019,
+      "week1": 15,
+      "week2": 16,
+      "teamA": {
+        "name": "Go Fudge Yourselves",
+        "owner": "Phil Torres",
+        "week1Score": 119.3,
+        "week2Score": 130.36,
+        "totalScore": 249.66
+      },
+      "teamB": {
+        "name": "Two Girls One Kupp",
+        "owner": "Ben Bingert",
+        "week1Score": 118.14,
+        "week2Score": 45.96,
+        "totalScore": 164.1
+      },
+      "week1Leader": "team_a",
+      "finalWinner": "team_a",
+      "comeback": false,
+      "week1Margin": 1.1599999999999966,
+      "finalMargin": 85.56
+    },
+    {
+      "year": 2019,
+      "week1": 15,
+      "week2": 16,
+      "teamA": {
+        "name": "Wade Boggs Memorial Team",
+        "owner": "Bill Solecki",
+        "week1Score": 131.68,
+        "week2Score": 116.66,
+        "totalScore": 248.34
+      },
+      "teamB": {
+        "name": "Saquonda Forever",
+        "owner": "Mike Kovacs",
+        "week1Score": 136.98,
+        "week2Score": 145.42,
+        "totalScore": 282.4
+      },
+      "week1Leader": "team_b",
+      "finalWinner": "team_b",
+      "comeback": false,
+      "week1Margin": 5.299999999999983,
+      "finalMargin": 34.059999999999974
+    },
+    {
+      "year": 2019,
+      "week1": 15,
+      "week2": 16,
+      "teamA": {
+        "name": "Pussy Power",
+        "owner": "Carl Cummins",
+        "week1Score": 132.96,
+        "week2Score": 136.98,
+        "totalScore": 269.94
+      },
+      "teamB": {
+        "name": "Weenie Hut Jr's",
+        "owner": "Ray Engleking",
+        "week1Score": 152.62,
+        "week2Score": 145.1,
+        "totalScore": 297.72
+      },
+      "week1Leader": "team_b",
+      "finalWinner": "team_b",
+      "comeback": false,
+      "week1Margin": 19.659999999999997,
+      "finalMargin": 27.78000000000003
+    },
+    {
+      "year": 2019,
+      "week1": 15,
+      "week2": 16,
+      "teamA": {
+        "name": "The HipShire Hobbits",
+        "owner": "Randell Crawford",
+        "week1Score": 90.02,
+        "week2Score": 116.66,
+        "totalScore": 206.68
+      },
+      "teamB": {
+        "name": "Hubba Chubba",
+        "owner": "John Artiglier",
+        "week1Score": 118.5,
+        "week2Score": 100.84,
+        "totalScore": 219.34
+      },
+      "week1Leader": "team_b",
+      "finalWinner": "team_b",
+      "comeback": false,
+      "week1Margin": 28.480000000000004,
+      "finalMargin": 12.659999999999997
+    }
+  ],
+  "comebackMatchups": []
+}

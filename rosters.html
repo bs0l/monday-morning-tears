@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosters & Trades - Monday Morning Tears</title>
+    <style>
+        :root {
+            --electric-blue: #00d4ff;
+            --gold: #ffd700;
+            --dark-bg: #0a0e27;
+            --card-bg: #1a1f3a;
+            --text: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.7);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(255, 215, 0, 0.1));
+            border-radius: 20px;
+            border: 2px solid rgba(0, 212, 255, 0.3);
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3.5rem;
+            background: linear-gradient(135deg, var(--electric-blue), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            padding: 12px 25px;
+            background: rgba(0, 212, 255, 0.1);
+            border: 2px solid var(--electric-blue);
+            border-radius: 10px;
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            background: var(--electric-blue);
+            color: var(--dark-bg);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 212, 255, 0.4);
+        }
+
+        .section {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid rgba(0, 212, 255, 0.2);
+            margin-bottom: 40px;
+        }
+
+        .section-header {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .draft-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+        }
+
+        .draft-card {
+            background: rgba(0, 212, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 212, 255, 0.2);
+        }
+
+        .team-name-header {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--electric-blue);
+            margin-bottom: 15px;
+        }
+
+        .stat-line {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .stat-value {
+            font-weight: 700;
+            color: var(--electric-blue);
+        }
+
+        .trade-item {
+            background: rgba(0, 212, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 3px solid var(--electric-blue);
+            margin-bottom: 15px;
+        }
+
+        .trade-header {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--gold);
+        }
+
+        .trade-team {
+            margin: 10px 0;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 5px;
+        }
+
+        .comeback-stat {
+            background: rgba(255, 215, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid var(--gold);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .comeback-number {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 4rem;
+            color: var(--gold);
+        }
+
+        .comeback-label {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Rosters & Trades</h1>
+            <div class="subtitle">Draft Performance, Trades & Playoff Analysis</div>
+        </header>
+
+        <nav>
+            <a href="index.html">All-Time Records</a>
+            <a href="regular-season.html">Regular Season</a>
+            <a href="teams.html">Owner Stats</a>
+            <a href="head-to-head.html">Head-to-Head</a>
+            <a href="season-stats.html">Season Stats</a>
+            <a href="league-history.html">League History</a>
+            <a href="roasts.html">Roasts</a>
+            <a href="rosters.html" class="active">Rosters</a>
+        </nav>
+
+        <div class="section">
+            <div class="section-header">2025 Draft Performance</div>
+            <div id="draft-analysis"></div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">Two-Week Playoff Analysis</div>
+            <div id="playoff-analysis"></div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">Trade History</div>
+            <div id="trades-container"></div>
+        </div>
+    </div>
+
+    <script>
+        async function loadData() {
+            try {
+                const [rosterData, playoffData] = await Promise.all([
+                    fetch('output/roster_analysis.json').then(r => r.json()),
+                    fetch('output/two_week_playoff_analysis.json').then(r => r.json())
+                ]);
+
+                renderDraftAnalysis(rosterData.draft_analysis_2025);
+                renderPlayoffAnalysis(playoffData);
+                renderTrades(rosterData.trades);
+            } catch (error) {
+                console.error('Error loading data:', error);
+            }
+        }
+
+        function renderDraftAnalysis(analysis) {
+            const container = document.getElementById('draft-analysis');
+            const teams = Object.values(analysis).sort((a, b) => b.draftRetentionRate - a.draftRetentionRate);
+
+            container.innerHTML = `
+                <div class="draft-grid">
+                    ${teams.map(team => `
+                        <div class="draft-card">
+                            <div class="team-name-header">${team.teamName}</div>
+                            <div class="stat-line">
+                                <span class="stat-label">Owner</span>
+                                <span class="stat-value">${team.owner}</span>
+                            </div>
+                            <div class="stat-line">
+                                <span class="stat-label">Players Drafted</span>
+                                <span class="stat-value">${team.totalDrafted}</span>
+                            </div>
+                            <div class="stat-line">
+                                <span class="stat-label">Kept to Playoffs</span>
+                                <span class="stat-value">${team.draftedKeptToPlayoffs}</span>
+                            </div>
+                            <div class="stat-line">
+                                <span class="stat-label">Draft Retention Rate</span>
+                                <span class="stat-value">${team.draftRetentionRate.toFixed(1)}%</span>
+                            </div>
+                            <div class="stat-line">
+                                <span class="stat-label">Drafted Players Points</span>
+                                <span class="stat-value">${team.draftedPointsScored.toFixed(1)}</span>
+                            </div>
+                            <div class="stat-line">
+                                <span class="stat-label">Waiver Pickups</span>
+                                <span class="stat-value">${team.waiverPickups}</span>
+                            </div>
+                            <div class="stat-line">
+                                <span class="stat-label">Waiver Points Scored</span>
+                                <span class="stat-value">${team.waiverPointsScored.toFixed(1)}</span>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        function renderPlayoffAnalysis(data) {
+            const container = document.getElementById('playoff-analysis');
+            
+            container.innerHTML = `
+                <div class="comeback-stat">
+                    <div class="comeback-number">${data.comebacks}</div>
+                    <div class="comeback-label">Comebacks out of ${data.totalTwoWeekMatchups} two-week matchups</div>
+                    <div style="margin-top: 10px; font-size: 1.5rem; color: var(--gold);">${(data.comebackRate * 100).toFixed(1)}% comeback rate</div>
+                </div>
+
+                <div style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 20px;">
+                    These teams were losing after week 1 but came back to win the two-week matchup:
+                </div>
+
+                ${data.comebackMatchups.map(m => {
+                    const loser = m.week1Leader === 'team_a' ? m.teamB : m.teamA;
+                    const winner = m.week1Leader === 'team_a' ? m.teamA : m.teamB;
+                    
+                    return `
+                        <div class="trade-item">
+                            <div class="trade-header">${m.year} Playoffs - Weeks ${m.week1}-${m.week2}</div>
+                            <div style="margin: 10px 0;">
+                                <strong style="color: var(--gold);">${loser.owner}</strong> (${loser.name}) came back to beat 
+                                <strong>${winner.owner}</strong> (${winner.name})
+                            </div>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 10px;">
+                                <div>
+                                    <div style="font-size: 0.9rem; color: var(--text-secondary);">Week 1:</div>
+                                    <div>${winner.owner}: ${winner.week1Score.toFixed(2)} | ${loser.owner}: ${loser.week1Score.toFixed(2)}</div>
+                                    <div style="font-size: 0.85rem; color: var(--gold);">Leader by ${m.week1Margin.toFixed(2)}</div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 0.9rem; color: var(--text-secondary);">Total:</div>
+                                    <div>${loser.owner}: ${loser.totalScore.toFixed(2)} | ${winner.owner}: ${winner.totalScore.toFixed(2)}</div>
+                                    <div style="font-size: 0.85rem; color: #00ff64;">Won by ${m.finalMargin.toFixed(2)}</div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }).join('')}
+            `;
+        }
+
+        function renderTrades(trades) {
+            const container = document.getElementById('trades-container');
+            
+            if (!trades || trades.length === 0) {
+                container.innerHTML = '<div style="text-align: center; color: var(--text-secondary);">No trade data available</div>';
+                return;
+            }
+
+            const sortedTrades = trades.sort((a, b) => b.year - a.year);
+
+            container.innerHTML = sortedTrades.map(trade => `
+                <div class="trade-item">
+                    <div class="trade-header">${trade.year} Season</div>
+                    <div class="trade-team">
+                        <strong>${trade.team1.owner}</strong> (${trade.team1.teamName})
+                        <div style="margin-top: 5px; font-size: 0.9rem;">
+                            Sent: ${trade.team1.playersOut.join(', ') || 'N/A'}
+                        </div>
+                        <div style="font-size: 0.9rem; color: var(--gold);">
+                            Received: ${trade.team1.playersIn.join(', ') || 'N/A'}
+                        </div>
+                    </div>
+                    <div class="trade-team">
+                        <strong>${trade.team2.owner}</strong> (${trade.team2.teamName})
+                        <div style="margin-top: 5px; font-size: 0.9rem;">
+                            Sent: ${trade.team2.playersOut.join(', ') || 'N/A'}
+                        </div>
+                        <div style="font-size: 0.9rem; color: var(--gold);">
+                            Received: ${trade.team2.playersIn.join(', ') || 'N/A'}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        loadData();
+    </script>
+</body>
+</html>

@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Season Statistics - Monday Morning Tears</title>
+    <style>
+        :root {
+            --electric-blue: #00d4ff;
+            --gold: #ffd700;
+            --dark-bg: #0a0e27;
+            --card-bg: #1a1f3a;
+            --text: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.7);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container { max-width: 1400px; margin: 0 auto; }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, rgba(0,212,255,0.1), rgba(255,215,0,0.1));
+            border-radius: 20px;
+            border: 2px solid rgba(0,212,255,0.3);
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3.5rem;
+            background: linear-gradient(135deg, var(--electric-blue), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .subtitle { font-size: 1.2rem; color: var(--text-secondary); }
+
+        nav {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            padding: 12px 25px;
+            background: rgba(0,212,255,0.1);
+            border: 2px solid var(--electric-blue);
+            border-radius: 10px;
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            background: var(--electric-blue);
+            color: var(--dark-bg);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,212,255,0.4);
+        }
+
+        /* ─── Season list (single column, full width) ─── */
+        .seasons-list {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            margin-bottom: 40px;
+        }
+
+        .season-section {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 14px;
+            border: 2px solid rgba(0,212,255,0.2);
+        }
+
+        .season-header {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.9rem;
+            color: var(--gold);
+            margin-bottom: 14px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,215,0,0.2);
+            padding-bottom: 8px;
+        }
+
+        .stats-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 7px;
+        }
+
+        .stat-box {
+            background: rgba(0,212,255,0.05);
+            padding: 9px 12px;
+            border-radius: 8px;
+            border-left: 3px solid var(--electric-blue);
+        }
+
+        .stat-title {
+            font-size: 0.72rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 3px;
+        }
+
+        .stat-content {
+            font-size: 0.97rem;
+            font-weight: 700;
+            color: var(--electric-blue);
+        }
+
+        .stat-details {
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+            margin-top: 2px;
+            line-height: 1.4;
+        }
+
+        .stat-details a { color: var(--electric-blue); }
+
+        .season-note {
+            font-size: 0.74rem;
+            color: var(--text-secondary);
+            font-style: italic;
+            padding: 7px 9px;
+            background: rgba(255,215,0,0.05);
+            border-radius: 6px;
+            margin-top: 8px;
+        }
+
+        /* ─── Payout section ─── */
+        .payout-section {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid rgba(255,215,0,0.3);
+            margin-top: 40px;
+        }
+
+        .payout-header {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Z-grid for payout year cards */
+        .payout-year-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+            margin-bottom: 30px;
+            align-items: start;
+        }
+
+        .payout-year-card {
+            background: rgba(0,212,255,0.05);
+            padding: 13px;
+            border-radius: 10px;
+            border: 1px solid rgba(0,212,255,0.2);
+        }
+
+        .payout-year-label {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.35rem;
+            color: var(--gold);
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .payout-owner-row {
+            background: rgba(0,212,255,0.05);
+            padding: 6px 8px;
+            border-radius: 6px;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .payout-owner-info { flex: 1; min-width: 0; }
+
+        .payout-owner-name {
+            font-weight: 700;
+            font-size: 0.88rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .payout-owner-breakdown {
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            line-height: 1.3;
+        }
+
+        .payout-owner-breakdown a { color: var(--electric-blue); }
+
+        .payout-owner-total {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.15rem;
+            color: var(--gold);
+            white-space: nowrap;
+        }
+
+        /* All-time totals */
+        .payout-total {
+            background: linear-gradient(135deg, rgba(0,212,255,0.1), rgba(255,215,0,0.1));
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid var(--gold);
+        }
+
+        .payout-total-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .payout-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+        }
+
+        .payout-owner-card {
+            background: rgba(0,212,255,0.1);
+            padding: 12px 15px;
+            border-radius: 8px;
+        }
+
+        .payout-owner-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .payout-owner-name-total { font-weight: 700; }
+
+        .payout-owner-amount {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            color: var(--gold);
+        }
+
+        .payout-owner-sub {
+            font-size: 0.76rem;
+            color: var(--text-secondary);
+            margin-top: 4px;
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .net-positive { color: #00ff64; font-weight: 600; }
+        .net-negative { color: #ff6b6b; font-weight: 600; }
+
+        a { color: var(--electric-blue); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        html { scroll-behavior: smooth; }
+
+        /* ─── In-page nav ─── */
+        .page-nav {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 32px;
+        }
+        .page-nav a {
+            padding: 6px 16px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 215, 0, 0.35);
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            transition: all 0.2s ease;
+            background: rgba(255, 215, 0, 0.06);
+        }
+        .page-nav a:hover {
+            background: rgba(255, 215, 0, 0.18);
+            border-color: var(--gold);
+        }
+        .section-anchor { scroll-margin-top: 20px; }
+
+        @media (max-width: 600px) {
+            .stat-boxes { grid-template-columns: repeat(2, 1fr) !important; }
+            .payout-year-grid { grid-template-columns: 1fr !important; }
+            .seasons-grid { grid-template-columns: 1fr !important; }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Season Statistics</h1>
+            <div class="subtitle">Year-by-Year Records &amp; Payouts</div>
+        </header>
+
+        <nav>
+            <a href="index.html">All-Time Records</a>
+            <a href="regular-season.html">Regular Season</a>
+            <a href="teams.html">Owner Stats</a>
+            <a href="head-to-head.html">Head-to-Head</a>
+            <a href="season-stats.html" class="active">Season Stats</a>
+            <a href="league-history.html">League History</a>
+			<!--<a href="rosters.html">Rosters</a>-->
+			<!--<a href="roasts.html">Roasts</a>-->
+        </nav>
+
+        <div class="page-nav">
+            <a href="#section-seasons">📅 Season Stats</a>
+            <a href="#section-payouts">💰 Payout Tracker</a>
+            <a href="#section-alltime">🏆 All-Time Payouts</a>
+        </div>
+
+        <div id="section-seasons" class="section-anchor"></div>
+        <div id="seasons-container"></div>
+
+        <div id="section-payouts" class="section-anchor payout-section">
+            <div class="payout-header">💰 Payout Tracker</div>
+            <div id="payout-container"></div>
+        </div>
+    </div>
+
+    <script>
+        const LEAGUE_ID = 1483079;
+
+        // Per-owner buy-in cost for each season
+        const BUY_INS = {
+            2013: 0,
+            2014: 5,
+            2015: 26,
+            2016: 40,
+            2017: 40,
+            2018: 40,
+            2019: 40,
+            2020: 41.25,
+            2021: 50,
+            2022: 50,
+            2023: 50,
+            2024: 50,
+            2025: 50
+        };
+
+        function createMatchupLink(year, week) {
+            return `https://fantasy.espn.com/football/league/scoreboard?leagueId=${LEAGUE_ID}&matchupPeriodId=${week}&seasonId=${year}`;
+        }
+
+        function createStandingsLink(year) {
+            return `https://fantasy.espn.com/football/league/standings?leagueId=${LEAGUE_ID}&seasonId=${year}`;
+        }
+
+        async function loadData() {
+            try {
+                const [seasonStats, matchups] = await Promise.all([
+                    fetch('output/season_stats.json').then(r => r.json()),
+                    fetch('output/matchups.json').then(r => r.json())
+                ]);
+                // Build a map: year → Set of owner names who actually played that year
+                const ownersByYear = {};
+                matchups.forEach(m => {
+                    const yr = m.year;
+                    if (!ownersByYear[yr]) ownersByYear[yr] = new Set();
+                    if (m.home?.owner) ownersByYear[yr].add(m.home.owner);
+                    if (m.away?.owner) ownersByYear[yr].add(m.away.owner);
+                });
+                renderSeasons(seasonStats);
+                renderPayouts(seasonStats, ownersByYear);
+            } catch (error) {
+                console.error('Error loading data:', error);
+            }
+        }
+
+        function renderSeasons(seasonStats) {
+            const container = document.getElementById('seasons-container');
+            // Newest first → Z-pattern reads 2025, 2024, 2023 / 2022, 2021, 2020 / …
+            const seasons = Object.values(seasonStats).sort((a, b) => b.year - a.year);
+
+            const cardsHTML = seasons.map(season => {
+                const notes = [];
+                if (!season.mostConsolationDollars.owner || season.mostConsolationDollars.count === 0) {
+                    notes.push('No consolation dollars were awarded this season');
+                }
+                if (!season.mostWeeklyHighScores.owner) {
+                    notes.push('Multiple teams tied for most weekly high scores');
+                }
+                if (!season.mostWeeklyLowScores.owner) {
+                    notes.push('Multiple teams tied for most weekly low scores');
+                }
+				// Check for missing bench data
+				if (!season.bestBenchWarmers) {
+					notes.push('Bench scoring data is not available for this season');
+				}
+                const noteHTML = notes.length ? `<div class="season-note">Note: ${notes.join('. ')}.</div>` : '';
+
+                // Consolation dollars: link every week this owner earned one
+                let consolationHTML = '';
+                if (season.mostConsolationDollars.owner && season.mostConsolationDollars.count > 0) {
+                    let weekDetail = '';
+                    if (season.consolationPayouts?.length) {
+                        const ownerPayouts = season.consolationPayouts
+                            .filter(p => p.owner === season.mostConsolationDollars.owner)
+                            .sort((a, b) => a.week - b.week);
+                        if (ownerPayouts.length) {
+                            const links = ownerPayouts.map(p =>
+                                `<a href="${createMatchupLink(season.year, p.week)}" target="_blank">Wk ${p.week}</a>`
+                            ).join(', ');
+                            weekDetail = `<br>${links}`;
+                        }
+                    }
+                    consolationHTML = `
+                        <div class="stat-box">
+                            <div class="stat-title">Most Consolation Dollars</div>
+                            <div class="stat-content">${season.mostConsolationDollars.count}</div>
+                            <div class="stat-details">${season.mostConsolationDollars.owner}${weekDetail}</div>
+                        </div>`;
+                }
+
+                return `
+                    <div class="season-section">
+                        <div class="season-header">${season.year}</div>
+                        <div class="stats-list">
+                            ${season.highestScore ? `
+                                <div class="stat-box">
+                                    <div class="stat-title">Highest Score</div>
+                                    <div class="stat-content">${season.highestScore.score.toFixed(2)}</div>
+                                    <div class="stat-details">${season.highestScore.team}<br>
+                                        <a href="${createMatchupLink(season.year, season.highestScore.week)}" target="_blank">Wk ${season.highestScore.week}</a>
+                                    </div>
+                                </div>` : ''}
+
+                            ${season.lowestScore ? `
+                                <div class="stat-box">
+                                    <div class="stat-title">Lowest Score</div>
+                                    <div class="stat-content">${season.lowestScore.score.toFixed(2)}</div>
+                                    <div class="stat-details">${season.lowestScore.team}<br>
+                                        <a href="${createMatchupLink(season.year, season.lowestScore.week)}" target="_blank">Wk ${season.lowestScore.week}</a>
+                                    </div>
+                                </div>` : ''}
+
+                            ${season.closestWin ? `
+                                <div class="stat-box">
+                                    <div class="stat-title">Closest Win</div>
+                                    <div class="stat-content">${season.closestWin.margin.toFixed(2)}</div>
+                                    <div class="stat-details">${season.closestWin.winner} vs ${season.closestWin.loser}<br>
+                                        <a href="${createMatchupLink(season.year, season.closestWin.week)}" target="_blank">Wk ${season.closestWin.week}</a>
+                                    </div>
+                                </div>` : ''}
+
+                            ${season.biggestBlowout ? `
+                                <div class="stat-box">
+                                    <div class="stat-title">Biggest Blowout</div>
+                                    <div class="stat-content">${season.biggestBlowout.margin.toFixed(2)}</div>
+                                    <div class="stat-details">${season.biggestBlowout.winner} vs ${season.biggestBlowout.loser}<br>
+                                        <a href="${createMatchupLink(season.year, season.biggestBlowout.week)}" target="_blank">Wk ${season.biggestBlowout.week}</a>
+                                    </div>
+                                </div>` : ''}
+
+                            ${season.longestWinStreak?.owner ? `
+                                <div class="stat-box">
+                                    <div class="stat-title">Longest Win Streak</div>
+                                    <div class="stat-content">${season.longestWinStreak.length} games</div>
+                                    <div class="stat-details">${season.longestWinStreak.owner}<br>
+                                        ${(season.longestWinStreak.weeks || []).map(w =>
+                                            `<a href="${createMatchupLink(season.year, w)}" target="_blank">Wk ${w}</a>`
+                                        ).join(', ')}
+                                    </div>
+                                </div>` : ''}
+
+                            ${season.longestLossStreak?.owner ? `
+                                <div class="stat-box">
+                                    <div class="stat-title">Longest Loss Streak</div>
+                                    <div class="stat-content">${season.longestLossStreak.length} games</div>
+                                    <div class="stat-details">${season.longestLossStreak.owner}<br>
+                                        ${(season.longestLossStreak.weeks || []).map(w =>
+                                            `<a href="${createMatchupLink(season.year, w)}" target="_blank">Wk ${w}</a>`
+                                        ).join(', ')}
+                                    </div>
+                                </div>` : ''}
+
+                            ${season.mostWeeklyHighScores?.owner ? `
+                                <div class="stat-box">
+                                    <div class="stat-title">Most Weekly High Scores</div>
+                                    <div class="stat-content">${season.mostWeeklyHighScores.count}</div>
+                                    <div class="stat-details">${season.mostWeeklyHighScores.owner}<br>
+                                        ${(season.mostWeeklyHighScores.weeks || []).map(w =>
+                                            `<a href="${createMatchupLink(season.year, w)}" target="_blank">Wk ${w}</a>`
+                                        ).join(', ')}
+                                    </div>
+                                </div>` : ''}
+
+                            ${season.mostWeeklyLowScores?.owner ? `
+                                <div class="stat-box">
+                                    <div class="stat-title">Most Weekly Low Scores</div>
+                                    <div class="stat-content">${season.mostWeeklyLowScores.count}</div>
+                                    <div class="stat-details">${season.mostWeeklyLowScores.owner}<br>
+                                        ${(season.mostWeeklyLowScores.weeks || []).map(w =>
+                                            `<a href="${createMatchupLink(season.year, w)}" target="_blank">Wk ${w}</a>`
+                                        ).join(', ')}
+                                    </div>
+                                </div>` : ''}
+
+                            ${consolationHTML}
+							
+							${season.bestBenchWarmers ? `
+								<div class="stat-box">
+									<div class="stat-title">Best Benchwarmers</div>
+									<div class="stat-content">${season.bestBenchWarmers.benchPoints.toFixed(2)}</div>
+									<div class="stat-details">
+										${season.bestBenchWarmers.teamName}
+										<br><em style="font-size: 0.75rem;">Or: Worst Manager? 😉</em>
+									</div>
+								</div>` : ''}
+                        </div>
+                        ${noteHTML}
+                    </div>`;
+            }).join('');
+
+            container.innerHTML = `<div class="seasons-list">${cardsHTML}</div>`;
+        }
+
+        function renderPayouts(seasonStats, ownersByYear) {
+            const container = document.getElementById('payout-container');
+            const seasons = Object.values(seasonStats).sort((a, b) => b.year - a.year);
+
+            const allTimeGross = {};    // owner → total $ won
+
+            let yearCardsHTML = '';
+
+            seasons.forEach(season => {
+                const ownerPayouts = {};
+
+                function ensure(owner) {
+                    if (!ownerPayouts[owner]) ownerPayouts[owner] = { total: 0, highWeeks: [], consolationWeeks: [], playoff: null };
+                    if (!allTimeGross[owner]) allTimeGross[owner] = 0;
+                }
+
+                season.weeklyHighPayouts.forEach(p => {
+                    ensure(p.owner);
+                    ownerPayouts[p.owner].total += p.amount;
+                    ownerPayouts[p.owner].highWeeks.push(p.week);
+                    allTimeGross[p.owner] += p.amount;
+                });
+
+                season.consolationPayouts.forEach(p => {
+                    ensure(p.owner);
+                    ownerPayouts[p.owner].total += p.amount;
+                    ownerPayouts[p.owner].consolationWeeks.push(p.week);
+                    allTimeGross[p.owner] += p.amount;
+                });
+
+                season.playoffPayouts.forEach(p => {
+                    ensure(p.owner);
+                    ownerPayouts[p.owner].total += p.amount;
+                    ownerPayouts[p.owner].playoff = p.place;
+                    allTimeGross[p.owner] += p.amount;
+                });
+
+                const sortedOwners = Object.entries(ownerPayouts).sort((a, b) => b[1].total - a[1].total);
+
+                if (sortedOwners.length > 0) {
+                    yearCardsHTML += `
+                        <div class="payout-year-card">
+                            <div class="payout-year-label">${season.year}</div>
+                            ${sortedOwners.map(([owner, data]) => {
+                                const breakdown = [];
+                                if (data.playoff) {
+                                    const label = data.playoff === '1st' ? 'Championship' : data.playoff === '2nd' ? 'Runner-up' : '3rd Place';
+                                    breakdown.push(`<a href="${createStandingsLink(season.year)}" target="_blank">${label}</a>`);
+                                }
+                                if (data.highWeeks.length > 0) {
+                                    const links = data.highWeeks.sort((a,b)=>a-b).map(w => `<a href="${createMatchupLink(season.year, w)}" target="_blank">${w}</a>`).join(', ');
+                                    breakdown.push(`HS: ${links}`);
+                                }
+                                if (data.consolationWeeks.length > 0) {
+                                    const links = data.consolationWeeks.sort((a,b)=>a-b).map(w => `<a href="${createMatchupLink(season.year, w)}" target="_blank">${w}</a>`).join(', ');
+                                    breakdown.push(`CD: ${links}`);
+                                }
+                                return `
+                                    <div class="payout-owner-row">
+                                        <div class="payout-owner-info">
+                                            <div class="payout-owner-name">${owner}</div>
+                                            ${breakdown.length ? `<div class="payout-owner-breakdown">${breakdown.join(' · ')}</div>` : ''}
+                                        </div>
+                                        <div class="payout-owner-total">$${data.total}</div>
+                                    </div>`;
+                            }).join('')}
+                        </div>`;
+                }
+            });
+
+            // ── All-time totals with accurate net earnings ──
+            // Use ownersByYear (derived from matchups.json) to count every season
+            // each owner actually played — regardless of whether they won anything.
+            // This ensures everyone who played the same seasons gets the same buy-in total.
+            const ownerBuyinTotals = {};
+            Object.entries(ownersByYear).forEach(([yr, owners]) => {
+                const buyIn = BUY_INS[parseInt(yr)] || 0;
+                owners.forEach(owner => {
+                    if (!ownerBuyinTotals[owner]) ownerBuyinTotals[owner] = 0;
+                    ownerBuyinTotals[owner] += buyIn;
+                });
+            });
+
+            // Include all owners who appear in either gross earnings or buy-ins
+            const allOwners = new Set([
+                ...Object.keys(allTimeGross),
+                ...Object.keys(ownerBuyinTotals)
+            ]);
+
+            const sortedAllTime = [...allOwners]
+                .map(owner => ({ owner, gross: allTimeGross[owner] || 0, buyIn: ownerBuyinTotals[owner] || 0 }))
+                .sort((a, b) => b.gross - a.gross);
+
+            const allTimeTotalsHTML = `
+                <div id="section-alltime" class="section-anchor payout-total">
+                    <div class="payout-total-title">Total Payouts (All-Time)</div>
+                    <div class="payout-list">
+                        ${sortedAllTime.map(({ owner, gross, buyIn }) => {
+                            const net = gross - buyIn;
+                            const netClass = net >= 0 ? 'net-positive' : 'net-negative';
+                            const netStr = net >= 0 ? `+$${net.toFixed(2)}` : `-$${Math.abs(net).toFixed(2)}`;
+                            return `
+                                <div class="payout-owner-card">
+                                    <div class="payout-owner-top">
+                                        <span class="payout-owner-name-total">${owner}</span>
+                                        <span class="payout-owner-amount">$${gross}</span>
+                                    </div>
+                                    <div class="payout-owner-sub">
+                                        <span>Buy-ins: $${buyIn.toFixed(2)}</span>
+                                        <span class="${netClass}">Net: ${netStr}</span>
+                                    </div>
+                                </div>`;
+                        }).join('')}
+                    </div>
+                </div>`;
+
+            container.innerHTML = `<div class="payout-year-grid">${yearCardsHTML}</div>${allTimeTotalsHTML}`;
+        }
+
+        loadData();
+    </script>
+</body>
+</html>

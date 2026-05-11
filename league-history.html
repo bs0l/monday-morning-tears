@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League History - Monday Morning Tears</title>
+    <style>
+        :root {
+            --electric-blue: #00d4ff;
+            --gold: #ffd700;
+            --dark-bg: #0a0e27;
+            --card-bg: #1a1f3a;
+            --text: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.7);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container { max-width: 1400px; margin: 0 auto; }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, rgba(0,212,255,0.1), rgba(255,215,0,0.1));
+            border-radius: 20px;
+            border: 2px solid rgba(0,212,255,0.3);
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3.5rem;
+            background: linear-gradient(135deg, var(--electric-blue), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .subtitle { font-size: 1.2rem; color: var(--text-secondary); }
+
+        nav {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            padding: 12px 25px;
+            background: rgba(0,212,255,0.1);
+            border: 2px solid var(--electric-blue);
+            border-radius: 10px;
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            background: var(--electric-blue);
+            color: var(--dark-bg);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,212,255,0.4);
+        }
+
+        /* ── In-page nav ── */
+        .inpage-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            justify-content: center;
+            margin-bottom: 28px;
+        }
+
+        .inpage-nav a {
+            padding: 5px 13px;
+            background: transparent;
+            border: 1px solid rgba(255,215,0,0.35);
+            border-radius: 20px;
+            color: rgba(255,215,0,0.75);
+            text-decoration: none;
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            transition: background 0.15s, color 0.15s, border-color 0.15s;
+            white-space: nowrap;
+        }
+
+        .inpage-nav a:hover {
+            background: rgba(255,215,0,0.12);
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+
+        .rulebook-link {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .rulebook-link a {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, var(--electric-blue), var(--gold));
+            color: var(--dark-bg);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .rulebook-link a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0,212,255,0.5);
+        }
+
+        /* Legend */
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 35px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .legend-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+            flex-shrink: 0;
+        }
+
+        /* Year sections */
+        .year-section {
+            background: var(--card-bg);
+            padding: 22px 25px;
+            border-radius: 15px;
+            border: 2px solid rgba(0,212,255,0.15);
+            margin-bottom: 20px;
+        }
+
+        .year-header {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-bottom: 14px;
+            border-bottom: 2px solid rgba(255,215,0,0.25);
+            padding-bottom: 8px;
+        }
+
+        .change-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 7px; }
+
+        .change-item {
+            padding: 9px 14px;
+            border-radius: 7px;
+            line-height: 1.55;
+            font-size: 0.93rem;
+            border-left: 4px solid;
+        }
+
+        /* Category colours */
+        .cat-founding { background: rgba(0, 212, 255, 0.08); border-left-color: #00d4ff; }
+        .cat-buyin    { background: rgba(255, 215, 0, 0.08);  border-left-color: #ffd700; }
+        .cat-payout   { background: rgba(0, 255, 100, 0.08);  border-left-color: #00ff64; }
+        .cat-roster   { background: rgba(255, 160, 50, 0.10); border-left-color: #ffa032; }
+        .cat-rule     { background: rgba(255, 80, 80, 0.09);  border-left-color: #ff5050; }
+        .cat-draft    { background: rgba(180, 100, 255, 0.10);border-left-color: #b464ff; }
+        .cat-admin    { background: rgba(255, 255, 255, 0.04);border-left-color: rgba(255,255,255,0.25); }
+
+        .label {
+            display: inline-block;
+            padding: 2px 7px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-right: 7px;
+            letter-spacing: 0.3px;
+        }
+
+        .lbl-founding  { background: rgba(0,212,255,0.25);    color: #00d4ff; }
+        .lbl-buyin     { background: rgba(255,215,0,0.25);    color: #ffd700; }
+        .lbl-payout    { background: rgba(0,255,100,0.22);    color: #00ff64; }
+        .lbl-roster    { background: rgba(255,160,50,0.25);   color: #ffa032; }
+        .lbl-rule      { background: rgba(255,80,80,0.22);    color: #ff5050; }
+        .lbl-draft     { background: rgba(180,100,255,0.22);  color: #b464ff; }
+        .lbl-admin     { background: rgba(255,255,255,0.12);  color: var(--text-secondary); }
+
+        .current-rules {
+            background: var(--card-bg);
+            border: 2px solid rgba(0, 212, 255, 0.3);
+            border-radius: 15px;
+            padding: 28px 30px;
+            margin-bottom: 40px;
+        }
+        .current-rules-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.8rem;
+            color: var(--electric-blue);
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        .rules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+        }
+        .rules-group {
+            background: rgba(255,255,255,0.03);
+            border-radius: 10px;
+            padding: 14px 16px;
+            border-left: 3px solid var(--electric-blue);
+        }
+        .rules-group-title {
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--electric-blue);
+            margin-bottom: 10px;
+        }
+        .rules-group ul { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+        .rules-group li {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            padding-left: 10px;
+            position: relative;
+        }
+        .rules-group li::before { content: '·'; position: absolute; left: 0; color: var(--electric-blue); }
+        .rules-group li strong { color: var(--text); }
+
+        .api-changes {
+            background: var(--card-bg);
+            border: 2px solid rgba(255, 80, 80, 0.25);
+            border-radius: 15px;
+            padding: 28px 30px;
+            margin-bottom: 40px;
+        }
+        .api-changes-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.8rem;
+            color: #ff5050;
+            margin-bottom: 6px;
+            letter-spacing: 1px;
+        }
+        .api-changes-subtitle {
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .api-years-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 14px;
+        }
+        .api-year-block {
+            background: rgba(255,255,255,0.03);
+            border-radius: 10px;
+            padding: 12px 14px;
+            border-top: 2px solid rgba(255, 80, 80, 0.3);
+        }
+        .api-year-label {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.3rem;
+            color: var(--gold);
+            margin-bottom: 8px;
+        }
+        .api-change-item {
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            padding: 3px 0 3px 10px;
+            border-left: 2px solid rgba(255, 80, 80, 0.4);
+            margin-bottom: 4px;
+            line-height: 1.4;
+        }
+        .api-change-item.no-change {
+            border-left-color: rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.2);
+            font-style: italic;
+        }
+        .loading-msg { color: var(--text-secondary); font-style: italic; font-size: 0.9rem; }
+
+        /* ── Mobile ── */
+        @media (max-width: 600px) {
+            body { padding: 12px; }
+
+            h1 { font-size: 2.4rem; }
+            .subtitle { font-size: 1rem; }
+            header { padding: 20px 14px; margin-bottom: 28px; }
+
+            nav a { padding: 9px 14px; font-size: 0.88rem; }
+
+            .current-rules { padding: 18px 14px; }
+            .rules-grid { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; }
+            .rules-group { padding: 10px 12px; }
+            .rules-group li { font-size: 0.82rem; }
+
+            .year-section { padding: 14px 14px; }
+            .year-header { font-size: 1.4rem; }
+            .change-item { font-size: 0.86rem; padding: 8px 10px; }
+
+            .api-changes { padding: 16px 14px; }
+            .api-years-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
+            .api-year-block { padding: 10px 10px; }
+            .api-change-item { font-size: 0.78rem; }
+
+            .inpage-nav { gap: 5px; margin-bottom: 20px; }
+            .inpage-nav a { font-size: 0.72rem; padding: 4px 10px; }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>League History</h1>
+            <div class="subtitle">Rule Changes &amp; Evolution (2013–2025)</div>
+        </header>
+
+        <nav>
+            <a href="index.html">All-Time Records</a>
+            <a href="regular-season.html">Regular Season</a>
+            <a href="teams.html">Owner Stats</a>
+            <a href="head-to-head.html">Head-to-Head</a>
+            <a href="season-stats.html">Season Stats</a>
+            <a href="league-history.html" class="active">League History</a>
+            <!--<a href="rosters.html">Rosters</a>-->
+            <!--<a href="roasts.html">Roasts</a>-->
+        </nav>
+
+        <!-- ── In-page nav ── -->
+        <div class="inpage-nav">
+            <a href="#section-current-rules">Current Rules</a>
+            <a href="#section-2025">2025</a>
+            <a href="#section-2024">2024</a>
+            <a href="#section-2023">2023</a>
+            <a href="#section-2022">2022</a>
+            <a href="#section-2021">2021</a>
+            <a href="#section-2020">2020</a>
+            <a href="#section-2019">2019</a>
+            <a href="#section-2018">2018</a>
+            <a href="#section-2017">2017</a>
+            <a href="#section-2016">2016</a>
+            <a href="#section-2015">2015</a>
+            <a href="#section-2014">2014</a>
+            <a href="#section-2013">2013</a>
+            <a href="#section-espn-api">ESPN API</a>
+        </div>
+
+        <div class="rulebook-link">
+            <a href="https://docs.google.com/document/d/1e7tpmfmSgFi_nx1yt-Mx1Oz1AVY67NyjiKJUIQEIhy8/edit?usp=sharing" target="_blank">
+                📖 Current Rulebook
+            </a>
+        </div>
+
+        <div id="section-current-rules" class="current-rules">
+            <div class="current-rules-title">Current Ruleset</div>
+            <div class="rules-grid">
+                <div class="rules-group">
+                    <div class="rules-group-title">League Structure</div>
+                    <ul>
+                        <li><strong>10 teams</strong>, ESPN platform</li>
+                        <li>Communication via <strong>Discord</strong></li>
+                        <li><strong>14-week</strong> regular season</li>
+                        <li>3-week playoffs, <strong>6 teams</strong> qualify</li>
+                        <li>Top 2 seeds receive a <strong>first-round bye</strong></li>
+                    </ul>
+                </div>
+                <div class="rules-group">
+                    <div class="rules-group-title">Buy-In &amp; Payouts</div>
+                    <ul>
+                        <li><strong>$50</strong> per owner per season</li>
+                        <li>1st place: <strong>$210</strong></li>
+                        <li>2nd place: <strong>$100</strong></li>
+                        <li>3rd place: <strong>$50</strong></li>
+                        <li>Weekly high score: <strong>$10</strong></li>
+                        <li>Consolation dollar: <strong>$1</strong> to 2nd-highest scorer if they lost</li>
+                    </ul>
+                </div>
+                <div class="rules-group">
+                    <div class="rules-group-title">Scoring</div>
+                    <ul>
+                        <li><strong>Half-PPR</strong> scoring (0.5 pts per reception)</li>
+                        <li>Fractional / decimal scoring enabled</li>
+                        <li>Missed PATs: <strong>−0.5 pts</strong></li>
+                        <li>Forced fumble: <strong>1 pt</strong></li>
+                        <li>Recovered fumble: <strong>2 pts</strong></li>
+                    </ul>
+                </div>
+                <div class="rules-group">
+                    <div class="rules-group-title">Keepers</div>
+                    <ul>
+                        <li><strong>1 keeper</strong> per team</li>
+                        <li>Drafted players kept at their draft round</li>
+                        <li>Waiver pickups kept at <strong>ADP + 1 round</strong></li>
+                        <li>Max <strong>3 seasons</strong> rostered</li>
+                        <li>Cannot keep 1st-round picks</li>
+                        <li>Duplicate round values: forfeit the round above</li>
+                        <li>Player contracts reset after trades</li>
+                    </ul>
+                </div>
+                <div class="rules-group">
+                    <div class="rules-group-title">Draft</div>
+                    <ul>
+                        <li>Snake draft, <strong>60-second</strong> pick clock</li>
+                        <li>Lottery: every team gets 2 balls</li>
+                        <li>10th: 48 balls · 9th: 22 · 8th: 11 · 7th: 7</li>
+                        <li>Draft pick trading <strong>enabled</strong></li>
+                    </ul>
+                </div>
+                <div class="rules-group">
+                    <div class="rules-group-title">Rules &amp; Admin</div>
+                    <ul>
+                        <li>Trade deadline: <strong>beginning of Week 13</strong></li>
+                        <li>ESPN "undroppable" restrictions <strong>disabled</strong></li>
+                        <li><strong>2 IR slots</strong></li>
+                        <li>IR violation ladder: 1st = 12th round pick, 2nd = 8th, 3rd = 5th</li>
+                        <li>Inactive manager: commissioner may set lineup after 2 weeks</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Legend -->
+        <div class="legend">
+            <div class="legend-item"><div class="legend-dot" style="background:#00d4ff;"></div>Founding / Platform</div>
+            <div class="legend-item"><div class="legend-dot" style="background:#ffd700;"></div>Buy-In Change</div>
+            <div class="legend-item"><div class="legend-dot" style="background:#00ff64;"></div>Payout Change</div>
+            <div class="legend-item"><div class="legend-dot" style="background:#ffa032;"></div>Teams / Owners</div>
+            <div class="legend-item"><div class="legend-dot" style="background:#ff5050;"></div>Scoring / Format</div>
+            <div class="legend-item"><div class="legend-dot" style="background:#b464ff;"></div>Draft</div>
+            <div class="legend-item"><div class="legend-dot" style="background:rgba(255,255,255,0.25);"></div>Admin / Minor</div>
+        </div>
+
+        <!-- ─── 2025 ─── -->
+        <div id="section-2025" class="year-section">
+            <div class="year-header">2025</div>
+            <ul class="change-list">
+                <li class="change-item cat-draft">
+                    <span class="label lbl-draft">Draft</span>
+                    Lottery modified: every team gets 2 balls. 10th place gets 48, 9th gets 22, 8th gets 11, 7th gets 7. Remaining teams get 2 each.
+                </li>
+                <li class="change-item cat-rule">
+                    <span class="label lbl-rule">IR</span>
+                    IR violation penalty ladder introduced: 1st offense = loss of 12th round pick, 2nd = 8th round, 3rd = 5th round.
+                </li>
+                <li class="change-item cat-admin">
+                    <span class="label lbl-admin">Schedule</span>
+                    Rivalry week removed from schedule.
+                </li>
+            </ul>
+        </div>
+
+        <!-- ─── 2024 ─── -->
+        <div id="section-2024" class="year-section">
+            <div class="year-header">2024</div>
+            <ul class="change-list">
+                <li class="change-item cat-admin">
+                    <span class="label lbl-admin">Rules</span>
+                    No league changes in 2024.
+                </li>
+            </ul>
+        </div>
+
+        <!-- ─── 2023 ─── -->
+        <div id="section-2023" class="year-section">
+            <div class="year-header">2023</div>
+            <ul class="change-list">
+                <li class="change-item cat-roster">
+                    <span class="label lbl-roster">Teams</span>
+                    League expanded from 8 → <strong>10 teams</strong>.
+                    <div class="owner-note">👋 Joe and John join the league.</div>
+                </li>
+                <li class="change-item cat-payout">
+                    <span class="label lbl-payout">Payouts</span>
+                    Playoffs increased: $210 / $100 / $50. Weekly high score increased $5 → <strong>$10</strong>. Consolation dollar unchanged at $1.
+                </li>
+                <li class="change-item cat-rule">
+                    <span class="label lbl-rule">Playoffs</span>
+                    Switched to 3-week format with 6 teams; top 2 seeds receive a first-round bye.
+                </li>
+                <li class="change-item cat-admin">
+                    <span class="label lbl-admin">Schedule</span>
+                    Rivalry week added to regular season schedule.
+                </li>
+                <li class="change-item cat-admin">
+                    <span class="label lbl-admin">Trades</span>
+                    Trade deadline pushed to the beginning of Week 13.
+                </li>
+            </ul>
+        </div>
+
+        <!-- ─── 2022 ─── -->
+        <div id="section-2022" class="year-section">
+            <div class="year-header">2022</div>
+            <ul class="change-list">
+                <li class="change-item cat-admin">
+                    <span class="label lbl-admin">Rules</span>
+                    No league changes in 2022.
+                </li>
+            </ul>
+        </div>
+
+        <!-- ─── 2021 ─── -->
+        <div id="section-2021" class="year-section">
+            <div class="year-header">2021</div>
+            <ul class="change-list">
+                <li class="change-item cat-buyin">
+                    <span class="label lbl-buyin">Buy-In</span>
+                    Increased $40 → <strong>$50</strong> per owner.
+                </li>
+                <li class="change-item cat-payout">
+                    <span class="label lbl-payout">Payouts</span>
+                    Playoffs increased: $185 / $90 / $50.
+                </li>
+                <li class="change-item cat-rule">
+                    <span class="label lbl-rule">Schedule</span>
+                    Regular season extended by 1 week after the NFL added Week 18. Final week of playoffs now week 17.
+                </li>
+                <li class="change-item cat-rule">
+                    <span class="label lbl-rule">Scoring</span>
+                    Forced fumble = 1 pt · Recovered fumble = 2 pts.
+                </li>
+                <li class="change-item cat-rule">
+                    <span class="label lbl-rule">Keepers</span>
+                    Waiver keeper rules unified: all waiver pickups (drafted or undrafted) kept for ADP+1.
+                </li>
+                <li class="change-item cat-admin">
+                    <span class="label lbl-admin">IR</span>
+                    Covid IR slot converted to a general-purpose 2nd IR slot.
+                </li>
+                <li class="change-item cat-draft">
+                    <span class="label lbl-draft">Draft</span>
+                    Draft order adjusted so mid-round picks are treated as worst.
+                </li>
+            </ul>
+        </div>
+
+        <!-- ─── 2020 ─── -->
+        <div id="section-2020" class="year-section">
+            <div class="year-header">2020</div>
+            <ul class="change-list">
+                <li class="change-item cat-buyin">
+                    <span class="label lbl-buyin">Buy-In</span>
+                    Increased to <strong>$41.25</strong> to account for 2 additional weeks of weekly high score payouts.
+                </li>
+                <li class="change-item cat-payout">
+                    <span class="label lbl-payout">Payouts</span>
+                    <strong>Consolation dollar introduced:</strong> $1 to the 2nd-highest scorer each week — but only if they lost.
+                </li>
+                <li class="change-item cat-rule">
+                    <span class="label lbl-rule">Playoffs</span>
+                    Switched from 2-week to <strong>1-week playoff format</strong>.
+                </li>
+                <li class="change-item cat-rule">
+                    <span class="label lbl-rule">Scoring</span>
+                    Forced fumble = 1.5 pts · Recovered fumble = 1.5 pts.
+                </li>
+                <li class="change-item cat-admin">
+                    <span class="label lbl-admin">Waivers</span>
+                    ESPN's "undroppable player" restrictions disabled.
+                </li>
+                <li class="change-item cat-admin">
+                    <span class="label lbl-admin">Keepers</span>
+                    Player contracts reset after trades.
+                </li>
+                <li class="change-item cat-admin">
+                    <span class="label lbl-admin">IR</span>
+                    Covid IR slot added.
+                </li>
+            </ul>
+        </div>
+
+        <!-- ─── 2019 ─── -->
+        <div id="section-2019" class="year-section">
+            <div class="year-header">2019</div>
+            <ul class="change-list">
+                <li class="change-item cat-founding">
+                    <span class="label lbl-founding">Platform</span>
+                    League communication switched from <strong>Facebook → Discord</strong>.
+                </li>
+                <li class="change-item cat-rule">
+                    <span class="label lbl-rule">Keepers</span>
+                    Keeper count reduced from 2 → <strong>1</strong>. Waiver pickups kept for ADP+1 (previously Round 15).
+                </li>
+                <li class="change-item cat-rule">
+                    <span class="label lbl-rule">Scoring</span>
+                    Missed PATs = −0.5 pts.
+                </li>
+                <li class="change-item cat-admin">
+                    <span class="label lbl-admin">Trades</span>
+                    Trade deadline set to just after Week 10.
+                </li>
+                <li class="change-item cat-draft">
+                    <span class="label lbl-draft">Draft</span>
+                    Pick time increased back to 60 seconds.
+                </li>
+            </ul>
+        </div>
+
+        <!-- ─── 2018 ─── -->
+        <div id="section-2018" class="year-section">
+            <div class="year-header">2018</div>
+            <ul class="change-list">
+                <li class="change-item cat-roster">
+                    <span class="label lbl-roster">Teams</span>
+                    8 teams
+                    <div class="owner-note">Brian is forced into retirement and is replaced by Johnny A.</div>
+                </li>
+                <li class="change-item cat-rule">
+                    <span class="label lbl-rule">Scoring</span>
+                    Switched to <strong>half-PPR</strong> scoring.
+                </li>
+                <li class="change-item cat-rule">
+                    <span class="label lbl-rule">Keepers</span>
+                    Complex keeper rules: drafted players kept by round, dropped players kept in Rounds 5 / 10 / 15 based on original draft round.
+                </li>
+                <li class="change-item cat-draft">
+                    <span class="label lbl-draft">Draft</span>
+                    Draft pick trading enabled. Pick time reduced to 45 seconds.
+                </li>
+                <li class="change-item cat-admin">
+                    <span class="label lbl-admin">IR</span>
+                    1 IR slot added.
+                </li>
+                <li class="change-item cat-admin">
+                    <span class="label lbl-admin">Trades</span>
+                    Trade deadline removed.
+                </li>
+            </ul>
+        </div>
+
+        <!-- ─── 2017 ─── -->
+        <div id="section-2017" class="year-section">
+            <div class="year-header">2017</div>
+            <ul class="change-list">
+                <li class="change-item cat-roster">
+                    <span class="label lbl-roster">Teams</span>
+                    8 teams
+                    <div class="owner-note">Brandon retires and is replaced by Ben.</div>
+                </li>
+                <li class="change-item cat-rule">
+                    <span class="label lbl-rule">Keepers</span>
+                    Waiver pickups can be kept for 15th round pick.
+                </li>
+            </ul>
+        </div>
+
+        <!-- ─── 2016 ─── -->
+        <div id="section-2016" class="year-section">
+            <div class="year-header">2016</div>
+            <ul class="change-list">
+                <li class="change-item cat-founding">
+                    <span class="label lbl-founding">Major</span>
+                    <strong>Formal rulebook introduced</strong> — the league's first written constitution. It is highly respected.
+                </li>
+                <li class="change-item cat-roster">
+                    <span class="label lbl-roster">Teams</span>
+                    League contracted from 10 → <strong>8 teams</strong>.
+                    <div class="owner-note">Loren and Rob retire.</div>
+                </li>
+                <li class="change-item cat-buyin">
+                    <span class="label lbl-buyin">Buy-In</span>
+                    Increased to <strong>$40</strong> per owner.
+                </li>
+                <li class="change-item cat-payout">
+                    <span class="label lbl-payout">Payouts</span>
+                    Playoffs: $150 / $70 / $40 · $5/week high score
+                </li>
+                <li class="change-item cat-draft">
+                    <span class="label lbl-draft">Draft</span>
+                    Lottery introduced: 8th gets 55 balls, 7th gets 25, 6th gets 12, 5th gets 8. Others get 2 each.
+                </li>
+                <li class="change-item cat-rule">
+                    <span class="label lbl-rule">Keepers</span>
+                    Keepers introduced: 2 per team, max 3 seasons rostered. Cannot keep 1st-round picks. Duplicate round values forfeit the round above.
+                </li>
+                <li class="change-item cat-admin">
+                    <span class="label lbl-admin">Trades</span>
+                    Trade deadline formally introduced.
+                </li>
+            </ul>
+        </div>
+
+        <!-- ─── 2015 ─── -->
+        <div id="section-2015" class="year-section">
+            <div class="year-header">2015</div>
+            <ul class="change-list">
+                <li class="change-item cat-roster">
+                    <span class="label lbl-roster">Teams</span>
+                    League drops from 12 to 10 teams.
+                    <div class="owner-note">Danielle, Keegan, and Bob retire. Bob takes an advisory role on Carl's team. 👋 Rob joins.</div>
+                </li>
+                <li class="change-item cat-rule">
+                    <span class="label lbl-rule">Scoring</span>
+                    <strong>Fractional / decimal scoring</strong> implemented.
+                </li>
+                <li class="change-item cat-buyin">
+                    <span class="label lbl-buyin">Buy-In</span>
+                    Increased to <strong>$26</strong> per owner.
+                </li>
+                <li class="change-item cat-payout">
+                    <span class="label lbl-payout">Payouts</span>
+                    Playoffs: $109 / $60 / $31. <strong>Weekly high score prize introduced:</strong> $5 paid to the highest scorer each week (12-week season).
+                </li>
+                <li class="change-item cat-admin">
+                    <span class="label lbl-admin">Inactive</span>
+                    League manager may set lineup for inactive members after 2 weeks (from current roster only).
+                </li>
+                <li class="change-item cat-draft">
+                    <span class="label lbl-draft">Draft</span>
+                    Pick time set to 60 seconds.
+                </li>
+            </ul>
+        </div>
+
+        <!-- ─── 2014 ─── -->
+        <div id="section-2014" class="year-section">
+            <div class="year-header">2014</div>
+            <ul class="change-list">
+                <li class="change-item cat-founding">
+                    <span class="label lbl-founding">Name</span>
+                    League renamed to <strong>"Monday Morning Tears"</strong>.
+                </li>
+                <li class="change-item cat-roster">
+                    <span class="label lbl-roster">Teams</span>
+                    12 teams.
+                    <div class="owner-note">Mike H &amp; Jim R retire. 👋 Ray, Brian, Brandon, and Bob join the league.</div>
+                </li>
+                <li class="change-item cat-buyin">
+                    <span class="label lbl-buyin">Buy-In</span>
+                    $5 per owner (first year with a buy-in).
+                </li>
+                <li class="change-item cat-payout">
+                    <span class="label lbl-payout">Payouts</span>
+                    Playoffs: $35 / $15 / $10 (unconfirmed).
+                </li>
+            </ul>
+        </div>
+
+        <!-- ─── 2013 ─── -->
+        <div id="section-2013" class="year-section">
+            <div class="year-header">2013 — League Founded</div>
+            <ul class="change-list">
+                <li class="change-item cat-founding">
+                    <span class="label lbl-founding">Founded</span>
+                    League created as <strong>"Madame DeRuiter's Pauvre Bebes"</strong>
+                </li>
+                <li class="change-item cat-roster">
+                    <span class="label lbl-roster">Teams</span>
+                    10 teams.
+                    <div class="owner-note">Bill, Mike, Andy, Carl, Phil, Loren, Danielle, Keegan, Jim R, Mike H</div>
+                </li>
+                <li class="change-item cat-founding">
+                    <span class="label lbl-founding">Platform</span>
+                    Facebook group used for league communication and trash talk.
+                </li>
+                <li class="change-item cat-buyin">
+                    <span class="label lbl-buyin">Buy-In</span>
+                    No buy-in/payout — bragging rights only.
+                </li>
+                <li class="change-item cat-rule">
+                    <span class="label lbl-rule">Scoring</span>
+                    Standard scoring with bonuses.
+                </li>
+                <li class="change-item cat-admin">
+                    <span class="label lbl-admin">Schedule</span>
+                    Season started in Week 2 of the NFL calendar.
+                </li>
+            </ul>
+        </div>
+
+        <div id="section-espn-api" class="api-changes">
+            <div class="api-changes-title">Scoring &amp; Settings History (ESPN API)</div>
+            <div class="api-changes-subtitle">Year-over-year changes detected from ESPN's league settings — most recent first</div>
+            <div id="api-changes-container"><div class="loading-msg">Loading...</div></div>
+        </div>
+
+    </div>
+
+    <script>
+        fetch('output/settings_history.json')
+            .then(r => r.json())
+            .then(data => {
+                const container = document.getElementById('api-changes-container');
+                if (!data || !data.length) {
+                    container.innerHTML = '<div class="loading-msg">No settings history available.</div>';
+                    return;
+                }
+                const sorted = [...data].sort((a, b) => b.year - a.year);
+                container.innerHTML = `<div class="api-years-grid">${sorted.map(yearData => `
+                    <div class="api-year-block">
+                        <div class="api-year-label">${yearData.year}</div>
+                        ${yearData.changes.length
+                            ? yearData.changes.map(c => `<div class="api-change-item">${c}</div>`).join('')
+                            : '<div class="api-change-item no-change">No detected changes</div>'}
+                    </div>
+                `).join('')}</div>`;
+            })
+            .catch(() => {
+                document.getElementById('api-changes-container').innerHTML =
+                    '<div class="loading-msg">Run the data collector to populate this section.</div>';
+            });
+    </script>
+</body>
+</html>

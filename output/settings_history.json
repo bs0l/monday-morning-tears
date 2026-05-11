@@ -1,0 +1,124 @@
+[
+  {
+    "year": 2013,
+    "changes": [
+      "League founded \u2014 10 teams, 15-week regular season",
+      "Divisions: 2 division(s): East, West",
+      "Draft: SNAKE, 90s per pick, pick trading disabled",
+      "Roster: 7 bench slots, 0 IR slot(s)",
+      "Undroppable player list: enabled",
+      "Trade deadline: Nov 20, 2013",
+      "Scoring: 54 active rules"
+    ]
+  },
+  {
+    "year": 2014,
+    "changes": [
+      "Teams: 10 \u2192 12",
+      "Regular season: 15 \u2192 13 weeks",
+      "Playoff format: 1-week matchups \u2192 2-week matchups",
+      "Divisions: 2 division(s): East, West \u2192 4 division(s): Redeemers, Has-Beens, Extras, Noobs",
+      "Draft pick timer: 90s \u2192 60s",
+      "Trade deadline: Nov 20, 2013 \u2192 Nov 19, 2014",
+      "Scoring added \u2014 Every 10 pass completions (+1 pts)",
+      "Scoring removed (4 rules) \u2014 Every 5 pass completions (was +1 pts), 50+ yard TD pass bonus (was +1 pts), 400+ yard passing game bonus (was +2 pts), 200+ yard receiving game bonus (was +2 pts)",
+      "Scoring changed \u2014 200+ yard rushing game bonus: +2 \u2192 +1 pts"
+    ]
+  },
+  {
+    "year": 2015,
+    "changes": [
+      "Teams: 12 \u2192 10",
+      "Regular season: 13 \u2192 12 weeks",
+      "Divisions: 4 division(s): Redeemers, Has-Beens, Extras, Noobs \u2192 1 division(s): Fantasy Footbawlers",
+      "Trade deadline: Nov 19, 2014 \u2192 none",
+      "Scoring added (3 rules) \u2014 Passing Yards (+0.04 pts), Rushing Yards (+0.1 pts), Receiving Yards (+0.1 pts)",
+      "Scoring removed (20 rules) \u2014 Every 25 passing yards (was +1 pts), Every 10 pass completions (was +1 pts), 300-399 yard passing game bonus (was +1 pts), Every 10 rushing yards (was +1 pts), Every 5 rush attempts (was +1 pts), 50+ yard TD rush bonus (was +1 pts), 100-199 yard rushing game bonus (was +1 pts), 200+ yard rushing game bonus (was +1 pts), 50+ yard TD rec bonus (was +1 pts), Every 10 receiving yards (was +1 pts), Every 5 receptions (was +1 pts), 100-199 yard receiving game bonus (was +1 pts), D/ST: <100 total yards allowed (was +5 pts), D/ST: 100-199 yards allowed (was +3 pts), D/ST: 200-299 yards allowed (was +2 pts), D/ST: 350-399 yards allowed (was -1 pts), D/ST: 400-449 yards allowed (was -3 pts), D/ST: 450-499 yards allowed (was -5 pts), D/ST: 500-549 yards allowed (was -6 pts), D/ST: 550+ yards allowed (was -7 pts)",
+      "Scoring changed \u2014 TD Pass: +6 \u2192 +4 pts"
+    ]
+  },
+  {
+    "year": 2016,
+    "changes": [
+      "Teams: 10 \u2192 8",
+      "Draft pick trading: enabled",
+      "IR slots: 0 \u2192 1",
+      "Bench slots: 7 \u2192 6",
+      "Trade deadline: none \u2192 Dec 01, 2016"
+    ]
+  },
+  {
+    "year": 2017,
+    "changes": [
+      "Trade deadline: Dec 01, 2016 \u2192 Nov 29, 2017"
+    ]
+  },
+  {
+    "year": 2018,
+    "changes": [
+      "Draft pick trading: disabled",
+      "Draft type: SNAKE \u2192 OFFLINE",
+      "Trade deadline: Nov 29, 2017 \u2192 Nov 28, 2018",
+      "Scoring added (3 rules) \u2014 Each Reception (PPR) (+0.5 pts), 2pt Return (+2 pts), 1pt Safety (+1 pts)"
+    ]
+  },
+  {
+    "year": 2019,
+    "changes": [
+      "Trade deadline: Nov 28, 2018 \u2192 Nov 13, 2019",
+      "Scoring added \u2014 Each PAT Missed (-0.5 pts)"
+    ]
+  },
+  {
+    "year": 2020,
+    "changes": [
+      "Regular season: 12 \u2192 14 weeks",
+      "Playoff format: 2-week matchups \u2192 1-week matchups",
+      "IR slots: 1 \u2192 2",
+      "Undroppable player list: disabled",
+      "Trade deadline: Nov 13, 2019 \u2192 Nov 18, 2020",
+      "Scoring added (3 rules) \u2014 D/ST: Each Fumble Forced (+1.5 pts), FG Made (50-59 yards) (+5 pts), FG Made (60+ yards) (+5 pts)",
+      "Scoring removed \u2014 FG Made (50+ yards, pre-split) (was +5 pts)",
+      "Scoring changed \u2014 D/ST: Each Fumble Recovered: +2 \u2192 +1.5 pts"
+    ]
+  },
+  {
+    "year": 2021,
+    "changes": [
+      "Regular season: 14 \u2192 15 weeks",
+      "Trade deadline: Nov 18, 2020 \u2192 Nov 24, 2021",
+      "Scoring changed (2 rules) \u2014 D/ST: Each Fumble Recovered: +1.5 \u2192 +2 pts, D/ST: Each Fumble Forced: +1.5 \u2192 +1 pts"
+    ]
+  },
+  {
+    "year": 2022,
+    "changes": [
+      "Keepers per team: 0 \u2192 1",
+      "Draft type: OFFLINE \u2192 SNAKE",
+      "Trade deadline: Nov 24, 2021 \u2192 Nov 23, 2022"
+    ]
+  },
+  {
+    "year": 2023,
+    "changes": [
+      "Teams: 8 \u2192 10",
+      "Regular season: 15 \u2192 14 weeks",
+      "Playoff teams: 4 \u2192 6",
+      "Trade deadline: Nov 23, 2022 \u2192 Nov 22, 2023"
+    ]
+  },
+  {
+    "year": 2024,
+    "changes": [
+      "Draft pick trading: enabled",
+      "Trade deadline: Nov 22, 2023 \u2192 Nov 20, 2024"
+    ]
+  },
+  {
+    "year": 2025,
+    "changes": [
+      "Draft pick trading: disabled",
+      "Trade deadline: Nov 20, 2024 \u2192 Nov 26, 2025"
+    ]
+  }
+]
