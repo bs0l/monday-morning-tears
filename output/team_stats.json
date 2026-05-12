@@ -15,12 +15,12 @@
     "teamName": "Bovine University Stampede",
     "abbrev": "STMP",
     "allTeamNames": [
-      "Barack Obama",
-      "Scott's ConsolationTots",
-      "Wade Boggs Memorial Team",
-      "Arian Foster 2013",
-      "Musconetcong Mantis Men",
       "Bovine University Stampede",
+      "Wade Boggs Memorial Team",
+      "Barack Obama",
+      "Arian Foster 2013",
+      "Scott's ConsolationTots",
+      "Musconetcong Mantis Men",
       "Why's This So Sticky?",
       "Bills New Team Name"
     ],
@@ -505,19 +505,19 @@
     "teamName": "Saquanda Strikes Back",
     "abbrev": "GRBG",
     "allTeamNames": [
-      "All Aboard The J Train",
-      "Colonel Sanders McCaffreys",
-      "Less Morals Than Mike Vick",
-      "Al Tuck And No Action",
-      "Yobogoya In the Bushes!",
       "Its Mike Vick In a Box!",
-      "Why Pass to Top Wide Receivers?",
-      "The Bell  Is Dead",
-      "I wanta Free the NewtMan! ",
       "Saquanda Strikes Back",
-      "Chase My Butker",
+      "Colonel Sanders McCaffreys",
+      "The Bell  Is Dead",
+      "Al Tuck And No Action",
+      "Why Pass to Top Wide Receivers?",
+      "All Aboard The J Train",
       "Saquonda Forever",
-      "Dollar Dollar Bills Y'all"
+      "Dollar Dollar Bills Y'all",
+      "I wanta Free the NewtMan! ",
+      "Chase My Butker",
+      "Yobogoya In the Bushes!",
+      "Less Morals Than Mike Vick"
     ],
     "playoffYears": [
       2016,
@@ -766,12 +766,12 @@
     "teamName": "Insane in the  Ukraine",
     "abbrev": "B00B",
     "allTeamNames": [
-      "Erection Protection",
-      "19 Problems and Covid is One",
       "Will Trade Wins For Alcohol",
-      "Insane in the  Ukraine",
-      "oh no its John Snooooooow",
       "I Do Respect  You Bro",
+      "19 Problems and Covid is One",
+      "oh no its John Snooooooow",
+      "Insane in the  Ukraine",
+      "Erection Protection",
       "The HipShire Hobbits"
     ],
     "playoffYears": [
@@ -1317,12 +1317,12 @@
     "teamName": "Skattebo's Ankle",
     "abbrev": "SA",
     "allTeamNames": [
-      "Duke Nukems",
-      "Pickle Ricks",
-      "Christmas Devil Krampus",
       "Skattebo's Ankle",
-      "Chef's choclate Salty Balls",
+      "Christmas Devil Krampus",
       "Hawk Tua",
+      "Pickle Ricks",
+      "Chef's choclate Salty Balls",
+      "Duke Nukems",
       "Go Fudge Yourselves",
       "Rafi Bombs"
     ],
@@ -1576,12 +1576,12 @@
     "teamName": "Taylor and Travis Swift \ud83d\udc51",
     "abbrev": "CARL",
     "allTeamNames": [
-      "Taylor and Travis Swift \ud83d\udc51",
-      "Greatest of All Time",
-      "Benching the  Whole Team",
-      "Pussy Power",
       "Taylor Swift ",
-      "Duckman Kowalski"
+      "Pussy Power",
+      "Greatest of All Time",
+      "Duckman Kowalski",
+      "Taylor and Travis Swift \ud83d\udc51",
+      "Benching the  Whole Team"
     ],
     "playoffYears": [
       2016,
@@ -2085,8 +2085,8 @@
     "abbrev": "REXY",
     "allTeamNames": [
       "Rex Grossman Fan Club",
-      "Weenie Hut Jr's",
-      "Salty Spitoon"
+      "Salty Spitoon",
+      "Weenie Hut Jr's"
     ],
     "playoffYears": [
       2016,
@@ -2510,14 +2510,14 @@
     "abbrev": "Clou",
     "allTeamNames": [
       "Chubb Basshole",
-      "The Recycling Ben",
-      "The Mixon Administration ",
-      "We played Week 7, 8 and 13",
       "Just a Chubb Tucker",
-      "Joe Burrow Tiger King",
       "Strouds in the Clouds",
       "Mail Fairy",
-      "Two Girls One Kupp"
+      "The Recycling Ben",
+      "The Mixon Administration ",
+      "Joe Burrow Tiger King",
+      "Two Girls One Kupp",
+      "We played Week 7, 8 and 13"
     ],
     "playoffYears": [
       2018,
@@ -2716,11 +2716,11 @@
     "teamName": "All You Need is Love",
     "abbrev": "RAD",
     "allTeamNames": [
-      "RADrigo Is My Homeboy",
+      "All You Need is Love",
+      "Hubba Chubba",
       "Goodnight Again My Sweet Prince",
       "Davante's Inferno",
-      "All You Need is Love",
-      "Hubba Chubba"
+      "RADrigo Is My Homeboy"
     ],
     "playoffYears": [
       2024,
@@ -2905,8 +2905,8 @@
     "abbrev": "Yup",
     "allTeamNames": [
       "Bye Week",
-      "Loop, There it is!",
-      "Bye Week Part 2"
+      "Bye Week Part 2",
+      "Loop, There it is!"
     ],
     "playoffYears": [
       2025
@@ -3026,8 +3026,8 @@
     "teamName": "Paintin Peyton",
     "abbrev": "CRWD",
     "allTeamNames": [
-      "Paintin Peyton",
-      "Peyton the Professor"
+      "Peyton the Professor",
+      "Paintin Peyton"
     ],
     "playoffYears": [],
     "seasonsPlayed": 3,
