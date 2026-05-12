@@ -223,7 +223,6 @@
         }
         .score-row--high { border-left: 3px solid var(--electric-blue); }
         .score-row--low  { border-left: 3px solid #ff6b6b; }
-
         .score-rank {
             color: var(--gold);
             font-weight: 700;
@@ -235,11 +234,12 @@
             flex: 1;
             min-width: 0;
             font-size: 0.95rem;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
         }
-        .score-team-name { color: var(--text-secondary); font-size: 0.85rem; }
+        .score-team-name {
+            display: block;
+            color: var(--text-secondary);
+            font-size: 0.75rem;
+        }
         .score-pts {
             font-family: 'Bebas Neue', sans-serif;
             font-size: 1.4rem;
@@ -256,87 +256,92 @@
             min-width: 44px;
         }
 
-        @media (max-width: 768px) {
-            .score-team-name { display: none; }  /* hide team name on phones */
-            .score-owner { font-size: 0.88rem; }
-            .score-pts { font-size: 1.2rem; }
-            .score-row { padding: 9px 10px; gap: 7px; }
-            .score-rank { min-width: 24px; font-size: 0.82rem; }
-            .score-week { font-size: 0.75rem; min-width: 38px; }
-        }
-
-        /* ── Hamburger nav ── */
+        /* ── Pinned hamburger button (always rendered, hidden on desktop) ── */
         .nav-toggle {
             display: none;
-            background: rgba(0, 212, 255, 0.1);
-            border: 2px solid var(--electric-blue);
-            border-radius: 10px;
+            position: fixed;
+            top: 14px;
+            right: 14px;
+            z-index: 1000;
+            align-items: center;
+            gap: 8px;
+            padding: 9px 14px;
+            border-radius: 8px;
+            background: rgba(10, 14, 39, 0.92);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1.5px solid var(--electric-blue);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.4);
             color: var(--text);
-            padding: 10px 18px;
+            font-family: 'Work Sans', sans-serif;
             font-size: 0.9rem;
             font-weight: 600;
-            font-family: 'Work Sans', sans-serif;
             cursor: pointer;
-            letter-spacing: 0.5px;
-            width: 100%;
-            text-align: left;
-            display: none;
-            align-items: center;
-            justify-content: space-between;
         }
         .nav-toggle .chevron {
-            transition: transform 0.25s ease;
             font-style: normal;
+            transition: transform 0.25s ease;
         }
         .nav-toggle.open .chevron { transform: rotate(180deg); }
-        nav.collapsed { display: none; }
 
         @media (max-width: 768px) {
             body { padding: 12px; }
-
             h1 { font-size: 2rem; }
-
-            header {
-                padding: 16px 14px;
-                margin-bottom: 14px;
-                border-radius: 12px;
-            }
-
+            header { padding: 16px 48px; margin-bottom: 14px; border-radius: 12px; }
             .subtitle { font-size: 1rem; }
             .metadata { font-size: 0.78rem; margin-top: 8px; }
 
-            /* Hamburger */
-            .nav-toggle { display: flex; margin-bottom: 8px; }
-            nav {
+            /* Show hamburger button */
+            .nav-toggle { display: flex; }
+
+            /* Slide-in nav panel */
+            nav#mainNav {
+                position: fixed;
+                top: 0;
+                right: 0;
+                z-index: 999;
+                width: 220px;
+                height: 100dvh;
+                background: rgba(10, 14, 39, 0.97);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                border-left: 2px solid var(--electric-blue);
+                padding: 70px 16px 24px;
                 flex-direction: column;
-                gap: 6px;
-                margin-bottom: 14px;
+                gap: 8px;
+                overflow-y: auto;
+                transition: transform 0.25s ease;
+                transform: translateX(0);
+                /* override desktop flex-wrap/justify */
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                margin-bottom: 0;
             }
-            nav a {
-                padding: 10px 16px;
-                font-size: 0.9rem;
-                border-radius: 8px;
+            nav#mainNav.collapsed {
+                transform: translateX(110%);
             }
+            nav#mainNav a { padding: 10px 16px; font-size: 0.9rem; border-radius: 8px; }
 
             /* page-nav pills */
-            .page-nav { gap: 5px; margin-bottom: 18px; }
+            .page-nav { gap: 5px; margin-bottom: 10px; }
             .page-nav a { padding: 5px 10px; font-size: 0.75rem; }
 
             /* stat cards — 2-col compact grid */
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 10px;
-                margin-bottom: 24px;
-            }
-            .stat-card {
-                padding: 14px 12px;
-                border-radius: 10px;
-            }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 24px; }
+            .stat-card { padding: 14px 12px; border-radius: 10px; }
             .stat-icon { font-size: 1.6rem; margin-bottom: 6px; }
             .stat-title { font-size: 0.72rem; margin-bottom: 6px; letter-spacing: 0.5px; }
             .stat-value { font-size: 1.8rem; margin-bottom: 8px; }
             .stat-holder { font-size: 0.95rem; margin-bottom: 6px; }
             .stat-details { font-size: 0.8rem; line-height: 1.4; }
+
+            /* score rows */
+            .score-team-name { font-size: 0.68rem; }
+            .score-owner { font-size: 0.88rem; }
+            .score-pts { font-size: 1.2rem; }
+            .score-row { padding: 9px 10px; gap: 7px; }
+            .score-rank { min-width: 24px; font-size: 0.82rem; }
+            .score-week { font-size: 0.75rem; min-width: 38px; }
         }
 
         @media (max-width: 400px) {
@@ -348,24 +353,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="navOverlay" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:998;"></div>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">
+        ☰</i>
+    </button>
+
     <div class="container">
         <header>
             <h1>Monday Morning Tears Stats</h1>
             <div class="metadata" id="metadata-info">Loading...</div>
         </header>
 
-        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">
-            ☰ Navigation <i class="chevron">▾</i>
-        </button>
-        <nav id="mainNav" class="collapsed">
+        <nav id="mainNav">
             <a href="index.html" class="active">All-Time Records</a>
             <a href="regular-season.html">Regular Season</a>
             <a href="teams.html">Owner Stats</a>
-			<a href="head-to-head.html">Head-to-Head</a>
-			<a href="season-stats.html">Season Stats</a>
-			<a href="league-history.html">League History</a>
-			<!--<a href="rosters.html">Rosters</a>-->
-			<!--<a href="roasts.html">Roasts</a>-->
+            <a href="head-to-head.html">Head-to-Head</a>
+            <a href="season-stats.html">Season Stats</a>
+            <a href="league-history.html">League History</a>
+            <!--<a href="rosters.html">Rosters</a>-->
+            <!--<a href="roasts.html">Roasts</a>-->
         </nav>
 
         <div class="page-nav">
@@ -373,6 +381,9 @@
             <a href="#section-top-high">⬆️ Top 10 High Scores</a>
             <a href="#section-top-low">⬇️ Top 10 Low Scores</a>
         </div>
+        <p style="text-align:center; color:var(--text-secondary); font-size:0.82rem; margin-bottom:24px; opacity:0.8;">
+            <i>All stats on this page include playoff games.</i>
+        </p>
 
         <div id="section-stats" class="section-anchor"></div>
         <div id="stats-container">
@@ -570,7 +581,7 @@
 							<span class="score-rank">#${index + 1}</span>
 							<span class="score-owner">
 								<strong>${score.owner || score.team}</strong>
-								<span class="score-team-name"> — ${score.team}</span>
+								<span class="score-team-name">${score.team}</span>
 							</span>
 							<span class="score-pts score-pts--high">${score.score.toFixed(2)}</span>
 							<span class="score-week">
@@ -589,7 +600,7 @@
 							<span class="score-rank">#${index + 1}</span>
 							<span class="score-owner">
 								<strong>${score.owner || score.team}</strong>
-								<span class="score-team-name"> — ${score.team}</span>
+								<span class="score-team-name">${score.team}</span>
 							</span>
 							<span class="score-pts score-pts--low">${score.score.toFixed(2)}</span>
 							<span class="score-week">
@@ -602,40 +613,72 @@
 			`;
         }
 
-        // ── Hamburger nav toggle (mobile only) ──────────────────────────────────
+        // ── Hamburger nav + overlay (mobile only) ───────────────────────────────
         (function () {
-            const btn = document.getElementById('navToggle');
-            const nav = document.getElementById('mainNav');
-            if (!btn || !nav) return;
+            const btn     = document.getElementById('navToggle');
+            const nav     = document.getElementById('mainNav');
+            const overlay = document.getElementById('navOverlay');
+            if (!btn || !nav || !overlay) return;
 
             function isMobile() { return window.innerWidth <= 768; }
+
+            function closeNav() {
+                nav.classList.add('collapsed');
+                btn.classList.remove('open');
+                btn.setAttribute('aria-expanded', 'false');
+                overlay.style.display = 'none';
+            }
 
             function applyState() {
                 if (isMobile()) {
                     btn.style.display = 'flex';
-                    // keep whatever collapsed state we set
+                    // ensure nav starts collapsed on mobile
+                    if (!nav.classList.contains('collapsed')) {
+                        // leave it open if user opened it
+                    }
                 } else {
                     btn.style.display = 'none';
-                    nav.classList.remove('collapsed'); // always show on desktop
+                    nav.classList.remove('collapsed');
+                    overlay.style.display = 'none';
                 }
             }
 
             btn.addEventListener('click', function () {
-                const isCollapsed = nav.classList.toggle('collapsed');
-                btn.setAttribute('aria-expanded', String(!isCollapsed));
-                btn.classList.toggle('open', !isCollapsed);
+                const nowCollapsed = nav.classList.toggle('collapsed');
+                btn.setAttribute('aria-expanded', String(!nowCollapsed));
+                btn.classList.toggle('open', !nowCollapsed);
+                overlay.style.display = nowCollapsed ? 'none' : 'block';
             });
+
+            overlay.addEventListener('click', closeNav);
 
             // Start collapsed on mobile
             if (isMobile()) nav.classList.add('collapsed');
-            else nav.classList.remove('collapsed');
 
             applyState();
             window.addEventListener('resize', applyState);
         })();
 
+        // ── Back to top ─────────────────────────────────────────────────────────
+        (function () {
+            const btt = document.getElementById('backToTop');
+            if (!btt) return;
+            window.addEventListener('scroll', function () {
+                btt.style.display = window.scrollY > 300 ? 'block' : 'none';
+            });
+        })();
+
         // Load data when page loads
         loadData();
     </script>
+    <button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+        style="display:none; position:fixed; bottom:20px; right:20px; z-index:1001;
+               width:42px; height:42px; border-radius:50%;
+               border:2px solid var(--electric-blue);
+               background:rgba(10,14,39,0.92); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+               color:var(--electric-blue); font-size:1.2rem; cursor:pointer; line-height:1;
+               box-shadow:0 4px 16px rgba(0,212,255,0.3); transition:opacity 0.2s ease;">
+        ↑
+    </button>
 </body>
 </html>
