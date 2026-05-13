@@ -57,7 +57,6 @@
         .subtitle {
             font-size: 1.2rem;
             color: var(--text-secondary);
-            margin-bottom: 20px;
         }
 
         nav {
@@ -330,7 +329,89 @@
             color: var(--text-secondary);
         }
 
-        /* ── Mobile ── */
+        /* ── Pinned hamburger button ─────────────────────────────────────────── */
+        .nav-toggle {
+            display: none;
+            position: fixed;
+            top: 14px;
+            right: 14px;
+            z-index: 1000;
+            align-items: center;
+            padding: 9px 14px;
+            border-radius: 8px;
+            background: rgba(10, 14, 39, 0.92);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1.5px solid var(--electric-blue);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+            color: var(--text);
+            font-family: 'Work Sans', sans-serif;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        /* ── Focus / List mode toggle ────────────────────────────────────────── */
+        .view-toggle {
+            display: flex;
+            gap: 0;
+            border: 2px solid var(--electric-blue);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .view-toggle button {
+            padding: 10px 18px;
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            font-family: 'Work Sans', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .view-toggle button.active {
+            background: var(--electric-blue);
+            color: var(--dark-bg);
+        }
+        .view-toggle button:first-child { border-right: 1px solid rgba(0,212,255,0.3); }
+
+        /* Owner picker (focus mode) */
+        .owner-picker {
+            display: none;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .owner-picker.visible { display: flex; }
+        .owner-btn {
+            padding: 8px 16px;
+            background: rgba(0,212,255,0.08);
+            border: 1.5px solid rgba(0,212,255,0.35);
+            border-radius: 20px;
+            color: var(--text);
+            font-family: 'Work Sans', sans-serif;
+            font-size: 0.88rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .owner-btn:hover, .owner-btn.selected {
+            background: var(--electric-blue);
+            color: var(--dark-bg);
+            border-color: var(--electric-blue);
+        }
+
+        /* In focus mode, hide the grid and show single card */
+        .focus-mode .team-grid { display: none; }
+        .focus-card-wrapper {
+            display: none;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .focus-mode .focus-card-wrapper { display: block; }
+
+        /* ── Responsive ──────────────────────────────────────────────────────── */
         @media (max-width: 900px) {
             .team-grid {
                 grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -338,14 +419,37 @@
             }
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
             body { padding: 12px; }
-
-            h1 { font-size: 2.4rem; }
+            h1 { font-size: 2rem; }
+            header { padding: 16px 48px; margin-bottom: 14px; border-radius: 12px; }
             .subtitle { font-size: 1rem; }
-            header { padding: 20px 14px; margin-bottom: 28px; }
 
-            nav a { padding: 9px 14px; font-size: 0.88rem; }
+            .nav-toggle { display: flex; }
+
+            nav#mainNav {
+                position: fixed;
+                top: 0;
+                right: 0;
+                z-index: 999;
+                width: 220px;
+                height: 100dvh;
+                background: rgba(10, 14, 39, 0.97);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                border-left: 2px solid var(--electric-blue);
+                padding: 70px 16px 24px;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                gap: 8px;
+                overflow-y: auto;
+                transition: transform 0.25s ease;
+                transform: translateX(0);
+                margin-bottom: 0;
+            }
+            nav#mainNav.collapsed { transform: translateX(110%); }
+            nav#mainNav a { padding: 10px 16px; font-size: 0.9rem; border-radius: 8px; }
 
             .controls { gap: 10px; }
             .controls select, .controls label {
@@ -359,39 +463,23 @@
                 gap: 14px;
             }
 
-            .team-card {
-                padding: 18px 16px;
-            }
+            .team-card { padding: 18px 16px; }
 
-            .team-logo {
-                width: 44px;
-                height: 44px;
-                top: 12px;
-                right: 12px;
-            }
-
-            .team-name {
-                font-size: 1.2rem;
-                /* leave room for logo */
-                padding-right: 52px;
-            }
-
+            .team-logo { width: 44px; height: 44px; top: 12px; right: 12px; }
+            .team-name { font-size: 1.2rem; padding-right: 52px; }
             .team-abbrev { font-size: 0.82rem; }
 
             .stat-label { font-size: 0.82rem; }
             .stat-value { font-size: 0.9rem; }
             .record { font-size: 1.4rem; }
-
             .section-title { font-size: 0.95rem; margin: 14px 0 7px; }
 
             .yearly-grid {
                 grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
                 gap: 7px;
             }
-
             .year-pill { padding: 6px 4px; font-size: 0.78rem; }
             .year-record { font-size: 0.72rem; }
-
             .chart-container { height: 160px; margin: 12px 0; }
         }
     </style>
@@ -399,13 +487,16 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+    <div id="navOverlay" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:998;"></div>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">☰</button>
+
     <div class="container">
         <header>
             <h1>Owner Statistics</h1>
             <div class="subtitle">Career Records & Performance by Manager</div>
         </header>
 
-        <nav>
+        <nav id="mainNav">
             <a href="index.html">All-Time Records</a>
             <a href="regular-season.html">Regular Season</a>
             <a href="teams.html" class="active">Owner Stats</a>
@@ -417,6 +508,11 @@
         </nav>
 
         <div class="controls">
+            <div class="view-toggle">
+                <button id="btn-list" class="active" onclick="setViewMode('list')">☰ All</button>
+                <button id="btn-focus" onclick="setViewMode('focus')">👤 Individual</button>
+            </div>
+
             <select id="sort-select">
                 <option value="winPct">Sort by Win %</option>
                 <option value="totalWins">Sort by Total Wins</option>
@@ -439,23 +535,27 @@
             </label>
         </div>
 
+        <!-- Owner picker shown in focus mode -->
+        <div class="owner-picker" id="owner-picker"></div>
+
         <div id="teams-container">
-            <div class="loading">Loading team statistics...</div>
+            <div class="loading" id="metadata-info">Loading team statistics...</div>
         </div>
     </div>
 
     <script>
         let teamsData = [];
         let showInactive = false;
+        let currentSort = 'winPct';
+        let viewMode = 'list';       // 'list' | 'focus'
+        let focusOwner = null;
+        let chartInstances = {};     // track Chart.js instances to destroy on re-render
 
         async function loadData() {
             try {
                 const teamStats = await fetch('output/team_stats.json').then(r => r.json());
-                
                 teamsData = Object.values(teamStats);
-                
-                renderTeams('winPct');
-
+                renderTeams(currentSort);
             } catch (error) {
                 console.error('Error loading data:', error);
                 document.getElementById('teams-container').innerHTML = `
@@ -467,80 +567,124 @@
             }
         }
 
-        function renderTeams(sortBy) {
-            const container = document.getElementById('teams-container');
-            
-            // Filter teams based on active/inactive toggle
-            let filteredTeams = showInactive ? teamsData : teamsData.filter(t => t.isActive);
-            
-            // Sort teams
-            const sorted = [...filteredTeams].sort((a, b) => {
-                switch(sortBy) {
-                    case 'winPct':
-                        return b.overall.winPercentage - a.overall.winPercentage;
-                    case 'totalWins':
-                        return b.overall.wins - a.overall.wins;
-                    case 'totalLosses':
-                        return b.overall.losses - a.overall.losses;
-                    case 'championships':
-                        return b.championships - a.championships;
-                    case 'playoffApps':
-                        return b.playoffAppearances - a.playoffAppearances;
-                    case 'pointsFor':
-                        return b.totalPointsFor - a.totalPointsFor;
-                    case 'pointsAgainst':
-                        return b.totalPointsAgainst - a.totalPointsAgainst;
-                    case 'avgPoints':
-                        return b.avgPointsFor - a.avgPointsFor;
-                    case 'bestSeason':
-                        return (b.bestSeasonWinPct || 0) - (a.bestSeasonWinPct || 0);
-                    case 'worstSeason':
-                        return (a.worstSeasonWinPct || 1) - (b.worstSeasonWinPct || 1);
-                    case 'mostWinsSeason':
-                        return (b.mostWinsSeason || 0) - (a.mostWinsSeason || 0);
-                    case 'mostLossesSeason':
-                        return (b.mostLossesSeason || 0) - (a.mostLossesSeason || 0);
-                    case 'mostMoves':
-                        return (b.mostMovesSeason || 0) - (a.mostMovesSeason || 0);
-                    default:
-                        return 0;
-                }
-            });
+        // ── View mode ────────────────────────────────────────────────────────────
+        function setViewMode(mode) {
+            viewMode = mode;
+            document.getElementById('btn-list').classList.toggle('active', mode === 'list');
+            document.getElementById('btn-focus').classList.toggle('active', mode === 'focus');
 
-            container.innerHTML = `
-                <div class="team-grid">
-                    ${sorted.map(team => createTeamCard(team)).join('')}
-                </div>
-            `;
-            
-            // Create charts for each team
-            sorted.forEach(team => {
-                if (team.totalGames > 0) {
-                    createTeamChart(team);
+            const sortSelect = document.getElementById('sort-select');
+            const picker = document.getElementById('owner-picker');
+
+            if (mode === 'focus') {
+                sortSelect.style.display = 'none';
+                picker.classList.add('visible');
+                buildOwnerPicker();
+                // Select first owner if none selected
+                if (!focusOwner) {
+                    const first = getFilteredSorted()[0];
+                    if (first) selectOwner(first.owner);
+                } else {
+                    renderTeams(currentSort);
+                }
+            } else {
+                sortSelect.style.display = '';
+                picker.classList.remove('visible');
+                renderTeams(currentSort);
+            }
+        }
+
+        function buildOwnerPicker() {
+            const picker = document.getElementById('owner-picker');
+            const teams = getFilteredSorted();
+            picker.innerHTML = teams.map(t => `
+                <button class="owner-btn ${focusOwner === t.owner ? 'selected' : ''}"
+                        onclick="selectOwner('${t.owner.replace(/'/g, "\\'")}')">
+                    ${t.owner.split(' ')[0]}
+                </button>
+            `).join('');
+        }
+
+        function selectOwner(owner) {
+            focusOwner = owner;
+            // Update picker button states
+            document.querySelectorAll('.owner-btn').forEach(btn => {
+                btn.classList.toggle('selected', btn.textContent.trim() === owner.split(' ')[0]);
+            });
+            renderTeams(currentSort);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function getFilteredSorted() {
+            let teams = showInactive ? teamsData : teamsData.filter(t => t.isActive);
+            return [...teams].sort((a, b) => {
+                switch(currentSort) {
+                    case 'winPct':        return b.overall.winPercentage - a.overall.winPercentage;
+                    case 'totalWins':     return b.overall.wins - a.overall.wins;
+                    case 'totalLosses':   return b.overall.losses - a.overall.losses;
+                    case 'championships': return b.championships - a.championships;
+                    case 'playoffApps':   return b.playoffAppearances - a.playoffAppearances;
+                    case 'pointsFor':     return b.totalPointsFor - a.totalPointsFor;
+                    case 'pointsAgainst': return b.totalPointsAgainst - a.totalPointsAgainst;
+                    case 'avgPoints':     return b.avgPointsFor - a.avgPointsFor;
+                    case 'bestSeason':    return (b.bestSeasonWinPct || 0) - (a.bestSeasonWinPct || 0);
+                    case 'worstSeason':   return (a.worstSeasonWinPct || 1) - (b.worstSeasonWinPct || 1);
+                    case 'mostWinsSeason':   return (b.mostWinsSeason || 0) - (a.mostWinsSeason || 0);
+                    case 'mostLossesSeason': return (b.mostLossesSeason || 0) - (a.mostLossesSeason || 0);
+                    case 'mostMoves':     return (b.mostMovesSeason || 0) - (a.mostMovesSeason || 0);
+                    default: return 0;
                 }
             });
         }
 
-        let currentSort = 'winPct';
+        function renderTeams(sortBy) {
+            currentSort = sortBy;
+            const container = document.getElementById('teams-container');
+
+            // Destroy existing charts
+            Object.values(chartInstances).forEach(c => c.destroy());
+            chartInstances = {};
+
+            const sorted = getFilteredSorted();
+
+            if (viewMode === 'focus') {
+                // Ensure a valid owner is selected
+                if (!focusOwner || !sorted.find(t => t.owner === focusOwner)) {
+                    focusOwner = sorted[0]?.owner || null;
+                }
+                const team = sorted.find(t => t.owner === focusOwner);
+				container.innerHTML = team
+					? `<div style="max-width:700px;margin:0 auto;">${createTeamCard(team)}</div>`
+					: '<p style="text-align:center;color:var(--text-secondary)">No owner selected.</p>';
+            } else {
+                container.innerHTML = `
+                    <div class="team-grid">
+                        ${sorted.map(team => createTeamCard(team)).join('')}
+                    </div>
+                `;
+            }
+
+            // Draw charts
+            sorted.forEach(team => {
+                if (team.totalGames > 0) createTeamChart(team);
+            });
+        }
 
         function createTeamCard(team) {
-            if (!team.owner) {
-                console.error('Team missing owner field:', team);
-                return '<div class="stat-card"><div class="stat-row">Error: Missing owner data</div></div>';
-            }
-            
+            if (!team.owner) return '<div class="stat-card"><div class="stat-row">Error: Missing owner data</div></div>';
+
             const inactiveClass = team.isActive ? '' : 'inactive';
             const inactiveBadge = team.isActive ? '' : '<span class="inactive-badge">Inactive</span>';
-            
-            const currentStreak = team.currentStreak && team.currentStreak.type ? 
-                `<span class="streak ${team.currentStreak.type.toLowerCase()}">${team.currentStreak.type} ${team.currentStreak.length}</span>` :
-                '<span class="stat-value">—</span>';
 
-            const yearRange = team.foundedYear === team.lastActiveYear ? 
-                team.foundedYear : 
-                `${team.foundedYear}-${team.lastActiveYear}`;
+            const currentStreak = team.currentStreak && team.currentStreak.type
+                ? `<span class="streak ${team.currentStreak.type.toLowerCase()}">${team.currentStreak.type} ${team.currentStreak.length}</span>`
+                : '<span class="stat-value">—</span>';
 
-            const teamNamesDisplay = team.allTeamNames && team.allTeamNames.length > 1 
+            const yearRange = team.foundedYear === team.lastActiveYear
+                ? team.foundedYear
+                : `${team.foundedYear}-${team.lastActiveYear}`;
+
+            const teamNamesDisplay = team.allTeamNames && team.allTeamNames.length > 1
                 ? `<div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 5px;">Also known as: ${team.allTeamNames.filter(n => n !== team.teamName).join(', ')}</div>`
                 : '';
 
@@ -635,7 +779,7 @@
                         <span class="stat-label">Lowest Score</span>
                         <span class="stat-value">${team.lowestScore.toFixed(2)}</span>
                     </div>
-                    
+
                     <div class="section-title">Head-to-Head Records</div>
                     ${team.bestOpponent ? `
                         <div class="stat-row">
@@ -649,7 +793,7 @@
                             <span class="stat-value">${team.worstOpponentRecord} vs ${team.worstOpponent}</span>
                         </div>
                     ` : ''}
-                    
+
                     <div class="section-title">Season Records</div>
                     <div class="stat-row">
                         <span class="stat-label">Best Season</span>
@@ -659,7 +803,7 @@
                         <span class="stat-label">Worst Season</span>
                         <span class="stat-value ${currentSort === 'worstSeason' || currentSort === 'mostLossesSeason' ? 'highlight' : ''}">${team.worstSeasonWins}-${team.worstSeasonLosses} (${((team.worstSeasonWinPct || 0) * 100).toFixed(1)}%) - ${team.worstSeasonYear}</span>
                     </div>
-                    
+
                     <div class="section-title">Streaks</div>
                     <div class="stat-row">
                         <span class="stat-label">Longest Win Streak</span>
@@ -673,14 +817,14 @@
                         <span class="stat-label">Current Streak</span>
                         ${currentStreak}
                     </div>
-                    
+
                     ${team.mostMovesSeason !== null && team.mostMovesSeason !== undefined ? `
                         <div class="section-title">Transaction Activity</div>
                         <div class="stat-row">
                             <span class="stat-label">Most Moves (Season)</span>
                             <span class="stat-value ${currentSort === 'mostMoves' ? 'highlight' : ''}">
-                                <a href="https://fantasy.espn.com/football/league/standings?leagueId=1483079&seasonId=${team.mostMovesSeasonYear}" 
-                                   target="_blank" 
+                                <a href="https://fantasy.espn.com/football/league/standings?leagueId=1483079&seasonId=${team.mostMovesSeasonYear}"
+                                   target="_blank"
                                    style="color: ${currentSort === 'mostMoves' ? 'var(--electric-blue)' : 'var(--text)'}; text-decoration: none;">
                                     ${team.mostMovesSeason} (${team.mostMovesSeasonYear})
                                 </a>
@@ -691,7 +835,7 @@
                             <span class="stat-value">${team.totalTrades || 0}</span>
                         </div>
                     ` : ''}
-                    
+
                     ${team.mostLoyalPlayer ? `
                         <div class="section-title">"I Wish I Knew How to Quit You"</div>
                         <div class="stat-row">
@@ -720,16 +864,19 @@
 
         function createTeamChart(team) {
             if (!team.yearlyRecords) return;
-            
+
             const years = Object.keys(team.yearlyRecords).sort();
-            const wins = years.map(y => team.yearlyRecords[y].regularSeasonWins ?? team.yearlyRecords[y].wins);
+            const wins   = years.map(y => team.yearlyRecords[y].regularSeasonWins ?? team.yearlyRecords[y].wins);
             const losses = years.map(y => team.yearlyRecords[y].regularSeasonLosses ?? team.yearlyRecords[y].losses);
-            
+
             const chartId = `chart-${team.owner.replace(/[^a-zA-Z0-9]/g, '_')}`;
             const ctx = document.getElementById(chartId);
             if (!ctx) return;
-            
-            new Chart(ctx, {
+
+            // Destroy previous instance if it exists
+            if (chartInstances[chartId]) chartInstances[chartId].destroy();
+
+            chartInstances[chartId] = new Chart(ctx, {
                 type: 'line',
                 data: {
                     labels: years,
@@ -752,17 +899,9 @@
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
-                    interaction: {
-                        mode: 'index',
-                        intersect: false
-                    },
+                    interaction: { mode: 'index', intersect: false },
                     plugins: {
-                        legend: {
-                            labels: {
-                                color: '#ffffff',
-                                font: { size: 11 }
-                            }
-                        }
+                        legend: { labels: { color: '#ffffff', font: { size: 11 } } }
                     },
                     scales: {
                         y: {
@@ -788,17 +927,72 @@
             });
         }
 
-        // Event listeners
+        // ── Hamburger nav + overlay ──────────────────────────────────────────────
+        (function () {
+            const btn     = document.getElementById('navToggle');
+            const nav     = document.getElementById('mainNav');
+            const overlay = document.getElementById('navOverlay');
+            if (!btn || !nav || !overlay) return;
+
+            function isMobile() { return window.innerWidth <= 768; }
+
+            function closeNav() {
+                nav.classList.add('collapsed');
+                btn.setAttribute('aria-expanded', 'false');
+                overlay.style.display = 'none';
+            }
+
+            function applyState() {
+                if (isMobile()) {
+                    btn.style.display = 'flex';
+                } else {
+                    btn.style.display = 'none';
+                    nav.classList.remove('collapsed');
+                    overlay.style.display = 'none';
+                }
+            }
+
+            btn.addEventListener('click', function () {
+                const nowCollapsed = nav.classList.toggle('collapsed');
+                btn.setAttribute('aria-expanded', String(!nowCollapsed));
+                overlay.style.display = nowCollapsed ? 'none' : 'block';
+            });
+
+            overlay.addEventListener('click', closeNav);
+
+            if (isMobile()) nav.classList.add('collapsed');
+            applyState();
+            window.addEventListener('resize', applyState);
+        })();
+
+        // ── Back to top ──────────────────────────────────────────────────────────
+        window.addEventListener('scroll', function () {
+            const btt = document.getElementById('backToTop');
+            if (btt) btt.style.display = window.scrollY > 300 ? 'block' : 'none';
+        });
+
+        // ── Event listeners ──────────────────────────────────────────────────────
         document.getElementById('sort-select').addEventListener('change', (e) => {
             currentSort = e.target.value;
             renderTeams(currentSort);
         });
         document.getElementById('show-inactive').addEventListener('change', (e) => {
             showInactive = e.target.checked;
-            renderTeams(document.getElementById('sort-select').value);
+            if (viewMode === 'focus') buildOwnerPicker();
+            renderTeams(currentSort);
         });
 
         loadData();
     </script>
+
+    <button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+        style="display:none; position:fixed; bottom:20px; right:20px; z-index:1001;
+               width:42px; height:42px; border-radius:50%;
+               border:2px solid var(--electric-blue);
+               background:rgba(10,14,39,0.92); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+               color:var(--electric-blue); font-size:1.2rem; cursor:pointer; line-height:1;
+               box-shadow:0 4px 16px rgba(0,212,255,0.3);">
+        ↑
+    </button>
 </body>
 </html>

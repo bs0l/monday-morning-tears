@@ -234,33 +234,110 @@
 
         html { scroll-behavior: smooth; }
 
-        @media (max-width: 768px) {
-            .selector-grid { grid-template-columns: 1fr; }
-            .vs-text { display: none; }
-            .stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
+        /* ── Pinned hamburger ────────────────────────────────────────────────── */
+        .nav-toggle {
+            display: none;
+            position: fixed;
+            top: 14px;
+            right: 14px;
+            z-index: 1000;
+            align-items: center;
+            padding: 9px 14px;
+            border-radius: 8px;
+            background: rgba(10, 14, 39, 0.92);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1.5px solid var(--electric-blue);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+            color: var(--text);
+            font-family: 'Work Sans', sans-serif;
+            font-size: 1rem;
+            cursor: pointer;
         }
-        @media (max-width: 480px) {
-            .stats-grid { grid-template-columns: 1fr !important; }
+
+        @media (max-width: 768px) {
+            body { padding: 12px; }
+            h1 { font-size: 2rem; }
+            header { padding: 16px 48px; margin-bottom: 14px; border-radius: 12px; }
+            .subtitle { font-size: 1rem; }
+
+            .nav-toggle { display: flex; }
+
+            nav#mainNav {
+                position: fixed;
+                top: 0; right: 0;
+                z-index: 999;
+                width: 220px;
+                height: 100dvh;
+                background: rgba(10, 14, 39, 0.97);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                border-left: 2px solid var(--electric-blue);
+                padding: 70px 16px 24px;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                gap: 8px;
+                overflow-y: auto;
+                transition: transform 0.25s ease;
+                transform: translateX(0);
+                margin-bottom: 0;
+            }
+            nav#mainNav.collapsed { transform: translateX(110%); }
+            nav#mainNav a { padding: 10px 16px; font-size: 0.9rem; border-radius: 8px; }
+
+            /* Selector section */
+            .selector-section { padding: 16px; margin-bottom: 20px; }
+            .selector-grid { grid-template-columns: 1fr; gap: 10px; }
+            .vs-text { display: none; }
+            select { padding: 10px 12px; font-size: 0.88rem; border-radius: 8px; }
+
+            /* Summary */
+            .h2h-summary { padding: 20px 16px; margin-bottom: 20px; }
+            .h2h-summary h2 { font-size: 1.1rem; }
+            .record-display { font-size: 2.8rem; margin: 10px 0; }
+
+            /* Stat cards — 2 columns */
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 10px;
+                margin-bottom: 20px;
+            }
+            .stat-card { padding: 12px 10px; border-radius: 10px; }
+            .stat-title { font-size: 0.72rem; letter-spacing: 0.4px; margin-bottom: 6px; }
+            .stat-value { font-size: 1.4rem; }
+            .stat-card p { font-size: 0.75rem; margin-top: 4px; }
+
+            /* Game log */
+            .matchup-log { padding: 16px; }
+            .matchup-log h2 { font-size: 1.3rem; margin-bottom: 12px; }
+            .matchup-item { padding: 8px 10px; margin-bottom: 6px; border-radius: 7px; border-left-width: 3px; }
+            .matchup-date { font-size: 0.78rem; }
+            .matchup-score { font-size: 0.95rem; }
+            .matchup-item > div:last-child { font-size: 0.75rem; margin-top: 2px; }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="navOverlay" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:998;"></div>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">☰</button>
+
     <div class="container">
         <header>
             <h1>Head-to-Head Matchups</h1>
             <div class="subtitle">Compare owner records and performance</div>
         </header>
 
-        <nav>
+        <nav id="mainNav">
             <a href="index.html">All-Time Records</a>
             <a href="regular-season.html">Regular Season</a>
             <a href="teams.html">Owner Stats</a>
             <a href="head-to-head.html" class="active">Head-to-Head</a>
-			<a href="season-stats.html">Season Stats</a>
-			<a href="league-history.html">League History</a>
-			<!--<a href="rosters.html">Rosters</a>-->
-			<!--<a href="roasts.html">Roasts</a>-->
+            <a href="season-stats.html">Season Stats</a>
+            <a href="league-history.html">League History</a>
+            <!--<a href="rosters.html">Rosters</a>-->
+            <!--<a href="roasts.html">Roasts</a>-->
         </nav>
 
         <div class="selector-section">
@@ -591,8 +668,60 @@
 		document.getElementById('owner1-select').addEventListener('change', displayHeadToHead);
 		document.getElementById('owner2-select').addEventListener('change', displayHeadToHead);
 
+		// ── Hamburger nav + overlay ────────────────────────────────────────────
+		(function () {
+			const btn     = document.getElementById('navToggle');
+			const nav     = document.getElementById('mainNav');
+			const overlay = document.getElementById('navOverlay');
+			if (!btn || !nav || !overlay) return;
+
+			function isMobile() { return window.innerWidth <= 768; }
+
+			function closeNav() {
+				nav.classList.add('collapsed');
+				btn.setAttribute('aria-expanded', 'false');
+				overlay.style.display = 'none';
+			}
+
+			function applyState() {
+				if (isMobile()) {
+					btn.style.display = 'flex';
+				} else {
+					btn.style.display = 'none';
+					nav.classList.remove('collapsed');
+					overlay.style.display = 'none';
+				}
+			}
+
+			btn.addEventListener('click', function () {
+				const nowCollapsed = nav.classList.toggle('collapsed');
+				btn.setAttribute('aria-expanded', String(!nowCollapsed));
+				overlay.style.display = nowCollapsed ? 'none' : 'block';
+			});
+
+			overlay.addEventListener('click', closeNav);
+			if (isMobile()) nav.classList.add('collapsed');
+			applyState();
+			window.addEventListener('resize', applyState);
+		})();
+
+		// ── Back to top ────────────────────────────────────────────────────────
+		window.addEventListener('scroll', function () {
+			const btt = document.getElementById('backToTop');
+			if (btt) btt.style.display = window.scrollY > 300 ? 'block' : 'none';
+		});
+
 		loadData();
 	</script>
 
+	<button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+		style="display:none; position:fixed; bottom:20px; right:20px; z-index:1001;
+		       width:42px; height:42px; border-radius:50%;
+		       border:2px solid var(--electric-blue);
+		       background:rgba(10,14,39,0.92); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+		       color:var(--electric-blue); font-size:1.2rem; cursor:pointer; line-height:1;
+		       box-shadow:0 4px 16px rgba(0,212,255,0.3);">
+		↑
+	</button>
 </body>
 </html>

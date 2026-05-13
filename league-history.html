@@ -46,7 +46,10 @@
             letter-spacing: 2px;
         }
 
-        .subtitle { font-size: 1.2rem; color: var(--text-secondary); }
+        .subtitle { 
+			font-size: 1.2rem; 
+			color: var(--text-secondary); 
+			}
 
         nav {
             display: flex;
@@ -110,12 +113,12 @@
 
         .rulebook-link a {
             display: inline-block;
-            padding: 15px 30px;
+            padding: 12px 24px;
             background: linear-gradient(135deg, var(--electric-blue), var(--gold));
             color: var(--dark-bg);
             text-decoration: none;
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: 0.88rem;
             border-radius: 10px;
             transition: all 0.3s ease;
         }
@@ -301,15 +304,76 @@
         }
         .loading-msg { color: var(--text-secondary); font-style: italic; font-size: 0.9rem; }
 
+
+        /* ── Pinned hamburger button ── */
+        .nav-toggle {
+            display: none;
+            position: fixed;
+            top: 14px;
+            right: 14px;
+            z-index: 1000;
+            align-items: center;
+            gap: 8px;
+            padding: 9px 14px;
+            border-radius: 8px;
+            background: rgba(10, 14, 39, 0.92);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1.5px solid var(--electric-blue);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+            color: var(--text);
+            font-family: 'Work Sans', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .nav-toggle .chevron {
+            font-style: normal;
+            transition: transform 0.25s ease;
+        }
+        .nav-toggle.open .chevron { transform: rotate(180deg); }
+
+        html { scroll-behavior: smooth; }
+
+        .section-anchor { scroll-margin-top: 20px; }
+
         /* ── Mobile ── */
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
             body { padding: 12px; }
-
-            h1 { font-size: 2.4rem; }
+            h1 { font-size: 2rem; }
             .subtitle { font-size: 1rem; }
-            header { padding: 20px 14px; margin-bottom: 28px; }
+            header { padding: 16px 48px; margin-bottom: 14px; border-radius: 12px; }
 
-            nav a { padding: 9px 14px; font-size: 0.88rem; }
+            /* Show hamburger button */
+            .nav-toggle { display: flex; }
+
+            /* Slide-in nav panel */
+            nav#mainNav {
+                position: fixed;
+                top: 0;
+                right: 0;
+                z-index: 999;
+                width: 220px;
+                height: 100dvh;
+                background: rgba(10, 14, 39, 0.97);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                border-left: 2px solid var(--electric-blue);
+                padding: 70px 16px 24px;
+                flex-direction: column;
+                gap: 8px;
+                overflow-y: auto;
+                transition: transform 0.25s ease;
+                transform: translateX(0);
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                margin-bottom: 0;
+            }
+            nav#mainNav.collapsed { transform: translateX(110%); }
+            nav#mainNav a { padding: 10px 16px; font-size: 0.9rem; border-radius: 8px; }
+
+            .inpage-nav { gap: 5px; margin-bottom: 16px; }
+            .inpage-nav a { font-size: 0.75rem; padding: 4px 12px; }
 
             .current-rules { padding: 18px 14px; }
             .rules-grid { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; }
@@ -324,21 +388,22 @@
             .api-years-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
             .api-year-block { padding: 10px 10px; }
             .api-change-item { font-size: 0.78rem; }
-
-            .inpage-nav { gap: 5px; margin-bottom: 20px; }
-            .inpage-nav a { font-size: 0.72rem; padding: 4px 10px; }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="navOverlay" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:998;"></div>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">☰</button>
+
     <div class="container">
         <header>
             <h1>League History</h1>
             <div class="subtitle">Rule Changes &amp; Evolution (2013–2025)</div>
         </header>
 
-        <nav>
+        <nav id="mainNav">
             <a href="index.html">All-Time Records</a>
             <a href="regular-season.html">Regular Season</a>
             <a href="teams.html">Owner Stats</a>
@@ -351,21 +416,9 @@
 
         <!-- ── In-page nav ── -->
         <div class="inpage-nav">
-            <a href="#section-current-rules">Current Rules</a>
-            <a href="#section-2025">2025</a>
-            <a href="#section-2024">2024</a>
-            <a href="#section-2023">2023</a>
-            <a href="#section-2022">2022</a>
-            <a href="#section-2021">2021</a>
-            <a href="#section-2020">2020</a>
-            <a href="#section-2019">2019</a>
-            <a href="#section-2018">2018</a>
-            <a href="#section-2017">2017</a>
-            <a href="#section-2016">2016</a>
-            <a href="#section-2015">2015</a>
-            <a href="#section-2014">2014</a>
-            <a href="#section-2013">2013</a>
-            <a href="#section-espn-api">ESPN API</a>
+            <a href="#section-current-rules">📋 Current Rules</a>
+            <a href="#section-changelog">📅 Change Log</a>
+            <a href="#section-espn-api">🔢 ESPN API</a>
         </div>
 
         <div class="rulebook-link">
@@ -374,7 +427,7 @@
             </a>
         </div>
 
-        <div id="section-current-rules" class="current-rules">
+        <div id="section-current-rules" class="section-anchor current-rules">
             <div class="current-rules-title">Current Ruleset</div>
             <div class="rules-grid">
                 <div class="rules-group">
@@ -442,6 +495,7 @@
             </div>
         </div>
 
+        <div id="section-changelog" class="section-anchor"></div>
         <!-- Legend -->
         <div class="legend">
             <div class="legend-item"><div class="legend-dot" style="background:#00d4ff;"></div>Founding / Platform</div>
@@ -791,13 +845,75 @@
             </ul>
         </div>
 
-        <div id="section-espn-api" class="api-changes">
+        <div id="section-espn-api" class="section-anchor api-changes">
             <div class="api-changes-title">Scoring &amp; Settings History (ESPN API)</div>
             <div class="api-changes-subtitle">Year-over-year changes detected from ESPN's league settings — most recent first</div>
             <div id="api-changes-container"><div class="loading-msg">Loading...</div></div>
         </div>
 
     </div>
+
+    <button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+        style="display:none; position:fixed; bottom:20px; right:20px; z-index:1001;
+               width:42px; height:42px; border-radius:50%;
+               border:2px solid var(--electric-blue);
+               background:rgba(10,14,39,0.92); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+               color:var(--electric-blue); font-size:1.2rem; cursor:pointer; line-height:1;
+               box-shadow:0 4px 16px rgba(0,212,255,0.3); transition:opacity 0.2s ease;">
+        ↑
+    </button>
+
+    <script>
+        // ── Hamburger nav ──────────────────────────────────────────────────────
+        (function () {
+            const btn     = document.getElementById('navToggle');
+            const nav     = document.getElementById('mainNav');
+            const overlay = document.getElementById('navOverlay');
+            if (!btn || !nav || !overlay) return;
+
+            function isMobile() { return window.innerWidth <= 768; }
+
+            function closeNav() {
+                nav.classList.add('collapsed');
+                btn.classList.remove('open');
+                btn.setAttribute('aria-expanded', 'false');
+                overlay.style.display = 'none';
+            }
+
+            function applyState() {
+                if (isMobile()) {
+                    btn.style.display = 'flex';
+                } else {
+                    btn.style.display = 'none';
+                    nav.classList.remove('collapsed');
+                    overlay.style.display = 'none';
+                }
+            }
+
+            btn.addEventListener('click', function () {
+                const nowCollapsed = nav.classList.toggle('collapsed');
+                btn.setAttribute('aria-expanded', String(!nowCollapsed));
+                btn.classList.toggle('open', !nowCollapsed);
+                overlay.style.display = nowCollapsed ? 'none' : 'block';
+            });
+
+            overlay.addEventListener('click', closeNav);
+
+            if (isMobile()) nav.classList.add('collapsed');
+            applyState();
+            window.addEventListener('resize', applyState);
+        })();
+
+        // ── Back to top ────────────────────────────────────────────────────────
+        (function () {
+            const btt = document.getElementById('backToTop');
+            if (!btt) return;
+            window.addEventListener('scroll', function () {
+                btt.style.display = window.scrollY > 300 ? 'block' : 'none';
+            });
+        })();
+
+    </script>
 
     <script>
         fetch('output/settings_history.json')

@@ -56,7 +56,6 @@
         .subtitle {
             font-size: 1.2rem;
             color: var(--text-secondary);
-            margin-bottom: 20px;
         }
 
         .metadata {
@@ -223,34 +222,157 @@
         }
         .section-anchor { scroll-margin-top: 20px; }
 
-        @media (max-width: 768px) {
-            h1 { font-size: 2.5rem; }
-            .stats-grid { grid-template-columns: repeat(2, 1fr); }
-            nav { flex-direction: column; }
+        /* ── Top-10 / Points Against score rows ─────────────────────────────── */
+        .score-row {
+            background: var(--card-bg);
+            padding: 12px 16px;
+            margin-bottom: 7px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
-        @media (max-width: 480px) {
-            .stats-grid { grid-template-columns: 1fr; }
+        .score-row--high  { border-left: 3px solid var(--electric-blue); }
+        .score-row--low   { border-left: 3px solid #ff6b6b; }
+        .score-row--green { border-left: 3px solid #00ff64; }
+
+        .score-rank {
+            color: var(--gold);
+            font-weight: 700;
+            min-width: 28px;
+            flex-shrink: 0;
+            font-size: 0.9rem;
+        }
+        .score-owner {
+            flex: 1;
+            min-width: 0;
+            font-size: 0.95rem;
+        }
+        .score-team-name {
+            display: block;
+            color: var(--text-secondary);
+            font-size: 0.75rem;
+        }
+        .score-pts {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.4rem;
+            flex-shrink: 0;
+            text-align: right;
+        }
+        .score-pts--high  { color: var(--electric-blue); }
+        .score-pts--low   { color: #ff6b6b; }
+        .score-pts--green { color: #00ff64; }
+        .score-week {
+            flex-shrink: 0;
+            text-align: right;
+            font-size: 0.8rem;
+            line-height: 1.3;
+            min-width: 44px;
+        }
+
+        /* ── Pinned hamburger button ─────────────────────────────────────────── */
+        .nav-toggle {
+            display: none;
+            position: fixed;
+            top: 14px;
+            right: 14px;
+            z-index: 1000;
+            align-items: center;
+            gap: 8px;
+            padding: 9px 14px;
+            border-radius: 8px;
+            background: rgba(10, 14, 39, 0.92);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1.5px solid var(--electric-blue);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+            color: var(--text);
+            font-family: 'Work Sans', sans-serif;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 12px; }
+            h1 { font-size: 2rem; }
+            header { padding: 16px 48px; margin-bottom: 14px; border-radius: 12px; }
+            .subtitle { font-size: 1rem; }
+            .metadata { font-size: 0.78rem; margin-top: 8px; }
+
+            .nav-toggle { display: flex; }
+
+            nav#mainNav {
+                position: fixed;
+                top: 0;
+                right: 0;
+                z-index: 999;
+                width: 220px;
+                height: 100dvh;
+                background: rgba(10, 14, 39, 0.97);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                border-left: 2px solid var(--electric-blue);
+                padding: 70px 16px 24px;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                gap: 8px;
+                overflow-y: auto;
+                transition: transform 0.25s ease;
+                transform: translateX(0);
+                margin-bottom: 0;
+            }
+            nav#mainNav.collapsed { transform: translateX(110%); }
+            nav#mainNav a { padding: 10px 16px; font-size: 0.9rem; border-radius: 8px; }
+
+            .page-nav { gap: 5px; margin-bottom: 10px; }
+            .page-nav a { padding: 5px 10px; font-size: 0.75rem; }
+
+            .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 24px; }
+            .stat-card { padding: 14px 12px; border-radius: 10px; }
+            .stat-icon { font-size: 1.6rem; margin-bottom: 6px; }
+            .stat-title { font-size: 0.72rem; margin-bottom: 6px; letter-spacing: 0.5px; }
+            .stat-value { font-size: 1.8rem; margin-bottom: 8px; }
+            .stat-holder { font-size: 0.95rem; margin-bottom: 6px; }
+            .stat-details { font-size: 0.8rem; line-height: 1.4; }
+            .badge { font-size: 0.72rem; padding: 3px 8px; }
+
+            .score-team-name { font-size: 0.68rem; }
+            .score-owner { font-size: 0.88rem; }
+            .score-pts { font-size: 1.2rem; }
+            .score-row { padding: 9px 10px; gap: 7px; }
+            .score-rank { min-width: 24px; font-size: 0.82rem; }
+            .score-week { font-size: 0.75rem; min-width: 38px; }
+        }
+
+        @media (max-width: 400px) {
+            .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+            .stat-value { font-size: 1.55rem; }
+            .stat-holder { font-size: 0.85rem; }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="navOverlay" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:998;"></div>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">☰</button>
+
     <div class="container">
         <header>
             <h1>Regular Season Records</h1>
-            <div class="subtitle">Excluding Playoff Games</div>
-            <div class="metadata" id="metadata-info">Loading...</div>
+			<div class="subtitle">Excluding Playoff Games</div>
         </header>
 
-        <nav>
+        <nav id="mainNav">
             <a href="index.html">All-Time Records</a>
             <a href="regular-season.html" class="active">Regular Season</a>
             <a href="teams.html">Owner Stats</a>
-			<a href="head-to-head.html">Head-to-Head</a>
-			<a href="season-stats.html">Season Stats</a>
+            <a href="head-to-head.html">Head-to-Head</a>
+            <a href="season-stats.html">Season Stats</a>
             <a href="league-history.html">League History</a>
-			<!--<a href="rosters.html">Rosters</a>-->
-			<!--<a href="roasts.html">Roasts</a>-->
+            <!--<a href="rosters.html">Rosters</a>-->
+            <!--<a href="roasts.html">Roasts</a>-->
         </nav>
 
         <div class="page-nav">
@@ -260,9 +382,10 @@
             <a href="#section-pa">🛡️ Points Against</a>
         </div>
 
+
         <div id="section-stats" class="section-anchor"></div>
         <div id="stats-container">
-            <div class="loading">Loading statistics...</div>
+            <div class="loading" id="metadata-info">Loading statistics...</div>
         </div>
     </div>
 
@@ -461,16 +584,15 @@
 				<h2 style="color: var(--electric-blue); font-family: 'Bebas Neue', sans-serif; font-size: 2rem; margin: 40px 0 20px 0; text-align: center;">Top 10 Highest Scores</h2>
 				<div style="max-width: 800px; margin: 0 auto;">
 					${stats.top10HighestScores.map((score, index) => `
-						<div style="background: var(--card-bg); padding: 15px 20px; margin-bottom: 8px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; border-left: 3px solid var(--electric-blue);">
-							<span style="color: var(--gold); font-weight: 700; min-width: 30px;">#${index + 1}</span>
-							<span style="flex: 1; margin: 0 15px;">
-								<strong>${score.owner || score.team}</strong> - ${score.team}
+						<div class="score-row score-row--high">
+							<span class="score-rank">#${index + 1}</span>
+							<span class="score-owner">
+								<strong>${score.owner || score.team}</strong>
+								<span class="score-team-name">${score.team}</span>
 							</span>
-							<span style="font-family: 'Bebas Neue'; font-size: 1.5rem; color: var(--electric-blue); min-width: 80px; text-align: right;">
-								${score.score.toFixed(2)}
-							</span>
-							<span style="color: var(--text-secondary); margin-left: 15px; min-width: 120px; text-align: right;">
-								<a href="${createMatchupLink(score)}" target="_blank" style="color: var(--electric-blue); text-decoration: none;">${score.year} Wk ${score.week}</a>
+							<span class="score-pts score-pts--high">${score.score.toFixed(2)}</span>
+							<span class="score-week">
+								<a href="${createMatchupLink(score)}" target="_blank" style="color: var(--electric-blue); text-decoration: none;">${score.year}<br>Wk ${score.week}</a>
 							</span>
 						</div>
 					`).join('')}
@@ -481,35 +603,33 @@
 				<h2 style="color: var(--electric-blue); font-family: 'Bebas Neue', sans-serif; font-size: 2rem; margin: 40px 0 20px 0; text-align: center;">Top 10 Lowest Scores</h2>
 				<div style="max-width: 800px; margin: 0 auto;">
 					${stats.top10LowestScores.map((score, index) => `
-						<div style="background: var(--card-bg); padding: 15px 20px; margin-bottom: 8px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; border-left: 3px solid #ff6b6b;">
-							<span style="color: var(--gold); font-weight: 700; min-width: 30px;">#${index + 1}</span>
-							<span style="flex: 1; margin: 0 15px;">
-								<strong>${score.owner || score.team}</strong> - ${score.team}
+						<div class="score-row score-row--low">
+							<span class="score-rank">#${index + 1}</span>
+							<span class="score-owner">
+								<strong>${score.owner || score.team}</strong>
+								<span class="score-team-name">${score.team}</span>
 							</span>
-							<span style="font-family: 'Bebas Neue'; font-size: 1.5rem; color: #ff6b6b; min-width: 80px; text-align: right;">
-								${score.score.toFixed(2)}
-							</span>
-							<span style="color: var(--text-secondary); margin-left: 15px; min-width: 120px; text-align: right;">
-								<a href="${createMatchupLink(score)}" target="_blank" style="color: var(--electric-blue); text-decoration: none;">${score.year} Wk ${score.week}</a>
+							<span class="score-pts score-pts--low">${score.score.toFixed(2)}</span>
+							<span class="score-week">
+								<a href="${createMatchupLink(score)}" target="_blank" style="color: var(--electric-blue); text-decoration: none;">${score.year}<br>Wk ${score.week}</a>
 							</span>
 						</div>
 					`).join('')}
 				</div>
 				</div>
-				
+
 				<div id="section-pa" class="section-anchor">
 				<h2 style="color: var(--electric-blue); font-family: 'Bebas Neue', sans-serif; font-size: 2rem; margin: 40px 0 20px 0; text-align: center;">Most Points Against (Single Season)</h2>
 				<div style="max-width: 800px; margin: 0 auto;">
 					${stats.mostPointsAgainstSeasons ? stats.mostPointsAgainstSeasons.map((season, index) => `
-						<div style="background: var(--card-bg); padding: 15px 20px; margin-bottom: 8px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; border-left: 3px solid var(--electric-blue);">
-							<span style="color: var(--gold); font-weight: 700; min-width: 30px;">#${index + 1}</span>
-							<span style="flex: 1; margin: 0 15px;">
-								<strong>${season.owner}</strong> - ${season.teamName}
+						<div class="score-row score-row--high">
+							<span class="score-rank">#${index + 1}</span>
+							<span class="score-owner">
+								<strong>${season.owner}</strong>
+								<span class="score-team-name">${season.teamName}</span>
 							</span>
-							<span style="font-family: 'Bebas Neue'; font-size: 1.5rem; color: var(--electric-blue); min-width: 100px; text-align: right;">
-								${season.pointsAgainst.toFixed(2)}
-							</span>
-							<span style="color: var(--text-secondary); margin-left: 15px; min-width: 80px; text-align: right;">
+							<span class="score-pts score-pts--high">${season.pointsAgainst.toFixed(2)}</span>
+							<span class="score-week">
 								<a href="https://fantasy.espn.com/football/league/standings?leagueId=1483079&seasonId=${season.year}" target="_blank" style="color: var(--electric-blue); text-decoration: none;">${season.year}</a>
 							</span>
 						</div>
@@ -519,15 +639,14 @@
 				<h2 style="color: var(--electric-blue); font-family: 'Bebas Neue', sans-serif; font-size: 2rem; margin: 40px 0 20px 0; text-align: center;">Fewest Points Against (Single Season)</h2>
 				<div style="max-width: 800px; margin: 0 auto;">
 					${stats.fewestPointsAgainstSeasons ? stats.fewestPointsAgainstSeasons.map((season, index) => `
-						<div style="background: var(--card-bg); padding: 15px 20px; margin-bottom: 8px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; border-left: 3px solid #00ff64;">
-							<span style="color: var(--gold); font-weight: 700; min-width: 30px;">#${index + 1}</span>
-							<span style="flex: 1; margin: 0 15px;">
-								<strong>${season.owner}</strong> - ${season.teamName}
+						<div class="score-row score-row--green">
+							<span class="score-rank">#${index + 1}</span>
+							<span class="score-owner">
+								<strong>${season.owner}</strong>
+								<span class="score-team-name">${season.teamName}</span>
 							</span>
-							<span style="font-family: 'Bebas Neue'; font-size: 1.5rem; color: #00ff64; min-width: 100px; text-align: right;">
-								${season.pointsAgainst.toFixed(2)}
-							</span>
-							<span style="color: var(--text-secondary); margin-left: 15px; min-width: 80px; text-align: right;">
+							<span class="score-pts score-pts--green">${season.pointsAgainst.toFixed(2)}</span>
+							<span class="score-week">
 								<a href="https://fantasy.espn.com/football/league/standings?leagueId=1483079&seasonId=${season.year}" target="_blank" style="color: var(--electric-blue); text-decoration: none;">${season.year}</a>
 							</span>
 						</div>
@@ -537,7 +656,60 @@
 			`;
         }
 
+        // ── Hamburger nav + overlay ──────────────────────────────────────────────
+        (function () {
+            const btn     = document.getElementById('navToggle');
+            const nav     = document.getElementById('mainNav');
+            const overlay = document.getElementById('navOverlay');
+            if (!btn || !nav || !overlay) return;
+
+            function isMobile() { return window.innerWidth <= 768; }
+
+            function closeNav() {
+                nav.classList.add('collapsed');
+                btn.setAttribute('aria-expanded', 'false');
+                overlay.style.display = 'none';
+            }
+
+            function applyState() {
+                if (isMobile()) {
+                    btn.style.display = 'flex';
+                } else {
+                    btn.style.display = 'none';
+                    nav.classList.remove('collapsed');
+                    overlay.style.display = 'none';
+                }
+            }
+
+            btn.addEventListener('click', function () {
+                const nowCollapsed = nav.classList.toggle('collapsed');
+                btn.setAttribute('aria-expanded', String(!nowCollapsed));
+                overlay.style.display = nowCollapsed ? 'none' : 'block';
+            });
+
+            overlay.addEventListener('click', closeNav);
+
+            if (isMobile()) nav.classList.add('collapsed');
+            applyState();
+            window.addEventListener('resize', applyState);
+        })();
+
+        // ── Back to top ──────────────────────────────────────────────────────────
+        window.addEventListener('scroll', function () {
+            const btt = document.getElementById('backToTop');
+            if (btt) btt.style.display = window.scrollY > 300 ? 'block' : 'none';
+        });
+
         loadData();
     </script>
+    <button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+        style="display:none; position:fixed; bottom:20px; right:20px; z-index:1001;
+               width:42px; height:42px; border-radius:50%;
+               border:2px solid var(--electric-blue);
+               background:rgba(10,14,39,0.92); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+               color:var(--electric-blue); font-size:1.2rem; cursor:pointer; line-height:1;
+               box-shadow:0 4px 16px rgba(0,212,255,0.3); transition:opacity 0.2s ease;">
+        ↑
+    </button>
 </body>
 </html>
