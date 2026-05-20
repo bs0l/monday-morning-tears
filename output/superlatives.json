@@ -293,18 +293,18 @@
       "matchupPeriodId": 13
     },
     "longestWinStreak": {
-      "owner": "Bill Solecki",
-      "length": 10,
-      "teamName": "Why's This So Sticky?",
-      "startYear": 2023,
-      "startWeek": 5,
+      "owner": "Randell Crawford",
+      "length": 11,
+      "teamName": "Insane in the  Ukraine",
+      "startYear": 2022,
+      "startWeek": 15,
       "endYear": 2023,
-      "endWeek": 14,
+      "endWeek": 6,
       "isOngoing": false
     },
     "longestLossStreak": {
       "owner": "john crawford",
-      "length": 13,
+      "length": 14,
       "teamName": "Paintin Peyton",
       "startYear": 2023,
       "startWeek": 12,
@@ -314,15 +314,15 @@
     },
     "mostWeeklyHighScores": {
       "owner": "Bill Solecki",
-      "count": 36
+      "count": 39
     },
     "mostWeeklyLowScores": {
-      "owner": "Randell Crawford",
-      "count": 22
+      "owner": "Ray Engleking",
+      "count": 23
     },
     "mostConsolationDollars": {
-      "owner": "Bill Solecki",
-      "count": 6
+      "owner": "Ray Engleking",
+      "count": 3
     }
   },
   "regularSeason": {
@@ -647,8 +647,8 @@
       "count": 20
     },
     "mostConsolationDollars": {
-      "owner": "Bill Solecki",
-      "count": 5
+      "owner": "Ray Engleking",
+      "count": 3
     },
     "mostPointsAgainstSeasons": [
       {
@@ -687,31 +687,31 @@
         "owner": "Randell Crawford",
         "teamName": "oh no its John Snooooooow",
         "year": 2015,
-        "pointsAgainst": 979.26
+        "pointsAgainst": 753.86
       },
       {
-        "owner": "Carl Cummins",
-        "teamName": "Duckman Kowalski",
-        "year": 2017,
-        "pointsAgainst": 1008.84
+        "owner": "Brian Dorward",
+        "teamName": "Plainsboro Owls",
+        "year": 2015,
+        "pointsAgainst": 779.8399999999999
       },
       {
         "owner": "Ray Engleking",
         "teamName": "Rex Grossman Fan Club",
-        "year": 2017,
-        "pointsAgainst": 1032.1999999999998
-      },
-      {
-        "owner": "Loren Kessell",
-        "teamName": "Really Just Sean Kessell",
         "year": 2015,
-        "pointsAgainst": 1063.92
+        "pointsAgainst": 791.4
       },
       {
         "owner": "Mike Kovacs",
-        "teamName": "Why Pass to Top Wide Receivers?",
-        "year": 2017,
-        "pointsAgainst": 1065.4
+        "teamName": "I wanta Free the NewtMan! ",
+        "year": 2015,
+        "pointsAgainst": 818.5400000000001
+      },
+      {
+        "owner": "Carl Cummins",
+        "teamName": "Duckman Kowalski",
+        "year": 2015,
+        "pointsAgainst": 829.78
       }
     ]
   }

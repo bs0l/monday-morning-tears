@@ -4065,7 +4065,7 @@
       "teamId": 8,
       "teamName": "Team Cahill",
       "teamAbbrev": "CAHI",
-      "owner": "Rob Cahill",
+      "owner": null,
       "score": 70.8
     },
     "winner": "HOME"
@@ -4134,7 +4134,7 @@
       "teamId": 5,
       "teamName": "Really Just Sean Kessell",
       "teamAbbrev": "KSSL",
-      "owner": "Loren Kessell",
+      "owner": null,
       "score": 105.1
     },
     "winner": "AWAY"
@@ -4272,7 +4272,7 @@
       "teamId": 8,
       "teamName": "Team Cahill",
       "teamAbbrev": "CAHI",
-      "owner": "Rob Cahill",
+      "owner": null,
       "score": 99.12
     },
     "winner": "AWAY"
@@ -4341,7 +4341,7 @@
       "teamId": 5,
       "teamName": "Really Just Sean Kessell",
       "teamAbbrev": "KSSL",
-      "owner": "Loren Kessell",
+      "owner": null,
       "score": 196.82
     },
     "winner": "HOME"
@@ -4410,7 +4410,7 @@
       "teamId": 8,
       "teamName": "Team Cahill",
       "teamAbbrev": "CAHI",
-      "owner": "Rob Cahill",
+      "owner": null,
       "score": 111.66
     },
     "winner": "HOME"
@@ -4525,7 +4525,7 @@
       "teamId": 5,
       "teamName": "Really Just Sean Kessell",
       "teamAbbrev": "KSSL",
-      "owner": "Loren Kessell",
+      "owner": null,
       "score": 77.6
     },
     "winner": "HOME"
@@ -4594,7 +4594,7 @@
       "teamId": 8,
       "teamName": "Team Cahill",
       "teamAbbrev": "CAHI",
-      "owner": "Rob Cahill",
+      "owner": null,
       "score": 134.5
     },
     "winner": "AWAY"
@@ -4640,7 +4640,7 @@
       "teamId": 5,
       "teamName": "Really Just Sean Kessell",
       "teamAbbrev": "KSSL",
-      "owner": "Loren Kessell",
+      "owner": null,
       "score": 76.64
     },
     "winner": "HOME"
@@ -4732,7 +4732,7 @@
       "teamId": 8,
       "teamName": "Team Cahill",
       "teamAbbrev": "CAHI",
-      "owner": "Rob Cahill",
+      "owner": null,
       "score": 97.84
     },
     "winner": "HOME"
@@ -4801,7 +4801,7 @@
       "teamId": 5,
       "teamName": "Really Just Sean Kessell",
       "teamAbbrev": "KSSL",
-      "owner": "Loren Kessell",
+      "owner": null,
       "score": 79.86
     },
     "winner": "AWAY"
@@ -4939,7 +4939,7 @@
       "teamId": 8,
       "teamName": "Team Cahill",
       "teamAbbrev": "CAHI",
-      "owner": "Rob Cahill",
+      "owner": null,
       "score": 130.76
     },
     "winner": "AWAY"
@@ -4985,7 +4985,7 @@
       "teamId": 5,
       "teamName": "Really Just Sean Kessell",
       "teamAbbrev": "KSSL",
-      "owner": "Loren Kessell",
+      "owner": null,
       "score": 119.74
     },
     "winner": "AWAY"
@@ -5093,7 +5093,7 @@
       "teamId": 5,
       "teamName": "Really Just Sean Kessell",
       "teamAbbrev": "KSSL",
-      "owner": "Loren Kessell",
+      "owner": null,
       "score": 91.44
     },
     "away": {
@@ -5116,7 +5116,7 @@
       "teamId": 5,
       "teamName": "Really Just Sean Kessell",
       "teamAbbrev": "KSSL",
-      "owner": "Loren Kessell",
+      "owner": null,
       "score": 104.1
     },
     "away": {
@@ -5139,7 +5139,7 @@
       "teamId": 5,
       "teamName": "Really Just Sean Kessell",
       "teamAbbrev": "KSSL",
-      "owner": "Loren Kessell",
+      "owner": null,
       "score": 85.28
     },
     "away": {
@@ -5162,7 +5162,7 @@
       "teamId": 5,
       "teamName": "Really Just Sean Kessell",
       "teamAbbrev": "KSSL",
-      "owner": "Loren Kessell",
+      "owner": null,
       "score": 110.42
     },
     "away": {
@@ -5185,14 +5185,14 @@
       "teamId": 5,
       "teamName": "Really Just Sean Kessell",
       "teamAbbrev": "KSSL",
-      "owner": "Loren Kessell",
+      "owner": null,
       "score": 109.04
     },
     "away": {
       "teamId": 8,
       "teamName": "Team Cahill",
       "teamAbbrev": "CAHI",
-      "owner": "Rob Cahill",
+      "owner": null,
       "score": 117.6
     },
     "winner": "AWAY"
@@ -5208,7 +5208,7 @@
       "teamId": 5,
       "teamName": "Really Just Sean Kessell",
       "teamAbbrev": "KSSL",
-      "owner": "Loren Kessell",
+      "owner": null,
       "score": 56.12
     },
     "away": {
@@ -5231,7 +5231,7 @@
       "teamId": 5,
       "teamName": "Really Just Sean Kessell",
       "teamAbbrev": "KSSL",
-      "owner": "Loren Kessell",
+      "owner": null,
       "score": 113.6
     },
     "away": {
@@ -5254,7 +5254,7 @@
       "teamId": 5,
       "teamName": "Really Just Sean Kessell",
       "teamAbbrev": "KSSL",
-      "owner": "Loren Kessell",
+      "owner": null,
       "score": 186.24
     },
     "away": {
@@ -5353,7 +5353,7 @@
       "teamId": 8,
       "teamName": "Team Cahill",
       "teamAbbrev": "CAHI",
-      "owner": "Rob Cahill",
+      "owner": null,
       "score": 77.84
     },
     "winner": "HOME"
@@ -5399,7 +5399,7 @@
       "teamId": 8,
       "teamName": "Team Cahill",
       "teamAbbrev": "CAHI",
-      "owner": "Rob Cahill",
+      "owner": null,
       "score": 90.7
     },
     "winner": "HOME"
@@ -5415,7 +5415,7 @@
       "teamId": 8,
       "teamName": "Team Cahill",
       "teamAbbrev": "CAHI",
-      "owner": "Rob Cahill",
+      "owner": null,
       "score": 116.24
     },
     "away": {
@@ -5438,7 +5438,7 @@
       "teamId": 8,
       "teamName": "Team Cahill",
       "teamAbbrev": "CAHI",
-      "owner": "Rob Cahill",
+      "owner": null,
       "score": 69.86
     },
     "away": {
@@ -5461,7 +5461,7 @@
       "teamId": 8,
       "teamName": "Team Cahill",
       "teamAbbrev": "CAHI",
-      "owner": "Rob Cahill",
+      "owner": null,
       "score": 52.18
     },
     "away": {
@@ -5484,7 +5484,7 @@
       "teamId": 8,
       "teamName": "Team Cahill",
       "teamAbbrev": "CAHI",
-      "owner": "Rob Cahill",
+      "owner": null,
       "score": 102.02
     },
     "away": {
@@ -5507,7 +5507,7 @@
       "teamId": 8,
       "teamName": "Team Cahill",
       "teamAbbrev": "CAHI",
-      "owner": "Rob Cahill",
+      "owner": null,
       "score": 237.12
     },
     "away": {
@@ -12443,6 +12443,190 @@
     "winner": "HOME"
   },
   {
+    "id": "2020_17_4_11",
+    "year": 2020,
+    "week": 17,
+    "matchupPeriodId": 17,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 4,
+      "teamName": "Go Fudge Yourselves",
+      "teamAbbrev": "GFY",
+      "owner": "Phil Torres",
+      "score": 136.02
+    },
+    "away": {
+      "teamId": 11,
+      "teamName": "RADrigo Is My Homeboy",
+      "teamAbbrev": "RAD",
+      "owner": "John Artiglier",
+      "score": 129.0
+    },
+    "winner": "HOME"
+  },
+  {
+    "id": "2020_17_1_9",
+    "year": 2020,
+    "week": 17,
+    "matchupPeriodId": 17,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 1,
+      "teamName": "Wade Boggs Memorial Team",
+      "teamAbbrev": "BOGS",
+      "owner": "Bill Solecki",
+      "score": 142.64
+    },
+    "away": {
+      "teamId": 9,
+      "teamName": "Salty Spitoon",
+      "teamAbbrev": "REXY",
+      "owner": "Ray Engleking",
+      "score": 94.0
+    },
+    "winner": "HOME"
+  },
+  {
+    "id": "2020_17_2_6",
+    "year": 2020,
+    "week": 17,
+    "matchupPeriodId": 17,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 2,
+      "teamName": "All Aboard The J Train",
+      "teamAbbrev": "GRBG",
+      "owner": "Mike Kovacs",
+      "score": 97.82
+    },
+    "away": {
+      "teamId": 6,
+      "teamName": "19 Problems and Covid is One",
+      "teamAbbrev": "SARS",
+      "owner": "Randell Crawford",
+      "score": 130.46
+    },
+    "winner": "AWAY"
+  },
+  {
+    "id": "2020_17_12_3",
+    "year": 2020,
+    "week": 17,
+    "matchupPeriodId": 17,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 12,
+      "teamName": "Just a Chubb Tucker",
+      "teamAbbrev": "Chub",
+      "owner": "Ben Bingert",
+      "score": 139.08
+    },
+    "away": {
+      "teamId": 3,
+      "teamName": "Pussy Power",
+      "teamAbbrev": "CARL",
+      "owner": "Carl Cummins",
+      "score": 121.88
+    },
+    "winner": "HOME"
+  },
+  {
+    "id": "2020_18_4_11",
+    "year": 2020,
+    "week": 18,
+    "matchupPeriodId": 18,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 4,
+      "teamName": "Go Fudge Yourselves",
+      "teamAbbrev": "GFY",
+      "owner": "Phil Torres",
+      "score": 136.02
+    },
+    "away": {
+      "teamId": 11,
+      "teamName": "RADrigo Is My Homeboy",
+      "teamAbbrev": "RAD",
+      "owner": "John Artiglier",
+      "score": 129.0
+    },
+    "winner": "HOME"
+  },
+  {
+    "id": "2020_18_1_9",
+    "year": 2020,
+    "week": 18,
+    "matchupPeriodId": 18,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 1,
+      "teamName": "Wade Boggs Memorial Team",
+      "teamAbbrev": "BOGS",
+      "owner": "Bill Solecki",
+      "score": 142.64
+    },
+    "away": {
+      "teamId": 9,
+      "teamName": "Salty Spitoon",
+      "teamAbbrev": "REXY",
+      "owner": "Ray Engleking",
+      "score": 94.0
+    },
+    "winner": "HOME"
+  },
+  {
+    "id": "2020_18_2_6",
+    "year": 2020,
+    "week": 18,
+    "matchupPeriodId": 18,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 2,
+      "teamName": "All Aboard The J Train",
+      "teamAbbrev": "GRBG",
+      "owner": "Mike Kovacs",
+      "score": 97.82
+    },
+    "away": {
+      "teamId": 6,
+      "teamName": "19 Problems and Covid is One",
+      "teamAbbrev": "SARS",
+      "owner": "Randell Crawford",
+      "score": 130.46
+    },
+    "winner": "AWAY"
+  },
+  {
+    "id": "2020_18_12_3",
+    "year": 2020,
+    "week": 18,
+    "matchupPeriodId": 18,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 12,
+      "teamName": "Just a Chubb Tucker",
+      "teamAbbrev": "Chub",
+      "owner": "Ben Bingert",
+      "score": 139.08
+    },
+    "away": {
+      "teamId": 3,
+      "teamName": "Pussy Power",
+      "teamAbbrev": "CARL",
+      "owner": "Carl Cummins",
+      "score": 121.88
+    },
+    "winner": "HOME"
+  },
+  {
     "id": "2021_1_3_9",
     "year": 2021,
     "week": 1,
@@ -14007,6 +14191,190 @@
     "winner": "HOME"
   },
   {
+    "id": "2021_18_12_1",
+    "year": 2021,
+    "week": 18,
+    "matchupPeriodId": 18,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 12,
+      "teamName": "Chubb Basshole",
+      "teamAbbrev": "Chub",
+      "owner": "Ben Bingert",
+      "score": 117.74
+    },
+    "away": {
+      "teamId": 1,
+      "teamName": "Wade Boggs Memorial Team",
+      "teamAbbrev": "BOGS",
+      "owner": "Bill Solecki",
+      "score": 96.32
+    },
+    "winner": "HOME"
+  },
+  {
+    "id": "2021_18_9_4",
+    "year": 2021,
+    "week": 18,
+    "matchupPeriodId": 18,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 9,
+      "teamName": "Salty Spitoon",
+      "teamAbbrev": "REXY",
+      "owner": "Ray Engleking",
+      "score": 156.34
+    },
+    "away": {
+      "teamId": 4,
+      "teamName": "Go Fudge Yourselves",
+      "teamAbbrev": "GFY",
+      "owner": "Phil Torres",
+      "score": 146.4
+    },
+    "winner": "HOME"
+  },
+  {
+    "id": "2021_18_6_3",
+    "year": 2021,
+    "week": 18,
+    "matchupPeriodId": 18,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 6,
+      "teamName": "19 Problems and Covid is One",
+      "teamAbbrev": "SARS",
+      "owner": "Randell Crawford",
+      "score": 102.26
+    },
+    "away": {
+      "teamId": 3,
+      "teamName": "Pussy Power",
+      "teamAbbrev": "CARL",
+      "owner": "Carl Cummins",
+      "score": 84.52
+    },
+    "winner": "HOME"
+  },
+  {
+    "id": "2021_18_11_2",
+    "year": 2021,
+    "week": 18,
+    "matchupPeriodId": 18,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 11,
+      "teamName": "RADrigo Is My Homeboy",
+      "teamAbbrev": "RAD",
+      "owner": "John Artiglier",
+      "score": 101.9
+    },
+    "away": {
+      "teamId": 2,
+      "teamName": "Colonel Sanders McCaffreys",
+      "teamAbbrev": "GRBG",
+      "owner": "Mike Kovacs",
+      "score": 96.76
+    },
+    "winner": "HOME"
+  },
+  {
+    "id": "2021_19_12_1",
+    "year": 2021,
+    "week": 19,
+    "matchupPeriodId": 19,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 12,
+      "teamName": "Chubb Basshole",
+      "teamAbbrev": "Chub",
+      "owner": "Ben Bingert",
+      "score": 117.74
+    },
+    "away": {
+      "teamId": 1,
+      "teamName": "Wade Boggs Memorial Team",
+      "teamAbbrev": "BOGS",
+      "owner": "Bill Solecki",
+      "score": 96.32
+    },
+    "winner": "HOME"
+  },
+  {
+    "id": "2021_19_9_4",
+    "year": 2021,
+    "week": 19,
+    "matchupPeriodId": 19,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 9,
+      "teamName": "Salty Spitoon",
+      "teamAbbrev": "REXY",
+      "owner": "Ray Engleking",
+      "score": 156.34
+    },
+    "away": {
+      "teamId": 4,
+      "teamName": "Go Fudge Yourselves",
+      "teamAbbrev": "GFY",
+      "owner": "Phil Torres",
+      "score": 146.4
+    },
+    "winner": "HOME"
+  },
+  {
+    "id": "2021_19_6_3",
+    "year": 2021,
+    "week": 19,
+    "matchupPeriodId": 19,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 6,
+      "teamName": "19 Problems and Covid is One",
+      "teamAbbrev": "SARS",
+      "owner": "Randell Crawford",
+      "score": 102.26
+    },
+    "away": {
+      "teamId": 3,
+      "teamName": "Pussy Power",
+      "teamAbbrev": "CARL",
+      "owner": "Carl Cummins",
+      "score": 84.52
+    },
+    "winner": "HOME"
+  },
+  {
+    "id": "2021_19_11_2",
+    "year": 2021,
+    "week": 19,
+    "matchupPeriodId": 19,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 11,
+      "teamName": "RADrigo Is My Homeboy",
+      "teamAbbrev": "RAD",
+      "owner": "John Artiglier",
+      "score": 101.9
+    },
+    "away": {
+      "teamId": 2,
+      "teamName": "Colonel Sanders McCaffreys",
+      "teamAbbrev": "GRBG",
+      "owner": "Mike Kovacs",
+      "score": 96.76
+    },
+    "winner": "HOME"
+  },
+  {
     "id": "2022_1_3_11",
     "year": 2022,
     "week": 1,
@@ -15552,6 +15920,190 @@
     "year": 2022,
     "week": 17,
     "matchupPeriodId": 17,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 11,
+      "teamName": "Goodnight Again My Sweet Prince",
+      "teamAbbrev": "RAD",
+      "owner": "John Artiglier",
+      "score": 78.2
+    },
+    "away": {
+      "teamId": 2,
+      "teamName": "Al Tuck And No Action",
+      "teamAbbrev": "GRBG",
+      "owner": "Mike Kovacs",
+      "score": 108.6
+    },
+    "winner": "AWAY"
+  },
+  {
+    "id": "2022_18_12_3",
+    "year": 2022,
+    "week": 18,
+    "matchupPeriodId": 18,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 12,
+      "teamName": "Joe Burrow Tiger King",
+      "teamAbbrev": "KING",
+      "owner": "Ben Bingert",
+      "score": 106.52
+    },
+    "away": {
+      "teamId": 3,
+      "teamName": "Pussy Power",
+      "teamAbbrev": "CARL",
+      "owner": "Carl Cummins",
+      "score": 119.18
+    },
+    "winner": "AWAY"
+  },
+  {
+    "id": "2022_18_9_1",
+    "year": 2022,
+    "week": 18,
+    "matchupPeriodId": 18,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 9,
+      "teamName": "Salty Spitoon",
+      "teamAbbrev": "REXY",
+      "owner": "Ray Engleking",
+      "score": 96.46
+    },
+    "away": {
+      "teamId": 1,
+      "teamName": "Musconetcong Mantis Men",
+      "teamAbbrev": "MNTS",
+      "owner": "Bill Solecki",
+      "score": 99.3
+    },
+    "winner": "AWAY"
+  },
+  {
+    "id": "2022_18_4_6",
+    "year": 2022,
+    "week": 18,
+    "matchupPeriodId": 18,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 4,
+      "teamName": "Go Fudge Yourselves",
+      "teamAbbrev": "GFY",
+      "owner": "Phil Torres",
+      "score": 45.58
+    },
+    "away": {
+      "teamId": 6,
+      "teamName": "Insane in the  Ukraine",
+      "teamAbbrev": "B00B",
+      "owner": "Randell Crawford",
+      "score": 98.38
+    },
+    "winner": "AWAY"
+  },
+  {
+    "id": "2022_18_11_2",
+    "year": 2022,
+    "week": 18,
+    "matchupPeriodId": 18,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 11,
+      "teamName": "Goodnight Again My Sweet Prince",
+      "teamAbbrev": "RAD",
+      "owner": "John Artiglier",
+      "score": 78.2
+    },
+    "away": {
+      "teamId": 2,
+      "teamName": "Al Tuck And No Action",
+      "teamAbbrev": "GRBG",
+      "owner": "Mike Kovacs",
+      "score": 108.6
+    },
+    "winner": "AWAY"
+  },
+  {
+    "id": "2022_19_12_3",
+    "year": 2022,
+    "week": 19,
+    "matchupPeriodId": 19,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 12,
+      "teamName": "Joe Burrow Tiger King",
+      "teamAbbrev": "KING",
+      "owner": "Ben Bingert",
+      "score": 106.52
+    },
+    "away": {
+      "teamId": 3,
+      "teamName": "Pussy Power",
+      "teamAbbrev": "CARL",
+      "owner": "Carl Cummins",
+      "score": 119.18
+    },
+    "winner": "AWAY"
+  },
+  {
+    "id": "2022_19_9_1",
+    "year": 2022,
+    "week": 19,
+    "matchupPeriodId": 19,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 9,
+      "teamName": "Salty Spitoon",
+      "teamAbbrev": "REXY",
+      "owner": "Ray Engleking",
+      "score": 96.46
+    },
+    "away": {
+      "teamId": 1,
+      "teamName": "Musconetcong Mantis Men",
+      "teamAbbrev": "MNTS",
+      "owner": "Bill Solecki",
+      "score": 99.3
+    },
+    "winner": "AWAY"
+  },
+  {
+    "id": "2022_19_4_6",
+    "year": 2022,
+    "week": 19,
+    "matchupPeriodId": 19,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 4,
+      "teamName": "Go Fudge Yourselves",
+      "teamAbbrev": "GFY",
+      "owner": "Phil Torres",
+      "score": 45.58
+    },
+    "away": {
+      "teamId": 6,
+      "teamName": "Insane in the  Ukraine",
+      "teamAbbrev": "B00B",
+      "owner": "Randell Crawford",
+      "score": 98.38
+    },
+    "winner": "AWAY"
+  },
+  {
+    "id": "2022_19_11_2",
+    "year": 2022,
+    "week": 19,
+    "matchupPeriodId": 19,
     "isPlayoff": true,
     "playoffType": "WINNERS_BRACKET",
     "home": {
@@ -17503,6 +18055,121 @@
     "winner": "AWAY"
   },
   {
+    "id": "2023_18_9_2",
+    "year": 2023,
+    "week": 18,
+    "matchupPeriodId": 18,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 9,
+      "teamName": "Salty Spitoon",
+      "teamAbbrev": "REXY",
+      "owner": "Ray Engleking",
+      "score": 150.88
+    },
+    "away": {
+      "teamId": 2,
+      "teamName": "Chase My Butker",
+      "teamAbbrev": "GRBG",
+      "owner": "Mike Kovacs",
+      "score": 103.76
+    },
+    "winner": "HOME"
+  },
+  {
+    "id": "2023_18_1_6",
+    "year": 2023,
+    "week": 18,
+    "matchupPeriodId": 18,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 1,
+      "teamName": "Why's This So Sticky?",
+      "teamAbbrev": "STKY",
+      "owner": "Bill Solecki",
+      "score": 133.3
+    },
+    "away": {
+      "teamId": 6,
+      "teamName": "Insane in the  Ukraine",
+      "teamAbbrev": "B00B",
+      "owner": "Randell Crawford",
+      "score": 116.96
+    },
+    "winner": "HOME"
+  },
+  {
+    "id": "2023_18_3_4",
+    "year": 2023,
+    "week": 18,
+    "matchupPeriodId": 18,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 3,
+      "teamName": "Taylor Swift ",
+      "teamAbbrev": "CARL",
+      "owner": "Carl Cummins",
+      "score": 107.34
+    },
+    "away": {
+      "teamId": 4,
+      "teamName": "Go Fudge Yourselves",
+      "teamAbbrev": "GFY",
+      "owner": "Phil Torres",
+      "score": 79.4
+    },
+    "winner": "HOME"
+  },
+  {
+    "id": "2023_18_11_14",
+    "year": 2023,
+    "week": 18,
+    "matchupPeriodId": 18,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 11,
+      "teamName": "All You Need is Love",
+      "teamAbbrev": "RAD",
+      "owner": "John Artiglier",
+      "score": 83.3
+    },
+    "away": {
+      "teamId": 14,
+      "teamName": "Bye Week",
+      "teamAbbrev": "Yup",
+      "owner": "Joe Jaramillo",
+      "score": 141.62
+    },
+    "winner": "AWAY"
+  },
+  {
+    "id": "2023_18_13_12",
+    "year": 2023,
+    "week": 18,
+    "matchupPeriodId": 18,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 13,
+      "teamName": "Peyton the Professor",
+      "teamAbbrev": "CRWD",
+      "owner": "john crawford",
+      "score": 109.1
+    },
+    "away": {
+      "teamId": 12,
+      "teamName": "We played Week 7, 8 and 13",
+      "teamAbbrev": "Dead",
+      "owner": "Ben Bingert",
+      "score": 120.94
+    },
+    "winner": "AWAY"
+  },
+  {
     "id": "2024_1_1_14",
     "year": 2024,
     "week": 1,
@@ -19435,6 +20102,121 @@
     "winner": "HOME"
   },
   {
+    "id": "2024_18_1_3",
+    "year": 2024,
+    "week": 18,
+    "matchupPeriodId": 18,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 1,
+      "teamName": "Bovine University Stampede",
+      "teamAbbrev": "STMP",
+      "owner": "Bill Solecki",
+      "score": 134.46
+    },
+    "away": {
+      "teamId": 3,
+      "teamName": "Taylor Swift ",
+      "teamAbbrev": "CARL",
+      "owner": "Carl Cummins",
+      "score": 120.72
+    },
+    "winner": "HOME"
+  },
+  {
+    "id": "2024_18_11_12",
+    "year": 2024,
+    "week": 18,
+    "matchupPeriodId": 18,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 11,
+      "teamName": "All You Need is Love",
+      "teamAbbrev": "RAD",
+      "owner": "John Artiglier",
+      "score": 103.38
+    },
+    "away": {
+      "teamId": 12,
+      "teamName": "Strouds in the Clouds",
+      "teamAbbrev": "Clou",
+      "owner": "Ben Bingert",
+      "score": 130.94
+    },
+    "winner": "AWAY"
+  },
+  {
+    "id": "2024_18_9_6",
+    "year": 2024,
+    "week": 18,
+    "matchupPeriodId": 18,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 9,
+      "teamName": "Salty Spitoon",
+      "teamAbbrev": "REXY",
+      "owner": "Ray Engleking",
+      "score": 81.98
+    },
+    "away": {
+      "teamId": 6,
+      "teamName": "Insane in the  Ukraine",
+      "teamAbbrev": "B00B",
+      "owner": "Randell Crawford",
+      "score": 126.4
+    },
+    "winner": "AWAY"
+  },
+  {
+    "id": "2024_18_14_2",
+    "year": 2024,
+    "week": 18,
+    "matchupPeriodId": 18,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 14,
+      "teamName": "Bye Week Part 2",
+      "teamAbbrev": "Yup",
+      "owner": "Joe Jaramillo",
+      "score": 110.28
+    },
+    "away": {
+      "teamId": 2,
+      "teamName": "Dollar Dollar Bills Y'all",
+      "teamAbbrev": "GRBG",
+      "owner": "Mike Kovacs",
+      "score": 103.68
+    },
+    "winner": "HOME"
+  },
+  {
+    "id": "2024_18_4_13",
+    "year": 2024,
+    "week": 18,
+    "matchupPeriodId": 18,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 4,
+      "teamName": "Hawk Tua",
+      "teamAbbrev": "HT",
+      "owner": "Phil Torres",
+      "score": 117.82
+    },
+    "away": {
+      "teamId": 13,
+      "teamName": "Paintin Peyton",
+      "teamAbbrev": "CRWD",
+      "owner": "john crawford",
+      "score": 103.9
+    },
+    "winner": "HOME"
+  },
+  {
     "id": "2025_1_1_6",
     "year": 2025,
     "week": 1,
@@ -21348,6 +22130,121 @@
     "year": 2025,
     "week": 17,
     "matchupPeriodId": 17,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 12,
+      "teamName": "Mail Fairy",
+      "teamAbbrev": "Clou",
+      "owner": "Ben Bingert",
+      "score": 61.04
+    },
+    "away": {
+      "teamId": 13,
+      "teamName": "Paintin Peyton",
+      "teamAbbrev": "CRWD",
+      "owner": "john crawford",
+      "score": 77.28
+    },
+    "winner": "AWAY"
+  },
+  {
+    "id": "2025_18_9_1",
+    "year": 2025,
+    "week": 18,
+    "matchupPeriodId": 18,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 9,
+      "teamName": "Salty Spitoon",
+      "teamAbbrev": "REXY",
+      "owner": "Ray Engleking",
+      "score": 113.88
+    },
+    "away": {
+      "teamId": 1,
+      "teamName": "Bovine University Stampede",
+      "teamAbbrev": "STMP",
+      "owner": "Bill Solecki",
+      "score": 94.26
+    },
+    "winner": "HOME"
+  },
+  {
+    "id": "2025_18_11_3",
+    "year": 2025,
+    "week": 18,
+    "matchupPeriodId": 18,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 11,
+      "teamName": "All You Need is Love",
+      "teamAbbrev": "RAD",
+      "owner": "John Artiglier",
+      "score": 79.68
+    },
+    "away": {
+      "teamId": 3,
+      "teamName": "Taylor and Travis Swift \ud83d\udc51",
+      "teamAbbrev": "CARL",
+      "owner": "Carl Cummins",
+      "score": 131.14
+    },
+    "winner": "AWAY"
+  },
+  {
+    "id": "2025_18_14_6",
+    "year": 2025,
+    "week": 18,
+    "matchupPeriodId": 18,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 14,
+      "teamName": "Loop, There it is!",
+      "teamAbbrev": "Yup",
+      "owner": "Joe Jaramillo",
+      "score": 103.28
+    },
+    "away": {
+      "teamId": 6,
+      "teamName": "Insane in the  Ukraine",
+      "teamAbbrev": "B00B",
+      "owner": "Randell Crawford",
+      "score": 127.62
+    },
+    "winner": "AWAY"
+  },
+  {
+    "id": "2025_18_2_4",
+    "year": 2025,
+    "week": 18,
+    "matchupPeriodId": 18,
+    "isPlayoff": true,
+    "playoffType": "WINNERS_BRACKET",
+    "home": {
+      "teamId": 2,
+      "teamName": "Saquanda Strikes Back",
+      "teamAbbrev": "GRBG",
+      "owner": "Mike Kovacs",
+      "score": 69.38
+    },
+    "away": {
+      "teamId": 4,
+      "teamName": "Skattebo's Ankle",
+      "teamAbbrev": "SA",
+      "owner": "Phil Torres",
+      "score": 105.1
+    },
+    "winner": "AWAY"
+  },
+  {
+    "id": "2025_18_12_13",
+    "year": 2025,
+    "week": 18,
+    "matchupPeriodId": 18,
     "isPlayoff": true,
     "playoffType": "WINNERS_BRACKET",
     "home": {

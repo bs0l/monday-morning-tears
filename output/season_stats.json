@@ -41,49 +41,19 @@
     },
     "longestWinStreak": {
       "owner": "Loren Kessell",
-      "length": 5,
-      "weeks": [
-        4,
-        5,
-        6,
-        7,
-        8
-      ]
+      "length": 5
     },
     "longestLossStreak": {
       "owner": "Mike Hunt",
-      "length": 6,
-      "weeks": [
-        12,
-        13,
-        14,
-        15,
-        16,
-        17
-      ]
+      "length": 6
     },
     "mostWeeklyHighScores": {
       "owner": "Phil Torres",
-      "count": 8,
-      "weeks": [
-        1,
-        2,
-        3,
-        7,
-        11,
-        13,
-        14,
-        15
-      ]
+      "count": 8
     },
     "mostWeeklyLowScores": {
       "owner": "Danielle Prizzi",
-      "count": 3,
-      "weeks": [
-        5,
-        8,
-        9
-      ]
+      "count": 3
     },
     "mostConsolationDollars": {
       "owner": null,
@@ -155,48 +125,19 @@
     },
     "longestWinStreak": {
       "owner": "Mike Kovacs",
-      "length": 7,
-      "weeks": [
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8
-      ]
+      "length": 7
     },
     "longestLossStreak": {
       "owner": "BAHB Kerwersker",
-      "length": 6,
-      "weeks": [
-        7,
-        8,
-        9,
-        10,
-        11,
-        13
-      ]
+      "length": 6
     },
     "mostWeeklyHighScores": {
       "owner": "Mike Kovacs",
-      "count": 3,
-      "weeks": [
-        2,
-        4,
-        7
-      ]
+      "count": 3
     },
     "mostWeeklyLowScores": {
       "owner": "Danielle Prizzi",
-      "count": 5,
-      "weeks": [
-        2,
-        5,
-        6,
-        8,
-        12
-      ]
+      "count": 5
     },
     "mostConsolationDollars": {
       "owner": null,
@@ -240,7 +181,7 @@
     "lowestScore": {
       "score": 52.18,
       "team": "Team Cahill",
-      "owner": "Rob Cahill",
+      "owner": null,
       "opponent": "Kish and Tell",
       "opponentScore": 110.8,
       "week": 7,
@@ -249,7 +190,7 @@
     "closestWin": {
       "margin": 0.1599999999999966,
       "winner": "Really Just Sean Kessell",
-      "winnerOwner": "Loren Kessell",
+      "winnerOwner": null,
       "winnerScore": 105.1,
       "loser": "Bills New Team Name",
       "loserScore": 104.94,
@@ -267,48 +208,20 @@
       "matchupPeriodId": 14
     },
     "longestWinStreak": {
-      "owner": "Loren Kessell",
-      "length": 6,
-      "weeks": [
-        2,
-        3,
-        4,
-        5,
-        6,
-        7
-      ]
+      "owner": "Bill Solecki",
+      "length": 5
     },
     "longestLossStreak": {
       "owner": "Carl Cummins",
-      "length": 8,
-      "weeks": [
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14
-      ]
+      "length": 8
     },
     "mostWeeklyHighScores": {
-      "owner": "Mike Kovacs",
-      "count": 3,
-      "weeks": [
-        3,
-        6,
-        11
-      ]
+      "owner": null,
+      "count": 4
     },
     "mostWeeklyLowScores": {
       "owner": "Brian Dorward",
-      "count": 3,
-      "weeks": [
-        2,
-        3,
-        12
-      ]
+      "count": 3
     },
     "mostConsolationDollars": {
       "owner": null,
@@ -345,7 +258,7 @@
         "score": 99.76
       },
       {
-        "owner": "Rob Cahill",
+        "owner": null,
         "team": "Team Cahill",
         "amount": 5,
         "week": 5,
@@ -359,14 +272,14 @@
         "score": 133.46
       },
       {
-        "owner": "Loren Kessell",
+        "owner": null,
         "team": "Really Just Sean Kessell",
         "amount": 5,
         "week": 7,
         "score": 119.74
       },
       {
-        "owner": "Rob Cahill",
+        "owner": null,
         "team": "Team Cahill",
         "amount": 5,
         "week": 8,
@@ -394,7 +307,7 @@
         "score": 100.74
       },
       {
-        "owner": "Rob Cahill",
+        "owner": null,
         "team": "Team Cahill",
         "amount": 5,
         "week": 12,
@@ -416,7 +329,7 @@
         "place": "3rd"
       },
       {
-        "owner": "Loren Kessell",
+        "owner": null,
         "team": "Really Just Sean Kessell",
         "amount": 60,
         "place": "2nd"
@@ -465,47 +378,19 @@
     },
     "longestWinStreak": {
       "owner": "Mike Kovacs",
-      "length": 6,
-      "weeks": [
-        9,
-        10,
-        11,
-        12,
-        13,
-        14
-      ]
+      "length": 6
     },
     "longestLossStreak": {
       "owner": "Brian Dorward",
-      "length": 5,
-      "weeks": [
-        4,
-        5,
-        6,
-        7,
-        8
-      ]
+      "length": 5
     },
     "mostWeeklyHighScores": {
       "owner": "Mike Kovacs",
-      "count": 5,
-      "weeks": [
-        3,
-        4,
-        7,
-        11,
-        12
-      ]
+      "count": 5
     },
     "mostWeeklyLowScores": {
       "owner": "Brandon Kish",
-      "count": 4,
-      "weeks": [
-        3,
-        4,
-        5,
-        9
-      ]
+      "count": 4
     },
     "mostConsolationDollars": {
       "owner": null,
@@ -662,51 +547,19 @@
     },
     "longestWinStreak": {
       "owner": "Ray Engleking",
-      "length": 6,
-      "weeks": [
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
-      ]
+      "length": 6
     },
     "longestLossStreak": {
       "owner": "Brian Dorward",
-      "length": 8,
-      "weeks": [
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10
-      ]
+      "length": 8
     },
     "mostWeeklyHighScores": {
       "owner": "Ray Engleking",
-      "count": 5,
-      "weeks": [
-        4,
-        5,
-        8,
-        9,
-        11
-      ]
+      "count": 5
     },
     "mostWeeklyLowScores": {
       "owner": "Brian Dorward",
-      "count": 5,
-      "weeks": [
-        5,
-        6,
-        7,
-        8,
-        9
-      ]
+      "count": 5
     },
     "mostConsolationDollars": {
       "owner": null,
@@ -863,47 +716,19 @@
     },
     "longestWinStreak": {
       "owner": "Ray Engleking",
-      "length": 5,
-      "weeks": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ]
+      "length": 5
     },
     "longestLossStreak": {
       "owner": "Mike Kovacs",
-      "length": 5,
-      "weeks": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ]
+      "length": 5
     },
     "mostWeeklyHighScores": {
       "owner": "Ray Engleking",
-      "count": 5,
-      "weeks": [
-        2,
-        4,
-        7,
-        8,
-        11
-      ]
+      "count": 5
     },
     "mostWeeklyLowScores": {
       "owner": "Carl Cummins",
-      "count": 5,
-      "weeks": [
-        3,
-        4,
-        5,
-        6,
-        8
-      ]
+      "count": 5
     },
     "mostConsolationDollars": {
       "owner": null,
@@ -1060,45 +885,19 @@
     },
     "longestWinStreak": {
       "owner": "Mike Kovacs",
-      "length": 6,
-      "weeks": [
-        6,
-        7,
-        8,
-        9,
-        10,
-        11
-      ]
+      "length": 6
     },
     "longestLossStreak": {
       "owner": "Randell Crawford",
-      "length": 6,
-      "weeks": [
-        11,
-        12,
-        13,
-        14,
-        15,
-        16
-      ]
+      "length": 6
     },
     "mostWeeklyHighScores": {
       "owner": "Carl Cummins",
-      "count": 3,
-      "weeks": [
-        1,
-        9,
-        10
-      ]
+      "count": 3
     },
     "mostWeeklyLowScores": {
       "owner": "John Artiglier",
-      "count": 3,
-      "weeks": [
-        1,
-        3,
-        9
-      ]
+      "count": 3
     },
     "mostConsolationDollars": {
       "owner": null,
@@ -1259,47 +1058,19 @@
     },
     "longestWinStreak": {
       "owner": "Randell Crawford",
-      "length": 5,
-      "weeks": [
-        12,
-        13,
-        14,
-        15,
-        16
-      ]
+      "length": 7
     },
     "longestLossStreak": {
       "owner": "Randell Crawford",
-      "length": 7,
-      "weeks": [
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
-      ]
+      "length": 7
     },
     "mostWeeklyHighScores": {
       "owner": "Bill Solecki",
-      "count": 5,
-      "weeks": [
-        1,
-        7,
-        8,
-        10,
-        13
-      ]
+      "count": 5
     },
     "mostWeeklyLowScores": {
       "owner": "Ben Bingert",
-      "count": 3,
-      "weeks": [
-        1,
-        5,
-        14
-      ]
+      "count": 3
     },
     "mostConsolationDollars": {
       "owner": "Carl Cummins",
@@ -1488,43 +1259,20 @@
       "matchupPeriodId": 5
     },
     "longestWinStreak": {
-      "owner": "Ray Engleking",
-      "length": 4,
-      "weeks": [
-        3,
-        4,
-        5,
-        6
-      ]
+      "owner": "Randell Crawford",
+      "length": 5
     },
     "longestLossStreak": {
-      "owner": "Randell Crawford",
-      "length": 5,
-      "weeks": [
-        10,
-        11,
-        12,
-        13,
-        14
-      ]
+      "owner": "Mike Kovacs",
+      "length": 6
     },
     "mostWeeklyHighScores": {
       "owner": "Mike Kovacs",
-      "count": 3,
-      "weeks": [
-        1,
-        6,
-        10
-      ]
+      "count": 3
     },
     "mostWeeklyLowScores": {
       "owner": "Randell Crawford",
-      "count": 3,
-      "weeks": [
-        6,
-        10,
-        14
-      ]
+      "count": 3
     },
     "mostConsolationDollars": {
       "owner": "John Artiglier",
@@ -1735,47 +1483,19 @@
     },
     "longestWinStreak": {
       "owner": "Carl Cummins",
-      "length": 5,
-      "weeks": [
-        6,
-        7,
-        8,
-        9,
-        10
-      ]
+      "length": 6
     },
     "longestLossStreak": {
       "owner": "Mike Kovacs",
-      "length": 7,
-      "weeks": [
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
-      ]
+      "length": 7
     },
     "mostWeeklyHighScores": {
       "owner": "Ben Bingert",
-      "count": 4,
-      "weeks": [
-        4,
-        5,
-        7,
-        9
-      ]
+      "count": 4
     },
     "mostWeeklyLowScores": {
       "owner": "Randell Crawford",
-      "count": 4,
-      "weeks": [
-        1,
-        2,
-        12,
-        14
-      ]
+      "count": 4
     },
     "mostConsolationDollars": {
       "owner": "Ray Engleking",
@@ -1965,50 +1685,19 @@
     },
     "longestWinStreak": {
       "owner": "Bill Solecki",
-      "length": 10,
-      "weeks": [
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14
-      ]
+      "length": 10
     },
     "longestLossStreak": {
-      "owner": "Ben Bingert",
-      "length": 6,
-      "weeks": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ]
+      "owner": "john crawford",
+      "length": 7
     },
     "mostWeeklyHighScores": {
       "owner": "Phil Torres",
-      "count": 4,
-      "weeks": [
-        7,
-        9,
-        11,
-        14
-      ]
+      "count": 4
     },
     "mostWeeklyLowScores": {
       "owner": "john crawford",
-      "count": 3,
-      "weeks": [
-        1,
-        9,
-        10
-      ]
+      "count": 3
     },
     "mostConsolationDollars": {
       "owner": "Bill Solecki",
@@ -2205,48 +1894,19 @@
     },
     "longestWinStreak": {
       "owner": "Bill Solecki",
-      "length": 8,
-      "weeks": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8
-      ]
+      "length": 8
     },
     "longestLossStreak": {
       "owner": "john crawford",
-      "length": 7,
-      "weeks": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7
-      ]
+      "length": 7
     },
     "mostWeeklyHighScores": {
       "owner": "Carl Cummins",
-      "count": 3,
-      "weeks": [
-        3,
-        7,
-        9
-      ]
+      "count": 3
     },
     "mostWeeklyLowScores": {
       "owner": "john crawford",
-      "count": 3,
-      "weeks": [
-        3,
-        5,
-        12
-      ]
+      "count": 3
     },
     "mostConsolationDollars": {
       "owner": null,
@@ -2421,50 +2081,19 @@
     },
     "longestWinStreak": {
       "owner": "Bill Solecki",
-      "length": 7,
-      "weeks": [
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11
-      ]
+      "length": 7
     },
     "longestLossStreak": {
       "owner": "john crawford",
-      "length": 8,
-      "weeks": [
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11
-      ]
+      "length": 8
     },
     "mostWeeklyHighScores": {
       "owner": "Ray Engleking",
-      "count": 4,
-      "weeks": [
-        1,
-        9,
-        13,
-        14
-      ]
+      "count": 4
     },
     "mostWeeklyLowScores": {
       "owner": "Phil Torres",
-      "count": 4,
-      "weeks": [
-        1,
-        4,
-        9,
-        10
-      ]
+      "count": 4
     },
     "mostConsolationDollars": {
       "owner": null,

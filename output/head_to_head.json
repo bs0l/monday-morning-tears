@@ -3,23 +3,23 @@
     "Loren Kessell": {
       "opponent": "Loren Kessell",
       "opponentName": "Really Just Sean Kessell",
-      "wins": 3,
-      "losses": 3,
+      "wins": 2,
+      "losses": 2,
       "ties": 0,
       "winPercentage": 0.5,
-      "totalGames": 6,
-      "pointsFor": 713.84,
-      "pointsAgainst": 727.92,
-      "avgPointsFor": 118.97333333333334,
-      "avgPointsAgainst": 121.32,
-      "highestScore": 211.9,
+      "totalGames": 4,
+      "pointsFor": 397.0,
+      "pointsAgainst": 426.0,
+      "avgPointsFor": 99.25,
+      "avgPointsAgainst": 106.5,
+      "highestScore": 103.0,
       "lowestScore": 96.0,
       "biggestWin": 40.0,
-      "closestWin": 15.080000000000013,
+      "closestWin": 21.0,
       "longestWinStreak": 2,
       "currentStreak": {
         "type": "WIN",
-        "length": 1
+        "length": 2
       },
       "matchups": [
         {
@@ -111,52 +111,6 @@
             "teamAbbrev": "KSSL",
             "owner": "Loren Kessell",
             "score": 82.0
-          },
-          "winner": "HOME"
-        },
-        {
-          "id": "2015_5_1_5",
-          "year": 2015,
-          "week": 5,
-          "matchupPeriodId": 5,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 1,
-            "teamName": "Bills New Team Name",
-            "teamAbbrev": "BILL",
-            "owner": "Bill Solecki",
-            "score": 104.94
-          },
-          "away": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 105.1
-          },
-          "winner": "AWAY"
-        },
-        {
-          "id": "2015_14_1_5",
-          "year": 2015,
-          "week": 14,
-          "matchupPeriodId": 14,
-          "isPlayoff": true,
-          "playoffType": "WINNERS_BRACKET",
-          "home": {
-            "teamId": 1,
-            "teamName": "Bills New Team Name",
-            "teamAbbrev": "BILL",
-            "owner": "Bill Solecki",
-            "score": 211.9
-          },
-          "away": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 196.82
           },
           "winner": "HOME"
         }
@@ -903,23 +857,23 @@
     "Randell Crawford": {
       "opponent": "Randell Crawford",
       "opponentName": "Insane in the  Ukraine",
-      "wins": 18,
+      "wins": 19,
       "losses": 11,
       "ties": 0,
-      "winPercentage": 0.6206896551724138,
-      "totalGames": 29,
-      "pointsFor": 3495.04,
-      "pointsAgainst": 3296.4,
-      "avgPointsFor": 120.51862068965517,
-      "avgPointsAgainst": 113.66896551724139,
+      "winPercentage": 0.6333333333333333,
+      "totalGames": 30,
+      "pointsFor": 3628.34,
+      "pointsAgainst": 3413.36,
+      "avgPointsFor": 120.94466666666668,
+      "avgPointsAgainst": 113.77866666666667,
       "highestScore": 223.7,
       "lowestScore": 69.0,
       "biggestWin": 75.88,
       "closestWin": 2.6799999999999926,
-      "longestWinStreak": 7,
+      "longestWinStreak": 8,
       "currentStreak": {
         "type": "WIN",
-        "length": 7
+        "length": 8
       },
       "matchups": [
         {
@@ -1456,6 +1410,29 @@
           "year": 2023,
           "week": 17,
           "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 1,
+            "teamName": "Why's This So Sticky?",
+            "teamAbbrev": "STKY",
+            "owner": "Bill Solecki",
+            "score": 133.3
+          },
+          "away": {
+            "teamId": 6,
+            "teamName": "Insane in the  Ukraine",
+            "teamAbbrev": "B00B",
+            "owner": "Randell Crawford",
+            "score": 116.96
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2023_18_1_6",
+          "year": 2023,
+          "week": 18,
+          "matchupPeriodId": 18,
           "isPlayoff": true,
           "playoffType": "WINNERS_BRACKET",
           "home": {
@@ -2311,15 +2288,15 @@
     "Carl Cummins": {
       "opponent": "Carl Cummins",
       "opponentName": "Taylor and Travis Swift \ud83d\udc51",
-      "wins": 17,
+      "wins": 18,
       "losses": 7,
       "ties": 0,
-      "winPercentage": 0.7083333333333334,
-      "totalGames": 24,
-      "pointsFor": 2887.3,
-      "pointsAgainst": 2643.32,
-      "avgPointsFor": 120.30416666666667,
-      "avgPointsAgainst": 110.13833333333334,
+      "winPercentage": 0.72,
+      "totalGames": 25,
+      "pointsFor": 3021.76,
+      "pointsAgainst": 2764.04,
+      "avgPointsFor": 120.8704,
+      "avgPointsAgainst": 110.5616,
       "highestScore": 152.6,
       "lowestScore": 66.88,
       "biggestWin": 65.0,
@@ -2327,7 +2304,7 @@
       "longestWinStreak": 6,
       "currentStreak": {
         "type": "WIN",
-        "length": 5
+        "length": 6
       },
       "matchups": [
         {
@@ -2837,6 +2814,29 @@
           "winner": "HOME"
         },
         {
+          "id": "2024_18_1_3",
+          "year": 2024,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 1,
+            "teamName": "Bovine University Stampede",
+            "teamAbbrev": "STMP",
+            "owner": "Bill Solecki",
+            "score": 134.46
+          },
+          "away": {
+            "teamId": 3,
+            "teamName": "Taylor Swift ",
+            "teamAbbrev": "CARL",
+            "owner": "Carl Cummins",
+            "score": 120.72
+          },
+          "winner": "HOME"
+        },
+        {
           "id": "2025_2_3_1",
           "year": 2025,
           "week": 2,
@@ -3188,23 +3188,23 @@
     "Ray Engleking": {
       "opponent": "Ray Engleking",
       "opponentName": "Salty Spitoon",
-      "wins": 13,
-      "losses": 13,
+      "wins": 17,
+      "losses": 14,
       "ties": 0,
-      "winPercentage": 0.5,
-      "totalGames": 26,
-      "pointsFor": 2915.84,
-      "pointsAgainst": 3041.4,
-      "avgPointsFor": 112.14769230769231,
-      "avgPointsAgainst": 116.97692307692309,
+      "winPercentage": 0.5483870967741935,
+      "totalGames": 31,
+      "pointsFor": 3493.98,
+      "pointsAgainst": 3536.2,
+      "avgPointsFor": 112.70903225806451,
+      "avgPointsAgainst": 114.07096774193548,
       "highestScore": 157.28,
       "lowestScore": 65.42,
       "biggestWin": 48.639999999999986,
       "closestWin": 1.7000000000000028,
-      "longestWinStreak": 5,
+      "longestWinStreak": 7,
       "currentStreak": {
         "type": "LOSS",
-        "length": 2
+        "length": 3
       },
       "matchups": [
         {
@@ -3507,6 +3507,52 @@
           "winner": "HOME"
         },
         {
+          "id": "2020_17_1_9",
+          "year": 2020,
+          "week": 17,
+          "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 1,
+            "teamName": "Wade Boggs Memorial Team",
+            "teamAbbrev": "BOGS",
+            "owner": "Bill Solecki",
+            "score": 142.64
+          },
+          "away": {
+            "teamId": 9,
+            "teamName": "Salty Spitoon",
+            "teamAbbrev": "REXY",
+            "owner": "Ray Engleking",
+            "score": 94.0
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2020_18_1_9",
+          "year": 2020,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 1,
+            "teamName": "Wade Boggs Memorial Team",
+            "teamAbbrev": "BOGS",
+            "owner": "Bill Solecki",
+            "score": 142.64
+          },
+          "away": {
+            "teamId": 9,
+            "teamName": "Salty Spitoon",
+            "teamAbbrev": "REXY",
+            "owner": "Ray Engleking",
+            "score": 94.0
+          },
+          "winner": "HOME"
+        },
+        {
           "id": "2021_5_1_9",
           "year": 2021,
           "week": 5,
@@ -3668,6 +3714,52 @@
           "winner": "AWAY"
         },
         {
+          "id": "2022_18_9_1",
+          "year": 2022,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 9,
+            "teamName": "Salty Spitoon",
+            "teamAbbrev": "REXY",
+            "owner": "Ray Engleking",
+            "score": 96.46
+          },
+          "away": {
+            "teamId": 1,
+            "teamName": "Musconetcong Mantis Men",
+            "teamAbbrev": "MNTS",
+            "owner": "Bill Solecki",
+            "score": 99.3
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2022_19_9_1",
+          "year": 2022,
+          "week": 19,
+          "matchupPeriodId": 19,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 9,
+            "teamName": "Salty Spitoon",
+            "teamAbbrev": "REXY",
+            "owner": "Ray Engleking",
+            "score": 96.46
+          },
+          "away": {
+            "teamId": 1,
+            "teamName": "Musconetcong Mantis Men",
+            "teamAbbrev": "MNTS",
+            "owner": "Bill Solecki",
+            "score": 99.3
+          },
+          "winner": "AWAY"
+        },
+        {
           "id": "2023_7_9_1",
           "year": 2023,
           "week": 7,
@@ -3804,6 +3896,29 @@
             "score": 94.26
           },
           "winner": "HOME"
+        },
+        {
+          "id": "2025_18_9_1",
+          "year": 2025,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 9,
+            "teamName": "Salty Spitoon",
+            "teamAbbrev": "REXY",
+            "owner": "Ray Engleking",
+            "score": 113.88
+          },
+          "away": {
+            "teamId": 1,
+            "teamName": "Bovine University Stampede",
+            "teamAbbrev": "STMP",
+            "owner": "Bill Solecki",
+            "score": 94.26
+          },
+          "winner": "HOME"
         }
       ]
     },
@@ -3854,88 +3969,18 @@
         }
       ]
     },
-    "Rob Cahill": {
-      "opponent": "Rob Cahill",
-      "opponentName": "Team Cahill",
-      "wins": 1,
-      "losses": 1,
-      "ties": 0,
-      "winPercentage": 0.5,
-      "totalGames": 2,
-      "pointsFor": 157.12,
-      "pointsAgainst": 169.92000000000002,
-      "avgPointsFor": 78.56,
-      "avgPointsAgainst": 84.96000000000001,
-      "highestScore": 86.46,
-      "lowestScore": 70.66,
-      "biggestWin": 15.659999999999997,
-      "closestWin": 15.659999999999997,
-      "longestWinStreak": 1,
-      "currentStreak": {
-        "type": "LOSS",
-        "length": 1
-      },
-      "matchups": [
-        {
-          "id": "2015_2_1_8",
-          "year": 2015,
-          "week": 2,
-          "matchupPeriodId": 2,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 1,
-            "teamName": "Bills New Team Name",
-            "teamAbbrev": "BILL",
-            "owner": "Bill Solecki",
-            "score": 86.46
-          },
-          "away": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 70.8
-          },
-          "winner": "HOME"
-        },
-        {
-          "id": "2015_11_1_8",
-          "year": 2015,
-          "week": 11,
-          "matchupPeriodId": 11,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 1,
-            "teamName": "Bills New Team Name",
-            "teamAbbrev": "BILL",
-            "owner": "Bill Solecki",
-            "score": 70.66
-          },
-          "away": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 99.12
-          },
-          "winner": "AWAY"
-        }
-      ]
-    },
     "Ben Bingert": {
       "opponent": "Ben Bingert",
       "opponentName": "Mail Fairy",
       "wins": 11,
-      "losses": 13,
+      "losses": 15,
       "ties": 0,
-      "winPercentage": 0.4583333333333333,
-      "totalGames": 24,
-      "pointsFor": 3276.94,
-      "pointsAgainst": 3174.52,
-      "avgPointsFor": 136.53916666666666,
-      "avgPointsAgainst": 132.27166666666668,
+      "winPercentage": 0.4230769230769231,
+      "totalGames": 26,
+      "pointsFor": 3469.58,
+      "pointsAgainst": 3410.0,
+      "avgPointsFor": 133.44538461538463,
+      "avgPointsAgainst": 131.15384615384616,
       "highestScore": 258.48,
       "lowestScore": 58.7,
       "biggestWin": 72.8,
@@ -4250,6 +4295,52 @@
           "year": 2021,
           "week": 17,
           "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 12,
+            "teamName": "Chubb Basshole",
+            "teamAbbrev": "Chub",
+            "owner": "Ben Bingert",
+            "score": 117.74
+          },
+          "away": {
+            "teamId": 1,
+            "teamName": "Wade Boggs Memorial Team",
+            "teamAbbrev": "BOGS",
+            "owner": "Bill Solecki",
+            "score": 96.32
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2021_18_12_1",
+          "year": 2021,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 12,
+            "teamName": "Chubb Basshole",
+            "teamAbbrev": "Chub",
+            "owner": "Ben Bingert",
+            "score": 117.74
+          },
+          "away": {
+            "teamId": 1,
+            "teamName": "Wade Boggs Memorial Team",
+            "teamAbbrev": "BOGS",
+            "owner": "Bill Solecki",
+            "score": 96.32
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2021_19_12_1",
+          "year": 2021,
+          "week": 19,
+          "matchupPeriodId": 19,
           "isPlayoff": true,
           "playoffType": "WINNERS_BRACKET",
           "home": {
@@ -5106,23 +5197,23 @@
     "Bill Solecki": {
       "opponent": "Bill Solecki",
       "opponentName": "Bovine University Stampede",
-      "wins": 3,
-      "losses": 3,
+      "wins": 2,
+      "losses": 2,
       "ties": 0,
       "winPercentage": 0.5,
-      "totalGames": 6,
-      "pointsFor": 727.92,
-      "pointsAgainst": 713.84,
-      "avgPointsFor": 121.32,
-      "avgPointsAgainst": 118.97333333333334,
-      "highestScore": 196.82,
+      "totalGames": 4,
+      "pointsFor": 426.0,
+      "pointsAgainst": 397.0,
+      "avgPointsFor": 106.5,
+      "avgPointsAgainst": 99.25,
+      "highestScore": 171.0,
       "lowestScore": 60.0,
       "biggestWin": 73.0,
-      "closestWin": 0.1599999999999966,
+      "closestWin": 17.0,
       "longestWinStreak": 2,
       "currentStreak": {
         "type": "LOSS",
-        "length": 1
+        "length": 2
       },
       "matchups": [
         {
@@ -5214,52 +5305,6 @@
             "teamAbbrev": "KSSL",
             "owner": "Loren Kessell",
             "score": 82.0
-          },
-          "winner": "HOME"
-        },
-        {
-          "id": "2015_5_1_5",
-          "year": 2015,
-          "week": 5,
-          "matchupPeriodId": 5,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 1,
-            "teamName": "Bills New Team Name",
-            "teamAbbrev": "BILL",
-            "owner": "Bill Solecki",
-            "score": 104.94
-          },
-          "away": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 105.1
-          },
-          "winner": "AWAY"
-        },
-        {
-          "id": "2015_14_1_5",
-          "year": 2015,
-          "week": 14,
-          "matchupPeriodId": 14,
-          "isPlayoff": true,
-          "playoffType": "WINNERS_BRACKET",
-          "home": {
-            "teamId": 1,
-            "teamName": "Bills New Team Name",
-            "teamAbbrev": "BILL",
-            "owner": "Bill Solecki",
-            "score": 211.9
-          },
-          "away": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 196.82
           },
           "winner": "HOME"
         }
@@ -5362,22 +5407,22 @@
       "opponent": "Mike Kovacs",
       "opponentName": "Saquanda Strikes Back",
       "wins": 1,
-      "losses": 4,
+      "losses": 3,
       "ties": 0,
-      "winPercentage": 0.2,
-      "totalGames": 5,
-      "pointsFor": 592.6,
-      "pointsAgainst": 762.24,
-      "avgPointsFor": 118.52000000000001,
-      "avgPointsAgainst": 152.448,
+      "winPercentage": 0.25,
+      "totalGames": 4,
+      "pointsFor": 515.0,
+      "pointsAgainst": 658.0,
+      "avgPointsFor": 128.75,
+      "avgPointsAgainst": 164.5,
       "highestScore": 191.0,
-      "lowestScore": 77.6,
+      "lowestScore": 92.0,
       "biggestWin": 36.0,
       "closestWin": 36.0,
       "longestWinStreak": 1,
       "currentStreak": {
         "type": "LOSS",
-        "length": 4
+        "length": 3
       },
       "matchups": [
         {
@@ -5471,52 +5516,29 @@
             "score": 191.0
           },
           "winner": "HOME"
-        },
-        {
-          "id": "2015_9_2_5",
-          "year": 2015,
-          "week": 9,
-          "matchupPeriodId": 9,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
-            "teamAbbrev": "huh?",
-            "owner": "Mike Kovacs",
-            "score": 104.24
-          },
-          "away": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 77.6
-          },
-          "winner": "HOME"
         }
       ]
     },
     "Randell Crawford": {
       "opponent": "Randell Crawford",
       "opponentName": "Insane in the  Ukraine",
-      "wins": 4,
-      "losses": 1,
+      "wins": 3,
+      "losses": 0,
       "ties": 0,
-      "winPercentage": 0.8,
-      "totalGames": 5,
-      "pointsFor": 477.56,
-      "pointsAgainst": 413.34000000000003,
-      "avgPointsFor": 95.512,
-      "avgPointsAgainst": 82.668,
+      "winPercentage": 1.0,
+      "totalGames": 3,
+      "pointsFor": 330.0,
+      "pointsAgainst": 241.0,
+      "avgPointsFor": 110.0,
+      "avgPointsAgainst": 80.33333333333333,
       "highestScore": 118.0,
-      "lowestScore": 56.12,
+      "lowestScore": 101.0,
       "biggestWin": 32.0,
-      "closestWin": 7.8799999999999955,
-      "longestWinStreak": 4,
+      "closestWin": 27.0,
+      "longestWinStreak": 3,
       "currentStreak": {
-        "type": "LOSS",
-        "length": 1
+        "type": "WIN",
+        "length": 3
       },
       "matchups": [
         {
@@ -5587,52 +5609,6 @@
             "score": 88.0
           },
           "winner": "HOME"
-        },
-        {
-          "id": "2015_2_5_6",
-          "year": 2015,
-          "week": 2,
-          "matchupPeriodId": 2,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 91.44
-          },
-          "away": {
-            "teamId": 6,
-            "teamName": "oh no its John Snooooooow",
-            "teamAbbrev": "Game",
-            "owner": "Randell Crawford",
-            "score": 83.56
-          },
-          "winner": "HOME"
-        },
-        {
-          "id": "2015_11_5_6",
-          "year": 2015,
-          "week": 11,
-          "matchupPeriodId": 11,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 56.12
-          },
-          "away": {
-            "teamId": 6,
-            "teamName": "oh no its John Snooooooow",
-            "teamAbbrev": "Game",
-            "owner": "Randell Crawford",
-            "score": 88.78
-          },
-          "winner": "AWAY"
         }
       ]
     },
@@ -5872,23 +5848,23 @@
     "Phil Torres": {
       "opponent": "Phil Torres",
       "opponentName": "Skattebo's Ankle",
-      "wins": 3,
+      "wins": 2,
       "losses": 3,
       "ties": 0,
-      "winPercentage": 0.5,
-      "totalGames": 6,
-      "pointsFor": 702.74,
-      "pointsAgainst": 683.9,
-      "avgPointsFor": 117.12333333333333,
-      "avgPointsAgainst": 113.98333333333333,
+      "winPercentage": 0.4,
+      "totalGames": 5,
+      "pointsFor": 583.0,
+      "pointsAgainst": 605.0,
+      "avgPointsFor": 116.6,
+      "avgPointsAgainst": 121.0,
       "highestScore": 150.0,
       "lowestScore": 73.0,
       "biggestWin": 42.0,
-      "closestWin": 40.83999999999999,
-      "longestWinStreak": 2,
+      "closestWin": 41.0,
+      "longestWinStreak": 1,
       "currentStreak": {
         "type": "WIN",
-        "length": 2
+        "length": 1
       },
       "matchups": [
         {
@@ -6005,52 +5981,29 @@
             "score": 128.0
           },
           "winner": "AWAY"
-        },
-        {
-          "id": "2015_7_4_5",
-          "year": 2015,
-          "week": 7,
-          "matchupPeriodId": 7,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 4,
-            "teamName": "Chef's choclate Salty Balls",
-            "teamAbbrev": "CHEF",
-            "owner": "Phil Torres",
-            "score": 78.9
-          },
-          "away": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 119.74
-          },
-          "winner": "AWAY"
         }
       ]
     },
     "Carl Cummins": {
       "opponent": "Carl Cummins",
       "opponentName": "Taylor and Travis Swift \ud83d\udc51",
-      "wins": 3,
-      "losses": 1,
+      "wins": 2,
+      "losses": 0,
       "ties": 0,
-      "winPercentage": 0.75,
-      "totalGames": 4,
-      "pointsFor": 418.5,
-      "pointsAgainst": 399.34,
-      "avgPointsFor": 104.625,
-      "avgPointsAgainst": 99.835,
+      "winPercentage": 1.0,
+      "totalGames": 2,
+      "pointsFor": 262.0,
+      "pointsAgainst": 218.0,
+      "avgPointsFor": 131.0,
+      "avgPointsAgainst": 109.0,
       "highestScore": 157.0,
-      "lowestScore": 76.64,
+      "lowestScore": 105.0,
       "biggestWin": 35.0,
-      "closestWin": 0.5400000000000063,
+      "closestWin": 9.0,
       "longestWinStreak": 2,
       "currentStreak": {
         "type": "WIN",
-        "length": 1
+        "length": 2
       },
       "matchups": [
         {
@@ -6098,75 +6051,29 @@
             "score": 157.0
           },
           "winner": "AWAY"
-        },
-        {
-          "id": "2015_1_3_5",
-          "year": 2015,
-          "week": 1,
-          "matchupPeriodId": 1,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 3,
-            "teamName": "Duckman Kowalski",
-            "teamAbbrev": "CARL",
-            "owner": "Carl Cummins",
-            "score": 102.02
-          },
-          "away": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 76.64
-          },
-          "winner": "HOME"
-        },
-        {
-          "id": "2015_10_3_5",
-          "year": 2015,
-          "week": 10,
-          "matchupPeriodId": 10,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 3,
-            "teamName": "Duckman Kowalski",
-            "teamAbbrev": "CARL",
-            "owner": "Carl Cummins",
-            "score": 79.32
-          },
-          "away": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 79.86
-          },
-          "winner": "AWAY"
         }
       ]
     },
     "Brandon Kish": {
       "opponent": "Brandon Kish",
       "opponentName": "Kish and Tell",
-      "wins": 2,
+      "wins": 1,
       "losses": 0,
       "ties": 0,
       "winPercentage": 1.0,
-      "totalGames": 2,
-      "pointsFor": 186.28,
-      "pointsAgainst": 116.42,
-      "avgPointsFor": 93.14,
-      "avgPointsAgainst": 58.21,
+      "totalGames": 1,
+      "pointsFor": 101.0,
+      "pointsAgainst": 59.0,
+      "avgPointsFor": 101.0,
+      "avgPointsAgainst": 59.0,
       "highestScore": 101.0,
-      "lowestScore": 85.28,
+      "lowestScore": 101.0,
       "biggestWin": 42.0,
-      "closestWin": 27.86,
-      "longestWinStreak": 2,
+      "closestWin": 42.0,
+      "longestWinStreak": 1,
       "currentStreak": {
         "type": "WIN",
-        "length": 2
+        "length": 1
       },
       "matchups": [
         {
@@ -6191,52 +6098,29 @@
             "score": 59.0
           },
           "winner": "HOME"
-        },
-        {
-          "id": "2015_4_5_12",
-          "year": 2015,
-          "week": 4,
-          "matchupPeriodId": 4,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 85.28
-          },
-          "away": {
-            "teamId": 12,
-            "teamName": "Kish and Tell",
-            "teamAbbrev": "FISH",
-            "owner": "Brandon Kish",
-            "score": 57.42
-          },
-          "winner": "HOME"
         }
       ]
     },
     "Brian Dorward": {
       "opponent": "Brian Dorward",
       "opponentName": "Plainsboro Owls",
-      "wins": 3,
+      "wins": 0,
       "losses": 1,
       "ties": 0,
-      "winPercentage": 0.75,
-      "totalGames": 4,
-      "pointsFor": 478.94,
-      "pointsAgainst": 384.48,
-      "avgPointsFor": 119.735,
-      "avgPointsAgainst": 96.12,
-      "highestScore": 186.24,
+      "winPercentage": 0.0,
+      "totalGames": 1,
+      "pointsFor": 75.0,
+      "pointsAgainst": 76.0,
+      "avgPointsFor": 75.0,
+      "avgPointsAgainst": 76.0,
+      "highestScore": 75.0,
       "lowestScore": 75.0,
-      "biggestWin": 52.57999999999999,
-      "closestWin": 21.28,
-      "longestWinStreak": 3,
+      "biggestWin": 0,
+      "closestWin": 0,
+      "longestWinStreak": 0,
       "currentStreak": {
-        "type": "WIN",
-        "length": 3
+        "type": "LOSS",
+        "length": 1
       },
       "matchups": [
         {
@@ -6261,98 +6145,29 @@
             "score": 76.0
           },
           "winner": "AWAY"
-        },
-        {
-          "id": "2015_3_5_11",
-          "year": 2015,
-          "week": 3,
-          "matchupPeriodId": 3,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 104.1
-          },
-          "away": {
-            "teamId": 11,
-            "teamName": "Plainsboro Owls",
-            "teamAbbrev": "WHOO",
-            "owner": "Brian Dorward",
-            "score": 82.5
-          },
-          "winner": "HOME"
-        },
-        {
-          "id": "2015_12_5_11",
-          "year": 2015,
-          "week": 12,
-          "matchupPeriodId": 12,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 113.6
-          },
-          "away": {
-            "teamId": 11,
-            "teamName": "Plainsboro Owls",
-            "teamAbbrev": "WHOO",
-            "owner": "Brian Dorward",
-            "score": 61.02
-          },
-          "winner": "HOME"
-        },
-        {
-          "id": "2015_13_5_11",
-          "year": 2015,
-          "week": 13,
-          "matchupPeriodId": 13,
-          "isPlayoff": true,
-          "playoffType": "WINNERS_BRACKET",
-          "home": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 186.24
-          },
-          "away": {
-            "teamId": 11,
-            "teamName": "Plainsboro Owls",
-            "teamAbbrev": "WHOO",
-            "owner": "Brian Dorward",
-            "score": 164.96
-          },
-          "winner": "HOME"
         }
       ]
     },
     "Ray Engleking": {
       "opponent": "Ray Engleking",
       "opponentName": "Salty Spitoon",
-      "wins": 2,
+      "wins": 1,
       "losses": 0,
       "ties": 0,
       "winPercentage": 1.0,
-      "totalGames": 2,
-      "pointsFor": 241.42000000000002,
-      "pointsAgainst": 230.62,
-      "avgPointsFor": 120.71000000000001,
-      "avgPointsAgainst": 115.31,
+      "totalGames": 1,
+      "pointsFor": 131.0,
+      "pointsAgainst": 127.0,
+      "avgPointsFor": 131.0,
+      "avgPointsAgainst": 127.0,
       "highestScore": 131.0,
-      "lowestScore": 110.42,
-      "biggestWin": 6.799999999999997,
+      "lowestScore": 131.0,
+      "biggestWin": 4.0,
       "closestWin": 4.0,
-      "longestWinStreak": 2,
+      "longestWinStreak": 1,
       "currentStreak": {
         "type": "WIN",
-        "length": 2
+        "length": 1
       },
       "matchups": [
         {
@@ -6375,29 +6190,6 @@
             "teamAbbrev": "REXY",
             "owner": "Ray Engleking",
             "score": 127.0
-          },
-          "winner": "HOME"
-        },
-        {
-          "id": "2015_6_5_9",
-          "year": 2015,
-          "week": 6,
-          "matchupPeriodId": 6,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 110.42
-          },
-          "away": {
-            "teamId": 9,
-            "teamName": "Rex Grossman Fan Club",
-            "teamAbbrev": "REXY",
-            "owner": "Ray Engleking",
-            "score": 103.62
           },
           "winner": "HOME"
         }
@@ -6445,53 +6237,6 @@
             "teamAbbrev": "BAHB",
             "owner": "BAHB Kerwersker",
             "score": 127.0
-          },
-          "winner": "AWAY"
-        }
-      ]
-    },
-    "Rob Cahill": {
-      "opponent": "Rob Cahill",
-      "opponentName": "Team Cahill",
-      "wins": 0,
-      "losses": 1,
-      "ties": 0,
-      "winPercentage": 0.0,
-      "totalGames": 1,
-      "pointsFor": 109.04,
-      "pointsAgainst": 117.6,
-      "avgPointsFor": 109.04,
-      "avgPointsAgainst": 117.6,
-      "highestScore": 109.04,
-      "lowestScore": 109.04,
-      "biggestWin": 0,
-      "closestWin": 0,
-      "longestWinStreak": 0,
-      "currentStreak": {
-        "type": "LOSS",
-        "length": 1
-      },
-      "matchups": [
-        {
-          "id": "2015_8_5_8",
-          "year": 2015,
-          "week": 8,
-          "matchupPeriodId": 8,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 109.04
-          },
-          "away": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 117.6
           },
           "winner": "AWAY"
         }
@@ -8197,23 +7942,23 @@
     "Loren Kessell": {
       "opponent": "Loren Kessell",
       "opponentName": "Really Just Sean Kessell",
-      "wins": 4,
+      "wins": 3,
       "losses": 1,
       "ties": 0,
-      "winPercentage": 0.8,
-      "totalGames": 5,
-      "pointsFor": 762.24,
-      "pointsAgainst": 592.6,
-      "avgPointsFor": 152.448,
-      "avgPointsAgainst": 118.52000000000001,
+      "winPercentage": 0.75,
+      "totalGames": 4,
+      "pointsFor": 658.0,
+      "pointsAgainst": 515.0,
+      "avgPointsFor": 164.5,
+      "avgPointsAgainst": 128.75,
       "highestScore": 249.0,
       "lowestScore": 94.0,
       "biggestWin": 84.0,
-      "closestWin": 26.64,
-      "longestWinStreak": 4,
+      "closestWin": 37.0,
+      "longestWinStreak": 3,
       "currentStreak": {
         "type": "WIN",
-        "length": 4
+        "length": 3
       },
       "matchups": [
         {
@@ -8307,29 +8052,6 @@
             "score": 191.0
           },
           "winner": "HOME"
-        },
-        {
-          "id": "2015_9_2_5",
-          "year": 2015,
-          "week": 9,
-          "matchupPeriodId": 9,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
-            "teamAbbrev": "huh?",
-            "owner": "Mike Kovacs",
-            "score": 104.24
-          },
-          "away": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 77.6
-          },
-          "winner": "HOME"
         }
       ]
     },
@@ -8407,14 +8129,14 @@
       "opponent": "Randell Crawford",
       "opponentName": "Insane in the  Ukraine",
       "wins": 13,
-      "losses": 13,
+      "losses": 15,
       "ties": 0,
-      "winPercentage": 0.5,
-      "totalGames": 26,
-      "pointsFor": 2721.18,
-      "pointsAgainst": 2731.76,
-      "avgPointsFor": 104.66076923076922,
-      "avgPointsAgainst": 105.06769230769231,
+      "winPercentage": 0.4642857142857143,
+      "totalGames": 28,
+      "pointsFor": 2916.82,
+      "pointsAgainst": 2992.68,
+      "avgPointsFor": 104.17214285714286,
+      "avgPointsAgainst": 106.88142857142857,
       "highestScore": 156.88,
       "lowestScore": 68.2,
       "biggestWin": 79.78,
@@ -8752,6 +8474,52 @@
           "year": 2020,
           "week": 16,
           "matchupPeriodId": 16,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 2,
+            "teamName": "All Aboard The J Train",
+            "teamAbbrev": "GRBG",
+            "owner": "Mike Kovacs",
+            "score": 97.82
+          },
+          "away": {
+            "teamId": 6,
+            "teamName": "19 Problems and Covid is One",
+            "teamAbbrev": "SARS",
+            "owner": "Randell Crawford",
+            "score": 130.46
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2020_17_2_6",
+          "year": 2020,
+          "week": 17,
+          "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 2,
+            "teamName": "All Aboard The J Train",
+            "teamAbbrev": "GRBG",
+            "owner": "Mike Kovacs",
+            "score": 97.82
+          },
+          "away": {
+            "teamId": 6,
+            "teamName": "19 Problems and Covid is One",
+            "teamAbbrev": "SARS",
+            "owner": "Randell Crawford",
+            "score": 130.46
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2020_18_2_6",
+          "year": 2020,
+          "week": 18,
+          "matchupPeriodId": 18,
           "isPlayoff": true,
           "playoffType": "WINNERS_BRACKET",
           "home": {
@@ -9239,14 +9007,14 @@
       "opponent": "Phil Torres",
       "opponentName": "Skattebo's Ankle",
       "wins": 11,
-      "losses": 19,
+      "losses": 20,
       "ties": 0,
-      "winPercentage": 0.36666666666666664,
-      "totalGames": 30,
-      "pointsFor": 3618.76,
-      "pointsAgainst": 3847.28,
-      "avgPointsFor": 120.62533333333334,
-      "avgPointsAgainst": 128.24266666666668,
+      "winPercentage": 0.3548387096774194,
+      "totalGames": 31,
+      "pointsFor": 3688.14,
+      "pointsAgainst": 3952.38,
+      "avgPointsFor": 118.97225806451613,
+      "avgPointsAgainst": 127.49612903225807,
       "highestScore": 244.22000000000003,
       "lowestScore": 64.18,
       "biggestWin": 57.80000000000001,
@@ -9254,7 +9022,7 @@
       "longestWinStreak": 2,
       "currentStreak": {
         "type": "LOSS",
-        "length": 1
+        "length": 2
       },
       "matchups": [
         {
@@ -9929,6 +9697,29 @@
           "year": 2025,
           "week": 17,
           "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 2,
+            "teamName": "Saquanda Strikes Back",
+            "teamAbbrev": "GRBG",
+            "owner": "Mike Kovacs",
+            "score": 69.38
+          },
+          "away": {
+            "teamId": 4,
+            "teamName": "Skattebo's Ankle",
+            "teamAbbrev": "SA",
+            "owner": "Phil Torres",
+            "score": 105.1
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2025_18_2_4",
+          "year": 2025,
+          "week": 18,
+          "matchupPeriodId": 18,
           "isPlayoff": true,
           "playoffType": "WINNERS_BRACKET",
           "home": {
@@ -10899,14 +10690,14 @@
       "opponent": "Ray Engleking",
       "opponentName": "Salty Spitoon",
       "wins": 8,
-      "losses": 12,
+      "losses": 13,
       "ties": 0,
-      "winPercentage": 0.4,
-      "totalGames": 20,
-      "pointsFor": 2198.96,
-      "pointsAgainst": 2416.74,
-      "avgPointsFor": 109.94800000000001,
-      "avgPointsAgainst": 120.83699999999999,
+      "winPercentage": 0.38095238095238093,
+      "totalGames": 21,
+      "pointsFor": 2302.7200000000003,
+      "pointsAgainst": 2567.62,
+      "avgPointsFor": 109.65333333333335,
+      "avgPointsAgainst": 122.26761904761904,
       "highestScore": 220.72,
       "lowestScore": 69.14,
       "biggestWin": 67.0,
@@ -10914,7 +10705,7 @@
       "longestWinStreak": 3,
       "currentStreak": {
         "type": "LOSS",
-        "length": 7
+        "length": 8
       },
       "matchups": [
         {
@@ -11309,6 +11100,29 @@
           "winner": "HOME"
         },
         {
+          "id": "2023_18_9_2",
+          "year": 2023,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 9,
+            "teamName": "Salty Spitoon",
+            "teamAbbrev": "REXY",
+            "owner": "Ray Engleking",
+            "score": 150.88
+          },
+          "away": {
+            "teamId": 2,
+            "teamName": "Chase My Butker",
+            "teamAbbrev": "GRBG",
+            "owner": "Mike Kovacs",
+            "score": 103.76
+          },
+          "winner": "HOME"
+        },
+        {
           "id": "2024_9_2_9",
           "year": 2024,
           "week": 9,
@@ -11423,76 +11237,6 @@
             "score": 46.0
           },
           "winner": "HOME"
-        }
-      ]
-    },
-    "Rob Cahill": {
-      "opponent": "Rob Cahill",
-      "opponentName": "Team Cahill",
-      "wins": 1,
-      "losses": 1,
-      "ties": 0,
-      "winPercentage": 0.5,
-      "totalGames": 2,
-      "pointsFor": 231.82,
-      "pointsAgainst": 246.16,
-      "avgPointsFor": 115.91,
-      "avgPointsAgainst": 123.08,
-      "highestScore": 137.5,
-      "lowestScore": 94.32,
-      "biggestWin": 25.840000000000003,
-      "closestWin": 25.840000000000003,
-      "longestWinStreak": 1,
-      "currentStreak": {
-        "type": "LOSS",
-        "length": 1
-      },
-      "matchups": [
-        {
-          "id": "2015_3_2_8",
-          "year": 2015,
-          "week": 3,
-          "matchupPeriodId": 3,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
-            "teamAbbrev": "huh?",
-            "owner": "Mike Kovacs",
-            "score": 137.5
-          },
-          "away": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 111.66
-          },
-          "winner": "HOME"
-        },
-        {
-          "id": "2015_12_2_8",
-          "year": 2015,
-          "week": 12,
-          "matchupPeriodId": 12,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
-            "teamAbbrev": "huh?",
-            "owner": "Mike Kovacs",
-            "score": 94.32
-          },
-          "away": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 134.5
-          },
-          "winner": "AWAY"
         }
       ]
     },
@@ -11960,20 +11704,20 @@
     "John Artiglier": {
       "opponent": "John Artiglier",
       "opponentName": "All You Need is Love",
-      "wins": 6,
-      "losses": 12,
+      "wins": 8,
+      "losses": 14,
       "ties": 0,
-      "winPercentage": 0.3333333333333333,
-      "totalGames": 18,
-      "pointsFor": 2003.74,
-      "pointsAgainst": 2119.48,
-      "avgPointsFor": 111.31888888888889,
-      "avgPointsAgainst": 117.74888888888889,
+      "winPercentage": 0.36363636363636365,
+      "totalGames": 22,
+      "pointsFor": 2414.46,
+      "pointsAgainst": 2479.68,
+      "avgPointsFor": 109.74818181818182,
+      "avgPointsAgainst": 112.71272727272726,
       "highestScore": 183.64,
       "lowestScore": 84.38,
       "biggestWin": 55.999999999999986,
       "closestWin": 6.359999999999999,
-      "longestWinStreak": 3,
+      "longestWinStreak": 4,
       "currentStreak": {
         "type": "LOSS",
         "length": 3
@@ -12210,6 +11954,52 @@
           "winner": "HOME"
         },
         {
+          "id": "2021_18_11_2",
+          "year": 2021,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 11,
+            "teamName": "RADrigo Is My Homeboy",
+            "teamAbbrev": "RAD",
+            "owner": "John Artiglier",
+            "score": 101.9
+          },
+          "away": {
+            "teamId": 2,
+            "teamName": "Colonel Sanders McCaffreys",
+            "teamAbbrev": "GRBG",
+            "owner": "Mike Kovacs",
+            "score": 96.76
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2021_19_11_2",
+          "year": 2021,
+          "week": 19,
+          "matchupPeriodId": 19,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 11,
+            "teamName": "RADrigo Is My Homeboy",
+            "teamAbbrev": "RAD",
+            "owner": "John Artiglier",
+            "score": 101.9
+          },
+          "away": {
+            "teamId": 2,
+            "teamName": "Colonel Sanders McCaffreys",
+            "teamAbbrev": "GRBG",
+            "owner": "Mike Kovacs",
+            "score": 96.76
+          },
+          "winner": "HOME"
+        },
+        {
           "id": "2022_3_2_11",
           "year": 2022,
           "week": 3,
@@ -12260,6 +12050,52 @@
           "year": 2022,
           "week": 17,
           "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 11,
+            "teamName": "Goodnight Again My Sweet Prince",
+            "teamAbbrev": "RAD",
+            "owner": "John Artiglier",
+            "score": 78.2
+          },
+          "away": {
+            "teamId": 2,
+            "teamName": "Al Tuck And No Action",
+            "teamAbbrev": "GRBG",
+            "owner": "Mike Kovacs",
+            "score": 108.6
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2022_18_11_2",
+          "year": 2022,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 11,
+            "teamName": "Goodnight Again My Sweet Prince",
+            "teamAbbrev": "RAD",
+            "owner": "John Artiglier",
+            "score": 78.2
+          },
+          "away": {
+            "teamId": 2,
+            "teamName": "Al Tuck And No Action",
+            "teamAbbrev": "GRBG",
+            "owner": "Mike Kovacs",
+            "score": 108.6
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2022_19_11_2",
+          "year": 2022,
+          "week": 19,
+          "matchupPeriodId": 19,
           "isPlayoff": true,
           "playoffType": "WINNERS_BRACKET",
           "home": {
@@ -12399,14 +12235,14 @@
       "opponent": "Joe Jaramillo",
       "opponentName": "Loop, There it is!",
       "wins": 4,
-      "losses": 2,
+      "losses": 3,
       "ties": 0,
-      "winPercentage": 0.6666666666666666,
-      "totalGames": 6,
-      "pointsFor": 735.84,
-      "pointsAgainst": 657.46,
-      "avgPointsFor": 122.64,
-      "avgPointsAgainst": 109.57666666666667,
+      "winPercentage": 0.5714285714285714,
+      "totalGames": 7,
+      "pointsFor": 839.52,
+      "pointsAgainst": 767.74,
+      "avgPointsFor": 119.93142857142857,
+      "avgPointsAgainst": 109.67714285714285,
       "highestScore": 155.68,
       "lowestScore": 98.42,
       "biggestWin": 52.38000000000001,
@@ -12491,6 +12327,29 @@
           "year": 2024,
           "week": 17,
           "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 14,
+            "teamName": "Bye Week Part 2",
+            "teamAbbrev": "Yup",
+            "owner": "Joe Jaramillo",
+            "score": 110.28
+          },
+          "away": {
+            "teamId": 2,
+            "teamName": "Dollar Dollar Bills Y'all",
+            "teamAbbrev": "GRBG",
+            "owner": "Mike Kovacs",
+            "score": 103.68
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2024_18_14_2",
+          "year": 2024,
+          "week": 18,
+          "matchupPeriodId": 18,
           "isPlayoff": true,
           "playoffType": "WINNERS_BRACKET",
           "home": {
@@ -12702,14 +12561,14 @@
       "opponent": "Bill Solecki",
       "opponentName": "Bovine University Stampede",
       "wins": 11,
-      "losses": 18,
+      "losses": 19,
       "ties": 0,
-      "winPercentage": 0.3793103448275862,
-      "totalGames": 29,
-      "pointsFor": 3296.4,
-      "pointsAgainst": 3495.04,
-      "avgPointsFor": 113.66896551724139,
-      "avgPointsAgainst": 120.51862068965517,
+      "winPercentage": 0.36666666666666664,
+      "totalGames": 30,
+      "pointsFor": 3413.36,
+      "pointsAgainst": 3628.34,
+      "avgPointsFor": 113.77866666666667,
+      "avgPointsAgainst": 120.94466666666668,
       "highestScore": 179.26,
       "lowestScore": 66.26,
       "biggestWin": 70.0,
@@ -12717,7 +12576,7 @@
       "longestWinStreak": 3,
       "currentStreak": {
         "type": "LOSS",
-        "length": 7
+        "length": 8
       },
       "matchups": [
         {
@@ -13273,6 +13132,29 @@
           "winner": "HOME"
         },
         {
+          "id": "2023_18_1_6",
+          "year": 2023,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 1,
+            "teamName": "Why's This So Sticky?",
+            "teamAbbrev": "STKY",
+            "owner": "Bill Solecki",
+            "score": 133.3
+          },
+          "away": {
+            "teamId": 6,
+            "teamName": "Insane in the  Ukraine",
+            "teamAbbrev": "B00B",
+            "owner": "Randell Crawford",
+            "score": 116.96
+          },
+          "winner": "HOME"
+        },
+        {
           "id": "2024_5_6_1",
           "year": 2024,
           "week": 5,
@@ -13392,23 +13274,23 @@
     "Loren Kessell": {
       "opponent": "Loren Kessell",
       "opponentName": "Really Just Sean Kessell",
-      "wins": 1,
-      "losses": 4,
+      "wins": 0,
+      "losses": 3,
       "ties": 0,
-      "winPercentage": 0.2,
-      "totalGames": 5,
-      "pointsFor": 413.34000000000003,
-      "pointsAgainst": 477.56,
-      "avgPointsFor": 82.668,
-      "avgPointsAgainst": 95.512,
-      "highestScore": 88.78,
+      "winPercentage": 0.0,
+      "totalGames": 3,
+      "pointsFor": 241.0,
+      "pointsAgainst": 330.0,
+      "avgPointsFor": 80.33333333333333,
+      "avgPointsAgainst": 110.0,
+      "highestScore": 88.0,
       "lowestScore": 69.0,
-      "biggestWin": 32.660000000000004,
-      "closestWin": 32.660000000000004,
-      "longestWinStreak": 1,
+      "biggestWin": 0,
+      "closestWin": 0,
+      "longestWinStreak": 0,
       "currentStreak": {
-        "type": "WIN",
-        "length": 1
+        "type": "LOSS",
+        "length": 3
       },
       "matchups": [
         {
@@ -13479,52 +13361,6 @@
             "score": 88.0
           },
           "winner": "HOME"
-        },
-        {
-          "id": "2015_2_5_6",
-          "year": 2015,
-          "week": 2,
-          "matchupPeriodId": 2,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 91.44
-          },
-          "away": {
-            "teamId": 6,
-            "teamName": "oh no its John Snooooooow",
-            "teamAbbrev": "Game",
-            "owner": "Randell Crawford",
-            "score": 83.56
-          },
-          "winner": "HOME"
-        },
-        {
-          "id": "2015_11_5_6",
-          "year": 2015,
-          "week": 11,
-          "matchupPeriodId": 11,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 56.12
-          },
-          "away": {
-            "teamId": 6,
-            "teamName": "oh no its John Snooooooow",
-            "teamAbbrev": "Game",
-            "owner": "Randell Crawford",
-            "score": 88.78
-          },
-          "winner": "AWAY"
         }
       ]
     },
@@ -13624,15 +13460,15 @@
     "Mike Kovacs": {
       "opponent": "Mike Kovacs",
       "opponentName": "Saquanda Strikes Back",
-      "wins": 13,
+      "wins": 15,
       "losses": 13,
       "ties": 0,
-      "winPercentage": 0.5,
-      "totalGames": 26,
-      "pointsFor": 2731.76,
-      "pointsAgainst": 2721.18,
-      "avgPointsFor": 105.06769230769231,
-      "avgPointsAgainst": 104.66076923076922,
+      "winPercentage": 0.5357142857142857,
+      "totalGames": 28,
+      "pointsFor": 2992.68,
+      "pointsAgainst": 2916.82,
+      "avgPointsFor": 106.88142857142857,
+      "avgPointsAgainst": 104.17214285714286,
       "highestScore": 137.44,
       "lowestScore": 62.72,
       "biggestWin": 40.7,
@@ -13970,6 +13806,52 @@
           "year": 2020,
           "week": 16,
           "matchupPeriodId": 16,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 2,
+            "teamName": "All Aboard The J Train",
+            "teamAbbrev": "GRBG",
+            "owner": "Mike Kovacs",
+            "score": 97.82
+          },
+          "away": {
+            "teamId": 6,
+            "teamName": "19 Problems and Covid is One",
+            "teamAbbrev": "SARS",
+            "owner": "Randell Crawford",
+            "score": 130.46
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2020_17_2_6",
+          "year": 2020,
+          "week": 17,
+          "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 2,
+            "teamName": "All Aboard The J Train",
+            "teamAbbrev": "GRBG",
+            "owner": "Mike Kovacs",
+            "score": 97.82
+          },
+          "away": {
+            "teamId": 6,
+            "teamName": "19 Problems and Covid is One",
+            "teamAbbrev": "SARS",
+            "owner": "Randell Crawford",
+            "score": 130.46
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2020_18_2_6",
+          "year": 2020,
+          "week": 18,
+          "matchupPeriodId": 18,
           "isPlayoff": true,
           "playoffType": "WINNERS_BRACKET",
           "home": {
@@ -14502,23 +14384,23 @@
     "Phil Torres": {
       "opponent": "Phil Torres",
       "opponentName": "Skattebo's Ankle",
-      "wins": 13,
+      "wins": 15,
       "losses": 12,
       "ties": 0,
-      "winPercentage": 0.52,
-      "totalGames": 25,
-      "pointsFor": 2570.46,
-      "pointsAgainst": 2560.94,
-      "avgPointsFor": 102.8184,
-      "avgPointsAgainst": 102.4376,
+      "winPercentage": 0.5555555555555556,
+      "totalGames": 27,
+      "pointsFor": 2767.22,
+      "pointsAgainst": 2652.1,
+      "avgPointsFor": 102.48962962962962,
+      "avgPointsAgainst": 98.22592592592592,
       "highestScore": 178.62,
       "lowestScore": 55.32,
       "biggestWin": 79.49999999999999,
       "closestWin": 6.159999999999997,
-      "longestWinStreak": 6,
+      "longestWinStreak": 8,
       "currentStreak": {
         "type": "WIN",
-        "length": 6
+        "length": 8
       },
       "matchups": [
         {
@@ -14982,6 +14864,52 @@
           "winner": "AWAY"
         },
         {
+          "id": "2022_18_4_6",
+          "year": 2022,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 4,
+            "teamName": "Go Fudge Yourselves",
+            "teamAbbrev": "GFY",
+            "owner": "Phil Torres",
+            "score": 45.58
+          },
+          "away": {
+            "teamId": 6,
+            "teamName": "Insane in the  Ukraine",
+            "teamAbbrev": "B00B",
+            "owner": "Randell Crawford",
+            "score": 98.38
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2022_19_4_6",
+          "year": 2022,
+          "week": 19,
+          "matchupPeriodId": 19,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 4,
+            "teamName": "Go Fudge Yourselves",
+            "teamAbbrev": "GFY",
+            "owner": "Phil Torres",
+            "score": 45.58
+          },
+          "away": {
+            "teamId": 6,
+            "teamName": "Insane in the  Ukraine",
+            "teamAbbrev": "B00B",
+            "owner": "Randell Crawford",
+            "score": 98.38
+          },
+          "winner": "AWAY"
+        },
+        {
           "id": "2023_3_4_6",
           "year": 2023,
           "week": 3,
@@ -15101,15 +15029,15 @@
     "Carl Cummins": {
       "opponent": "Carl Cummins",
       "opponentName": "Taylor and Travis Swift \ud83d\udc51",
-      "wins": 13,
+      "wins": 15,
       "losses": 12,
       "ties": 0,
-      "winPercentage": 0.52,
-      "totalGames": 25,
-      "pointsFor": 2765.08,
-      "pointsAgainst": 2683.62,
-      "avgPointsFor": 110.6032,
-      "avgPointsAgainst": 107.34479999999999,
+      "winPercentage": 0.5555555555555556,
+      "totalGames": 27,
+      "pointsFor": 2969.6,
+      "pointsAgainst": 2852.66,
+      "avgPointsFor": 109.98518518518519,
+      "avgPointsAgainst": 105.65407407407407,
       "highestScore": 197.0,
       "lowestScore": 77.2,
       "biggestWin": 64.96000000000001,
@@ -15470,6 +15398,52 @@
           "year": 2021,
           "week": 17,
           "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 6,
+            "teamName": "19 Problems and Covid is One",
+            "teamAbbrev": "SARS",
+            "owner": "Randell Crawford",
+            "score": 102.26
+          },
+          "away": {
+            "teamId": 3,
+            "teamName": "Pussy Power",
+            "teamAbbrev": "CARL",
+            "owner": "Carl Cummins",
+            "score": 84.52
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2021_18_6_3",
+          "year": 2021,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 6,
+            "teamName": "19 Problems and Covid is One",
+            "teamAbbrev": "SARS",
+            "owner": "Randell Crawford",
+            "score": 102.26
+          },
+          "away": {
+            "teamId": 3,
+            "teamName": "Pussy Power",
+            "teamAbbrev": "CARL",
+            "owner": "Carl Cummins",
+            "score": 84.52
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2021_19_6_3",
+          "year": 2021,
+          "week": 19,
+          "matchupPeriodId": 19,
           "isPlayoff": true,
           "playoffType": "WINNERS_BRACKET",
           "home": {
@@ -16024,15 +15998,15 @@
     "Ray Engleking": {
       "opponent": "Ray Engleking",
       "opponentName": "Salty Spitoon",
-      "wins": 13,
+      "wins": 14,
       "losses": 12,
       "ties": 0,
-      "winPercentage": 0.52,
-      "totalGames": 25,
-      "pointsFor": 2934.14,
-      "pointsAgainst": 2972.52,
-      "avgPointsFor": 117.3656,
-      "avgPointsAgainst": 118.9008,
+      "winPercentage": 0.5384615384615384,
+      "totalGames": 26,
+      "pointsFor": 3060.54,
+      "pointsAgainst": 3054.5,
+      "avgPointsFor": 117.71307692307693,
+      "avgPointsAgainst": 117.48076923076923,
       "highestScore": 171.84,
       "lowestScore": 59.46,
       "biggestWin": 69.24000000000001,
@@ -16596,6 +16570,29 @@
           "winner": "AWAY"
         },
         {
+          "id": "2024_18_9_6",
+          "year": 2024,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 9,
+            "teamName": "Salty Spitoon",
+            "teamAbbrev": "REXY",
+            "owner": "Ray Engleking",
+            "score": 81.98
+          },
+          "away": {
+            "teamId": 6,
+            "teamName": "Insane in the  Ukraine",
+            "teamAbbrev": "B00B",
+            "owner": "Randell Crawford",
+            "score": 126.4
+          },
+          "winner": "AWAY"
+        },
+        {
           "id": "2025_9_9_6",
           "year": 2025,
           "week": 9,
@@ -16662,76 +16659,6 @@
             "teamAbbrev": "BAHB",
             "owner": "BAHB Kerwersker",
             "score": 51.0
-          },
-          "winner": "HOME"
-        }
-      ]
-    },
-    "Rob Cahill": {
-      "opponent": "Rob Cahill",
-      "opponentName": "Team Cahill",
-      "wins": 2,
-      "losses": 0,
-      "ties": 0,
-      "winPercentage": 1.0,
-      "totalGames": 2,
-      "pointsFor": 281.56,
-      "pointsAgainst": 168.54000000000002,
-      "avgPointsFor": 140.78,
-      "avgPointsAgainst": 84.27000000000001,
-      "highestScore": 162.3,
-      "lowestScore": 119.26,
-      "biggestWin": 71.60000000000001,
-      "closestWin": 41.42,
-      "longestWinStreak": 2,
-      "currentStreak": {
-        "type": "WIN",
-        "length": 2
-      },
-      "matchups": [
-        {
-          "id": "2015_9_6_8",
-          "year": 2015,
-          "week": 9,
-          "matchupPeriodId": 9,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 6,
-            "teamName": "oh no its John Snooooooow",
-            "teamAbbrev": "Game",
-            "owner": "Randell Crawford",
-            "score": 119.26
-          },
-          "away": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 77.84
-          },
-          "winner": "HOME"
-        },
-        {
-          "id": "2015_14_6_8",
-          "year": 2015,
-          "week": 14,
-          "matchupPeriodId": 14,
-          "isPlayoff": true,
-          "playoffType": "WINNERS_BRACKET",
-          "home": {
-            "teamId": 6,
-            "teamName": "oh no its John Snooooooow",
-            "teamAbbrev": "Game",
-            "owner": "Randell Crawford",
-            "score": 162.3
-          },
-          "away": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 90.7
           },
           "winner": "HOME"
         }
@@ -17547,15 +17474,15 @@
     "Joe Jaramillo": {
       "opponent": "Joe Jaramillo",
       "opponentName": "Loop, There it is!",
-      "wins": 6,
+      "wins": 7,
       "losses": 1,
       "ties": 0,
-      "winPercentage": 0.8571428571428571,
-      "totalGames": 7,
-      "pointsFor": 804.18,
-      "pointsAgainst": 611.04,
-      "avgPointsFor": 114.88285714285713,
-      "avgPointsAgainst": 87.29142857142857,
+      "winPercentage": 0.875,
+      "totalGames": 8,
+      "pointsFor": 931.8,
+      "pointsAgainst": 714.32,
+      "avgPointsFor": 116.475,
+      "avgPointsAgainst": 89.29,
       "highestScore": 141.0,
       "lowestScore": 77.16,
       "biggestWin": 85.47999999999999,
@@ -17563,7 +17490,7 @@
       "longestWinStreak": 4,
       "currentStreak": {
         "type": "WIN",
-        "length": 2
+        "length": 3
       },
       "matchups": [
         {
@@ -17709,6 +17636,29 @@
           "year": 2025,
           "week": 17,
           "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 14,
+            "teamName": "Loop, There it is!",
+            "teamAbbrev": "Yup",
+            "owner": "Joe Jaramillo",
+            "score": 103.28
+          },
+          "away": {
+            "teamId": 6,
+            "teamName": "Insane in the  Ukraine",
+            "teamAbbrev": "B00B",
+            "owner": "Randell Crawford",
+            "score": 127.62
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2025_18_14_6",
+          "year": 2025,
+          "week": 18,
+          "matchupPeriodId": 18,
           "isPlayoff": true,
           "playoffType": "WINNERS_BRACKET",
           "home": {
@@ -20603,22 +20553,22 @@
       "opponent": "Loren Kessell",
       "opponentName": "Really Just Sean Kessell",
       "wins": 3,
-      "losses": 3,
+      "losses": 2,
       "ties": 0,
-      "winPercentage": 0.5,
-      "totalGames": 6,
-      "pointsFor": 683.9,
-      "pointsAgainst": 702.74,
-      "avgPointsFor": 113.98333333333333,
-      "avgPointsAgainst": 117.12333333333333,
+      "winPercentage": 0.6,
+      "totalGames": 5,
+      "pointsFor": 605.0,
+      "pointsAgainst": 583.0,
+      "avgPointsFor": 121.0,
+      "avgPointsAgainst": 116.6,
       "highestScore": 156.0,
-      "lowestScore": 78.9,
+      "lowestScore": 86.0,
       "biggestWin": 53.0,
       "closestWin": 21.0,
       "longestWinStreak": 3,
       "currentStreak": {
         "type": "LOSS",
-        "length": 2
+        "length": 1
       },
       "matchups": [
         {
@@ -20735,29 +20685,6 @@
             "score": 128.0
           },
           "winner": "AWAY"
-        },
-        {
-          "id": "2015_7_4_5",
-          "year": 2015,
-          "week": 7,
-          "matchupPeriodId": 7,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 4,
-            "teamName": "Chef's choclate Salty Balls",
-            "teamAbbrev": "CHEF",
-            "owner": "Phil Torres",
-            "score": 78.9
-          },
-          "away": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 119.74
-          },
-          "winner": "AWAY"
         }
       ]
     },
@@ -20834,15 +20761,15 @@
     "Mike Kovacs": {
       "opponent": "Mike Kovacs",
       "opponentName": "Saquanda Strikes Back",
-      "wins": 19,
+      "wins": 20,
       "losses": 11,
       "ties": 0,
-      "winPercentage": 0.6333333333333333,
-      "totalGames": 30,
-      "pointsFor": 3847.28,
-      "pointsAgainst": 3618.76,
-      "avgPointsFor": 128.24266666666668,
-      "avgPointsAgainst": 120.62533333333334,
+      "winPercentage": 0.6451612903225806,
+      "totalGames": 31,
+      "pointsFor": 3952.38,
+      "pointsAgainst": 3688.14,
+      "avgPointsFor": 127.49612903225807,
+      "avgPointsAgainst": 118.97225806451613,
       "highestScore": 247.9,
       "lowestScore": 73.18,
       "biggestWin": 94.72,
@@ -20850,7 +20777,7 @@
       "longestWinStreak": 4,
       "currentStreak": {
         "type": "WIN",
-        "length": 1
+        "length": 2
       },
       "matchups": [
         {
@@ -21542,6 +21469,29 @@
             "score": 105.1
           },
           "winner": "AWAY"
+        },
+        {
+          "id": "2025_18_2_4",
+          "year": 2025,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 2,
+            "teamName": "Saquanda Strikes Back",
+            "teamAbbrev": "GRBG",
+            "owner": "Mike Kovacs",
+            "score": 69.38
+          },
+          "away": {
+            "teamId": 4,
+            "teamName": "Skattebo's Ankle",
+            "teamAbbrev": "SA",
+            "owner": "Phil Torres",
+            "score": 105.1
+          },
+          "winner": "AWAY"
         }
       ]
     },
@@ -21549,14 +21499,14 @@
       "opponent": "Randell Crawford",
       "opponentName": "Insane in the  Ukraine",
       "wins": 12,
-      "losses": 13,
+      "losses": 15,
       "ties": 0,
-      "winPercentage": 0.48,
-      "totalGames": 25,
-      "pointsFor": 2560.94,
-      "pointsAgainst": 2570.46,
-      "avgPointsFor": 102.4376,
-      "avgPointsAgainst": 102.8184,
+      "winPercentage": 0.4444444444444444,
+      "totalGames": 27,
+      "pointsFor": 2652.1,
+      "pointsAgainst": 2767.22,
+      "avgPointsFor": 98.22592592592592,
+      "avgPointsAgainst": 102.48962962962962,
       "highestScore": 174.0,
       "lowestScore": 45.58,
       "biggestWin": 67.56,
@@ -21564,7 +21514,7 @@
       "longestWinStreak": 4,
       "currentStreak": {
         "type": "LOSS",
-        "length": 6
+        "length": 8
       },
       "matchups": [
         {
@@ -22028,6 +21978,52 @@
           "winner": "AWAY"
         },
         {
+          "id": "2022_18_4_6",
+          "year": 2022,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 4,
+            "teamName": "Go Fudge Yourselves",
+            "teamAbbrev": "GFY",
+            "owner": "Phil Torres",
+            "score": 45.58
+          },
+          "away": {
+            "teamId": 6,
+            "teamName": "Insane in the  Ukraine",
+            "teamAbbrev": "B00B",
+            "owner": "Randell Crawford",
+            "score": 98.38
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2022_19_4_6",
+          "year": 2022,
+          "week": 19,
+          "matchupPeriodId": 19,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 4,
+            "teamName": "Go Fudge Yourselves",
+            "teamAbbrev": "GFY",
+            "owner": "Phil Torres",
+            "score": 45.58
+          },
+          "away": {
+            "teamId": 6,
+            "teamName": "Insane in the  Ukraine",
+            "teamAbbrev": "B00B",
+            "owner": "Randell Crawford",
+            "score": 98.38
+          },
+          "winner": "AWAY"
+        },
+        {
           "id": "2023_3_4_6",
           "year": 2023,
           "week": 3,
@@ -22335,14 +22331,14 @@
       "opponent": "Carl Cummins",
       "opponentName": "Taylor and Travis Swift \ud83d\udc51",
       "wins": 14,
-      "losses": 12,
+      "losses": 13,
       "ties": 0,
-      "winPercentage": 0.5384615384615384,
-      "totalGames": 26,
-      "pointsFor": 3107.92,
-      "pointsAgainst": 3028.66,
-      "avgPointsFor": 119.53538461538461,
-      "avgPointsAgainst": 116.48692307692308,
+      "winPercentage": 0.5185185185185185,
+      "totalGames": 27,
+      "pointsFor": 3187.32,
+      "pointsAgainst": 3136.0,
+      "avgPointsFor": 118.0488888888889,
+      "avgPointsAgainst": 116.14814814814815,
       "highestScore": 228.06,
       "lowestScore": 67.0,
       "biggestWin": 75.78,
@@ -22350,7 +22346,7 @@
       "longestWinStreak": 9,
       "currentStreak": {
         "type": "LOSS",
-        "length": 4
+        "length": 5
       },
       "matchups": [
         {
@@ -22906,6 +22902,29 @@
           "winner": "HOME"
         },
         {
+          "id": "2023_18_3_4",
+          "year": 2023,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 3,
+            "teamName": "Taylor Swift ",
+            "teamAbbrev": "CARL",
+            "owner": "Carl Cummins",
+            "score": 107.34
+          },
+          "away": {
+            "teamId": 4,
+            "teamName": "Go Fudge Yourselves",
+            "teamAbbrev": "GFY",
+            "owner": "Phil Torres",
+            "score": 79.4
+          },
+          "winner": "HOME"
+        },
+        {
           "id": "2024_9_3_4",
           "year": 2024,
           "week": 9,
@@ -23327,14 +23346,14 @@
       "opponent": "Ray Engleking",
       "opponentName": "Salty Spitoon",
       "wins": 7,
-      "losses": 16,
+      "losses": 18,
       "ties": 0,
-      "winPercentage": 0.30434782608695654,
-      "totalGames": 23,
-      "pointsFor": 2569.6,
-      "pointsAgainst": 2908.02,
-      "avgPointsFor": 111.72173913043478,
-      "avgPointsAgainst": 126.43565217391304,
+      "winPercentage": 0.28,
+      "totalGames": 25,
+      "pointsFor": 2862.4,
+      "pointsAgainst": 3220.7,
+      "avgPointsFor": 114.49600000000001,
+      "avgPointsAgainst": 128.828,
       "highestScore": 228.38,
       "lowestScore": 51.22,
       "biggestWin": 51.879999999999995,
@@ -23691,6 +23710,52 @@
           "winner": "HOME"
         },
         {
+          "id": "2021_18_9_4",
+          "year": 2021,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 9,
+            "teamName": "Salty Spitoon",
+            "teamAbbrev": "REXY",
+            "owner": "Ray Engleking",
+            "score": 156.34
+          },
+          "away": {
+            "teamId": 4,
+            "teamName": "Go Fudge Yourselves",
+            "teamAbbrev": "GFY",
+            "owner": "Phil Torres",
+            "score": 146.4
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2021_19_9_4",
+          "year": 2021,
+          "week": 19,
+          "matchupPeriodId": 19,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 9,
+            "teamName": "Salty Spitoon",
+            "teamAbbrev": "REXY",
+            "owner": "Ray Engleking",
+            "score": 156.34
+          },
+          "away": {
+            "teamId": 4,
+            "teamName": "Go Fudge Yourselves",
+            "teamAbbrev": "GFY",
+            "owner": "Phil Torres",
+            "score": 146.4
+          },
+          "winner": "HOME"
+        },
+        {
           "id": "2022_7_4_9",
           "year": 2022,
           "week": 7,
@@ -23941,53 +24006,6 @@
             "teamAbbrev": "BAHB",
             "owner": "BAHB Kerwersker",
             "score": 186.0
-          },
-          "winner": "AWAY"
-        }
-      ]
-    },
-    "Rob Cahill": {
-      "opponent": "Rob Cahill",
-      "opponentName": "Team Cahill",
-      "wins": 0,
-      "losses": 1,
-      "ties": 0,
-      "winPercentage": 0.0,
-      "totalGames": 1,
-      "pointsFor": 86.44,
-      "pointsAgainst": 130.76,
-      "avgPointsFor": 86.44,
-      "avgPointsAgainst": 130.76,
-      "highestScore": 86.44,
-      "lowestScore": 86.44,
-      "biggestWin": 0,
-      "closestWin": 0,
-      "longestWinStreak": 0,
-      "currentStreak": {
-        "type": "LOSS",
-        "length": 1
-      },
-      "matchups": [
-        {
-          "id": "2015_5_4_8",
-          "year": 2015,
-          "week": 5,
-          "matchupPeriodId": 5,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 4,
-            "teamName": "Chef's choclate Salty Balls",
-            "teamAbbrev": "CHEF",
-            "owner": "Phil Torres",
-            "score": 86.44
-          },
-          "away": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 130.76
           },
           "winner": "AWAY"
         }
@@ -24503,20 +24521,20 @@
     "John Artiglier": {
       "opponent": "John Artiglier",
       "opponentName": "All You Need is Love",
-      "wins": 9,
+      "wins": 11,
       "losses": 6,
       "ties": 0,
-      "winPercentage": 0.6,
-      "totalGames": 15,
-      "pointsFor": 1693.7,
-      "pointsAgainst": 1599.16,
-      "avgPointsFor": 112.91333333333334,
-      "avgPointsAgainst": 106.61066666666667,
+      "winPercentage": 0.6470588235294118,
+      "totalGames": 17,
+      "pointsFor": 1965.74,
+      "pointsAgainst": 1857.16,
+      "avgPointsFor": 115.63176470588235,
+      "avgPointsAgainst": 109.24470588235295,
       "highestScore": 138.06,
       "lowestScore": 79.92,
       "biggestWin": 34.89999999999999,
       "closestWin": 1.6799999999999926,
-      "longestWinStreak": 5,
+      "longestWinStreak": 7,
       "currentStreak": {
         "type": "LOSS",
         "length": 3
@@ -24642,6 +24660,52 @@
           "year": 2020,
           "week": 16,
           "matchupPeriodId": 16,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 4,
+            "teamName": "Go Fudge Yourselves",
+            "teamAbbrev": "GFY",
+            "owner": "Phil Torres",
+            "score": 136.02
+          },
+          "away": {
+            "teamId": 11,
+            "teamName": "RADrigo Is My Homeboy",
+            "teamAbbrev": "RAD",
+            "owner": "John Artiglier",
+            "score": 129.0
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2020_17_4_11",
+          "year": 2020,
+          "week": 17,
+          "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 4,
+            "teamName": "Go Fudge Yourselves",
+            "teamAbbrev": "GFY",
+            "owner": "Phil Torres",
+            "score": 136.02
+          },
+          "away": {
+            "teamId": 11,
+            "teamName": "RADrigo Is My Homeboy",
+            "teamAbbrev": "RAD",
+            "owner": "John Artiglier",
+            "score": 129.0
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2020_18_4_11",
+          "year": 2020,
+          "week": 18,
+          "matchupPeriodId": 18,
           "isPlayoff": true,
           "playoffType": "WINNERS_BRACKET",
           "home": {
@@ -25034,20 +25098,20 @@
     "john crawford": {
       "opponent": "john crawford",
       "opponentName": "Paintin Peyton",
-      "wins": 6,
+      "wins": 7,
       "losses": 2,
       "ties": 0,
-      "winPercentage": 0.75,
-      "totalGames": 8,
-      "pointsFor": 798.52,
-      "pointsAgainst": 740.9,
-      "avgPointsFor": 99.815,
-      "avgPointsAgainst": 92.6125,
+      "winPercentage": 0.7777777777777778,
+      "totalGames": 9,
+      "pointsFor": 916.3399999999999,
+      "pointsAgainst": 844.8,
+      "avgPointsFor": 101.81555555555555,
+      "avgPointsAgainst": 93.86666666666666,
       "highestScore": 119.8,
       "lowestScore": 64.72,
       "biggestWin": 64.22,
       "closestWin": 0.5600000000000023,
-      "longestWinStreak": 6,
+      "longestWinStreak": 7,
       "currentStreak": {
         "type": "LOSS",
         "length": 1
@@ -25169,6 +25233,29 @@
           "winner": "HOME"
         },
         {
+          "id": "2024_18_4_13",
+          "year": 2024,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 4,
+            "teamName": "Hawk Tua",
+            "teamAbbrev": "HT",
+            "owner": "Phil Torres",
+            "score": 117.82
+          },
+          "away": {
+            "teamId": 13,
+            "teamName": "Paintin Peyton",
+            "teamAbbrev": "CRWD",
+            "owner": "john crawford",
+            "score": 103.9
+          },
+          "winner": "HOME"
+        },
+        {
           "id": "2025_5_4_13",
           "year": 2025,
           "week": 5,
@@ -25245,14 +25332,14 @@
       "opponent": "Bill Solecki",
       "opponentName": "Bovine University Stampede",
       "wins": 7,
-      "losses": 17,
+      "losses": 18,
       "ties": 0,
-      "winPercentage": 0.2916666666666667,
-      "totalGames": 24,
-      "pointsFor": 2643.32,
-      "pointsAgainst": 2887.3,
-      "avgPointsFor": 110.13833333333334,
-      "avgPointsAgainst": 120.30416666666667,
+      "winPercentage": 0.28,
+      "totalGames": 25,
+      "pointsFor": 2764.04,
+      "pointsAgainst": 3021.76,
+      "avgPointsFor": 110.5616,
+      "avgPointsAgainst": 120.8704,
       "highestScore": 158.68,
       "lowestScore": 62.54,
       "biggestWin": 71.44,
@@ -25260,7 +25347,7 @@
       "longestWinStreak": 4,
       "currentStreak": {
         "type": "LOSS",
-        "length": 5
+        "length": 6
       },
       "matchups": [
         {
@@ -25770,6 +25857,29 @@
           "winner": "HOME"
         },
         {
+          "id": "2024_18_1_3",
+          "year": 2024,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 1,
+            "teamName": "Bovine University Stampede",
+            "teamAbbrev": "STMP",
+            "owner": "Bill Solecki",
+            "score": 134.46
+          },
+          "away": {
+            "teamId": 3,
+            "teamName": "Taylor Swift ",
+            "teamAbbrev": "CARL",
+            "owner": "Carl Cummins",
+            "score": 120.72
+          },
+          "winner": "HOME"
+        },
+        {
           "id": "2025_2_3_1",
           "year": 2025,
           "week": 2,
@@ -25820,23 +25930,23 @@
     "Loren Kessell": {
       "opponent": "Loren Kessell",
       "opponentName": "Really Just Sean Kessell",
-      "wins": 1,
-      "losses": 3,
+      "wins": 0,
+      "losses": 2,
       "ties": 0,
-      "winPercentage": 0.25,
-      "totalGames": 4,
-      "pointsFor": 399.34,
-      "pointsAgainst": 418.5,
-      "avgPointsFor": 99.835,
-      "avgPointsAgainst": 104.625,
+      "winPercentage": 0.0,
+      "totalGames": 2,
+      "pointsFor": 218.0,
+      "pointsAgainst": 262.0,
+      "avgPointsFor": 109.0,
+      "avgPointsAgainst": 131.0,
       "highestScore": 122.0,
-      "lowestScore": 79.32,
-      "biggestWin": 25.379999999999995,
-      "closestWin": 25.379999999999995,
-      "longestWinStreak": 1,
+      "lowestScore": 96.0,
+      "biggestWin": 0,
+      "closestWin": 0,
+      "longestWinStreak": 0,
       "currentStreak": {
         "type": "LOSS",
-        "length": 1
+        "length": 2
       },
       "matchups": [
         {
@@ -25882,52 +25992,6 @@
             "teamAbbrev": "KSSL",
             "owner": "Loren Kessell",
             "score": 157.0
-          },
-          "winner": "AWAY"
-        },
-        {
-          "id": "2015_1_3_5",
-          "year": 2015,
-          "week": 1,
-          "matchupPeriodId": 1,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 3,
-            "teamName": "Duckman Kowalski",
-            "teamAbbrev": "CARL",
-            "owner": "Carl Cummins",
-            "score": 102.02
-          },
-          "away": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 76.64
-          },
-          "winner": "HOME"
-        },
-        {
-          "id": "2015_10_3_5",
-          "year": 2015,
-          "week": 10,
-          "matchupPeriodId": 10,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 3,
-            "teamName": "Duckman Kowalski",
-            "teamAbbrev": "CARL",
-            "owner": "Carl Cummins",
-            "score": 79.32
-          },
-          "away": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 79.86
           },
           "winner": "AWAY"
         }
@@ -26698,14 +26762,14 @@
       "opponent": "Randell Crawford",
       "opponentName": "Insane in the  Ukraine",
       "wins": 12,
-      "losses": 13,
+      "losses": 15,
       "ties": 0,
-      "winPercentage": 0.48,
-      "totalGames": 25,
-      "pointsFor": 2683.62,
-      "pointsAgainst": 2765.08,
-      "avgPointsFor": 107.34479999999999,
-      "avgPointsAgainst": 110.6032,
+      "winPercentage": 0.4444444444444444,
+      "totalGames": 27,
+      "pointsFor": 2852.66,
+      "pointsAgainst": 2969.6,
+      "avgPointsFor": 105.65407407407407,
+      "avgPointsAgainst": 109.98518518518519,
       "highestScore": 214.14,
       "lowestScore": 67.3,
       "biggestWin": 34.16000000000001,
@@ -27066,6 +27130,52 @@
           "year": 2021,
           "week": 17,
           "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 6,
+            "teamName": "19 Problems and Covid is One",
+            "teamAbbrev": "SARS",
+            "owner": "Randell Crawford",
+            "score": 102.26
+          },
+          "away": {
+            "teamId": 3,
+            "teamName": "Pussy Power",
+            "teamAbbrev": "CARL",
+            "owner": "Carl Cummins",
+            "score": 84.52
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2021_18_6_3",
+          "year": 2021,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 6,
+            "teamName": "19 Problems and Covid is One",
+            "teamAbbrev": "SARS",
+            "owner": "Randell Crawford",
+            "score": 102.26
+          },
+          "away": {
+            "teamId": 3,
+            "teamName": "Pussy Power",
+            "teamAbbrev": "CARL",
+            "owner": "Carl Cummins",
+            "score": 84.52
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2021_19_6_3",
+          "year": 2021,
+          "week": 19,
+          "matchupPeriodId": 19,
           "isPlayoff": true,
           "playoffType": "WINNERS_BRACKET",
           "home": {
@@ -27552,23 +27662,23 @@
     "Phil Torres": {
       "opponent": "Phil Torres",
       "opponentName": "Skattebo's Ankle",
-      "wins": 12,
+      "wins": 13,
       "losses": 14,
       "ties": 0,
-      "winPercentage": 0.46153846153846156,
-      "totalGames": 26,
-      "pointsFor": 3028.66,
-      "pointsAgainst": 3107.92,
-      "avgPointsFor": 116.48692307692308,
-      "avgPointsAgainst": 119.53538461538461,
+      "winPercentage": 0.48148148148148145,
+      "totalGames": 27,
+      "pointsFor": 3136.0,
+      "pointsAgainst": 3187.32,
+      "avgPointsFor": 116.14814814814815,
+      "avgPointsAgainst": 118.0488888888889,
       "highestScore": 180.0,
       "lowestScore": 65.62,
       "biggestWin": 73.0,
       "closestWin": 1.019999999999996,
-      "longestWinStreak": 4,
+      "longestWinStreak": 5,
       "currentStreak": {
         "type": "WIN",
-        "length": 4
+        "length": 5
       },
       "matchups": [
         {
@@ -28105,6 +28215,29 @@
           "year": 2023,
           "week": 17,
           "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 3,
+            "teamName": "Taylor Swift ",
+            "teamAbbrev": "CARL",
+            "owner": "Carl Cummins",
+            "score": 107.34
+          },
+          "away": {
+            "teamId": 4,
+            "teamName": "Go Fudge Yourselves",
+            "teamAbbrev": "GFY",
+            "owner": "Phil Torres",
+            "score": 79.4
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2023_18_3_4",
+          "year": 2023,
+          "week": 18,
+          "matchupPeriodId": 18,
           "isPlayoff": true,
           "playoffType": "WINNERS_BRACKET",
           "home": {
@@ -29164,70 +29297,23 @@
         }
       ]
     },
-    "Rob Cahill": {
-      "opponent": "Rob Cahill",
-      "opponentName": "Team Cahill",
-      "wins": 1,
-      "losses": 0,
-      "ties": 0,
-      "winPercentage": 1.0,
-      "totalGames": 1,
-      "pointsFor": 100.2,
-      "pointsAgainst": 97.84,
-      "avgPointsFor": 100.2,
-      "avgPointsAgainst": 97.84,
-      "highestScore": 100.2,
-      "lowestScore": 100.2,
-      "biggestWin": 2.3599999999999994,
-      "closestWin": 2.3599999999999994,
-      "longestWinStreak": 1,
-      "currentStreak": {
-        "type": "WIN",
-        "length": 1
-      },
-      "matchups": [
-        {
-          "id": "2015_6_3_8",
-          "year": 2015,
-          "week": 6,
-          "matchupPeriodId": 6,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 3,
-            "teamName": "Duckman Kowalski",
-            "teamAbbrev": "CARL",
-            "owner": "Carl Cummins",
-            "score": 100.2
-          },
-          "away": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 97.84
-          },
-          "winner": "HOME"
-        }
-      ]
-    },
     "Ben Bingert": {
       "opponent": "Ben Bingert",
       "opponentName": "Mail Fairy",
-      "wins": 9,
-      "losses": 9,
+      "wins": 11,
+      "losses": 11,
       "ties": 0,
       "winPercentage": 0.5,
-      "totalGames": 18,
-      "pointsFor": 1903.48,
-      "pointsAgainst": 1911.88,
-      "avgPointsFor": 105.74888888888889,
-      "avgPointsAgainst": 106.21555555555557,
+      "totalGames": 22,
+      "pointsFor": 2385.6,
+      "pointsAgainst": 2403.08,
+      "avgPointsFor": 108.43636363636364,
+      "avgPointsAgainst": 109.2309090909091,
       "highestScore": 150.76,
       "lowestScore": 60.94,
       "biggestWin": 47.620000000000005,
       "closestWin": 2.219999999999999,
-      "longestWinStreak": 3,
+      "longestWinStreak": 4,
       "currentStreak": {
         "type": "WIN",
         "length": 3
@@ -29395,6 +29481,52 @@
           "winner": "HOME"
         },
         {
+          "id": "2020_17_12_3",
+          "year": 2020,
+          "week": 17,
+          "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 12,
+            "teamName": "Just a Chubb Tucker",
+            "teamAbbrev": "Chub",
+            "owner": "Ben Bingert",
+            "score": 139.08
+          },
+          "away": {
+            "teamId": 3,
+            "teamName": "Pussy Power",
+            "teamAbbrev": "CARL",
+            "owner": "Carl Cummins",
+            "score": 121.88
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2020_18_12_3",
+          "year": 2020,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 12,
+            "teamName": "Just a Chubb Tucker",
+            "teamAbbrev": "Chub",
+            "owner": "Ben Bingert",
+            "score": 139.08
+          },
+          "away": {
+            "teamId": 3,
+            "teamName": "Pussy Power",
+            "teamAbbrev": "CARL",
+            "owner": "Carl Cummins",
+            "score": 121.88
+          },
+          "winner": "HOME"
+        },
+        {
           "id": "2021_7_12_3",
           "year": 2021,
           "week": 7,
@@ -29491,6 +29623,52 @@
           "year": 2022,
           "week": 17,
           "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 12,
+            "teamName": "Joe Burrow Tiger King",
+            "teamAbbrev": "KING",
+            "owner": "Ben Bingert",
+            "score": 106.52
+          },
+          "away": {
+            "teamId": 3,
+            "teamName": "Pussy Power",
+            "teamAbbrev": "CARL",
+            "owner": "Carl Cummins",
+            "score": 119.18
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2022_18_12_3",
+          "year": 2022,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 12,
+            "teamName": "Joe Burrow Tiger King",
+            "teamAbbrev": "KING",
+            "owner": "Ben Bingert",
+            "score": 106.52
+          },
+          "away": {
+            "teamId": 3,
+            "teamName": "Pussy Power",
+            "teamAbbrev": "CARL",
+            "owner": "Carl Cummins",
+            "score": 119.18
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2022_19_12_3",
+          "year": 2022,
+          "week": 19,
+          "matchupPeriodId": 19,
           "isPlayoff": true,
           "playoffType": "WINNERS_BRACKET",
           "home": {
@@ -29652,23 +29830,23 @@
     "John Artiglier": {
       "opponent": "John Artiglier",
       "opponentName": "All You Need is Love",
-      "wins": 15,
+      "wins": 16,
       "losses": 5,
       "ties": 0,
-      "winPercentage": 0.75,
-      "totalGames": 20,
-      "pointsFor": 2559.14,
-      "pointsAgainst": 2383.9,
-      "avgPointsFor": 127.957,
-      "avgPointsAgainst": 119.19500000000001,
+      "winPercentage": 0.7619047619047619,
+      "totalGames": 21,
+      "pointsFor": 2690.28,
+      "pointsAgainst": 2463.58,
+      "avgPointsFor": 128.10857142857145,
+      "avgPointsAgainst": 117.31333333333333,
       "highestScore": 235.8,
       "lowestScore": 78.28,
       "biggestWin": 67.48000000000002,
       "closestWin": 0.0799999999999983,
-      "longestWinStreak": 9,
+      "longestWinStreak": 10,
       "currentStreak": {
         "type": "WIN",
-        "length": 9
+        "length": 10
       },
       "matchups": [
         {
@@ -30130,6 +30308,29 @@
             "score": 131.14
           },
           "winner": "AWAY"
+        },
+        {
+          "id": "2025_18_11_3",
+          "year": 2025,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 11,
+            "teamName": "All You Need is Love",
+            "teamAbbrev": "RAD",
+            "owner": "John Artiglier",
+            "score": 79.68
+          },
+          "away": {
+            "teamId": 3,
+            "teamName": "Taylor and Travis Swift \ud83d\udc51",
+            "teamAbbrev": "CARL",
+            "owner": "Carl Cummins",
+            "score": 131.14
+          },
+          "winner": "AWAY"
         }
       ]
     },
@@ -30487,22 +30688,22 @@
       "opponent": "Loren Kessell",
       "opponentName": "Really Just Sean Kessell",
       "wins": 0,
-      "losses": 2,
+      "losses": 1,
       "ties": 0,
       "winPercentage": 0.0,
-      "totalGames": 2,
-      "pointsFor": 116.42,
-      "pointsAgainst": 186.28,
-      "avgPointsFor": 58.21,
-      "avgPointsAgainst": 93.14,
+      "totalGames": 1,
+      "pointsFor": 59.0,
+      "pointsAgainst": 101.0,
+      "avgPointsFor": 59.0,
+      "avgPointsAgainst": 101.0,
       "highestScore": 59.0,
-      "lowestScore": 57.42,
+      "lowestScore": 59.0,
       "biggestWin": 0,
       "closestWin": 0,
       "longestWinStreak": 0,
       "currentStreak": {
         "type": "LOSS",
-        "length": 2
+        "length": 1
       },
       "matchups": [
         {
@@ -30525,29 +30726,6 @@
             "teamAbbrev": "FISH",
             "owner": "Brandon Kish",
             "score": 59.0
-          },
-          "winner": "HOME"
-        },
-        {
-          "id": "2015_4_5_12",
-          "year": 2015,
-          "week": 4,
-          "matchupPeriodId": 4,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 85.28
-          },
-          "away": {
-            "teamId": 12,
-            "teamName": "Kish and Tell",
-            "teamAbbrev": "FISH",
-            "owner": "Brandon Kish",
-            "score": 57.42
           },
           "winner": "HOME"
         }
@@ -31596,76 +31774,6 @@
           "winner": "AWAY"
         }
       ]
-    },
-    "Rob Cahill": {
-      "opponent": "Rob Cahill",
-      "opponentName": "Team Cahill",
-      "wins": 1,
-      "losses": 1,
-      "ties": 0,
-      "winPercentage": 0.5,
-      "totalGames": 2,
-      "pointsFor": 317.52,
-      "pointsAgainst": 289.3,
-      "avgPointsFor": 158.76,
-      "avgPointsAgainst": 144.65,
-      "highestScore": 206.72,
-      "lowestScore": 110.8,
-      "biggestWin": 58.62,
-      "closestWin": 58.62,
-      "longestWinStreak": 1,
-      "currentStreak": {
-        "type": "LOSS",
-        "length": 1
-      },
-      "matchups": [
-        {
-          "id": "2015_7_8_12",
-          "year": 2015,
-          "week": 7,
-          "matchupPeriodId": 7,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 52.18
-          },
-          "away": {
-            "teamId": 12,
-            "teamName": "Kish and Tell",
-            "teamAbbrev": "FISH",
-            "owner": "Brandon Kish",
-            "score": 110.8
-          },
-          "winner": "AWAY"
-        },
-        {
-          "id": "2015_13_8_12",
-          "year": 2015,
-          "week": 13,
-          "matchupPeriodId": 13,
-          "isPlayoff": true,
-          "playoffType": "WINNERS_BRACKET",
-          "home": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 237.12
-          },
-          "away": {
-            "teamId": 12,
-            "teamName": "Kish and Tell",
-            "teamAbbrev": "FISH",
-            "owner": "Brandon Kish",
-            "score": 206.72
-          },
-          "winner": "HOME"
-        }
-      ]
     }
   },
   "Brian Dorward": {
@@ -31881,22 +31989,22 @@
       "opponent": "Loren Kessell",
       "opponentName": "Really Just Sean Kessell",
       "wins": 1,
-      "losses": 3,
+      "losses": 0,
       "ties": 0,
-      "winPercentage": 0.25,
-      "totalGames": 4,
-      "pointsFor": 384.48,
-      "pointsAgainst": 478.94,
-      "avgPointsFor": 96.12,
-      "avgPointsAgainst": 119.735,
-      "highestScore": 164.96,
-      "lowestScore": 61.02,
+      "winPercentage": 1.0,
+      "totalGames": 1,
+      "pointsFor": 76.0,
+      "pointsAgainst": 75.0,
+      "avgPointsFor": 76.0,
+      "avgPointsAgainst": 75.0,
+      "highestScore": 76.0,
+      "lowestScore": 76.0,
       "biggestWin": 1.0,
       "closestWin": 1.0,
       "longestWinStreak": 1,
       "currentStreak": {
-        "type": "LOSS",
-        "length": 3
+        "type": "WIN",
+        "length": 1
       },
       "matchups": [
         {
@@ -31921,75 +32029,6 @@
             "score": 76.0
           },
           "winner": "AWAY"
-        },
-        {
-          "id": "2015_3_5_11",
-          "year": 2015,
-          "week": 3,
-          "matchupPeriodId": 3,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 104.1
-          },
-          "away": {
-            "teamId": 11,
-            "teamName": "Plainsboro Owls",
-            "teamAbbrev": "WHOO",
-            "owner": "Brian Dorward",
-            "score": 82.5
-          },
-          "winner": "HOME"
-        },
-        {
-          "id": "2015_12_5_11",
-          "year": 2015,
-          "week": 12,
-          "matchupPeriodId": 12,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 113.6
-          },
-          "away": {
-            "teamId": 11,
-            "teamName": "Plainsboro Owls",
-            "teamAbbrev": "WHOO",
-            "owner": "Brian Dorward",
-            "score": 61.02
-          },
-          "winner": "HOME"
-        },
-        {
-          "id": "2015_13_5_11",
-          "year": 2015,
-          "week": 13,
-          "matchupPeriodId": 13,
-          "isPlayoff": true,
-          "playoffType": "WINNERS_BRACKET",
-          "home": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 186.24
-          },
-          "away": {
-            "teamId": 11,
-            "teamName": "Plainsboro Owls",
-            "teamAbbrev": "WHOO",
-            "owner": "Brian Dorward",
-            "score": 164.96
-          },
-          "winner": "HOME"
         }
       ]
     },
@@ -33152,53 +33191,6 @@
         }
       ]
     },
-    "Rob Cahill": {
-      "opponent": "Rob Cahill",
-      "opponentName": "Team Cahill",
-      "wins": 1,
-      "losses": 0,
-      "ties": 0,
-      "winPercentage": 1.0,
-      "totalGames": 1,
-      "pointsFor": 77.76,
-      "pointsAgainst": 69.86,
-      "avgPointsFor": 77.76,
-      "avgPointsAgainst": 69.86,
-      "highestScore": 77.76,
-      "lowestScore": 77.76,
-      "biggestWin": 7.900000000000006,
-      "closestWin": 7.900000000000006,
-      "longestWinStreak": 1,
-      "currentStreak": {
-        "type": "WIN",
-        "length": 1
-      },
-      "matchups": [
-        {
-          "id": "2015_4_8_11",
-          "year": 2015,
-          "week": 4,
-          "matchupPeriodId": 4,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 69.86
-          },
-          "away": {
-            "teamId": 11,
-            "teamName": "Plainsboro Owls",
-            "teamAbbrev": "WHOO",
-            "owner": "Brian Dorward",
-            "score": 77.76
-          },
-          "winner": "AWAY"
-        }
-      ]
-    },
     "Ben Bingert": {
       "opponent": "Ben Bingert",
       "opponentName": "Mail Fairy",
@@ -33297,15 +33289,15 @@
     "Bill Solecki": {
       "opponent": "Bill Solecki",
       "opponentName": "Bovine University Stampede",
-      "wins": 13,
-      "losses": 13,
+      "wins": 14,
+      "losses": 17,
       "ties": 0,
-      "winPercentage": 0.5,
-      "totalGames": 26,
-      "pointsFor": 3041.4,
-      "pointsAgainst": 2915.84,
-      "avgPointsFor": 116.97692307692309,
-      "avgPointsAgainst": 112.14769230769231,
+      "winPercentage": 0.45161290322580644,
+      "totalGames": 31,
+      "pointsFor": 3536.2,
+      "pointsAgainst": 3493.98,
+      "avgPointsFor": 114.07096774193548,
+      "avgPointsAgainst": 112.70903225806451,
       "highestScore": 177.18,
       "lowestScore": 73.94,
       "biggestWin": 89.42,
@@ -33313,7 +33305,7 @@
       "longestWinStreak": 4,
       "currentStreak": {
         "type": "WIN",
-        "length": 2
+        "length": 3
       },
       "matchups": [
         {
@@ -33616,6 +33608,52 @@
           "winner": "HOME"
         },
         {
+          "id": "2020_17_1_9",
+          "year": 2020,
+          "week": 17,
+          "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 1,
+            "teamName": "Wade Boggs Memorial Team",
+            "teamAbbrev": "BOGS",
+            "owner": "Bill Solecki",
+            "score": 142.64
+          },
+          "away": {
+            "teamId": 9,
+            "teamName": "Salty Spitoon",
+            "teamAbbrev": "REXY",
+            "owner": "Ray Engleking",
+            "score": 94.0
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2020_18_1_9",
+          "year": 2020,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 1,
+            "teamName": "Wade Boggs Memorial Team",
+            "teamAbbrev": "BOGS",
+            "owner": "Bill Solecki",
+            "score": 142.64
+          },
+          "away": {
+            "teamId": 9,
+            "teamName": "Salty Spitoon",
+            "teamAbbrev": "REXY",
+            "owner": "Ray Engleking",
+            "score": 94.0
+          },
+          "winner": "HOME"
+        },
+        {
           "id": "2021_5_1_9",
           "year": 2021,
           "week": 5,
@@ -33777,6 +33815,52 @@
           "winner": "AWAY"
         },
         {
+          "id": "2022_18_9_1",
+          "year": 2022,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 9,
+            "teamName": "Salty Spitoon",
+            "teamAbbrev": "REXY",
+            "owner": "Ray Engleking",
+            "score": 96.46
+          },
+          "away": {
+            "teamId": 1,
+            "teamName": "Musconetcong Mantis Men",
+            "teamAbbrev": "MNTS",
+            "owner": "Bill Solecki",
+            "score": 99.3
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2022_19_9_1",
+          "year": 2022,
+          "week": 19,
+          "matchupPeriodId": 19,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 9,
+            "teamName": "Salty Spitoon",
+            "teamAbbrev": "REXY",
+            "owner": "Ray Engleking",
+            "score": 96.46
+          },
+          "away": {
+            "teamId": 1,
+            "teamName": "Musconetcong Mantis Men",
+            "teamAbbrev": "MNTS",
+            "owner": "Bill Solecki",
+            "score": 99.3
+          },
+          "winner": "AWAY"
+        },
+        {
           "id": "2023_7_9_1",
           "year": 2023,
           "week": 7,
@@ -33913,6 +33997,29 @@
             "score": 94.26
           },
           "winner": "HOME"
+        },
+        {
+          "id": "2025_18_9_1",
+          "year": 2025,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 9,
+            "teamName": "Salty Spitoon",
+            "teamAbbrev": "REXY",
+            "owner": "Ray Engleking",
+            "score": 113.88
+          },
+          "away": {
+            "teamId": 1,
+            "teamName": "Bovine University Stampede",
+            "teamAbbrev": "STMP",
+            "owner": "Bill Solecki",
+            "score": 94.26
+          },
+          "winner": "HOME"
         }
       ]
     },
@@ -33920,22 +34027,22 @@
       "opponent": "Loren Kessell",
       "opponentName": "Really Just Sean Kessell",
       "wins": 0,
-      "losses": 2,
+      "losses": 1,
       "ties": 0,
       "winPercentage": 0.0,
-      "totalGames": 2,
-      "pointsFor": 230.62,
-      "pointsAgainst": 241.42000000000002,
-      "avgPointsFor": 115.31,
-      "avgPointsAgainst": 120.71000000000001,
+      "totalGames": 1,
+      "pointsFor": 127.0,
+      "pointsAgainst": 131.0,
+      "avgPointsFor": 127.0,
+      "avgPointsAgainst": 131.0,
       "highestScore": 127.0,
-      "lowestScore": 103.62,
+      "lowestScore": 127.0,
       "biggestWin": 0,
       "closestWin": 0,
       "longestWinStreak": 0,
       "currentStreak": {
         "type": "LOSS",
-        "length": 2
+        "length": 1
       },
       "matchups": [
         {
@@ -33958,29 +34065,6 @@
             "teamAbbrev": "REXY",
             "owner": "Ray Engleking",
             "score": 127.0
-          },
-          "winner": "HOME"
-        },
-        {
-          "id": "2015_6_5_9",
-          "year": 2015,
-          "week": 6,
-          "matchupPeriodId": 6,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 110.42
-          },
-          "away": {
-            "teamId": 9,
-            "teamName": "Rex Grossman Fan Club",
-            "teamAbbrev": "REXY",
-            "owner": "Ray Engleking",
-            "score": 103.62
           },
           "winner": "HOME"
         }
@@ -34082,23 +34166,23 @@
     "Mike Kovacs": {
       "opponent": "Mike Kovacs",
       "opponentName": "Saquanda Strikes Back",
-      "wins": 12,
+      "wins": 13,
       "losses": 8,
       "ties": 0,
-      "winPercentage": 0.6,
-      "totalGames": 20,
-      "pointsFor": 2416.74,
-      "pointsAgainst": 2198.96,
-      "avgPointsFor": 120.83699999999999,
-      "avgPointsAgainst": 109.94800000000001,
+      "winPercentage": 0.6190476190476191,
+      "totalGames": 21,
+      "pointsFor": 2567.62,
+      "pointsAgainst": 2302.7200000000003,
+      "avgPointsFor": 122.26761904761904,
+      "avgPointsAgainst": 109.65333333333335,
       "highestScore": 200.0,
       "lowestScore": 53.0,
       "biggestWin": 75.61999999999999,
       "closestWin": 6.799999999999997,
-      "longestWinStreak": 7,
+      "longestWinStreak": 8,
       "currentStreak": {
         "type": "WIN",
-        "length": 7
+        "length": 8
       },
       "matchups": [
         {
@@ -34493,6 +34577,29 @@
           "winner": "HOME"
         },
         {
+          "id": "2023_18_9_2",
+          "year": 2023,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 9,
+            "teamName": "Salty Spitoon",
+            "teamAbbrev": "REXY",
+            "owner": "Ray Engleking",
+            "score": 150.88
+          },
+          "away": {
+            "teamId": 2,
+            "teamName": "Chase My Butker",
+            "teamAbbrev": "GRBG",
+            "owner": "Mike Kovacs",
+            "score": 103.76
+          },
+          "winner": "HOME"
+        },
+        {
           "id": "2024_9_2_9",
           "year": 2024,
           "week": 9,
@@ -34567,14 +34674,14 @@
       "opponent": "Randell Crawford",
       "opponentName": "Insane in the  Ukraine",
       "wins": 12,
-      "losses": 13,
+      "losses": 14,
       "ties": 0,
-      "winPercentage": 0.48,
-      "totalGames": 25,
-      "pointsFor": 2972.52,
-      "pointsAgainst": 2934.14,
-      "avgPointsFor": 118.9008,
-      "avgPointsAgainst": 117.3656,
+      "winPercentage": 0.46153846153846156,
+      "totalGames": 26,
+      "pointsFor": 3054.5,
+      "pointsAgainst": 3060.54,
+      "avgPointsFor": 117.48076923076923,
+      "avgPointsAgainst": 117.71307692307693,
       "highestScore": 185.58,
       "lowestScore": 62.62,
       "biggestWin": 59.120000000000005,
@@ -35138,6 +35245,29 @@
           "winner": "AWAY"
         },
         {
+          "id": "2024_18_9_6",
+          "year": 2024,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 9,
+            "teamName": "Salty Spitoon",
+            "teamAbbrev": "REXY",
+            "owner": "Ray Engleking",
+            "score": 81.98
+          },
+          "away": {
+            "teamId": 6,
+            "teamName": "Insane in the  Ukraine",
+            "teamAbbrev": "B00B",
+            "owner": "Randell Crawford",
+            "score": 126.4
+          },
+          "winner": "AWAY"
+        },
+        {
           "id": "2025_9_9_6",
           "year": 2025,
           "week": 9,
@@ -35235,15 +35365,15 @@
     "Phil Torres": {
       "opponent": "Phil Torres",
       "opponentName": "Skattebo's Ankle",
-      "wins": 16,
+      "wins": 18,
       "losses": 7,
       "ties": 0,
-      "winPercentage": 0.6956521739130435,
-      "totalGames": 23,
-      "pointsFor": 2908.02,
-      "pointsAgainst": 2569.6,
-      "avgPointsFor": 126.43565217391304,
-      "avgPointsAgainst": 111.72173913043478,
+      "winPercentage": 0.72,
+      "totalGames": 25,
+      "pointsFor": 3220.7,
+      "pointsAgainst": 2862.4,
+      "avgPointsFor": 128.828,
+      "avgPointsAgainst": 114.49600000000001,
       "highestScore": 241.34,
       "lowestScore": 75.08,
       "biggestWin": 75.14,
@@ -35581,6 +35711,52 @@
           "year": 2021,
           "week": 17,
           "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 9,
+            "teamName": "Salty Spitoon",
+            "teamAbbrev": "REXY",
+            "owner": "Ray Engleking",
+            "score": 156.34
+          },
+          "away": {
+            "teamId": 4,
+            "teamName": "Go Fudge Yourselves",
+            "teamAbbrev": "GFY",
+            "owner": "Phil Torres",
+            "score": 146.4
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2021_18_9_4",
+          "year": 2021,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 9,
+            "teamName": "Salty Spitoon",
+            "teamAbbrev": "REXY",
+            "owner": "Ray Engleking",
+            "score": 156.34
+          },
+          "away": {
+            "teamId": 4,
+            "teamName": "Go Fudge Yourselves",
+            "teamAbbrev": "GFY",
+            "owner": "Phil Torres",
+            "score": 146.4
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2021_19_9_4",
+          "year": 2021,
+          "week": 19,
+          "matchupPeriodId": 19,
           "isPlayoff": true,
           "playoffType": "WINNERS_BRACKET",
           "home": {
@@ -36796,76 +36972,6 @@
             "teamAbbrev": "BAHB",
             "owner": "BAHB Kerwersker",
             "score": 92.0
-          },
-          "winner": "HOME"
-        }
-      ]
-    },
-    "Rob Cahill": {
-      "opponent": "Rob Cahill",
-      "opponentName": "Team Cahill",
-      "wins": 0,
-      "losses": 2,
-      "ties": 0,
-      "winPercentage": 0.0,
-      "totalGames": 2,
-      "pointsFor": 197.5,
-      "pointsAgainst": 218.26,
-      "avgPointsFor": 98.75,
-      "avgPointsAgainst": 109.13,
-      "highestScore": 108.02,
-      "lowestScore": 89.48,
-      "biggestWin": 0,
-      "closestWin": 0,
-      "longestWinStreak": 0,
-      "currentStreak": {
-        "type": "LOSS",
-        "length": 2
-      },
-      "matchups": [
-        {
-          "id": "2015_1_8_9",
-          "year": 2015,
-          "week": 1,
-          "matchupPeriodId": 1,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 116.24
-          },
-          "away": {
-            "teamId": 9,
-            "teamName": "Rex Grossman Fan Club",
-            "teamAbbrev": "REXY",
-            "owner": "Ray Engleking",
-            "score": 108.02
-          },
-          "winner": "HOME"
-        },
-        {
-          "id": "2015_10_8_9",
-          "year": 2015,
-          "week": 10,
-          "matchupPeriodId": 10,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 102.02
-          },
-          "away": {
-            "teamId": 9,
-            "teamName": "Rex Grossman Fan Club",
-            "teamAbbrev": "REXY",
-            "owner": "Ray Engleking",
-            "score": 89.48
           },
           "winner": "HOME"
         }
@@ -38591,564 +38697,24 @@
       ]
     }
   },
-  "Rob Cahill": {
-    "Bill Solecki": {
-      "opponent": "Bill Solecki",
-      "opponentName": "Bovine University Stampede",
-      "wins": 1,
-      "losses": 1,
-      "ties": 0,
-      "winPercentage": 0.5,
-      "totalGames": 2,
-      "pointsFor": 169.92000000000002,
-      "pointsAgainst": 157.12,
-      "avgPointsFor": 84.96000000000001,
-      "avgPointsAgainst": 78.56,
-      "highestScore": 99.12,
-      "lowestScore": 70.8,
-      "biggestWin": 28.460000000000008,
-      "closestWin": 28.460000000000008,
-      "longestWinStreak": 1,
-      "currentStreak": {
-        "type": "WIN",
-        "length": 1
-      },
-      "matchups": [
-        {
-          "id": "2015_2_1_8",
-          "year": 2015,
-          "week": 2,
-          "matchupPeriodId": 2,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 1,
-            "teamName": "Bills New Team Name",
-            "teamAbbrev": "BILL",
-            "owner": "Bill Solecki",
-            "score": 86.46
-          },
-          "away": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 70.8
-          },
-          "winner": "HOME"
-        },
-        {
-          "id": "2015_11_1_8",
-          "year": 2015,
-          "week": 11,
-          "matchupPeriodId": 11,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 1,
-            "teamName": "Bills New Team Name",
-            "teamAbbrev": "BILL",
-            "owner": "Bill Solecki",
-            "score": 70.66
-          },
-          "away": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 99.12
-          },
-          "winner": "AWAY"
-        }
-      ]
-    },
-    "Loren Kessell": {
-      "opponent": "Loren Kessell",
-      "opponentName": "Really Just Sean Kessell",
-      "wins": 1,
-      "losses": 0,
-      "ties": 0,
-      "winPercentage": 1.0,
-      "totalGames": 1,
-      "pointsFor": 117.6,
-      "pointsAgainst": 109.04,
-      "avgPointsFor": 117.6,
-      "avgPointsAgainst": 109.04,
-      "highestScore": 117.6,
-      "lowestScore": 117.6,
-      "biggestWin": 8.559999999999988,
-      "closestWin": 8.559999999999988,
-      "longestWinStreak": 1,
-      "currentStreak": {
-        "type": "WIN",
-        "length": 1
-      },
-      "matchups": [
-        {
-          "id": "2015_8_5_8",
-          "year": 2015,
-          "week": 8,
-          "matchupPeriodId": 8,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 5,
-            "teamName": "Really Just Sean Kessell",
-            "teamAbbrev": "KSSL",
-            "owner": "Loren Kessell",
-            "score": 109.04
-          },
-          "away": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 117.6
-          },
-          "winner": "AWAY"
-        }
-      ]
-    },
-    "Mike Kovacs": {
-      "opponent": "Mike Kovacs",
-      "opponentName": "Saquanda Strikes Back",
-      "wins": 1,
-      "losses": 1,
-      "ties": 0,
-      "winPercentage": 0.5,
-      "totalGames": 2,
-      "pointsFor": 246.16,
-      "pointsAgainst": 231.82,
-      "avgPointsFor": 123.08,
-      "avgPointsAgainst": 115.91,
-      "highestScore": 134.5,
-      "lowestScore": 111.66,
-      "biggestWin": 40.18000000000001,
-      "closestWin": 40.18000000000001,
-      "longestWinStreak": 1,
-      "currentStreak": {
-        "type": "WIN",
-        "length": 1
-      },
-      "matchups": [
-        {
-          "id": "2015_3_2_8",
-          "year": 2015,
-          "week": 3,
-          "matchupPeriodId": 3,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
-            "teamAbbrev": "huh?",
-            "owner": "Mike Kovacs",
-            "score": 137.5
-          },
-          "away": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 111.66
-          },
-          "winner": "HOME"
-        },
-        {
-          "id": "2015_12_2_8",
-          "year": 2015,
-          "week": 12,
-          "matchupPeriodId": 12,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
-            "teamAbbrev": "huh?",
-            "owner": "Mike Kovacs",
-            "score": 94.32
-          },
-          "away": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 134.5
-          },
-          "winner": "AWAY"
-        }
-      ]
-    },
-    "Randell Crawford": {
-      "opponent": "Randell Crawford",
-      "opponentName": "Insane in the  Ukraine",
-      "wins": 0,
-      "losses": 2,
-      "ties": 0,
-      "winPercentage": 0.0,
-      "totalGames": 2,
-      "pointsFor": 168.54000000000002,
-      "pointsAgainst": 281.56,
-      "avgPointsFor": 84.27000000000001,
-      "avgPointsAgainst": 140.78,
-      "highestScore": 90.7,
-      "lowestScore": 77.84,
-      "biggestWin": 0,
-      "closestWin": 0,
-      "longestWinStreak": 0,
-      "currentStreak": {
-        "type": "LOSS",
-        "length": 2
-      },
-      "matchups": [
-        {
-          "id": "2015_9_6_8",
-          "year": 2015,
-          "week": 9,
-          "matchupPeriodId": 9,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 6,
-            "teamName": "oh no its John Snooooooow",
-            "teamAbbrev": "Game",
-            "owner": "Randell Crawford",
-            "score": 119.26
-          },
-          "away": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 77.84
-          },
-          "winner": "HOME"
-        },
-        {
-          "id": "2015_14_6_8",
-          "year": 2015,
-          "week": 14,
-          "matchupPeriodId": 14,
-          "isPlayoff": true,
-          "playoffType": "WINNERS_BRACKET",
-          "home": {
-            "teamId": 6,
-            "teamName": "oh no its John Snooooooow",
-            "teamAbbrev": "Game",
-            "owner": "Randell Crawford",
-            "score": 162.3
-          },
-          "away": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 90.7
-          },
-          "winner": "HOME"
-        }
-      ]
-    },
-    "Phil Torres": {
-      "opponent": "Phil Torres",
-      "opponentName": "Skattebo's Ankle",
-      "wins": 1,
-      "losses": 0,
-      "ties": 0,
-      "winPercentage": 1.0,
-      "totalGames": 1,
-      "pointsFor": 130.76,
-      "pointsAgainst": 86.44,
-      "avgPointsFor": 130.76,
-      "avgPointsAgainst": 86.44,
-      "highestScore": 130.76,
-      "lowestScore": 130.76,
-      "biggestWin": 44.31999999999999,
-      "closestWin": 44.31999999999999,
-      "longestWinStreak": 1,
-      "currentStreak": {
-        "type": "WIN",
-        "length": 1
-      },
-      "matchups": [
-        {
-          "id": "2015_5_4_8",
-          "year": 2015,
-          "week": 5,
-          "matchupPeriodId": 5,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 4,
-            "teamName": "Chef's choclate Salty Balls",
-            "teamAbbrev": "CHEF",
-            "owner": "Phil Torres",
-            "score": 86.44
-          },
-          "away": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 130.76
-          },
-          "winner": "AWAY"
-        }
-      ]
-    },
-    "Carl Cummins": {
-      "opponent": "Carl Cummins",
-      "opponentName": "Taylor and Travis Swift \ud83d\udc51",
-      "wins": 0,
-      "losses": 1,
-      "ties": 0,
-      "winPercentage": 0.0,
-      "totalGames": 1,
-      "pointsFor": 97.84,
-      "pointsAgainst": 100.2,
-      "avgPointsFor": 97.84,
-      "avgPointsAgainst": 100.2,
-      "highestScore": 97.84,
-      "lowestScore": 97.84,
-      "biggestWin": 0,
-      "closestWin": 0,
-      "longestWinStreak": 0,
-      "currentStreak": {
-        "type": "LOSS",
-        "length": 1
-      },
-      "matchups": [
-        {
-          "id": "2015_6_3_8",
-          "year": 2015,
-          "week": 6,
-          "matchupPeriodId": 6,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 3,
-            "teamName": "Duckman Kowalski",
-            "teamAbbrev": "CARL",
-            "owner": "Carl Cummins",
-            "score": 100.2
-          },
-          "away": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 97.84
-          },
-          "winner": "HOME"
-        }
-      ]
-    },
-    "Brandon Kish": {
-      "opponent": "Brandon Kish",
-      "opponentName": "Kish and Tell",
-      "wins": 1,
-      "losses": 1,
-      "ties": 0,
-      "winPercentage": 0.5,
-      "totalGames": 2,
-      "pointsFor": 289.3,
-      "pointsAgainst": 317.52,
-      "avgPointsFor": 144.65,
-      "avgPointsAgainst": 158.76,
-      "highestScore": 237.12,
-      "lowestScore": 52.18,
-      "biggestWin": 30.400000000000006,
-      "closestWin": 30.400000000000006,
-      "longestWinStreak": 1,
-      "currentStreak": {
-        "type": "WIN",
-        "length": 1
-      },
-      "matchups": [
-        {
-          "id": "2015_7_8_12",
-          "year": 2015,
-          "week": 7,
-          "matchupPeriodId": 7,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 52.18
-          },
-          "away": {
-            "teamId": 12,
-            "teamName": "Kish and Tell",
-            "teamAbbrev": "FISH",
-            "owner": "Brandon Kish",
-            "score": 110.8
-          },
-          "winner": "AWAY"
-        },
-        {
-          "id": "2015_13_8_12",
-          "year": 2015,
-          "week": 13,
-          "matchupPeriodId": 13,
-          "isPlayoff": true,
-          "playoffType": "WINNERS_BRACKET",
-          "home": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 237.12
-          },
-          "away": {
-            "teamId": 12,
-            "teamName": "Kish and Tell",
-            "teamAbbrev": "FISH",
-            "owner": "Brandon Kish",
-            "score": 206.72
-          },
-          "winner": "HOME"
-        }
-      ]
-    },
-    "Brian Dorward": {
-      "opponent": "Brian Dorward",
-      "opponentName": "Plainsboro Owls",
-      "wins": 0,
-      "losses": 1,
-      "ties": 0,
-      "winPercentage": 0.0,
-      "totalGames": 1,
-      "pointsFor": 69.86,
-      "pointsAgainst": 77.76,
-      "avgPointsFor": 69.86,
-      "avgPointsAgainst": 77.76,
-      "highestScore": 69.86,
-      "lowestScore": 69.86,
-      "biggestWin": 0,
-      "closestWin": 0,
-      "longestWinStreak": 0,
-      "currentStreak": {
-        "type": "LOSS",
-        "length": 1
-      },
-      "matchups": [
-        {
-          "id": "2015_4_8_11",
-          "year": 2015,
-          "week": 4,
-          "matchupPeriodId": 4,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 69.86
-          },
-          "away": {
-            "teamId": 11,
-            "teamName": "Plainsboro Owls",
-            "teamAbbrev": "WHOO",
-            "owner": "Brian Dorward",
-            "score": 77.76
-          },
-          "winner": "AWAY"
-        }
-      ]
-    },
-    "Ray Engleking": {
-      "opponent": "Ray Engleking",
-      "opponentName": "Salty Spitoon",
-      "wins": 2,
-      "losses": 0,
-      "ties": 0,
-      "winPercentage": 1.0,
-      "totalGames": 2,
-      "pointsFor": 218.26,
-      "pointsAgainst": 197.5,
-      "avgPointsFor": 109.13,
-      "avgPointsAgainst": 98.75,
-      "highestScore": 116.24,
-      "lowestScore": 102.02,
-      "biggestWin": 12.539999999999992,
-      "closestWin": 8.219999999999999,
-      "longestWinStreak": 2,
-      "currentStreak": {
-        "type": "WIN",
-        "length": 2
-      },
-      "matchups": [
-        {
-          "id": "2015_1_8_9",
-          "year": 2015,
-          "week": 1,
-          "matchupPeriodId": 1,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 116.24
-          },
-          "away": {
-            "teamId": 9,
-            "teamName": "Rex Grossman Fan Club",
-            "teamAbbrev": "REXY",
-            "owner": "Ray Engleking",
-            "score": 108.02
-          },
-          "winner": "HOME"
-        },
-        {
-          "id": "2015_10_8_9",
-          "year": 2015,
-          "week": 10,
-          "matchupPeriodId": 10,
-          "isPlayoff": false,
-          "playoffType": "NONE",
-          "home": {
-            "teamId": 8,
-            "teamName": "Team Cahill",
-            "teamAbbrev": "CAHI",
-            "owner": "Rob Cahill",
-            "score": 102.02
-          },
-          "away": {
-            "teamId": 9,
-            "teamName": "Rex Grossman Fan Club",
-            "teamAbbrev": "REXY",
-            "owner": "Ray Engleking",
-            "score": 89.48
-          },
-          "winner": "HOME"
-        }
-      ]
-    }
-  },
   "Ben Bingert": {
     "Bill Solecki": {
       "opponent": "Bill Solecki",
       "opponentName": "Bovine University Stampede",
-      "wins": 13,
+      "wins": 15,
       "losses": 11,
       "ties": 0,
-      "winPercentage": 0.5416666666666666,
-      "totalGames": 24,
-      "pointsFor": 3174.52,
-      "pointsAgainst": 3276.94,
-      "avgPointsFor": 132.27166666666668,
-      "avgPointsAgainst": 136.53916666666666,
+      "winPercentage": 0.5769230769230769,
+      "totalGames": 26,
+      "pointsFor": 3410.0,
+      "pointsAgainst": 3469.58,
+      "avgPointsFor": 131.15384615384616,
+      "avgPointsAgainst": 133.44538461538463,
       "highestScore": 260.16,
       "lowestScore": 66.02,
       "biggestWin": 49.84,
       "closestWin": 1.6800000000000068,
-      "longestWinStreak": 3,
+      "longestWinStreak": 5,
       "currentStreak": {
         "type": "WIN",
         "length": 2
@@ -39458,6 +39024,52 @@
           "year": 2021,
           "week": 17,
           "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 12,
+            "teamName": "Chubb Basshole",
+            "teamAbbrev": "Chub",
+            "owner": "Ben Bingert",
+            "score": 117.74
+          },
+          "away": {
+            "teamId": 1,
+            "teamName": "Wade Boggs Memorial Team",
+            "teamAbbrev": "BOGS",
+            "owner": "Bill Solecki",
+            "score": 96.32
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2021_18_12_1",
+          "year": 2021,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 12,
+            "teamName": "Chubb Basshole",
+            "teamAbbrev": "Chub",
+            "owner": "Ben Bingert",
+            "score": 117.74
+          },
+          "away": {
+            "teamId": 1,
+            "teamName": "Wade Boggs Memorial Team",
+            "teamAbbrev": "BOGS",
+            "owner": "Bill Solecki",
+            "score": 96.32
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2021_19_12_1",
+          "year": 2021,
+          "week": 19,
+          "matchupPeriodId": 19,
           "isPlayoff": true,
           "playoffType": "WINNERS_BRACKET",
           "home": {
@@ -41048,20 +40660,20 @@
     "Carl Cummins": {
       "opponent": "Carl Cummins",
       "opponentName": "Taylor and Travis Swift \ud83d\udc51",
-      "wins": 9,
-      "losses": 9,
+      "wins": 11,
+      "losses": 11,
       "ties": 0,
       "winPercentage": 0.5,
-      "totalGames": 18,
-      "pointsFor": 1911.88,
-      "pointsAgainst": 1903.48,
-      "avgPointsFor": 106.21555555555557,
-      "avgPointsAgainst": 105.74888888888889,
+      "totalGames": 22,
+      "pointsFor": 2403.08,
+      "pointsAgainst": 2385.6,
+      "avgPointsFor": 109.2309090909091,
+      "avgPointsAgainst": 108.43636363636364,
       "highestScore": 139.08,
       "lowestScore": 58.9,
       "biggestWin": 45.540000000000006,
       "closestWin": 10.280000000000001,
-      "longestWinStreak": 4,
+      "longestWinStreak": 6,
       "currentStreak": {
         "type": "LOSS",
         "length": 3
@@ -41229,6 +40841,52 @@
           "winner": "HOME"
         },
         {
+          "id": "2020_17_12_3",
+          "year": 2020,
+          "week": 17,
+          "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 12,
+            "teamName": "Just a Chubb Tucker",
+            "teamAbbrev": "Chub",
+            "owner": "Ben Bingert",
+            "score": 139.08
+          },
+          "away": {
+            "teamId": 3,
+            "teamName": "Pussy Power",
+            "teamAbbrev": "CARL",
+            "owner": "Carl Cummins",
+            "score": 121.88
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2020_18_12_3",
+          "year": 2020,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 12,
+            "teamName": "Just a Chubb Tucker",
+            "teamAbbrev": "Chub",
+            "owner": "Ben Bingert",
+            "score": 139.08
+          },
+          "away": {
+            "teamId": 3,
+            "teamName": "Pussy Power",
+            "teamAbbrev": "CARL",
+            "owner": "Carl Cummins",
+            "score": 121.88
+          },
+          "winner": "HOME"
+        },
+        {
           "id": "2021_7_12_3",
           "year": 2021,
           "week": 7,
@@ -41325,6 +40983,52 @@
           "year": 2022,
           "week": 17,
           "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 12,
+            "teamName": "Joe Burrow Tiger King",
+            "teamAbbrev": "KING",
+            "owner": "Ben Bingert",
+            "score": 106.52
+          },
+          "away": {
+            "teamId": 3,
+            "teamName": "Pussy Power",
+            "teamAbbrev": "CARL",
+            "owner": "Carl Cummins",
+            "score": 119.18
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2022_18_12_3",
+          "year": 2022,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 12,
+            "teamName": "Joe Burrow Tiger King",
+            "teamAbbrev": "KING",
+            "owner": "Ben Bingert",
+            "score": 106.52
+          },
+          "away": {
+            "teamId": 3,
+            "teamName": "Pussy Power",
+            "teamAbbrev": "CARL",
+            "owner": "Carl Cummins",
+            "score": 119.18
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2022_19_12_3",
+          "year": 2022,
+          "week": 19,
+          "matchupPeriodId": 19,
           "isPlayoff": true,
           "playoffType": "WINNERS_BRACKET",
           "home": {
@@ -42017,15 +41721,15 @@
     "John Artiglier": {
       "opponent": "John Artiglier",
       "opponentName": "All You Need is Love",
-      "wins": 8,
+      "wins": 9,
       "losses": 7,
       "ties": 0,
-      "winPercentage": 0.5333333333333333,
-      "totalGames": 15,
-      "pointsFor": 1728.96,
-      "pointsAgainst": 1627.2,
-      "avgPointsFor": 115.264,
-      "avgPointsAgainst": 108.48,
+      "winPercentage": 0.5625,
+      "totalGames": 16,
+      "pointsFor": 1859.9,
+      "pointsAgainst": 1730.58,
+      "avgPointsFor": 116.24375,
+      "avgPointsAgainst": 108.16125,
       "highestScore": 147.66,
       "lowestScore": 75.62,
       "biggestWin": 46.68000000000001,
@@ -42359,6 +42063,29 @@
           "winner": "AWAY"
         },
         {
+          "id": "2024_18_11_12",
+          "year": 2024,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 11,
+            "teamName": "All You Need is Love",
+            "teamAbbrev": "RAD",
+            "owner": "John Artiglier",
+            "score": 103.38
+          },
+          "away": {
+            "teamId": 12,
+            "teamName": "Strouds in the Clouds",
+            "teamAbbrev": "Clou",
+            "owner": "Ben Bingert",
+            "score": 130.94
+          },
+          "winner": "AWAY"
+        },
+        {
           "id": "2025_6_12_11",
           "year": 2025,
           "week": 6,
@@ -42525,23 +42252,23 @@
     "john crawford": {
       "opponent": "john crawford",
       "opponentName": "Paintin Peyton",
-      "wins": 4,
-      "losses": 3,
+      "wins": 5,
+      "losses": 4,
       "ties": 0,
-      "winPercentage": 0.5714285714285714,
-      "totalGames": 7,
-      "pointsFor": 682.32,
-      "pointsAgainst": 761.04,
-      "avgPointsFor": 97.47428571428573,
-      "avgPointsAgainst": 108.72,
+      "winPercentage": 0.5555555555555556,
+      "totalGames": 9,
+      "pointsFor": 864.3,
+      "pointsAgainst": 947.42,
+      "avgPointsFor": 96.03333333333333,
+      "avgPointsAgainst": 105.26888888888888,
       "highestScore": 135.78,
       "lowestScore": 50.16,
       "biggestWin": 19.22,
       "closestWin": 5.280000000000001,
-      "longestWinStreak": 4,
+      "longestWinStreak": 5,
       "currentStreak": {
         "type": "LOSS",
-        "length": 3
+        "length": 4
       },
       "matchups": [
         {
@@ -42572,6 +42299,29 @@
           "year": 2023,
           "week": 17,
           "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 13,
+            "teamName": "Peyton the Professor",
+            "teamAbbrev": "CRWD",
+            "owner": "john crawford",
+            "score": 109.1
+          },
+          "away": {
+            "teamId": 12,
+            "teamName": "We played Week 7, 8 and 13",
+            "teamAbbrev": "Dead",
+            "owner": "Ben Bingert",
+            "score": 120.94
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2023_18_13_12",
+          "year": 2023,
+          "week": 18,
+          "matchupPeriodId": 18,
           "isPlayoff": true,
           "playoffType": "WINNERS_BRACKET",
           "home": {
@@ -42687,6 +42437,29 @@
           "year": 2025,
           "week": 17,
           "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 12,
+            "teamName": "Mail Fairy",
+            "teamAbbrev": "Clou",
+            "owner": "Ben Bingert",
+            "score": 61.04
+          },
+          "away": {
+            "teamId": 13,
+            "teamName": "Paintin Peyton",
+            "teamAbbrev": "CRWD",
+            "owner": "john crawford",
+            "score": 77.28
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2025_18_12_13",
+          "year": 2025,
+          "week": 18,
+          "matchupPeriodId": 18,
           "isPlayoff": true,
           "playoffType": "WINNERS_BRACKET",
           "home": {
@@ -43081,20 +42854,20 @@
     "Mike Kovacs": {
       "opponent": "Mike Kovacs",
       "opponentName": "Saquanda Strikes Back",
-      "wins": 12,
-      "losses": 6,
+      "wins": 14,
+      "losses": 8,
       "ties": 0,
-      "winPercentage": 0.6666666666666666,
-      "totalGames": 18,
-      "pointsFor": 2119.48,
-      "pointsAgainst": 2003.74,
-      "avgPointsFor": 117.74888888888889,
-      "avgPointsAgainst": 111.31888888888889,
+      "winPercentage": 0.6363636363636364,
+      "totalGames": 22,
+      "pointsFor": 2479.68,
+      "pointsAgainst": 2414.46,
+      "avgPointsFor": 112.71272727272726,
+      "avgPointsAgainst": 109.74818181818182,
       "highestScore": 169.07999999999998,
       "lowestScore": 78.2,
       "biggestWin": 43.56,
       "closestWin": 5.140000000000001,
-      "longestWinStreak": 6,
+      "longestWinStreak": 8,
       "currentStreak": {
         "type": "WIN",
         "length": 3
@@ -43331,6 +43104,52 @@
           "winner": "HOME"
         },
         {
+          "id": "2021_18_11_2",
+          "year": 2021,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 11,
+            "teamName": "RADrigo Is My Homeboy",
+            "teamAbbrev": "RAD",
+            "owner": "John Artiglier",
+            "score": 101.9
+          },
+          "away": {
+            "teamId": 2,
+            "teamName": "Colonel Sanders McCaffreys",
+            "teamAbbrev": "GRBG",
+            "owner": "Mike Kovacs",
+            "score": 96.76
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2021_19_11_2",
+          "year": 2021,
+          "week": 19,
+          "matchupPeriodId": 19,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 11,
+            "teamName": "RADrigo Is My Homeboy",
+            "teamAbbrev": "RAD",
+            "owner": "John Artiglier",
+            "score": 101.9
+          },
+          "away": {
+            "teamId": 2,
+            "teamName": "Colonel Sanders McCaffreys",
+            "teamAbbrev": "GRBG",
+            "owner": "Mike Kovacs",
+            "score": 96.76
+          },
+          "winner": "HOME"
+        },
+        {
           "id": "2022_3_2_11",
           "year": 2022,
           "week": 3,
@@ -43381,6 +43200,52 @@
           "year": 2022,
           "week": 17,
           "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 11,
+            "teamName": "Goodnight Again My Sweet Prince",
+            "teamAbbrev": "RAD",
+            "owner": "John Artiglier",
+            "score": 78.2
+          },
+          "away": {
+            "teamId": 2,
+            "teamName": "Al Tuck And No Action",
+            "teamAbbrev": "GRBG",
+            "owner": "Mike Kovacs",
+            "score": 108.6
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2022_18_11_2",
+          "year": 2022,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 11,
+            "teamName": "Goodnight Again My Sweet Prince",
+            "teamAbbrev": "RAD",
+            "owner": "John Artiglier",
+            "score": 78.2
+          },
+          "away": {
+            "teamId": 2,
+            "teamName": "Al Tuck And No Action",
+            "teamAbbrev": "GRBG",
+            "owner": "Mike Kovacs",
+            "score": 108.6
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2022_19_11_2",
+          "year": 2022,
+          "week": 19,
+          "matchupPeriodId": 19,
           "isPlayoff": true,
           "playoffType": "WINNERS_BRACKET",
           "home": {
@@ -43958,14 +43823,14 @@
       "opponent": "Phil Torres",
       "opponentName": "Skattebo's Ankle",
       "wins": 6,
-      "losses": 9,
+      "losses": 11,
       "ties": 0,
-      "winPercentage": 0.4,
-      "totalGames": 15,
-      "pointsFor": 1599.16,
-      "pointsAgainst": 1693.7,
-      "avgPointsFor": 106.61066666666667,
-      "avgPointsAgainst": 112.91333333333334,
+      "winPercentage": 0.35294117647058826,
+      "totalGames": 17,
+      "pointsFor": 1857.16,
+      "pointsAgainst": 1965.74,
+      "avgPointsFor": 109.24470588235295,
+      "avgPointsAgainst": 115.63176470588235,
       "highestScore": 129.0,
       "lowestScore": 83.06,
       "biggestWin": 26.939999999999998,
@@ -44096,6 +43961,52 @@
           "year": 2020,
           "week": 16,
           "matchupPeriodId": 16,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 4,
+            "teamName": "Go Fudge Yourselves",
+            "teamAbbrev": "GFY",
+            "owner": "Phil Torres",
+            "score": 136.02
+          },
+          "away": {
+            "teamId": 11,
+            "teamName": "RADrigo Is My Homeboy",
+            "teamAbbrev": "RAD",
+            "owner": "John Artiglier",
+            "score": 129.0
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2020_17_4_11",
+          "year": 2020,
+          "week": 17,
+          "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 4,
+            "teamName": "Go Fudge Yourselves",
+            "teamAbbrev": "GFY",
+            "owner": "Phil Torres",
+            "score": 136.02
+          },
+          "away": {
+            "teamId": 11,
+            "teamName": "RADrigo Is My Homeboy",
+            "teamAbbrev": "RAD",
+            "owner": "John Artiglier",
+            "score": 129.0
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2020_18_4_11",
+          "year": 2020,
+          "week": 18,
+          "matchupPeriodId": 18,
           "isPlayoff": true,
           "playoffType": "WINNERS_BRACKET",
           "home": {
@@ -44327,14 +44238,14 @@
       "opponent": "Carl Cummins",
       "opponentName": "Taylor and Travis Swift \ud83d\udc51",
       "wins": 5,
-      "losses": 15,
+      "losses": 16,
       "ties": 0,
-      "winPercentage": 0.25,
-      "totalGames": 20,
-      "pointsFor": 2383.9,
-      "pointsAgainst": 2559.14,
-      "avgPointsFor": 119.19500000000001,
-      "avgPointsAgainst": 127.957,
+      "winPercentage": 0.23809523809523808,
+      "totalGames": 21,
+      "pointsFor": 2463.58,
+      "pointsAgainst": 2690.28,
+      "avgPointsFor": 117.31333333333333,
+      "avgPointsAgainst": 128.10857142857145,
       "highestScore": 168.32,
       "lowestScore": 72.72,
       "biggestWin": 65.34,
@@ -44342,7 +44253,7 @@
       "longestWinStreak": 3,
       "currentStreak": {
         "type": "LOSS",
-        "length": 9
+        "length": 10
       },
       "matchups": [
         {
@@ -44804,6 +44715,29 @@
             "score": 131.14
           },
           "winner": "AWAY"
+        },
+        {
+          "id": "2025_18_11_3",
+          "year": 2025,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 11,
+            "teamName": "All You Need is Love",
+            "teamAbbrev": "RAD",
+            "owner": "John Artiglier",
+            "score": 79.68
+          },
+          "away": {
+            "teamId": 3,
+            "teamName": "Taylor and Travis Swift \ud83d\udc51",
+            "teamAbbrev": "CARL",
+            "owner": "Carl Cummins",
+            "score": 131.14
+          },
+          "winner": "AWAY"
         }
       ]
     },
@@ -45180,14 +45114,14 @@
       "opponent": "Ben Bingert",
       "opponentName": "Mail Fairy",
       "wins": 7,
-      "losses": 8,
+      "losses": 9,
       "ties": 0,
-      "winPercentage": 0.4666666666666667,
-      "totalGames": 15,
-      "pointsFor": 1627.2,
-      "pointsAgainst": 1728.96,
-      "avgPointsFor": 108.48,
-      "avgPointsAgainst": 115.264,
+      "winPercentage": 0.4375,
+      "totalGames": 16,
+      "pointsFor": 1730.58,
+      "pointsAgainst": 1859.9,
+      "avgPointsFor": 108.16125,
+      "avgPointsAgainst": 116.24375,
       "highestScore": 154.24,
       "lowestScore": 68.84,
       "biggestWin": 59.58000000000001,
@@ -45521,6 +45455,29 @@
           "winner": "AWAY"
         },
         {
+          "id": "2024_18_11_12",
+          "year": 2024,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 11,
+            "teamName": "All You Need is Love",
+            "teamAbbrev": "RAD",
+            "owner": "John Artiglier",
+            "score": 103.38
+          },
+          "away": {
+            "teamId": 12,
+            "teamName": "Strouds in the Clouds",
+            "teamAbbrev": "Clou",
+            "owner": "Ben Bingert",
+            "score": 130.94
+          },
+          "winner": "AWAY"
+        },
+        {
           "id": "2025_6_12_11",
           "year": 2025,
           "week": 6,
@@ -45549,14 +45506,14 @@
       "opponent": "Joe Jaramillo",
       "opponentName": "Loop, There it is!",
       "wins": 4,
-      "losses": 2,
+      "losses": 3,
       "ties": 0,
-      "winPercentage": 0.6666666666666666,
-      "totalGames": 6,
-      "pointsFor": 698.34,
-      "pointsAgainst": 654.08,
-      "avgPointsFor": 116.39,
-      "avgPointsAgainst": 109.01333333333334,
+      "winPercentage": 0.5714285714285714,
+      "totalGames": 7,
+      "pointsFor": 781.64,
+      "pointsAgainst": 795.7,
+      "avgPointsFor": 111.66285714285713,
+      "avgPointsAgainst": 113.67142857142858,
       "highestScore": 148.1,
       "lowestScore": 83.3,
       "biggestWin": 46.03999999999999,
@@ -45618,6 +45575,29 @@
           "year": 2023,
           "week": 17,
           "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 11,
+            "teamName": "All You Need is Love",
+            "teamAbbrev": "RAD",
+            "owner": "John Artiglier",
+            "score": 83.3
+          },
+          "away": {
+            "teamId": 14,
+            "teamName": "Bye Week",
+            "teamAbbrev": "Yup",
+            "owner": "Joe Jaramillo",
+            "score": 141.62
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2023_18_11_14",
+          "year": 2023,
+          "week": 18,
+          "matchupPeriodId": 18,
           "isPlayoff": true,
           "playoffType": "WINNERS_BRACKET",
           "home": {
@@ -46013,20 +45993,20 @@
     "Mike Kovacs": {
       "opponent": "Mike Kovacs",
       "opponentName": "Saquanda Strikes Back",
-      "wins": 2,
+      "wins": 3,
       "losses": 4,
       "ties": 0,
-      "winPercentage": 0.3333333333333333,
-      "totalGames": 6,
-      "pointsFor": 657.46,
-      "pointsAgainst": 735.84,
-      "avgPointsFor": 109.57666666666667,
-      "avgPointsAgainst": 122.64,
+      "winPercentage": 0.42857142857142855,
+      "totalGames": 7,
+      "pointsFor": 767.74,
+      "pointsAgainst": 839.52,
+      "avgPointsFor": 109.67714285714285,
+      "avgPointsAgainst": 119.93142857142857,
       "highestScore": 128.34,
       "lowestScore": 91.08,
       "biggestWin": 12.64,
       "closestWin": 6.599999999999994,
-      "longestWinStreak": 1,
+      "longestWinStreak": 2,
       "currentStreak": {
         "type": "WIN",
         "length": 1
@@ -46125,6 +46105,29 @@
           "winner": "HOME"
         },
         {
+          "id": "2024_18_14_2",
+          "year": 2024,
+          "week": 18,
+          "matchupPeriodId": 18,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 14,
+            "teamName": "Bye Week Part 2",
+            "teamAbbrev": "Yup",
+            "owner": "Joe Jaramillo",
+            "score": 110.28
+          },
+          "away": {
+            "teamId": 2,
+            "teamName": "Dollar Dollar Bills Y'all",
+            "teamAbbrev": "GRBG",
+            "owner": "Mike Kovacs",
+            "score": 103.68
+          },
+          "winner": "HOME"
+        },
+        {
           "id": "2025_5_2_14",
           "year": 2025,
           "week": 5,
@@ -46176,14 +46179,14 @@
       "opponent": "Randell Crawford",
       "opponentName": "Insane in the  Ukraine",
       "wins": 1,
-      "losses": 6,
+      "losses": 7,
       "ties": 0,
-      "winPercentage": 0.14285714285714285,
-      "totalGames": 7,
-      "pointsFor": 611.04,
-      "pointsAgainst": 804.18,
-      "avgPointsFor": 87.29142857142857,
-      "avgPointsAgainst": 114.88285714285713,
+      "winPercentage": 0.125,
+      "totalGames": 8,
+      "pointsFor": 714.32,
+      "pointsAgainst": 931.8,
+      "avgPointsFor": 89.29,
+      "avgPointsAgainst": 116.475,
       "highestScore": 103.28,
       "lowestScore": 55.52,
       "biggestWin": 1.740000000000009,
@@ -46191,7 +46194,7 @@
       "longestWinStreak": 1,
       "currentStreak": {
         "type": "LOSS",
-        "length": 2
+        "length": 3
       },
       "matchups": [
         {
@@ -46337,6 +46340,29 @@
           "year": 2025,
           "week": 17,
           "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 14,
+            "teamName": "Loop, There it is!",
+            "teamAbbrev": "Yup",
+            "owner": "Joe Jaramillo",
+            "score": 103.28
+          },
+          "away": {
+            "teamId": 6,
+            "teamName": "Insane in the  Ukraine",
+            "teamAbbrev": "B00B",
+            "owner": "Randell Crawford",
+            "score": 127.62
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2025_18_14_6",
+          "year": 2025,
+          "week": 18,
+          "matchupPeriodId": 18,
           "isPlayoff": true,
           "playoffType": "WINNERS_BRACKET",
           "home": {
@@ -46939,20 +46965,20 @@
     "John Artiglier": {
       "opponent": "John Artiglier",
       "opponentName": "All You Need is Love",
-      "wins": 2,
+      "wins": 3,
       "losses": 4,
       "ties": 0,
-      "winPercentage": 0.3333333333333333,
-      "totalGames": 6,
-      "pointsFor": 654.08,
-      "pointsAgainst": 698.34,
-      "avgPointsFor": 109.01333333333334,
-      "avgPointsAgainst": 116.39,
+      "winPercentage": 0.42857142857142855,
+      "totalGames": 7,
+      "pointsFor": 795.7,
+      "pointsAgainst": 781.64,
+      "avgPointsFor": 113.67142857142858,
+      "avgPointsAgainst": 111.66285714285713,
       "highestScore": 141.62,
       "lowestScore": 81.28,
       "biggestWin": 58.32000000000001,
       "closestWin": 20.039999999999992,
-      "longestWinStreak": 1,
+      "longestWinStreak": 2,
       "currentStreak": {
         "type": "WIN",
         "length": 1
@@ -47009,6 +47035,29 @@
           "year": 2023,
           "week": 17,
           "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 11,
+            "teamName": "All You Need is Love",
+            "teamAbbrev": "RAD",
+            "owner": "John Artiglier",
+            "score": 83.3
+          },
+          "away": {
+            "teamId": 14,
+            "teamName": "Bye Week",
+            "teamAbbrev": "Yup",
+            "owner": "Joe Jaramillo",
+            "score": 141.62
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2023_18_11_14",
+          "year": 2023,
+          "week": 18,
+          "matchupPeriodId": 18,
           "isPlayoff": true,
           "playoffType": "WINNERS_BRACKET",
           "home": {
@@ -47637,14 +47686,14 @@
       "opponent": "Phil Torres",
       "opponentName": "Skattebo's Ankle",
       "wins": 2,
-      "losses": 6,
+      "losses": 7,
       "ties": 0,
-      "winPercentage": 0.25,
-      "totalGames": 8,
-      "pointsFor": 740.9,
-      "pointsAgainst": 798.52,
-      "avgPointsFor": 92.6125,
-      "avgPointsAgainst": 99.815,
+      "winPercentage": 0.2222222222222222,
+      "totalGames": 9,
+      "pointsFor": 844.8,
+      "pointsAgainst": 916.3399999999999,
+      "avgPointsFor": 93.86666666666666,
+      "avgPointsAgainst": 101.81555555555555,
       "highestScore": 111.72,
       "lowestScore": 50.88,
       "biggestWin": 38.22,
@@ -47752,6 +47801,29 @@
           "year": 2024,
           "week": 17,
           "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 4,
+            "teamName": "Hawk Tua",
+            "teamAbbrev": "HT",
+            "owner": "Phil Torres",
+            "score": 117.82
+          },
+          "away": {
+            "teamId": 13,
+            "teamName": "Paintin Peyton",
+            "teamAbbrev": "CRWD",
+            "owner": "john crawford",
+            "score": 103.9
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2024_18_4_13",
+          "year": 2024,
+          "week": 18,
+          "matchupPeriodId": 18,
           "isPlayoff": true,
           "playoffType": "WINNERS_BRACKET",
           "home": {
@@ -48122,23 +48194,23 @@
     "Ben Bingert": {
       "opponent": "Ben Bingert",
       "opponentName": "Mail Fairy",
-      "wins": 3,
-      "losses": 4,
+      "wins": 4,
+      "losses": 5,
       "ties": 0,
-      "winPercentage": 0.42857142857142855,
-      "totalGames": 7,
-      "pointsFor": 761.04,
-      "pointsAgainst": 682.32,
-      "avgPointsFor": 108.72,
-      "avgPointsAgainst": 97.47428571428573,
+      "winPercentage": 0.4444444444444444,
+      "totalGames": 9,
+      "pointsFor": 947.42,
+      "pointsAgainst": 864.3,
+      "avgPointsFor": 105.26888888888888,
+      "avgPointsAgainst": 96.03333333333333,
       "highestScore": 140.74,
       "lowestScore": 77.28,
       "biggestWin": 90.58000000000001,
       "closestWin": 16.240000000000002,
-      "longestWinStreak": 3,
+      "longestWinStreak": 4,
       "currentStreak": {
         "type": "WIN",
-        "length": 3
+        "length": 4
       },
       "matchups": [
         {
@@ -48169,6 +48241,29 @@
           "year": 2023,
           "week": 17,
           "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 13,
+            "teamName": "Peyton the Professor",
+            "teamAbbrev": "CRWD",
+            "owner": "john crawford",
+            "score": 109.1
+          },
+          "away": {
+            "teamId": 12,
+            "teamName": "We played Week 7, 8 and 13",
+            "teamAbbrev": "Dead",
+            "owner": "Ben Bingert",
+            "score": 120.94
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2023_18_13_12",
+          "year": 2023,
+          "week": 18,
+          "matchupPeriodId": 18,
           "isPlayoff": true,
           "playoffType": "WINNERS_BRACKET",
           "home": {
@@ -48284,6 +48379,29 @@
           "year": 2025,
           "week": 17,
           "matchupPeriodId": 17,
+          "isPlayoff": true,
+          "playoffType": "WINNERS_BRACKET",
+          "home": {
+            "teamId": 12,
+            "teamName": "Mail Fairy",
+            "teamAbbrev": "Clou",
+            "owner": "Ben Bingert",
+            "score": 61.04
+          },
+          "away": {
+            "teamId": 13,
+            "teamName": "Paintin Peyton",
+            "teamAbbrev": "CRWD",
+            "owner": "john crawford",
+            "score": 77.28
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2025_18_12_13",
+          "year": 2025,
+          "week": 18,
+          "matchupPeriodId": 18,
           "isPlayoff": true,
           "playoffType": "WINNERS_BRACKET",
           "home": {
