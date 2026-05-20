@@ -597,37 +597,49 @@
         const container = document.getElementById('seasons-container');
         container.innerHTML = seasons.map(season => {
             const notes = [];
-            if (!season.mostConsolationDollars?.owner || season.mostConsolationDollars.count === 0)
-                notes.push('No consolation dollars were awarded this season');
             if (!season.mostWeeklyHighScores?.owner)
                 notes.push('Multiple teams tied for most weekly high scores');
             if (!season.mostWeeklyLowScores?.owner)
                 notes.push('Multiple teams tied for most weekly low scores');
             if (!season.bestBenchWarmers)
                 notes.push('Bench scoring data is not available for this season');
-            const noteHTML = notes.length ? `<div class="season-note">Note: ${notes.join('. ')}.</div>` : '';
 
-            // Consolation dollars
+            // Consolation dollars — built from consolationPayouts directly
             let consolationHTML = '';
-            if (season.mostConsolationDollars?.owner && season.mostConsolationDollars.count > 0) {
-                let weekDetail = '';
-                if (season.consolationPayouts?.length) {
-                    const ownerPayouts = season.consolationPayouts
-                        .filter(p => p.owner === season.mostConsolationDollars.owner)
-                        .sort((a, b) => a.week - b.week);
-                    if (ownerPayouts.length) {
-                        weekDetail = `<br>${ownerPayouts.map(p =>
-                            `<a href="${createMatchupLink(season.year, p.week)}" target="_blank">Wk ${p.week}</a>`
-                        ).join(', ')}`;
-                    }
+            if (season.year >= 2020) {
+                const payouts = season.consolationPayouts || [];
+                if (payouts.length === 0) {
+                    notes.push('No consolation dollars were awarded this season');
+                } else {
+                    // Group by owner, sort weeks ascending within each owner
+                    const byOwner = {};
+                    payouts.slice().sort((a, b) => a.week - b.week).forEach(p => {
+                        if (!byOwner[p.owner]) byOwner[p.owner] = [];
+                        byOwner[p.owner].push(p.week);
+                    });
+                    // Sort owners by count desc, then name asc
+                    const sorted = Object.entries(byOwner)
+                        .sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]));
+
+                    const rows = sorted.map(([owner, weeks]) => {
+                        const weekLinks = weeks.map(w =>
+                            `<a href="${createMatchupLink(season.year, w)}" target="_blank">Wk ${w}</a>`
+                        ).join(', ');
+                        return `<div style="margin-bottom:4px;">
+                            <span style="font-weight:700;">${owner}</span>
+                            <span style="color:var(--text-secondary); font-size:0.75rem; margin-left:6px;">${weekLinks}</span>
+                        </div>`;
+                    }).join('');
+
+                    consolationHTML = `
+                        <div class="stat-box" style="grid-column: span 2;">
+                            <div class="stat-title">Consolation Dollars (2nd highest score, lost)</div>
+                            <div class="stat-details" style="margin-top:6px;">${rows}</div>
+                        </div>`;
                 }
-                consolationHTML = `
-                    <div class="stat-box">
-                        <div class="stat-title">Most Consolation Dollars</div>
-                        <div class="stat-content">${season.mostConsolationDollars.count}</div>
-                        <div class="stat-details">${season.mostConsolationDollars.owner}${weekDetail}</div>
-                    </div>`;
             }
+
+            const noteHTML = notes.length ? `<div class="season-note">Note: ${notes.join('. ')}.</div>` : '';
 
             return `
             <div class="season-section" data-year="${season.year}">
