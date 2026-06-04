@@ -465,6 +465,169 @@
             .season-pills { gap: 4px; }
             .season-pill { padding: 5px 10px; font-size: 0.75rem; }
         }
+
+        /* ── Keeper Analysis section ── */
+        .keeper-section {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid rgba(255,215,0,0.3);
+            margin-top: 40px;
+            margin-bottom: 0;
+        }
+
+        .keeper-header {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .keeper-section-note {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .keeper-selector-wrap {
+            margin-bottom: 20px;
+        }
+        .keeper-selector-label {
+            text-align: center;
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        .keeper-pills {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .keeper-pill {
+            padding: 6px 14px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,215,0,0.35);
+            color: var(--gold);
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+            background: rgba(255,215,0,0.06);
+            transition: all 0.2s ease;
+            user-select: none;
+        }
+        .keeper-pill:hover {
+            border-color: var(--gold);
+            background: rgba(255,215,0,0.15);
+        }
+        .keeper-pill.active {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: var(--dark-bg);
+            font-weight: 700;
+        }
+
+        .keeper-panel {
+            display: none;
+        }
+        .keeper-panel.visible {
+            display: block;
+        }
+
+        .keeper-year-header {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 14px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,215,0,0.2);
+            padding-bottom: 8px;
+        }
+
+        /* Table */
+        .keeper-table-wrap {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .keeper-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+        }
+        .keeper-table th {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: var(--text-secondary);
+            padding: 7px 10px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.12);
+            white-space: nowrap;
+        }
+        .keeper-table th.col-num { text-align: right; }
+        .keeper-table td {
+            padding: 9px 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            vertical-align: middle;
+        }
+        .keeper-table td.col-num { text-align: right; }
+        .keeper-table tbody tr:hover td { background: rgba(255,215,0,0.04); }
+        .keeper-table tr:last-child td { border-bottom: none; }
+
+        /* Player / owner cells */
+        .keeper-player { font-weight: 700; color: var(--text); }
+        .keeper-owner  { font-size: 0.78rem; color: var(--text-secondary); margin-top: 2px; }
+        .keeper-dropped {
+            display: inline-block;
+            font-size: 0.68rem;
+            color: #ff9944;
+            background: rgba(255,153,68,0.12);
+            border-radius: 4px;
+            padding: 1px 5px;
+            margin-top: 3px;
+        }
+        .keeper-note {
+            display: block;
+            font-size: 0.68rem;
+            color: rgba(255,255,255,0.35);
+            font-style: italic;
+            margin-top: 3px;
+            line-height: 1.3;
+        }
+
+        /* Verdict badges */
+        .verdict-badge {
+            display: inline-block;
+            padding: 3px 9px;
+            border-radius: 12px;
+            font-size: 0.73rem;
+            font-weight: 700;
+            letter-spacing: 0.4px;
+            white-space: nowrap;
+        }
+        .verdict-steal   { background: rgba(0,255,100,0.15); color: #00ff64; border: 1px solid rgba(0,255,100,0.3); }
+        .verdict-average { background: rgba(0,212,255,0.1);  color: var(--electric-blue); border: 1px solid rgba(0,212,255,0.25); }
+        .verdict-bust    { background: rgba(255,80,80,0.12); color: #ff6b6b; border: 1px solid rgba(255,80,80,0.3); }
+        .verdict-nodata  { color: rgba(255,255,255,0.3); font-size: 0.8rem; font-style: italic; }
+
+        /* Numeric highlight */
+        .num-steal { color: #00ff64; font-weight: 700; }
+        .num-bust  { color: #ff6b6b; font-weight: 700; }
+        .num-dim   { color: rgba(255,255,255,0.3); }
+
+        @media (max-width: 768px) {
+            .keeper-section { padding: 16px 10px; }
+            .keeper-table th, .keeper-table td { padding: 7px 6px; font-size: 0.8rem; }
+            /* Hide round-avg and vs-avg columns on small screens */
+            .keeper-table .col-avg,
+            .keeper-table .col-vsavg { display: none; }
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -493,6 +656,7 @@
 
     <div class="page-nav">
         <a href="#section-seasons">📅 Season Stats</a>
+        <a href="#section-keepers">🔑 Keeper Analysis</a>
         <a href="#section-payouts">💰 Payout Tracker</a>
         <a href="#section-alltime">🏆 All-Time Payouts</a>
     </div>
@@ -506,6 +670,17 @@
     </div>
 
     <div id="seasons-container"></div>
+
+    <!-- Keeper Analysis -->
+    <div id="section-keepers" class="section-anchor keeper-section">
+        <div class="keeper-header">🔑 Keeper Analysis</div>
+        <div class="keeper-section-note" id="keeper-section-note"></div>
+        <div class="keeper-selector-wrap" id="keeper-selector-wrap" style="display:none;">
+            <div class="keeper-selector-label">Select Season</div>
+            <div class="keeper-pills" id="keeper-pills"></div>
+        </div>
+        <div id="keeper-panels-container"></div>
+    </div>
 
     <!-- Payout Tracker -->
     <div id="section-payouts" class="section-anchor payout-section">
@@ -883,6 +1058,150 @@
         container.innerHTML = `<div class="payout-year-grid">${yearCardsHTML}</div>${allTimeTotalsHTML}`;
     }
 
+
+    // ── Keeper Analysis ──────────────────────────────────────────────────────
+    let activeKeeperYear = null;
+
+    function showKeeperYear(year) {
+        activeKeeperYear = year;
+        document.querySelectorAll('.keeper-pill').forEach(p => {
+            p.classList.toggle('active', parseInt(p.dataset.year) === year);
+        });
+        document.querySelectorAll('.keeper-panel').forEach(el => {
+            el.classList.toggle('visible', parseInt(el.dataset.year) === year);
+        });
+    }
+
+    function renderKeepers(seasonStats) {
+        const ALL_YEARS = [];
+        for (let y = 2018; y <= 2025; y++) ALL_YEARS.push(y);
+
+        // Determine which years have keeper data
+        const yearsWithData = [];
+        const yearsWithout  = [];
+
+        ALL_YEARS.forEach(y => {
+            const s = seasonStats[y];
+            const keepers = s && s.keeperAnalysis && s.keeperAnalysis.keepers;
+            if (keepers && keepers.length > 0) {
+                yearsWithData.push(y);
+            } else {
+                yearsWithout.push(y);
+            }
+        });
+
+        // Build the availability note
+        const noteEl = document.getElementById('keeper-section-note');
+        if (yearsWithout.length > 0) {
+            noteEl.textContent =
+                'Keeper data is not available for: ' + yearsWithout.join(', ') + '.';
+        }
+
+        if (yearsWithData.length === 0) {
+            document.getElementById('keeper-panels-container').innerHTML =
+                '<p style="text-align:center;color:var(--text-secondary);padding:20px;">No keeper data available yet.</p>';
+            return;
+        }
+
+        // Build pills (newest first)
+        const pillsEl = document.getElementById('keeper-pills');
+        const sortedYears = [...yearsWithData].sort((a, b) => b - a);
+        pillsEl.innerHTML = sortedYears.map(y =>
+            `<span class="keeper-pill" data-year="${y}">${y}</span>`
+        ).join('');
+        pillsEl.addEventListener('click', e => {
+            const pill = e.target.closest('.keeper-pill');
+            if (pill) showKeeperYear(parseInt(pill.dataset.year));
+        });
+        document.getElementById('keeper-selector-wrap').style.display = '';
+
+        // Sort order for verdict
+        const VERDICT_ORDER = { STEAL: 0, AVERAGE: 1, BUST: 2, NO_DATA: 3 };
+
+        // Build panels
+        const container = document.getElementById('keeper-panels-container');
+        container.innerHTML = sortedYears.map(year => {
+            const keepers = [...(seasonStats[year].keeperAnalysis.keepers || [])]
+                .sort((a, b) => {
+                    const vo = (VERDICT_ORDER[a.verdict] ?? 3) - (VERDICT_ORDER[b.verdict] ?? 3);
+                    if (vo !== 0) return vo;
+                    return a.owner.localeCompare(b.owner);
+                });
+
+            const rows = keepers.map(k => {
+                const noData = k.verdict === 'NO_DATA';
+
+                // Verdict badge
+                let badgeHTML;
+                if (k.verdict === 'STEAL') {
+                    badgeHTML = `<span class="verdict-badge verdict-steal">STEAL</span>`;
+                } else if (k.verdict === 'BUST') {
+                    badgeHTML = `<span class="verdict-badge verdict-bust">BUST</span>`;
+                } else if (k.verdict === 'AVERAGE') {
+                    badgeHTML = `<span class="verdict-badge verdict-average">AVERAGE</span>`;
+                } else {
+                    badgeHTML = `<span class="verdict-nodata">—</span>`;
+                }
+
+                // Points vs avg — colored + signed
+                let vsAvgHTML = '<span class="num-dim">—</span>';
+                if (!noData && k.pointsVsAvgPct != null) {
+                    const pct = (k.pointsVsAvgPct * 100).toFixed(1);
+                    const cls = k.pointsVsAvgPct > 0 ? 'num-steal' : 'num-bust';
+                    const sign = k.pointsVsAvgPct > 0 ? '+' : '';
+                    vsAvgHTML = `<span class="${cls}">${sign}${pct}%</span>`;
+                }
+
+                // Dropped indicator
+                const droppedHTML = (k.droppedMidSeason && !k.note)
+                    ? `<span class="keeper-dropped">dropped Wk ${k.lastActiveWeek}</span>`
+                    : '';
+                const noteHTML = k.note
+                    ? `<span class="keeper-note">${k.note}</span>`
+                    : '';
+
+                const dimClass = noData ? ' class="num-dim"' : '';
+
+                return `<tr>
+                    <td>
+                        <div class="keeper-player${noData ? ' num-dim' : ''}">${k.player}</div>
+                        <div class="keeper-owner">${k.owner}</div>
+                        ${droppedHTML}
+                        ${noteHTML}
+                    </td>
+                    <td class="col-num"${dimClass}>Rd ${k.roundKept}</td>
+                    <td class="col-num col-avg"${dimClass}>${noData ? '—' : k.pointsScored != null ? k.pointsScored.toFixed(1) : '—'}</td>
+                    <td class="col-num col-avg"${dimClass}>${noData ? '—' : k.roundAvgPoints != null ? k.roundAvgPoints.toFixed(1) : '—'}</td>
+                    <td class="col-num col-vsavg">${vsAvgHTML}</td>
+                    <td>${badgeHTML}</td>
+                </tr>`;
+            }).join('');
+
+            return `
+            <div class="keeper-panel" data-year="${year}">
+                <div class="keeper-year-header">${year} Keepers</div>
+                <div class="keeper-table-wrap">
+                    <table class="keeper-table">
+                        <thead>
+                            <tr>
+                                <th>Player</th>
+                                <th class="col-num">Round</th>
+                                <th class="col-num col-avg">Pts Scored</th>
+                                <th class="col-num col-avg">Round Avg</th>
+                                <th class="col-num col-vsavg">vs Avg</th>
+                                <th>Verdict</th>
+                            </tr>
+                        </thead>
+                        <tbody>${rows}</tbody>
+                    </table>
+                </div>
+            </div>`;
+        }).join('');
+
+        // Show most recent year by default
+        showKeeperYear(sortedYears[0]);
+    }
+
     // ── Data loading ─────────────────────────────────────────────────────────
     async function loadData() {
         try {
@@ -901,6 +1220,7 @@
 
             renderSeasons(seasonStats);
             renderPayouts(seasonStats, ownersByYear);
+            renderKeepers(seasonStats);
         } catch (error) {
             console.error('Error loading data:', error);
         }
