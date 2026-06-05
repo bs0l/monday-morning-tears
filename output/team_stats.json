@@ -15,14 +15,14 @@
     "teamName": "Bovine University Stampede",
     "abbrev": "STMP",
     "allTeamNames": [
-      "Barack Obama",
-      "Bills New Team Name",
+      "Musconetcong Mantis Men",
+      "Wade Boggs Memorial Team",
       "Arian Foster 2013",
+      "Bills New Team Name",
       "Scott's ConsolationTots",
       "Why's This So Sticky?",
       "Bovine University Stampede",
-      "Wade Boggs Memorial Team",
-      "Musconetcong Mantis Men"
+      "Barack Obama"
     ],
     "playoffYears": [
       2018,
@@ -70,7 +70,7 @@
     "avgPointsAgainst": 114.85624999999999,
     "highestScore": 258.48,
     "lowestScore": 58.7,
-    "totalTrades": 15,
+    "totalTrades": 2,
     "biggestWin": 79.42,
     "closestWin": 1.0,
     "biggestLoss": 89.42,
@@ -281,8 +281,8 @@
     "teamName": "Really Just Sean Kessell",
     "abbrev": "KSSL",
     "allTeamNames": [
-      "Da Kessell Krew",
-      "Really Just Sean Kessell"
+      "Really Just Sean Kessell",
+      "Da Kessell Krew"
     ],
     "playoffYears": [
       2013,
@@ -320,7 +320,7 @@
     "avgPointsAgainst": 110.875,
     "highestScore": 243.0,
     "lowestScore": 60.0,
-    "totalTrades": 1,
+    "totalTrades": null,
     "biggestWin": 75.0,
     "closestWin": 1.0,
     "biggestLoss": 84.0,
@@ -434,7 +434,7 @@
     "avgPointsAgainst": 102.71875,
     "highestScore": 159.0,
     "lowestScore": 40.0,
-    "totalTrades": 0,
+    "totalTrades": null,
     "biggestWin": 67.0,
     "closestWin": 1.0,
     "biggestLoss": 77.0,
@@ -513,17 +513,17 @@
     "abbrev": "GRBG",
     "allTeamNames": [
       "I wanta Free the NewtMan! ",
-      "Colonel Sanders McCaffreys",
+      "Dollar Dollar Bills Y'all",
+      "Its Mike Vick In a Box!",
       "All Aboard The J Train",
       "Saquonda Forever",
-      "Al Tuck And No Action",
-      "Dollar Dollar Bills Y'all",
       "Why Pass to Top Wide Receivers?",
-      "Its Mike Vick In a Box!",
+      "Al Tuck And No Action",
+      "Chase My Butker",
+      "Yobogoya In the Bushes!",
+      "Colonel Sanders McCaffreys",
       "Saquanda Strikes Back",
       "Less Morals Than Mike Vick",
-      "Yobogoya In the Bushes!",
-      "Chase My Butker",
       "The Bell  Is Dead"
     ],
     "playoffYears": [
@@ -569,7 +569,7 @@
     "avgPointsAgainst": 115.23658767772511,
     "highestScore": 282.4,
     "lowestScore": 12.0,
-    "totalTrades": 6,
+    "totalTrades": 1,
     "biggestWin": 93.0,
     "closestWin": 0.0800000000000125,
     "biggestLoss": 94.72,
@@ -780,13 +780,13 @@
     "teamName": "Insane in the  Ukraine",
     "abbrev": "B00B",
     "allTeamNames": [
-      "Insane in the  Ukraine",
-      "The HipShire Hobbits",
       "19 Problems and Covid is One",
       "Will Trade Wins For Alcohol",
       "oh no its John Snooooooow",
-      "Erection Protection",
-      "I Do Respect  You Bro"
+      "I Do Respect  You Bro",
+      "Insane in the  Ukraine",
+      "The HipShire Hobbits",
+      "Erection Protection"
     ],
     "playoffYears": [
       2024,
@@ -1072,7 +1072,7 @@
     "avgPointsAgainst": 102.58823529411765,
     "highestScore": 125.0,
     "lowestScore": 60.0,
-    "totalTrades": 1,
+    "totalTrades": null,
     "biggestWin": 47.0,
     "closestWin": 4.0,
     "biggestLoss": 39.0,
@@ -1172,7 +1172,7 @@
     "avgPointsAgainst": 105.0,
     "highestScore": 165.0,
     "lowestScore": 65.0,
-    "totalTrades": 1,
+    "totalTrades": null,
     "biggestWin": 55.0,
     "closestWin": 3.0,
     "biggestLoss": 45.0,
@@ -1276,7 +1276,7 @@
     "avgPointsAgainst": 110.25,
     "highestScore": 168.0,
     "lowestScore": 15.0,
-    "totalTrades": 2,
+    "totalTrades": null,
     "biggestWin": 51.0,
     "closestWin": 3.0,
     "biggestLoss": 75.0,
@@ -1354,14 +1354,14 @@
     "teamName": "Skattebo's Ankle",
     "abbrev": "SA",
     "allTeamNames": [
-      "Skattebo's Ankle",
-      "Duke Nukems",
-      "Christmas Devil Krampus",
+      "Hawk Tua",
+      "Chef's choclate Salty Balls",
       "Go Fudge Yourselves",
       "Rafi Bombs",
-      "Pickle Ricks",
-      "Chef's choclate Salty Balls",
-      "Hawk Tua"
+      "Duke Nukems",
+      "Christmas Devil Krampus",
+      "Skattebo's Ankle",
+      "Pickle Ricks"
     ],
     "playoffYears": [
       2016,
@@ -1409,7 +1409,7 @@
     "avgPointsAgainst": 114.94962264150944,
     "highestScore": 249.66,
     "lowestScore": 45.58,
-    "totalTrades": 1,
+    "totalTrades": 0,
     "biggestWin": 94.72,
     "closestWin": 0.03999999999999204,
     "biggestLoss": 125.0,
@@ -1621,12 +1621,12 @@
     "teamName": "Taylor and Travis Swift \ud83d\udc51",
     "abbrev": "CARL",
     "allTeamNames": [
-      "Benching the  Whole Team",
-      "Greatest of All Time",
-      "Taylor and Travis Swift \ud83d\udc51",
-      "Taylor Swift ",
+      "Pussy Power",
       "Duckman Kowalski",
-      "Pussy Power"
+      "Taylor and Travis Swift \ud83d\udc51",
+      "Greatest of All Time",
+      "Taylor Swift ",
+      "Benching the  Whole Team"
     ],
     "playoffYears": [
       2016,
@@ -1671,7 +1671,7 @@
     "avgPointsAgainst": 114.59308056872038,
     "highestScore": 269.94,
     "lowestScore": 60.42,
-    "totalTrades": 3,
+    "totalTrades": 1,
     "biggestWin": 98.43999999999998,
     "closestWin": 0.0799999999999983,
     "biggestLoss": 75.96,
@@ -1920,7 +1920,7 @@
     "avgPointsAgainst": 114.721,
     "highestScore": 212.0,
     "lowestScore": 40.46,
-    "totalTrades": 1,
+    "totalTrades": null,
     "biggestWin": 55.0,
     "closestWin": 2.0,
     "biggestLoss": 93.0,
@@ -2048,7 +2048,7 @@
     "avgPointsAgainst": 107.12528301886793,
     "highestScore": 287.0,
     "lowestScore": 34.42,
-    "totalTrades": 0,
+    "totalTrades": null,
     "biggestWin": 125.0,
     "closestWin": 1.0,
     "biggestLoss": 66.72,
@@ -2201,7 +2201,7 @@
     "avgPointsAgainst": 114.37119170984455,
     "highestScore": 297.72,
     "lowestScore": 53.0,
-    "totalTrades": 6,
+    "totalTrades": 0,
     "biggestWin": 89.42,
     "closestWin": 1.3399999999999892,
     "biggestLoss": 69.24000000000001,
@@ -2436,7 +2436,7 @@
     "avgPointsAgainst": 103.06666666666666,
     "highestScore": 186.0,
     "lowestScore": 46.0,
-    "totalTrades": 0,
+    "totalTrades": null,
     "biggestWin": 71.0,
     "closestWin": 33.0,
     "biggestLoss": 68.0,
@@ -2497,15 +2497,15 @@
     "teamName": "Mail Fairy",
     "abbrev": "Clou",
     "allTeamNames": [
-      "Two Girls One Kupp",
-      "Strouds in the Clouds",
-      "Just a Chubb Tucker",
-      "We played Week 7, 8 and 13",
-      "Joe Burrow Tiger King",
+      "Chubb Basshole",
       "Mail Fairy",
       "The Recycling Ben",
-      "Chubb Basshole",
-      "The Mixon Administration "
+      "Strouds in the Clouds",
+      "Two Girls One Kupp",
+      "Joe Burrow Tiger King",
+      "Just a Chubb Tucker",
+      "The Mixon Administration ",
+      "We played Week 7, 8 and 13"
     ],
     "playoffYears": [
       2018,
@@ -2548,7 +2548,7 @@
     "avgPointsAgainst": 117.76454545454547,
     "highestScore": 260.16,
     "lowestScore": 50.16,
-    "totalTrades": 6,
+    "totalTrades": 3,
     "biggestWin": 53.22,
     "closestWin": 1.6800000000000068,
     "biggestLoss": 90.58000000000001,
@@ -2714,10 +2714,10 @@
     "teamName": "All You Need is Love",
     "abbrev": "RAD",
     "allTeamNames": [
-      "Hubba Chubba",
-      "Davante's Inferno",
-      "Goodnight Again My Sweet Prince",
       "All You Need is Love",
+      "Hubba Chubba",
+      "Goodnight Again My Sweet Prince",
+      "Davante's Inferno",
       "RADrigo Is My Homeboy"
     ],
     "playoffYears": [
@@ -2910,9 +2910,9 @@
     "teamName": "Loop, There it is!",
     "abbrev": "Yup",
     "allTeamNames": [
-      "Bye Week Part 2",
+      "Bye Week",
       "Loop, There it is!",
-      "Bye Week"
+      "Bye Week Part 2"
     ],
     "playoffYears": [
       2025
@@ -3038,8 +3038,8 @@
     "teamName": "Paintin Peyton",
     "abbrev": "CRWD",
     "allTeamNames": [
-      "Peyton the Professor",
-      "Paintin Peyton"
+      "Paintin Peyton",
+      "Peyton the Professor"
     ],
     "playoffYears": [],
     "seasonsPlayed": 3,
