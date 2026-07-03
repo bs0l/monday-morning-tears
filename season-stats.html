@@ -708,6 +708,15 @@
         2019: 40, 2020: 41.25, 2021: 50, 2022: 50, 2023: 50, 2024: 50, 2025: 50
     };
 
+    // For any season not yet added to BUY_INS above, fall back to the most
+    // recent known amount instead of silently showing $0 — avoids
+    // misreporting a real buy-in as "no buy-in" until the table is updated.
+    function getBuyIn(year) {
+        if (year in BUY_INS) return BUY_INS[year];
+        const mostRecentYear = Math.max(...Object.keys(BUY_INS).map(Number));
+        return BUY_INS[mostRecentYear];
+    }
+
     function createMatchupLink(year, week) {
         return `https://fantasy.espn.com/football/league/scoreboard?leagueId=${LEAGUE_ID}&matchupPeriodId=${week}&seasonId=${year}`;
     }
@@ -1009,7 +1018,7 @@
         // ── All-time totals — compact table ──
         const ownerBuyinTotals = {};
         Object.entries(ownersByYear).forEach(([yr, owners]) => {
-            const buyIn = BUY_INS[parseInt(yr)] || 0;
+            const buyIn = getBuyIn(parseInt(yr));
             owners.forEach(owner => {
                 if (!ownerBuyinTotals[owner]) ownerBuyinTotals[owner] = 0;
                 ownerBuyinTotals[owner] += buyIn;
@@ -1073,8 +1082,12 @@
     }
 
     function renderKeepers(seasonStats) {
-        const ALL_YEARS = [];
-        for (let y = 2018; y <= 2025; y++) ALL_YEARS.push(y);
+        // Derived from the actual season data rather than a fixed range,
+        // so new seasons show up automatically with no yearly edit needed.
+        const ALL_YEARS = Object.keys(seasonStats)
+            .map(Number)
+            .filter(y => y >= 2018)   // 2016-2017 excluded: no usable ESPN data
+            .sort((a, b) => a - b);
 
         // Determine which years have keeper data
         const yearsWithData = [];

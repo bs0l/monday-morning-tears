@@ -4,7 +4,7 @@
 	<link rel="icon" type="image/png" href="favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>League History - Monday Morning Tears</title>
+    <title>League History - The Other League</title>
     <style>
         :root {
             --electric-blue: #00d4ff;
@@ -107,27 +107,6 @@
             color: var(--gold);
         }
 
-        .rulebook-link {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .rulebook-link a {
-            display: inline-block;
-            padding: 12px 24px;
-            background: linear-gradient(135deg, var(--electric-blue), var(--gold));
-            color: var(--dark-bg);
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 0.88rem;
-            border-radius: 10px;
-            transition: all 0.3s ease;
-        }
-
-        .rulebook-link a:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(0,212,255,0.5);
-        }
 
         /* Legend */
         .legend {
@@ -401,7 +380,7 @@
     <div class="container">
         <header>
             <h1>League History</h1>
-            <div class="subtitle">Rule Changes &amp; Evolution (2013–2025)</div>
+            <div class="subtitle" id="historySubtitle">Rule Changes &amp; Evolution (2013–2025)</div>
         </header>
 
         <nav id="mainNav">
@@ -422,75 +401,69 @@
             <a href="#section-espn-api">🔢 ESPN API</a>
         </div>
 
-        <div class="rulebook-link">
-            <a href="https://docs.google.com/document/d/1e7tpmfmSgFi_nx1yt-Mx1Oz1AVY67NyjiKJUIQEIhy8/edit?usp=sharing" target="_blank">
-                📖 Current Rulebook
-            </a>
-        </div>
+        
 
         <div id="section-current-rules" class="section-anchor current-rules">
             <div class="current-rules-title">Current Ruleset</div>
             <div class="rules-grid">
                 <div class="rules-group">
-                    <div class="rules-group-title">League Structure</div>
+                    <div class="rules-group-title">League &amp; Format</div>
                     <ul>
-                        <li><strong>10 teams</strong>, ESPN platform</li>
-                        <li>Communication via <strong>Discord</strong></li>
-                        <li><strong>14-week</strong> regular season</li>
-                        <li>3-week playoffs, <strong>6 teams</strong> qualify</li>
-                        <li>Top 2 seeds receive a <strong>first-round bye</strong></li>
+                        <li><strong>10 teams</strong>, PPR scoring</li>
+                        <li><strong>13-week</strong> regular season</li>
+                        <li>4-team playoffs, <strong>2 rounds</strong>, 2 weeks each</li>
+                        <li>Rounds 1 &amp; 2: weeks 14–15 and 16–17</li>
+                        <li>Non-playoff teams: <strong>roster locked</strong> during playoffs</li>
                     </ul>
                 </div>
                 <div class="rules-group">
                     <div class="rules-group-title">Buy-In &amp; Payouts</div>
                     <ul>
-                        <li><strong>$50</strong> per owner per season</li>
-                        <li>1st place: <strong>$210</strong></li>
-                        <li>2nd place: <strong>$100</strong></li>
-                        <li>3rd place: <strong>$50</strong></li>
-                        <li>Weekly high score: <strong>$10</strong></li>
-                        <li>Consolation dollar: <strong>$1</strong> to 2nd-highest scorer if they lost</li>
+                        <li><strong>$5</strong> buy-in due August 1st</li>
+                        <li>Late payment: miss 5 bonus points week 1 (introduced 2025)</li>
+                        <li>1st place: <strong>$35</strong></li>
+                        <li>2nd place: <strong>$10</strong></li>
+                        <li>3rd place: <strong>$5</strong></li>
                     </ul>
                 </div>
                 <div class="rules-group">
                     <div class="rules-group-title">Scoring</div>
                     <ul>
-                        <li><strong>Half-PPR</strong> scoring (0.5 pts per reception)</li>
-                        <li>Fractional / decimal scoring enabled</li>
+                        <li><strong>PPR</strong> (1 pt per reception)</li>
+                        <li>TD passes: <strong>6 pts</strong></li>
+                        <li>Forced fumble: <strong>1.5 pts</strong></li>
+                        <li>Recovered fumble: <strong>1.5 pts</strong></li>
                         <li>Missed PATs: <strong>−0.5 pts</strong></li>
-                        <li>Forced fumble: <strong>1 pt</strong></li>
-                        <li>Recovered fumble: <strong>2 pts</strong></li>
+                        <li>1.5 pts per net punt, 1 pt fair catch, 1 pt inside 20, 1 pt inside 10</li>
+                        <li>Blocked punt: <strong>−2 pts</strong></li>
                     </ul>
                 </div>
                 <div class="rules-group">
                     <div class="rules-group-title">Keepers</div>
                     <ul>
-                        <li><strong>1 keeper</strong> per team</li>
-                        <li>Drafted players kept at their draft round</li>
-                        <li>Waiver pickups kept at <strong>ADP + 1 round</strong></li>
-                        <li>Max <strong>3 seasons</strong> rostered</li>
-                        <li>Cannot keep 1st-round picks</li>
-                        <li>Duplicate round values: forfeit the round above</li>
-                        <li>Player contracts reset after trades</li>
+                        <li><strong>2 keepers</strong> per team, due 1 week before draft</li>
+                        <li>Drafted players: kept at <strong>original draft round − 1</strong></li>
+                        <li>Undrafted players: kept at <strong>ADP + 1 round</strong></li>
+                        <li>Max <strong>2 seasons</strong> kept (introduced 2022)</li>
+                        <li>Cannot keep <strong>1st-round</strong> picks</li>
+                        <li>Custom keeper rounds managed via ESPN platform (2022+)</li>
                     </ul>
                 </div>
                 <div class="rules-group">
                     <div class="rules-group-title">Draft</div>
                     <ul>
-                        <li>Snake draft, <strong>60-second</strong> pick clock</li>
-                        <li>Lottery: every team gets 2 balls</li>
-                        <li>10th: 48 balls · 9th: 22 · 8th: 11 · 7th: 7</li>
-                        <li>Draft pick trading <strong>enabled</strong></li>
+                        <li>Snake draft</li>
+                        <li>Order set to <strong>inverse of prior season standings</strong></li>
+                        <li>Trade review enabled (2024+)</li>
                     </ul>
                 </div>
                 <div class="rules-group">
-                    <div class="rules-group-title">Rules &amp; Admin</div>
+                    <div class="rules-group-title">Roster</div>
                     <ul>
-                        <li>Trade deadline: <strong>beginning of Week 13</strong></li>
-                        <li>ESPN "undroppable" restrictions <strong>disabled</strong></li>
-                        <li><strong>2 IR slots</strong></li>
-                        <li>IR violation ladder: 1st = 12th round pick, 2nd = 8th, 3rd = 5th</li>
-                        <li>Inactive manager: commissioner may set lineup after 2 weeks</li>
+                        <li><strong>2 FLEX</strong> slots (2024+)</li>
+                        <li>No IR slots (removed 2025)</li>
+                        <li>No punter slot (removed 2025)</li>
+                        <li>League winner receives well-wishes from Dan</li>
                     </ul>
                 </div>
             </div>
@@ -512,17 +485,17 @@
         <div id="section-2025" class="year-section">
             <div class="year-header">2025</div>
             <ul class="change-list">
-                <li class="change-item cat-draft">
-                    <span class="label lbl-draft">Draft</span>
-                    Lottery modified: every team gets 2 balls. 10th place gets 48, 9th gets 22, 8th gets 11, 7th gets 7. Remaining teams get 2 each.
+                <li class="change-item cat-buyin">
+                    <span class="label lbl-buyin">Buy-In</span>
+                    League dues due by August 1st. Late payment forfeits <strong>5 bonus points in week 1</strong>.
                 </li>
                 <li class="change-item cat-rule">
-                    <span class="label lbl-rule">IR</span>
-                    IR violation penalty ladder introduced: 1st offense = loss of 12th round pick, 2nd = 8th round, 3rd = 5th round.
+                    <span class="label lbl-rule">Scoring</span>
+                    Punters removed from scoring. QBs revert to standard 4-point passing TDs — the 0.5-pts-per-completion rule removed. QBs now score <strong>6 pts per TD pass</strong>.
                 </li>
-                <li class="change-item cat-admin">
-                    <span class="label lbl-admin">Schedule</span>
-                    Rivalry week removed from schedule.
+                <li class="change-item cat-rule">
+                    <span class="label lbl-rule">Roster</span>
+                    Both IR slots removed. Punter roster slot removed.
                 </li>
             </ul>
         </div>
@@ -531,9 +504,21 @@
         <div id="section-2024" class="year-section">
             <div class="year-header">2024</div>
             <ul class="change-list">
-                <li class="change-item cat-admin">
-                    <span class="label lbl-admin">Rules</span>
-                    No league changes in 2024.
+                <li class="change-item cat-rule">
+                    <span class="label lbl-rule">Roster</span>
+                    <strong>2nd FLEX slot added.</strong> Punters added as a scoreable position.
+                </li>
+                <li class="change-item cat-rule">
+                    <span class="label lbl-rule">Scoring</span>
+                    QBs now earn <strong>0.5 pts per completion</strong>. Punter scoring introduced: 1.5 pts per net punt, 1 pt fair catch, 1 pt inside 20, 1 pt inside 10, −2 pts blocked.
+                </li>
+                <li class="change-item cat-draft">
+                    <span class="label lbl-draft">Draft</span>
+                    Draft order set to <strong>inverse order of prior season standings</strong>. Trade review enabled.
+                </li>
+                <li class="change-item cat-rule">
+                    <span class="label lbl-rule">Playoffs</span>
+                    Non-playoff teams have <strong>roster lock</strong> during playoffs — no transactions allowed.
                 </li>
             </ul>
         </div>
@@ -542,26 +527,9 @@
         <div id="section-2023" class="year-section">
             <div class="year-header">2023</div>
             <ul class="change-list">
-                <li class="change-item cat-roster">
-                    <span class="label lbl-roster">Teams</span>
-                    League expanded from 8 → <strong>10 teams</strong>.
-                    <div class="owner-note">👋 Joe and John join the league.</div>
-                </li>
-                <li class="change-item cat-payout">
-                    <span class="label lbl-payout">Payouts</span>
-                    Playoffs increased: $210 / $100 / $50. Weekly high score increased $5 → <strong>$10</strong>. Consolation dollar unchanged at $1.
-                </li>
-                <li class="change-item cat-rule">
-                    <span class="label lbl-rule">Playoffs</span>
-                    Switched to 3-week format with 6 teams; top 2 seeds receive a first-round bye.
-                </li>
-                <li class="change-item cat-admin">
-                    <span class="label lbl-admin">Schedule</span>
-                    Rivalry week added to regular season schedule.
-                </li>
-                <li class="change-item cat-admin">
-                    <span class="label lbl-admin">Trades</span>
-                    Trade deadline pushed to the beginning of Week 13.
+                <li class="change-item cat-buyin">
+                    <span class="label lbl-buyin">Buy-In</span>
+                    <strong>$5 buy-in introduced</strong> — first year with any financial stakes.
                 </li>
             </ul>
         </div>
@@ -570,138 +538,9 @@
         <div id="section-2022" class="year-section">
             <div class="year-header">2022</div>
             <ul class="change-list">
-                <li class="change-item cat-admin">
-                    <span class="label lbl-admin">Rules</span>
-                    No league changes in 2022.
-                </li>
-            </ul>
-        </div>
-
-        <!-- ─── 2021 ─── -->
-        <div id="section-2021" class="year-section">
-            <div class="year-header">2021</div>
-            <ul class="change-list">
-                <li class="change-item cat-buyin">
-                    <span class="label lbl-buyin">Buy-In</span>
-                    Increased $40 → <strong>$50</strong> per owner.
-                </li>
-                <li class="change-item cat-payout">
-                    <span class="label lbl-payout">Payouts</span>
-                    Playoffs increased: $185 / $90 / $50.
-                </li>
-                <li class="change-item cat-rule">
-                    <span class="label lbl-rule">Schedule</span>
-                    Regular season extended by 1 week after the NFL added Week 18. Final week of playoffs now week 17.
-                </li>
-                <li class="change-item cat-rule">
-                    <span class="label lbl-rule">Scoring</span>
-                    Forced fumble = 1 pt · Recovered fumble = 2 pts.
-                </li>
                 <li class="change-item cat-rule">
                     <span class="label lbl-rule">Keepers</span>
-                    Waiver keeper rules unified: all waiver pickups (drafted or undrafted) kept for ADP+1.
-                </li>
-                <li class="change-item cat-admin">
-                    <span class="label lbl-admin">IR</span>
-                    Covid IR slot converted to a general-purpose 2nd IR slot.
-                </li>
-                <li class="change-item cat-draft">
-                    <span class="label lbl-draft">Draft</span>
-                    Draft order adjusted so mid-round picks are treated as worst.
-                </li>
-            </ul>
-        </div>
-
-        <!-- ─── 2020 ─── -->
-        <div id="section-2020" class="year-section">
-            <div class="year-header">2020</div>
-            <ul class="change-list">
-                <li class="change-item cat-buyin">
-                    <span class="label lbl-buyin">Buy-In</span>
-                    Increased to <strong>$41.25</strong> to account for 2 additional weeks of weekly high score payouts.
-                </li>
-                <li class="change-item cat-payout">
-                    <span class="label lbl-payout">Payouts</span>
-                    <strong>Consolation dollar introduced:</strong> $1 to the 2nd-highest scorer each week — but only if they lost.
-                </li>
-                <li class="change-item cat-rule">
-                    <span class="label lbl-rule">Playoffs</span>
-                    Switched from 2-week to <strong>1-week playoff format</strong>.
-                </li>
-                <li class="change-item cat-rule">
-                    <span class="label lbl-rule">Scoring</span>
-                    Forced fumble = 1.5 pts · Recovered fumble = 1.5 pts.
-                </li>
-                <li class="change-item cat-admin">
-                    <span class="label lbl-admin">Waivers</span>
-                    ESPN's "undroppable player" restrictions disabled.
-                </li>
-                <li class="change-item cat-admin">
-                    <span class="label lbl-admin">Keepers</span>
-                    Player contracts reset after trades.
-                </li>
-                <li class="change-item cat-admin">
-                    <span class="label lbl-admin">IR</span>
-                    Covid IR slot added.
-                </li>
-            </ul>
-        </div>
-
-        <!-- ─── 2019 ─── -->
-        <div id="section-2019" class="year-section">
-            <div class="year-header">2019</div>
-            <ul class="change-list">
-                <li class="change-item cat-founding">
-                    <span class="label lbl-founding">Platform</span>
-                    League communication switched from <strong>Facebook → Discord</strong>.
-                </li>
-                <li class="change-item cat-rule">
-                    <span class="label lbl-rule">Keepers</span>
-                    Keeper count reduced from 2 → <strong>1</strong>. Waiver pickups kept for ADP+1 (previously Round 15).
-                </li>
-                <li class="change-item cat-rule">
-                    <span class="label lbl-rule">Scoring</span>
-                    Missed PATs = −0.5 pts.
-                </li>
-                <li class="change-item cat-admin">
-                    <span class="label lbl-admin">Trades</span>
-                    Trade deadline set to just after Week 10.
-                </li>
-                <li class="change-item cat-draft">
-                    <span class="label lbl-draft">Draft</span>
-                    Pick time increased back to 60 seconds.
-                </li>
-            </ul>
-        </div>
-
-        <!-- ─── 2018 ─── -->
-        <div id="section-2018" class="year-section">
-            <div class="year-header">2018</div>
-            <ul class="change-list">
-                <li class="change-item cat-roster">
-                    <span class="label lbl-roster">Teams</span>
-                    8 teams
-                    <div class="owner-note">Brian is forced into retirement and is replaced by Johnny A.</div>
-                </li>
-                <li class="change-item cat-rule">
-                    <span class="label lbl-rule">Scoring</span>
-                    Switched to <strong>half-PPR</strong> scoring.
-                </li>
-                <li class="change-item cat-rule">
-                    <span class="label lbl-rule">Keepers</span>
-                    Complex keeper rules: drafted players kept by round, dropped players kept in Rounds 5 / 10 / 15 based on original draft round.
-                </li>
-                <li class="change-item cat-draft">
-                    <span class="label lbl-draft">Draft</span>
-                    Draft pick trading enabled. Pick time reduced to 45 seconds.
-                </li>
-                <li class="change-item cat-admin">
-                    <span class="label lbl-admin">IR</span>
-                    1 IR slot added.
-                </li>
-                <li class="change-item cat-admin">
-                    <span class="label lbl-admin">Trades</span>
-                    Trade deadline removed.
+                    <strong>Custom keeper round rules introduced</strong> via ESPN platform: drafted players kept at original round − 1, undrafted at ADP + 1. Max 2 seasons kept. Cannot keep 1st-round picks.
                 </li>
             </ul>
         </div>
@@ -710,50 +549,9 @@
         <div id="section-2017" class="year-section">
             <div class="year-header">2017</div>
             <ul class="change-list">
-                <li class="change-item cat-roster">
-                    <span class="label lbl-roster">Teams</span>
-                    8 teams
-                    <div class="owner-note">Brandon retires and is replaced by Ben.</div>
-                </li>
                 <li class="change-item cat-rule">
                     <span class="label lbl-rule">Keepers</span>
-                    Waiver pickups can be kept for 15th round pick.
-                </li>
-            </ul>
-        </div>
-
-        <!-- ─── 2016 ─── -->
-        <div id="section-2016" class="year-section">
-            <div class="year-header">2016</div>
-            <ul class="change-list">
-                <li class="change-item cat-founding">
-                    <span class="label lbl-founding">Major</span>
-                    <strong>Formal rulebook introduced</strong> — the league's first written constitution. It is highly respected.
-                </li>
-                <li class="change-item cat-roster">
-                    <span class="label lbl-roster">Teams</span>
-                    League contracted from 10 → <strong>8 teams</strong>.
-                    <div class="owner-note">Loren and Rob retire.</div>
-                </li>
-                <li class="change-item cat-buyin">
-                    <span class="label lbl-buyin">Buy-In</span>
-                    Increased to <strong>$40</strong> per owner.
-                </li>
-                <li class="change-item cat-payout">
-                    <span class="label lbl-payout">Payouts</span>
-                    Playoffs: $150 / $70 / $40 · $5/week high score
-                </li>
-                <li class="change-item cat-draft">
-                    <span class="label lbl-draft">Draft</span>
-                    Lottery introduced: 8th gets 55 balls, 7th gets 25, 6th gets 12, 5th gets 8. Others get 2 each.
-                </li>
-                <li class="change-item cat-rule">
-                    <span class="label lbl-rule">Keepers</span>
-                    Keepers introduced: 2 per team, max 3 seasons rostered. Cannot keep 1st-round picks. Duplicate round values forfeit the round above.
-                </li>
-                <li class="change-item cat-admin">
-                    <span class="label lbl-admin">Trades</span>
-                    Trade deadline formally introduced.
+                    Keepers introduced — 2 per team. Rules predating ESPN's custom keeper platform (pre-2022); keepers were 1st and 2nd round picks.
                 </li>
             </ul>
         </div>
@@ -764,84 +562,22 @@
             <ul class="change-list">
                 <li class="change-item cat-roster">
                     <span class="label lbl-roster">Teams</span>
-                    League drops from 12 to 10 teams.
-                    <div class="owner-note">Danielle, Keegan, and Bob retire. Bob takes an advisory role on Carl's team. 👋 Rob joins.</div>
-                </li>
-                <li class="change-item cat-rule">
-                    <span class="label lbl-rule">Scoring</span>
-                    <strong>Fractional / decimal scoring</strong> implemented.
-                </li>
-                <li class="change-item cat-buyin">
-                    <span class="label lbl-buyin">Buy-In</span>
-                    Increased to <strong>$26</strong> per owner.
-                </li>
-                <li class="change-item cat-payout">
-                    <span class="label lbl-payout">Payouts</span>
-                    Playoffs: $109 / $60 / $31. <strong>Weekly high score prize introduced:</strong> $5 paid to the highest scorer each week (12-week season).
-                </li>
-                <li class="change-item cat-admin">
-                    <span class="label lbl-admin">Inactive</span>
-                    League manager may set lineup for inactive members after 2 weeks (from current roster only).
-                </li>
-                <li class="change-item cat-draft">
-                    <span class="label lbl-draft">Draft</span>
-                    Pick time set to 60 seconds.
+                    League expanded from 8 → <strong>10 teams</strong> (first full 10-team season).
                 </li>
             </ul>
         </div>
 
         <!-- ─── 2014 ─── -->
         <div id="section-2014" class="year-section">
-            <div class="year-header">2014</div>
-            <ul class="change-list">
-                <li class="change-item cat-founding">
-                    <span class="label lbl-founding">Name</span>
-                    League renamed to <strong>"Monday Morning Tears"</strong>.
-                </li>
-                <li class="change-item cat-roster">
-                    <span class="label lbl-roster">Teams</span>
-                    12 teams.
-                    <div class="owner-note">Mike H &amp; Jim R retire. 👋 Ray, Brian, Brandon, and Bob join the league.</div>
-                </li>
-                <li class="change-item cat-buyin">
-                    <span class="label lbl-buyin">Buy-In</span>
-                    $5 per owner (first year with a buy-in).
-                </li>
-                <li class="change-item cat-payout">
-                    <span class="label lbl-payout">Payouts</span>
-                    Playoffs: $35 / $15 / $10 (unconfirmed).
-                </li>
-            </ul>
-        </div>
-
-        <!-- ─── 2013 ─── -->
-        <div id="section-2013" class="year-section">
-            <div class="year-header">2013 — League Founded</div>
+            <div class="year-header">2014 — League Founded</div>
             <ul class="change-list">
                 <li class="change-item cat-founding">
                     <span class="label lbl-founding">Founded</span>
-                    League created as <strong>"Madame DeRuiter's Pauvre Bebes"</strong>
-                </li>
-                <li class="change-item cat-roster">
-                    <span class="label lbl-roster">Teams</span>
-                    10 teams.
-                    <div class="owner-note">Bill, Mike, Andy, Carl, Phil, Loren, Danielle, Keegan, Jim R, Mike H</div>
-                </li>
-                <li class="change-item cat-founding">
-                    <span class="label lbl-founding">Platform</span>
-                    Facebook group used for league communication and trash talk.
+                    League created as <strong>"The Other League!"</strong> on ESPN with 8 teams.
                 </li>
                 <li class="change-item cat-buyin">
                     <span class="label lbl-buyin">Buy-In</span>
-                    No buy-in/payout — bragging rights only.
-                </li>
-                <li class="change-item cat-rule">
-                    <span class="label lbl-rule">Scoring</span>
-                    Standard scoring with bonuses.
-                </li>
-                <li class="change-item cat-admin">
-                    <span class="label lbl-admin">Schedule</span>
-                    Season started in Week 2 of the NFL calendar.
+                    No buy-in — bragging rights only.
                 </li>
             </ul>
         </div>
@@ -926,6 +662,13 @@
                     return;
                 }
                 const sorted = [...data].sort((a, b) => b.year - a.year);
+
+                const years = data.map(d => d.year);
+                const subtitle = document.getElementById('historySubtitle');
+                if (subtitle && years.length) {
+                    subtitle.textContent = `Rule Changes & Evolution (${Math.min(...years)}–${Math.max(...years)})`;
+                }
+
                 container.innerHTML = `<div class="api-years-grid">${sorted.map(yearData => `
                     <div class="api-year-block">
                         <div class="api-year-label">${yearData.year}</div>

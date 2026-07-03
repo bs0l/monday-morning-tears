@@ -386,11 +386,14 @@
 			}
 		}
 
-		function createMatchupLink(year, week, matchupPeriodId) {
+		function createMatchupLink(year, week, matchupPeriodId, teamId) {
+			// For years before 2019, just link to scoreboard overview
+			// ESPN doesn't support individual matchup links for old years
 			if (year < 2019) {
 				return `https://fantasy.espn.com/football/league/scoreboard?leagueId=${LEAGUE_ID}&matchupPeriodId=${matchupPeriodId}&seasonId=${year}`;
 			}
-			return `https://fantasy.espn.com/football/league/scoreboard?leagueId=${LEAGUE_ID}&matchupPeriodId=${matchupPeriodId}&seasonId=${year}`;
+			// For 2019+, link to specific matchup
+			return `https://fantasy.espn.com/football/boxscore?leagueId=${LEAGUE_ID}&matchupPeriodId=${matchupPeriodId}&scoringPeriodId=${week}&seasonId=${year}&teamId=${teamId}&view=scoringperiod`;
 		}
 
 		function populateSelectors() {
@@ -567,7 +570,7 @@
 						<div class="stat-value">${h2h1.highestScore.toFixed(2)}</div>
 						${highestScoreGame1 ? `
 							<p style="color: var(--text-secondary); margin-top: 5px;">
-								<a href="${createMatchupLink(highestScoreGame1.year, highestScoreGame1.week, highestScoreGame1.matchupPeriodId)}" 
+								<a href="${createMatchupLink(highestScoreGame1.year, highestScoreGame1.week, highestScoreGame1.matchupPeriodId, highestScoreGame1.home.owner === owner1 ? highestScoreGame1.home.teamId : highestScoreGame1.away.teamId)}" 
 								   target="_blank" style="color: var(--electric-blue);">
 									${highestScoreGame1.year} Week ${highestScoreGame1.week}
 								</a>
@@ -580,7 +583,7 @@
 						<div class="stat-value">${h2h1.lowestScore.toFixed(2)}</div>
 						${lowestScoreGame1 ? `
 							<p style="color: var(--text-secondary); margin-top: 5px;">
-								<a href="${createMatchupLink(lowestScoreGame1.year, lowestScoreGame1.week, lowestScoreGame1.matchupPeriodId)}" 
+								<a href="${createMatchupLink(lowestScoreGame1.year, lowestScoreGame1.week, lowestScoreGame1.matchupPeriodId, lowestScoreGame1.home.owner === owner1 ? lowestScoreGame1.home.teamId : lowestScoreGame1.away.teamId)}" 
 								   target="_blank" style="color: var(--electric-blue);">
 									${lowestScoreGame1.year} Week ${lowestScoreGame1.week}
 								</a>
@@ -593,7 +596,7 @@
 						<div class="stat-value">${h2h1.biggestWin > 0 ? '+' : ''}${h2h1.biggestWin.toFixed(2)}</div>
 						${biggestWinGame ? `
 							<p style="color: var(--text-secondary); margin-top: 5px;">
-								<a href="${createMatchupLink(biggestWinGame.year, biggestWinGame.week, biggestWinGame.matchupPeriodId)}" 
+								<a href="${createMatchupLink(biggestWinGame.year, biggestWinGame.week, biggestWinGame.matchupPeriodId, biggestWinGame.home.owner === owner1 ? biggestWinGame.home.teamId : biggestWinGame.away.teamId)}" 
 								   target="_blank" style="color: var(--electric-blue);">
 									${biggestWinGame.year} Week ${biggestWinGame.week}
 								</a>
@@ -606,7 +609,7 @@
 						<div class="stat-value">${h2h1.closestWin > 0 ? '+' : ''}${h2h1.closestWin.toFixed(2)}</div>
 						${closestWinGame ? `
 							<p style="color: var(--text-secondary); margin-top: 5px;">
-								<a href="${createMatchupLink(closestWinGame.year, closestWinGame.week, closestWinGame.matchupPeriodId)}" 
+								<a href="${createMatchupLink(closestWinGame.year, closestWinGame.week, closestWinGame.matchupPeriodId, closestWinGame.home.owner === owner1 ? closestWinGame.home.teamId : closestWinGame.away.teamId)}" 
 								   target="_blank" style="color: var(--electric-blue);">
 									${closestWinGame.year} Week ${closestWinGame.week}
 								</a>
@@ -647,7 +650,7 @@
 							<div class="matchup-item ${resultClass}">
 								<div class="matchup-header">
 									<div class="matchup-date">
-										<a href="${createMatchupLink(m.year, m.week, m.matchupPeriodId)}" 
+										<a href="${createMatchupLink(m.year, m.week, m.matchupPeriodId, isOwner1Home ? m.home.teamId : m.away.teamId)}" 
 										   target="_blank" style="color: var(--electric-blue); text-decoration: none;">
 											${m.year} Week ${m.week} ${m.isPlayoff ? '(Playoffs)' : ''}
 										</a>

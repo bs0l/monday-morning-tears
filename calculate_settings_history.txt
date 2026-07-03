@@ -1,0 +1,266 @@
+def calculate_settings_history(self):
+    """Fetch and diff league settings year-over-year via direct API calls"""
+    print(f"\n{'='*80}")
+    print(" Fetching Settings History")
+    print(f"{'='*80}")
+
+    import requests
+    from datetime import datetime
+
+    LINEUP_SLOT_NAMES = {
+        '20': 'Bench slots', '21': 'IR slots', '0': 'QB slots',
+        '2': 'RB slots', '4': 'WR slots', '6': 'TE slots',
+        '16': 'D/ST slots', '17': 'K slots', '23': 'FLEX slots',
+    }
+
+    STAT_ID_NAMES = {
+        0: "Each Pass Attempted", 1: "Each Pass Completed", 2: "Each Incomplete Pass",
+        3: "Passing Yards", 4: "TD Pass", 5: "Every 5 passing yards",
+        6: "Every 10 passing yards", 7: "Every 20 passing yards",
+        8: "Every 25 passing yards", 9: "Every 50 passing yards",
+        10: "Every 100 passing yards", 11: "Every 5 pass completions",
+        12: "Every 10 pass completions", 13: "Every 5 pass incompletions",
+        14: "Every 10 pass incompletions", 15: "40+ yard TD pass bonus",
+        16: "50+ yard TD pass bonus", 17: "300-399 yard passing game bonus",
+        18: "400+ yard passing game bonus", 19: "2pt Passing Conversion",
+        20: "Interceptions Thrown", 23: "Rushing Attempts",
+        24: "Rushing Yards", 25: "TD Rush", 26: "2pt Rushing Conversion",
+        27: "Every 5 rushing yards", 28: "Every 10 rushing yards",
+        29: "Every 20 rushing yards", 30: "Every 25 rushing yards",
+        31: "Every 50 rushing yards", 32: "Every 100 rushing yards",
+        33: "Every 5 rush attempts", 34: "Every 10 rush attempts",
+        35: "40+ yard TD rush bonus", 36: "50+ yard TD rush bonus",
+        37: "100-199 yard rushing game bonus", 38: "200+ yard rushing game bonus",
+        41: "Receptions", 42: "Receiving Yards", 43: "TD Reception",
+        44: "2pt Receiving Conversion", 45: "40+ yard TD rec bonus",
+        46: "50+ yard TD rec bonus", 47: "Every 5 receiving yards",
+        48: "Every 10 receiving yards", 49: "Every 20 receiving yards",
+        50: "Every 25 receiving yards", 51: "Every 50 receiving yards",
+        52: "Every 100 receiving yards", 53: "Each Reception (PPR)",
+        54: "Every 5 receptions", 55: "Every 10 receptions",
+        56: "100-199 yard receiving game bonus", 57: "200+ yard receiving game bonus",
+        58: "Receiving Target", 62: "Total 2pt Conversions",
+        63: "Fumble Recovered for TD", 64: "Times Sacked",
+        68: "Total Fumbles", 72: "Total Fumbles Lost",
+        73: "Total Turnovers", 74: "FG Made (50+ yards, pre-split)",
+        75: "FG Attempted (50+ yards)", 76: "FG Missed (50+ yards)",
+        77: "FG Made (40-49 yards)", 78: "FG Attempted (40-49 yards)",
+        79: "FG Missed (40-49 yards)", 80: "FG Made (0-39 yards)",
+        81: "FG Attempted (0-39 yards)", 82: "FG Missed (0-39 yards)",
+        83: "Total FG Made", 84: "Total FG Attempted", 85: "Total FG Missed",
+        86: "Each PAT Made", 87: "Each PAT Attempted", 88: "Each PAT Missed",
+        89: "D/ST: 0 points allowed", 90: "D/ST: 1-6 points allowed",
+        91: "D/ST: 7-13 points allowed", 92: "D/ST: 14-17 points allowed",
+        93: "D/ST: Blocked Punt/FG returned for TD",
+        94: "D/ST: Fumble or INT Return for TD",
+        95: "D/ST: Each Interception", 96: "D/ST: Each Fumble Recovered",
+        97: "D/ST: Blocked Punt, PAT or FG", 98: "D/ST: Each Safety",
+        99: "D/ST: Each Sack", 100: "D/ST: 1/2 Sack",
+        101: "Kickoff Return TD", 102: "Punt Return TD",
+        103: "Interception Return TD", 104: "Fumble Return TD",
+        105: "Total Return TD", 106: "D/ST: Each Fumble Forced",
+        107: "D/ST: Assisted Tackles", 108: "D/ST: Solo Tackles",
+        109: "D/ST: Total Tackles",
+        120: "D/ST: Points Allowed (total)", 121: "D/ST: 18-21 points allowed",
+        122: "D/ST: 22-27 points allowed", 123: "D/ST: 28-34 points allowed",
+        124: "D/ST: 35-45 points allowed", 125: "D/ST: 46+ points allowed",
+        127: "D/ST: Total Yards Allowed",
+        128: "D/ST: <100 total yards allowed", 129: "D/ST: 100-199 yards allowed",
+        130: "D/ST: 200-299 yards allowed", 131: "D/ST: 300-349 yards allowed",
+        132: "D/ST: 350-399 yards allowed", 133: "D/ST: 400-449 yards allowed",
+        134: "D/ST: 450-499 yards allowed", 135: "D/ST: 500-549 yards allowed",
+        136: "D/ST: 550+ yards allowed",
+        198: "FG Made (50-59 yards)", 199: "FG Attempted (50-59 yards)",
+        200: "FG Missed (50-59 yards)", 201: "FG Made (60+ yards)",
+        202: "FG Attempted (60+ yards)", 203: "FG Missed (60+ yards)",
+        205: "Defensive 2pt Return", 206: "2pt Return",
+        209: "1pt Safety",
+        211: "Passing First Down", 212: "Rushing First Down",
+        213: "Receiving First Down",
+    }
+
+    def fmt_date(epoch_ms):
+        if not epoch_ms or epoch_ms <= 0:
+            return None
+        try:
+            return datetime.fromtimestamp(epoch_ms / 1000).strftime('%b %-d, %Y')
+        except:
+            try:
+                return datetime.fromtimestamp(epoch_ms / 1000).strftime('%b %d, %Y')
+            except:
+                return None
+
+    cookies = {"swid": self.swid, "espn_s2": self.espn_s2}
+    all_settings = {}
+
+    for season_data in self.all_seasons:
+        year = season_data['year']
+
+        if year >= 2019:
+            url = f"https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/{year}/segments/0/leagues/{self.league_id}"
+            params = {"view": "mSettings"}
+        else:
+            url = f"https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/leagueHistory/{self.league_id}"
+            params = {"view": "mSettings", "seasonId": year}
+
+        try:
+            r = requests.get(url, params=params, cookies=cookies, timeout=10)
+            if r.status_code != 200:
+                print(f"  ⚠️  {year}: HTTP {r.status_code}")
+                continue
+
+            d = r.json()
+            if isinstance(d, list):
+                d = d[0]
+
+            s = d.get('settings', {})
+            acq = s.get('acquisitionSettings', {})
+            draft = s.get('draftSettings', {})
+            roster = s.get('rosterSettings', {})
+            schedule = s.get('scheduleSettings', {})
+            trade = s.get('tradeSettings', {})
+            scoring = s.get('scoringSettings', {})
+
+            # Build scoring map
+            scoring_map = {}
+            for item in scoring.get('scoringItems', []):
+                stat_id = item['statId']
+                overrides = item.get('pointsOverrides', {})
+                pts = overrides.get('16', item.get('points', 0))
+                if pts != 0:
+                    scoring_map[stat_id] = pts
+
+            # Lineup slots — only track meaningful ones
+            lineup = roster.get('lineupSlotCounts', {})
+
+            # Divisions
+            divisions = schedule.get('divisions', [])
+            div_summary = f"{len(divisions)} division(s): {', '.join(d['name'] for d in divisions)}"
+
+            # Trade deadline
+            trade_deadline = fmt_date(trade.get('deadlineDate'))
+
+            all_settings[year] = {
+                'scoring': scoring_map,
+                'teamCount': s.get('size', 0),
+                'regSeasonCount': schedule.get('matchupPeriodCount', 0),
+                'playoffTeamCount': schedule.get('playoffTeamCount', 0),
+                'playoffMatchupPeriodLength': schedule.get('playoffMatchupPeriodLength', 1),
+                'keeperCount': draft.get('keeperCount', 0),
+                'draftPickTrading': draft.get('isTradingEnabled', False),
+                'draftTimePerPick': draft.get('timePerSelection', 60),
+                'draftType': draft.get('type', 'SNAKE'),
+                'undroppableList': roster.get('isUsingUndroppableList', True),
+                'irSlots': lineup.get('21', 0),
+                'benchSlots': lineup.get('20', 0),
+                'flexSlots': lineup.get('23', 0),
+                'divisionCount': len(divisions),
+                'divisionSummary': div_summary,
+                'tradeDeadline': trade_deadline,
+                'vetoVotes': trade.get('vetoVotesRequired', 4),
+                'acquisitionLimit': acq.get('acquisitionLimit', -1),
+                'matchupAcquisitionLimit': acq.get('matchupAcquisitionLimit', 0),
+            }
+            print(f"  ✓ {year}: fetched settings")
+
+        except Exception as e:
+            print(f"  ⚠️  {year}: {e}")
+            continue
+
+    # Diff year-over-year
+    history = []
+    prev = None
+
+    for year in sorted(all_settings.keys()):
+        curr = all_settings[year]
+        changes = []
+
+        if prev is None:
+            changes.append(f"League founded — {curr['teamCount']} teams, {curr['regSeasonCount']}-week regular season")
+            changes.append(f"Divisions: {curr['divisionSummary']}")
+            changes.append(f"Draft: {curr['draftType']}, {curr['draftTimePerPick']}s per pick, pick trading {'enabled' if curr['draftPickTrading'] else 'disabled'}")
+            changes.append(f"Roster: {curr['benchSlots']} bench slots, {curr['irSlots']} IR slot(s)")
+            changes.append(f"Undroppable player list: {'enabled' if curr['undroppableList'] else 'disabled'}")
+            changes.append(f"Trade deadline: {curr['tradeDeadline'] or 'none'}")
+            changes.append(f"Scoring: {len(curr['scoring'])} active rules")
+        else:
+            # Structure
+            if curr['teamCount'] != prev['teamCount']:
+                changes.append(f"Teams: {prev['teamCount']} → {curr['teamCount']}")
+            if curr['regSeasonCount'] != prev['regSeasonCount']:
+                changes.append(f"Regular season: {prev['regSeasonCount']} → {curr['regSeasonCount']} weeks")
+            if curr['playoffTeamCount'] != prev['playoffTeamCount']:
+                changes.append(f"Playoff teams: {prev['playoffTeamCount']} → {curr['playoffTeamCount']}")
+            if curr['playoffMatchupPeriodLength'] != prev['playoffMatchupPeriodLength']:
+                fmt = lambda n: f"{n}-week matchups"
+                changes.append(f"Playoff format: {fmt(prev['playoffMatchupPeriodLength'])} → {fmt(curr['playoffMatchupPeriodLength'])}")
+            if curr['keeperCount'] != prev['keeperCount']:
+                changes.append(f"Keepers per team: {prev['keeperCount']} → {curr['keeperCount']}")
+
+            # Divisions
+            if curr['divisionCount'] != prev['divisionCount']:
+                changes.append(f"Divisions: {prev['divisionSummary']} → {curr['divisionSummary']}")
+
+            # Draft
+            if curr['draftPickTrading'] != prev['draftPickTrading']:
+                changes.append(f"Draft pick trading: {'enabled' if curr['draftPickTrading'] else 'disabled'}")
+            if curr['draftTimePerPick'] != prev['draftTimePerPick']:
+                changes.append(f"Draft pick timer: {prev['draftTimePerPick']}s → {curr['draftTimePerPick']}s")
+            if curr['draftType'] != prev['draftType']:
+                changes.append(f"Draft type: {prev['draftType']} → {curr['draftType']}")
+
+            # Roster
+            if curr['irSlots'] != prev['irSlots']:
+                changes.append(f"IR slots: {prev['irSlots']} → {curr['irSlots']}")
+            if curr['benchSlots'] != prev['benchSlots']:
+                changes.append(f"Bench slots: {prev['benchSlots']} → {curr['benchSlots']}")
+
+            # Waivers / acquisitions
+            if curr['undroppableList'] != prev['undroppableList']:
+                changes.append(f"Undroppable player list: {'enabled' if curr['undroppableList'] else 'disabled'}")
+
+            # Trade deadline
+            if curr['tradeDeadline'] != prev['tradeDeadline']:
+                changes.append(f"Trade deadline: {prev['tradeDeadline'] or 'none'} → {curr['tradeDeadline'] or 'none'}")
+
+            # Scoring changes — grouped by type
+			scoring_added = []
+			scoring_removed = []
+			scoring_changed = []
+
+			all_stat_ids = set(curr['scoring'].keys()) | set(prev['scoring'].keys())
+			for stat_id in sorted(all_stat_ids):
+				curr_pts = curr['scoring'].get(stat_id, 0)
+				prev_pts = prev['scoring'].get(stat_id, 0)
+				if curr_pts != prev_pts:
+					name = STAT_ID_NAMES.get(stat_id, f"StatID {stat_id}")
+					if prev_pts == 0:
+						scoring_added.append(f"{name} ({curr_pts:+.2g} pts)")
+					elif curr_pts == 0:
+						scoring_removed.append(f"{name} (was {prev_pts:+.2g} pts)")
+					else:
+						scoring_changed.append(f"{name}: {prev_pts:+.2g} → {curr_pts:+.2g} pts")
+
+			if scoring_added:
+				if len(scoring_added) == 1:
+					changes.append(f"Scoring added — {scoring_added[0]}")
+				else:
+					changes.append(f"Scoring added ({len(scoring_added)} rules) — {', '.join(scoring_added)}")
+
+			if scoring_removed:
+				if len(scoring_removed) == 1:
+					changes.append(f"Scoring removed — {scoring_removed[0]}")
+				else:
+					changes.append(f"Scoring removed ({len(scoring_removed)} rules) — {', '.join(scoring_removed)}")
+
+			if scoring_changed:
+				if len(scoring_changed) == 1:
+					changes.append(f"Scoring changed — {scoring_changed[0]}")
+				else:
+					changes.append(f"Scoring changed ({len(scoring_changed)} rules) — {', '.join(scoring_changed)}")
+
+        history.append({'year': year, 'changes': changes})
+        prev = curr
+
+    print(f"  ✓ Settings history built for {len(history)} seasons")
+    return history
