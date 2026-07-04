@@ -1086,7 +1086,7 @@
         // so new seasons show up automatically with no yearly edit needed.
         const ALL_YEARS = Object.keys(seasonStats)
             .map(Number)
-            .filter(y => y >= 2018)   // 2016-2017 excluded: no usable ESPN data
+            .filter(y => y >= 2017)   // 2016 excluded: chaotic draft, no reliable keeper records
             .sort((a, b) => a - b);
 
         // Determine which years have keeper data
