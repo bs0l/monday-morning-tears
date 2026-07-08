@@ -1,0 +1,6539 @@
+{
+  "leagueWideMostDropped": {
+    "2018": [
+      {
+        "player": "Chargers D/ST",
+        "count": 5
+      },
+      {
+        "player": "Mason Crosby",
+        "count": 4
+      },
+      {
+        "player": "Chris Carson",
+        "count": 3
+      }
+    ],
+    "2019": [
+      {
+        "player": "Jaylen Samuels",
+        "count": 4
+      },
+      {
+        "player": "Marvin Jones Jr.",
+        "count": 4
+      },
+      {
+        "player": "Jordan Howard",
+        "count": 4
+      }
+    ],
+    "2020": [
+      {
+        "player": "Saints D/ST",
+        "count": 4
+      },
+      {
+        "player": "Dolphins D/ST",
+        "count": 4
+      },
+      {
+        "player": "Buccaneers D/ST",
+        "count": 3
+      }
+    ],
+    "2021": [
+      {
+        "player": "Chuba Hubbard",
+        "count": 3
+      },
+      {
+        "player": "Kenyan Drake",
+        "count": 3
+      },
+      {
+        "player": "Jakobi Meyers",
+        "count": 3
+      }
+    ],
+    "2022": [
+      {
+        "player": "Packers D/ST",
+        "count": 3
+      },
+      {
+        "player": "Gerald Everett",
+        "count": 3
+      },
+      {
+        "player": "Titans D/ST",
+        "count": 3
+      }
+    ],
+    "2023": [
+      {
+        "player": "Jets D/ST",
+        "count": 4
+      },
+      {
+        "player": "Trevor Lawrence",
+        "count": 4
+      },
+      {
+        "player": "Deshaun Watson",
+        "count": 3
+      }
+    ],
+    "2024": [
+      {
+        "player": "Eagles D/ST",
+        "count": 4
+      },
+      {
+        "player": "Saints D/ST",
+        "count": 4
+      },
+      {
+        "player": "Bengals D/ST",
+        "count": 3
+      }
+    ],
+    "2025": [
+      {
+        "player": "Chargers D/ST",
+        "count": 4
+      },
+      {
+        "player": "Buccaneers D/ST",
+        "count": 3
+      },
+      {
+        "player": "Kyle Pitts Sr.",
+        "count": 3
+      }
+    ]
+  },
+  "perTeamMostDropped": {
+    "2018": null,
+    "2019": {
+      "Bill Solecki": [
+        {
+          "player": "Jake Elliott",
+          "count": 3
+        },
+        {
+          "player": "Will Fuller V",
+          "count": 3
+        },
+        {
+          "player": "Texans D/ST",
+          "count": 3
+        }
+      ],
+      "John Artiglier": [
+        {
+          "player": "T.J. Hockenson",
+          "count": 2
+        },
+        {
+          "player": "Mike Davis",
+          "count": 1
+        },
+        {
+          "player": "Quincy Enunwa",
+          "count": 1
+        }
+      ],
+      "Randell Crawford": [
+        {
+          "player": "Lamar Miller",
+          "count": 1
+        },
+        {
+          "player": "O.J. Howard",
+          "count": 1
+        },
+        {
+          "player": "Jaylen Samuels",
+          "count": 1
+        }
+      ],
+      "Carl Cummins": [
+        {
+          "player": "Jordan Howard",
+          "count": 3
+        },
+        {
+          "player": "Donte Moncrief",
+          "count": 1
+        },
+        {
+          "player": "Kenyan Drake",
+          "count": 1
+        }
+      ],
+      "Ben Bingert": [
+        {
+          "player": "Royce Freeman",
+          "count": 1
+        },
+        {
+          "player": "Eric Ebron",
+          "count": 1
+        },
+        {
+          "player": "Philip Rivers",
+          "count": 1
+        }
+      ],
+      "Ray Engleking": [
+        {
+          "player": "Jaguars D/ST",
+          "count": 2
+        },
+        {
+          "player": "Matt Ryan",
+          "count": 1
+        },
+        {
+          "player": "Darrell Henderson Jr.",
+          "count": 1
+        }
+      ],
+      "Mike Kovacs": [
+        {
+          "player": "Marvin Jones Jr.",
+          "count": 3
+        },
+        {
+          "player": "Jaylen Samuels",
+          "count": 2
+        },
+        {
+          "player": "Eagles D/ST",
+          "count": 1
+        }
+      ],
+      "Phil Torres": [
+        {
+          "player": "Tarik Cohen",
+          "count": 1
+        },
+        {
+          "player": "Sammy Watkins",
+          "count": 1
+        },
+        {
+          "player": "Baker Mayfield",
+          "count": 1
+        }
+      ]
+    },
+    "2020": {
+      "Bill Solecki": [
+        {
+          "player": "Ryan Succop",
+          "count": 3
+        },
+        {
+          "player": "Saints D/ST",
+          "count": 3
+        },
+        {
+          "player": "Patriots D/ST",
+          "count": 2
+        }
+      ],
+      "John Artiglier": [
+        {
+          "player": "Buccaneers D/ST",
+          "count": 1
+        },
+        {
+          "player": "Jerry Jeudy",
+          "count": 1
+        },
+        {
+          "player": "Cam Akers",
+          "count": 1
+        }
+      ],
+      "Ben Bingert": [
+        {
+          "player": "Geno Smith",
+          "count": 1
+        },
+        {
+          "player": "Nyheim Hines",
+          "count": 1
+        },
+        {
+          "player": "Dolphins D/ST",
+          "count": 1
+        }
+      ],
+      "Mike Kovacs": [
+        {
+          "player": "Chris Thompson",
+          "count": 1
+        },
+        {
+          "player": "Jordan Howard",
+          "count": 1
+        },
+        {
+          "player": "Boston Scott",
+          "count": 1
+        }
+      ],
+      "Ray Engleking": [
+        {
+          "player": "Buccaneers D/ST",
+          "count": 2
+        },
+        {
+          "player": "Mecole Hardman",
+          "count": 1
+        },
+        {
+          "player": "Colts D/ST",
+          "count": 1
+        }
+      ],
+      "Randell Crawford": [
+        {
+          "player": "Carson Wentz",
+          "count": 2
+        },
+        {
+          "player": "Darrell Henderson Jr.",
+          "count": 1
+        },
+        {
+          "player": "Saints D/ST",
+          "count": 1
+        }
+      ],
+      "Carl Cummins": [
+        {
+          "player": "JaMycal Hasty",
+          "count": 2
+        },
+        {
+          "player": "Kerryon Johnson",
+          "count": 1
+        },
+        {
+          "player": "James White",
+          "count": 1
+        }
+      ],
+      "Phil Torres": [
+        {
+          "player": "Phillip Lindsay",
+          "count": 1
+        },
+        {
+          "player": "Harrison Butker",
+          "count": 1
+        },
+        {
+          "player": "Tom Brady",
+          "count": 1
+        }
+      ]
+    },
+    "2021": {
+      "Ray Engleking": [
+        {
+          "player": "Bengals D/ST",
+          "count": 2
+        },
+        {
+          "player": "Gus Edwards",
+          "count": 1
+        },
+        {
+          "player": "Laviska Shenault Jr.",
+          "count": 1
+        }
+      ],
+      "Bill Solecki": [
+        {
+          "player": "Chuba Hubbard",
+          "count": 2
+        },
+        {
+          "player": "Kenyan Drake",
+          "count": 2
+        },
+        {
+          "player": "Panthers D/ST",
+          "count": 2
+        }
+      ],
+      "Ben Bingert": [
+        {
+          "player": "Miles Sanders",
+          "count": 2
+        },
+        {
+          "player": "Tim Tebow",
+          "count": 1
+        },
+        {
+          "player": "Sam Darnold",
+          "count": 1
+        }
+      ],
+      "Carl Cummins": [
+        {
+          "player": "Devonta Freeman",
+          "count": 3
+        },
+        {
+          "player": "Alex Collins",
+          "count": 2
+        },
+        {
+          "player": "Younghoe Koo",
+          "count": 1
+        }
+      ],
+      "Randell Crawford": [
+        {
+          "player": "Ravens D/ST",
+          "count": 2
+        },
+        {
+          "player": "Michael Pittman Jr.",
+          "count": 1
+        },
+        {
+          "player": "James Conner",
+          "count": 1
+        }
+      ],
+      "Phil Torres": [
+        {
+          "player": "Robert Tonyan",
+          "count": 1
+        },
+        {
+          "player": "Jason Sanders",
+          "count": 1
+        },
+        {
+          "player": "Kenyan Drake",
+          "count": 1
+        }
+      ],
+      "John Artiglier": [
+        {
+          "player": "Dallas Goedert",
+          "count": 1
+        },
+        {
+          "player": "Commanders D/ST",
+          "count": 1
+        },
+        {
+          "player": "Brandon Aiyuk",
+          "count": 1
+        }
+      ],
+      "Mike Kovacs": [
+        {
+          "player": "49ers D/ST",
+          "count": 2
+        },
+        {
+          "player": "Elijah Mitchell",
+          "count": 1
+        },
+        {
+          "player": "Titans D/ST",
+          "count": 1
+        }
+      ]
+    },
+    "2022": {
+      "John Artiglier": [
+        {
+          "player": "Rodrigo Blankenship",
+          "count": 2
+        },
+        {
+          "player": "Broncos D/ST",
+          "count": 2
+        },
+        {
+          "player": "Seahawks D/ST",
+          "count": 2
+        }
+      ],
+      "Bill Solecki": [
+        {
+          "player": "Buccaneers D/ST",
+          "count": 2
+        },
+        {
+          "player": "Tanner Conner",
+          "count": 1
+        },
+        {
+          "player": "Dameon Pierce",
+          "count": 1
+        }
+      ],
+      "Randell Crawford": [
+        {
+          "player": "Wan'Dale Robinson",
+          "count": 2
+        },
+        {
+          "player": "Elijah Moore",
+          "count": 1
+        },
+        {
+          "player": "Albert Okwuegbunam",
+          "count": 1
+        }
+      ],
+      "Carl Cummins": [
+        {
+          "player": "Saints D/ST",
+          "count": 2
+        },
+        {
+          "player": "Jimmy Garoppolo",
+          "count": 2
+        },
+        {
+          "player": "Rams D/ST",
+          "count": 1
+        }
+      ],
+      "Mike Kovacs": [
+        {
+          "player": "Colts D/ST",
+          "count": 2
+        },
+        {
+          "player": "Adam Thielen",
+          "count": 2
+        },
+        {
+          "player": "Dolphins D/ST",
+          "count": 2
+        }
+      ],
+      "Ray Engleking": [
+        {
+          "player": "Aaron Rodgers",
+          "count": 1
+        },
+        {
+          "player": "Rams D/ST",
+          "count": 1
+        },
+        {
+          "player": "Packers D/ST",
+          "count": 1
+        }
+      ],
+      "Ben Bingert": [
+        {
+          "player": "JuJu Smith-Schuster",
+          "count": 1
+        },
+        {
+          "player": "Dawson Knox",
+          "count": 1
+        },
+        {
+          "player": "Brandon McManus",
+          "count": 1
+        }
+      ],
+      "Phil Torres": [
+        {
+          "player": "Baker Mayfield",
+          "count": 1
+        },
+        {
+          "player": "Darren Waller",
+          "count": 1
+        },
+        {
+          "player": "Titans D/ST",
+          "count": 1
+        }
+      ]
+    },
+    "2023": {
+      "Joe Jaramillo": [
+        {
+          "player": "Van Jefferson",
+          "count": 1
+        },
+        {
+          "player": "Kirk Cousins",
+          "count": 1
+        },
+        {
+          "player": "Dalton Schultz",
+          "count": 1
+        }
+      ],
+      "Ben Bingert": [
+        {
+          "player": "Patriots D/ST",
+          "count": 1
+        },
+        {
+          "player": "Devin Singletary",
+          "count": 1
+        },
+        {
+          "player": "Marvin Jones Jr.",
+          "count": 1
+        }
+      ],
+      "Bill Solecki": [
+        {
+          "player": "Deshaun Watson",
+          "count": 2
+        },
+        {
+          "player": "Josh Reynolds",
+          "count": 2
+        },
+        {
+          "player": "Jets D/ST",
+          "count": 2
+        }
+      ],
+      "Mike Kovacs": [
+        {
+          "player": "Antonio Gibson",
+          "count": 2
+        },
+        {
+          "player": "Jordan Addison",
+          "count": 1
+        },
+        {
+          "player": "Van Jefferson",
+          "count": 1
+        }
+      ],
+      "john crawford": [
+        {
+          "player": "Michael Gallup",
+          "count": 1
+        },
+        {
+          "player": "Gerald Everett",
+          "count": 1
+        },
+        {
+          "player": "Marquez Valdes-Scantling",
+          "count": 1
+        }
+      ],
+      "Ray Engleking": [
+        {
+          "player": "Jets D/ST",
+          "count": 2
+        },
+        {
+          "player": "Buccaneers D/ST",
+          "count": 2
+        },
+        {
+          "player": "Treylon Burks",
+          "count": 1
+        }
+      ],
+      "Carl Cummins": [
+        {
+          "player": "D'Onta Foreman",
+          "count": 2
+        },
+        {
+          "player": "Drake London",
+          "count": 1
+        },
+        {
+          "player": "JuJu Smith-Schuster",
+          "count": 1
+        }
+      ],
+      "Phil Torres": [
+        {
+          "player": "Tank Bigsby",
+          "count": 1
+        },
+        {
+          "player": "Evan Engram",
+          "count": 1
+        },
+        {
+          "player": "Matt Breida",
+          "count": 1
+        }
+      ],
+      "John Artiglier": [
+        {
+          "player": "De'Von Achane",
+          "count": 1
+        },
+        {
+          "player": "Jason Myers",
+          "count": 1
+        },
+        {
+          "player": "Jayden Reed",
+          "count": 1
+        }
+      ],
+      "Randell Crawford": [
+        {
+          "player": "Quentin Johnston",
+          "count": 1
+        },
+        {
+          "player": "Luke Musgrave",
+          "count": 1
+        },
+        {
+          "player": "Samaje Perine",
+          "count": 1
+        }
+      ]
+    },
+    "2024": {
+      "Mike Kovacs": [
+        {
+          "player": "Eagles D/ST",
+          "count": 3
+        },
+        {
+          "player": "Bengals D/ST",
+          "count": 1
+        },
+        {
+          "player": "Chargers D/ST",
+          "count": 1
+        }
+      ],
+      "Randell Crawford": [
+        {
+          "player": "Adam Thielen",
+          "count": 1
+        },
+        {
+          "player": "Kirk Cousins",
+          "count": 1
+        },
+        {
+          "player": "Chiefs D/ST",
+          "count": 1
+        }
+      ],
+      "Joe Jaramillo": [
+        {
+          "player": "Zach Charbonnet",
+          "count": 2
+        },
+        {
+          "player": "Chase Brown",
+          "count": 1
+        },
+        {
+          "player": "Dolphins D/ST",
+          "count": 1
+        }
+      ],
+      "John Artiglier": [
+        {
+          "player": "Saints D/ST",
+          "count": 1
+        },
+        {
+          "player": "Seahawks D/ST",
+          "count": 1
+        },
+        {
+          "player": "Joshua Palmer",
+          "count": 1
+        }
+      ],
+      "Ben Bingert": [
+        {
+          "player": "Rome Odunze",
+          "count": 1
+        },
+        {
+          "player": "Jaylen Warren",
+          "count": 1
+        },
+        {
+          "player": "Christian Watson",
+          "count": 1
+        }
+      ],
+      "Bill Solecki": [
+        {
+          "player": "DeAndre Hopkins",
+          "count": 2
+        },
+        {
+          "player": "Tyler Bass",
+          "count": 2
+        },
+        {
+          "player": "Khalil Herbert",
+          "count": 1
+        }
+      ],
+      "Carl Cummins": [
+        {
+          "player": "Alexander Mattison",
+          "count": 2
+        },
+        {
+          "player": "Allen Lazard",
+          "count": 1
+        },
+        {
+          "player": "Taysom Hill",
+          "count": 1
+        }
+      ],
+      "Ray Engleking": [
+        {
+          "player": "Trey Benson",
+          "count": 1
+        },
+        {
+          "player": "Daniel Jones",
+          "count": 1
+        },
+        {
+          "player": "Jake Moody",
+          "count": 1
+        }
+      ],
+      "john crawford": [
+        {
+          "player": "Austin Ekeler",
+          "count": 2
+        },
+        {
+          "player": "Rico Dowdle",
+          "count": 1
+        },
+        {
+          "player": "Tyler Badie",
+          "count": 1
+        }
+      ],
+      "Phil Torres": [
+        {
+          "player": "Jake Elliott",
+          "count": 1
+        },
+        {
+          "player": "Bengals D/ST",
+          "count": 1
+        }
+      ]
+    },
+    "2025": {
+      "john crawford": [
+        {
+          "player": "Harrison Butker",
+          "count": 1
+        },
+        {
+          "player": "Jordan Addison",
+          "count": 1
+        },
+        {
+          "player": "Lions D/ST",
+          "count": 1
+        }
+      ],
+      "Bill Solecki": [
+        {
+          "player": "Buccaneers D/ST",
+          "count": 2
+        },
+        {
+          "player": "Ravens D/ST",
+          "count": 2
+        },
+        {
+          "player": "Tre Tucker",
+          "count": 2
+        }
+      ],
+      "Ben Bingert": [
+        {
+          "player": "Jack Bech",
+          "count": 1
+        },
+        {
+          "player": "Ollie Gordon II",
+          "count": 1
+        },
+        {
+          "player": "Rams D/ST",
+          "count": 1
+        }
+      ],
+      "Mike Kovacs": [
+        {
+          "player": "Emanuel Wilson",
+          "count": 2
+        },
+        {
+          "player": "Marvin Mims Jr.",
+          "count": 1
+        },
+        {
+          "player": "Xavier Legette",
+          "count": 1
+        }
+      ],
+      "Randell Crawford": [
+        {
+          "player": "Elijah Arroyo",
+          "count": 1
+        },
+        {
+          "player": "Tank Bigsby",
+          "count": 1
+        },
+        {
+          "player": "Juwan Johnson",
+          "count": 1
+        }
+      ],
+      "Ray Engleking": [
+        {
+          "player": "Cam Skattebo",
+          "count": 1
+        },
+        {
+          "player": "Caleb Williams",
+          "count": 1
+        },
+        {
+          "player": "Khalil Shakir",
+          "count": 1
+        }
+      ],
+      "John Artiglier": [
+        {
+          "player": "Josh Downs",
+          "count": 1
+        },
+        {
+          "player": "Kayshon Boutte",
+          "count": 1
+        },
+        {
+          "player": "Jerry Jeudy",
+          "count": 1
+        }
+      ],
+      "Joe Jaramillo": [
+        {
+          "player": "Nick Chubb",
+          "count": 2
+        },
+        {
+          "player": "Colston Loveland",
+          "count": 1
+        },
+        {
+          "player": "Michael Penix Jr.",
+          "count": 1
+        }
+      ],
+      "Carl Cummins": [
+        {
+          "player": "Jerome Ford",
+          "count": 1
+        },
+        {
+          "player": "Evan Engram",
+          "count": 1
+        },
+        {
+          "player": "James Conner",
+          "count": 1
+        }
+      ],
+      "Phil Torres": [
+        {
+          "player": "Isiah Pacheco",
+          "count": 1
+        },
+        {
+          "player": "Travis Hunter",
+          "count": 1
+        },
+        {
+          "player": "Cairo Santos",
+          "count": 1
+        }
+      ]
+    }
+  },
+  "sloppySeconds": {
+    "byYear": {
+      "2018": null,
+      "2019": {
+        "players": [
+          {
+            "player": "Jameis Winston",
+            "teamCount": 3,
+            "teams": [
+              "Bill Solecki",
+              "Ray Engleking",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Eagles D/ST",
+            "teamCount": 3,
+            "teams": [
+              "Mike Kovacs",
+              "Ben Bingert",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Emmanuel Sanders",
+            "teamCount": 3,
+            "teams": [
+              "Ben Bingert",
+              "Bill Solecki",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Greg Olsen",
+            "teamCount": 3,
+            "teams": [
+              "Bill Solecki",
+              "Randell Crawford",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Packers D/ST",
+            "teamCount": 3,
+            "teams": [
+              "Ray Engleking",
+              "John Artiglier",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Chris Thompson",
+            "teamCount": 3,
+            "teams": [
+              "Ben Bingert",
+              "Bill Solecki",
+              "Phil Torres"
+            ]
+          },
+          {
+            "player": "Matt Gay",
+            "teamCount": 3,
+            "teams": [
+              "Carl Cummins",
+              "Ben Bingert",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Seahawks D/ST",
+            "teamCount": 3,
+            "teams": [
+              "Ben Bingert",
+              "Ray Engleking",
+              "Phil Torres"
+            ]
+          },
+          {
+            "player": "Dak Prescott",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Michael Badgley",
+            "teamCount": 2,
+            "teams": [
+              "John Artiglier",
+              "Ray Engleking"
+            ]
+          },
+          {
+            "player": "Marvin Jones Jr.",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Browns D/ST",
+            "teamCount": 2,
+            "teams": [
+              "John Artiglier",
+              "Ben Bingert"
+            ]
+          },
+          {
+            "player": "Philip Rivers",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Adrian Peterson",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Phil Torres"
+            ]
+          },
+          {
+            "player": "Jamison Crowder",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Bills D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "O.J. Howard",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "T.J. Hockenson",
+            "teamCount": 2,
+            "teams": [
+              "John Artiglier",
+              "Ray Engleking"
+            ]
+          },
+          {
+            "player": "Josh Allen",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Joey Slye",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Cowboys D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Stefon Diggs",
+            "teamCount": 2,
+            "teams": [
+              "John Artiglier",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Titans D/ST",
+            "teamCount": 2,
+            "teams": [
+              "John Artiglier",
+              "Ray Engleking"
+            ]
+          },
+          {
+            "player": "Marquise Brown",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Zane Gonzalez",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Daniel Jones",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Steelers D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Jordan Howard",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Ray Engleking"
+            ]
+          },
+          {
+            "player": "Golden Tate",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Jaylen Samuels",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Kenyan Drake",
+            "teamCount": 2,
+            "teams": [
+              "Phil Torres",
+              "Ray Engleking"
+            ]
+          },
+          {
+            "player": "Ravens D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Washington D/ST",
+            "teamCount": 2,
+            "teams": [
+              "John Artiglier",
+              "Ben Bingert"
+            ]
+          },
+          {
+            "player": "Michael Gallup",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Aaron Rodgers",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Kyler Murray",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Tarik Cohen",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "Phil Torres"
+            ]
+          },
+          {
+            "player": "Jamaal Williams",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Colts D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Phil Torres"
+            ]
+          },
+          {
+            "player": "Devin Singletary",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Ray Engleking"
+            ]
+          },
+          {
+            "player": "Miles Sanders",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "Ray Engleking"
+            ]
+          },
+          {
+            "player": "Ryan Tannehill",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "DeAndre Washington",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Ben Bingert"
+            ]
+          }
+        ],
+        "teamTally": {
+          "Ray Engleking": 9,
+          "John Artiglier": 7,
+          "Carl Cummins": 7,
+          "Ben Bingert": 5,
+          "Bill Solecki": 8,
+          "Mike Kovacs": 4,
+          "Phil Torres": 5,
+          "Randell Crawford": 5
+        },
+        "sameWeekAddsFlagged": 1
+      },
+      "2020": {
+        "players": [
+          {
+            "player": "Nyheim Hines",
+            "teamCount": 3,
+            "teams": [
+              "Ben Bingert",
+              "Mike Kovacs",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Dallas Goedert",
+            "teamCount": 3,
+            "teams": [
+              "John Artiglier",
+              "Mike Kovacs",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Chiefs D/ST",
+            "teamCount": 3,
+            "teams": [
+              "Ray Engleking",
+              "Bill Solecki",
+              "Ben Bingert"
+            ]
+          },
+          {
+            "player": "Younghoe Koo",
+            "teamCount": 3,
+            "teams": [
+              "Mike Kovacs",
+              "Bill Solecki",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Mike Davis",
+            "teamCount": 3,
+            "teams": [
+              "Mike Kovacs",
+              "Phil Torres",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Hayden Hurst",
+            "teamCount": 3,
+            "teams": [
+              "Bill Solecki",
+              "Mike Kovacs",
+              "Phil Torres"
+            ]
+          },
+          {
+            "player": "Rams D/ST",
+            "teamCount": 3,
+            "teams": [
+              "Carl Cummins",
+              "John Artiglier",
+              "Ray Engleking"
+            ]
+          },
+          {
+            "player": "Dolphins D/ST",
+            "teamCount": 3,
+            "teams": [
+              "Ben Bingert",
+              "Bill Solecki",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Rob Gronkowski",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Eagles D/ST",
+            "teamCount": 2,
+            "teams": [
+              "John Artiglier",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Boston Scott",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Ray Engleking"
+            ]
+          },
+          {
+            "player": "Adrian Peterson",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Emmanuel Sanders",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Devonta Freeman",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "John Brown",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Browns D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Randell Crawford",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Colts D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Phil Torres"
+            ]
+          },
+          {
+            "player": "Mike Gesicki",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Ray Engleking"
+            ]
+          },
+          {
+            "player": "Marquez Valdes-Scantling",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Carlos Hyde",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "T.J. Hockenson",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Ray Engleking"
+            ]
+          },
+          {
+            "player": "Mason Crosby",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Justin Herbert",
+            "teamCount": 2,
+            "teams": [
+              "John Artiglier",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Ka'imi Fairbairn",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Harrison Butker",
+            "teamCount": 2,
+            "teams": [
+              "Phil Torres",
+              "Ray Engleking"
+            ]
+          },
+          {
+            "player": "Robert Tonyan",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Washington D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Wil Lutz",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Giovani Bernard",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Ben Bingert"
+            ]
+          },
+          {
+            "player": "Jarvis Landry",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Mike Williams",
+            "teamCount": 2,
+            "teams": [
+              "Phil Torres",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Tony Pollard",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Bill Solecki"
+            ]
+          }
+        ],
+        "teamTally": {
+          "Mike Kovacs": 6,
+          "Ray Engleking": 5,
+          "Randell Crawford": 6,
+          "Bill Solecki": 9,
+          "Carl Cummins": 4,
+          "Ben Bingert": 2,
+          "Phil Torres": 3,
+          "John Artiglier": 4
+        },
+        "sameWeekAddsFlagged": 1
+      },
+      "2021": {
+        "players": [
+          {
+            "player": "Jakobi Meyers",
+            "teamCount": 3,
+            "teams": [
+              "Bill Solecki",
+              "Phil Torres",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Patriots D/ST",
+            "teamCount": 3,
+            "teams": [
+              "Randell Crawford",
+              "Ray Engleking",
+              "Phil Torres"
+            ]
+          },
+          {
+            "player": "Daniel Carlson",
+            "teamCount": 3,
+            "teams": [
+              "Phil Torres",
+              "Mike Kovacs",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Cardinals D/ST",
+            "teamCount": 3,
+            "teams": [
+              "Carl Cummins",
+              "Mike Kovacs",
+              "Phil Torres"
+            ]
+          },
+          {
+            "player": "Titans D/ST",
+            "teamCount": 3,
+            "teams": [
+              "Mike Kovacs",
+              "Randell Crawford",
+              "Ben Bingert"
+            ]
+          },
+          {
+            "player": "Chuba Hubbard",
+            "teamCount": 3,
+            "teams": [
+              "Carl Cummins",
+              "Ray Engleking",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Joe Burrow",
+            "teamCount": 3,
+            "teams": [
+              "Ben Bingert",
+              "Bill Solecki",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Tua Tagovailoa",
+            "teamCount": 3,
+            "teams": [
+              "Carl Cummins",
+              "Bill Solecki",
+              "Ben Bingert"
+            ]
+          },
+          {
+            "player": "Odell Beckham Jr.",
+            "teamCount": 3,
+            "teams": [
+              "Bill Solecki",
+              "Carl Cummins",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Dolphins D/ST",
+            "teamCount": 3,
+            "teams": [
+              "Carl Cummins",
+              "Bill Solecki",
+              "Ben Bingert"
+            ]
+          },
+          {
+            "player": "Broncos D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Kenyan Drake",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Phil Torres"
+            ]
+          },
+          {
+            "player": "Latavius Murray",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Devin Singletary",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Ray Engleking"
+            ]
+          },
+          {
+            "player": "Elijah Mitchell",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Tony Pollard",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Panthers D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Christian Kirk",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Bengals D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "Ben Bingert"
+            ]
+          },
+          {
+            "player": "Saints D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Ray Engleking"
+            ]
+          },
+          {
+            "player": "Alex Collins",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Phil Torres"
+            ]
+          },
+          {
+            "player": "Samaje Perine",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Tyler Higbee",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Nick Folk",
+            "teamCount": 2,
+            "teams": [
+              "Phil Torres",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Graham Gano",
+            "teamCount": 2,
+            "teams": [
+              "Randell Crawford",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Chris Boswell",
+            "teamCount": 2,
+            "teams": [
+              "John Artiglier",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Darrel Williams",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Ryan Tannehill",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Darnell Mooney",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Mason Crosby",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "Phil Torres"
+            ]
+          },
+          {
+            "player": "Dallas Goedert",
+            "teamCount": 2,
+            "teams": [
+              "Randell Crawford",
+              "Ray Engleking"
+            ]
+          },
+          {
+            "player": "Ravens D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Randell Crawford",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Zach Ertz",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Javonte Williams",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Boston Scott",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Ben Bingert"
+            ]
+          },
+          {
+            "player": "Carson Wentz",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Jeff Wilson Jr.",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Miles Sanders",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Harrison Butker",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Eagles D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Devonta Freeman",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Rashaad Penny",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Bill Solecki"
+            ]
+          }
+        ],
+        "teamTally": {
+          "John Artiglier": 8,
+          "Phil Torres": 6,
+          "Mike Kovacs": 9,
+          "Ray Engleking": 5,
+          "Randell Crawford": 5,
+          "Ben Bingert": 5,
+          "Carl Cummins": 6,
+          "Bill Solecki": 8
+        },
+        "sameWeekAddsFlagged": 0
+      },
+      "2022": {
+        "players": [
+          {
+            "player": "Graham Gano",
+            "teamCount": 4,
+            "teams": [
+              "Ben Bingert",
+              "John Artiglier",
+              "Carl Cummins",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Garrett Wilson",
+            "teamCount": 3,
+            "teams": [
+              "Ray Engleking",
+              "Ben Bingert",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Tyler Higbee",
+            "teamCount": 3,
+            "teams": [
+              "Mike Kovacs",
+              "Bill Solecki",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Dawson Knox",
+            "teamCount": 3,
+            "teams": [
+              "Ben Bingert",
+              "John Artiglier",
+              "Phil Torres"
+            ]
+          },
+          {
+            "player": "Gerald Everett",
+            "teamCount": 3,
+            "teams": [
+              "Carl Cummins",
+              "Ben Bingert",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Titans D/ST",
+            "teamCount": 3,
+            "teams": [
+              "Carl Cummins",
+              "Phil Torres",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Harrison Butker",
+            "teamCount": 3,
+            "teams": [
+              "Ben Bingert",
+              "Ray Engleking",
+              "Phil Torres"
+            ]
+          },
+          {
+            "player": "Dak Prescott",
+            "teamCount": 3,
+            "teams": [
+              "Mike Kovacs",
+              "Bill Solecki",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Chiefs D/ST",
+            "teamCount": 3,
+            "teams": [
+              "Carl Cummins",
+              "Bill Solecki",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Broncos D/ST",
+            "teamCount": 2,
+            "teams": [
+              "John Artiglier",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Rashaad Penny",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Rams D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Ray Engleking"
+            ]
+          },
+          {
+            "player": "Brandon McManus",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Michael Carter",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Dallas Goedert",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Zay Jones",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Dolphins D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Ben Bingert"
+            ]
+          },
+          {
+            "player": "Younghoe Koo",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "J.K. Dobbins",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Jared Goff",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Packers D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Taysom Hill",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Hayden Hurst",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Phil Torres"
+            ]
+          },
+          {
+            "player": "Jakobi Meyers",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Brandon Aiyuk",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Brett Maher",
+            "teamCount": 2,
+            "teams": [
+              "Randell Crawford",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Allen Lazard",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Brian Robinson Jr.",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "D'Onta Foreman",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Adam Thielen",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Ben Bingert"
+            ]
+          },
+          {
+            "player": "Kirk Cousins",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Evan Engram",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Tyler Allgeier",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Jason Myers",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Greg Dulcich",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Phil Torres"
+            ]
+          },
+          {
+            "player": "Joshua Palmer",
+            "teamCount": 2,
+            "teams": [
+              "Randell Crawford",
+              "Ben Bingert"
+            ]
+          },
+          {
+            "player": "Seahawks D/ST",
+            "teamCount": 2,
+            "teams": [
+              "John Artiglier",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Christian Watson",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Samaje Perine",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Bill Solecki"
+            ]
+          }
+        ],
+        "teamTally": {
+          "Bill Solecki": 9,
+          "Mike Kovacs": 8,
+          "Ray Engleking": 2,
+          "John Artiglier": 6,
+          "Randell Crawford": 7,
+          "Carl Cummins": 7,
+          "Ben Bingert": 5,
+          "Phil Torres": 5
+        },
+        "sameWeekAddsFlagged": 0
+      },
+      "2023": {
+        "players": [
+          {
+            "player": "Taysom Hill",
+            "teamCount": 4,
+            "teams": [
+              "Ben Bingert",
+              "Mike Kovacs",
+              "Carl Cummins",
+              "Ray Engleking"
+            ]
+          },
+          {
+            "player": "Trevor Lawrence",
+            "teamCount": 4,
+            "teams": [
+              "Ben Bingert",
+              "Bill Solecki",
+              "Mike Kovacs",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Jayden Reed",
+            "teamCount": 3,
+            "teams": [
+              "John Artiglier",
+              "Bill Solecki",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Jake Moody",
+            "teamCount": 3,
+            "teams": [
+              "Bill Solecki",
+              "Phil Torres",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Riley Patterson",
+            "teamCount": 3,
+            "teams": [
+              "Ben Bingert",
+              "Joe Jaramillo",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Tyjae Spears",
+            "teamCount": 3,
+            "teams": [
+              "Carl Cummins",
+              "Joe Jaramillo",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Jets D/ST",
+            "teamCount": 3,
+            "teams": [
+              "Bill Solecki",
+              "Ray Engleking",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Van Jefferson",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Joe Jaramillo"
+            ]
+          },
+          {
+            "player": "Kendrick Bourne",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Joe Jaramillo"
+            ]
+          },
+          {
+            "player": "Hunter Henry",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Ben Bingert"
+            ]
+          },
+          {
+            "player": "Kirk Cousins",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Jordan Love",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Elijah Moore",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "Phil Torres"
+            ]
+          },
+          {
+            "player": "Tank Dell",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "Phil Torres"
+            ]
+          },
+          {
+            "player": "Chuba Hubbard",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Luke Musgrave",
+            "teamCount": 2,
+            "teams": [
+              "Randell Crawford",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Brock Purdy",
+            "teamCount": 2,
+            "teams": [
+              "Joe Jaramillo",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Lions D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "Phil Torres"
+            ]
+          },
+          {
+            "player": "C.J. Stroud",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Ben Bingert"
+            ]
+          },
+          {
+            "player": "Joshua Dobbs",
+            "teamCount": 2,
+            "teams": [
+              "John Artiglier",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Deshaun Watson",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Ben Bingert"
+            ]
+          },
+          {
+            "player": "Emari Demercado",
+            "teamCount": 2,
+            "teams": [
+              "Joe Jaramillo",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Falcons D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Phil Torres",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Logan Thomas",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "Ray Engleking"
+            ]
+          },
+          {
+            "player": "Vikings D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Randell Crawford",
+              "Ben Bingert"
+            ]
+          },
+          {
+            "player": "Cole Kmet",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "D'Onta Foreman",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Joe Jaramillo"
+            ]
+          },
+          {
+            "player": "Matthew Stafford",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Joe Jaramillo"
+            ]
+          },
+          {
+            "player": "Zach Charbonnet",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Joe Jaramillo"
+            ]
+          },
+          {
+            "player": "Seahawks D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Geno Smith",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Phil Torres"
+            ]
+          },
+          {
+            "player": "Jason Myers",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Brandon McManus",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "john crawford"
+            ]
+          },
+          {
+            "player": "Patriots D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Phil Torres"
+            ]
+          },
+          {
+            "player": "Josh Downs",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Saints D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Nick Folk",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Raiders D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Ray Engleking"
+            ]
+          },
+          {
+            "player": "Bears D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Phil Torres",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Ty Chandler",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Phil Torres"
+            ]
+          },
+          {
+            "player": "Keaton Mitchell",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Isaiah Likely",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Joe Jaramillo"
+            ]
+          },
+          {
+            "player": "Broncos D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Rashid Shaheed",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Colts D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Ray Engleking"
+            ]
+          }
+        ],
+        "teamTally": {
+          "Bill Solecki": 8,
+          "Carl Cummins": 7,
+          "Joe Jaramillo": 7,
+          "Ben Bingert": 4,
+          "Mike Kovacs": 7,
+          "Ray Engleking": 5,
+          "Phil Torres": 7,
+          "John Artiglier": 4,
+          "Randell Crawford": 3,
+          "john crawford": 1
+        },
+        "sameWeekAddsFlagged": 1
+      },
+      "2024": {
+        "players": [
+          {
+            "player": "Bengals D/ST",
+            "teamCount": 3,
+            "teams": [
+              "Mike Kovacs",
+              "Phil Torres",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Chargers D/ST",
+            "teamCount": 3,
+            "teams": [
+              "Mike Kovacs",
+              "John Artiglier",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Rome Odunze",
+            "teamCount": 3,
+            "teams": [
+              "Joe Jaramillo",
+              "Carl Cummins",
+              "Ben Bingert"
+            ]
+          },
+          {
+            "player": "Saints D/ST",
+            "teamCount": 3,
+            "teams": [
+              "Ben Bingert",
+              "Bill Solecki",
+              "john crawford"
+            ]
+          },
+          {
+            "player": "Chiefs D/ST",
+            "teamCount": 3,
+            "teams": [
+              "Bill Solecki",
+              "Mike Kovacs",
+              "Joe Jaramillo"
+            ]
+          },
+          {
+            "player": "Titans D/ST",
+            "teamCount": 3,
+            "teams": [
+              "Bill Solecki",
+              "Carl Cummins",
+              "john crawford"
+            ]
+          },
+          {
+            "player": "Braelon Allen",
+            "teamCount": 3,
+            "teams": [
+              "Randell Crawford",
+              "Mike Kovacs",
+              "Ray Engleking"
+            ]
+          },
+          {
+            "player": "Texans D/ST",
+            "teamCount": 3,
+            "teams": [
+              "John Artiglier",
+              "Bill Solecki",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Alexander Mattison",
+            "teamCount": 3,
+            "teams": [
+              "Carl Cummins",
+              "Randell Crawford",
+              "Ben Bingert"
+            ]
+          },
+          {
+            "player": "Eagles D/ST",
+            "teamCount": 3,
+            "teams": [
+              "Mike Kovacs",
+              "John Artiglier",
+              "Ray Engleking"
+            ]
+          },
+          {
+            "player": "DeAndre Hopkins",
+            "teamCount": 3,
+            "teams": [
+              "Bill Solecki",
+              "Mike Kovacs",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Jared Goff",
+            "teamCount": 3,
+            "teams": [
+              "Ben Bingert",
+              "Bill Solecki",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Jerry Jeudy",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Jameson Williams",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Taysom Hill",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "john crawford"
+            ]
+          },
+          {
+            "player": "Jordan Mason",
+            "teamCount": 2,
+            "teams": [
+              "Joe Jaramillo",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Khalil Shakir",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Ray Engleking"
+            ]
+          },
+          {
+            "player": "Matthew Stafford",
+            "teamCount": 2,
+            "teams": [
+              "Randell Crawford",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Allen Lazard",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Ladd McConkey",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Quentin Johnston",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Jauan Jennings",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Zach Ertz",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Buccaneers D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Phil Torres"
+            ]
+          },
+          {
+            "player": "Mike Gesicki",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Ray Engleking"
+            ]
+          },
+          {
+            "player": "Packers D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Randell Crawford",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Rico Dowdle",
+            "teamCount": 2,
+            "teams": [
+              "john crawford",
+              "Ben Bingert"
+            ]
+          },
+          {
+            "player": "Tyrone Tracy Jr.",
+            "teamCount": 2,
+            "teams": [
+              "Randell Crawford",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Tyler Bass",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Joe Jaramillo"
+            ]
+          },
+          {
+            "player": "Commanders D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "john crawford"
+            ]
+          },
+          {
+            "player": "Devin Singletary",
+            "teamCount": 2,
+            "teams": [
+              "Phil Torres",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Justin Tucker",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Phil Torres"
+            ]
+          },
+          {
+            "player": "Tank Bigsby",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Will Reichard",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Jakobi Meyers",
+            "teamCount": 2,
+            "teams": [
+              "Joe Jaramillo",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Tank Dell",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Joe Jaramillo"
+            ]
+          },
+          {
+            "player": "Romeo Doubs",
+            "teamCount": 2,
+            "teams": [
+              "John Artiglier",
+              "Ben Bingert"
+            ]
+          },
+          {
+            "player": "Bo Nix",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Joe Jaramillo"
+            ]
+          },
+          {
+            "player": "Cade Otton",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Giants D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "john crawford"
+            ]
+          },
+          {
+            "player": "Jonnu Smith",
+            "teamCount": 2,
+            "teams": [
+              "Randell Crawford",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Will Dissly",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Dolphins D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Spencer Shrader",
+            "teamCount": 2,
+            "teams": [
+              "Joe Jaramillo",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Wil Lutz",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Ameer Abdullah",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Ray Engleking"
+            ]
+          },
+          {
+            "player": "Colts D/ST",
+            "teamCount": 2,
+            "teams": [
+              "John Artiglier",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Nick Westbrook-Ikhine",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Carl Cummins"
+            ]
+          }
+        ],
+        "teamTally": {
+          "Randell Crawford": 6,
+          "Phil Torres": 3,
+          "Bill Solecki": 12,
+          "Carl Cummins": 10,
+          "john crawford": 5,
+          "Ray Engleking": 5,
+          "John Artiglier": 3,
+          "Ben Bingert": 3,
+          "Mike Kovacs": 8,
+          "Joe Jaramillo": 4
+        },
+        "sameWeekAddsFlagged": 1
+      },
+      "2025": {
+        "players": [
+          {
+            "player": "Chargers D/ST",
+            "teamCount": 4,
+            "teams": [
+              "Ben Bingert",
+              "Ray Engleking",
+              "Carl Cummins",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Packers D/ST",
+            "teamCount": 3,
+            "teams": [
+              "john crawford",
+              "Bill Solecki",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Troy Franklin",
+            "teamCount": 3,
+            "teams": [
+              "Mike Kovacs",
+              "Joe Jaramillo",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Matt Prater",
+            "teamCount": 3,
+            "teams": [
+              "Bill Solecki",
+              "Phil Torres",
+              "Ben Bingert"
+            ]
+          },
+          {
+            "player": "Kyle Pitts Sr.",
+            "teamCount": 3,
+            "teams": [
+              "John Artiglier",
+              "Bill Solecki",
+              "Ben Bingert"
+            ]
+          },
+          {
+            "player": "Commanders D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Ben Bingert"
+            ]
+          },
+          {
+            "player": "Ollie Gordon II",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Juwan Johnson",
+            "teamCount": 2,
+            "teams": [
+              "Randell Crawford",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Hollywood Brown",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Wil Lutz",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Ray Engleking"
+            ]
+          },
+          {
+            "player": "Rams D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Kareem Hunt",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Quentin Johnston",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Buccaneers D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "john crawford"
+            ]
+          },
+          {
+            "player": "Darnell Mooney",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "john crawford"
+            ]
+          },
+          {
+            "player": "Cam Skattebo",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Jordan Love",
+            "teamCount": 2,
+            "teams": [
+              "Joe Jaramillo",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Jerry Jeudy",
+            "teamCount": 2,
+            "teams": [
+              "John Artiglier",
+              "Ben Bingert"
+            ]
+          },
+          {
+            "player": "Falcons D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "john crawford"
+            ]
+          },
+          {
+            "player": "Wan'Dale Robinson",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Joe Jaramillo"
+            ]
+          },
+          {
+            "player": "Bhayshul Tuten",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Quinshon Judkins",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Mark Andrews",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "john crawford"
+            ]
+          },
+          {
+            "player": "Jauan Jennings",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Phil Torres"
+            ]
+          },
+          {
+            "player": "Tyjae Spears",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Emari Demercado",
+            "teamCount": 2,
+            "teams": [
+              "John Artiglier",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Brock Purdy",
+            "teamCount": 2,
+            "teams": [
+              "Phil Torres",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Jaguars D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Phil Torres",
+              "Carl Cummins"
+            ]
+          },
+          {
+            "player": "Harold Fannin Jr.",
+            "teamCount": 2,
+            "teams": [
+              "Joe Jaramillo",
+              "Randell Crawford"
+            ]
+          },
+          {
+            "player": "Emanuel Wilson",
+            "teamCount": 2,
+            "teams": [
+              "John Artiglier",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Kenneth Gainwell",
+            "teamCount": 2,
+            "teams": [
+              "Ray Engleking",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Bears D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Joe Jaramillo",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Kyle Monangai",
+            "teamCount": 2,
+            "teams": [
+              "Phil Torres",
+              "Ben Bingert"
+            ]
+          },
+          {
+            "player": "Ka'imi Fairbairn",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Blake Corum",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Carl Cummins"
+            ]
+          }
+        ],
+        "teamTally": {
+          "Ben Bingert": 5,
+          "Mike Kovacs": 6,
+          "Bill Solecki": 11,
+          "Ray Engleking": 2,
+          "Randell Crawford": 3,
+          "john crawford": 4,
+          "John Artiglier": 3,
+          "Joe Jaramillo": 2,
+          "Phil Torres": 2,
+          "Carl Cummins": 3
+        },
+        "sameWeekAddsFlagged": 0
+      }
+    },
+    "allTimeTeamTally": {
+      "Ray Engleking": 33,
+      "John Artiglier": 35,
+      "Carl Cummins": 44,
+      "Ben Bingert": 29,
+      "Bill Solecki": 65,
+      "Mike Kovacs": 48,
+      "Phil Torres": 31,
+      "Randell Crawford": 35,
+      "Joe Jaramillo": 13,
+      "john crawford": 10
+    },
+    "allTimeSameWeekAddsFlagged": 4
+  },
+  "regularSeasonOnly": {
+    "leagueWideMostDropped": {
+      "2018": [
+        {
+          "player": "Chris Carson",
+          "count": 3
+        },
+        {
+          "player": "Mason Crosby",
+          "count": 3
+        },
+        {
+          "player": "Adam Vinatieri",
+          "count": 3
+        }
+      ],
+      "2019": [
+        {
+          "player": "Jake Elliott",
+          "count": 3
+        },
+        {
+          "player": "Will Fuller V",
+          "count": 3
+        },
+        {
+          "player": "O.J. Howard",
+          "count": 3
+        }
+      ],
+      "2020": [
+        {
+          "player": "Buccaneers D/ST",
+          "count": 3
+        },
+        {
+          "player": "Colts D/ST",
+          "count": 3
+        },
+        {
+          "player": "Saints D/ST",
+          "count": 3
+        }
+      ],
+      "2021": [
+        {
+          "player": "Chuba Hubbard",
+          "count": 3
+        },
+        {
+          "player": "Kenyan Drake",
+          "count": 3
+        },
+        {
+          "player": "Jakobi Meyers",
+          "count": 3
+        }
+      ],
+      "2022": [
+        {
+          "player": "Packers D/ST",
+          "count": 3
+        },
+        {
+          "player": "Gerald Everett",
+          "count": 3
+        },
+        {
+          "player": "Titans D/ST",
+          "count": 3
+        }
+      ],
+      "2023": [
+        {
+          "player": "Jets D/ST",
+          "count": 4
+        },
+        {
+          "player": "Trevor Lawrence",
+          "count": 4
+        },
+        {
+          "player": "Deshaun Watson",
+          "count": 3
+        }
+      ],
+      "2024": [
+        {
+          "player": "Saints D/ST",
+          "count": 4
+        },
+        {
+          "player": "Eagles D/ST",
+          "count": 3
+        },
+        {
+          "player": "Chiefs D/ST",
+          "count": 3
+        }
+      ],
+      "2025": [
+        {
+          "player": "Chargers D/ST",
+          "count": 4
+        },
+        {
+          "player": "Kyle Pitts Sr.",
+          "count": 3
+        },
+        {
+          "player": "Harrison Butker",
+          "count": 2
+        }
+      ]
+    },
+    "perTeamMostDropped": {
+      "2018": null,
+      "2019": {
+        "Bill Solecki": [
+          {
+            "player": "Jake Elliott",
+            "count": 3
+          },
+          {
+            "player": "Will Fuller V",
+            "count": 3
+          },
+          {
+            "player": "Adrian Peterson",
+            "count": 2
+          }
+        ],
+        "John Artiglier": [
+          {
+            "player": "T.J. Hockenson",
+            "count": 2
+          },
+          {
+            "player": "Mike Davis",
+            "count": 1
+          },
+          {
+            "player": "Quincy Enunwa",
+            "count": 1
+          }
+        ],
+        "Randell Crawford": [
+          {
+            "player": "Lamar Miller",
+            "count": 1
+          },
+          {
+            "player": "O.J. Howard",
+            "count": 1
+          },
+          {
+            "player": "Jaylen Samuels",
+            "count": 1
+          }
+        ],
+        "Carl Cummins": [
+          {
+            "player": "Jordan Howard",
+            "count": 2
+          },
+          {
+            "player": "Donte Moncrief",
+            "count": 1
+          },
+          {
+            "player": "Kenyan Drake",
+            "count": 1
+          }
+        ],
+        "Ben Bingert": [
+          {
+            "player": "Royce Freeman",
+            "count": 1
+          },
+          {
+            "player": "Eric Ebron",
+            "count": 1
+          },
+          {
+            "player": "Philip Rivers",
+            "count": 1
+          }
+        ],
+        "Ray Engleking": [
+          {
+            "player": "Jaguars D/ST",
+            "count": 2
+          },
+          {
+            "player": "Matt Ryan",
+            "count": 1
+          },
+          {
+            "player": "Darrell Henderson Jr.",
+            "count": 1
+          }
+        ],
+        "Mike Kovacs": [
+          {
+            "player": "Marvin Jones Jr.",
+            "count": 2
+          },
+          {
+            "player": "Jaylen Samuels",
+            "count": 2
+          },
+          {
+            "player": "Eagles D/ST",
+            "count": 1
+          }
+        ],
+        "Phil Torres": [
+          {
+            "player": "Tarik Cohen",
+            "count": 1
+          },
+          {
+            "player": "Sammy Watkins",
+            "count": 1
+          },
+          {
+            "player": "Baker Mayfield",
+            "count": 1
+          }
+        ]
+      },
+      "2020": {
+        "Bill Solecki": [
+          {
+            "player": "Patriots D/ST",
+            "count": 2
+          },
+          {
+            "player": "Ryan Succop",
+            "count": 2
+          },
+          {
+            "player": "Saints D/ST",
+            "count": 2
+          }
+        ],
+        "John Artiglier": [
+          {
+            "player": "Buccaneers D/ST",
+            "count": 1
+          },
+          {
+            "player": "Jerry Jeudy",
+            "count": 1
+          },
+          {
+            "player": "Cam Akers",
+            "count": 1
+          }
+        ],
+        "Ben Bingert": [
+          {
+            "player": "Geno Smith",
+            "count": 1
+          },
+          {
+            "player": "Nyheim Hines",
+            "count": 1
+          },
+          {
+            "player": "Dolphins D/ST",
+            "count": 1
+          }
+        ],
+        "Mike Kovacs": [
+          {
+            "player": "Chris Thompson",
+            "count": 1
+          },
+          {
+            "player": "Jordan Howard",
+            "count": 1
+          },
+          {
+            "player": "Boston Scott",
+            "count": 1
+          }
+        ],
+        "Ray Engleking": [
+          {
+            "player": "Buccaneers D/ST",
+            "count": 2
+          },
+          {
+            "player": "Mecole Hardman",
+            "count": 1
+          },
+          {
+            "player": "Colts D/ST",
+            "count": 1
+          }
+        ],
+        "Randell Crawford": [
+          {
+            "player": "Carson Wentz",
+            "count": 2
+          },
+          {
+            "player": "Darrell Henderson Jr.",
+            "count": 1
+          },
+          {
+            "player": "Saints D/ST",
+            "count": 1
+          }
+        ],
+        "Carl Cummins": [
+          {
+            "player": "JaMycal Hasty",
+            "count": 2
+          },
+          {
+            "player": "Kerryon Johnson",
+            "count": 1
+          },
+          {
+            "player": "James White",
+            "count": 1
+          }
+        ],
+        "Phil Torres": [
+          {
+            "player": "Phillip Lindsay",
+            "count": 1
+          },
+          {
+            "player": "Harrison Butker",
+            "count": 1
+          },
+          {
+            "player": "Tom Brady",
+            "count": 1
+          }
+        ]
+      },
+      "2021": {
+        "Ray Engleking": [
+          {
+            "player": "Bengals D/ST",
+            "count": 2
+          },
+          {
+            "player": "Gus Edwards",
+            "count": 1
+          },
+          {
+            "player": "Laviska Shenault Jr.",
+            "count": 1
+          }
+        ],
+        "Bill Solecki": [
+          {
+            "player": "Chuba Hubbard",
+            "count": 2
+          },
+          {
+            "player": "Kenyan Drake",
+            "count": 2
+          },
+          {
+            "player": "Panthers D/ST",
+            "count": 2
+          }
+        ],
+        "Ben Bingert": [
+          {
+            "player": "Tim Tebow",
+            "count": 1
+          },
+          {
+            "player": "Sam Darnold",
+            "count": 1
+          },
+          {
+            "player": "Jared Cook",
+            "count": 1
+          }
+        ],
+        "Carl Cummins": [
+          {
+            "player": "Alex Collins",
+            "count": 2
+          },
+          {
+            "player": "Devonta Freeman",
+            "count": 2
+          },
+          {
+            "player": "Younghoe Koo",
+            "count": 1
+          }
+        ],
+        "Randell Crawford": [
+          {
+            "player": "Ravens D/ST",
+            "count": 2
+          },
+          {
+            "player": "Michael Pittman Jr.",
+            "count": 1
+          },
+          {
+            "player": "James Conner",
+            "count": 1
+          }
+        ],
+        "Phil Torres": [
+          {
+            "player": "Robert Tonyan",
+            "count": 1
+          },
+          {
+            "player": "Jason Sanders",
+            "count": 1
+          },
+          {
+            "player": "Kenyan Drake",
+            "count": 1
+          }
+        ],
+        "John Artiglier": [
+          {
+            "player": "Dallas Goedert",
+            "count": 1
+          },
+          {
+            "player": "Commanders D/ST",
+            "count": 1
+          },
+          {
+            "player": "Brandon Aiyuk",
+            "count": 1
+          }
+        ],
+        "Mike Kovacs": [
+          {
+            "player": "49ers D/ST",
+            "count": 2
+          },
+          {
+            "player": "Elijah Mitchell",
+            "count": 1
+          },
+          {
+            "player": "Titans D/ST",
+            "count": 1
+          }
+        ]
+      },
+      "2022": {
+        "John Artiglier": [
+          {
+            "player": "Rodrigo Blankenship",
+            "count": 2
+          },
+          {
+            "player": "Broncos D/ST",
+            "count": 2
+          },
+          {
+            "player": "Seahawks D/ST",
+            "count": 2
+          }
+        ],
+        "Bill Solecki": [
+          {
+            "player": "Buccaneers D/ST",
+            "count": 2
+          },
+          {
+            "player": "Tanner Conner",
+            "count": 1
+          },
+          {
+            "player": "Dameon Pierce",
+            "count": 1
+          }
+        ],
+        "Randell Crawford": [
+          {
+            "player": "Wan'Dale Robinson",
+            "count": 2
+          },
+          {
+            "player": "Elijah Moore",
+            "count": 1
+          },
+          {
+            "player": "Albert Okwuegbunam",
+            "count": 1
+          }
+        ],
+        "Carl Cummins": [
+          {
+            "player": "Saints D/ST",
+            "count": 2
+          },
+          {
+            "player": "Jimmy Garoppolo",
+            "count": 2
+          },
+          {
+            "player": "Rams D/ST",
+            "count": 1
+          }
+        ],
+        "Mike Kovacs": [
+          {
+            "player": "Colts D/ST",
+            "count": 2
+          },
+          {
+            "player": "Adam Thielen",
+            "count": 2
+          },
+          {
+            "player": "Dolphins D/ST",
+            "count": 2
+          }
+        ],
+        "Ray Engleking": [
+          {
+            "player": "Aaron Rodgers",
+            "count": 1
+          },
+          {
+            "player": "Rams D/ST",
+            "count": 1
+          },
+          {
+            "player": "Packers D/ST",
+            "count": 1
+          }
+        ],
+        "Ben Bingert": [
+          {
+            "player": "JuJu Smith-Schuster",
+            "count": 1
+          },
+          {
+            "player": "Dawson Knox",
+            "count": 1
+          },
+          {
+            "player": "Brandon McManus",
+            "count": 1
+          }
+        ],
+        "Phil Torres": [
+          {
+            "player": "Baker Mayfield",
+            "count": 1
+          },
+          {
+            "player": "Darren Waller",
+            "count": 1
+          },
+          {
+            "player": "Titans D/ST",
+            "count": 1
+          }
+        ]
+      },
+      "2023": {
+        "Joe Jaramillo": [
+          {
+            "player": "Van Jefferson",
+            "count": 1
+          },
+          {
+            "player": "Kirk Cousins",
+            "count": 1
+          },
+          {
+            "player": "Dalton Schultz",
+            "count": 1
+          }
+        ],
+        "Ben Bingert": [
+          {
+            "player": "Patriots D/ST",
+            "count": 1
+          },
+          {
+            "player": "Devin Singletary",
+            "count": 1
+          },
+          {
+            "player": "Marvin Jones Jr.",
+            "count": 1
+          }
+        ],
+        "Bill Solecki": [
+          {
+            "player": "Deshaun Watson",
+            "count": 2
+          },
+          {
+            "player": "Josh Reynolds",
+            "count": 2
+          },
+          {
+            "player": "Jets D/ST",
+            "count": 2
+          }
+        ],
+        "Mike Kovacs": [
+          {
+            "player": "Jordan Addison",
+            "count": 1
+          },
+          {
+            "player": "Antonio Gibson",
+            "count": 1
+          },
+          {
+            "player": "Van Jefferson",
+            "count": 1
+          }
+        ],
+        "john crawford": [
+          {
+            "player": "Michael Gallup",
+            "count": 1
+          },
+          {
+            "player": "Gerald Everett",
+            "count": 1
+          },
+          {
+            "player": "Marquez Valdes-Scantling",
+            "count": 1
+          }
+        ],
+        "Ray Engleking": [
+          {
+            "player": "Jets D/ST",
+            "count": 2
+          },
+          {
+            "player": "Buccaneers D/ST",
+            "count": 2
+          },
+          {
+            "player": "Treylon Burks",
+            "count": 1
+          }
+        ],
+        "Carl Cummins": [
+          {
+            "player": "D'Onta Foreman",
+            "count": 2
+          },
+          {
+            "player": "Drake London",
+            "count": 1
+          },
+          {
+            "player": "JuJu Smith-Schuster",
+            "count": 1
+          }
+        ],
+        "Phil Torres": [
+          {
+            "player": "Tank Bigsby",
+            "count": 1
+          },
+          {
+            "player": "Evan Engram",
+            "count": 1
+          },
+          {
+            "player": "Matt Breida",
+            "count": 1
+          }
+        ],
+        "John Artiglier": [
+          {
+            "player": "De'Von Achane",
+            "count": 1
+          },
+          {
+            "player": "Jason Myers",
+            "count": 1
+          },
+          {
+            "player": "Jayden Reed",
+            "count": 1
+          }
+        ],
+        "Randell Crawford": [
+          {
+            "player": "Quentin Johnston",
+            "count": 1
+          },
+          {
+            "player": "Luke Musgrave",
+            "count": 1
+          },
+          {
+            "player": "Samaje Perine",
+            "count": 1
+          }
+        ]
+      },
+      "2024": {
+        "Mike Kovacs": [
+          {
+            "player": "Eagles D/ST",
+            "count": 2
+          },
+          {
+            "player": "Bengals D/ST",
+            "count": 1
+          },
+          {
+            "player": "Chargers D/ST",
+            "count": 1
+          }
+        ],
+        "Randell Crawford": [
+          {
+            "player": "Adam Thielen",
+            "count": 1
+          },
+          {
+            "player": "Kirk Cousins",
+            "count": 1
+          },
+          {
+            "player": "Chiefs D/ST",
+            "count": 1
+          }
+        ],
+        "Joe Jaramillo": [
+          {
+            "player": "Zach Charbonnet",
+            "count": 2
+          },
+          {
+            "player": "Chase Brown",
+            "count": 1
+          },
+          {
+            "player": "Dolphins D/ST",
+            "count": 1
+          }
+        ],
+        "John Artiglier": [
+          {
+            "player": "Saints D/ST",
+            "count": 1
+          },
+          {
+            "player": "Seahawks D/ST",
+            "count": 1
+          },
+          {
+            "player": "Joshua Palmer",
+            "count": 1
+          }
+        ],
+        "Ben Bingert": [
+          {
+            "player": "Rome Odunze",
+            "count": 1
+          },
+          {
+            "player": "Jaylen Warren",
+            "count": 1
+          },
+          {
+            "player": "Christian Watson",
+            "count": 1
+          }
+        ],
+        "Bill Solecki": [
+          {
+            "player": "DeAndre Hopkins",
+            "count": 2
+          },
+          {
+            "player": "Tyler Bass",
+            "count": 2
+          },
+          {
+            "player": "Khalil Herbert",
+            "count": 1
+          }
+        ],
+        "Carl Cummins": [
+          {
+            "player": "Allen Lazard",
+            "count": 1
+          },
+          {
+            "player": "Taysom Hill",
+            "count": 1
+          },
+          {
+            "player": "Mike Gesicki",
+            "count": 1
+          }
+        ],
+        "Ray Engleking": [
+          {
+            "player": "Trey Benson",
+            "count": 1
+          },
+          {
+            "player": "Daniel Jones",
+            "count": 1
+          },
+          {
+            "player": "Jake Moody",
+            "count": 1
+          }
+        ],
+        "john crawford": [
+          {
+            "player": "Austin Ekeler",
+            "count": 2
+          },
+          {
+            "player": "Rico Dowdle",
+            "count": 1
+          },
+          {
+            "player": "Tyler Badie",
+            "count": 1
+          }
+        ],
+        "Phil Torres": [
+          {
+            "player": "Jake Elliott",
+            "count": 1
+          },
+          {
+            "player": "Bengals D/ST",
+            "count": 1
+          }
+        ]
+      },
+      "2025": {
+        "john crawford": [
+          {
+            "player": "Harrison Butker",
+            "count": 1
+          },
+          {
+            "player": "Jordan Addison",
+            "count": 1
+          },
+          {
+            "player": "Lions D/ST",
+            "count": 1
+          }
+        ],
+        "Bill Solecki": [
+          {
+            "player": "Ravens D/ST",
+            "count": 2
+          },
+          {
+            "player": "Tre Tucker",
+            "count": 2
+          },
+          {
+            "player": "Bhayshul Tuten",
+            "count": 1
+          }
+        ],
+        "Ben Bingert": [
+          {
+            "player": "Jack Bech",
+            "count": 1
+          },
+          {
+            "player": "Ollie Gordon II",
+            "count": 1
+          },
+          {
+            "player": "Rams D/ST",
+            "count": 1
+          }
+        ],
+        "Mike Kovacs": [
+          {
+            "player": "Marvin Mims Jr.",
+            "count": 1
+          },
+          {
+            "player": "Xavier Legette",
+            "count": 1
+          },
+          {
+            "player": "Austin Ekeler",
+            "count": 1
+          }
+        ],
+        "Randell Crawford": [
+          {
+            "player": "Elijah Arroyo",
+            "count": 1
+          },
+          {
+            "player": "Tank Bigsby",
+            "count": 1
+          },
+          {
+            "player": "Juwan Johnson",
+            "count": 1
+          }
+        ],
+        "Ray Engleking": [
+          {
+            "player": "Cam Skattebo",
+            "count": 1
+          },
+          {
+            "player": "Caleb Williams",
+            "count": 1
+          },
+          {
+            "player": "Khalil Shakir",
+            "count": 1
+          }
+        ],
+        "John Artiglier": [
+          {
+            "player": "Josh Downs",
+            "count": 1
+          },
+          {
+            "player": "Kayshon Boutte",
+            "count": 1
+          },
+          {
+            "player": "Jerry Jeudy",
+            "count": 1
+          }
+        ],
+        "Joe Jaramillo": [
+          {
+            "player": "Nick Chubb",
+            "count": 2
+          },
+          {
+            "player": "Colston Loveland",
+            "count": 1
+          },
+          {
+            "player": "Michael Penix Jr.",
+            "count": 1
+          }
+        ],
+        "Carl Cummins": [
+          {
+            "player": "Jerome Ford",
+            "count": 1
+          },
+          {
+            "player": "Evan Engram",
+            "count": 1
+          },
+          {
+            "player": "James Conner",
+            "count": 1
+          }
+        ],
+        "Phil Torres": [
+          {
+            "player": "Isiah Pacheco",
+            "count": 1
+          },
+          {
+            "player": "Travis Hunter",
+            "count": 1
+          },
+          {
+            "player": "Cairo Santos",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "sloppySeconds": {
+      "byYear": {
+        "2018": null,
+        "2019": {
+          "players": [
+            {
+              "player": "Jameis Winston",
+              "teamCount": 3,
+              "teams": [
+                "Bill Solecki",
+                "Ray Engleking",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Chris Thompson",
+              "teamCount": 3,
+              "teams": [
+                "Ben Bingert",
+                "Bill Solecki",
+                "Phil Torres"
+              ]
+            },
+            {
+              "player": "Matt Gay",
+              "teamCount": 3,
+              "teams": [
+                "Carl Cummins",
+                "Ben Bingert",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Dak Prescott",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Carl Cummins"
+              ]
+            },
+            {
+              "player": "Eagles D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "Ben Bingert"
+              ]
+            },
+            {
+              "player": "Michael Badgley",
+              "teamCount": 2,
+              "teams": [
+                "John Artiglier",
+                "Ray Engleking"
+              ]
+            },
+            {
+              "player": "Marvin Jones Jr.",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Browns D/ST",
+              "teamCount": 2,
+              "teams": [
+                "John Artiglier",
+                "Ben Bingert"
+              ]
+            },
+            {
+              "player": "Emmanuel Sanders",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Philip Rivers",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Adrian Peterson",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Phil Torres"
+              ]
+            },
+            {
+              "player": "Jamison Crowder",
+              "teamCount": 2,
+              "teams": [
+                "Ray Engleking",
+                "Carl Cummins"
+              ]
+            },
+            {
+              "player": "Bills D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Ray Engleking",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "O.J. Howard",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "T.J. Hockenson",
+              "teamCount": 2,
+              "teams": [
+                "John Artiglier",
+                "Ray Engleking"
+              ]
+            },
+            {
+              "player": "Josh Allen",
+              "teamCount": 2,
+              "teams": [
+                "Ray Engleking",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Joey Slye",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Greg Olsen",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Cowboys D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Packers D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Ray Engleking",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Stefon Diggs",
+              "teamCount": 2,
+              "teams": [
+                "John Artiglier",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Titans D/ST",
+              "teamCount": 2,
+              "teams": [
+                "John Artiglier",
+                "Ray Engleking"
+              ]
+            },
+            {
+              "player": "Marquise Brown",
+              "teamCount": 2,
+              "teams": [
+                "Ray Engleking",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Zane Gonzalez",
+              "teamCount": 2,
+              "teams": [
+                "Ray Engleking",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Daniel Jones",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Steelers D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Carl Cummins"
+              ]
+            },
+            {
+              "player": "Jordan Howard",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Ray Engleking"
+              ]
+            },
+            {
+              "player": "Golden Tate",
+              "teamCount": 2,
+              "teams": [
+                "Ray Engleking",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Jaylen Samuels",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "Carl Cummins"
+              ]
+            },
+            {
+              "player": "Kenyan Drake",
+              "teamCount": 2,
+              "teams": [
+                "Phil Torres",
+                "Ray Engleking"
+              ]
+            },
+            {
+              "player": "Ravens D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Michael Gallup",
+              "teamCount": 2,
+              "teams": [
+                "Ray Engleking",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Aaron Rodgers",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "Carl Cummins"
+              ]
+            },
+            {
+              "player": "Seahawks D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "Ray Engleking"
+              ]
+            },
+            {
+              "player": "Kyler Murray",
+              "teamCount": 2,
+              "teams": [
+                "Ray Engleking",
+                "Carl Cummins"
+              ]
+            },
+            {
+              "player": "Devin Singletary",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Ray Engleking"
+              ]
+            }
+          ],
+          "teamTally": {
+            "Ray Engleking": 8,
+            "John Artiglier": 6,
+            "Carl Cummins": 6,
+            "Ben Bingert": 3,
+            "Mike Kovacs": 3,
+            "Bill Solecki": 5,
+            "Phil Torres": 2,
+            "Randell Crawford": 5
+          },
+          "sameWeekAddsFlagged": 1
+        },
+        "2020": {
+          "players": [
+            {
+              "player": "Nyheim Hines",
+              "teamCount": 3,
+              "teams": [
+                "Ben Bingert",
+                "Mike Kovacs",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Dallas Goedert",
+              "teamCount": 3,
+              "teams": [
+                "John Artiglier",
+                "Mike Kovacs",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Chiefs D/ST",
+              "teamCount": 3,
+              "teams": [
+                "Ray Engleking",
+                "Bill Solecki",
+                "Ben Bingert"
+              ]
+            },
+            {
+              "player": "Younghoe Koo",
+              "teamCount": 3,
+              "teams": [
+                "Mike Kovacs",
+                "Bill Solecki",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Mike Davis",
+              "teamCount": 3,
+              "teams": [
+                "Mike Kovacs",
+                "Phil Torres",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Hayden Hurst",
+              "teamCount": 3,
+              "teams": [
+                "Bill Solecki",
+                "Mike Kovacs",
+                "Phil Torres"
+              ]
+            },
+            {
+              "player": "Rams D/ST",
+              "teamCount": 3,
+              "teams": [
+                "Carl Cummins",
+                "John Artiglier",
+                "Ray Engleking"
+              ]
+            },
+            {
+              "player": "Dolphins D/ST",
+              "teamCount": 3,
+              "teams": [
+                "Ben Bingert",
+                "Bill Solecki",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Eagles D/ST",
+              "teamCount": 2,
+              "teams": [
+                "John Artiglier",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Boston Scott",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "Ray Engleking"
+              ]
+            },
+            {
+              "player": "Adrian Peterson",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Emmanuel Sanders",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "Carl Cummins"
+              ]
+            },
+            {
+              "player": "Devonta Freeman",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Carl Cummins"
+              ]
+            },
+            {
+              "player": "John Brown",
+              "teamCount": 2,
+              "teams": [
+                "Ray Engleking",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Colts D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Phil Torres"
+              ]
+            },
+            {
+              "player": "Mike Gesicki",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Ray Engleking"
+              ]
+            },
+            {
+              "player": "Marquez Valdes-Scantling",
+              "teamCount": 2,
+              "teams": [
+                "Ray Engleking",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Carlos Hyde",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "T.J. Hockenson",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "Ray Engleking"
+              ]
+            },
+            {
+              "player": "Justin Herbert",
+              "teamCount": 2,
+              "teams": [
+                "John Artiglier",
+                "Carl Cummins"
+              ]
+            },
+            {
+              "player": "Harrison Butker",
+              "teamCount": 2,
+              "teams": [
+                "Phil Torres",
+                "Ray Engleking"
+              ]
+            },
+            {
+              "player": "Robert Tonyan",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Washington D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Ray Engleking",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Wil Lutz",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "Carl Cummins"
+              ]
+            },
+            {
+              "player": "Giovani Bernard",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Ben Bingert"
+              ]
+            },
+            {
+              "player": "Jarvis Landry",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Mike Williams",
+              "teamCount": 2,
+              "teams": [
+                "Phil Torres",
+                "Carl Cummins"
+              ]
+            }
+          ],
+          "teamTally": {
+            "Mike Kovacs": 5,
+            "Ray Engleking": 5,
+            "Randell Crawford": 6,
+            "Bill Solecki": 5,
+            "Carl Cummins": 4,
+            "Ben Bingert": 2,
+            "Phil Torres": 3,
+            "John Artiglier": 4
+          },
+          "sameWeekAddsFlagged": 1
+        },
+        "2021": {
+          "players": [
+            {
+              "player": "Jakobi Meyers",
+              "teamCount": 3,
+              "teams": [
+                "Bill Solecki",
+                "Phil Torres",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Patriots D/ST",
+              "teamCount": 3,
+              "teams": [
+                "Randell Crawford",
+                "Ray Engleking",
+                "Phil Torres"
+              ]
+            },
+            {
+              "player": "Daniel Carlson",
+              "teamCount": 3,
+              "teams": [
+                "Phil Torres",
+                "Mike Kovacs",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Cardinals D/ST",
+              "teamCount": 3,
+              "teams": [
+                "Carl Cummins",
+                "Mike Kovacs",
+                "Phil Torres"
+              ]
+            },
+            {
+              "player": "Titans D/ST",
+              "teamCount": 3,
+              "teams": [
+                "Mike Kovacs",
+                "Randell Crawford",
+                "Ben Bingert"
+              ]
+            },
+            {
+              "player": "Chuba Hubbard",
+              "teamCount": 3,
+              "teams": [
+                "Carl Cummins",
+                "Ray Engleking",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Tua Tagovailoa",
+              "teamCount": 3,
+              "teams": [
+                "Carl Cummins",
+                "Bill Solecki",
+                "Ben Bingert"
+              ]
+            },
+            {
+              "player": "Odell Beckham Jr.",
+              "teamCount": 3,
+              "teams": [
+                "Bill Solecki",
+                "Carl Cummins",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Dolphins D/ST",
+              "teamCount": 3,
+              "teams": [
+                "Carl Cummins",
+                "Bill Solecki",
+                "Ben Bingert"
+              ]
+            },
+            {
+              "player": "Broncos D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Kenyan Drake",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Phil Torres"
+              ]
+            },
+            {
+              "player": "Latavius Murray",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Elijah Mitchell",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Tony Pollard",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Panthers D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Christian Kirk",
+              "teamCount": 2,
+              "teams": [
+                "Ray Engleking",
+                "Carl Cummins"
+              ]
+            },
+            {
+              "player": "Saints D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Ray Engleking"
+              ]
+            },
+            {
+              "player": "Alex Collins",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Phil Torres"
+              ]
+            },
+            {
+              "player": "Samaje Perine",
+              "teamCount": 2,
+              "teams": [
+                "Ray Engleking",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Tyler Higbee",
+              "teamCount": 2,
+              "teams": [
+                "Ray Engleking",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Graham Gano",
+              "teamCount": 2,
+              "teams": [
+                "Randell Crawford",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Joe Burrow",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Chris Boswell",
+              "teamCount": 2,
+              "teams": [
+                "John Artiglier",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Darrel Williams",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Ryan Tannehill",
+              "teamCount": 2,
+              "teams": [
+                "Ray Engleking",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Darnell Mooney",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Carl Cummins"
+              ]
+            },
+            {
+              "player": "Mason Crosby",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "Phil Torres"
+              ]
+            },
+            {
+              "player": "Ravens D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Randell Crawford",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Javonte Williams",
+              "teamCount": 2,
+              "teams": [
+                "Ray Engleking",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Carson Wentz",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Jeff Wilson Jr.",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Harrison Butker",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Devonta Freeman",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Mike Kovacs"
+              ]
+            }
+          ],
+          "teamTally": {
+            "John Artiglier": 7,
+            "Phil Torres": 6,
+            "Mike Kovacs": 9,
+            "Ray Engleking": 3,
+            "Randell Crawford": 5,
+            "Ben Bingert": 3,
+            "Carl Cummins": 3,
+            "Bill Solecki": 6
+          },
+          "sameWeekAddsFlagged": 0
+        },
+        "2022": {
+          "players": [
+            {
+              "player": "Graham Gano",
+              "teamCount": 4,
+              "teams": [
+                "Ben Bingert",
+                "John Artiglier",
+                "Carl Cummins",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Garrett Wilson",
+              "teamCount": 3,
+              "teams": [
+                "Ray Engleking",
+                "Ben Bingert",
+                "Carl Cummins"
+              ]
+            },
+            {
+              "player": "Tyler Higbee",
+              "teamCount": 3,
+              "teams": [
+                "Mike Kovacs",
+                "Bill Solecki",
+                "Carl Cummins"
+              ]
+            },
+            {
+              "player": "Dawson Knox",
+              "teamCount": 3,
+              "teams": [
+                "Ben Bingert",
+                "John Artiglier",
+                "Phil Torres"
+              ]
+            },
+            {
+              "player": "Gerald Everett",
+              "teamCount": 3,
+              "teams": [
+                "Carl Cummins",
+                "Ben Bingert",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Titans D/ST",
+              "teamCount": 3,
+              "teams": [
+                "Carl Cummins",
+                "Phil Torres",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Harrison Butker",
+              "teamCount": 3,
+              "teams": [
+                "Ben Bingert",
+                "Ray Engleking",
+                "Phil Torres"
+              ]
+            },
+            {
+              "player": "Chiefs D/ST",
+              "teamCount": 3,
+              "teams": [
+                "Carl Cummins",
+                "Bill Solecki",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Broncos D/ST",
+              "teamCount": 2,
+              "teams": [
+                "John Artiglier",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Rashaad Penny",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Rams D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Ray Engleking"
+              ]
+            },
+            {
+              "player": "Brandon McManus",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Michael Carter",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Dallas Goedert",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "Carl Cummins"
+              ]
+            },
+            {
+              "player": "Zay Jones",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Dolphins D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "Ben Bingert"
+              ]
+            },
+            {
+              "player": "Younghoe Koo",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "J.K. Dobbins",
+              "teamCount": 2,
+              "teams": [
+                "Ray Engleking",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Packers D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Taysom Hill",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Hayden Hurst",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Phil Torres"
+              ]
+            },
+            {
+              "player": "Jakobi Meyers",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Brandon Aiyuk",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Brett Maher",
+              "teamCount": 2,
+              "teams": [
+                "Randell Crawford",
+                "Carl Cummins"
+              ]
+            },
+            {
+              "player": "Allen Lazard",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Brian Robinson Jr.",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Dak Prescott",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "D'Onta Foreman",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Adam Thielen",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "Ben Bingert"
+              ]
+            },
+            {
+              "player": "Kirk Cousins",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Jason Myers",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Greg Dulcich",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Phil Torres"
+              ]
+            },
+            {
+              "player": "Joshua Palmer",
+              "teamCount": 2,
+              "teams": [
+                "Randell Crawford",
+                "Ben Bingert"
+              ]
+            },
+            {
+              "player": "Seahawks D/ST",
+              "teamCount": 2,
+              "teams": [
+                "John Artiglier",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Christian Watson",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Samaje Perine",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Bill Solecki"
+              ]
+            }
+          ],
+          "teamTally": {
+            "Bill Solecki": 8,
+            "Mike Kovacs": 8,
+            "Ray Engleking": 2,
+            "John Artiglier": 6,
+            "Randell Crawford": 6,
+            "Carl Cummins": 5,
+            "Ben Bingert": 5,
+            "Phil Torres": 5
+          },
+          "sameWeekAddsFlagged": 0
+        },
+        "2023": {
+          "players": [
+            {
+              "player": "Taysom Hill",
+              "teamCount": 4,
+              "teams": [
+                "Ben Bingert",
+                "Mike Kovacs",
+                "Carl Cummins",
+                "Ray Engleking"
+              ]
+            },
+            {
+              "player": "Trevor Lawrence",
+              "teamCount": 4,
+              "teams": [
+                "Ben Bingert",
+                "Bill Solecki",
+                "Mike Kovacs",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Jayden Reed",
+              "teamCount": 3,
+              "teams": [
+                "John Artiglier",
+                "Bill Solecki",
+                "Carl Cummins"
+              ]
+            },
+            {
+              "player": "Jake Moody",
+              "teamCount": 3,
+              "teams": [
+                "Bill Solecki",
+                "Phil Torres",
+                "Carl Cummins"
+              ]
+            },
+            {
+              "player": "Riley Patterson",
+              "teamCount": 3,
+              "teams": [
+                "Ben Bingert",
+                "Joe Jaramillo",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Jets D/ST",
+              "teamCount": 3,
+              "teams": [
+                "Bill Solecki",
+                "Ray Engleking",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Van Jefferson",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "Joe Jaramillo"
+              ]
+            },
+            {
+              "player": "Kendrick Bourne",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Joe Jaramillo"
+              ]
+            },
+            {
+              "player": "Hunter Henry",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Ben Bingert"
+              ]
+            },
+            {
+              "player": "Kirk Cousins",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Carl Cummins"
+              ]
+            },
+            {
+              "player": "Jordan Love",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Elijah Moore",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "Phil Torres"
+              ]
+            },
+            {
+              "player": "Tank Dell",
+              "teamCount": 2,
+              "teams": [
+                "Ray Engleking",
+                "Phil Torres"
+              ]
+            },
+            {
+              "player": "Chuba Hubbard",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Luke Musgrave",
+              "teamCount": 2,
+              "teams": [
+                "Randell Crawford",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Brock Purdy",
+              "teamCount": 2,
+              "teams": [
+                "Joe Jaramillo",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Lions D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Ray Engleking",
+                "Phil Torres"
+              ]
+            },
+            {
+              "player": "C.J. Stroud",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Ben Bingert"
+              ]
+            },
+            {
+              "player": "Joshua Dobbs",
+              "teamCount": 2,
+              "teams": [
+                "John Artiglier",
+                "Carl Cummins"
+              ]
+            },
+            {
+              "player": "Deshaun Watson",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Ben Bingert"
+              ]
+            },
+            {
+              "player": "Emari Demercado",
+              "teamCount": 2,
+              "teams": [
+                "Joe Jaramillo",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Falcons D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Phil Torres",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Logan Thomas",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "Ray Engleking"
+              ]
+            },
+            {
+              "player": "Vikings D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Randell Crawford",
+                "Ben Bingert"
+              ]
+            },
+            {
+              "player": "D'Onta Foreman",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Joe Jaramillo"
+              ]
+            },
+            {
+              "player": "Matthew Stafford",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Joe Jaramillo"
+              ]
+            },
+            {
+              "player": "Zach Charbonnet",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "Joe Jaramillo"
+              ]
+            },
+            {
+              "player": "Seahawks D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Geno Smith",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Phil Torres"
+              ]
+            },
+            {
+              "player": "Jason Myers",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Carl Cummins"
+              ]
+            },
+            {
+              "player": "Brandon McManus",
+              "teamCount": 2,
+              "teams": [
+                "Ray Engleking",
+                "john crawford"
+              ]
+            },
+            {
+              "player": "Patriots D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Phil Torres"
+              ]
+            },
+            {
+              "player": "Josh Downs",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Saints D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Nick Folk",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Keaton Mitchell",
+              "teamCount": 2,
+              "teams": [
+                "Ray Engleking",
+                "Bill Solecki"
+              ]
+            }
+          ],
+          "teamTally": {
+            "Bill Solecki": 8,
+            "Carl Cummins": 6,
+            "Joe Jaramillo": 5,
+            "Ben Bingert": 4,
+            "Mike Kovacs": 5,
+            "Ray Engleking": 3,
+            "Phil Torres": 6,
+            "John Artiglier": 4,
+            "Randell Crawford": 1,
+            "john crawford": 1
+          },
+          "sameWeekAddsFlagged": 1
+        },
+        "2024": {
+          "players": [
+            {
+              "player": "Bengals D/ST",
+              "teamCount": 3,
+              "teams": [
+                "Mike Kovacs",
+                "Phil Torres",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Rome Odunze",
+              "teamCount": 3,
+              "teams": [
+                "Joe Jaramillo",
+                "Carl Cummins",
+                "Ben Bingert"
+              ]
+            },
+            {
+              "player": "Saints D/ST",
+              "teamCount": 3,
+              "teams": [
+                "Ben Bingert",
+                "Bill Solecki",
+                "john crawford"
+              ]
+            },
+            {
+              "player": "Chiefs D/ST",
+              "teamCount": 3,
+              "teams": [
+                "Bill Solecki",
+                "Mike Kovacs",
+                "Joe Jaramillo"
+              ]
+            },
+            {
+              "player": "Titans D/ST",
+              "teamCount": 3,
+              "teams": [
+                "Bill Solecki",
+                "Carl Cummins",
+                "john crawford"
+              ]
+            },
+            {
+              "player": "Braelon Allen",
+              "teamCount": 3,
+              "teams": [
+                "Randell Crawford",
+                "Mike Kovacs",
+                "Ray Engleking"
+              ]
+            },
+            {
+              "player": "Texans D/ST",
+              "teamCount": 3,
+              "teams": [
+                "John Artiglier",
+                "Bill Solecki",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "DeAndre Hopkins",
+              "teamCount": 3,
+              "teams": [
+                "Bill Solecki",
+                "Mike Kovacs",
+                "Carl Cummins"
+              ]
+            },
+            {
+              "player": "Jerry Jeudy",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Jameson Williams",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "Carl Cummins"
+              ]
+            },
+            {
+              "player": "Taysom Hill",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "john crawford"
+              ]
+            },
+            {
+              "player": "Khalil Shakir",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Ray Engleking"
+              ]
+            },
+            {
+              "player": "Chargers D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Matthew Stafford",
+              "teamCount": 2,
+              "teams": [
+                "Randell Crawford",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Allen Lazard",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Ladd McConkey",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Quentin Johnston",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Jauan Jennings",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Zach Ertz",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Carl Cummins"
+              ]
+            },
+            {
+              "player": "Buccaneers D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Phil Torres"
+              ]
+            },
+            {
+              "player": "Mike Gesicki",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Ray Engleking"
+              ]
+            },
+            {
+              "player": "Packers D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Randell Crawford",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Rico Dowdle",
+              "teamCount": 2,
+              "teams": [
+                "john crawford",
+                "Ben Bingert"
+              ]
+            },
+            {
+              "player": "Tyrone Tracy Jr.",
+              "teamCount": 2,
+              "teams": [
+                "Randell Crawford",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Tyler Bass",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Joe Jaramillo"
+              ]
+            },
+            {
+              "player": "Alexander Mattison",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Commanders D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "john crawford"
+              ]
+            },
+            {
+              "player": "Devin Singletary",
+              "teamCount": 2,
+              "teams": [
+                "Phil Torres",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Justin Tucker",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Phil Torres"
+              ]
+            },
+            {
+              "player": "Eagles D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Jakobi Meyers",
+              "teamCount": 2,
+              "teams": [
+                "Joe Jaramillo",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Tank Dell",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Joe Jaramillo"
+              ]
+            },
+            {
+              "player": "Jared Goff",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Bo Nix",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Joe Jaramillo"
+              ]
+            },
+            {
+              "player": "Jonnu Smith",
+              "teamCount": 2,
+              "teams": [
+                "Randell Crawford",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Will Dissly",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Spencer Shrader",
+              "teamCount": 2,
+              "teams": [
+                "Joe Jaramillo",
+                "Carl Cummins"
+              ]
+            },
+            {
+              "player": "Ameer Abdullah",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Ray Engleking"
+              ]
+            }
+          ],
+          "teamTally": {
+            "Randell Crawford": 5,
+            "Phil Torres": 3,
+            "Bill Solecki": 7,
+            "Carl Cummins": 6,
+            "john crawford": 4,
+            "Ray Engleking": 4,
+            "John Artiglier": 3,
+            "Ben Bingert": 2,
+            "Mike Kovacs": 8,
+            "Joe Jaramillo": 4
+          },
+          "sameWeekAddsFlagged": 0
+        },
+        "2025": {
+          "players": [
+            {
+              "player": "Chargers D/ST",
+              "teamCount": 4,
+              "teams": [
+                "Ben Bingert",
+                "Ray Engleking",
+                "Carl Cummins",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Packers D/ST",
+              "teamCount": 3,
+              "teams": [
+                "john crawford",
+                "Bill Solecki",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Troy Franklin",
+              "teamCount": 3,
+              "teams": [
+                "Mike Kovacs",
+                "Joe Jaramillo",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Matt Prater",
+              "teamCount": 3,
+              "teams": [
+                "Bill Solecki",
+                "Phil Torres",
+                "Ben Bingert"
+              ]
+            },
+            {
+              "player": "Kyle Pitts Sr.",
+              "teamCount": 3,
+              "teams": [
+                "John Artiglier",
+                "Bill Solecki",
+                "Ben Bingert"
+              ]
+            },
+            {
+              "player": "Commanders D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Ben Bingert"
+              ]
+            },
+            {
+              "player": "Ollie Gordon II",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Juwan Johnson",
+              "teamCount": 2,
+              "teams": [
+                "Randell Crawford",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Hollywood Brown",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Wil Lutz",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Ray Engleking"
+              ]
+            },
+            {
+              "player": "Rams D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Kareem Hunt",
+              "teamCount": 2,
+              "teams": [
+                "Ray Engleking",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Quentin Johnston",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Buccaneers D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "john crawford"
+              ]
+            },
+            {
+              "player": "Darnell Mooney",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "john crawford"
+              ]
+            },
+            {
+              "player": "Jordan Love",
+              "teamCount": 2,
+              "teams": [
+                "Joe Jaramillo",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Jerry Jeudy",
+              "teamCount": 2,
+              "teams": [
+                "John Artiglier",
+                "Ben Bingert"
+              ]
+            },
+            {
+              "player": "Falcons D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "john crawford"
+              ]
+            },
+            {
+              "player": "Wan'Dale Robinson",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Joe Jaramillo"
+              ]
+            },
+            {
+              "player": "Mark Andrews",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "john crawford"
+              ]
+            },
+            {
+              "player": "Jauan Jennings",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Phil Torres"
+              ]
+            },
+            {
+              "player": "Tyjae Spears",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Emari Demercado",
+              "teamCount": 2,
+              "teams": [
+                "John Artiglier",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Brock Purdy",
+              "teamCount": 2,
+              "teams": [
+                "Phil Torres",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Jaguars D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Phil Torres",
+                "Carl Cummins"
+              ]
+            },
+            {
+              "player": "Harold Fannin Jr.",
+              "teamCount": 2,
+              "teams": [
+                "Joe Jaramillo",
+                "Randell Crawford"
+              ]
+            },
+            {
+              "player": "Emanuel Wilson",
+              "teamCount": 2,
+              "teams": [
+                "John Artiglier",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Kenneth Gainwell",
+              "teamCount": 2,
+              "teams": [
+                "Ray Engleking",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Bears D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Joe Jaramillo",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Kyle Monangai",
+              "teamCount": 2,
+              "teams": [
+                "Phil Torres",
+                "Ben Bingert"
+              ]
+            },
+            {
+              "player": "Ka'imi Fairbairn",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Bill Solecki"
+              ]
+            }
+          ],
+          "teamTally": {
+            "Ben Bingert": 5,
+            "Mike Kovacs": 6,
+            "Bill Solecki": 8,
+            "Ray Engleking": 2,
+            "Randell Crawford": 3,
+            "john crawford": 4,
+            "John Artiglier": 3,
+            "Joe Jaramillo": 2,
+            "Phil Torres": 2,
+            "Carl Cummins": 2
+          },
+          "sameWeekAddsFlagged": 0
+        }
+      },
+      "allTimeTeamTally": {
+        "Ray Engleking": 27,
+        "John Artiglier": 33,
+        "Carl Cummins": 32,
+        "Ben Bingert": 24,
+        "Mike Kovacs": 44,
+        "Bill Solecki": 47,
+        "Phil Torres": 27,
+        "Randell Crawford": 31,
+        "Joe Jaramillo": 11,
+        "john crawford": 9
+      },
+      "allTimeSameWeekAddsFlagged": 3
+    }
+  },
+  "metadata": {
+    "transactionDataYears": "2018-2025",
+    "teamAttributionYears": "2019-2025",
+    "notes": "2013-2017: no transaction data available via ESPN API (confirmed empirically, all weeks error). 2018: league-wide most-dropped only - per-team and sloppy-seconds stats are null this season because WAIVER-type transactions have no team attribution (100% of that season's waiver moves, confirmed 0% broken in every other year 2019-2025). \"Same-week adds\" are pickups that cannot be ordered against a same-week drop from another team (scoring_period only resolves to the week) - these are excluded from team-level tallies rather than arbitrarily attributed. Top-level keys cover the full season including playoff weeks; \"regularSeasonOnly\" mirrors the same structure filtered to scoring_period <= that season's reg_season_count."
+  }
+}
