@@ -317,12 +317,12 @@
       "count": 39
     },
     "mostWeeklyLowScores": {
-      "owner": "Ray Engleking",
-      "count": 23
+      "owner": "Randell Crawford",
+      "count": 39
     },
     "mostConsolationDollars": {
-      "owner": "Phil Torres",
-      "count": 7
+      "owner": "Carl Cummins",
+      "count": 18
     }
   },
   "regularSeason": {
@@ -644,11 +644,11 @@
     },
     "mostWeeklyLowScores": {
       "owner": "Randell Crawford",
-      "count": 20
+      "count": 33
     },
     "mostConsolationDollars": {
-      "owner": "Bill Solecki",
-      "count": 5
+      "owner": "Carl Cummins",
+      "count": 14
     },
     "mostPointsAgainstSeasons": [
       {
@@ -684,34 +684,34 @@
     ],
     "fewestPointsAgainstSeasons": [
       {
-        "owner": "Randell Crawford",
-        "teamName": "oh no its John Snooooooow",
-        "year": 2015,
-        "pointsAgainst": 753.86
-      },
-      {
-        "owner": "Brian Dorward",
-        "teamName": "Plainsboro Owls",
-        "year": 2015,
-        "pointsAgainst": 779.8399999999999
-      },
-      {
-        "owner": "Ray Engleking",
-        "teamName": "Rex Grossman Fan Club",
-        "year": 2015,
-        "pointsAgainst": 791.4
-      },
-      {
-        "owner": "Mike Kovacs",
-        "teamName": "I wanta Free the NewtMan! ",
-        "year": 2015,
-        "pointsAgainst": 818.5400000000001
+        "owner": "Bill Solecki",
+        "teamName": "Bovine University Stampede",
+        "year": 2026,
+        "pointsAgainst": 179.26
       },
       {
         "owner": "Carl Cummins",
-        "teamName": "Duckman Kowalski",
-        "year": 2015,
-        "pointsAgainst": 829.78
+        "teamName": "Taylor and Travis Swift \ud83d\udc51",
+        "year": 2026,
+        "pointsAgainst": 182.02
+      },
+      {
+        "owner": "Ray Engleking",
+        "teamName": "Salty Spitoon",
+        "year": 2026,
+        "pointsAgainst": 204.72
+      },
+      {
+        "owner": "Mike Kovacs",
+        "teamName": "Chasing McBride",
+        "year": 2026,
+        "pointsAgainst": 206.16
+      },
+      {
+        "owner": "Joe Jaramillo",
+        "teamName": "OnlyIfIHadA2TE",
+        "year": 2026,
+        "pointsAgainst": 206.34
       }
     ]
   }

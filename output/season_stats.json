@@ -903,11 +903,7 @@
       "owner": null,
       "count": 0
     },
-    "bestBenchWarmers": {
-      "owner": "Mike Kovacs",
-      "teamName": "Saquonda Forever",
-      "benchPoints": 709.74
-    },
+    "bestBenchWarmers": null,
     "weeklyHighPayouts": [
       {
         "owner": "Carl Cummins",
@@ -1076,11 +1072,7 @@
       "owner": "Carl Cummins",
       "count": 1
     },
-    "bestBenchWarmers": {
-      "owner": "Phil Torres",
-      "teamName": "Go Fudge Yourselves",
-      "benchPoints": 695.3800000000001
-    },
+    "bestBenchWarmers": null,
     "weeklyHighPayouts": [
       {
         "owner": "Bill Solecki",
@@ -1278,11 +1270,7 @@
       "owner": "John Artiglier",
       "count": 2
     },
-    "bestBenchWarmers": {
-      "owner": "Ben Bingert",
-      "teamName": "Chubb Basshole",
-      "benchPoints": 820.4600000000002
-    },
+    "bestBenchWarmers": null,
     "weeklyHighPayouts": [
       {
         "owner": "Mike Kovacs",
@@ -1501,11 +1489,7 @@
       "owner": "Ray Engleking",
       "count": 1
     },
-    "bestBenchWarmers": {
-      "owner": "Ben Bingert",
-      "teamName": "Joe Burrow Tiger King",
-      "benchPoints": 884.7399999999998
-    },
+    "bestBenchWarmers": null,
     "weeklyHighPayouts": [
       {
         "owner": "Bill Solecki",
@@ -1703,11 +1687,7 @@
       "owner": "Bill Solecki",
       "count": 1
     },
-    "bestBenchWarmers": {
-      "owner": "Carl Cummins",
-      "teamName": "Taylor Swift ",
-      "benchPoints": 797.3000000000004
-    },
+    "bestBenchWarmers": null,
     "weeklyHighPayouts": [
       {
         "owner": "Carl Cummins",
@@ -1912,11 +1892,7 @@
       "owner": null,
       "count": 0
     },
-    "bestBenchWarmers": {
-      "owner": "Mike Kovacs",
-      "teamName": "Dollar Dollar Bills Y'all",
-      "benchPoints": 842.7400000000001
-    },
+    "bestBenchWarmers": null,
     "weeklyHighPayouts": [
       {
         "owner": "Ray Engleking",
@@ -2099,11 +2075,7 @@
       "owner": null,
       "count": 0
     },
-    "bestBenchWarmers": {
-      "owner": "Carl Cummins",
-      "teamName": "Taylor and Travis Swift \ud83d\udc51",
-      "benchPoints": 925.7200000000001
-    },
+    "bestBenchWarmers": null,
     "weeklyHighPayouts": [
       {
         "owner": "Ray Engleking",
@@ -2225,5 +2197,254 @@
         "place": "1st"
       }
     ]
+  },
+  "2026": {
+    "year": 2026,
+    "highestScore": {
+      "score": 147.9,
+      "team": "Paintin Peyton",
+      "owner": "john crawford",
+      "opponent": "Kraft Smack and Cheese",
+      "opponentScore": 126.04,
+      "week": 1,
+      "matchupPeriodId": 1
+    },
+    "lowestScore": {
+      "score": 73.06,
+      "team": "Insane in the  Ukraine",
+      "owner": "Randell Crawford",
+      "opponent": "Bovine University Stampede",
+      "opponentScore": 101.18,
+      "week": 2,
+      "matchupPeriodId": 2
+    },
+    "closestWin": {
+      "margin": 2.6999999999999886,
+      "winner": "Kraft Smack and Cheese",
+      "winnerOwner": "John Artiglier",
+      "winnerScore": 116.82,
+      "loser": "All You Need Is Love",
+      "loserScore": 114.12,
+      "week": 2,
+      "matchupPeriodId": 2
+    },
+    "biggestBlowout": {
+      "margin": 43.959999999999994,
+      "winner": "Taylor and Travis Swift \ud83d\udc51",
+      "winnerOwner": "Carl Cummins",
+      "winnerScore": 121.86,
+      "loser": "Paintin Peyton",
+      "loserScore": 77.9,
+      "week": 2,
+      "matchupPeriodId": 2
+    },
+    "longestWinStreak": {
+      "owner": "Carl Cummins",
+      "length": 2
+    },
+    "longestLossStreak": {
+      "owner": "Joe Jaramillo",
+      "length": 2
+    },
+    "mostWeeklyHighScores": {
+      "owner": "Joe Jaramillo",
+      "count": 12
+    },
+    "mostWeeklyLowScores": {
+      "owner": "Randell Crawford",
+      "count": 13
+    },
+    "mostConsolationDollars": {
+      "owner": "Carl Cummins",
+      "count": 12
+    },
+    "bestBenchWarmers": null,
+    "weeklyHighPayouts": [
+      {
+        "owner": "john crawford",
+        "team": "Paintin Peyton",
+        "amount": 10,
+        "week": 1,
+        "score": 147.9
+      },
+      {
+        "owner": "Carl Cummins",
+        "team": "Taylor and Travis Swift \ud83d\udc51",
+        "amount": 10,
+        "week": 2,
+        "score": 121.86
+      },
+      {
+        "owner": "Joe Jaramillo",
+        "team": "OnlyIfIHadA2TE",
+        "amount": 9,
+        "week": 3,
+        "score": 0.0
+      },
+      {
+        "owner": "Joe Jaramillo",
+        "team": "OnlyIfIHadA2TE",
+        "amount": 9,
+        "week": 4,
+        "score": 0.0
+      },
+      {
+        "owner": "Joe Jaramillo",
+        "team": "OnlyIfIHadA2TE",
+        "amount": 9,
+        "week": 5,
+        "score": 0.0
+      },
+      {
+        "owner": "Joe Jaramillo",
+        "team": "OnlyIfIHadA2TE",
+        "amount": 9,
+        "week": 6,
+        "score": 0.0
+      },
+      {
+        "owner": "Joe Jaramillo",
+        "team": "OnlyIfIHadA2TE",
+        "amount": 9,
+        "week": 7,
+        "score": 0.0
+      },
+      {
+        "owner": "Joe Jaramillo",
+        "team": "OnlyIfIHadA2TE",
+        "amount": 9,
+        "week": 8,
+        "score": 0.0
+      },
+      {
+        "owner": "Joe Jaramillo",
+        "team": "OnlyIfIHadA2TE",
+        "amount": 9,
+        "week": 9,
+        "score": 0.0
+      },
+      {
+        "owner": "Joe Jaramillo",
+        "team": "OnlyIfIHadA2TE",
+        "amount": 9,
+        "week": 10,
+        "score": 0.0
+      },
+      {
+        "owner": "Joe Jaramillo",
+        "team": "OnlyIfIHadA2TE",
+        "amount": 9,
+        "week": 11,
+        "score": 0.0
+      },
+      {
+        "owner": "Joe Jaramillo",
+        "team": "OnlyIfIHadA2TE",
+        "amount": 9,
+        "week": 12,
+        "score": 0.0
+      },
+      {
+        "owner": "Joe Jaramillo",
+        "team": "OnlyIfIHadA2TE",
+        "amount": 9,
+        "week": 13,
+        "score": 0.0
+      },
+      {
+        "owner": "Joe Jaramillo",
+        "team": "OnlyIfIHadA2TE",
+        "amount": 9,
+        "week": 14,
+        "score": 0.0
+      }
+    ],
+    "consolationPayouts": [
+      {
+        "owner": "Carl Cummins",
+        "team": "Taylor and Travis Swift \ud83d\udc51",
+        "amount": 1,
+        "week": 3,
+        "score": 0.0
+      },
+      {
+        "owner": "Carl Cummins",
+        "team": "Taylor and Travis Swift \ud83d\udc51",
+        "amount": 1,
+        "week": 4,
+        "score": 0.0
+      },
+      {
+        "owner": "Carl Cummins",
+        "team": "Taylor and Travis Swift \ud83d\udc51",
+        "amount": 1,
+        "week": 5,
+        "score": 0.0
+      },
+      {
+        "owner": "Carl Cummins",
+        "team": "Taylor and Travis Swift \ud83d\udc51",
+        "amount": 1,
+        "week": 6,
+        "score": 0.0
+      },
+      {
+        "owner": "Carl Cummins",
+        "team": "Taylor and Travis Swift \ud83d\udc51",
+        "amount": 1,
+        "week": 7,
+        "score": 0.0
+      },
+      {
+        "owner": "Carl Cummins",
+        "team": "Taylor and Travis Swift \ud83d\udc51",
+        "amount": 1,
+        "week": 8,
+        "score": 0.0
+      },
+      {
+        "owner": "Carl Cummins",
+        "team": "Taylor and Travis Swift \ud83d\udc51",
+        "amount": 1,
+        "week": 9,
+        "score": 0.0
+      },
+      {
+        "owner": "Carl Cummins",
+        "team": "Taylor and Travis Swift \ud83d\udc51",
+        "amount": 1,
+        "week": 10,
+        "score": 0.0
+      },
+      {
+        "owner": "Carl Cummins",
+        "team": "Taylor and Travis Swift \ud83d\udc51",
+        "amount": 1,
+        "week": 11,
+        "score": 0.0
+      },
+      {
+        "owner": "Carl Cummins",
+        "team": "Taylor and Travis Swift \ud83d\udc51",
+        "amount": 1,
+        "week": 12,
+        "score": 0.0
+      },
+      {
+        "owner": "Carl Cummins",
+        "team": "Taylor and Travis Swift \ud83d\udc51",
+        "amount": 1,
+        "week": 13,
+        "score": 0.0
+      },
+      {
+        "owner": "Carl Cummins",
+        "team": "Taylor and Travis Swift \ud83d\udc51",
+        "amount": 1,
+        "week": 14,
+        "score": 0.0
+      }
+    ],
+    "playoffPayouts": []
   }
 }

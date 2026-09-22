@@ -1,7 +1,7 @@
 {
-  "totalTwoWeekMatchups": 14,
+  "totalTwoWeekMatchups": 17,
   "comebacks": 1,
-  "comebackRate": 0.07142857142857142,
+  "comebackRate": 0.058823529411764705,
   "matchups": [
     {
       "year": 2019,
@@ -338,6 +338,78 @@
       "comeback": false,
       "week1Margin": 19.61999999999999,
       "finalMargin": 39.23999999999998
+    },
+    {
+      "year": 2026,
+      "week1": 15,
+      "week2": 16,
+      "teamA": {
+        "name": "OnlyIfIHadA2TE",
+        "owner": "Joe Jaramillo",
+        "week1Score": 0.0,
+        "week2Score": 0.0,
+        "totalScore": 0.0
+      },
+      "teamB": {
+        "name": "Taylor and Travis Swift \ud83d\udc51",
+        "owner": "Carl Cummins",
+        "week1Score": 0.0,
+        "week2Score": 0.0,
+        "totalScore": 0.0
+      },
+      "week1Leader": "team_b",
+      "finalWinner": "team_b",
+      "comeback": false,
+      "week1Margin": 0.0,
+      "finalMargin": 0.0
+    },
+    {
+      "year": 2026,
+      "week1": 16,
+      "week2": 17,
+      "teamA": {
+        "name": "OnlyIfIHadA2TE",
+        "owner": "Joe Jaramillo",
+        "week1Score": 0.0,
+        "week2Score": 0.0,
+        "totalScore": 0.0
+      },
+      "teamB": {
+        "name": "Taylor and Travis Swift \ud83d\udc51",
+        "owner": "Carl Cummins",
+        "week1Score": 0.0,
+        "week2Score": 0.0,
+        "totalScore": 0.0
+      },
+      "week1Leader": "team_b",
+      "finalWinner": "team_b",
+      "comeback": false,
+      "week1Margin": 0.0,
+      "finalMargin": 0.0
+    },
+    {
+      "year": 2026,
+      "week1": 17,
+      "week2": 18,
+      "teamA": {
+        "name": "OnlyIfIHadA2TE",
+        "owner": "Joe Jaramillo",
+        "week1Score": 0.0,
+        "week2Score": 0.0,
+        "totalScore": 0.0
+      },
+      "teamB": {
+        "name": "Taylor and Travis Swift \ud83d\udc51",
+        "owner": "Carl Cummins",
+        "week1Score": 0.0,
+        "week2Score": 0.0,
+        "totalScore": 0.0
+      },
+      "week1Leader": "team_b",
+      "finalWinner": "team_b",
+      "comeback": false,
+      "week1Margin": 0.0,
+      "finalMargin": 0.0
     }
   ],
   "comebackMatchups": [

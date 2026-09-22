@@ -111,6 +111,20 @@
         "player": "Kyle Pitts Sr.",
         "count": 3
       }
+    ],
+    "2026": [
+      {
+        "player": "Patriots D/ST",
+        "count": 1
+      },
+      {
+        "player": "Browns D/ST",
+        "count": 1
+      },
+      {
+        "player": "Kaleb Johnson",
+        "count": 1
+      }
     ]
   },
   "perTeamMostDropped": {
@@ -989,6 +1003,54 @@
         },
         {
           "player": "Cairo Santos",
+          "count": 1
+        }
+      ]
+    },
+    "2026": {
+      "Mike Kovacs": [
+        {
+          "player": "Patriots D/ST",
+          "count": 1
+        },
+        {
+          "player": "Chargers D/ST",
+          "count": 1
+        }
+      ],
+      "John Artiglier": [
+        {
+          "player": "Browns D/ST",
+          "count": 1
+        },
+        {
+          "player": "Jaguars D/ST",
+          "count": 1
+        }
+      ],
+      "Joe Jaramillo": [
+        {
+          "player": "Kaleb Johnson",
+          "count": 1
+        },
+        {
+          "player": "Travis Hunter",
+          "count": 1
+        }
+      ],
+      "Ben Bingert": [
+        {
+          "player": "Lions D/ST",
+          "count": 1
+        }
+      ],
+      "Bill Solecki": [
+        {
+          "player": "Jonathon Brooks",
+          "count": 1
+        },
+        {
+          "player": "Lil'Jordan Humphrey",
           "count": 1
         }
       ]
@@ -3442,6 +3504,11 @@
           "Carl Cummins": 3
         },
         "sameWeekAddsFlagged": 0
+      },
+      "2026": {
+        "players": [],
+        "teamTally": {},
+        "sameWeekAddsFlagged": 0
       }
     },
     "allTimeTeamTally": {
@@ -3570,6 +3637,20 @@
         {
           "player": "Harrison Butker",
           "count": 2
+        }
+      ],
+      "2026": [
+        {
+          "player": "Patriots D/ST",
+          "count": 1
+        },
+        {
+          "player": "Browns D/ST",
+          "count": 1
+        },
+        {
+          "player": "Kaleb Johnson",
+          "count": 1
         }
       ]
     },
@@ -4449,6 +4530,54 @@
           },
           {
             "player": "Cairo Santos",
+            "count": 1
+          }
+        ]
+      },
+      "2026": {
+        "Mike Kovacs": [
+          {
+            "player": "Patriots D/ST",
+            "count": 1
+          },
+          {
+            "player": "Chargers D/ST",
+            "count": 1
+          }
+        ],
+        "John Artiglier": [
+          {
+            "player": "Browns D/ST",
+            "count": 1
+          },
+          {
+            "player": "Jaguars D/ST",
+            "count": 1
+          }
+        ],
+        "Joe Jaramillo": [
+          {
+            "player": "Kaleb Johnson",
+            "count": 1
+          },
+          {
+            "player": "Travis Hunter",
+            "count": 1
+          }
+        ],
+        "Ben Bingert": [
+          {
+            "player": "Lions D/ST",
+            "count": 1
+          }
+        ],
+        "Bill Solecki": [
+          {
+            "player": "Jonathon Brooks",
+            "count": 1
+          },
+          {
+            "player": "Lil'Jordan Humphrey",
             "count": 1
           }
         ]
@@ -6514,6 +6643,11 @@
             "Carl Cummins": 2
           },
           "sameWeekAddsFlagged": 0
+        },
+        "2026": {
+          "players": [],
+          "teamTally": {},
+          "sameWeekAddsFlagged": 0
         }
       },
       "allTimeTeamTally": {
@@ -6532,8 +6666,8 @@
     }
   },
   "metadata": {
-    "transactionDataYears": "2018-2025",
-    "teamAttributionYears": "2019-2025",
+    "transactionDataYears": "2018-2026",
+    "teamAttributionYears": "2019-2026",
     "notes": "2013-2017: no transaction data available via ESPN API (confirmed empirically, all weeks error). 2018: league-wide most-dropped only - per-team and sloppy-seconds stats are null this season because WAIVER-type transactions have no team attribution (100% of that season's waiver moves, confirmed 0% broken in every other year 2019-2025). \"Same-week adds\" are pickups that cannot be ordered against a same-week drop from another team (scoring_period only resolves to the week) - these are excluded from team-level tallies rather than arbitrarily attributed. Top-level keys cover the full season including playoff weeks; \"regularSeasonOnly\" mirrors the same structure filtered to scoring_period <= that season's reg_season_count."
   }
 }
