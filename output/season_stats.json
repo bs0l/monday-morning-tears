@@ -4,18 +4,22 @@
     "highestScore": {
       "score": 186.0,
       "team": "Less Morals Than Mike Vick",
+      "teamId": 2,
       "owner": "Mike Kovacs",
       "opponent": "Da Kessell Krew",
       "opponentScore": 102.0,
+      "year": 2013,
       "week": 9,
       "matchupPeriodId": 9
     },
     "lowestScore": {
       "score": 60.0,
       "team": "Da Kessell Krew",
+      "teamId": 5,
       "owner": "Loren Kessell",
       "opponent": "Arian Foster 2013",
       "opponentScore": 100.0,
+      "year": 2013,
       "week": 12,
       "matchupPeriodId": 12
     },
@@ -23,9 +27,11 @@
       "margin": 1.0,
       "winner": "Arian Foster 2013",
       "winnerOwner": "Bill Solecki",
+      "winnerTeamId": 1,
       "winnerScore": 113.0,
       "loser": "Doesn't Play Still Not Last",
       "loserScore": 112.0,
+      "year": 2013,
       "week": 15,
       "matchupPeriodId": 15
     },
@@ -33,31 +39,98 @@
       "margin": 84.0,
       "winner": "Less Morals Than Mike Vick",
       "winnerOwner": "Mike Kovacs",
+      "winnerTeamId": 2,
       "winnerScore": 186.0,
       "loser": "Da Kessell Krew",
       "loserScore": 102.0,
+      "year": 2013,
       "week": 9,
       "matchupPeriodId": 9
     },
     "longestWinStreak": {
-      "owner": "Loren Kessell",
-      "length": 5
+      "owner": "Keegan Hayes",
+      "length": 5,
+      "owners": [
+        "Keegan Hayes",
+        "Loren Kessell",
+        "Phil Torres"
+      ],
+      "tied": true,
+      "streaks": [
+        {
+          "owner": "Keegan Hayes",
+          "weeks": [
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "owner": "Loren Kessell",
+          "weeks": [
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "owner": "Phil Torres",
+          "weeks": [
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
       "owner": "Mike Hunt",
-      "length": 6
+      "length": 6,
+      "owners": [
+        "Mike Hunt"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Mike Hunt",
+          "weeks": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
       "owner": "Phil Torres",
-      "count": 8
+      "owners": [
+        "Phil Torres"
+      ],
+      "count": 8,
+      "tied": false
     },
     "mostWeeklyLowScores": {
       "owner": "Danielle Prizzi",
-      "count": 3
+      "owners": [
+        "Danielle Prizzi"
+      ],
+      "count": 3,
+      "tied": false
     },
     "mostConsolationDollars": {
       "owner": null,
-      "count": 0
+      "owners": [],
+      "count": 0,
+      "tied": false
     },
     "bestBenchWarmers": null,
     "weeklyHighPayouts": [],
@@ -88,18 +161,22 @@
     "highestScore": {
       "score": 287.0,
       "team": "Plainsboro Owls",
+      "teamId": 11,
       "owner": "Brian Dorward",
       "opponent": "Christmas Devil Krampus",
       "opponentScore": 162.0,
+      "year": 2014,
       "week": 14,
       "matchupPeriodId": 14
     },
     "lowestScore": {
       "score": 12.0,
       "team": "Its Mike Vick In a Box!",
+      "teamId": 2,
       "owner": "Mike Kovacs",
       "opponent": "T'EOMINATOR 2 RESURRECTION",
       "opponentScore": 15.0,
+      "year": 2014,
       "week": 13,
       "matchupPeriodId": 13
     },
@@ -107,9 +184,11 @@
       "margin": 1.0,
       "winner": "Scott's ConsolationTots",
       "winnerOwner": "Bill Solecki",
+      "winnerTeamId": 1,
       "winnerScore": 112.0,
       "loser": "Kish and Tell",
       "loserScore": 111.0,
+      "year": 2014,
       "week": 5,
       "matchupPeriodId": 5
     },
@@ -117,31 +196,100 @@
       "margin": 125.0,
       "winner": "Plainsboro Owls",
       "winnerOwner": "Brian Dorward",
+      "winnerTeamId": 11,
       "winnerScore": 287.0,
       "loser": "Christmas Devil Krampus",
       "loserScore": 162.0,
+      "year": 2014,
       "week": 14,
       "matchupPeriodId": 14
     },
     "longestWinStreak": {
       "owner": "Mike Kovacs",
-      "length": 7
+      "length": 7,
+      "owners": [
+        "Mike Kovacs"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Mike Kovacs",
+          "weeks": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
       "owner": "BAHB Kerwersker",
-      "length": 6
+      "length": 5,
+      "owners": [
+        "BAHB Kerwersker",
+        "Carl Cummins",
+        "Phil Torres"
+      ],
+      "tied": true,
+      "streaks": [
+        {
+          "owner": "BAHB Kerwersker",
+          "weeks": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "owner": "Carl Cummins",
+          "weeks": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "owner": "Phil Torres",
+          "weeks": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
-      "owner": "Mike Kovacs",
-      "count": 3
+      "owner": "Loren Kessell",
+      "owners": [
+        "Loren Kessell",
+        "Mike Kovacs"
+      ],
+      "count": 3,
+      "tied": true
     },
     "mostWeeklyLowScores": {
       "owner": "Danielle Prizzi",
-      "count": 5
+      "owners": [
+        "Danielle Prizzi"
+      ],
+      "count": 5,
+      "tied": false
     },
     "mostConsolationDollars": {
       "owner": null,
-      "count": 0
+      "owners": [],
+      "count": 0,
+      "tied": false
     },
     "bestBenchWarmers": null,
     "weeklyHighPayouts": [],
@@ -172,18 +320,22 @@
     "highestScore": {
       "score": 265.18,
       "team": "I wanta Free the NewtMan! ",
+      "teamId": 2,
       "owner": "Mike Kovacs",
       "opponent": "Plainsboro Owls",
       "opponentScore": 263.91999999999996,
+      "year": 2015,
       "week": 14,
       "matchupPeriodId": 14
     },
     "lowestScore": {
       "score": 52.18,
       "team": "Team Cahill",
+      "teamId": 8,
       "owner": null,
       "opponent": "Kish and Tell",
       "opponentScore": 110.8,
+      "year": 2015,
       "week": 7,
       "matchupPeriodId": 7
     },
@@ -191,9 +343,11 @@
       "margin": 0.1599999999999966,
       "winner": "Really Just Sean Kessell",
       "winnerOwner": null,
+      "winnerTeamId": 5,
       "winnerScore": 105.1,
       "loser": "Bills New Team Name",
       "loserScore": 104.94,
+      "year": 2015,
       "week": 5,
       "matchupPeriodId": 5
     },
@@ -201,31 +355,78 @@
       "margin": 71.60000000000001,
       "winner": "oh no its John Snooooooow",
       "winnerOwner": "Randell Crawford",
+      "winnerTeamId": 6,
       "winnerScore": 162.3,
       "loser": "Team Cahill",
       "loserScore": 90.7,
+      "year": 2015,
       "week": 14,
       "matchupPeriodId": 14
     },
     "longestWinStreak": {
       "owner": "Bill Solecki",
-      "length": 5
+      "length": 5,
+      "owners": [
+        "Bill Solecki"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Bill Solecki",
+          "weeks": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
       "owner": "Carl Cummins",
-      "length": 8
+      "length": 8,
+      "owners": [
+        "Carl Cummins"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Carl Cummins",
+          "weeks": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
       "owner": null,
-      "count": 4
+      "owners": [
+        null
+      ],
+      "count": 4,
+      "tied": false
     },
     "mostWeeklyLowScores": {
       "owner": "Brian Dorward",
-      "count": 3
+      "owners": [
+        "Brian Dorward"
+      ],
+      "count": 3,
+      "tied": false
     },
     "mostConsolationDollars": {
       "owner": null,
-      "count": 0
+      "owners": [],
+      "count": 0,
+      "tied": false
     },
     "bestBenchWarmers": null,
     "weeklyHighPayouts": [
@@ -341,18 +542,22 @@
     "highestScore": {
       "score": 244.22000000000003,
       "team": "Yobogoya In the Bushes!",
+      "teamId": 2,
       "owner": "Mike Kovacs",
       "opponent": "Duke Nukems",
       "opponentScore": 186.42000000000002,
+      "year": 2016,
       "week": 14,
       "matchupPeriodId": 14
     },
     "lowestScore": {
       "score": 40.46,
       "team": "Kish and Tell",
+      "teamId": 12,
       "owner": "Brandon Kish",
       "opponent": "Duke Nukems",
       "opponentScore": 115.88,
+      "year": 2016,
       "week": 5,
       "matchupPeriodId": 5
     },
@@ -360,9 +565,11 @@
       "margin": 1.059999999999988,
       "winner": "Duke Nukems",
       "winnerOwner": "Phil Torres",
+      "winnerTeamId": 4,
       "winnerScore": 77.46,
       "loser": "Yobogoya In the Bushes!",
       "loserScore": 76.4,
+      "year": 2016,
       "week": 2,
       "matchupPeriodId": 2
     },
@@ -370,31 +577,87 @@
       "margin": 79.42,
       "winner": "Barack Obama",
       "winnerOwner": "Bill Solecki",
+      "winnerTeamId": 1,
       "winnerScore": 148.56,
       "loser": "Duke Nukems",
       "loserScore": 69.14,
+      "year": 2016,
       "week": 9,
       "matchupPeriodId": 9
     },
     "longestWinStreak": {
       "owner": "Mike Kovacs",
-      "length": 6
+      "length": 6,
+      "owners": [
+        "Mike Kovacs"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Mike Kovacs",
+          "weeks": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
-      "owner": "Brian Dorward",
-      "length": 5
+      "owner": "Brandon Kish",
+      "length": 5,
+      "owners": [
+        "Brandon Kish",
+        "Brian Dorward"
+      ],
+      "tied": true,
+      "streaks": [
+        {
+          "owner": "Brandon Kish",
+          "weeks": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "owner": "Brian Dorward",
+          "weeks": [
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
       "owner": "Mike Kovacs",
-      "count": 5
+      "owners": [
+        "Mike Kovacs"
+      ],
+      "count": 5,
+      "tied": false
     },
     "mostWeeklyLowScores": {
       "owner": "Brandon Kish",
-      "count": 4
+      "owners": [
+        "Brandon Kish"
+      ],
+      "count": 4,
+      "tied": false
     },
     "mostConsolationDollars": {
       "owner": null,
-      "count": 0
+      "owners": [],
+      "count": 0,
+      "tied": false
     },
     "bestBenchWarmers": null,
     "weeklyHighPayouts": [
@@ -510,18 +773,22 @@
     "highestScore": {
       "score": 257.5,
       "team": "Duckman Kowalski",
+      "teamId": 3,
       "owner": "Carl Cummins",
       "opponent": "Rex Grossman Fan Club",
       "opponentScore": 221.3,
+      "year": 2017,
       "week": 14,
       "matchupPeriodId": 14
     },
     "lowestScore": {
       "score": 34.42,
       "team": "Plainsboro Owls",
+      "teamId": 11,
       "owner": "Brian Dorward",
       "opponent": "The Recycling Ben",
       "opponentScore": 86.72,
+      "year": 2017,
       "week": 9,
       "matchupPeriodId": 9
     },
@@ -529,9 +796,11 @@
       "margin": 0.0799999999999983,
       "winner": "Duckman Kowalski",
       "winnerOwner": "Carl Cummins",
+      "winnerTeamId": 3,
       "winnerScore": 103.22,
       "loser": "Plainsboro Owls",
       "loserScore": 103.14,
+      "year": 2017,
       "week": 12,
       "matchupPeriodId": 12
     },
@@ -539,31 +808,79 @@
       "margin": 71.44,
       "winner": "Duckman Kowalski",
       "winnerOwner": "Carl Cummins",
+      "winnerTeamId": 3,
       "winnerScore": 138.32,
       "loser": "Wade Boggs Memorial Team",
       "loserScore": 66.88,
+      "year": 2017,
       "week": 2,
       "matchupPeriodId": 2
     },
     "longestWinStreak": {
       "owner": "Ray Engleking",
-      "length": 6
+      "length": 6,
+      "owners": [
+        "Ray Engleking"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Ray Engleking",
+          "weeks": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
       "owner": "Brian Dorward",
-      "length": 8
+      "length": 8,
+      "owners": [
+        "Brian Dorward"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Brian Dorward",
+          "weeks": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
       "owner": "Ray Engleking",
-      "count": 5
+      "owners": [
+        "Ray Engleking"
+      ],
+      "count": 5,
+      "tied": false
     },
     "mostWeeklyLowScores": {
       "owner": "Brian Dorward",
-      "count": 5
+      "owners": [
+        "Brian Dorward"
+      ],
+      "count": 5,
+      "tied": false
     },
     "mostConsolationDollars": {
       "owner": null,
-      "count": 0
+      "owners": [],
+      "count": 0,
+      "tied": false
     },
     "bestBenchWarmers": null,
     "weeklyHighPayouts": [
@@ -679,18 +996,22 @@
     "highestScore": {
       "score": 272.74,
       "team": "Rex Grossman Fan Club",
+      "teamId": 9,
       "owner": "Ray Engleking",
       "opponent": "The Mixon Administration ",
       "opponentScore": 192.76,
+      "year": 2018,
       "week": 14,
       "matchupPeriodId": 14
     },
     "lowestScore": {
       "score": 60.94,
       "team": "Duckman Kowalski",
+      "teamId": 3,
       "owner": "Carl Cummins",
       "opponent": "The Mixon Administration ",
       "opponentScore": 106.48,
+      "year": 2018,
       "week": 6,
       "matchupPeriodId": 6
     },
@@ -698,9 +1019,11 @@
       "margin": 0.0799999999999983,
       "winner": "Duckman Kowalski",
       "winnerOwner": "Carl Cummins",
+      "winnerTeamId": 3,
       "winnerScore": 107.22,
       "loser": "Davante's Inferno",
       "loserScore": 107.14,
+      "year": 2018,
       "week": 1,
       "matchupPeriodId": 1
     },
@@ -708,31 +1031,75 @@
       "margin": 79.98000000000002,
       "winner": "Rex Grossman Fan Club",
       "winnerOwner": "Ray Engleking",
+      "winnerTeamId": 9,
       "winnerScore": 272.74,
       "loser": "The Mixon Administration ",
       "loserScore": 192.76,
+      "year": 2018,
       "week": 14,
       "matchupPeriodId": 14
     },
     "longestWinStreak": {
       "owner": "Ray Engleking",
-      "length": 5
+      "length": 5,
+      "owners": [
+        "Ray Engleking"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Ray Engleking",
+          "weeks": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
       "owner": "Mike Kovacs",
-      "length": 5
+      "length": 5,
+      "owners": [
+        "Mike Kovacs"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Mike Kovacs",
+          "weeks": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
       "owner": "Ray Engleking",
-      "count": 5
+      "owners": [
+        "Ray Engleking"
+      ],
+      "count": 5,
+      "tied": false
     },
     "mostWeeklyLowScores": {
       "owner": "Carl Cummins",
-      "count": 5
+      "owners": [
+        "Carl Cummins"
+      ],
+      "count": 5,
+      "tied": false
     },
     "mostConsolationDollars": {
       "owner": null,
-      "count": 0
+      "owners": [],
+      "count": 0,
+      "tied": false
     },
     "bestBenchWarmers": null,
     "weeklyHighPayouts": [
@@ -848,18 +1215,22 @@
     "highestScore": {
       "score": 297.72,
       "team": "Weenie Hut Jr's",
+      "teamId": 9,
       "owner": "Ray Engleking",
       "opponent": "Pussy Power",
       "opponentScore": 269.94,
+      "year": 2019,
       "week": 15,
       "matchupPeriodId": 15
     },
     "lowestScore": {
       "score": 62.62,
       "team": "Weenie Hut Jr's",
+      "teamId": 9,
       "owner": "Ray Engleking",
       "opponent": "The HipShire Hobbits",
       "opponentScore": 125.32,
+      "year": 2019,
       "week": 10,
       "matchupPeriodId": 10
     },
@@ -867,9 +1238,11 @@
       "margin": 0.480000000000004,
       "winner": "Go Fudge Yourselves",
       "winnerOwner": "Phil Torres",
+      "winnerTeamId": 4,
       "winnerScore": 96.58,
       "loser": "Weenie Hut Jr's",
       "loserScore": 96.1,
+      "year": 2019,
       "week": 8,
       "matchupPeriodId": 8
     },
@@ -877,33 +1250,87 @@
       "margin": 85.56,
       "winner": "Go Fudge Yourselves",
       "winnerOwner": "Phil Torres",
+      "winnerTeamId": 4,
       "winnerScore": 249.66,
       "loser": "Two Girls One Kupp",
       "loserScore": 164.1,
+      "year": 2019,
       "week": 15,
       "matchupPeriodId": 15
     },
     "longestWinStreak": {
       "owner": "Mike Kovacs",
-      "length": 6
+      "length": 6,
+      "owners": [
+        "Mike Kovacs"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Mike Kovacs",
+          "weeks": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
       "owner": "Randell Crawford",
-      "length": 6
+      "length": 6,
+      "owners": [
+        "Randell Crawford"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Randell Crawford",
+          "weeks": [
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
       "owner": "Carl Cummins",
-      "count": 3
+      "owners": [
+        "Carl Cummins",
+        "Mike Kovacs"
+      ],
+      "count": 3,
+      "tied": true
     },
     "mostWeeklyLowScores": {
       "owner": "John Artiglier",
-      "count": 3
+      "owners": [
+        "John Artiglier",
+        "Phil Torres",
+        "Randell Crawford",
+        "Ray Engleking"
+      ],
+      "count": 3,
+      "tied": true
     },
     "mostConsolationDollars": {
       "owner": null,
-      "count": 0
+      "owners": [],
+      "count": 0,
+      "tied": false
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Mike Kovacs",
+      "teamName": "Saquonda Forever",
+      "benchPoints": 709.74
+    },
     "weeklyHighPayouts": [
       {
         "owner": "Carl Cummins",
@@ -1017,18 +1444,22 @@
     "highestScore": {
       "score": 203.12,
       "team": "RADrigo Is My Homeboy",
+      "teamId": 11,
       "owner": "John Artiglier",
       "opponent": "19 Problems and Covid is One",
       "opponentScore": 107.7,
+      "year": 2020,
       "week": 4,
       "matchupPeriodId": 4
     },
     "lowestScore": {
       "score": 71.6,
       "team": "All Aboard The J Train",
+      "teamId": 2,
       "owner": "Mike Kovacs",
       "opponent": "Pussy Power",
       "opponentScore": 100.88,
+      "year": 2020,
       "week": 7,
       "matchupPeriodId": 7
     },
@@ -1036,9 +1467,11 @@
       "margin": 1.1200000000000045,
       "winner": "All Aboard The J Train",
       "winnerOwner": "Mike Kovacs",
+      "winnerTeamId": 2,
       "winnerScore": 114.76,
       "loser": "Wade Boggs Memorial Team",
       "loserScore": 113.64,
+      "year": 2020,
       "week": 11,
       "matchupPeriodId": 11
     },
@@ -1046,33 +1479,87 @@
       "margin": 95.42,
       "winner": "RADrigo Is My Homeboy",
       "winnerOwner": "John Artiglier",
+      "winnerTeamId": 11,
       "winnerScore": 203.12,
       "loser": "19 Problems and Covid is One",
       "loserScore": 107.7,
+      "year": 2020,
       "week": 4,
       "matchupPeriodId": 4
     },
     "longestWinStreak": {
       "owner": "Randell Crawford",
-      "length": 7
+      "length": 5,
+      "owners": [
+        "Randell Crawford"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Randell Crawford",
+          "weeks": [
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
       "owner": "Randell Crawford",
-      "length": 7
+      "length": 7,
+      "owners": [
+        "Randell Crawford"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Randell Crawford",
+          "weeks": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
       "owner": "Bill Solecki",
-      "count": 5
+      "owners": [
+        "Bill Solecki"
+      ],
+      "count": 5,
+      "tied": false
     },
     "mostWeeklyLowScores": {
       "owner": "Ben Bingert",
-      "count": 3
+      "owners": [
+        "Ben Bingert",
+        "Ray Engleking"
+      ],
+      "count": 3,
+      "tied": true
     },
     "mostConsolationDollars": {
       "owner": "Carl Cummins",
-      "count": 1
+      "owners": [
+        "Carl Cummins",
+        "Ray Engleking"
+      ],
+      "count": 1,
+      "tied": true
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Phil Torres",
+      "teamName": "Go Fudge Yourselves",
+      "benchPoints": 695.3800000000001
+    },
     "weeklyHighPayouts": [
       {
         "owner": "Bill Solecki",
@@ -1215,18 +1702,22 @@
     "highestScore": {
       "score": 177.18,
       "team": "Salty Spitoon",
+      "teamId": 9,
       "owner": "Ray Engleking",
       "opponent": "Wade Boggs Memorial Team",
       "opponentScore": 87.76,
+      "year": 2021,
       "week": 5,
       "matchupPeriodId": 5
     },
     "lowestScore": {
       "score": 61.2,
       "team": "19 Problems and Covid is One",
+      "teamId": 6,
       "owner": "Randell Crawford",
       "opponent": "Chubb Basshole",
       "opponentScore": 114.42,
+      "year": 2021,
       "week": 10,
       "matchupPeriodId": 10
     },
@@ -1234,9 +1725,11 @@
       "margin": 0.4200000000000017,
       "winner": "19 Problems and Covid is One",
       "winnerOwner": "Randell Crawford",
+      "winnerTeamId": 6,
       "winnerScore": 116.14,
       "loser": "Chubb Basshole",
       "loserScore": 115.72,
+      "year": 2021,
       "week": 3,
       "matchupPeriodId": 3
     },
@@ -1244,33 +1737,105 @@
       "margin": 89.42,
       "winner": "Salty Spitoon",
       "winnerOwner": "Ray Engleking",
+      "winnerTeamId": 9,
       "winnerScore": 177.18,
       "loser": "Wade Boggs Memorial Team",
       "loserScore": 87.76,
+      "year": 2021,
       "week": 5,
       "matchupPeriodId": 5
     },
     "longestWinStreak": {
-      "owner": "Randell Crawford",
-      "length": 5
+      "owner": "Bill Solecki",
+      "length": 4,
+      "owners": [
+        "Bill Solecki",
+        "Ray Engleking"
+      ],
+      "tied": true,
+      "streaks": [
+        {
+          "owner": "Bill Solecki",
+          "weeks": [
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "owner": "Ray Engleking",
+          "weeks": [
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
-      "owner": "Mike Kovacs",
-      "length": 6
+      "owner": "John Artiglier",
+      "length": 5,
+      "owners": [
+        "John Artiglier",
+        "Randell Crawford"
+      ],
+      "tied": true,
+      "streaks": [
+        {
+          "owner": "John Artiglier",
+          "weeks": [
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "owner": "Randell Crawford",
+          "weeks": [
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
-      "owner": "Mike Kovacs",
-      "count": 3
+      "owner": "Bill Solecki",
+      "owners": [
+        "Bill Solecki",
+        "Mike Kovacs",
+        "Ray Engleking"
+      ],
+      "count": 3,
+      "tied": true
     },
     "mostWeeklyLowScores": {
       "owner": "Randell Crawford",
-      "count": 3
+      "owners": [
+        "Randell Crawford"
+      ],
+      "count": 3,
+      "tied": false
     },
     "mostConsolationDollars": {
       "owner": "John Artiglier",
-      "count": 2
+      "owners": [
+        "John Artiglier"
+      ],
+      "count": 2,
+      "tied": false
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Ben Bingert",
+      "teamName": "Chubb Basshole",
+      "benchPoints": 820.4600000000002
+    },
     "weeklyHighPayouts": [
       {
         "owner": "Mike Kovacs",
@@ -1434,18 +1999,22 @@
     "highestScore": {
       "score": 171.84,
       "team": "Insane in the  Ukraine",
+      "teamId": 6,
       "owner": "Randell Crawford",
       "opponent": "Salty Spitoon",
       "opponentScore": 102.6,
+      "year": 2022,
       "week": 11,
       "matchupPeriodId": 11
     },
     "lowestScore": {
       "score": 45.58,
       "team": "Go Fudge Yourselves",
+      "teamId": 4,
       "owner": "Phil Torres",
       "opponent": "Insane in the  Ukraine",
       "opponentScore": 98.38,
+      "year": 2022,
       "week": 17,
       "matchupPeriodId": 17
     },
@@ -1453,9 +2022,11 @@
       "margin": 0.03999999999999204,
       "winner": "Go Fudge Yourselves",
       "winnerOwner": "Phil Torres",
+      "winnerTeamId": 4,
       "winnerScore": 116.52,
       "loser": "Salty Spitoon",
       "loserScore": 116.48,
+      "year": 2022,
       "week": 14,
       "matchupPeriodId": 14
     },
@@ -1463,33 +2034,107 @@
       "margin": 69.24000000000001,
       "winner": "Insane in the  Ukraine",
       "winnerOwner": "Randell Crawford",
+      "winnerTeamId": 6,
       "winnerScore": 171.84,
       "loser": "Salty Spitoon",
       "loserScore": 102.6,
+      "year": 2022,
       "week": 11,
       "matchupPeriodId": 11
     },
     "longestWinStreak": {
-      "owner": "Carl Cummins",
-      "length": 6
+      "owner": "Ben Bingert",
+      "length": 5,
+      "owners": [
+        "Ben Bingert",
+        "Carl Cummins",
+        "Ray Engleking"
+      ],
+      "tied": true,
+      "streaks": [
+        {
+          "owner": "Ben Bingert",
+          "weeks": [
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "owner": "Carl Cummins",
+          "weeks": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "owner": "Ray Engleking",
+          "weeks": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
       "owner": "Mike Kovacs",
-      "length": 7
+      "length": 7,
+      "owners": [
+        "Mike Kovacs"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Mike Kovacs",
+          "weeks": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
       "owner": "Ben Bingert",
-      "count": 4
+      "owners": [
+        "Ben Bingert"
+      ],
+      "count": 4,
+      "tied": false
     },
     "mostWeeklyLowScores": {
       "owner": "Randell Crawford",
-      "count": 4
+      "owners": [
+        "Randell Crawford"
+      ],
+      "count": 4,
+      "tied": false
     },
     "mostConsolationDollars": {
       "owner": "Ray Engleking",
-      "count": 1
+      "owners": [
+        "Ray Engleking"
+      ],
+      "count": 1,
+      "tied": false
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Ben Bingert",
+      "teamName": "Joe Burrow Tiger King",
+      "benchPoints": 884.7399999999998
+    },
     "weeklyHighPayouts": [
       {
         "owner": "Bill Solecki",
@@ -1632,18 +2277,22 @@
     "highestScore": {
       "score": 178.62,
       "team": "Insane in the  Ukraine",
+      "teamId": 6,
       "owner": "Randell Crawford",
       "opponent": "Go Fudge Yourselves",
       "opponentScore": 146.28,
+      "year": 2023,
       "week": 3,
       "matchupPeriodId": 3
     },
     "lowestScore": {
       "score": 49.22,
       "team": "Peyton the Professor",
+      "teamId": 13,
       "owner": "john crawford",
       "opponent": "Insane in the  Ukraine",
       "opponentScore": 96.22,
+      "year": 2023,
       "week": 9,
       "matchupPeriodId": 9
     },
@@ -1651,9 +2300,11 @@
       "margin": 0.01999999999999602,
       "winner": "All You Need is Love",
       "winnerOwner": "John Artiglier",
+      "winnerTeamId": 11,
       "winnerScore": 109.7,
       "loser": "We played Week 7, 8 and 13",
       "loserScore": 109.68,
+      "year": 2023,
       "week": 16,
       "matchupPeriodId": 16
     },
@@ -1661,33 +2312,116 @@
       "margin": 72.8,
       "winner": "Why's This So Sticky?",
       "winnerOwner": "Bill Solecki",
+      "winnerTeamId": 1,
       "winnerScore": 140.78,
       "loser": "We played Week 7, 8 and 13",
       "loserScore": 67.98,
+      "year": 2023,
       "week": 3,
       "matchupPeriodId": 3
     },
     "longestWinStreak": {
       "owner": "Bill Solecki",
-      "length": 10
+      "length": 10,
+      "owners": [
+        "Bill Solecki"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Bill Solecki",
+          "weeks": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
-      "owner": "john crawford",
-      "length": 7
+      "owner": "Ben Bingert",
+      "length": 6,
+      "owners": [
+        "Ben Bingert",
+        "Joe Jaramillo",
+        "john crawford"
+      ],
+      "tied": true,
+      "streaks": [
+        {
+          "owner": "Ben Bingert",
+          "weeks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "owner": "Joe Jaramillo",
+          "weeks": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "owner": "john crawford",
+          "weeks": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
       "owner": "Phil Torres",
-      "count": 4
+      "owners": [
+        "Phil Torres"
+      ],
+      "count": 4,
+      "tied": false
     },
     "mostWeeklyLowScores": {
-      "owner": "john crawford",
-      "count": 3
+      "owner": "Ben Bingert",
+      "owners": [
+        "Ben Bingert",
+        "john crawford"
+      ],
+      "count": 3,
+      "tied": true
     },
     "mostConsolationDollars": {
       "owner": "Bill Solecki",
-      "count": 1
+      "owners": [
+        "Bill Solecki",
+        "Carl Cummins",
+        "Phil Torres"
+      ],
+      "count": 1,
+      "tied": true
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Carl Cummins",
+      "teamName": "Taylor Swift ",
+      "benchPoints": 797.3000000000004
+    },
     "weeklyHighPayouts": [
       {
         "owner": "Carl Cummins",
@@ -1837,18 +2571,22 @@
     "highestScore": {
       "score": 162.98,
       "team": "Taylor Swift ",
+      "teamId": 3,
       "owner": "Carl Cummins",
       "opponent": "Paintin Peyton",
       "opponentScore": 64.54,
+      "year": 2024,
       "week": 3,
       "matchupPeriodId": 3
     },
     "lowestScore": {
       "score": 50.88,
       "team": "Paintin Peyton",
+      "teamId": 13,
       "owner": "john crawford",
       "opponent": "Hawk Tua",
       "opponentScore": 115.1,
+      "year": 2024,
       "week": 15,
       "matchupPeriodId": 15
     },
@@ -1856,9 +2594,11 @@
       "margin": 0.0800000000000125,
       "winner": "Dollar Dollar Bills Y'all",
       "winnerOwner": "Mike Kovacs",
+      "winnerTeamId": 2,
       "winnerScore": 89.18,
       "loser": "Insane in the  Ukraine",
       "loserScore": 89.1,
+      "year": 2024,
       "week": 10,
       "matchupPeriodId": 10
     },
@@ -1866,33 +2606,87 @@
       "margin": 98.43999999999998,
       "winner": "Taylor Swift ",
       "winnerOwner": "Carl Cummins",
+      "winnerTeamId": 3,
       "winnerScore": 162.98,
       "loser": "Paintin Peyton",
       "loserScore": 64.54,
+      "year": 2024,
       "week": 3,
       "matchupPeriodId": 3
     },
     "longestWinStreak": {
       "owner": "Bill Solecki",
-      "length": 8
+      "length": 8,
+      "owners": [
+        "Bill Solecki"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Bill Solecki",
+          "weeks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
       "owner": "john crawford",
-      "length": 7
+      "length": 7,
+      "owners": [
+        "john crawford"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "john crawford",
+          "weeks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
       "owner": "Carl Cummins",
-      "count": 3
+      "owners": [
+        "Carl Cummins"
+      ],
+      "count": 3,
+      "tied": false
     },
     "mostWeeklyLowScores": {
-      "owner": "john crawford",
-      "count": 3
+      "owner": "Ray Engleking",
+      "owners": [
+        "Ray Engleking",
+        "john crawford"
+      ],
+      "count": 3,
+      "tied": true
     },
     "mostConsolationDollars": {
       "owner": null,
-      "count": 0
+      "owners": [],
+      "count": 0,
+      "tied": false
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Mike Kovacs",
+      "teamName": "Dollar Dollar Bills Y'all",
+      "benchPoints": 842.7400000000001
+    },
     "weeklyHighPayouts": [
       {
         "owner": "Ray Engleking",
@@ -2020,18 +2814,22 @@
     "highestScore": {
       "score": 169.54,
       "team": "Salty Spitoon",
+      "teamId": 9,
       "owner": "Ray Engleking",
       "opponent": "Bovine University Stampede",
       "opponentScore": 96.14,
+      "year": 2025,
       "week": 14,
       "matchupPeriodId": 14
     },
     "lowestScore": {
       "score": 50.16,
       "team": "Mail Fairy",
+      "teamId": 12,
       "owner": "Ben Bingert",
       "opponent": "Paintin Peyton",
       "opponentScore": 140.74,
+      "year": 2025,
       "week": 3,
       "matchupPeriodId": 3
     },
@@ -2039,9 +2837,11 @@
       "margin": 0.38000000000000966,
       "winner": "Loop, There it is!",
       "winnerOwner": "Joe Jaramillo",
+      "winnerTeamId": 14,
       "winnerScore": 100.54,
       "loser": "Taylor and Travis Swift \ud83d\udc51",
       "loserScore": 100.16,
+      "year": 2025,
       "week": 9,
       "matchupPeriodId": 9
     },
@@ -2049,33 +2849,86 @@
       "margin": 90.58000000000001,
       "winner": "Paintin Peyton",
       "winnerOwner": "john crawford",
+      "winnerTeamId": 13,
       "winnerScore": 140.74,
       "loser": "Mail Fairy",
       "loserScore": 50.16,
+      "year": 2025,
       "week": 3,
       "matchupPeriodId": 3
     },
     "longestWinStreak": {
       "owner": "Bill Solecki",
-      "length": 7
+      "length": 7,
+      "owners": [
+        "Bill Solecki"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "Bill Solecki",
+          "weeks": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
       "owner": "john crawford",
-      "length": 8
+      "length": 8,
+      "owners": [
+        "john crawford"
+      ],
+      "tied": false,
+      "streaks": [
+        {
+          "owner": "john crawford",
+          "weeks": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
       "owner": "Ray Engleking",
-      "count": 4
+      "owners": [
+        "Ray Engleking"
+      ],
+      "count": 4,
+      "tied": false
     },
     "mostWeeklyLowScores": {
       "owner": "Phil Torres",
-      "count": 4
+      "owners": [
+        "Phil Torres"
+      ],
+      "count": 4,
+      "tied": false
     },
     "mostConsolationDollars": {
       "owner": null,
-      "count": 0
+      "owners": [],
+      "count": 0,
+      "tied": false
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Carl Cummins",
+      "teamName": "Taylor and Travis Swift \ud83d\udc51",
+      "benchPoints": 925.7200000000001
+    },
     "weeklyHighPayouts": [
       {
         "owner": "Ray Engleking",
@@ -2203,18 +3056,22 @@
     "highestScore": {
       "score": 147.9,
       "team": "Paintin Peyton",
+      "teamId": 13,
       "owner": "john crawford",
       "opponent": "Kraft Smack and Cheese",
       "opponentScore": 126.04,
+      "year": 2026,
       "week": 1,
       "matchupPeriodId": 1
     },
     "lowestScore": {
       "score": 73.06,
       "team": "Insane in the  Ukraine",
+      "teamId": 6,
       "owner": "Randell Crawford",
       "opponent": "Bovine University Stampede",
       "opponentScore": 101.18,
+      "year": 2026,
       "week": 2,
       "matchupPeriodId": 2
     },
@@ -2222,9 +3079,11 @@
       "margin": 2.6999999999999886,
       "winner": "Kraft Smack and Cheese",
       "winnerOwner": "John Artiglier",
+      "winnerTeamId": 11,
       "winnerScore": 116.82,
       "loser": "All You Need Is Love",
       "loserScore": 114.12,
+      "year": 2026,
       "week": 2,
       "matchupPeriodId": 2
     },
@@ -2232,33 +3091,93 @@
       "margin": 43.959999999999994,
       "winner": "Taylor and Travis Swift \ud83d\udc51",
       "winnerOwner": "Carl Cummins",
+      "winnerTeamId": 3,
       "winnerScore": 121.86,
       "loser": "Paintin Peyton",
       "loserScore": 77.9,
+      "year": 2026,
       "week": 2,
       "matchupPeriodId": 2
     },
     "longestWinStreak": {
-      "owner": "Carl Cummins",
-      "length": 2
+      "owner": "Bill Solecki",
+      "length": 2,
+      "owners": [
+        "Bill Solecki",
+        "Carl Cummins"
+      ],
+      "tied": true,
+      "streaks": [
+        {
+          "owner": "Bill Solecki",
+          "weeks": [
+            1,
+            2
+          ]
+        },
+        {
+          "owner": "Carl Cummins",
+          "weeks": [
+            1,
+            2
+          ]
+        }
+      ]
     },
     "longestLossStreak": {
       "owner": "Joe Jaramillo",
-      "length": 2
+      "length": 2,
+      "owners": [
+        "Joe Jaramillo",
+        "Randell Crawford"
+      ],
+      "tied": true,
+      "streaks": [
+        {
+          "owner": "Joe Jaramillo",
+          "weeks": [
+            1,
+            2
+          ]
+        },
+        {
+          "owner": "Randell Crawford",
+          "weeks": [
+            1,
+            2
+          ]
+        }
+      ]
     },
     "mostWeeklyHighScores": {
-      "owner": "Joe Jaramillo",
-      "count": 12
+      "owner": "Carl Cummins",
+      "owners": [
+        "Carl Cummins",
+        "john crawford"
+      ],
+      "count": 1,
+      "tied": true
     },
     "mostWeeklyLowScores": {
-      "owner": "Randell Crawford",
-      "count": 13
+      "owner": "Joe Jaramillo",
+      "owners": [
+        "Joe Jaramillo",
+        "Randell Crawford"
+      ],
+      "count": 1,
+      "tied": true
     },
     "mostConsolationDollars": {
-      "owner": "Carl Cummins",
-      "count": 12
+      "owner": null,
+      "owners": [],
+      "count": 0,
+      "tied": false
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Carl Cummins",
+      "teamName": "Taylor and Travis Swift \ud83d\udc51",
+      "benchPoints": 158.92000000000002
+    },
     "weeklyHighPayouts": [
       {
         "owner": "john crawford",
@@ -2273,178 +3192,9 @@
         "amount": 10,
         "week": 2,
         "score": 121.86
-      },
-      {
-        "owner": "Joe Jaramillo",
-        "team": "OnlyIfIHadA2TE",
-        "amount": 9,
-        "week": 3,
-        "score": 0.0
-      },
-      {
-        "owner": "Joe Jaramillo",
-        "team": "OnlyIfIHadA2TE",
-        "amount": 9,
-        "week": 4,
-        "score": 0.0
-      },
-      {
-        "owner": "Joe Jaramillo",
-        "team": "OnlyIfIHadA2TE",
-        "amount": 9,
-        "week": 5,
-        "score": 0.0
-      },
-      {
-        "owner": "Joe Jaramillo",
-        "team": "OnlyIfIHadA2TE",
-        "amount": 9,
-        "week": 6,
-        "score": 0.0
-      },
-      {
-        "owner": "Joe Jaramillo",
-        "team": "OnlyIfIHadA2TE",
-        "amount": 9,
-        "week": 7,
-        "score": 0.0
-      },
-      {
-        "owner": "Joe Jaramillo",
-        "team": "OnlyIfIHadA2TE",
-        "amount": 9,
-        "week": 8,
-        "score": 0.0
-      },
-      {
-        "owner": "Joe Jaramillo",
-        "team": "OnlyIfIHadA2TE",
-        "amount": 9,
-        "week": 9,
-        "score": 0.0
-      },
-      {
-        "owner": "Joe Jaramillo",
-        "team": "OnlyIfIHadA2TE",
-        "amount": 9,
-        "week": 10,
-        "score": 0.0
-      },
-      {
-        "owner": "Joe Jaramillo",
-        "team": "OnlyIfIHadA2TE",
-        "amount": 9,
-        "week": 11,
-        "score": 0.0
-      },
-      {
-        "owner": "Joe Jaramillo",
-        "team": "OnlyIfIHadA2TE",
-        "amount": 9,
-        "week": 12,
-        "score": 0.0
-      },
-      {
-        "owner": "Joe Jaramillo",
-        "team": "OnlyIfIHadA2TE",
-        "amount": 9,
-        "week": 13,
-        "score": 0.0
-      },
-      {
-        "owner": "Joe Jaramillo",
-        "team": "OnlyIfIHadA2TE",
-        "amount": 9,
-        "week": 14,
-        "score": 0.0
       }
     ],
-    "consolationPayouts": [
-      {
-        "owner": "Carl Cummins",
-        "team": "Taylor and Travis Swift \ud83d\udc51",
-        "amount": 1,
-        "week": 3,
-        "score": 0.0
-      },
-      {
-        "owner": "Carl Cummins",
-        "team": "Taylor and Travis Swift \ud83d\udc51",
-        "amount": 1,
-        "week": 4,
-        "score": 0.0
-      },
-      {
-        "owner": "Carl Cummins",
-        "team": "Taylor and Travis Swift \ud83d\udc51",
-        "amount": 1,
-        "week": 5,
-        "score": 0.0
-      },
-      {
-        "owner": "Carl Cummins",
-        "team": "Taylor and Travis Swift \ud83d\udc51",
-        "amount": 1,
-        "week": 6,
-        "score": 0.0
-      },
-      {
-        "owner": "Carl Cummins",
-        "team": "Taylor and Travis Swift \ud83d\udc51",
-        "amount": 1,
-        "week": 7,
-        "score": 0.0
-      },
-      {
-        "owner": "Carl Cummins",
-        "team": "Taylor and Travis Swift \ud83d\udc51",
-        "amount": 1,
-        "week": 8,
-        "score": 0.0
-      },
-      {
-        "owner": "Carl Cummins",
-        "team": "Taylor and Travis Swift \ud83d\udc51",
-        "amount": 1,
-        "week": 9,
-        "score": 0.0
-      },
-      {
-        "owner": "Carl Cummins",
-        "team": "Taylor and Travis Swift \ud83d\udc51",
-        "amount": 1,
-        "week": 10,
-        "score": 0.0
-      },
-      {
-        "owner": "Carl Cummins",
-        "team": "Taylor and Travis Swift \ud83d\udc51",
-        "amount": 1,
-        "week": 11,
-        "score": 0.0
-      },
-      {
-        "owner": "Carl Cummins",
-        "team": "Taylor and Travis Swift \ud83d\udc51",
-        "amount": 1,
-        "week": 12,
-        "score": 0.0
-      },
-      {
-        "owner": "Carl Cummins",
-        "team": "Taylor and Travis Swift \ud83d\udc51",
-        "amount": 1,
-        "week": 13,
-        "score": 0.0
-      },
-      {
-        "owner": "Carl Cummins",
-        "team": "Taylor and Travis Swift \ud83d\udc51",
-        "amount": 1,
-        "week": 14,
-        "score": 0.0
-      }
-    ],
+    "consolationPayouts": [],
     "playoffPayouts": []
   }
 }

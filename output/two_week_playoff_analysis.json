@@ -1,7 +1,7 @@
 {
-  "totalTwoWeekMatchups": 17,
+  "totalTwoWeekMatchups": 5,
   "comebacks": 1,
-  "comebackRate": 0.058823529411764705,
+  "comebackRate": 0.2,
   "matchups": [
     {
       "year": 2019,
@@ -52,150 +52,6 @@
       "finalMargin": 171.12
     },
     {
-      "year": 2020,
-      "week1": 16,
-      "week2": 17,
-      "teamA": {
-        "name": "Go Fudge Yourselves",
-        "owner": "Phil Torres",
-        "week1Score": 136.02,
-        "week2Score": 136.02,
-        "totalScore": 272.04
-      },
-      "teamB": {
-        "name": "RADrigo Is My Homeboy",
-        "owner": "John Artiglier",
-        "week1Score": 129.0,
-        "week2Score": 129.0,
-        "totalScore": 258.0
-      },
-      "week1Leader": "team_a",
-      "finalWinner": "team_a",
-      "comeback": false,
-      "week1Margin": 7.02000000000001,
-      "finalMargin": 14.04000000000002
-    },
-    {
-      "year": 2020,
-      "week1": 17,
-      "week2": 18,
-      "teamA": {
-        "name": "Go Fudge Yourselves",
-        "owner": "Phil Torres",
-        "week1Score": 136.02,
-        "week2Score": 136.02,
-        "totalScore": 272.04
-      },
-      "teamB": {
-        "name": "RADrigo Is My Homeboy",
-        "owner": "John Artiglier",
-        "week1Score": 129.0,
-        "week2Score": 129.0,
-        "totalScore": 258.0
-      },
-      "week1Leader": "team_a",
-      "finalWinner": "team_a",
-      "comeback": false,
-      "week1Margin": 7.02000000000001,
-      "finalMargin": 14.04000000000002
-    },
-    {
-      "year": 2021,
-      "week1": 17,
-      "week2": 18,
-      "teamA": {
-        "name": "Chubb Basshole",
-        "owner": "Ben Bingert",
-        "week1Score": 117.74,
-        "week2Score": 117.74,
-        "totalScore": 235.48
-      },
-      "teamB": {
-        "name": "Wade Boggs Memorial Team",
-        "owner": "Bill Solecki",
-        "week1Score": 96.32,
-        "week2Score": 96.32,
-        "totalScore": 192.64
-      },
-      "week1Leader": "team_a",
-      "finalWinner": "team_a",
-      "comeback": false,
-      "week1Margin": 21.42,
-      "finalMargin": 42.84
-    },
-    {
-      "year": 2021,
-      "week1": 18,
-      "week2": 19,
-      "teamA": {
-        "name": "Chubb Basshole",
-        "owner": "Ben Bingert",
-        "week1Score": 117.74,
-        "week2Score": 117.74,
-        "totalScore": 235.48
-      },
-      "teamB": {
-        "name": "Wade Boggs Memorial Team",
-        "owner": "Bill Solecki",
-        "week1Score": 96.32,
-        "week2Score": 96.32,
-        "totalScore": 192.64
-      },
-      "week1Leader": "team_a",
-      "finalWinner": "team_a",
-      "comeback": false,
-      "week1Margin": 21.42,
-      "finalMargin": 42.84
-    },
-    {
-      "year": 2022,
-      "week1": 17,
-      "week2": 18,
-      "teamA": {
-        "name": "Joe Burrow Tiger King",
-        "owner": "Ben Bingert",
-        "week1Score": 106.52,
-        "week2Score": 106.52,
-        "totalScore": 213.04
-      },
-      "teamB": {
-        "name": "Pussy Power",
-        "owner": "Carl Cummins",
-        "week1Score": 119.18,
-        "week2Score": 119.18,
-        "totalScore": 238.36
-      },
-      "week1Leader": "team_b",
-      "finalWinner": "team_b",
-      "comeback": false,
-      "week1Margin": 12.66000000000001,
-      "finalMargin": 25.32000000000002
-    },
-    {
-      "year": 2022,
-      "week1": 18,
-      "week2": 19,
-      "teamA": {
-        "name": "Joe Burrow Tiger King",
-        "owner": "Ben Bingert",
-        "week1Score": 106.52,
-        "week2Score": 106.52,
-        "totalScore": 213.04
-      },
-      "teamB": {
-        "name": "Pussy Power",
-        "owner": "Carl Cummins",
-        "week1Score": 119.18,
-        "week2Score": 119.18,
-        "totalScore": 238.36
-      },
-      "week1Leader": "team_b",
-      "finalWinner": "team_b",
-      "comeback": false,
-      "week1Margin": 12.66000000000001,
-      "finalMargin": 25.32000000000002
-    },
-    {
       "year": 2023,
       "week1": 16,
       "week2": 17,
@@ -218,30 +74,6 @@
       "comeback": false,
       "week1Margin": 34.760000000000005,
       "finalMargin": 62.70000000000002
-    },
-    {
-      "year": 2023,
-      "week1": 17,
-      "week2": 18,
-      "teamA": {
-        "name": "Salty Spitoon",
-        "owner": "Ray Engleking",
-        "week1Score": 150.88,
-        "week2Score": 150.88,
-        "totalScore": 301.76
-      },
-      "teamB": {
-        "name": "Chase My Butker",
-        "owner": "Mike Kovacs",
-        "week1Score": 103.76,
-        "week2Score": 103.76,
-        "totalScore": 207.52
-      },
-      "week1Leader": "team_a",
-      "finalWinner": "team_a",
-      "comeback": false,
-      "week1Margin": 47.11999999999999,
-      "finalMargin": 94.23999999999998
     },
     {
       "year": 2024,
@@ -268,30 +100,6 @@
       "finalMargin": 5.740000000000009
     },
     {
-      "year": 2024,
-      "week1": 17,
-      "week2": 18,
-      "teamA": {
-        "name": "Bovine University Stampede",
-        "owner": "Bill Solecki",
-        "week1Score": 134.46,
-        "week2Score": 134.46,
-        "totalScore": 268.92
-      },
-      "teamB": {
-        "name": "Taylor Swift ",
-        "owner": "Carl Cummins",
-        "week1Score": 120.72,
-        "week2Score": 120.72,
-        "totalScore": 241.44
-      },
-      "week1Leader": "team_a",
-      "finalWinner": "team_a",
-      "comeback": false,
-      "week1Margin": 13.740000000000009,
-      "finalMargin": 27.480000000000018
-    },
-    {
       "year": 2025,
       "week1": 16,
       "week2": 17,
@@ -314,102 +122,6 @@
       "comeback": false,
       "week1Margin": 85.47999999999999,
       "finalMargin": 109.82
-    },
-    {
-      "year": 2025,
-      "week1": 17,
-      "week2": 18,
-      "teamA": {
-        "name": "Salty Spitoon",
-        "owner": "Ray Engleking",
-        "week1Score": 113.88,
-        "week2Score": 113.88,
-        "totalScore": 227.76
-      },
-      "teamB": {
-        "name": "Bovine University Stampede",
-        "owner": "Bill Solecki",
-        "week1Score": 94.26,
-        "week2Score": 94.26,
-        "totalScore": 188.52
-      },
-      "week1Leader": "team_a",
-      "finalWinner": "team_a",
-      "comeback": false,
-      "week1Margin": 19.61999999999999,
-      "finalMargin": 39.23999999999998
-    },
-    {
-      "year": 2026,
-      "week1": 15,
-      "week2": 16,
-      "teamA": {
-        "name": "OnlyIfIHadA2TE",
-        "owner": "Joe Jaramillo",
-        "week1Score": 0.0,
-        "week2Score": 0.0,
-        "totalScore": 0.0
-      },
-      "teamB": {
-        "name": "Taylor and Travis Swift \ud83d\udc51",
-        "owner": "Carl Cummins",
-        "week1Score": 0.0,
-        "week2Score": 0.0,
-        "totalScore": 0.0
-      },
-      "week1Leader": "team_b",
-      "finalWinner": "team_b",
-      "comeback": false,
-      "week1Margin": 0.0,
-      "finalMargin": 0.0
-    },
-    {
-      "year": 2026,
-      "week1": 16,
-      "week2": 17,
-      "teamA": {
-        "name": "OnlyIfIHadA2TE",
-        "owner": "Joe Jaramillo",
-        "week1Score": 0.0,
-        "week2Score": 0.0,
-        "totalScore": 0.0
-      },
-      "teamB": {
-        "name": "Taylor and Travis Swift \ud83d\udc51",
-        "owner": "Carl Cummins",
-        "week1Score": 0.0,
-        "week2Score": 0.0,
-        "totalScore": 0.0
-      },
-      "week1Leader": "team_b",
-      "finalWinner": "team_b",
-      "comeback": false,
-      "week1Margin": 0.0,
-      "finalMargin": 0.0
-    },
-    {
-      "year": 2026,
-      "week1": 17,
-      "week2": 18,
-      "teamA": {
-        "name": "OnlyIfIHadA2TE",
-        "owner": "Joe Jaramillo",
-        "week1Score": 0.0,
-        "week2Score": 0.0,
-        "totalScore": 0.0
-      },
-      "teamB": {
-        "name": "Taylor and Travis Swift \ud83d\udc51",
-        "owner": "Carl Cummins",
-        "week1Score": 0.0,
-        "week2Score": 0.0,
-        "totalScore": 0.0
-      },
-      "week1Leader": "team_b",
-      "finalWinner": "team_b",
-      "comeback": false,
-      "week1Margin": 0.0,
-      "finalMargin": 0.0
     }
   ],
   "comebackMatchups": [
