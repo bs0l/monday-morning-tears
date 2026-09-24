@@ -293,36 +293,84 @@
       "matchupPeriodId": 13
     },
     "longestWinStreak": {
-      "owner": "Randell Crawford",
-      "length": 11,
-      "teamName": "Insane in the  Ukraine",
-      "startYear": 2022,
-      "startWeek": 15,
+      "owner": "Bill Solecki",
+      "length": 10,
+      "teamName": "Why's This So Sticky?",
+      "startYear": 2023,
+      "startWeek": 5,
       "endYear": 2023,
-      "endWeek": 6,
-      "isOngoing": false
+      "endWeek": 14,
+      "isOngoing": false,
+      "owners": [
+        {
+          "owner": "Bill Solecki",
+          "length": 10,
+          "teamName": "Why's This So Sticky?",
+          "startYear": 2023,
+          "startWeek": 5,
+          "endYear": 2023,
+          "endWeek": 14,
+          "isOngoing": false
+        },
+        {
+          "owner": "Mike Kovacs",
+          "length": 10,
+          "teamName": "Why Pass to Top Wide Receivers?",
+          "startYear": 2016,
+          "startWeek": 9,
+          "endYear": 2017,
+          "endWeek": 4,
+          "isOngoing": false
+        }
+      ],
+      "tied": true
     },
     "longestLossStreak": {
       "owner": "john crawford",
-      "length": 14,
+      "length": 13,
       "teamName": "Paintin Peyton",
       "startYear": 2023,
       "startWeek": 12,
       "endYear": 2024,
       "endWeek": 7,
-      "isOngoing": false
+      "isOngoing": false,
+      "owners": [
+        {
+          "owner": "john crawford",
+          "length": 13,
+          "teamName": "Paintin Peyton",
+          "startYear": 2023,
+          "startWeek": 12,
+          "endYear": 2024,
+          "endWeek": 7,
+          "isOngoing": false
+        }
+      ],
+      "tied": false
     },
     "mostWeeklyHighScores": {
       "owner": "Bill Solecki",
-      "count": 39
+      "owners": [
+        "Bill Solecki"
+      ],
+      "count": 36,
+      "tied": false
     },
     "mostWeeklyLowScores": {
       "owner": "Randell Crawford",
-      "count": 39
+      "owners": [
+        "Randell Crawford"
+      ],
+      "count": 23,
+      "tied": false
     },
     "mostConsolationDollars": {
-      "owner": "Carl Cummins",
-      "count": 18
+      "owner": "Bill Solecki",
+      "owners": [
+        "Bill Solecki"
+      ],
+      "count": 6,
+      "tied": false
     }
   },
   "regularSeason": {
@@ -626,7 +674,20 @@
       "startWeek": 5,
       "endYear": 2024,
       "endWeek": 8,
-      "isOngoing": false
+      "isOngoing": false,
+      "owners": [
+        {
+          "owner": "Bill Solecki",
+          "length": 18,
+          "teamName": "Bovine University Stampede",
+          "startYear": 2023,
+          "startWeek": 5,
+          "endYear": 2024,
+          "endWeek": 8,
+          "isOngoing": false
+        }
+      ],
+      "tied": false
     },
     "longestLossStreak": {
       "owner": "john crawford",
@@ -636,19 +697,44 @@
       "startWeek": 12,
       "endYear": 2024,
       "endWeek": 7,
-      "isOngoing": false
+      "isOngoing": false,
+      "owners": [
+        {
+          "owner": "john crawford",
+          "length": 10,
+          "teamName": "Paintin Peyton",
+          "startYear": 2023,
+          "startWeek": 12,
+          "endYear": 2024,
+          "endWeek": 7,
+          "isOngoing": false
+        }
+      ],
+      "tied": false
     },
     "mostWeeklyHighScores": {
       "owner": "Ray Engleking",
-      "count": 30
+      "owners": [
+        "Ray Engleking"
+      ],
+      "count": 30,
+      "tied": false
     },
     "mostWeeklyLowScores": {
       "owner": "Randell Crawford",
-      "count": 33
+      "owners": [
+        "Randell Crawford"
+      ],
+      "count": 21,
+      "tied": false
     },
     "mostConsolationDollars": {
-      "owner": "Carl Cummins",
-      "count": 14
+      "owner": "Bill Solecki",
+      "owners": [
+        "Bill Solecki"
+      ],
+      "count": 5,
+      "tied": false
     },
     "mostPointsAgainstSeasons": [
       {

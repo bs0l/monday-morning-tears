@@ -1016,6 +1016,10 @@
         {
           "player": "Chargers D/ST",
           "count": 1
+        },
+        {
+          "player": "Buccaneers D/ST",
+          "count": 1
         }
       ],
       "John Artiglier": [
@@ -1042,6 +1046,10 @@
         {
           "player": "Lions D/ST",
           "count": 1
+        },
+        {
+          "player": "Makai Lemon",
+          "count": 1
         }
       ],
       "Bill Solecki": [
@@ -1051,6 +1059,22 @@
         },
         {
           "player": "Lil'Jordan Humphrey",
+          "count": 1
+        },
+        {
+          "player": "Cameron Dicker",
+          "count": 1
+        }
+      ],
+      "john crawford": [
+        {
+          "player": "Jaxson Dart",
+          "count": 1
+        }
+      ],
+      "Randell Crawford": [
+        {
+          "player": "Quentin Johnston",
           "count": 1
         }
       ]
@@ -4543,6 +4567,10 @@
           {
             "player": "Chargers D/ST",
             "count": 1
+          },
+          {
+            "player": "Buccaneers D/ST",
+            "count": 1
           }
         ],
         "John Artiglier": [
@@ -4569,6 +4597,10 @@
           {
             "player": "Lions D/ST",
             "count": 1
+          },
+          {
+            "player": "Makai Lemon",
+            "count": 1
           }
         ],
         "Bill Solecki": [
@@ -4578,6 +4610,22 @@
           },
           {
             "player": "Lil'Jordan Humphrey",
+            "count": 1
+          },
+          {
+            "player": "Cameron Dicker",
+            "count": 1
+          }
+        ],
+        "john crawford": [
+          {
+            "player": "Jaxson Dart",
+            "count": 1
+          }
+        ],
+        "Randell Crawford": [
+          {
+            "player": "Quentin Johnston",
             "count": 1
           }
         ]
