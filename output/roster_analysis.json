@@ -590,11 +590,11 @@
       "owner": "Ray Engleking",
       "teamName": "Salty Spitoon",
       "totalDrafted": 15,
-      "draftedKeptToPlayoffs": 15,
-      "draftedPointsScored": 275.44,
-      "waiverPickups": 1,
-      "waiverPointsScored": 12.7,
-      "draftRetentionRate": 100.0,
+      "draftedKeptToPlayoffs": 13,
+      "draftedPointsScored": 253.53999999999996,
+      "waiverPickups": 3,
+      "waiverPointsScored": 53.6,
+      "draftRetentionRate": 86.66666666666667,
       "draftedPlayers": [
         {
           "name": "Puka Nacua",
@@ -663,8 +663,8 @@
           "name": "Michael Wilson",
           "round": 10,
           "pick": 4,
-          "keptToPlayoffs": true,
-          "totalPoints": 10.9
+          "keptToPlayoffs": false,
+          "totalPoints": 0
         },
         {
           "name": "Broncos D/ST",
@@ -698,8 +698,8 @@
           "name": "KC Concepcion",
           "round": 15,
           "pick": 7,
-          "keptToPlayoffs": true,
-          "totalPoints": 11.0
+          "keptToPlayoffs": false,
+          "totalPoints": 0
         }
       ]
     },
