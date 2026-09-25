@@ -12,15 +12,15 @@
       "matchupPeriodId": 15
     },
     "lowestScore": {
-      "score": 12.0,
-      "team": "Its Mike Vick In a Box!",
-      "teamId": 2,
-      "owner": "Mike Kovacs",
-      "opponent": "T'EOMINATOR 2 RESURRECTION",
-      "opponentScore": 15.0,
-      "year": 2014,
-      "week": 13,
-      "matchupPeriodId": 13
+      "score": 5.6,
+      "team": "Kraft Smack and Cheese",
+      "teamId": 11,
+      "owner": "John Artiglier",
+      "opponent": "Bovine University Stampede",
+      "opponentScore": 19.1,
+      "year": 2026,
+      "week": 3,
+      "matchupPeriodId": 3
     },
     "top10HighestScores": [
       {
@@ -136,6 +136,17 @@
     ],
     "top10LowestScores": [
       {
+        "score": 5.6,
+        "team": "Kraft Smack and Cheese",
+        "teamId": 11,
+        "owner": "John Artiglier",
+        "opponent": "Bovine University Stampede",
+        "opponentScore": 19.1,
+        "year": 2026,
+        "week": 3,
+        "matchupPeriodId": 3
+      },
+      {
         "score": 12.0,
         "team": "Its Mike Vick In a Box!",
         "teamId": 2,
@@ -156,6 +167,17 @@
         "year": 2014,
         "week": 13,
         "matchupPeriodId": 13
+      },
+      {
+        "score": 19.1,
+        "team": "Bovine University Stampede",
+        "teamId": 1,
+        "owner": "Bill Solecki",
+        "opponent": "Kraft Smack and Cheese",
+        "opponentScore": 5.6,
+        "year": 2026,
+        "week": 3,
+        "matchupPeriodId": 3
       },
       {
         "score": 34.42,
@@ -222,28 +244,6 @@
         "year": 2014,
         "week": 10,
         "matchupPeriodId": 10
-      },
-      {
-        "score": 49.22,
-        "team": "Peyton the Professor",
-        "teamId": 13,
-        "owner": "john crawford",
-        "opponent": "Insane in the  Ukraine",
-        "opponentScore": 96.22,
-        "year": 2023,
-        "week": 9,
-        "matchupPeriodId": 9
-      },
-      {
-        "score": 50.16,
-        "team": "Mail Fairy",
-        "teamId": 12,
-        "owner": "Ben Bingert",
-        "opponent": "Paintin Peyton",
-        "opponentScore": 140.74,
-        "year": 2025,
-        "week": 3,
-        "matchupPeriodId": 3
       }
     ],
     "closestWin": {
@@ -281,16 +281,16 @@
       "matchupPeriodId": 15
     },
     "lowestScoringGame": {
-      "total": 27.0,
-      "team1": "Its Mike Vick In a Box!",
-      "owner1": "Mike Kovacs",
-      "score1": 12.0,
-      "team2": "T'EOMINATOR 2 RESURRECTION",
-      "owner2": "Keegan Hayes",
-      "score2": 15.0,
-      "year": 2014,
-      "week": 13,
-      "matchupPeriodId": 13
+      "total": 24.700000000000003,
+      "team1": "Kraft Smack and Cheese",
+      "owner1": "John Artiglier",
+      "score1": 5.6,
+      "team2": "Bovine University Stampede",
+      "owner2": "Bill Solecki",
+      "score2": 19.1,
+      "year": 2026,
+      "week": 3,
+      "matchupPeriodId": 3
     },
     "longestWinStreak": {
       "owner": "Bill Solecki",
@@ -386,15 +386,15 @@
       "matchupPeriodId": 4
     },
     "lowestScore": {
-      "score": 12.0,
-      "team": "Its Mike Vick In a Box!",
-      "teamId": 2,
-      "owner": "Mike Kovacs",
-      "opponent": "T'EOMINATOR 2 RESURRECTION",
-      "opponentScore": 15.0,
-      "year": 2014,
-      "week": 13,
-      "matchupPeriodId": 13
+      "score": 5.6,
+      "team": "Kraft Smack and Cheese",
+      "teamId": 11,
+      "owner": "John Artiglier",
+      "opponent": "Bovine University Stampede",
+      "opponentScore": 19.1,
+      "year": 2026,
+      "week": 3,
+      "matchupPeriodId": 3
     },
     "top10HighestScores": [
       {
@@ -510,6 +510,17 @@
     ],
     "top10LowestScores": [
       {
+        "score": 5.6,
+        "team": "Kraft Smack and Cheese",
+        "teamId": 11,
+        "owner": "John Artiglier",
+        "opponent": "Bovine University Stampede",
+        "opponentScore": 19.1,
+        "year": 2026,
+        "week": 3,
+        "matchupPeriodId": 3
+      },
+      {
         "score": 12.0,
         "team": "Its Mike Vick In a Box!",
         "teamId": 2,
@@ -530,6 +541,17 @@
         "year": 2014,
         "week": 13,
         "matchupPeriodId": 13
+      },
+      {
+        "score": 19.1,
+        "team": "Bovine University Stampede",
+        "teamId": 1,
+        "owner": "Bill Solecki",
+        "opponent": "Kraft Smack and Cheese",
+        "opponentScore": 5.6,
+        "year": 2026,
+        "week": 3,
+        "matchupPeriodId": 3
       },
       {
         "score": 34.42,
@@ -596,28 +618,6 @@
         "year": 2023,
         "week": 9,
         "matchupPeriodId": 9
-      },
-      {
-        "score": 50.16,
-        "team": "Mail Fairy",
-        "teamId": 12,
-        "owner": "Ben Bingert",
-        "opponent": "Paintin Peyton",
-        "opponentScore": 140.74,
-        "year": 2025,
-        "week": 3,
-        "matchupPeriodId": 3
-      },
-      {
-        "score": 51.0,
-        "team": "Voodoo Mama Juju",
-        "teamId": 10,
-        "owner": "BAHB Kerwersker",
-        "opponent": "Erection Protection",
-        "opponentScore": 106.0,
-        "year": 2014,
-        "week": 7,
-        "matchupPeriodId": 7
       }
     ],
     "closestWin": {
@@ -655,16 +655,16 @@
       "matchupPeriodId": 4
     },
     "lowestScoringGame": {
-      "total": 27.0,
-      "team1": "Its Mike Vick In a Box!",
-      "owner1": "Mike Kovacs",
-      "score1": 12.0,
-      "team2": "T'EOMINATOR 2 RESURRECTION",
-      "owner2": "Keegan Hayes",
-      "score2": 15.0,
-      "year": 2014,
-      "week": 13,
-      "matchupPeriodId": 13
+      "total": 24.700000000000003,
+      "team1": "Kraft Smack and Cheese",
+      "owner1": "John Artiglier",
+      "score1": 5.6,
+      "team2": "Bovine University Stampede",
+      "owner2": "Bill Solecki",
+      "score2": 19.1,
+      "year": 2026,
+      "week": 3,
+      "matchupPeriodId": 3
     },
     "longestWinStreak": {
       "owner": "Bill Solecki",
@@ -770,16 +770,16 @@
     ],
     "fewestPointsAgainstSeasons": [
       {
-        "owner": "Bill Solecki",
-        "teamName": "Bovine University Stampede",
-        "year": 2026,
-        "pointsAgainst": 179.26
-      },
-      {
         "owner": "Carl Cummins",
         "teamName": "Taylor and Travis Swift \ud83d\udc51",
         "year": 2026,
         "pointsAgainst": 182.02
+      },
+      {
+        "owner": "Bill Solecki",
+        "teamName": "Bovine University Stampede",
+        "year": 2026,
+        "pointsAgainst": 184.85999999999999
       },
       {
         "owner": "Ray Engleking",
@@ -788,16 +788,16 @@
         "pointsAgainst": 204.72
       },
       {
-        "owner": "Mike Kovacs",
-        "teamName": "Chasing McBride",
-        "year": 2026,
-        "pointsAgainst": 206.16
-      },
-      {
         "owner": "Joe Jaramillo",
         "teamName": "OnlyIfIHadA2TE",
         "year": 2026,
         "pointsAgainst": 206.34
+      },
+      {
+        "owner": "Phil Torres",
+        "teamName": "Canadian Geeses",
+        "year": 2026,
+        "pointsAgainst": 213.18
       }
     ]
   }

@@ -4433,23 +4433,23 @@
     "John Artiglier": {
       "opponent": "John Artiglier",
       "opponentName": "Kraft Smack and Cheese",
-      "wins": 7,
+      "wins": 8,
       "losses": 8,
       "ties": 0,
-      "winPercentage": 0.4666666666666667,
-      "totalGames": 15,
-      "pointsFor": 1742.46,
-      "pointsAgainst": 1662.08,
-      "avgPointsFor": 116.164,
-      "avgPointsAgainst": 110.80533333333332,
+      "winPercentage": 0.5,
+      "totalGames": 16,
+      "pointsFor": 1761.56,
+      "pointsAgainst": 1667.6799999999998,
+      "avgPointsFor": 110.0975,
+      "avgPointsAgainst": 104.22999999999999,
       "highestScore": 167.42,
-      "lowestScore": 82.18,
+      "lowestScore": 19.1,
       "biggestWin": 73.73999999999998,
       "closestWin": 5.439999999999998,
       "longestWinStreak": 4,
       "currentStreak": {
         "type": "WIN",
-        "length": 1
+        "length": 2
       },
       "matchups": [
         {
@@ -4794,6 +4794,29 @@
             "teamAbbrev": "STMP",
             "owner": "Bill Solecki",
             "score": 148.58
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2026_3_11_1",
+          "year": 2026,
+          "week": 3,
+          "matchupPeriodId": 3,
+          "isPlayoff": false,
+          "playoffType": "NONE",
+          "home": {
+            "teamId": 11,
+            "teamName": "Kraft Smack and Cheese",
+            "teamAbbrev": "CHE",
+            "owner": "John Artiglier",
+            "score": 5.6
+          },
+          "away": {
+            "teamId": 1,
+            "teamName": "Bovine University Stampede",
+            "teamAbbrev": "STMP",
+            "owner": "Bill Solecki",
+            "score": 19.1
           },
           "winner": "AWAY"
         }
@@ -8823,22 +8846,22 @@
       "opponent": "Phil Torres",
       "opponentName": "Canadian Geeses",
       "wins": 11,
-      "losses": 19,
+      "losses": 20,
       "ties": 0,
-      "winPercentage": 0.36666666666666664,
-      "totalGames": 30,
+      "winPercentage": 0.3548387096774194,
+      "totalGames": 31,
       "pointsFor": 3618.76,
-      "pointsAgainst": 3847.28,
-      "avgPointsFor": 120.62533333333334,
-      "avgPointsAgainst": 128.24266666666668,
+      "pointsAgainst": 3905.48,
+      "avgPointsFor": 116.7341935483871,
+      "avgPointsAgainst": 125.98322580645161,
       "highestScore": 244.22000000000003,
-      "lowestScore": 64.18,
+      "lowestScore": 0.0,
       "biggestWin": 57.80000000000001,
       "closestWin": 2.4200000000000017,
       "longestWinStreak": 2,
       "currentStreak": {
         "type": "LOSS",
-        "length": 1
+        "length": 2
       },
       "matchups": [
         {
@@ -9530,6 +9553,29 @@
             "score": 105.1
           },
           "winner": "AWAY"
+        },
+        {
+          "id": "2026_3_4_2",
+          "year": 2026,
+          "week": 3,
+          "matchupPeriodId": 3,
+          "isPlayoff": false,
+          "playoffType": "NONE",
+          "home": {
+            "teamId": 4,
+            "teamName": "Canadian Geeses",
+            "teamAbbrev": "CA",
+            "owner": "Phil Torres",
+            "score": 58.2
+          },
+          "away": {
+            "teamId": 2,
+            "teamName": "Chasing McBride",
+            "teamAbbrev": "GRBG",
+            "owner": "Mike Kovacs",
+            "score": 0.0
+          },
+          "winner": "HOME"
         }
       ]
     },
@@ -20278,23 +20324,23 @@
     "Mike Kovacs": {
       "opponent": "Mike Kovacs",
       "opponentName": "Chasing McBride",
-      "wins": 19,
+      "wins": 20,
       "losses": 11,
       "ties": 0,
-      "winPercentage": 0.6333333333333333,
-      "totalGames": 30,
-      "pointsFor": 3847.28,
+      "winPercentage": 0.6451612903225806,
+      "totalGames": 31,
+      "pointsFor": 3905.48,
       "pointsAgainst": 3618.76,
-      "avgPointsFor": 128.24266666666668,
-      "avgPointsAgainst": 120.62533333333334,
+      "avgPointsFor": 125.98322580645161,
+      "avgPointsAgainst": 116.7341935483871,
       "highestScore": 247.9,
-      "lowestScore": 73.18,
+      "lowestScore": 58.2,
       "biggestWin": 94.72,
       "closestWin": 1.059999999999988,
       "longestWinStreak": 4,
       "currentStreak": {
         "type": "WIN",
-        "length": 1
+        "length": 2
       },
       "matchups": [
         {
@@ -20986,6 +21032,29 @@
             "score": 105.1
           },
           "winner": "AWAY"
+        },
+        {
+          "id": "2026_3_4_2",
+          "year": 2026,
+          "week": 3,
+          "matchupPeriodId": 3,
+          "isPlayoff": false,
+          "playoffType": "NONE",
+          "home": {
+            "teamId": 4,
+            "teamName": "Canadian Geeses",
+            "teamAbbrev": "CA",
+            "owner": "Phil Torres",
+            "score": 58.2
+          },
+          "away": {
+            "teamId": 2,
+            "teamName": "Chasing McBride",
+            "teamAbbrev": "GRBG",
+            "owner": "Mike Kovacs",
+            "score": 0.0
+          },
+          "winner": "HOME"
         }
       ]
     },
@@ -41359,22 +41428,22 @@
       "opponent": "Bill Solecki",
       "opponentName": "Bovine University Stampede",
       "wins": 8,
-      "losses": 7,
+      "losses": 8,
       "ties": 0,
-      "winPercentage": 0.5333333333333333,
-      "totalGames": 15,
-      "pointsFor": 1662.08,
-      "pointsAgainst": 1742.46,
-      "avgPointsFor": 110.80533333333332,
-      "avgPointsAgainst": 116.164,
+      "winPercentage": 0.5,
+      "totalGames": 16,
+      "pointsFor": 1667.6799999999998,
+      "pointsAgainst": 1761.56,
+      "avgPointsFor": 104.22999999999999,
+      "avgPointsAgainst": 110.0975,
       "highestScore": 143.46,
-      "lowestScore": 80.34,
+      "lowestScore": 5.6,
       "biggestWin": 50.64,
       "closestWin": 5.52000000000001,
       "longestWinStreak": 6,
       "currentStreak": {
         "type": "LOSS",
-        "length": 1
+        "length": 2
       },
       "matchups": [
         {
@@ -41719,6 +41788,29 @@
             "teamAbbrev": "STMP",
             "owner": "Bill Solecki",
             "score": 148.58
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2026_3_11_1",
+          "year": 2026,
+          "week": 3,
+          "matchupPeriodId": 3,
+          "isPlayoff": false,
+          "playoffType": "NONE",
+          "home": {
+            "teamId": 11,
+            "teamName": "Kraft Smack and Cheese",
+            "teamAbbrev": "CHE",
+            "owner": "John Artiglier",
+            "score": 5.6
+          },
+          "away": {
+            "teamId": 1,
+            "teamName": "Bovine University Stampede",
+            "teamAbbrev": "STMP",
+            "owner": "Bill Solecki",
+            "score": 19.1
           },
           "winner": "AWAY"
         }

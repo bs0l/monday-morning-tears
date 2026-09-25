@@ -6,7 +6,7 @@
       "teamName": "Bovine University Stampede",
       "totalDrafted": 15,
       "draftedKeptToPlayoffs": 12,
-      "draftedPointsScored": 289.53999999999996,
+      "draftedPointsScored": 308.64,
       "waiverPickups": 3,
       "waiverPointsScored": 98.08,
       "draftRetentionRate": 80.0,
@@ -58,7 +58,7 @@
           "round": 7,
           "pick": 6,
           "keptToPlayoffs": true,
-          "totalPoints": 41.8
+          "totalPoints": 60.9
         },
         {
           "name": "Jaylen Warren",
@@ -123,7 +123,7 @@
       "teamName": "Chasing McBride",
       "totalDrafted": 15,
       "draftedKeptToPlayoffs": 14,
-      "draftedPointsScored": 307.76,
+      "draftedPointsScored": 310.55999999999995,
       "waiverPickups": 3,
       "waiverPointsScored": 89.6,
       "draftRetentionRate": 93.33333333333333,
@@ -175,7 +175,7 @@
           "round": 7,
           "pick": 3,
           "keptToPlayoffs": true,
-          "totalPoints": 11.3
+          "totalPoints": 14.1
         },
         {
           "name": "J.K. Dobbins",
@@ -357,7 +357,7 @@
       "teamName": "Canadian Geeses",
       "totalDrafted": 15,
       "draftedKeptToPlayoffs": 15,
-      "draftedPointsScored": 305.82,
+      "draftedPointsScored": 364.02,
       "waiverPickups": 0,
       "waiverPointsScored": 0,
       "draftRetentionRate": 100.0,
@@ -367,14 +367,14 @@
           "round": 1,
           "pick": 2,
           "keptToPlayoffs": true,
-          "totalPoints": 36.9
+          "totalPoints": 71.2
         },
         {
           "name": "Drake London",
           "round": 2,
           "pick": 9,
           "keptToPlayoffs": true,
-          "totalPoints": 11.4
+          "totalPoints": 35.3
         },
         {
           "name": "Rashee Rice",
@@ -474,7 +474,7 @@
       "teamName": "Insane in the  Ukraine",
       "totalDrafted": 15,
       "draftedKeptToPlayoffs": 14,
-      "draftedPointsScored": 270.12,
+      "draftedPointsScored": 288.61999999999995,
       "waiverPickups": 2,
       "waiverPointsScored": 40.4,
       "draftRetentionRate": 93.33333333333333,
@@ -547,7 +547,7 @@
           "round": 10,
           "pick": 2,
           "keptToPlayoffs": true,
-          "totalPoints": 20.3
+          "totalPoints": 38.8
         },
         {
           "name": "Quentin Johnston",
@@ -708,7 +708,7 @@
       "teamName": "Kraft Smack and Cheese",
       "totalDrafted": 15,
       "draftedKeptToPlayoffs": 14,
-      "draftedPointsScored": 293.96000000000004,
+      "draftedPointsScored": 299.56,
       "waiverPickups": 2,
       "waiverPointsScored": 42.3,
       "draftRetentionRate": 93.33333333333333,
@@ -760,7 +760,7 @@
           "round": 7,
           "pick": 5,
           "keptToPlayoffs": true,
-          "totalPoints": 10.5
+          "totalPoints": 15.1
         },
         {
           "name": "Bo Nix",
@@ -809,7 +809,7 @@
           "round": 14,
           "pick": 6,
           "keptToPlayoffs": true,
-          "totalPoints": 20.5
+          "totalPoints": 21.5
         },
         {
           "name": "Browns D/ST",
@@ -825,7 +825,7 @@
       "teamName": "All You Need Is Love",
       "totalDrafted": 15,
       "draftedKeptToPlayoffs": 13,
-      "draftedPointsScored": 285.26000000000005,
+      "draftedPointsScored": 286.26000000000005,
       "waiverPickups": 2,
       "waiverPointsScored": 26.8,
       "draftRetentionRate": 86.66666666666667,
@@ -877,7 +877,7 @@
           "round": 7,
           "pick": 4,
           "keptToPlayoffs": true,
-          "totalPoints": 2.0
+          "totalPoints": 3.0
         },
         {
           "name": "Sam LaPorta",

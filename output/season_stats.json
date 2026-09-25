@@ -1666,11 +1666,7 @@
       "count": 0,
       "tied": false
     },
-    "bestBenchWarmers": {
-      "owner": "Mike Kovacs",
-      "teamName": "Saquonda Forever",
-      "benchPoints": 709.74
-    },
+    "bestBenchWarmers": null,
     "weeklyHighPayouts": [
       {
         "owner": "Carl Cummins",
@@ -1999,11 +1995,7 @@
       "count": 1,
       "tied": true
     },
-    "bestBenchWarmers": {
-      "owner": "Phil Torres",
-      "teamName": "Go Fudge Yourselves",
-      "benchPoints": 695.3800000000001
-    },
+    "bestBenchWarmers": null,
     "weeklyHighPayouts": [
       {
         "owner": "Bill Solecki",
@@ -2391,11 +2383,7 @@
       "count": 2,
       "tied": false
     },
-    "bestBenchWarmers": {
-      "owner": "Ben Bingert",
-      "teamName": "Chubb Basshole",
-      "benchPoints": 820.4600000000002
-    },
+    "bestBenchWarmers": null,
     "weeklyHighPayouts": [
       {
         "owner": "Mike Kovacs",
@@ -2794,11 +2782,7 @@
       "count": 1,
       "tied": false
     },
-    "bestBenchWarmers": {
-      "owner": "Ben Bingert",
-      "teamName": "Joe Burrow Tiger King",
-      "benchPoints": 884.7399999999998
-    },
+    "bestBenchWarmers": null,
     "weeklyHighPayouts": [
       {
         "owner": "Bill Solecki",
@@ -3159,11 +3143,7 @@
       "count": 1,
       "tied": true
     },
-    "bestBenchWarmers": {
-      "owner": "Carl Cummins",
-      "teamName": "Taylor Swift ",
-      "benchPoints": 797.3000000000004
-    },
+    "bestBenchWarmers": null,
     "weeklyHighPayouts": [
       {
         "owner": "Carl Cummins",
@@ -3515,11 +3495,7 @@
       "count": 0,
       "tied": false
     },
-    "bestBenchWarmers": {
-      "owner": "Mike Kovacs",
-      "teamName": "Dollar Dollar Bills Y'all",
-      "benchPoints": 842.7400000000001
-    },
+    "bestBenchWarmers": null,
     "weeklyHighPayouts": [
       {
         "owner": "Ray Engleking",
@@ -3874,11 +3850,7 @@
       "count": 0,
       "tied": false
     },
-    "bestBenchWarmers": {
-      "owner": "Carl Cummins",
-      "teamName": "Taylor and Travis Swift \ud83d\udc51",
-      "benchPoints": 925.7200000000001
-    },
+    "bestBenchWarmers": null,
     "weeklyHighPayouts": [
       {
         "owner": "Ray Engleking",
@@ -4125,13 +4097,13 @@
       "matchupPeriodId": 1
     },
     "lowestScore": {
-      "score": 73.06,
-      "team": "Insane in the  Ukraine",
-      "owner": "Randell Crawford",
+      "score": 5.6,
+      "team": "Kraft Smack and Cheese",
+      "owner": "John Artiglier",
       "opponent": "Bovine University Stampede",
-      "opponentScore": 101.18,
-      "week": 2,
-      "matchupPeriodId": 2
+      "opponentScore": 19.1,
+      "week": 3,
+      "matchupPeriodId": 3
     },
     "closestWin": {
       "margin": 2.6999999999999886,
@@ -4144,36 +4116,29 @@
       "matchupPeriodId": 2
     },
     "biggestBlowout": {
-      "margin": 43.959999999999994,
-      "winner": "Taylor and Travis Swift \ud83d\udc51",
-      "winnerOwner": "Carl Cummins",
-      "winnerScore": 121.86,
-      "loser": "Paintin Peyton",
-      "loserScore": 77.9,
-      "week": 2,
-      "matchupPeriodId": 2
+      "margin": 58.2,
+      "winner": "Canadian Geeses",
+      "winnerOwner": "Phil Torres",
+      "winnerScore": 58.2,
+      "loser": "Chasing McBride",
+      "loserScore": 0.0,
+      "week": 3,
+      "matchupPeriodId": 3
     },
     "longestWinStreak": {
       "owner": "Bill Solecki",
-      "length": 2,
+      "length": 3,
       "owners": [
-        "Bill Solecki",
-        "Carl Cummins"
+        "Bill Solecki"
       ],
-      "tied": true,
+      "tied": false,
       "streaks": [
         {
           "owner": "Bill Solecki",
           "weeks": [
             1,
-            2
-          ]
-        },
-        {
-          "owner": "Carl Cummins",
-          "weeks": [
-            1,
-            2
+            2,
+            3
           ]
         }
       ]
@@ -4207,6 +4172,7 @@
       "owner": "Carl Cummins",
       "owners": [
         "Carl Cummins",
+        "Phil Torres",
         "john crawford"
       ],
       "count": 1,
@@ -4216,6 +4182,7 @@
       "owner": "Joe Jaramillo",
       "owners": [
         "Joe Jaramillo",
+        "Mike Kovacs",
         "Randell Crawford"
       ],
       "count": 1,
@@ -4227,11 +4194,7 @@
       "count": 0,
       "tied": false
     },
-    "bestBenchWarmers": {
-      "owner": "Carl Cummins",
-      "teamName": "Taylor and Travis Swift \ud83d\udc51",
-      "benchPoints": 158.92000000000002
-    },
+    "bestBenchWarmers": null,
     "weeklyHighPayouts": [
       {
         "owner": "john crawford",
@@ -4246,6 +4209,13 @@
         "amount": 10,
         "week": 2,
         "score": 121.86
+      },
+      {
+        "owner": "Phil Torres",
+        "team": "Canadian Geeses",
+        "amount": 10,
+        "week": 3,
+        "score": 58.2
       }
     ],
     "consolationPayouts": [],
