@@ -1666,7 +1666,11 @@
       "count": 0,
       "tied": false
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Mike Kovacs",
+      "teamName": "Saquonda Forever",
+      "benchPoints": 709.74
+    },
     "weeklyHighPayouts": [
       {
         "owner": "Carl Cummins",
@@ -1995,7 +1999,11 @@
       "count": 1,
       "tied": true
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Phil Torres",
+      "teamName": "Go Fudge Yourselves",
+      "benchPoints": 695.3800000000001
+    },
     "weeklyHighPayouts": [
       {
         "owner": "Bill Solecki",
@@ -2383,7 +2391,11 @@
       "count": 2,
       "tied": false
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Ben Bingert",
+      "teamName": "Chubb Basshole",
+      "benchPoints": 820.4600000000002
+    },
     "weeklyHighPayouts": [
       {
         "owner": "Mike Kovacs",
@@ -2782,7 +2794,11 @@
       "count": 1,
       "tied": false
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Ben Bingert",
+      "teamName": "Joe Burrow Tiger King",
+      "benchPoints": 884.7399999999998
+    },
     "weeklyHighPayouts": [
       {
         "owner": "Bill Solecki",
@@ -3143,7 +3159,11 @@
       "count": 1,
       "tied": true
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Carl Cummins",
+      "teamName": "Taylor Swift ",
+      "benchPoints": 797.3000000000004
+    },
     "weeklyHighPayouts": [
       {
         "owner": "Carl Cummins",
@@ -3495,7 +3515,11 @@
       "count": 0,
       "tied": false
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Mike Kovacs",
+      "teamName": "Dollar Dollar Bills Y'all",
+      "benchPoints": 842.7400000000001
+    },
     "weeklyHighPayouts": [
       {
         "owner": "Ray Engleking",
@@ -3850,7 +3874,11 @@
       "count": 0,
       "tied": false
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Carl Cummins",
+      "teamName": "Taylor and Travis Swift \ud83d\udc51",
+      "benchPoints": 925.7200000000001
+    },
     "weeklyHighPayouts": [
       {
         "owner": "Ray Engleking",
@@ -4194,7 +4222,11 @@
       "count": 0,
       "tied": false
     },
-    "bestBenchWarmers": null,
+    "bestBenchWarmers": {
+      "owner": "Carl Cummins",
+      "teamName": "Taylor and Travis Swift \ud83d\udc51",
+      "benchPoints": 158.92000000000002
+    },
     "weeklyHighPayouts": [
       {
         "owner": "john crawford",
@@ -4221,8 +4253,129 @@
     "consolationPayouts": [],
     "playoffPayouts": [],
     "keeperAnalysis": {
-      "keepers": [],
-      "roundBenchmarks": {}
+      "keepers": [
+        {
+          "owner": "Randell Crawford",
+          "player": "James Cook III",
+          "roundKept": 1,
+          "pointsScored": null,
+          "roundAvgPoints": null,
+          "pointsVsAvg": null,
+          "pointsVsAvgPct": null,
+          "verdict": "TBD",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "John Artiglier",
+          "player": "Jaxon Smith-Njigba",
+          "roundKept": 3,
+          "pointsScored": null,
+          "roundAvgPoints": null,
+          "pointsVsAvg": null,
+          "pointsVsAvgPct": null,
+          "verdict": "TBD",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Phil Torres",
+          "player": "Kenneth Walker III",
+          "roundKept": 4,
+          "pointsScored": null,
+          "roundAvgPoints": null,
+          "pointsVsAvg": null,
+          "pointsVsAvgPct": null,
+          "verdict": "TBD",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "John Crawford",
+          "player": "David Montgomery",
+          "roundKept": 5,
+          "pointsScored": null,
+          "roundAvgPoints": null,
+          "pointsVsAvg": null,
+          "pointsVsAvgPct": null,
+          "verdict": "TBD",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Ray Engleking",
+          "player": "Brock Bowers",
+          "roundKept": 9,
+          "pointsScored": null,
+          "roundAvgPoints": null,
+          "pointsVsAvg": null,
+          "pointsVsAvgPct": null,
+          "verdict": "TBD",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Carl Cummins",
+          "player": "Javonte Williams",
+          "roundKept": 10,
+          "pointsScored": null,
+          "roundAvgPoints": null,
+          "pointsVsAvg": null,
+          "pointsVsAvgPct": null,
+          "verdict": "TBD",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Mike Kovacs",
+          "player": "Jayden Daniels",
+          "roundKept": 13,
+          "pointsScored": null,
+          "roundAvgPoints": null,
+          "pointsVsAvg": null,
+          "pointsVsAvgPct": null,
+          "verdict": "TBD",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        },
+        {
+          "owner": "Bill Solecki",
+          "player": "Bhayshul Tuten",
+          "roundKept": 14,
+          "pointsScored": null,
+          "roundAvgPoints": null,
+          "pointsVsAvg": null,
+          "pointsVsAvgPct": null,
+          "verdict": "TBD",
+          "droppedMidSeason": false,
+          "lastActiveWeek": null,
+          "note": null
+        }
+      ],
+      "roundBenchmarks": {
+        "1": 79.12,
+        "2": 52.67,
+        "3": 58.17,
+        "4": 44.49,
+        "5": 41.99,
+        "6": 26.66,
+        "7": 42.24,
+        "8": 31.7,
+        "9": 37.27,
+        "10": 21.6,
+        "11": 42.94,
+        "12": 38.97,
+        "13": 57.76,
+        "14": 29.0,
+        "15": 33.08
+      }
     }
   }
 }
