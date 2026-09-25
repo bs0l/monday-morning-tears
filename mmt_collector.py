@@ -1,9 +1,6 @@
-#v2.2
-#24sep26
-#tied-owner superlatives (win/loss streaks, weekly
-#high/low scorers, all-time + season-level) and 0-0 placeholder-score guard
-#in the box_scores matchup loop
-#restores keepers
+#v2.3
+#25sep26
+#fixes current season keepers on season stats page
 #!/usr/bin/env python3
 """
 ESPN Fantasy Football Data Collector using espn-api library
@@ -1968,23 +1965,54 @@ class ESPNDataCollectorV2:
 
     def _direct_api(self, year, view, extra_params=""):
         """
-        Make a direct request to the ESPN leagueHistory endpoint.
+        Make a direct request to ESPN's league data.
+
+        Tries the leagueHistory endpoint first - this is what has reliably
+        worked for every completed season we've fetched (2013-2025), since
+        ESPN archives a season there once it's over. It does NOT serve a
+        season that's still in progress: confirmed live when MMT's 2026
+        keeper fetch failed here with "Could not fetch mDraftDetail for
+        2026" while every prior year succeeded via this same endpoint.
+
+        Falls back to the live seasons/{year}/segments/0/leagues/{id}
+        endpoint when leagueHistory comes back empty - per ESPN API
+        references (e.g. github.com/cwendt94/espn-api community docs),
+        this is the endpoint that actually serves the current in-progress
+        season. In practice this fallback should only ever trigger for
+        self.end_year while that season is still ongoing.
+
         Returns the unwrapped response dict, or None on failure.
         """
-        url = (
+        cookies = {"SWID": self.swid, "espn_s2": self.espn_s2}
+        headers = {"Accept": "application/json"}
+
+        # 1. leagueHistory - the response is a list containing one snapshot
+        history_url = (
             f"https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl"
             f"/leagueHistory/{self.league_id}?seasonId={year}&view={view}{extra_params}"
         )
-        cookies = {"SWID": self.swid, "espn_s2": self.espn_s2}
-        headers = {"Accept": "application/json"}
         try:
-            resp = requests.get(url, cookies=cookies, headers=headers, timeout=20)
+            resp = requests.get(history_url, cookies=cookies, headers=headers, timeout=20)
+            if resp.status_code == 200:
+                data = resp.json()
+                if isinstance(data, list) and data:
+                    return data[0]
+        except Exception as e:
+            print(f"    ✗ Direct API error (leagueHistory {year} {view}): {e}")
+
+        # 2. Live endpoint fallback - the response is a single dict, not a list
+        live_url = (
+            f"https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl"
+            f"/seasons/{year}/segments/0/leagues/{self.league_id}?view={view}{extra_params}"
+        )
+        try:
+            resp = requests.get(live_url, cookies=cookies, headers=headers, timeout=20)
             if resp.status_code != 200:
                 return None
             data = resp.json()
-            return data[0] if isinstance(data, list) and data else data
+            return data if data else None
         except Exception as e:
-            print(f"    ✗ Direct API error ({year} {view}): {e}")
+            print(f"    ✗ Direct API error (live endpoint {year} {view}): {e}")
             return None
 
     def _normalize_name(self, name):
@@ -2254,14 +2282,21 @@ class ESPNDataCollectorV2:
         2022+: player identity from mDraftDetail keeper flag;
                end-of-season mRoster for points; same zero fallback.
 
-        NOTE: this queries the leagueHistory endpoint, which historically
-        only serves completed seasons. It has never been run against a
-        still-in-progress current season before (self.end_year previously
-        always pointed at a season that had already ended by the time this
-        ran) - if 2026's draft board isn't available there yet mid-season,
-        this will print "Could not fetch mDraftDetail" and skip 2026 rather
-        than fail, but that's an untested situation worth watching the
-        first time this runs during an active season.
+        Endpoint note: this primarily queries the leagueHistory endpoint,
+        which only serves seasons ESPN has archived (i.e. already
+        completed) - confirmed live when MMT's mid-2026 keeper fetch
+        failed there with "Could not fetch mDraftDetail for 2026" while
+        every prior year succeeded. _direct_api() falls back to the live
+        seasons/{year}/segments/0/leagues/{id} endpoint when leagueHistory
+        comes back empty, which is what actually serves the current
+        in-progress season.
+
+        In-progress season note: for whichever year is still ongoing
+        (completed weeks < the season's full regular-season week count),
+        this shows keeper identity (owner/player/round) but skips
+        points/benchmarks/verdict entirely in favor of "TBD" - a
+        partial-season verdict (e.g. from 2 weeks of data) would be
+        misleading rather than just incomplete.
 
         Round benchmarks: average points scored by all non-keeper drafted
         players in the same round, giving a fair "expected value" baseline.
@@ -2293,7 +2328,8 @@ class ESPNDataCollectorV2:
                 (s for s in self.all_seasons if s['year'] == year), None
             )
             team_id_to_owner = {}
-            reg_season_weeks = 13   # safe default
+            reg_season_weeks  = 13   # safe default
+            season_in_progress = False
             if season_obj:
                 league = season_obj['league']
                 members = {}
@@ -2312,10 +2348,16 @@ class ESPNDataCollectorV2:
                         team_id_to_owner[team.team_id] = (
                             self._title_case_owner(owner)
                         )
-                reg_season_weeks = getattr(
+                reg_season_count = getattr(
                     league.settings, 'reg_season_count', 13
                 )
-                reg_season_weeks = self._completed_weeks(league, reg_season_weeks)
+                reg_season_weeks = self._completed_weeks(league, reg_season_count)
+                # If completed_weeks came in under the full regular season,
+                # this season hasn't finished yet - points/verdict aren't
+                # meaningful on a partial sample, so we'll show identity
+                # only (owner/player/round) and mark the stat columns TBD
+                # rather than compute a misleading early-season verdict.
+                season_in_progress = reg_season_weeks < reg_season_count
 
             # ── 1. Fetch draft board ──────────────────────────────────────
             draft_data = self._direct_api(year, "mDraftDetail")
@@ -2462,6 +2504,42 @@ class ESPNDataCollectorV2:
             for k in raw_keepers:
                 pid       = k["playerId"]
                 norm_name = self._normalize_name(k["player"])
+
+                if season_in_progress:
+                    # Season isn't over - a partial-sample verdict would be
+                    # misleading (e.g. 2 weeks of data), so show who was
+                    # kept and in what round, with everything else TBD.
+                    # Still resolve the player's name if we can (cheap,
+                    # already-fetched data) so the identity display isn't
+                    # missing anything just because points are pending.
+                    p_info = None
+                    if pid and pid in player_points:
+                        p_info = player_points[pid]
+                    elif not pid:
+                        resolved = pid_by_name.get(norm_name)
+                        if resolved:
+                            p_info = player_points.get(resolved)
+                    if p_info and p_info["name"] and (
+                        not k["player"] or k["player"] == "Unknown"
+                    ):
+                        k["player"] = p_info["name"]
+
+                    enriched.append({
+                        "owner":            k["owner"],
+                        "player":           k["player"],
+                        "roundKept":        k["roundKept"],
+                        "pointsScored":     None,
+                        "roundAvgPoints":   None,
+                        "pointsVsAvg":      None,
+                        "pointsVsAvgPct":   None,
+                        "verdict":          "TBD",
+                        "droppedMidSeason": False,
+                        "lastActiveWeek":   None,
+                        "note":             KEEPER_NOTES.get((year, k["owner"], k["player"])),
+                    })
+                    print(f"    ⏳ {k['owner']:<20} {k['player']:<25} "
+                          f"Rd {k['roundKept']}  TBD (season in progress)")
+                    continue
 
                 # Resolve points from player_points
                 p_info = None
