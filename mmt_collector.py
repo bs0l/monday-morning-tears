@@ -1,6 +1,6 @@
-#v2.3
+#v2.4
 #25sep26
-#fixes current season keepers on season stats page
+#fixes season-stats boxscore links missing year/teamId; replaces 0-0 guard with per-player game_played check for in-progress weeks
 #!/usr/bin/env python3
 """
 ESPN Fantasy Football Data Collector using espn-api library
@@ -322,15 +322,19 @@ class ESPNDataCollectorV2:
                             home_score = matchup.home_score
                             away_score = matchup.away_score
 
-                            # Skip matchups that haven't actually been played
+                            # Skip matchups that haven't actually finished
                             # yet. league.current_week can advance (e.g. on
                             # ESPN's weekly reset) before any games in that
                             # week have been played, so _completed_weeks()
-                            # alone doesn't guarantee real data - a week
-                            # with both scores still at 0 is a placeholder,
-                            # not a real result. A genuine 0-0 final is not
-                            # realistically possible in fantasy scoring.
-                            if home_score == 0 and away_score == 0:
+                            # alone doesn't guarantee real data. A 0-0 check
+                            # only catches the case where literally nobody
+                            # has played - it does NOT catch a week that's
+                            # partially through (e.g. only Thursday night's
+                            # game has been played), which still returns
+                            # real-looking, non-zero, but incomplete live
+                            # scores. Use _matchup_is_final() instead, which
+                            # checks each starter's actual game_played flag.
+                            if not self._matchup_is_final(matchup):
                                 continue
 
                             clean_matchup = {
@@ -1295,6 +1299,8 @@ class ESPNDataCollectorV2:
                     'owner': m['home']['owner'],
                     'opponent': m['away']['teamName'],
                     'opponentScore': m['away']['score'],
+                    'year': m['year'],
+                    'teamId': m['home']['teamId'],
                     'week': m['week'],
                     'matchupPeriodId': m['matchupPeriodId']
                 })
@@ -1304,6 +1310,8 @@ class ESPNDataCollectorV2:
                     'owner': m['away']['owner'],
                     'opponent': m['home']['teamName'],
                     'opponentScore': m['home']['score'],
+                    'year': m['year'],
+                    'teamId': m['away']['teamId'],
                     'week': m['week'],
                     'matchupPeriodId': m['matchupPeriodId']
                 })
@@ -1325,8 +1333,10 @@ class ESPNDataCollectorV2:
                     'winner': winner_data['teamName'],
                     'winnerOwner': winner_data['owner'],
                     'winnerScore': winner_data['score'],
+                    'winnerTeamId': winner_data['teamId'],
                     'loser': loser_data['teamName'],
                     'loserScore': loser_data['score'],
+                    'year': m['year'],
                     'week': m['week'],
                     'matchupPeriodId': m['matchupPeriodId']
                 })
@@ -1929,6 +1939,33 @@ class ESPNDataCollectorV2:
                 'matchups': [],
                 'comebackMatchups': []
             }
+
+    def _matchup_is_final(self, box_score):
+        """Whether a box_scores() matchup has actually finished, checked
+        directly instead of inferred from league.current_week or a 0-0
+        placeholder heuristic.
+
+        ESPN's box_scores() returns live, in-progress scores throughout a
+        week - by mid-week these are real, non-zero, plausible-looking
+        totals (e.g. after Thursday night's game), not just 0-0
+        placeholders. A 0-0 check only catches the case where nobody in
+        the matchup has played at all; it does not catch a matchup that's
+        partially through the week.
+
+        espn_api's BoxPlayer (confirmed in the installed 0.46.0, and
+        present at least as far back as 0.10.0) exposes game_played per
+        player: 100 once that player's real NFL game kicked off plus 3
+        hours, 0 otherwise. Bye-week players keep the default 100 and
+        never block completion. A matchup only counts as final once every
+        starter (excluding bench/IR, whose games don't affect the
+        displayed score) in both lineups has actually played.
+        """
+        for player in box_score.home_lineup + box_score.away_lineup:
+            if player.slot_position in ('BE', 'IR'):
+                continue
+            if player.game_played != 100:
+                return False
+        return True
 
     def _completed_weeks(self, league, requested_weeks):
         """Cap a per-week loop at the number of weeks that have actually
@@ -3081,4 +3118,4 @@ def main():
     collector.run(skip_bench=args.skip_bench)
 
 if __name__ == "__main__":
-    main()
+    main()
