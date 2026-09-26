@@ -7,6 +7,8 @@
       "owner": "Mike Kovacs",
       "opponent": "Da Kessell Krew",
       "opponentScore": 102.0,
+      "year": 2013,
+      "teamId": 2,
       "week": 9,
       "matchupPeriodId": 9
     },
@@ -16,6 +18,8 @@
       "owner": "Loren Kessell",
       "opponent": "Arian Foster 2013",
       "opponentScore": 100.0,
+      "year": 2013,
+      "teamId": 5,
       "week": 12,
       "matchupPeriodId": 12
     },
@@ -24,8 +28,10 @@
       "winner": "Arian Foster 2013",
       "winnerOwner": "Bill Solecki",
       "winnerScore": 113.0,
+      "winnerTeamId": 1,
       "loser": "Doesn't Play Still Not Last",
       "loserScore": 112.0,
+      "year": 2013,
       "week": 15,
       "matchupPeriodId": 15
     },
@@ -34,8 +40,10 @@
       "winner": "Less Morals Than Mike Vick",
       "winnerOwner": "Mike Kovacs",
       "winnerScore": 186.0,
+      "winnerTeamId": 2,
       "loser": "Da Kessell Krew",
       "loserScore": 102.0,
+      "year": 2013,
       "week": 9,
       "matchupPeriodId": 9
     },
@@ -160,6 +168,8 @@
       "owner": "Brian Dorward",
       "opponent": "Christmas Devil Krampus",
       "opponentScore": 162.0,
+      "year": 2014,
+      "teamId": 11,
       "week": 14,
       "matchupPeriodId": 14
     },
@@ -169,6 +179,8 @@
       "owner": "Mike Kovacs",
       "opponent": "T'EOMINATOR 2 RESURRECTION",
       "opponentScore": 15.0,
+      "year": 2014,
+      "teamId": 2,
       "week": 13,
       "matchupPeriodId": 13
     },
@@ -177,8 +189,10 @@
       "winner": "Scott's ConsolationTots",
       "winnerOwner": "Bill Solecki",
       "winnerScore": 112.0,
+      "winnerTeamId": 1,
       "loser": "Kish and Tell",
       "loserScore": 111.0,
+      "year": 2014,
       "week": 5,
       "matchupPeriodId": 5
     },
@@ -187,8 +201,10 @@
       "winner": "Plainsboro Owls",
       "winnerOwner": "Brian Dorward",
       "winnerScore": 287.0,
+      "winnerTeamId": 11,
       "loser": "Christmas Devil Krampus",
       "loserScore": 162.0,
+      "year": 2014,
       "week": 14,
       "matchupPeriodId": 14
     },
@@ -315,6 +331,8 @@
       "owner": "Mike Kovacs",
       "opponent": "Plainsboro Owls",
       "opponentScore": 263.91999999999996,
+      "year": 2015,
+      "teamId": 2,
       "week": 14,
       "matchupPeriodId": 14
     },
@@ -324,6 +342,8 @@
       "owner": null,
       "opponent": "Kish and Tell",
       "opponentScore": 110.8,
+      "year": 2015,
+      "teamId": 8,
       "week": 7,
       "matchupPeriodId": 7
     },
@@ -332,8 +352,10 @@
       "winner": "Really Just Sean Kessell",
       "winnerOwner": null,
       "winnerScore": 105.1,
+      "winnerTeamId": 5,
       "loser": "Bills New Team Name",
       "loserScore": 104.94,
+      "year": 2015,
       "week": 5,
       "matchupPeriodId": 5
     },
@@ -342,8 +364,10 @@
       "winner": "oh no its John Snooooooow",
       "winnerOwner": "Randell Crawford",
       "winnerScore": 162.3,
+      "winnerTeamId": 6,
       "loser": "Team Cahill",
       "loserScore": 90.7,
+      "year": 2015,
       "week": 14,
       "matchupPeriodId": 14
     },
@@ -533,6 +557,8 @@
       "owner": "Mike Kovacs",
       "opponent": "Duke Nukems",
       "opponentScore": 186.42000000000002,
+      "year": 2016,
+      "teamId": 2,
       "week": 14,
       "matchupPeriodId": 14
     },
@@ -542,6 +568,8 @@
       "owner": "Brandon Kish",
       "opponent": "Duke Nukems",
       "opponentScore": 115.88,
+      "year": 2016,
+      "teamId": 12,
       "week": 5,
       "matchupPeriodId": 5
     },
@@ -550,8 +578,10 @@
       "winner": "Duke Nukems",
       "winnerOwner": "Phil Torres",
       "winnerScore": 77.46,
+      "winnerTeamId": 4,
       "loser": "Yobogoya In the Bushes!",
       "loserScore": 76.4,
+      "year": 2016,
       "week": 2,
       "matchupPeriodId": 2
     },
@@ -560,8 +590,10 @@
       "winner": "Barack Obama",
       "winnerOwner": "Bill Solecki",
       "winnerScore": 148.56,
+      "winnerTeamId": 1,
       "loser": "Duke Nukems",
       "loserScore": 69.14,
+      "year": 2016,
       "week": 9,
       "matchupPeriodId": 9
     },
@@ -760,6 +792,8 @@
       "owner": "Carl Cummins",
       "opponent": "Rex Grossman Fan Club",
       "opponentScore": 221.3,
+      "year": 2017,
+      "teamId": 3,
       "week": 14,
       "matchupPeriodId": 14
     },
@@ -769,6 +803,8 @@
       "owner": "Brian Dorward",
       "opponent": "The Recycling Ben",
       "opponentScore": 86.72,
+      "year": 2017,
+      "teamId": 11,
       "week": 9,
       "matchupPeriodId": 9
     },
@@ -777,8 +813,10 @@
       "winner": "Duckman Kowalski",
       "winnerOwner": "Carl Cummins",
       "winnerScore": 103.22,
+      "winnerTeamId": 3,
       "loser": "Plainsboro Owls",
       "loserScore": 103.14,
+      "year": 2017,
       "week": 12,
       "matchupPeriodId": 12
     },
@@ -787,8 +825,10 @@
       "winner": "Duckman Kowalski",
       "winnerOwner": "Carl Cummins",
       "winnerScore": 138.32,
+      "winnerTeamId": 3,
       "loser": "Wade Boggs Memorial Team",
       "loserScore": 66.88,
+      "year": 2017,
       "week": 2,
       "matchupPeriodId": 2
     },
@@ -1178,6 +1218,8 @@
       "owner": "Ray Engleking",
       "opponent": "The Mixon Administration ",
       "opponentScore": 192.76,
+      "year": 2018,
+      "teamId": 9,
       "week": 14,
       "matchupPeriodId": 14
     },
@@ -1187,6 +1229,8 @@
       "owner": "Carl Cummins",
       "opponent": "The Mixon Administration ",
       "opponentScore": 106.48,
+      "year": 2018,
+      "teamId": 3,
       "week": 6,
       "matchupPeriodId": 6
     },
@@ -1195,8 +1239,10 @@
       "winner": "Duckman Kowalski",
       "winnerOwner": "Carl Cummins",
       "winnerScore": 107.22,
+      "winnerTeamId": 3,
       "loser": "Davante's Inferno",
       "loserScore": 107.14,
+      "year": 2018,
       "week": 1,
       "matchupPeriodId": 1
     },
@@ -1205,8 +1251,10 @@
       "winner": "Rex Grossman Fan Club",
       "winnerOwner": "Ray Engleking",
       "winnerScore": 272.74,
+      "winnerTeamId": 9,
       "loser": "The Mixon Administration ",
       "loserScore": 192.76,
+      "year": 2018,
       "week": 14,
       "matchupPeriodId": 14
     },
@@ -1566,6 +1614,8 @@
       "owner": "Ray Engleking",
       "opponent": "Pussy Power",
       "opponentScore": 269.94,
+      "year": 2019,
+      "teamId": 9,
       "week": 15,
       "matchupPeriodId": 15
     },
@@ -1575,6 +1625,8 @@
       "owner": "Ray Engleking",
       "opponent": "The HipShire Hobbits",
       "opponentScore": 125.32,
+      "year": 2019,
+      "teamId": 9,
       "week": 10,
       "matchupPeriodId": 10
     },
@@ -1583,8 +1635,10 @@
       "winner": "Go Fudge Yourselves",
       "winnerOwner": "Phil Torres",
       "winnerScore": 96.58,
+      "winnerTeamId": 4,
       "loser": "Weenie Hut Jr's",
       "loserScore": 96.1,
+      "year": 2019,
       "week": 8,
       "matchupPeriodId": 8
     },
@@ -1593,8 +1647,10 @@
       "winner": "Go Fudge Yourselves",
       "winnerOwner": "Phil Torres",
       "winnerScore": 249.66,
+      "winnerTeamId": 4,
       "loser": "Two Girls One Kupp",
       "loserScore": 164.1,
+      "year": 2019,
       "week": 15,
       "matchupPeriodId": 15
     },
@@ -1899,6 +1955,8 @@
       "owner": "John Artiglier",
       "opponent": "19 Problems and Covid is One",
       "opponentScore": 107.7,
+      "year": 2020,
+      "teamId": 11,
       "week": 4,
       "matchupPeriodId": 4
     },
@@ -1908,6 +1966,8 @@
       "owner": "Mike Kovacs",
       "opponent": "Pussy Power",
       "opponentScore": 100.88,
+      "year": 2020,
+      "teamId": 2,
       "week": 7,
       "matchupPeriodId": 7
     },
@@ -1916,8 +1976,10 @@
       "winner": "All Aboard The J Train",
       "winnerOwner": "Mike Kovacs",
       "winnerScore": 114.76,
+      "winnerTeamId": 2,
       "loser": "Wade Boggs Memorial Team",
       "loserScore": 113.64,
+      "year": 2020,
       "week": 11,
       "matchupPeriodId": 11
     },
@@ -1926,8 +1988,10 @@
       "winner": "RADrigo Is My Homeboy",
       "winnerOwner": "John Artiglier",
       "winnerScore": 203.12,
+      "winnerTeamId": 11,
       "loser": "19 Problems and Covid is One",
       "loserScore": 107.7,
+      "year": 2020,
       "week": 4,
       "matchupPeriodId": 4
     },
@@ -2273,6 +2337,8 @@
       "owner": "Ray Engleking",
       "opponent": "Wade Boggs Memorial Team",
       "opponentScore": 87.76,
+      "year": 2021,
+      "teamId": 9,
       "week": 5,
       "matchupPeriodId": 5
     },
@@ -2282,6 +2348,8 @@
       "owner": "Randell Crawford",
       "opponent": "Chubb Basshole",
       "opponentScore": 114.42,
+      "year": 2021,
+      "teamId": 6,
       "week": 10,
       "matchupPeriodId": 10
     },
@@ -2290,8 +2358,10 @@
       "winner": "19 Problems and Covid is One",
       "winnerOwner": "Randell Crawford",
       "winnerScore": 116.14,
+      "winnerTeamId": 6,
       "loser": "Chubb Basshole",
       "loserScore": 115.72,
+      "year": 2021,
       "week": 3,
       "matchupPeriodId": 3
     },
@@ -2300,8 +2370,10 @@
       "winner": "Salty Spitoon",
       "winnerOwner": "Ray Engleking",
       "winnerScore": 177.18,
+      "winnerTeamId": 9,
       "loser": "Wade Boggs Memorial Team",
       "loserScore": 87.76,
+      "year": 2021,
       "week": 5,
       "matchupPeriodId": 5
     },
@@ -2674,6 +2746,8 @@
       "owner": "Randell Crawford",
       "opponent": "Salty Spitoon",
       "opponentScore": 102.6,
+      "year": 2022,
+      "teamId": 6,
       "week": 11,
       "matchupPeriodId": 11
     },
@@ -2683,6 +2757,8 @@
       "owner": "Phil Torres",
       "opponent": "Insane in the  Ukraine",
       "opponentScore": 98.38,
+      "year": 2022,
+      "teamId": 4,
       "week": 17,
       "matchupPeriodId": 17
     },
@@ -2691,8 +2767,10 @@
       "winner": "Go Fudge Yourselves",
       "winnerOwner": "Phil Torres",
       "winnerScore": 116.52,
+      "winnerTeamId": 4,
       "loser": "Salty Spitoon",
       "loserScore": 116.48,
+      "year": 2022,
       "week": 14,
       "matchupPeriodId": 14
     },
@@ -2701,8 +2779,10 @@
       "winner": "Insane in the  Ukraine",
       "winnerOwner": "Randell Crawford",
       "winnerScore": 171.84,
+      "winnerTeamId": 6,
       "loser": "Salty Spitoon",
       "loserScore": 102.6,
+      "year": 2022,
       "week": 11,
       "matchupPeriodId": 11
     },
@@ -3030,6 +3110,8 @@
       "owner": "Randell Crawford",
       "opponent": "Go Fudge Yourselves",
       "opponentScore": 146.28,
+      "year": 2023,
+      "teamId": 6,
       "week": 3,
       "matchupPeriodId": 3
     },
@@ -3039,6 +3121,8 @@
       "owner": "john crawford",
       "opponent": "Insane in the  Ukraine",
       "opponentScore": 96.22,
+      "year": 2023,
+      "teamId": 13,
       "week": 9,
       "matchupPeriodId": 9
     },
@@ -3047,8 +3131,10 @@
       "winner": "All You Need is Love",
       "winnerOwner": "John Artiglier",
       "winnerScore": 109.7,
+      "winnerTeamId": 11,
       "loser": "We played Week 7, 8 and 13",
       "loserScore": 109.68,
+      "year": 2023,
       "week": 16,
       "matchupPeriodId": 16
     },
@@ -3057,8 +3143,10 @@
       "winner": "Why's This So Sticky?",
       "winnerOwner": "Bill Solecki",
       "winnerScore": 140.78,
+      "winnerTeamId": 1,
       "loser": "We played Week 7, 8 and 13",
       "loserScore": 67.98,
+      "year": 2023,
       "week": 3,
       "matchupPeriodId": 3
     },
@@ -3415,6 +3503,8 @@
       "owner": "Carl Cummins",
       "opponent": "Paintin Peyton",
       "opponentScore": 64.54,
+      "year": 2024,
+      "teamId": 3,
       "week": 3,
       "matchupPeriodId": 3
     },
@@ -3424,6 +3514,8 @@
       "owner": "john crawford",
       "opponent": "Hawk Tua",
       "opponentScore": 115.1,
+      "year": 2024,
+      "teamId": 13,
       "week": 15,
       "matchupPeriodId": 15
     },
@@ -3432,8 +3524,10 @@
       "winner": "Dollar Dollar Bills Y'all",
       "winnerOwner": "Mike Kovacs",
       "winnerScore": 89.18,
+      "winnerTeamId": 2,
       "loser": "Insane in the  Ukraine",
       "loserScore": 89.1,
+      "year": 2024,
       "week": 10,
       "matchupPeriodId": 10
     },
@@ -3442,8 +3536,10 @@
       "winner": "Taylor Swift ",
       "winnerOwner": "Carl Cummins",
       "winnerScore": 162.98,
+      "winnerTeamId": 3,
       "loser": "Paintin Peyton",
       "loserScore": 64.54,
+      "year": 2024,
       "week": 3,
       "matchupPeriodId": 3
     },
@@ -3775,6 +3871,8 @@
       "owner": "Ray Engleking",
       "opponent": "Bovine University Stampede",
       "opponentScore": 96.14,
+      "year": 2025,
+      "teamId": 9,
       "week": 14,
       "matchupPeriodId": 14
     },
@@ -3784,6 +3882,8 @@
       "owner": "Ben Bingert",
       "opponent": "Paintin Peyton",
       "opponentScore": 140.74,
+      "year": 2025,
+      "teamId": 12,
       "week": 3,
       "matchupPeriodId": 3
     },
@@ -3792,8 +3892,10 @@
       "winner": "Loop, There it is!",
       "winnerOwner": "Joe Jaramillo",
       "winnerScore": 100.54,
+      "winnerTeamId": 14,
       "loser": "Taylor and Travis Swift \ud83d\udc51",
       "loserScore": 100.16,
+      "year": 2025,
       "week": 9,
       "matchupPeriodId": 9
     },
@@ -3802,8 +3904,10 @@
       "winner": "Paintin Peyton",
       "winnerOwner": "john crawford",
       "winnerScore": 140.74,
+      "winnerTeamId": 13,
       "loser": "Mail Fairy",
       "loserScore": 50.16,
+      "year": 2025,
       "week": 3,
       "matchupPeriodId": 3
     },
@@ -4121,52 +4225,67 @@
       "owner": "john crawford",
       "opponent": "Kraft Smack and Cheese",
       "opponentScore": 126.04,
+      "year": 2026,
+      "teamId": 13,
       "week": 1,
       "matchupPeriodId": 1
     },
     "lowestScore": {
-      "score": 5.6,
-      "team": "Kraft Smack and Cheese",
-      "owner": "John Artiglier",
+      "score": 73.06,
+      "team": "Insane in the  Ukraine",
+      "owner": "Randell Crawford",
       "opponent": "Bovine University Stampede",
-      "opponentScore": 19.1,
-      "week": 3,
-      "matchupPeriodId": 3
+      "opponentScore": 101.18,
+      "year": 2026,
+      "teamId": 6,
+      "week": 2,
+      "matchupPeriodId": 2
     },
     "closestWin": {
       "margin": 2.6999999999999886,
       "winner": "Kraft Smack and Cheese",
       "winnerOwner": "John Artiglier",
       "winnerScore": 116.82,
+      "winnerTeamId": 11,
       "loser": "All You Need Is Love",
       "loserScore": 114.12,
+      "year": 2026,
       "week": 2,
       "matchupPeriodId": 2
     },
     "biggestBlowout": {
-      "margin": 58.2,
-      "winner": "Canadian Geeses",
-      "winnerOwner": "Phil Torres",
-      "winnerScore": 58.2,
-      "loser": "Chasing McBride",
-      "loserScore": 0.0,
-      "week": 3,
-      "matchupPeriodId": 3
+      "margin": 43.959999999999994,
+      "winner": "Taylor and Travis Swift \ud83d\udc51",
+      "winnerOwner": "Carl Cummins",
+      "winnerScore": 121.86,
+      "winnerTeamId": 3,
+      "loser": "Paintin Peyton",
+      "loserScore": 77.9,
+      "year": 2026,
+      "week": 2,
+      "matchupPeriodId": 2
     },
     "longestWinStreak": {
       "owner": "Bill Solecki",
-      "length": 3,
+      "length": 2,
       "owners": [
-        "Bill Solecki"
+        "Bill Solecki",
+        "Carl Cummins"
       ],
-      "tied": false,
+      "tied": true,
       "streaks": [
         {
           "owner": "Bill Solecki",
           "weeks": [
             1,
-            2,
-            3
+            2
+          ]
+        },
+        {
+          "owner": "Carl Cummins",
+          "weeks": [
+            1,
+            2
           ]
         }
       ]
@@ -4200,7 +4319,6 @@
       "owner": "Carl Cummins",
       "owners": [
         "Carl Cummins",
-        "Phil Torres",
         "john crawford"
       ],
       "count": 1,
@@ -4210,7 +4328,6 @@
       "owner": "Joe Jaramillo",
       "owners": [
         "Joe Jaramillo",
-        "Mike Kovacs",
         "Randell Crawford"
       ],
       "count": 1,
@@ -4241,13 +4358,6 @@
         "amount": 10,
         "week": 2,
         "score": 121.86
-      },
-      {
-        "owner": "Phil Torres",
-        "team": "Canadian Geeses",
-        "amount": 10,
-        "week": 3,
-        "score": 58.2
       }
     ],
     "consolationPayouts": [],
