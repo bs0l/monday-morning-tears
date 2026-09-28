@@ -1,6 +1,6 @@
-#v2.4
-#25sep26
-#fixes season-stats boxscore links missing year/teamId; replaces 0-0 guard with per-player game_played check for in-progress weeks
+#v2.5
+#27sep26
+#restores calculate_settings_history (settings_history.json for league-history page); adds _clean_team_name; removes dead recent_activity() trade fetch (total_trades via team.trades preserved)
 #!/usr/bin/env python3
 """
 ESPN Fantasy Football Data Collector using espn-api library
@@ -116,7 +116,7 @@ class ESPNDataCollectorV2:
                 
                 team_history[team_id]['names'].append({
                     'year': year,
-                    'name': team.team_name,
+                    'name': self._clean_team_name(team.team_name),
                     'abbrev': team.team_abbrev,
                     'owner': team.owner if hasattr(team, 'owner') else None
                 })
@@ -269,14 +269,14 @@ class ESPNDataCollectorV2:
                             'playoffType': 'WINNERS_BRACKET' if is_playoff else 'NONE',
                             'home': {
                                 'teamId': home_team.team_id,
-                                'teamName': home_team.team_name,
+                                'teamName': self._clean_team_name(home_team.team_name),
                                 'teamAbbrev': home_team.team_abbrev,
                                 'owner': home_owner,
                                 'score': home_score
                             },
                             'away': {
                                 'teamId': away_team.team_id,
-                                'teamName': away_team.team_name,
+                                'teamName': self._clean_team_name(away_team.team_name),
                                 'teamAbbrev': away_team.team_abbrev,
                                 'owner': away_owner,
                                 'score': away_score
@@ -346,14 +346,14 @@ class ESPNDataCollectorV2:
                                 'playoffType': 'WINNERS_BRACKET' if is_playoff else 'NONE',
                                 'home': {
                                     'teamId': matchup.home_team.team_id,
-                                    'teamName': matchup.home_team.team_name,
+                                    'teamName': self._clean_team_name(matchup.home_team.team_name),
                                     'teamAbbrev': matchup.home_team.team_abbrev,
                                     'owner': home_owner,
                                     'score': home_score
                                 },
                                 'away': {
                                     'teamId': matchup.away_team.team_id,
-                                    'teamName': matchup.away_team.team_name,
+                                    'teamName': self._clean_team_name(matchup.away_team.team_name),
                                     'teamAbbrev': matchup.away_team.team_abbrev,
                                     'owner': away_owner,
                                     'score': away_score
@@ -1512,21 +1512,21 @@ class ESPNDataCollectorV2:
                         if team.final_standing == 1:
                             playoff_payouts.append({
                                 'owner': owner,
-                                'team': team.team_name,
+                                'team': self._clean_team_name(team.team_name),
                                 'amount': playoff_amounts['1st'],
                                 'place': '1st'
                             })
                         elif team.final_standing == 2:
                             playoff_payouts.append({
                                 'owner': owner,
-                                'team': team.team_name,
+                                'team': self._clean_team_name(team.team_name),
                                 'amount': playoff_amounts['2nd'],
                                 'place': '2nd'
                             })
                         elif team.final_standing == 3:
                             playoff_payouts.append({
                                 'owner': owner,
-                                'team': team.team_name,
+                                'team': self._clean_team_name(team.team_name),
                                 'amount': playoff_amounts['3rd'],
                                 'place': '3rd'
                             })
@@ -1680,7 +1680,7 @@ class ESPNDataCollectorV2:
                 if total_bench_points > 0:
                     year_bench_points[owner] = {
                         'owner': owner,
-                        'teamName': team.team_name,
+                        'teamName': self._clean_team_name(team.team_name),
                         'benchPoints': total_bench_points
                     }
             
@@ -1719,51 +1719,16 @@ class ESPNDataCollectorV2:
                 except (AttributeError, TypeError):
                     pass
             
-            # Track trades
-            try:
-                activities = league.recent_activity()
-                if activities:
-                    for activity in activities:
-                        try:
-                            if hasattr(activity, 'actions') and len(activity.actions) == 2:
-                                action1, action2 = activity.actions
-                                
-                                if hasattr(action1, 'team') and hasattr(action2, 'team'):
-                                    team1_owner = self.get_owner_name_from_team(action1.team, members)
-                                    team2_owner = self.get_owner_name_from_team(action2.team, members)
-                                    
-                                    trade_data = {
-                                        'year': year,
-                                        'date': str(activity.date) if hasattr(activity, 'date') else None,
-                                        'team1': {
-                                            'owner': team1_owner,
-                                            'teamName': action1.team.team_name,
-                                            'playersOut': [],
-                                            'playersIn': []
-                                        },
-                                        'team2': {
-                                            'owner': team2_owner,
-                                            'teamName': action2.team.team_name,
-                                            'playersOut': [],
-                                            'playersIn': []
-                                        }
-                                    }
-                                    
-                                    # Parse players
-                                    if hasattr(action1, 'player') and action1.player:
-                                        trade_data['team1']['playersOut'].append(action1.player.name)
-                                        trade_data['team2']['playersIn'].append(action1.player.name)
-                                    
-                                    if hasattr(action2, 'player') and action2.player:
-                                        trade_data['team2']['playersOut'].append(action2.player.name)
-                                        trade_data['team1']['playersIn'].append(action2.player.name)
-                                    
-                                    all_trades.append(trade_data)
-                        except Exception as e:
-                            # Skip this activity if there's an error
-                            continue
-            except Exception as e:
-                print(f"    ⚠️  Could not fetch trade data: {e}")
+            # Trade data is not available via the ESPN API for historical
+            # seasons in private leagues. recent_activity() hits ESPN's
+            # /communication/ endpoint, which only works for the current
+            # live season — passing a historical year returns "league does
+            # not exist" regardless of valid credentials. mTransactions2
+            # returns TRADE_ACCEPT entries but omits the affected players,
+            # and the relatedTransactionId field doesn't resolve to usable
+            # data. Confirmed dead end for this league (June 2026 testing).
+            # The all_trades list remains empty; totalTrades on team stats
+            # reflects team.trades which is also unreliable for history.
             
             # Draft performance analysis for most recent season only
             if year == self.end_year:
@@ -1812,7 +1777,7 @@ class ESPNDataCollectorV2:
                         
                         draft_analysis[owner] = {
                             'owner': owner,
-                            'teamName': team.team_name,
+                            'teamName': self._clean_team_name(team.team_name),
                             'totalDrafted': len(drafted_players),
                             'draftedKeptToPlayoffs': drafted_kept,
                             'draftedPointsScored': drafted_points,
@@ -1822,7 +1787,7 @@ class ESPNDataCollectorV2:
                             'draftedPlayers': list(drafted_players.values())
                         }
                 except Exception as e:
-                    print(f"    ⚠️  Could not analyze 2025 draft: {e}")
+                    print(f"    ⚠️  Could not analyze {self.end_year} draft: {e}")
         
         print(f"  ✓ Found {len(all_trades)} trades")
         print(f"  ✓ Analyzed draft for {len(draft_analysis)} teams")
@@ -2056,6 +2021,16 @@ class ESPNDataCollectorV2:
         """Lowercase + strip punctuation for fuzzy player name matching."""
         import re
         return re.sub(r"[^a-z0-9 ]", "", name.lower().strip())
+
+    def _clean_team_name(self, name):
+        """Collapse multiple spaces and strip leading/trailing whitespace
+        from team names. ESPN occasionally stores team names with double
+        spaces as an artifact of in-app editing (e.g. 'The  Other Team')
+        even though the name displays correctly on the ESPN website."""
+        import re
+        if not name:
+            return name
+        return re.sub(r' +', ' ', name).strip()
 
     def _title_case_owner(self, name):
         """Ensure owner names are consistently title-cased."""
@@ -2680,6 +2655,410 @@ class ESPNDataCollectorV2:
 
         return keepers_by_year, benchmarks_by_year
 
+    def calculate_settings_history(self):
+        """Fetch and diff league settings year-over-year via direct API calls.
+
+        Uses mSettings view for each season. For 2019+ uses the live seasons
+        endpoint; for pre-2019 uses leagueHistory. Diffs every meaningful
+        setting field including scoring rule changes derived from ESPN's
+        scoringItems array.
+
+        Stat IDs and lineup slot IDs sourced from espn_api/football/constant.py
+        (cwendt94/espn-api) — includes punter stats (138-154) and the punter
+        roster slot (18) in case any season used them; harmless no-ops if not.
+
+        Returns a list of { year, changes: [...] } dicts, one per season.
+        """
+        import requests
+        from datetime import datetime as _dt
+
+        print(f"\n{'='*80}")
+        print(" Fetching Settings History")
+        print(f"{'='*80}")
+
+        # Lineup slot IDs → display names
+        # Source: POSITION_MAP in espn_api/football/constant.py
+        LINEUP_SLOT_NAMES = {
+            '0':  'QB slots',
+            '2':  'RB slots',
+            '4':  'WR slots',
+            '6':  'TE slots',
+            '16': 'D/ST slots',
+            '17': 'K slots',
+            '18': 'P (punter) slots',
+            '23': 'FLEX slots',
+            '20': 'Bench slots',
+            '21': 'IR slots',
+        }
+
+        # Scoring stat IDs → display names
+        # Source: SETTINGS_SCORING_FORMAT_MAP in espn_api/football/constant.py
+        STAT_ID_NAMES = {
+            0:   'Each Pass Attempted',
+            1:   'Each Pass Completed',
+            2:   'Each Incomplete Pass',
+            3:   'Passing Yards',
+            4:   'TD Pass',
+            5:   'Every 5 passing yards',
+            6:   'Every 10 passing yards',
+            8:   'Every 25 passing yards',
+            10:  'Every 100 passing yards',
+            15:  '40+ yard TD pass bonus',
+            16:  '50+ yard TD pass bonus',
+            17:  '300-399 yard passing game',
+            18:  '400+ yard passing game',
+            19:  '2pt Passing Conversion',
+            20:  'Interceptions Thrown',
+            23:  'Rushing Attempts',
+            24:  'Rushing Yards',
+            25:  'TD Rush',
+            26:  '2pt Rushing Conversion',
+            35:  '40+ yard TD rush bonus',
+            36:  '50+ yard TD rush bonus',
+            37:  '100-199 yard rushing game',
+            38:  '200+ yard rushing game',
+            41:  'Receptions',
+            42:  'Receiving Yards',
+            43:  'TD Reception',
+            44:  '2pt Receiving Conversion',
+            45:  '40+ yard TD rec bonus',
+            46:  '50+ yard TD rec bonus',
+            53:  'Each Reception (PPR)',
+            56:  '100-199 yard receiving game',
+            57:  '200+ yard receiving game',
+            58:  'Receiving Target',
+            62:  'Total 2pt Conversions',
+            63:  'Fumble Recovered for TD',
+            64:  'Times Sacked',
+            68:  'Total Fumbles',
+            72:  'Total Fumbles Lost',
+            73:  'Total Turnovers',
+            74:  'FG Made (50+ yards)',
+            76:  'FG Missed (50+ yards)',
+            77:  'FG Made (40-49 yards)',
+            79:  'FG Missed (40-49 yards)',
+            80:  'FG Made (0-39 yards)',
+            82:  'FG Missed (0-39 yards)',
+            83:  'Total FG Made',
+            85:  'Total FG Missed',
+            86:  'Each PAT Made',
+            88:  'Each PAT Missed',
+            89:  '0 points allowed',
+            90:  '1-6 points allowed',
+            91:  '7-13 points allowed',
+            92:  '14-17 points allowed',
+            93:  'Blocked Punt/FG returned for TD',
+            94:  'Fumble or INT Return for TD',
+            95:  'Each Interception',
+            96:  'Each Fumble Recovered',
+            97:  'Blocked Punt, PAT or FG',
+            98:  'Each Safety',
+            99:  'Each Sack',
+            100: '1/2 Sack',
+            101: 'Kickoff Return TD',
+            102: 'Punt Return TD',
+            103: 'Interception Return TD',
+            104: 'Fumble Return TD',
+            105: 'Total Return TD',
+            106: 'Each Fumble Forced',
+            107: 'Assisted Tackles',
+            108: 'Solo Tackles',
+            109: 'Total Tackles',
+            120: 'Points Allowed',
+            121: '18-21 points allowed',
+            122: '22-27 points allowed',
+            123: '28-34 points allowed',
+            124: '35-45 points allowed',
+            125: '46+ points allowed',
+            127: 'Yards Allowed',
+            128: '<100 total yards allowed',
+            129: '100-199 yards allowed',
+            130: '200-299 yards allowed',
+            131: '300-349 yards allowed',
+            132: '350-399 yards allowed',
+            133: '400-449 yards allowed',
+            134: '450-499 yards allowed',
+            135: '500-549 yards allowed',
+            136: '550+ yards allowed',
+            # Punter stats (stat IDs 138-154, from espn_api constant.py)
+            138: 'Net Punts',
+            139: 'Punt Yards',
+            140: 'Punts Inside the 10',
+            141: 'Punts Inside the 20',
+            142: 'Blocked Punts',
+            145: 'Punt Touchbacks',
+            146: 'Punt Fair Catches',
+            147: 'Punt Average',
+            148: 'Punt Average 44.0+',
+            149: 'Punt Average 42.0-43.9',
+            150: 'Punt Average 40.0-41.9',
+            151: 'Punt Average 38.0-39.9',
+            152: 'Punt Average 36.0-37.9',
+            153: 'Punt Average 34.0-35.9',
+            154: 'Punt Average 33.9 or less',
+            198: 'FG Made (50-59 yards)',
+            200: 'FG Missed (50-59 yards)',
+            201: 'FG Made (60+ yards)',
+            203: 'FG Missed (60+ yards)',
+            205: 'Defensive 2pt Return',
+            206: '2pt Return',
+            209: '1pt Safety',
+            211: 'Passing First Down',
+            212: 'Rushing First Down',
+            213: 'Receiving First Down',
+        }
+
+        def fmt_date(epoch_ms):
+            if not epoch_ms or epoch_ms <= 0:
+                return None
+            try:
+                return _dt.fromtimestamp(epoch_ms / 1000).strftime('%b %-d, %Y')
+            except Exception:
+                try:
+                    return _dt.fromtimestamp(epoch_ms / 1000).strftime('%b %d, %Y')
+                except Exception:
+                    return None
+
+        cookies = {"swid": self.swid, "espn_s2": self.espn_s2}
+        all_settings = {}
+
+        for season_data in self.all_seasons:
+            year = season_data['year']
+
+            if year >= 2019:
+                url = (f"https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl"
+                       f"/seasons/{year}/segments/0/leagues/{self.league_id}")
+                params = {"view": "mSettings"}
+            else:
+                url = (f"https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl"
+                       f"/leagueHistory/{self.league_id}")
+                params = {"view": "mSettings", "seasonId": year}
+
+            try:
+                r = requests.get(url, params=params, cookies=cookies, timeout=10)
+                if r.status_code != 200:
+                    print(f"  ⚠️  {year}: HTTP {r.status_code}")
+                    continue
+
+                d = r.json()
+                if isinstance(d, list):
+                    d = d[0]
+
+                s        = d.get('settings', {})
+                acq      = s.get('acquisitionSettings', {})
+                draft    = s.get('draftSettings', {})
+                roster   = s.get('rosterSettings', {})
+                schedule = s.get('scheduleSettings', {})
+                trade    = s.get('tradeSettings', {})
+                scoring  = s.get('scoringSettings', {})
+
+                # Build scoring map: statId → points for standard scoring type
+                scoring_map = {}
+                for item in scoring.get('scoringItems', []):
+                    stat_id   = item['statId']
+                    overrides = item.get('pointsOverrides', {})
+                    pts       = overrides.get('16', item.get('points', 0))
+                    if pts != 0:
+                        scoring_map[stat_id] = pts
+
+                # Lineup slot counts — string keys in ESPN API response
+                lineup = roster.get('lineupSlotCounts', {})
+
+                # Divisions
+                divisions   = schedule.get('divisions', [])
+                div_summary = (f"{len(divisions)} division(s): "
+                               f"{', '.join(d['name'] for d in divisions)}")
+
+                trade_deadline = fmt_date(trade.get('deadlineDate'))
+
+                all_settings[year] = {
+                    'scoring':                    scoring_map,
+                    'teamCount':                  s.get('size', 0),
+                    'regSeasonCount':             schedule.get('matchupPeriodCount', 0),
+                    'playoffTeamCount':           schedule.get('playoffTeamCount', 0),
+                    'playoffMatchupPeriodLength': schedule.get('playoffMatchupPeriodLength', 1),
+                    'keeperCount':                draft.get('keeperCount', 0),
+                    'draftPickTrading':           draft.get('isTradingEnabled', False),
+                    'draftTimePerPick':           draft.get('timePerSelection', 60),
+                    'draftType':                  draft.get('type', 'SNAKE'),
+                    'undroppableList':            roster.get('isUsingUndroppableList', True),
+                    'irSlots':                    lineup.get('21', lineup.get(21, 0)),
+                    'benchSlots':                 lineup.get('20', lineup.get(20, 0)),
+                    'flexSlots':                  lineup.get('23', lineup.get(23, 0)),
+                    'punterSlots':                lineup.get('18', lineup.get(18, 0)),
+                    'divisionCount':              len(divisions),
+                    'divisionSummary':            div_summary,
+                    'tradeDeadline':              trade_deadline,
+                    'vetoVotes':                  trade.get('vetoVotesRequired', 4),
+                    'acquisitionLimit':           acq.get('acquisitionLimit', -1),
+                    'matchupAcquisitionLimit':    acq.get('matchupAcquisitionLimit', 0),
+                }
+                print(f"  ✓ {year}: fetched settings")
+
+            except Exception as e:
+                print(f"  ⚠️  {year}: {e}")
+                continue
+
+        # Diff year-over-year to build changelog
+        history = []
+        prev    = None
+
+        for year in sorted(all_settings.keys()):
+            curr    = all_settings[year]
+            changes = []
+
+            if prev is None:
+                changes.append(
+                    f"League founded — {curr['teamCount']} teams, "
+                    f"{curr['regSeasonCount']}-week regular season"
+                )
+                changes.append(f"Divisions: {curr['divisionSummary']}")
+                changes.append(
+                    f"Draft: {curr['draftType']}, {curr['draftTimePerPick']}s per pick, "
+                    f"pick trading {'enabled' if curr['draftPickTrading'] else 'disabled'}"
+                )
+                changes.append(
+                    f"Roster: {curr['benchSlots']} bench slots, "
+                    f"{curr['irSlots']} IR slot(s), "
+                    f"{curr['flexSlots']} FLEX slot(s)"
+                    + (f", {curr['punterSlots']} punter slot(s)" if curr['punterSlots'] else "")
+                )
+                changes.append(
+                    f"Undroppable player list: "
+                    f"{'enabled' if curr['undroppableList'] else 'disabled'}"
+                )
+                changes.append(
+                    f"Trade deadline: {curr['tradeDeadline'] or 'none'}"
+                )
+                changes.append(f"Scoring: {len(curr['scoring'])} active rules")
+            else:
+                # Structure
+                if curr['teamCount'] != prev['teamCount']:
+                    changes.append(
+                        f"Teams: {prev['teamCount']} → {curr['teamCount']}"
+                    )
+                if curr['regSeasonCount'] != prev['regSeasonCount']:
+                    changes.append(
+                        f"Regular season: {prev['regSeasonCount']} → "
+                        f"{curr['regSeasonCount']} weeks"
+                    )
+                if curr['playoffTeamCount'] != prev['playoffTeamCount']:
+                    changes.append(
+                        f"Playoff teams: {prev['playoffTeamCount']} → "
+                        f"{curr['playoffTeamCount']}"
+                    )
+                if curr['playoffMatchupPeriodLength'] != prev['playoffMatchupPeriodLength']:
+                    fmt = lambda n: f"{n}-week matchups"
+                    changes.append(
+                        f"Playoff format: {fmt(prev['playoffMatchupPeriodLength'])} → "
+                        f"{fmt(curr['playoffMatchupPeriodLength'])}"
+                    )
+                if curr['keeperCount'] != prev['keeperCount']:
+                    changes.append(
+                        f"Keepers per team: {prev['keeperCount']} → {curr['keeperCount']}"
+                    )
+
+                # Roster slots
+                if curr['irSlots'] != prev['irSlots']:
+                    changes.append(
+                        f"IR slots: {prev['irSlots']} → {curr['irSlots']}"
+                    )
+                if curr['benchSlots'] != prev['benchSlots']:
+                    changes.append(
+                        f"Bench slots: {prev['benchSlots']} → {curr['benchSlots']}"
+                    )
+                if curr['flexSlots'] != prev['flexSlots']:
+                    changes.append(
+                        f"FLEX slots: {prev['flexSlots']} → {curr['flexSlots']}"
+                    )
+                if curr['punterSlots'] != prev['punterSlots']:
+                    if curr['punterSlots'] > 0:
+                        changes.append(
+                            f"Punter slot added ({prev['punterSlots']} → "
+                            f"{curr['punterSlots']})"
+                        )
+                    else:
+                        changes.append(
+                            f"Punter slot removed ({prev['punterSlots']} → 0)"
+                        )
+
+                # Divisions
+                if curr['divisionCount'] != prev['divisionCount']:
+                    changes.append(
+                        f"Divisions: {prev['divisionSummary']} → {curr['divisionSummary']}"
+                    )
+
+                # Draft
+                if curr['draftPickTrading'] != prev['draftPickTrading']:
+                    changes.append(
+                        f"Draft pick trading: "
+                        f"{'enabled' if curr['draftPickTrading'] else 'disabled'}"
+                    )
+                if curr['draftTimePerPick'] != prev['draftTimePerPick']:
+                    changes.append(
+                        f"Draft pick timer: {prev['draftTimePerPick']}s → "
+                        f"{curr['draftTimePerPick']}s"
+                    )
+                if curr['draftType'] != prev['draftType']:
+                    changes.append(
+                        f"Draft type: {prev['draftType']} → {curr['draftType']}"
+                    )
+
+                # Waivers / admin
+                if curr['undroppableList'] != prev['undroppableList']:
+                    changes.append(
+                        f"Undroppable player list: "
+                        f"{'enabled' if curr['undroppableList'] else 'disabled'}"
+                    )
+                if curr['tradeDeadline'] != prev['tradeDeadline']:
+                    changes.append(
+                        f"Trade deadline: {prev['tradeDeadline'] or 'none'} → "
+                        f"{curr['tradeDeadline'] or 'none'}"
+                    )
+
+                # Scoring changes — grouped by added / removed / changed
+                scoring_added   = []
+                scoring_removed = []
+                scoring_changed = []
+
+                all_stat_ids = (
+                    set(curr['scoring'].keys()) | set(prev['scoring'].keys())
+                )
+                for stat_id in sorted(all_stat_ids):
+                    curr_pts = curr['scoring'].get(stat_id, 0)
+                    prev_pts = prev['scoring'].get(stat_id, 0)
+                    if curr_pts != prev_pts:
+                        name = STAT_ID_NAMES.get(stat_id, f"StatID {stat_id}")
+                        if prev_pts == 0:
+                            scoring_added.append(f"{name} ({curr_pts:+.2g} pts)")
+                        elif curr_pts == 0:
+                            scoring_removed.append(f"{name} (was {prev_pts:+.2g} pts)")
+                        else:
+                            scoring_changed.append(
+                                f"{name}: {prev_pts:+.2g} → {curr_pts:+.2g} pts"
+                            )
+
+                if scoring_added:
+                    label = f"Scoring added ({len(scoring_added)} rules) — " \
+                            if len(scoring_added) > 1 else "Scoring added — "
+                    changes.append(label + ', '.join(scoring_added))
+
+                if scoring_removed:
+                    label = f"Scoring removed ({len(scoring_removed)} rules) — " \
+                            if len(scoring_removed) > 1 else "Scoring removed — "
+                    changes.append(label + ', '.join(scoring_removed))
+
+                if scoring_changed:
+                    label = f"Scoring changed ({len(scoring_changed)} rules) — " \
+                            if len(scoring_changed) > 1 else "Scoring changed — "
+                    changes.append(label + ', '.join(scoring_changed))
+
+            history.append({'year': year, 'changes': changes})
+            prev = curr
+
+        print(f"  ✓ Settings history built for {len(history)} seasons")
+        return history
+
     def _counter_ties_at_max(self, counter):
         """Given an owner -> count dict, return (owners, max_count) where
         owners is every owner tied for the max count, sorted alphabetically
@@ -3076,6 +3455,7 @@ class ESPNDataCollectorV2:
             benchmarks_by_year=benchmarks_by_year,
         )
         transaction_analysis = self.calculate_transaction_analysis()
+        settings_history = self.calculate_settings_history()
         
         print(f"\n{'='*80}")
         print(" Saving Output Files")
@@ -3089,6 +3469,7 @@ class ESPNDataCollectorV2:
         self.save_output(roster_analysis, 'roster_analysis.json')
         self.save_output(two_week_analysis, 'two_week_playoff_analysis.json')
         self.save_output(transaction_analysis, 'transaction_analysis.json')
+        self.save_output(settings_history, 'settings_history.json')
         
         metadata = {
             'leagueId': self.league_id,
