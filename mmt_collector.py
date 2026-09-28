@@ -1,6 +1,6 @@
-#v2.5
-#27sep26
-#restores calculate_settings_history (settings_history.json for league-history page); adds _clean_team_name; removes dead recent_activity() trade fetch (total_trades via team.trades preserved)
+#v2.6
+#28sep26
+#settings history now diffs ALL lineup slot counts (incl. QB) and per-position max-roster limits (QB/RB/WR/TE/K/DST), ported from tot_collector
 #!/usr/bin/env python3
 """
 ESPN Fantasy Football Data Collector using espn-api library
@@ -2690,6 +2690,23 @@ class ESPNDataCollectorV2:
             '20': 'Bench slots',
             '21': 'IR slots',
         }
+        # Remaining lineup slot IDs from POSITION_MAP (espn_api constant.py),
+        # used only by the generic slot diff below so no slot change is
+        # silently ignored just because it isn't one of the named ones above.
+        LINEUP_SLOT_NAMES_EXTRA = {
+            '1': 'TQB slots', '3': 'RB/WR slots', '5': 'WR/TE slots',
+            '7': 'OP (superflex) slots', '8': 'DT slots', '9': 'DE slots',
+            '10': 'LB slots', '11': 'DL slots', '12': 'CB slots',
+            '13': 'S slots', '14': 'DB slots', '15': 'DP slots',
+            '19': 'HC slots', '22': 'RB/WR/TE slots (unused id)',
+        }
+        # Slot IDs that already have their own dedicated diff wording below
+        SLOTS_WITH_CUSTOM_DIFF = {'20', '21', '23', '18'}
+        # positionLimits keys use player default-position IDs (espn_api
+        # constant.py POSITION_MAP for players), which differ from slot IDs.
+        POSITION_LIMIT_NAMES = {
+            '1': 'QB', '2': 'RB', '3': 'WR', '4': 'TE', '5': 'K', '16': 'D/ST',
+        }
 
         # Scoring stat IDs → display names
         # Source: SETTINGS_SCORING_FORMAT_MAP in espn_api/football/constant.py
@@ -2863,6 +2880,14 @@ class ESPNDataCollectorV2:
 
                 # Lineup slot counts — string keys in ESPN API response
                 lineup = roster.get('lineupSlotCounts', {})
+                # Full slot-count and per-position max-roster maps, keyed by
+                # string ID, so the diff can catch any slot/limit change
+                # (e.g. QB slots, max rostered QBs) generically.
+                lineup_all = {str(k): int(v) for k, v in lineup.items()}
+                position_limits = {
+                    str(k): int(v)
+                    for k, v in (roster.get('positionLimits') or {}).items()
+                }
 
                 # Divisions
                 divisions   = schedule.get('divisions', [])
@@ -2886,6 +2911,8 @@ class ESPNDataCollectorV2:
                     'benchSlots':                 lineup.get('20', lineup.get(20, 0)),
                     'flexSlots':                  lineup.get('23', lineup.get(23, 0)),
                     'punterSlots':                lineup.get('18', lineup.get(18, 0)),
+                    'lineupSlots':                lineup_all,
+                    'positionLimits':             position_limits,
                     'divisionCount':              len(divisions),
                     'divisionSummary':            div_summary,
                     'tradeDeadline':              trade_deadline,
@@ -2981,6 +3008,35 @@ class ESPNDataCollectorV2:
                         changes.append(
                             f"Punter slot removed ({prev['punterSlots']} → 0)"
                         )
+
+                # Every other lineup slot (QB, RB, WR, TE, D/ST, K, OP, ...)
+                slot_names = {**LINEUP_SLOT_NAMES, **LINEUP_SLOT_NAMES_EXTRA}
+                for slot_id in sorted(
+                    set(curr['lineupSlots']) | set(prev['lineupSlots']),
+                    key=int
+                ):
+                    if slot_id in SLOTS_WITH_CUSTOM_DIFF:
+                        continue
+                    c = curr['lineupSlots'].get(slot_id, 0)
+                    p = prev['lineupSlots'].get(slot_id, 0)
+                    if c != p:
+                        label = slot_names.get(slot_id, f"Lineup slot {slot_id}")
+                        changes.append(f"{label}: {p} → {c}")
+
+                # Max rostered players per position (rosterSettings.positionLimits).
+                # Keys here are ESPN *player* default-position IDs, NOT lineup
+                # slot IDs (confirmed live: key '1' is QB, which the slot map
+                # mislabelled "TQB"). Unrecognized IDs are labelled by raw ID
+                # rather than guessed at.
+                for pos_id in sorted(
+                    set(curr['positionLimits']) | set(prev['positionLimits']),
+                    key=int
+                ):
+                    c = curr['positionLimits'].get(pos_id)
+                    p = prev['positionLimits'].get(pos_id)
+                    if c is not None and p is not None and c != p:
+                        name = POSITION_LIMIT_NAMES.get(pos_id, f"position ID {pos_id}")
+                        changes.append(f"Max rostered {name}: {p} → {c}")
 
                 # Divisions
                 if curr['divisionCount'] != prev['divisionCount']:

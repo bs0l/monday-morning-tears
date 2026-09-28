@@ -1,6 +1,6 @@
 # Monday Morning Tears — League Stats
 
-A stats site for **Monday Morning Tears**, a 12-team half-PPR ESPN fantasy football league running continuously since 2013. Built and maintained by the league commissioner.
+A stats site for **Monday Morning Tears**, a 10-team half-PPR ESPN fantasy football league running continuously since 2013. Built and maintained by the league commissioner.
 
 🔗 **Live site:** https://bs0l.github.io/monday-morning-tears/
 
