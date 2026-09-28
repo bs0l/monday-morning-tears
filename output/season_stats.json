@@ -327,7 +327,7 @@
     "year": 2015,
     "highestScore": {
       "score": 265.18,
-      "team": "I wanta Free the NewtMan! ",
+      "team": "I wanta Free the NewtMan!",
       "owner": "Mike Kovacs",
       "opponent": "Plainsboro Owls",
       "opponentScore": 263.91999999999996,
@@ -454,7 +454,7 @@
       },
       {
         "owner": "Mike Kovacs",
-        "team": "I wanta Free the NewtMan! ",
+        "team": "I wanta Free the NewtMan!",
         "amount": 5,
         "week": 3,
         "score": 137.5
@@ -475,7 +475,7 @@
       },
       {
         "owner": "Mike Kovacs",
-        "team": "I wanta Free the NewtMan! ",
+        "team": "I wanta Free the NewtMan!",
         "amount": 5,
         "week": 6,
         "score": 133.46
@@ -510,7 +510,7 @@
       },
       {
         "owner": "Mike Kovacs",
-        "team": "I wanta Free the NewtMan! ",
+        "team": "I wanta Free the NewtMan!",
         "amount": 5,
         "week": 11,
         "score": 100.74
@@ -533,7 +533,7 @@
       },
       {
         "owner": "Mike Kovacs",
-        "team": "I wanta Free the NewtMan! ",
+        "team": "I wanta Free the NewtMan!",
         "amount": 31,
         "place": "3rd"
       },
@@ -703,7 +703,7 @@
       },
       {
         "owner": "Randell Crawford",
-        "team": "I Do Respect  You Bro",
+        "team": "I Do Respect You Bro",
         "amount": 5,
         "week": 5,
         "score": 130.2
@@ -738,7 +738,7 @@
       },
       {
         "owner": "Randell Crawford",
-        "team": "I Do Respect  You Bro",
+        "team": "I Do Respect You Bro",
         "amount": 5,
         "week": 10,
         "score": 138.22
@@ -1216,7 +1216,7 @@
       "score": 272.74,
       "team": "Rex Grossman Fan Club",
       "owner": "Ray Engleking",
-      "opponent": "The Mixon Administration ",
+      "opponent": "The Mixon Administration",
       "opponentScore": 192.76,
       "year": 2018,
       "teamId": 9,
@@ -1227,7 +1227,7 @@
       "score": 60.94,
       "team": "Duckman Kowalski",
       "owner": "Carl Cummins",
-      "opponent": "The Mixon Administration ",
+      "opponent": "The Mixon Administration",
       "opponentScore": 106.48,
       "year": 2018,
       "teamId": 3,
@@ -1252,7 +1252,7 @@
       "winnerOwner": "Ray Engleking",
       "winnerScore": 272.74,
       "winnerTeamId": 9,
-      "loser": "The Mixon Administration ",
+      "loser": "The Mixon Administration",
       "loserScore": 192.76,
       "year": 2018,
       "week": 14,
@@ -1380,7 +1380,7 @@
       },
       {
         "owner": "Ben Bingert",
-        "team": "The Mixon Administration ",
+        "team": "The Mixon Administration",
         "amount": 5,
         "week": 9,
         "score": 148.92
@@ -1401,7 +1401,7 @@
       },
       {
         "owner": "Ben Bingert",
-        "team": "The Mixon Administration ",
+        "team": "The Mixon Administration",
         "amount": 5,
         "week": 12,
         "score": 149.66
@@ -1423,7 +1423,7 @@
       },
       {
         "owner": "Ben Bingert",
-        "team": "The Mixon Administration ",
+        "team": "The Mixon Administration",
         "amount": 70,
         "place": "2nd"
       }
@@ -2742,7 +2742,7 @@
     "year": 2022,
     "highestScore": {
       "score": 171.84,
-      "team": "Insane in the  Ukraine",
+      "team": "Insane in the Ukraine",
       "owner": "Randell Crawford",
       "opponent": "Salty Spitoon",
       "opponentScore": 102.6,
@@ -2755,7 +2755,7 @@
       "score": 45.58,
       "team": "Go Fudge Yourselves",
       "owner": "Phil Torres",
-      "opponent": "Insane in the  Ukraine",
+      "opponent": "Insane in the Ukraine",
       "opponentScore": 98.38,
       "year": 2022,
       "teamId": 4,
@@ -2776,7 +2776,7 @@
     },
     "biggestBlowout": {
       "margin": 69.24000000000001,
-      "winner": "Insane in the  Ukraine",
+      "winner": "Insane in the Ukraine",
       "winnerOwner": "Randell Crawford",
       "winnerScore": 171.84,
       "winnerTeamId": 6,
@@ -2952,7 +2952,7 @@
       },
       {
         "owner": "Randell Crawford",
-        "team": "Insane in the  Ukraine",
+        "team": "Insane in the Ukraine",
         "amount": 5,
         "week": 11,
         "score": 171.84
@@ -2980,7 +2980,7 @@
       },
       {
         "owner": "Randell Crawford",
-        "team": "Insane in the  Ukraine",
+        "team": "Insane in the Ukraine",
         "amount": 5,
         "week": 15,
         "score": 135.66
@@ -3106,7 +3106,7 @@
     "year": 2023,
     "highestScore": {
       "score": 178.62,
-      "team": "Insane in the  Ukraine",
+      "team": "Insane in the Ukraine",
       "owner": "Randell Crawford",
       "opponent": "Go Fudge Yourselves",
       "opponentScore": 146.28,
@@ -3119,7 +3119,7 @@
       "score": 49.22,
       "team": "Peyton the Professor",
       "owner": "john crawford",
-      "opponent": "Insane in the  Ukraine",
+      "opponent": "Insane in the Ukraine",
       "opponentScore": 96.22,
       "year": 2023,
       "teamId": 13,
@@ -3249,34 +3249,34 @@
     },
     "bestBenchWarmers": {
       "owner": "Carl Cummins",
-      "teamName": "Taylor Swift ",
+      "teamName": "Taylor Swift",
       "benchPoints": 797.3000000000004
     },
     "weeklyHighPayouts": [
       {
         "owner": "Carl Cummins",
-        "team": "Taylor Swift ",
+        "team": "Taylor Swift",
         "amount": 9,
         "week": 1,
         "score": 132.94
       },
       {
         "owner": "Randell Crawford",
-        "team": "Insane in the  Ukraine",
+        "team": "Insane in the Ukraine",
         "amount": 10,
         "week": 2,
         "score": 135.36
       },
       {
         "owner": "Randell Crawford",
-        "team": "Insane in the  Ukraine",
+        "team": "Insane in the Ukraine",
         "amount": 9,
         "week": 3,
         "score": 178.62
       },
       {
         "owner": "Carl Cummins",
-        "team": "Taylor Swift ",
+        "team": "Taylor Swift",
         "amount": 10,
         "week": 4,
         "score": 150.76
@@ -3369,7 +3369,7 @@
       },
       {
         "owner": "Carl Cummins",
-        "team": "Taylor Swift ",
+        "team": "Taylor Swift",
         "amount": 1,
         "week": 9,
         "score": 111.54
@@ -3499,7 +3499,7 @@
     "year": 2024,
     "highestScore": {
       "score": 162.98,
-      "team": "Taylor Swift ",
+      "team": "Taylor Swift",
       "owner": "Carl Cummins",
       "opponent": "Paintin Peyton",
       "opponentScore": 64.54,
@@ -3525,7 +3525,7 @@
       "winnerOwner": "Mike Kovacs",
       "winnerScore": 89.18,
       "winnerTeamId": 2,
-      "loser": "Insane in the  Ukraine",
+      "loser": "Insane in the Ukraine",
       "loserScore": 89.1,
       "year": 2024,
       "week": 10,
@@ -3533,7 +3533,7 @@
     },
     "biggestBlowout": {
       "margin": 98.43999999999998,
-      "winner": "Taylor Swift ",
+      "winner": "Taylor Swift",
       "winnerOwner": "Carl Cummins",
       "winnerScore": 162.98,
       "winnerTeamId": 3,
@@ -3633,7 +3633,7 @@
       },
       {
         "owner": "Carl Cummins",
-        "team": "Taylor Swift ",
+        "team": "Taylor Swift",
         "amount": 10,
         "week": 3,
         "score": 162.98
@@ -3661,7 +3661,7 @@
       },
       {
         "owner": "Carl Cummins",
-        "team": "Taylor Swift ",
+        "team": "Taylor Swift",
         "amount": 10,
         "week": 7,
         "score": 133.6
@@ -3675,7 +3675,7 @@
       },
       {
         "owner": "Carl Cummins",
-        "team": "Taylor Swift ",
+        "team": "Taylor Swift",
         "amount": 10,
         "week": 9,
         "score": 137.86
@@ -3726,7 +3726,7 @@
       },
       {
         "owner": "Carl Cummins",
-        "team": "Taylor Swift ",
+        "team": "Taylor Swift",
         "amount": 100,
         "place": "2nd"
       },
@@ -4007,7 +4007,7 @@
       },
       {
         "owner": "Randell Crawford",
-        "team": "Insane in the  Ukraine",
+        "team": "Insane in the Ukraine",
         "amount": 10,
         "week": 4,
         "score": 137.44
@@ -4056,7 +4056,7 @@
       },
       {
         "owner": "Randell Crawford",
-        "team": "Insane in the  Ukraine",
+        "team": "Insane in the Ukraine",
         "amount": 10,
         "week": 11,
         "score": 152.7
@@ -4232,7 +4232,7 @@
     },
     "lowestScore": {
       "score": 73.06,
-      "team": "Insane in the  Ukraine",
+      "team": "Insane in the Ukraine",
       "owner": "Randell Crawford",
       "opponent": "Bovine University Stampede",
       "opponentScore": 101.18,
@@ -4270,7 +4270,8 @@
       "length": 2,
       "owners": [
         "Bill Solecki",
-        "Carl Cummins"
+        "Carl Cummins",
+        "John Artiglier"
       ],
       "tied": true,
       "streaks": [
@@ -4286,6 +4287,13 @@
           "weeks": [
             1,
             2
+          ]
+        },
+        {
+          "owner": "John Artiglier",
+          "weeks": [
+            2,
+            3
           ]
         }
       ]
@@ -4319,14 +4327,16 @@
       "owner": "Carl Cummins",
       "owners": [
         "Carl Cummins",
+        "John Artiglier",
         "john crawford"
       ],
       "count": 1,
       "tied": true
     },
     "mostWeeklyLowScores": {
-      "owner": "Joe Jaramillo",
+      "owner": "Bill Solecki",
       "owners": [
+        "Bill Solecki",
         "Joe Jaramillo",
         "Randell Crawford"
       ],
@@ -4334,15 +4344,17 @@
       "tied": true
     },
     "mostConsolationDollars": {
-      "owner": null,
-      "owners": [],
-      "count": 0,
+      "owner": "Bill Solecki",
+      "owners": [
+        "Bill Solecki"
+      ],
+      "count": 1,
       "tied": false
     },
     "bestBenchWarmers": {
       "owner": "Carl Cummins",
       "teamName": "Taylor and Travis Swift \ud83d\udc51",
-      "benchPoints": 158.92000000000002
+      "benchPoints": 211.67999999999998
     },
     "weeklyHighPayouts": [
       {
@@ -4358,9 +4370,24 @@
         "amount": 10,
         "week": 2,
         "score": 121.86
+      },
+      {
+        "owner": "John Artiglier",
+        "team": "Kraft Smack and Cheese",
+        "amount": 9,
+        "week": 3,
+        "score": 118.6
       }
     ],
-    "consolationPayouts": [],
+    "consolationPayouts": [
+      {
+        "owner": "Bill Solecki",
+        "team": "Bovine University Stampede",
+        "amount": 1,
+        "week": 3,
+        "score": 115.7
+      }
+    ],
     "playoffPayouts": [],
     "keeperAnalysis": {
       "keepers": [
@@ -4470,21 +4497,21 @@
         }
       ],
       "roundBenchmarks": {
-        "1": 79.12,
-        "2": 52.67,
-        "3": 58.17,
-        "4": 44.49,
-        "5": 41.99,
-        "6": 26.66,
-        "7": 42.24,
-        "8": 31.7,
-        "9": 37.27,
-        "10": 21.6,
-        "11": 42.94,
-        "12": 38.97,
-        "13": 57.76,
-        "14": 29.0,
-        "15": 33.08
+        "1": 92.1,
+        "2": 60.55,
+        "3": 68.41,
+        "4": 51.88,
+        "5": 53.08,
+        "6": 32.21,
+        "7": 50.06,
+        "8": 39.15,
+        "9": 47.22,
+        "10": 28.47,
+        "11": 47.66,
+        "12": 44.46,
+        "13": 71.39,
+        "14": 35.06,
+        "15": 35.3
       }
     }
   }

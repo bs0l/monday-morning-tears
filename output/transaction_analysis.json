@@ -1048,6 +1048,10 @@
           "count": 1
         },
         {
+          "player": "Tyjae Spears",
+          "count": 1
+        },
+        {
           "player": "Makai Lemon",
           "count": 1
         }
@@ -3540,8 +3544,19 @@
         "sameWeekAddsFlagged": 0
       },
       "2026": {
-        "players": [],
-        "teamTally": {},
+        "players": [
+          {
+            "player": "Kaelon Black",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Ben Bingert"
+            ]
+          }
+        ],
+        "teamTally": {
+          "Ben Bingert": 1
+        },
         "sameWeekAddsFlagged": 0
       }
     },
@@ -3549,7 +3564,7 @@
       "Ray Engleking": 33,
       "John Artiglier": 35,
       "Carl Cummins": 44,
-      "Ben Bingert": 29,
+      "Ben Bingert": 30,
       "Bill Solecki": 65,
       "Mike Kovacs": 48,
       "Phil Torres": 31,
@@ -4606,6 +4621,10 @@
         "Ben Bingert": [
           {
             "player": "Lions D/ST",
+            "count": 1
+          },
+          {
+            "player": "Tyjae Spears",
             "count": 1
           },
           {
@@ -6713,8 +6732,19 @@
           "sameWeekAddsFlagged": 0
         },
         "2026": {
-          "players": [],
-          "teamTally": {},
+          "players": [
+            {
+              "player": "Kaelon Black",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Ben Bingert"
+              ]
+            }
+          ],
+          "teamTally": {
+            "Ben Bingert": 1
+          },
           "sameWeekAddsFlagged": 0
         }
       },
@@ -6722,7 +6752,7 @@
         "Ray Engleking": 27,
         "John Artiglier": 33,
         "Carl Cummins": 32,
-        "Ben Bingert": 24,
+        "Ben Bingert": 25,
         "Mike Kovacs": 44,
         "Bill Solecki": 47,
         "Phil Torres": 27,

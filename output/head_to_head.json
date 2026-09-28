@@ -339,7 +339,7 @@
           },
           "away": {
             "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
+            "teamName": "I wanta Free the NewtMan!",
             "teamAbbrev": "huh?",
             "owner": "Mike Kovacs",
             "score": 90.86
@@ -362,7 +362,7 @@
           },
           "away": {
             "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
+            "teamName": "I wanta Free the NewtMan!",
             "teamAbbrev": "huh?",
             "owner": "Mike Kovacs",
             "score": 192.18
@@ -477,7 +477,7 @@
           },
           "away": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 116.54
@@ -500,7 +500,7 @@
           },
           "away": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 129.44
@@ -879,7 +879,7 @@
     },
     "Randell Crawford": {
       "opponent": "Randell Crawford",
-      "opponentName": "Insane in the  Ukraine",
+      "opponentName": "Insane in the Ukraine",
       "wins": 19,
       "losses": 11,
       "ties": 0,
@@ -1030,7 +1030,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 117.0
@@ -1053,7 +1053,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 138.22
@@ -1076,7 +1076,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 147.76
@@ -1099,7 +1099,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 108.06
@@ -1122,7 +1122,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 66.26
@@ -1145,7 +1145,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 179.26
@@ -1168,7 +1168,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 134.5
@@ -1191,7 +1191,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 88.98
@@ -1352,7 +1352,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 94.14
@@ -1368,7 +1368,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 83.8
@@ -1391,7 +1391,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 71.98
@@ -1414,7 +1414,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 119.0
@@ -1444,7 +1444,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 116.96
@@ -1460,7 +1460,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 101.66
@@ -1483,7 +1483,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 77.72
@@ -1513,7 +1513,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 98.74
@@ -1529,7 +1529,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 106.4
@@ -1559,7 +1559,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 159.7
@@ -1582,7 +1582,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 73.06
@@ -2346,7 +2346,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 104.0
@@ -2369,7 +2369,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 74.0
@@ -2760,7 +2760,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 132.94
@@ -2776,7 +2776,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 120.22
@@ -2799,7 +2799,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 112.3
@@ -2829,7 +2829,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 120.72
@@ -3938,7 +3938,7 @@
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 129.36
@@ -3961,7 +3961,7 @@
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 149.66
@@ -3984,7 +3984,7 @@
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 260.16
@@ -4434,21 +4434,21 @@
       "opponent": "John Artiglier",
       "opponentName": "Kraft Smack and Cheese",
       "wins": 7,
-      "losses": 8,
+      "losses": 9,
       "ties": 0,
-      "winPercentage": 0.4666666666666667,
-      "totalGames": 15,
-      "pointsFor": 1742.46,
-      "pointsAgainst": 1662.08,
-      "avgPointsFor": 116.164,
-      "avgPointsAgainst": 110.80533333333332,
+      "winPercentage": 0.4375,
+      "totalGames": 16,
+      "pointsFor": 1858.16,
+      "pointsAgainst": 1780.6799999999998,
+      "avgPointsFor": 116.135,
+      "avgPointsAgainst": 111.29249999999999,
       "highestScore": 167.42,
       "lowestScore": 82.18,
       "biggestWin": 73.73999999999998,
       "closestWin": 5.439999999999998,
       "longestWinStreak": 4,
       "currentStreak": {
-        "type": "WIN",
+        "type": "LOSS",
         "length": 1
       },
       "matchups": [
@@ -4796,6 +4796,29 @@
             "score": 148.58
           },
           "winner": "AWAY"
+        },
+        {
+          "id": "2026_3_11_1",
+          "year": 2026,
+          "week": 3,
+          "matchupPeriodId": 3,
+          "isPlayoff": false,
+          "playoffType": "NONE",
+          "home": {
+            "teamId": 11,
+            "teamName": "Kraft Smack and Cheese",
+            "teamAbbrev": "CHE",
+            "owner": "John Artiglier",
+            "score": 118.6
+          },
+          "away": {
+            "teamId": 1,
+            "teamName": "Bovine University Stampede",
+            "teamAbbrev": "STMP",
+            "owner": "Bill Solecki",
+            "score": 115.7
+          },
+          "winner": "HOME"
         }
       ]
     },
@@ -5360,7 +5383,7 @@
     },
     "Randell Crawford": {
       "opponent": "Randell Crawford",
-      "opponentName": "Insane in the  Ukraine",
+      "opponentName": "Insane in the Ukraine",
       "wins": 3,
       "losses": 0,
       "ties": 0,
@@ -5854,7 +5877,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 96.0
@@ -6341,7 +6364,7 @@
     },
     "Randell Crawford": {
       "opponent": "Randell Crawford",
-      "opponentName": "Insane in the  Ukraine",
+      "opponentName": "Insane in the Ukraine",
       "wins": 2,
       "losses": 1,
       "ties": 0,
@@ -6835,7 +6858,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 75.0
@@ -7263,7 +7286,7 @@
           },
           "away": {
             "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
+            "teamName": "I wanta Free the NewtMan!",
             "teamAbbrev": "huh?",
             "owner": "Mike Kovacs",
             "score": 90.86
@@ -7286,7 +7309,7 @@
           },
           "away": {
             "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
+            "teamName": "I wanta Free the NewtMan!",
             "teamAbbrev": "huh?",
             "owner": "Mike Kovacs",
             "score": 192.18
@@ -7401,7 +7424,7 @@
           },
           "away": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 116.54
@@ -7424,7 +7447,7 @@
           },
           "away": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 129.44
@@ -7989,7 +8012,7 @@
     },
     "Randell Crawford": {
       "opponent": "Randell Crawford",
-      "opponentName": "Insane in the  Ukraine",
+      "opponentName": "Insane in the Ukraine",
       "wins": 13,
       "losses": 13,
       "ties": 0,
@@ -8087,7 +8110,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
+            "teamName": "I wanta Free the NewtMan!",
             "teamAbbrev": "huh?",
             "owner": "Mike Kovacs",
             "score": 68.2
@@ -8110,7 +8133,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
+            "teamName": "I wanta Free the NewtMan!",
             "teamAbbrev": "huh?",
             "owner": "Mike Kovacs",
             "score": 84.48
@@ -8140,7 +8163,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 130.2
@@ -8163,7 +8186,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 88.88
@@ -8186,7 +8209,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 107.38
@@ -8202,14 +8225,14 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 111.52
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 136.36
@@ -8225,14 +8248,14 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 88.92
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 107.84
@@ -8409,7 +8432,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 65.18
@@ -8439,7 +8462,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 131.58
@@ -8455,7 +8478,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 135.66
@@ -8478,7 +8501,7 @@
           "playoffType": "WINNERS_BRACKET",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 119.8
@@ -8501,7 +8524,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 111.18
@@ -8531,7 +8554,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 105.4
@@ -8554,7 +8577,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 89.1
@@ -8570,7 +8593,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 137.44
@@ -8600,7 +8623,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 116.84
@@ -8942,7 +8965,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
+            "teamName": "I wanta Free the NewtMan!",
             "teamAbbrev": "huh?",
             "owner": "Mike Kovacs",
             "score": 92.92
@@ -9103,7 +9126,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 126.08
@@ -9126,7 +9149,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 110.28
@@ -9571,7 +9594,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 90.0
@@ -9594,7 +9617,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 130.0
@@ -9656,7 +9679,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
+            "teamName": "I wanta Free the NewtMan!",
             "teamAbbrev": "huh?",
             "owner": "Mike Kovacs",
             "score": 79.4
@@ -9679,7 +9702,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
+            "teamName": "I wanta Free the NewtMan!",
             "teamAbbrev": "huh?",
             "owner": "Mike Kovacs",
             "score": 100.74
@@ -9817,7 +9840,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 95.34
@@ -9840,7 +9863,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 132.42
@@ -9863,7 +9886,7 @@
           "playoffType": "WINNERS_BRACKET",
           "home": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 183.26
@@ -10100,7 +10123,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 123.26
@@ -10123,7 +10146,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 110.6
@@ -10139,7 +10162,7 @@
           "playoffType": "WINNERS_BRACKET",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 103.66
@@ -10162,7 +10185,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 117.36
@@ -10185,7 +10208,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 103.5
@@ -10301,7 +10324,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
+            "teamName": "I wanta Free the NewtMan!",
             "teamAbbrev": "huh?",
             "owner": "Mike Kovacs",
             "score": 133.46
@@ -10417,7 +10440,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
+            "teamName": "I wanta Free the NewtMan!",
             "teamAbbrev": "huh?",
             "owner": "Mike Kovacs",
             "score": 96.68
@@ -10440,7 +10463,7 @@
           "playoffType": "WINNERS_BRACKET",
           "home": {
             "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
+            "teamName": "I wanta Free the NewtMan!",
             "teamAbbrev": "huh?",
             "owner": "Mike Kovacs",
             "score": 265.18
@@ -10533,7 +10556,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
+            "teamName": "I wanta Free the NewtMan!",
             "teamAbbrev": "huh?",
             "owner": "Mike Kovacs",
             "score": 107.94
@@ -10671,7 +10694,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 129.0
@@ -11110,14 +11133,14 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 117.0
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 94.12
@@ -11525,7 +11548,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 104.2
@@ -11548,7 +11571,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 98.16
@@ -11571,7 +11594,7 @@
           "playoffType": "WINNERS_BRACKET",
           "home": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 183.64
@@ -12388,7 +12411,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 117.0
@@ -12411,7 +12434,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 138.22
@@ -12434,7 +12457,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 147.76
@@ -12457,7 +12480,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 108.06
@@ -12480,7 +12503,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 66.26
@@ -12503,7 +12526,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 179.26
@@ -12526,7 +12549,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 134.5
@@ -12549,7 +12572,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 88.98
@@ -12710,7 +12733,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 94.14
@@ -12726,7 +12749,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 83.8
@@ -12749,7 +12772,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 71.98
@@ -12772,7 +12795,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 119.0
@@ -12802,7 +12825,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 116.96
@@ -12818,7 +12841,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 101.66
@@ -12841,7 +12864,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 77.72
@@ -12871,7 +12894,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 98.74
@@ -12887,7 +12910,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 106.4
@@ -12917,7 +12940,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 159.7
@@ -12940,7 +12963,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 73.06
@@ -13235,7 +13258,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
+            "teamName": "I wanta Free the NewtMan!",
             "teamAbbrev": "huh?",
             "owner": "Mike Kovacs",
             "score": 68.2
@@ -13258,7 +13281,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
+            "teamName": "I wanta Free the NewtMan!",
             "teamAbbrev": "huh?",
             "owner": "Mike Kovacs",
             "score": 84.48
@@ -13288,7 +13311,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 130.2
@@ -13311,7 +13334,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 88.88
@@ -13334,7 +13357,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 107.38
@@ -13350,14 +13373,14 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 111.52
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 136.36
@@ -13373,14 +13396,14 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 88.92
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 107.84
@@ -13557,7 +13580,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 65.18
@@ -13587,7 +13610,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 131.58
@@ -13603,7 +13626,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 135.66
@@ -13626,7 +13649,7 @@
           "playoffType": "WINNERS_BRACKET",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 119.8
@@ -13649,7 +13672,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 111.18
@@ -13679,7 +13702,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 105.4
@@ -13702,7 +13725,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 89.1
@@ -13718,7 +13741,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 137.44
@@ -13748,7 +13771,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 116.84
@@ -14166,7 +14189,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 81.76
@@ -14189,7 +14212,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 101.34
@@ -14212,7 +14235,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 55.32
@@ -14235,7 +14258,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 75.9
@@ -14258,7 +14281,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 112.2
@@ -14442,7 +14465,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 91.4
@@ -14458,7 +14481,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 107.5
@@ -14488,7 +14511,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 98.38
@@ -14511,7 +14534,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 178.62
@@ -14534,7 +14557,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 111.62
@@ -14550,7 +14573,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 98.08
@@ -14573,7 +14596,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 116.1
@@ -14603,7 +14626,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 152.7
@@ -14643,7 +14666,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 113.0
@@ -14765,7 +14788,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 84.94
@@ -14788,7 +14811,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 108.3
@@ -14811,7 +14834,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 86.5
@@ -14834,7 +14857,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 180.1
@@ -15011,7 +15034,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 102.74
@@ -15041,7 +15064,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 91.2
@@ -15057,14 +15080,14 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 126.22
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 93.36
@@ -15080,14 +15103,14 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 77.2
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 82.22
@@ -15103,14 +15126,14 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 110.56
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 112.04
@@ -15126,14 +15149,14 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 136.36
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 102.2
@@ -15149,14 +15172,14 @@
           "playoffType": "WINNERS_BRACKET",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 117.98
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 90.86
@@ -15179,7 +15202,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 101.02
@@ -15195,7 +15218,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 92.72
@@ -15288,7 +15311,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 108.56
@@ -15311,7 +15334,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 76.2
@@ -15334,7 +15357,7 @@
           "playoffType": "WINNERS_BRACKET",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 186.6
@@ -15427,7 +15450,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 89.68
@@ -15450,7 +15473,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 94.56
@@ -15473,7 +15496,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 94.88
@@ -15496,7 +15519,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 77.08
@@ -15519,7 +15542,7 @@
           "playoffType": "WINNERS_BRACKET",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 139.1
@@ -15635,7 +15658,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 96.6
@@ -15658,7 +15681,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 95.14
@@ -15681,7 +15704,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 85.0
@@ -15704,7 +15727,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 73.52
@@ -15727,7 +15750,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 104.16
@@ -15934,7 +15957,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 126.8
@@ -15964,7 +15987,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 171.84
@@ -15987,7 +16010,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 135.36
@@ -16010,7 +16033,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 106.7
@@ -16026,7 +16049,7 @@
           "playoffType": "WINNERS_BRACKET",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 80.62
@@ -16049,7 +16072,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 129.18
@@ -16079,7 +16102,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 103.76
@@ -16102,7 +16125,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 126.4
@@ -16125,7 +16148,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 99.72
@@ -16212,7 +16235,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 103.52
@@ -16235,7 +16258,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 88.88
@@ -16258,14 +16281,14 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 109.04
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 129.26
@@ -16281,14 +16304,14 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 109.56
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 121.7
@@ -16449,7 +16472,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 126.64
@@ -16465,7 +16488,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 86.46
@@ -16488,7 +16511,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 72.84
@@ -16518,7 +16541,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 104.54
@@ -16541,7 +16564,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 120.96
@@ -16557,7 +16580,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 111.62
@@ -16604,7 +16627,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 117.78
@@ -16627,7 +16650,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 101.68
@@ -16650,7 +16673,7 @@
           "playoffType": "WINNERS_BRACKET",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 183.6
@@ -16864,7 +16887,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 80.32
@@ -16880,7 +16903,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 106.1
@@ -16910,7 +16933,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 89.76
@@ -16933,7 +16956,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 114.44
@@ -16956,7 +16979,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 94.26
@@ -16979,7 +17002,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 108.4
@@ -16995,7 +17018,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 109.08
@@ -17049,7 +17072,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 102.44
@@ -17072,7 +17095,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 127.32
@@ -17088,7 +17111,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 123.1
@@ -17111,7 +17134,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 105.54
@@ -17134,7 +17157,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 77.16
@@ -17164,7 +17187,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 141.0
@@ -17187,7 +17210,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 127.62
@@ -17234,7 +17257,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 96.22
@@ -17257,7 +17280,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 86.92
@@ -17273,7 +17296,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 106.28
@@ -17550,7 +17573,7 @@
     },
     "Randell Crawford": {
       "opponent": "Randell Crawford",
-      "opponentName": "Insane in the  Ukraine",
+      "opponentName": "Insane in the Ukraine",
       "wins": 0,
       "losses": 2,
       "ties": 0,
@@ -17836,7 +17859,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 72.0
@@ -17859,7 +17882,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 99.0
@@ -17882,7 +17905,7 @@
           "playoffType": "WINNERS_BRACKET",
           "home": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 68.0
@@ -18205,7 +18228,7 @@
     },
     "Randell Crawford": {
       "opponent": "Randell Crawford",
-      "opponentName": "Insane in the  Ukraine",
+      "opponentName": "Insane in the Ukraine",
       "wins": 2,
       "losses": 0,
       "ties": 0,
@@ -18468,7 +18491,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 98.0
@@ -18491,7 +18514,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 110.0
@@ -18906,7 +18929,7 @@
     },
     "Randell Crawford": {
       "opponent": "Randell Crawford",
-      "opponentName": "Insane in the  Ukraine",
+      "opponentName": "Insane in the Ukraine",
       "wins": 3,
       "losses": 1,
       "ties": 0,
@@ -19261,7 +19284,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 84.0
@@ -19284,7 +19307,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 71.0
@@ -20398,7 +20421,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
+            "teamName": "I wanta Free the NewtMan!",
             "teamAbbrev": "huh?",
             "owner": "Mike Kovacs",
             "score": 92.92
@@ -20559,7 +20582,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 126.08
@@ -20582,7 +20605,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 110.28
@@ -20991,7 +21014,7 @@
     },
     "Randell Crawford": {
       "opponent": "Randell Crawford",
-      "opponentName": "Insane in the  Ukraine",
+      "opponentName": "Insane in the Ukraine",
       "wins": 12,
       "losses": 13,
       "ties": 0,
@@ -21142,7 +21165,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 81.76
@@ -21165,7 +21188,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 101.34
@@ -21188,7 +21211,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 55.32
@@ -21211,7 +21234,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 75.9
@@ -21234,7 +21257,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 112.2
@@ -21418,7 +21441,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 91.4
@@ -21434,7 +21457,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 107.5
@@ -21464,7 +21487,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 98.38
@@ -21487,7 +21510,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 178.62
@@ -21510,7 +21533,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 111.62
@@ -21526,7 +21549,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 98.08
@@ -21549,7 +21572,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 116.1
@@ -21579,7 +21602,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 152.7
@@ -21806,7 +21829,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 128.0
@@ -21829,7 +21852,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 180.0
@@ -21852,7 +21875,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 140.0
@@ -22296,7 +22319,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 111.54
@@ -22312,7 +22335,7 @@
           "playoffType": "WINNERS_BRACKET",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 140.24
@@ -22335,7 +22358,7 @@
           "playoffType": "WINNERS_BRACKET",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 107.34
@@ -22358,7 +22381,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 137.86
@@ -23497,7 +23520,7 @@
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 126.54
@@ -23520,7 +23543,7 @@
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 148.92
@@ -24722,7 +24745,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 104.0
@@ -24745,7 +24768,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 74.0
@@ -25136,7 +25159,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 132.94
@@ -25152,7 +25175,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 120.22
@@ -25175,7 +25198,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 112.3
@@ -25205,7 +25228,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 120.72
@@ -25291,7 +25314,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 96.0
@@ -25361,7 +25384,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 75.0
@@ -25438,7 +25461,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 90.0
@@ -25461,7 +25484,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 130.0
@@ -25523,7 +25546,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
+            "teamName": "I wanta Free the NewtMan!",
             "teamAbbrev": "huh?",
             "owner": "Mike Kovacs",
             "score": 79.4
@@ -25546,7 +25569,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
+            "teamName": "I wanta Free the NewtMan!",
             "teamAbbrev": "huh?",
             "owner": "Mike Kovacs",
             "score": 100.74
@@ -25684,7 +25707,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 95.34
@@ -25707,7 +25730,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 132.42
@@ -25730,7 +25753,7 @@
           "playoffType": "WINNERS_BRACKET",
           "home": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 183.26
@@ -25967,7 +25990,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 123.26
@@ -25990,7 +26013,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 110.6
@@ -26006,7 +26029,7 @@
           "playoffType": "WINNERS_BRACKET",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 103.66
@@ -26029,7 +26052,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 117.36
@@ -26052,7 +26075,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 103.5
@@ -26093,7 +26116,7 @@
     },
     "Randell Crawford": {
       "opponent": "Randell Crawford",
-      "opponentName": "Insane in the  Ukraine",
+      "opponentName": "Insane in the Ukraine",
       "wins": 12,
       "losses": 13,
       "ties": 0,
@@ -26122,7 +26145,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 113.0
@@ -26244,7 +26267,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 84.94
@@ -26267,7 +26290,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 108.3
@@ -26290,7 +26313,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 86.5
@@ -26313,7 +26336,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 180.1
@@ -26490,7 +26513,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 102.74
@@ -26520,7 +26543,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 91.2
@@ -26536,14 +26559,14 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 126.22
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 93.36
@@ -26559,14 +26582,14 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 77.2
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 82.22
@@ -26582,14 +26605,14 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 110.56
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 112.04
@@ -26605,14 +26628,14 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 136.36
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 102.2
@@ -26628,14 +26651,14 @@
           "playoffType": "WINNERS_BRACKET",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 117.98
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 90.86
@@ -26658,7 +26681,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 101.02
@@ -26674,7 +26697,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 92.72
@@ -26721,7 +26744,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 72.0
@@ -26744,7 +26767,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 99.0
@@ -26767,7 +26790,7 @@
           "playoffType": "WINNERS_BRACKET",
           "home": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 68.0
@@ -26814,7 +26837,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 98.0
@@ -26837,7 +26860,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 110.0
@@ -26884,7 +26907,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 84.0
@@ -26907,7 +26930,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 71.0
@@ -26977,7 +27000,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 128.0
@@ -27000,7 +27023,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 180.0
@@ -27023,7 +27046,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Benching the  Whole Team",
+            "teamName": "Benching the Whole Team",
             "teamAbbrev": "FAIL",
             "owner": "Carl Cummins",
             "score": 140.0
@@ -27467,7 +27490,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 111.54
@@ -27483,7 +27506,7 @@
           "playoffType": "WINNERS_BRACKET",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 140.24
@@ -27506,7 +27529,7 @@
           "playoffType": "WINNERS_BRACKET",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 107.34
@@ -27529,7 +27552,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 137.86
@@ -28436,7 +28459,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 123.48
@@ -28452,7 +28475,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 89.28
@@ -28475,7 +28498,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 94.32
@@ -28645,7 +28668,7 @@
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 106.48
@@ -28898,7 +28921,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 150.76
@@ -28921,7 +28944,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 89.4
@@ -28944,7 +28967,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 119.16
@@ -28967,7 +28990,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 135.7
@@ -29359,7 +29382,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 126.14
@@ -29382,7 +29405,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 96.14
@@ -29405,7 +29428,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 103.96
@@ -29428,7 +29451,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 129.28
@@ -29544,7 +29567,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 128.54
@@ -29560,7 +29583,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 133.6
@@ -29660,7 +29683,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 107.24
@@ -29676,7 +29699,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 162.98
@@ -29699,7 +29722,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 126.0
@@ -30050,7 +30073,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
+            "teamName": "I wanta Free the NewtMan!",
             "teamAbbrev": "huh?",
             "owner": "Mike Kovacs",
             "score": 133.46
@@ -30114,7 +30137,7 @@
     },
     "Randell Crawford": {
       "opponent": "Randell Crawford",
-      "opponentName": "Insane in the  Ukraine",
+      "opponentName": "Insane in the Ukraine",
       "wins": 1,
       "losses": 4,
       "ties": 0,
@@ -30189,7 +30212,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 108.56
@@ -30212,7 +30235,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 76.2
@@ -30235,7 +30258,7 @@
           "playoffType": "WINNERS_BRACKET",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 186.6
@@ -31328,7 +31351,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
+            "teamName": "I wanta Free the NewtMan!",
             "teamAbbrev": "huh?",
             "owner": "Mike Kovacs",
             "score": 96.68
@@ -31351,7 +31374,7 @@
           "playoffType": "WINNERS_BRACKET",
           "home": {
             "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
+            "teamName": "I wanta Free the NewtMan!",
             "teamAbbrev": "huh?",
             "owner": "Mike Kovacs",
             "score": 265.18
@@ -31392,7 +31415,7 @@
     },
     "Randell Crawford": {
       "opponent": "Randell Crawford",
-      "opponentName": "Insane in the  Ukraine",
+      "opponentName": "Insane in the Ukraine",
       "wins": 3,
       "losses": 4,
       "ties": 0,
@@ -31467,7 +31490,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 89.68
@@ -31490,7 +31513,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 94.56
@@ -31513,7 +31536,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 94.88
@@ -31536,7 +31559,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 77.08
@@ -31559,7 +31582,7 @@
           "playoffType": "WINNERS_BRACKET",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 139.1
@@ -33297,7 +33320,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "I wanta Free the NewtMan! ",
+            "teamName": "I wanta Free the NewtMan!",
             "teamAbbrev": "huh?",
             "owner": "Mike Kovacs",
             "score": 107.94
@@ -33435,7 +33458,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 129.0
@@ -33752,7 +33775,7 @@
     },
     "Randell Crawford": {
       "opponent": "Randell Crawford",
-      "opponentName": "Insane in the  Ukraine",
+      "opponentName": "Insane in the Ukraine",
       "wins": 12,
       "losses": 13,
       "ties": 0,
@@ -33850,7 +33873,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 96.6
@@ -33873,7 +33896,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 95.14
@@ -33896,7 +33919,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 85.0
@@ -33919,7 +33942,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 73.52
@@ -33942,7 +33965,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 104.16
@@ -34149,7 +34172,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 126.8
@@ -34179,7 +34202,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 171.84
@@ -34202,7 +34225,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 135.36
@@ -34225,7 +34248,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 106.7
@@ -34241,7 +34264,7 @@
           "playoffType": "WINNERS_BRACKET",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 80.62
@@ -34264,7 +34287,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 129.18
@@ -34294,7 +34317,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 103.76
@@ -34317,7 +34340,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 126.4
@@ -34340,7 +34363,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 99.72
@@ -35539,7 +35562,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 123.48
@@ -35555,7 +35578,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 89.28
@@ -35578,7 +35601,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 94.32
@@ -36072,7 +36095,7 @@
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 113.8
@@ -36095,7 +36118,7 @@
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 117.52
@@ -36118,7 +36141,7 @@
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 192.76
@@ -37334,7 +37357,7 @@
     },
     "Randell Crawford": {
       "opponent": "Randell Crawford",
-      "opponentName": "Insane in the  Ukraine",
+      "opponentName": "Insane in the Ukraine",
       "wins": 0,
       "losses": 1,
       "ties": 0,
@@ -37816,7 +37839,7 @@
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 129.36
@@ -37839,7 +37862,7 @@
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 149.66
@@ -37862,7 +37885,7 @@
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 260.16
@@ -38385,14 +38408,14 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 117.0
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 94.12
@@ -38771,7 +38794,7 @@
     },
     "Randell Crawford": {
       "opponent": "Randell Crawford",
-      "opponentName": "Insane in the  Ukraine",
+      "opponentName": "Insane in the Ukraine",
       "wins": 12,
       "losses": 4,
       "ties": 0,
@@ -38800,7 +38823,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 103.52
@@ -38823,7 +38846,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 88.88
@@ -38846,14 +38869,14 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 109.04
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 129.26
@@ -38869,14 +38892,14 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 109.56
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 121.7
@@ -39037,7 +39060,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 126.64
@@ -39053,7 +39076,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 86.46
@@ -39076,7 +39099,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 72.84
@@ -39106,7 +39129,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 104.54
@@ -39129,7 +39152,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 120.96
@@ -39145,7 +39168,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 111.62
@@ -39245,7 +39268,7 @@
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 126.54
@@ -39268,7 +39291,7 @@
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 148.92
@@ -39729,7 +39752,7 @@
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 106.48
@@ -39982,7 +40005,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 150.76
@@ -40005,7 +40028,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 89.4
@@ -40028,7 +40051,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 119.16
@@ -40051,7 +40074,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 135.7
@@ -40283,7 +40306,7 @@
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 113.8
@@ -40306,7 +40329,7 @@
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 117.52
@@ -40329,7 +40352,7 @@
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 192.76
@@ -40675,7 +40698,7 @@
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 143.3
@@ -40698,7 +40721,7 @@
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 138.74
@@ -41358,22 +41381,22 @@
     "Bill Solecki": {
       "opponent": "Bill Solecki",
       "opponentName": "Bovine University Stampede",
-      "wins": 8,
+      "wins": 9,
       "losses": 7,
       "ties": 0,
-      "winPercentage": 0.5333333333333333,
-      "totalGames": 15,
-      "pointsFor": 1662.08,
-      "pointsAgainst": 1742.46,
-      "avgPointsFor": 110.80533333333332,
-      "avgPointsAgainst": 116.164,
+      "winPercentage": 0.5625,
+      "totalGames": 16,
+      "pointsFor": 1780.6799999999998,
+      "pointsAgainst": 1858.16,
+      "avgPointsFor": 111.29249999999999,
+      "avgPointsAgainst": 116.135,
       "highestScore": 143.46,
       "lowestScore": 80.34,
       "biggestWin": 50.64,
-      "closestWin": 5.52000000000001,
+      "closestWin": 2.8999999999999915,
       "longestWinStreak": 6,
       "currentStreak": {
-        "type": "LOSS",
+        "type": "WIN",
         "length": 1
       },
       "matchups": [
@@ -41721,6 +41744,29 @@
             "score": 148.58
           },
           "winner": "AWAY"
+        },
+        {
+          "id": "2026_3_11_1",
+          "year": 2026,
+          "week": 3,
+          "matchupPeriodId": 3,
+          "isPlayoff": false,
+          "playoffType": "NONE",
+          "home": {
+            "teamId": 11,
+            "teamName": "Kraft Smack and Cheese",
+            "teamAbbrev": "CHE",
+            "owner": "John Artiglier",
+            "score": 118.6
+          },
+          "away": {
+            "teamId": 1,
+            "teamName": "Bovine University Stampede",
+            "teamAbbrev": "STMP",
+            "owner": "Bill Solecki",
+            "score": 115.7
+          },
+          "winner": "HOME"
         }
       ]
     },
@@ -41755,7 +41801,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 104.2
@@ -41778,7 +41824,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 98.16
@@ -41801,7 +41847,7 @@
           "playoffType": "WINNERS_BRACKET",
           "home": {
             "teamId": 2,
-            "teamName": "The Bell  Is Dead",
+            "teamName": "The Bell Is Dead",
             "teamAbbrev": "GRBG",
             "owner": "Mike Kovacs",
             "score": 183.64
@@ -42164,7 +42210,7 @@
     },
     "Randell Crawford": {
       "opponent": "Randell Crawford",
-      "opponentName": "Insane in the  Ukraine",
+      "opponentName": "Insane in the Ukraine",
       "wins": 14,
       "losses": 4,
       "ties": 0,
@@ -42193,7 +42239,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 117.78
@@ -42216,7 +42262,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 101.68
@@ -42239,7 +42285,7 @@
           "playoffType": "WINNERS_BRACKET",
           "home": {
             "teamId": 6,
-            "teamName": "I Do Respect  You Bro",
+            "teamName": "I Do Respect You Bro",
             "teamAbbrev": "Park",
             "owner": "Randell Crawford",
             "score": 183.6
@@ -42453,7 +42499,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 80.32
@@ -42469,7 +42515,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 106.1
@@ -42499,7 +42545,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 89.76
@@ -42522,7 +42568,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 114.44
@@ -42545,7 +42591,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 94.26
@@ -42568,7 +42614,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 108.4
@@ -42584,7 +42630,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 109.08
@@ -43306,7 +43352,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 126.14
@@ -43329,7 +43375,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 96.14
@@ -43352,7 +43398,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 103.96
@@ -43375,7 +43421,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 129.28
@@ -43860,7 +43906,7 @@
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 143.3
@@ -43883,7 +43929,7 @@
           },
           "away": {
             "teamId": 12,
-            "teamName": "The Mixon Administration ",
+            "teamName": "The Mixon Administration",
             "teamAbbrev": "MIXD",
             "owner": "Ben Bingert",
             "score": 138.74
@@ -44866,7 +44912,7 @@
     },
     "Randell Crawford": {
       "opponent": "Randell Crawford",
-      "opponentName": "Insane in the  Ukraine",
+      "opponentName": "Insane in the Ukraine",
       "wins": 1,
       "losses": 6,
       "ties": 0,
@@ -44902,7 +44948,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 102.44
@@ -44925,7 +44971,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 127.32
@@ -44941,7 +44987,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 123.1
@@ -44964,7 +45010,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 105.54
@@ -44987,7 +45033,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 77.16
@@ -45017,7 +45063,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 141.0
@@ -45040,7 +45086,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 127.62
@@ -45272,7 +45318,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 128.54
@@ -45288,7 +45334,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 133.6
@@ -46280,7 +46326,7 @@
     },
     "Randell Crawford": {
       "opponent": "Randell Crawford",
-      "opponentName": "Insane in the  Ukraine",
+      "opponentName": "Insane in the Ukraine",
       "wins": 1,
       "losses": 2,
       "ties": 0,
@@ -46316,7 +46362,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 96.22
@@ -46339,7 +46385,7 @@
           },
           "away": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 86.92
@@ -46355,7 +46401,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 6,
-            "teamName": "Insane in the  Ukraine",
+            "teamName": "Insane in the Ukraine",
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 106.28
@@ -46617,7 +46663,7 @@
           },
           "away": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 107.24
@@ -46633,7 +46679,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 162.98
@@ -46656,7 +46702,7 @@
           "playoffType": "NONE",
           "home": {
             "teamId": 3,
-            "teamName": "Taylor Swift ",
+            "teamName": "Taylor Swift",
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 126.0

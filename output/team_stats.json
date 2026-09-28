@@ -15,14 +15,14 @@
     "teamName": "Bovine University Stampede",
     "abbrev": "STMP",
     "allTeamNames": [
-      "Bovine University Stampede",
       "Arian Foster 2013",
-      "Barack Obama",
-      "Wade Boggs Memorial Team",
       "Musconetcong Mantis Men",
+      "Bovine University Stampede",
       "Why's This So Sticky?",
-      "Bills New Team Name",
-      "Scott's ConsolationTots"
+      "Scott's ConsolationTots",
+      "Wade Boggs Memorial Team",
+      "Barack Obama",
+      "Bills New Team Name"
     ],
     "playoffYears": [
       2018,
@@ -37,12 +37,12 @@
       2015
     ],
     "seasonsPlayed": 14,
-    "totalGames": 201,
+    "totalGames": 202,
     "regularSeason": {
       "wins": 111,
-      "losses": 70,
+      "losses": 71,
       "ties": 0,
-      "winPercentage": 0.613
+      "winPercentage": 0.61
     },
     "playoffs": {
       "wins": 10,
@@ -52,9 +52,9 @@
     },
     "overall": {
       "wins": 121,
-      "losses": 80,
+      "losses": 81,
       "ties": 0,
-      "winPercentage": 0.602
+      "winPercentage": 0.599
     },
     "playoffAppearances": 10,
     "championships": 2,
@@ -65,10 +65,10 @@
     ],
     "mostMovesSeason": 53,
     "mostMovesSeasonYear": 2017,
-    "totalPointsFor": 24247.339999999982,
-    "totalPointsAgainst": 23101.400000000012,
-    "avgPointsFor": 120.63353233830837,
-    "avgPointsAgainst": 114.93233830845777,
+    "totalPointsFor": 24363.039999999983,
+    "totalPointsAgainst": 23220.00000000001,
+    "avgPointsFor": 120.60910891089101,
+    "avgPointsAgainst": 114.95049504950501,
     "highestScore": 258.48,
     "lowestScore": 58.7,
     "totalTrades": 2,
@@ -79,8 +79,8 @@
     "longestWinStreak": 10,
     "longestLossStreak": 5,
     "currentStreak": {
-      "type": "WIN",
-      "length": 2
+      "type": "LOSS",
+      "length": 1
     },
     "yearlyRecords": {
       "2013": {
@@ -241,23 +241,23 @@
       },
       "2026": {
         "wins": 2,
-        "losses": 0,
+        "losses": 1,
         "ties": 0,
-        "winPercentage": 1.0,
-        "pointsFor": 212.54000000000002,
-        "pointsAgainst": 179.26,
-        "avgPointsFor": 106.27000000000001,
+        "winPercentage": 0.667,
+        "pointsFor": 328.24,
+        "pointsAgainst": 297.86,
+        "avgPointsFor": 109.41333333333334,
         "madePlayoffs": false,
         "regularSeasonWins": 2,
-        "regularSeasonLosses": 0
+        "regularSeasonLosses": 1
       }
     },
     "bestOpponent": "john crawford",
     "bestOpponentRecord": "4-0",
     "bestOpponentWinPct": 1.0,
-    "worstOpponent": "Ben Bingert",
-    "worstOpponentRecord": "11-13",
-    "worstOpponentWinPct": 0.4583333333333333,
+    "worstOpponent": "John Artiglier",
+    "worstOpponentRecord": "7-9",
+    "worstOpponentWinPct": 0.4375,
     "bestSeasonWinPct": 0.7857142857142857,
     "bestSeasonYear": 2023,
     "bestSeasonWins": 11,
@@ -294,8 +294,8 @@
     "teamName": "Really Just Sean Kessell",
     "abbrev": "KSSL",
     "allTeamNames": [
-      "Really Just Sean Kessell",
-      "Da Kessell Krew"
+      "Da Kessell Krew",
+      "Really Just Sean Kessell"
     ],
     "playoffYears": [
       2013,
@@ -411,8 +411,8 @@
     "teamName": "TDs In Your Face",
     "abbrev": "TDs",
     "allTeamNames": [
-      "Also Just Sean Kessell",
-      "TDs In Your Face"
+      "TDs In Your Face",
+      "Also Just Sean Kessell"
     ],
     "playoffYears": [],
     "seasonsPlayed": 2,
@@ -525,20 +525,20 @@
     "teamName": "Chasing McBride",
     "abbrev": "GRBG",
     "allTeamNames": [
-      "I wanta Free the NewtMan! ",
-      "Dollar Dollar Bills Y'all",
-      "Chasing McBride",
-      "Yobogoya In the Bushes!",
-      "All Aboard The J Train",
-      "Its Mike Vick In a Box!",
-      "Saquanda Strikes Back",
-      "Less Morals Than Mike Vick",
-      "Saquonda Forever",
-      "Colonel Sanders McCaffreys",
-      "Why Pass to Top Wide Receivers?",
+      "The Bell Is Dead",
       "Al Tuck And No Action",
       "Chase My Butker",
-      "The Bell  Is Dead"
+      "Saquanda Strikes Back",
+      "Dollar Dollar Bills Y'all",
+      "Less Morals Than Mike Vick",
+      "Colonel Sanders McCaffreys",
+      "Yobogoya In the Bushes!",
+      "Why Pass to Top Wide Receivers?",
+      "All Aboard The J Train",
+      "I wanta Free the NewtMan!",
+      "Its Mike Vick In a Box!",
+      "Chasing McBride",
+      "Saquonda Forever"
     ],
     "playoffYears": [
       2016,
@@ -794,7 +794,7 @@
   },
   "Randell Crawford": {
     "owner": "Randell Crawford",
-    "currentTeamName": "Insane in the  Ukraine",
+    "currentTeamName": "Insane in the Ukraine",
     "currentTeamAbbrev": "B00B",
     "currentTeamId": 6,
     "firstYear": 2013,
@@ -804,15 +804,15 @@
     "isActive": true,
     "totalSeasons": 14,
     "teamId": 6,
-    "teamName": "Insane in the  Ukraine",
+    "teamName": "Insane in the Ukraine",
     "abbrev": "B00B",
     "allTeamNames": [
-      "Insane in the  Ukraine",
       "The HipShire Hobbits",
       "19 Problems and Covid is One",
       "Erection Protection",
       "Will Trade Wins For Alcohol",
-      "I Do Respect  You Bro",
+      "Insane in the Ukraine",
+      "I Do Respect You Bro",
       "oh no its John Snooooooow"
     ],
     "playoffYears": [
@@ -1278,8 +1278,8 @@
     "teamName": "T'EOMINATOR 2 RESURRECTION",
     "abbrev": "T'EO",
     "allTeamNames": [
-      "T'EOMINATOR 2 RESURRECTION",
-      "DidntSetLineUp InPlayoffs"
+      "DidntSetLineUp InPlayoffs",
+      "T'EOMINATOR 2 RESURRECTION"
     ],
     "playoffYears": [
       2013,
@@ -1395,15 +1395,15 @@
     "teamName": "Canadian Geeses",
     "abbrev": "CA",
     "allTeamNames": [
-      "Duke Nukems",
-      "Hawk Tua",
       "Christmas Devil Krampus",
+      "Chef's choclate Salty Balls",
       "Pickle Ricks",
-      "Go Fudge Yourselves",
       "Canadian Geeses",
       "Skattebo's Ankle",
       "Rafi Bombs",
-      "Chef's choclate Salty Balls"
+      "Go Fudge Yourselves",
+      "Hawk Tua",
+      "Duke Nukems"
     ],
     "playoffYears": [
       2016,
@@ -1676,12 +1676,12 @@
     "teamName": "Taylor and Travis Swift \ud83d\udc51",
     "abbrev": "CARL",
     "allTeamNames": [
-      "Taylor and Travis Swift \ud83d\udc51",
+      "Taylor Swift",
+      "Benching the Whole Team",
+      "Greatest of All Time",
       "Duckman Kowalski",
       "Pussy Power",
-      "Greatest of All Time",
-      "Benching the  Whole Team",
-      "Taylor Swift "
+      "Taylor and Travis Swift \ud83d\udc51"
     ],
     "playoffYears": [
       2016,
@@ -2218,9 +2218,9 @@
     "teamName": "Salty Spitoon",
     "abbrev": "REXY",
     "allTeamNames": [
-      "Weenie Hut Jr's",
       "Rex Grossman Fan Club",
-      "Salty Spitoon"
+      "Salty Spitoon",
+      "Weenie Hut Jr's"
     ],
     "playoffYears": [
       2016,
@@ -2578,16 +2578,16 @@
     "teamName": "All You Need Is Love",
     "abbrev": "LOVE",
     "allTeamNames": [
-      "Chubb Basshole",
-      "The Recycling Ben",
+      "Mail Fairy",
+      "Two Girls One Kupp",
       "All You Need Is Love",
-      "Strouds in the Clouds",
+      "The Mixon Administration",
+      "Chubb Basshole",
       "Joe Burrow Tiger King",
       "We played Week 7, 8 and 13",
-      "Mail Fairy",
-      "The Mixon Administration ",
-      "Two Girls One Kupp",
-      "Just a Chubb Tucker"
+      "Just a Chubb Tucker",
+      "Strouds in the Clouds",
+      "The Recycling Ben"
     ],
     "playoffYears": [
       2018,
@@ -2809,12 +2809,12 @@
     "teamName": "Kraft Smack and Cheese",
     "abbrev": "CHE",
     "allTeamNames": [
-      "All You Need is Love",
-      "Goodnight Again My Sweet Prince",
       "Davante's Inferno",
-      "Kraft Smack and Cheese",
       "RADrigo Is My Homeboy",
-      "Hubba Chubba"
+      "Kraft Smack and Cheese",
+      "All You Need is Love",
+      "Hubba Chubba",
+      "Goodnight Again My Sweet Prince"
     ],
     "playoffYears": [
       2024,
@@ -2823,12 +2823,12 @@
       2020
     ],
     "seasonsPlayed": 9,
-    "totalGames": 131,
+    "totalGames": 132,
     "regularSeason": {
-      "wins": 65,
+      "wins": 66,
       "losses": 60,
       "ties": 0,
-      "winPercentage": 0.52
+      "winPercentage": 0.524
     },
     "playoffs": {
       "wins": 1,
@@ -2837,10 +2837,10 @@
       "winPercentage": 0.167
     },
     "overall": {
-      "wins": 66,
+      "wins": 67,
       "losses": 65,
       "ties": 0,
-      "winPercentage": 0.504
+      "winPercentage": 0.508
     },
     "playoffAppearances": 4,
     "championships": 0,
@@ -2848,10 +2848,10 @@
     "championshipYears": [],
     "mostMovesSeason": 24,
     "mostMovesSeasonYear": 2019,
-    "totalPointsFor": 15128.860000000004,
-    "totalPointsAgainst": 15182.46,
-    "avgPointsFor": 115.48748091603056,
-    "avgPointsAgainst": 115.89664122137404,
+    "totalPointsFor": 15247.460000000005,
+    "totalPointsAgainst": 15298.16,
+    "avgPointsFor": 115.51106060606064,
+    "avgPointsAgainst": 115.89515151515151,
     "highestScore": 219.34,
     "lowestScore": 66.44,
     "totalTrades": 1,
@@ -2863,7 +2863,7 @@
     "longestLossStreak": 5,
     "currentStreak": {
       "type": "WIN",
-      "length": 1
+      "length": 2
     },
     "yearlyRecords": {
       "2018": {
@@ -2963,15 +2963,15 @@
         "regularSeasonLosses": 4
       },
       "2026": {
-        "wins": 1,
+        "wins": 2,
         "losses": 1,
         "ties": 0,
-        "winPercentage": 0.5,
-        "pointsFor": 242.86,
-        "pointsAgainst": 262.02,
-        "avgPointsFor": 121.43,
+        "winPercentage": 0.667,
+        "pointsFor": 361.46000000000004,
+        "pointsAgainst": 377.71999999999997,
+        "avgPointsFor": 120.48666666666668,
         "madePlayoffs": false,
-        "regularSeasonWins": 1,
+        "regularSeasonWins": 2,
         "regularSeasonLosses": 1
       }
     },
@@ -3019,10 +3019,10 @@
     "teamName": "OnlyIfIHadA2TE",
     "abbrev": "Yup",
     "allTeamNames": [
-      "OnlyIfIHadA2TE",
       "Loop, There it is!",
+      "Bye Week Part 2",
       "Bye Week",
-      "Bye Week Part 2"
+      "OnlyIfIHadA2TE"
     ],
     "playoffYears": [
       2025,
