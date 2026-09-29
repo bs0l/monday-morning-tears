@@ -4220,15 +4220,15 @@
   "2026": {
     "year": 2026,
     "highestScore": {
-      "score": 147.9,
-      "team": "Paintin Peyton",
-      "owner": "john crawford",
-      "opponent": "Kraft Smack and Cheese",
-      "opponentScore": 126.04,
+      "score": 175.98,
+      "team": "Canadian Geeses",
+      "owner": "Phil Torres",
+      "opponent": "Chasing McBride",
+      "opponentScore": 111.94,
       "year": 2026,
-      "teamId": 13,
-      "week": 1,
-      "matchupPeriodId": 1
+      "teamId": 4,
+      "week": 3,
+      "matchupPeriodId": 3
     },
     "lowestScore": {
       "score": 73.06,
@@ -4254,44 +4254,29 @@
       "matchupPeriodId": 2
     },
     "biggestBlowout": {
-      "margin": 43.959999999999994,
-      "winner": "Taylor and Travis Swift \ud83d\udc51",
-      "winnerOwner": "Carl Cummins",
-      "winnerScore": 121.86,
-      "winnerTeamId": 3,
-      "loser": "Paintin Peyton",
-      "loserScore": 77.9,
+      "margin": 64.03999999999999,
+      "winner": "Canadian Geeses",
+      "winnerOwner": "Phil Torres",
+      "winnerScore": 175.98,
+      "winnerTeamId": 4,
+      "loser": "Chasing McBride",
+      "loserScore": 111.94,
       "year": 2026,
-      "week": 2,
-      "matchupPeriodId": 2
+      "week": 3,
+      "matchupPeriodId": 3
     },
     "longestWinStreak": {
-      "owner": "Bill Solecki",
-      "length": 2,
+      "owner": "Carl Cummins",
+      "length": 3,
       "owners": [
-        "Bill Solecki",
-        "Carl Cummins",
-        "John Artiglier"
+        "Carl Cummins"
       ],
-      "tied": true,
+      "tied": false,
       "streaks": [
-        {
-          "owner": "Bill Solecki",
-          "weeks": [
-            1,
-            2
-          ]
-        },
         {
           "owner": "Carl Cummins",
           "weeks": [
             1,
-            2
-          ]
-        },
-        {
-          "owner": "John Artiglier",
-          "weeks": [
             2,
             3
           ]
@@ -4300,7 +4285,7 @@
     },
     "longestLossStreak": {
       "owner": "Joe Jaramillo",
-      "length": 2,
+      "length": 3,
       "owners": [
         "Joe Jaramillo",
         "Randell Crawford"
@@ -4311,14 +4296,16 @@
           "owner": "Joe Jaramillo",
           "weeks": [
             1,
-            2
+            2,
+            3
           ]
         },
         {
           "owner": "Randell Crawford",
           "weeks": [
             1,
-            2
+            2,
+            3
           ]
         }
       ]
@@ -4327,34 +4314,32 @@
       "owner": "Carl Cummins",
       "owners": [
         "Carl Cummins",
-        "John Artiglier",
+        "Phil Torres",
         "john crawford"
       ],
       "count": 1,
       "tied": true
     },
     "mostWeeklyLowScores": {
-      "owner": "Bill Solecki",
+      "owner": "Joe Jaramillo",
       "owners": [
-        "Bill Solecki",
         "Joe Jaramillo",
-        "Randell Crawford"
+        "Randell Crawford",
+        "john crawford"
       ],
       "count": 1,
       "tied": true
     },
     "mostConsolationDollars": {
-      "owner": "Bill Solecki",
-      "owners": [
-        "Bill Solecki"
-      ],
-      "count": 1,
+      "owner": null,
+      "owners": [],
+      "count": 0,
       "tied": false
     },
     "bestBenchWarmers": {
       "owner": "Carl Cummins",
       "teamName": "Taylor and Travis Swift \ud83d\udc51",
-      "benchPoints": 211.67999999999998
+      "benchPoints": 217.58
     },
     "weeklyHighPayouts": [
       {
@@ -4372,22 +4357,14 @@
         "score": 121.86
       },
       {
-        "owner": "John Artiglier",
-        "team": "Kraft Smack and Cheese",
-        "amount": 9,
+        "owner": "Phil Torres",
+        "team": "Canadian Geeses",
+        "amount": 10,
         "week": 3,
-        "score": 118.6
+        "score": 175.98
       }
     ],
-    "consolationPayouts": [
-      {
-        "owner": "Bill Solecki",
-        "team": "Bovine University Stampede",
-        "amount": 1,
-        "week": 3,
-        "score": 115.7
-      }
-    ],
+    "consolationPayouts": [],
     "playoffPayouts": [],
     "keeperAnalysis": {
       "keepers": [
@@ -4497,21 +4474,21 @@
         }
       ],
       "roundBenchmarks": {
-        "1": 92.1,
-        "2": 60.55,
-        "3": 68.41,
-        "4": 51.88,
-        "5": 53.08,
-        "6": 32.21,
-        "7": 50.06,
-        "8": 39.15,
-        "9": 47.22,
-        "10": 28.47,
-        "11": 47.66,
-        "12": 44.46,
-        "13": 71.39,
-        "14": 35.06,
-        "15": 35.3
+        "1": 108.89,
+        "2": 72.52,
+        "3": 80.76,
+        "4": 61.44,
+        "5": 65.31,
+        "6": 44.72,
+        "7": 60.62,
+        "8": 46.6,
+        "9": 57.18,
+        "10": 37.39,
+        "11": 53.07,
+        "12": 50.18,
+        "13": 85.01,
+        "14": 41.22,
+        "15": 43.03
       }
     }
   }

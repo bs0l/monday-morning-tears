@@ -123,9 +123,9 @@
       "teamName": "Chasing McBride",
       "totalDrafted": 15,
       "draftedKeptToPlayoffs": 14,
-      "draftedPointsScored": 405.5,
+      "draftedPointsScored": 415.29999999999995,
       "waiverPickups": 3,
-      "waiverPointsScored": 109.4,
+      "waiverPointsScored": 113.6,
       "draftRetentionRate": 93.33333333333333,
       "draftedPlayers": [
         {
@@ -154,7 +154,7 @@
           "round": 4,
           "pick": 8,
           "keptToPlayoffs": true,
-          "totalPoints": 42.3
+          "totalPoints": 52.1
         },
         {
           "name": "Cam Skattebo",
@@ -240,7 +240,7 @@
       "teamName": "Taylor and Travis Swift \ud83d\udc51",
       "totalDrafted": 15,
       "draftedKeptToPlayoffs": 15,
-      "draftedPointsScored": 563.82,
+      "draftedPointsScored": 569.72,
       "waiverPickups": 0,
       "waiverPointsScored": 0,
       "draftRetentionRate": 100.0,
@@ -285,7 +285,7 @@
           "round": 6,
           "pick": 3,
           "keptToPlayoffs": true,
-          "totalPoints": 12.0
+          "totalPoints": 17.9
         },
         {
           "name": "Chuba Hubbard",
@@ -474,7 +474,7 @@
       "teamName": "Insane in the Ukraine",
       "totalDrafted": 15,
       "draftedKeptToPlayoffs": 14,
-      "draftedPointsScored": 403.0199999999999,
+      "draftedPointsScored": 424.14,
       "waiverPickups": 2,
       "waiverPointsScored": 48.9,
       "draftRetentionRate": 93.33333333333333,
@@ -491,7 +491,7 @@
           "round": 2,
           "pick": 2,
           "keptToPlayoffs": true,
-          "totalPoints": 11.0
+          "totalPoints": 19.5
         },
         {
           "name": "Tyler Warren",
@@ -519,7 +519,7 @@
           "round": 6,
           "pick": 2,
           "keptToPlayoffs": true,
-          "totalPoints": 40.88
+          "totalPoints": 53.5
         },
         {
           "name": "DK Metcalf",
@@ -591,7 +591,7 @@
       "teamName": "Salty Spitoon",
       "totalDrafted": 15,
       "draftedKeptToPlayoffs": 13,
-      "draftedPointsScored": 397.08000000000004,
+      "draftedPointsScored": 413.38000000000005,
       "waiverPickups": 3,
       "waiverPointsScored": 59.9,
       "draftRetentionRate": 86.66666666666667,
@@ -636,7 +636,7 @@
           "round": 6,
           "pick": 4,
           "keptToPlayoffs": true,
-          "totalPoints": 11.7
+          "totalPoints": 28.0
         },
         {
           "name": "Carnell Tate",
@@ -708,7 +708,7 @@
       "teamName": "Kraft Smack and Cheese",
       "totalDrafted": 15,
       "draftedKeptToPlayoffs": 14,
-      "draftedPointsScored": 422.96,
+      "draftedPointsScored": 426.06,
       "waiverPickups": 2,
       "waiverPointsScored": 48.7,
       "draftRetentionRate": 93.33333333333333,
@@ -788,7 +788,7 @@
           "round": 11,
           "pick": 5,
           "keptToPlayoffs": true,
-          "totalPoints": 26.2
+          "totalPoints": 29.3
         },
         {
           "name": "De'Zhaun Stribling",
@@ -942,9 +942,9 @@
       "teamName": "Paintin Peyton",
       "totalDrafted": 15,
       "draftedKeptToPlayoffs": 14,
-      "draftedPointsScored": 423.37999999999994,
+      "draftedPointsScored": 424.37999999999994,
       "waiverPickups": 1,
-      "waiverPointsScored": 0.0,
+      "waiverPointsScored": 1.4,
       "draftRetentionRate": 93.33333333333333,
       "draftedPlayers": [
         {
@@ -1029,7 +1029,7 @@
           "round": 12,
           "pick": 10,
           "keptToPlayoffs": true,
-          "totalPoints": 7.0
+          "totalPoints": 8.0
         },
         {
           "name": "Patrick Mahomes",
@@ -1059,7 +1059,7 @@
       "teamName": "OnlyIfIHadA2TE",
       "totalDrafted": 15,
       "draftedKeptToPlayoffs": 14,
-      "draftedPointsScored": 325.72,
+      "draftedPointsScored": 340.32,
       "waiverPickups": 2,
       "waiverPointsScored": 42.1,
       "draftRetentionRate": 93.33333333333333,
@@ -1083,7 +1083,7 @@
           "round": 3,
           "pick": 10,
           "keptToPlayoffs": true,
-          "totalPoints": 29.5
+          "totalPoints": 39.0
         },
         {
           "name": "Malik Nabers",
@@ -1097,7 +1097,7 @@
           "round": 5,
           "pick": 10,
           "keptToPlayoffs": true,
-          "totalPoints": 0.8
+          "totalPoints": 5.9
         },
         {
           "name": "TreVeyon Henderson",
