@@ -5,3 +5,4 @@ __pycache__/
 mmt_keepers.py
 *.csv
 *.xlsx
+*.DS_Store
