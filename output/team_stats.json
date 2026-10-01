@@ -15,13 +15,13 @@
     "teamName": "Bovine University Stampede",
     "abbrev": "STMP",
     "allTeamNames": [
-      "Bovine University Stampede",
-      "Wade Boggs Memorial Team",
-      "Musconetcong Mantis Men",
-      "Barack Obama",
-      "Why's This So Sticky?",
       "Scott's ConsolationTots",
       "Bills New Team Name",
+      "Musconetcong Mantis Men",
+      "Barack Obama",
+      "Bovine University Stampede",
+      "Wade Boggs Memorial Team",
+      "Why's This So Sticky?",
       "Arian Foster 2013"
     ],
     "playoffYears": [
@@ -37,24 +37,24 @@
       2015
     ],
     "seasonsPlayed": 14,
-    "totalGames": 202,
+    "totalGames": 206,
     "regularSeason": {
-      "wins": 111,
-      "losses": 71,
+      "wins": 112,
+      "losses": 73,
       "ties": 0,
-      "winPercentage": 0.61
+      "winPercentage": 0.605
     },
     "playoffs": {
-      "wins": 10,
+      "wins": 11,
       "losses": 10,
       "ties": 0,
-      "winPercentage": 0.5
+      "winPercentage": 0.524
     },
     "overall": {
-      "wins": 121,
-      "losses": 81,
+      "wins": 123,
+      "losses": 83,
       "ties": 0,
-      "winPercentage": 0.599
+      "winPercentage": 0.597
     },
     "playoffAppearances": 10,
     "championships": 2,
@@ -65,17 +65,17 @@
     ],
     "mostMovesSeason": 53,
     "mostMovesSeasonYear": 2017,
-    "totalPointsFor": 24363.039999999983,
-    "totalPointsAgainst": 23220.00000000001,
-    "avgPointsFor": 120.60910891089101,
-    "avgPointsAgainst": 114.95049504950501,
+    "totalPointsFor": 24836.999999999978,
+    "totalPointsAgainst": 23691.84000000001,
+    "avgPointsFor": 120.56796116504844,
+    "avgPointsAgainst": 115.008932038835,
     "highestScore": 258.48,
     "lowestScore": 58.7,
     "totalTrades": 2,
     "biggestWin": 79.42,
     "closestWin": 1.0,
     "biggestLoss": 89.42,
-    "closestLoss": 0.7999999999999972,
+    "closestLoss": 0.1599999999999966,
     "longestWinStreak": 10,
     "longestLossStreak": 5,
     "currentStreak": {
@@ -108,16 +108,16 @@
         "regularSeasonLosses": 4
       },
       "2015": {
-        "wins": 8,
-        "losses": 2,
+        "wins": 10,
+        "losses": 4,
         "ties": 0,
-        "winPercentage": 0.8,
-        "pointsFor": 1120.24,
-        "pointsAgainst": 1025.2800000000002,
-        "avgPointsFor": 112.024,
+        "winPercentage": 0.714,
+        "pointsFor": 1594.2000000000003,
+        "pointsAgainst": 1497.1200000000001,
+        "avgPointsFor": 113.8714285714286,
         "madePlayoffs": true,
-        "regularSeasonWins": 7,
-        "regularSeasonLosses": 2
+        "regularSeasonWins": 8,
+        "regularSeasonLosses": 4
       },
       "2016": {
         "wins": 7,
@@ -285,60 +285,61 @@
     "currentTeamAbbrev": "KSSL",
     "currentTeamId": 5,
     "firstYear": 2013,
-    "lastYear": 2014,
+    "lastYear": 2015,
     "foundedYear": 2013,
-    "lastActiveYear": 2014,
+    "lastActiveYear": 2015,
     "isActive": false,
-    "totalSeasons": 2,
+    "totalSeasons": 3,
     "teamId": 5,
     "teamName": "Really Just Sean Kessell",
     "abbrev": "KSSL",
     "allTeamNames": [
-      "Da Kessell Krew",
-      "Really Just Sean Kessell"
+      "Really Just Sean Kessell",
+      "Da Kessell Krew"
     ],
     "playoffYears": [
       2013,
-      2014
+      2014,
+      2015
     ],
-    "seasonsPlayed": 2,
-    "totalGames": 32,
+    "seasonsPlayed": 3,
+    "totalGames": 46,
     "regularSeason": {
-      "wins": 18,
-      "losses": 10,
+      "wins": 26,
+      "losses": 14,
       "ties": 0,
-      "winPercentage": 0.643
+      "winPercentage": 0.65
     },
     "playoffs": {
-      "wins": 2,
-      "losses": 2,
+      "wins": 3,
+      "losses": 3,
       "ties": 0,
       "winPercentage": 0.5
     },
     "overall": {
-      "wins": 20,
-      "losses": 12,
+      "wins": 29,
+      "losses": 17,
       "ties": 0,
-      "winPercentage": 0.625
+      "winPercentage": 0.63
     },
-    "playoffAppearances": 2,
+    "playoffAppearances": 3,
     "championships": 0,
-    "championshipAppearances": 2,
+    "championshipAppearances": 3,
     "championshipYears": [],
-    "mostMovesSeason": 5,
-    "mostMovesSeasonYear": 2014,
-    "totalPointsFor": 3841.0,
-    "totalPointsAgainst": 3548.0,
-    "avgPointsFor": 120.03125,
-    "avgPointsAgainst": 110.875,
+    "mostMovesSeason": 32,
+    "mostMovesSeasonYear": 2015,
+    "totalPointsFor": 5353.0,
+    "totalPointsAgainst": 4988.78,
+    "avgPointsFor": 116.3695652173913,
+    "avgPointsAgainst": 108.45173913043477,
     "highestScore": 243.0,
-    "lowestScore": 60.0,
+    "lowestScore": 56.12,
     "totalTrades": null,
     "biggestWin": 75.0,
-    "closestWin": 1.0,
+    "closestWin": 0.1599999999999966,
     "biggestLoss": 84.0,
     "closestLoss": 1.0,
-    "longestWinStreak": 5,
+    "longestWinStreak": 6,
     "longestLossStreak": 3,
     "currentStreak": {
       "type": "LOSS",
@@ -368,14 +369,26 @@
         "madePlayoffs": true,
         "regularSeasonWins": 8,
         "regularSeasonLosses": 5
+      },
+      "2015": {
+        "wins": 9,
+        "losses": 5,
+        "ties": 0,
+        "winPercentage": 0.643,
+        "pointsFor": 1511.9999999999998,
+        "pointsAgainst": 1440.78,
+        "avgPointsFor": 107.99999999999999,
+        "madePlayoffs": true,
+        "regularSeasonWins": 8,
+        "regularSeasonLosses": 4
       }
     },
     "bestOpponent": "Randell Crawford",
-    "bestOpponentRecord": "3-0",
-    "bestOpponentWinPct": 1.0,
+    "bestOpponentRecord": "4-1",
+    "bestOpponentWinPct": 0.8,
     "worstOpponent": "Mike Kovacs",
-    "worstOpponentRecord": "1-3",
-    "worstOpponentWinPct": 0.25,
+    "worstOpponentRecord": "1-4",
+    "worstOpponentWinPct": 0.2,
     "bestSeasonWinPct": 0.6666666666666666,
     "bestSeasonYear": 2013,
     "bestSeasonWins": 10,
@@ -411,8 +424,8 @@
     "teamName": "TDs In Your Face",
     "abbrev": "TDs",
     "allTeamNames": [
-      "TDs In Your Face",
-      "Also Just Sean Kessell"
+      "Also Just Sean Kessell",
+      "TDs In Your Face"
     ],
     "playoffYears": [],
     "seasonsPlayed": 2,
@@ -525,20 +538,20 @@
     "teamName": "Chasing McBride",
     "abbrev": "GRBG",
     "allTeamNames": [
-      "Chasing McBride",
-      "Colonel Sanders McCaffreys",
-      "Saquanda Strikes Back",
-      "All Aboard The J Train",
-      "Its Mike Vick In a Box!",
       "Al Tuck And No Action",
+      "Saquonda Forever",
+      "Colonel Sanders McCaffreys",
       "Dollar Dollar Bills Y'all",
-      "I wanta Free the NewtMan!",
+      "All Aboard The J Train",
+      "Saquanda Strikes Back",
       "The Bell Is Dead",
       "Chase My Butker",
-      "Saquonda Forever",
-      "Yobogoya In the Bushes!",
+      "Its Mike Vick In a Box!",
       "Why Pass to Top Wide Receivers?",
-      "Less Morals Than Mike Vick"
+      "Less Morals Than Mike Vick",
+      "I wanta Free the NewtMan!",
+      "Chasing McBride",
+      "Yobogoya In the Bushes!"
     ],
     "playoffYears": [
       2016,
@@ -550,12 +563,12 @@
       2015
     ],
     "seasonsPlayed": 14,
-    "totalGames": 205,
+    "totalGames": 208,
     "regularSeason": {
-      "wins": 95,
-      "losses": 95,
+      "wins": 97,
+      "losses": 96,
       "ties": 0,
-      "winPercentage": 0.5
+      "winPercentage": 0.503
     },
     "playoffs": {
       "wins": 10,
@@ -564,10 +577,10 @@
       "winPercentage": 0.667
     },
     "overall": {
-      "wins": 105,
-      "losses": 100,
+      "wins": 107,
+      "losses": 101,
       "ties": 0,
-      "winPercentage": 0.512
+      "winPercentage": 0.514
     },
     "playoffAppearances": 7,
     "championships": 2,
@@ -578,10 +591,10 @@
     ],
     "mostMovesSeason": 43,
     "mostMovesSeasonYear": 2018,
-    "totalPointsFor": 23942.08000000001,
-    "totalPointsAgainst": 23709.679999999997,
-    "avgPointsFor": 116.7906341463415,
-    "avgPointsAgainst": 115.65697560975607,
+    "totalPointsFor": 24278.14000000001,
+    "totalPointsAgainst": 24033.44,
+    "avgPointsFor": 116.72182692307697,
+    "avgPointsAgainst": 115.5453846153846,
     "highestScore": 282.4,
     "lowestScore": 12.0,
     "totalTrades": 1,
@@ -621,16 +634,16 @@
         "regularSeasonLosses": 3
       },
       "2015": {
-        "wins": 6,
-        "losses": 5,
+        "wins": 8,
+        "losses": 6,
         "ties": 0,
-        "winPercentage": 0.545,
-        "pointsFor": 1312.04,
-        "pointsAgainst": 1279.1,
-        "avgPointsFor": 119.27636363636363,
+        "winPercentage": 0.571,
+        "pointsFor": 1648.1,
+        "pointsAgainst": 1602.8600000000001,
+        "avgPointsFor": 117.72142857142856,
         "madePlayoffs": true,
-        "regularSeasonWins": 5,
-        "regularSeasonLosses": 4
+        "regularSeasonWins": 7,
+        "regularSeasonLosses": 5
       },
       "2016": {
         "wins": 11,
@@ -807,13 +820,13 @@
     "teamName": "Insane in the Ukraine",
     "abbrev": "B00B",
     "allTeamNames": [
-      "19 Problems and Covid is One",
       "oh no its John Snooooooow",
+      "I Do Respect You Bro",
       "Will Trade Wins For Alcohol",
-      "Insane in the Ukraine",
       "The HipShire Hobbits",
+      "19 Problems and Covid is One",
       "Erection Protection",
-      "I Do Respect You Bro"
+      "Insane in the Ukraine"
     ],
     "playoffYears": [
       2023,
@@ -823,12 +836,12 @@
       2013
     ],
     "seasonsPlayed": 14,
-    "totalGames": 203,
+    "totalGames": 207,
     "regularSeason": {
-      "wins": 89,
-      "losses": 104,
+      "wins": 92,
+      "losses": 105,
       "ties": 0,
-      "winPercentage": 0.461
+      "winPercentage": 0.467
     },
     "playoffs": {
       "wins": 3,
@@ -837,10 +850,10 @@
       "winPercentage": 0.3
     },
     "overall": {
-      "wins": 92,
-      "losses": 111,
+      "wins": 95,
+      "losses": 112,
       "ties": 0,
-      "winPercentage": 0.453
+      "winPercentage": 0.459
     },
     "playoffAppearances": 5,
     "championships": 0,
@@ -848,10 +861,10 @@
     "championshipYears": [],
     "mostMovesSeason": 23,
     "mostMovesSeasonYear": 2024,
-    "totalPointsFor": 22084.800000000003,
-    "totalPointsAgainst": 22623.2,
-    "avgPointsFor": 108.792118226601,
-    "avgPointsAgainst": 111.44433497536946,
+    "totalPointsFor": 22538.700000000008,
+    "totalPointsAgainst": 22939.3,
+    "avgPointsFor": 108.88260869565221,
+    "avgPointsAgainst": 110.81787439613527,
     "highestScore": 206.68,
     "lowestScore": 55.32,
     "totalTrades": 0,
@@ -891,16 +904,16 @@
         "regularSeasonLosses": 6
       },
       "2015": {
-        "wins": 4,
-        "losses": 6,
+        "wins": 7,
+        "losses": 7,
         "ties": 0,
-        "winPercentage": 0.4,
-        "pointsFor": 864.94,
-        "pointsAgainst": 907.6200000000001,
-        "avgPointsFor": 86.494,
+        "winPercentage": 0.5,
+        "pointsFor": 1318.84,
+        "pointsAgainst": 1223.72,
+        "avgPointsFor": 94.20285714285714,
         "madePlayoffs": true,
-        "regularSeasonWins": 3,
-        "regularSeasonLosses": 6
+        "regularSeasonWins": 5,
+        "regularSeasonLosses": 7
       },
       "2016": {
         "wins": 6,
@@ -1045,10 +1058,10 @@
     "bestSeasonYear": 2023,
     "bestSeasonWins": 10,
     "bestSeasonLosses": 4,
-    "worstSeasonWinPct": 0.3333333333333333,
-    "worstSeasonYear": 2015,
-    "worstSeasonWins": 3,
-    "worstSeasonLosses": 6,
+    "worstSeasonWinPct": 0.35714285714285715,
+    "worstSeasonYear": 2020,
+    "worstSeasonWins": 5,
+    "worstSeasonLosses": 9,
     "mostWinsSeason": 10,
     "mostWinsSeasonYear": 2023,
     "mostLossesSeason": 9,
@@ -1278,8 +1291,8 @@
     "teamName": "T'EOMINATOR 2 RESURRECTION",
     "abbrev": "T'EO",
     "allTeamNames": [
-      "DidntSetLineUp InPlayoffs",
-      "T'EOMINATOR 2 RESURRECTION"
+      "T'EOMINATOR 2 RESURRECTION",
+      "DidntSetLineUp InPlayoffs"
     ],
     "playoffYears": [
       2013,
@@ -1395,15 +1408,15 @@
     "teamName": "Canadian Geeses",
     "abbrev": "CA",
     "allTeamNames": [
-      "Pickle Ricks",
-      "Chef's choclate Salty Balls",
-      "Christmas Devil Krampus",
-      "Hawk Tua",
-      "Rafi Bombs",
-      "Canadian Geeses",
       "Go Fudge Yourselves",
+      "Canadian Geeses",
       "Duke Nukems",
-      "Skattebo's Ankle"
+      "Christmas Devil Krampus",
+      "Skattebo's Ankle",
+      "Rafi Bombs",
+      "Chef's choclate Salty Balls",
+      "Pickle Ricks",
+      "Hawk Tua"
     ],
     "playoffYears": [
       2016,
@@ -1417,12 +1430,12 @@
       2013
     ],
     "seasonsPlayed": 14,
-    "totalGames": 206,
+    "totalGames": 208,
     "regularSeason": {
       "wins": 97,
-      "losses": 90,
+      "losses": 92,
       "ties": 0,
-      "winPercentage": 0.519
+      "winPercentage": 0.513
     },
     "playoffs": {
       "wins": 9,
@@ -1432,9 +1445,9 @@
     },
     "overall": {
       "wins": 106,
-      "losses": 100,
+      "losses": 102,
       "ties": 0,
-      "winPercentage": 0.515
+      "winPercentage": 0.51
     },
     "playoffAppearances": 9,
     "championships": 3,
@@ -1446,10 +1459,10 @@
     ],
     "mostMovesSeason": 18,
     "mostMovesSeasonYear": 2014,
-    "totalPointsFor": 23816.320000000014,
-    "totalPointsAgainst": 23646.38000000001,
-    "avgPointsFor": 115.61320388349522,
-    "avgPointsAgainst": 114.7882524271845,
+    "totalPointsFor": 23981.660000000014,
+    "totalPointsAgainst": 23896.880000000012,
+    "avgPointsFor": 115.29644230769237,
+    "avgPointsAgainst": 114.88884615384622,
     "highestScore": 249.66,
     "lowestScore": 45.58,
     "totalTrades": 0,
@@ -1458,7 +1471,7 @@
     "biggestLoss": 125.0,
     "closestLoss": 1.019999999999996,
     "longestWinStreak": 7,
-    "longestLossStreak": 7,
+    "longestLossStreak": 9,
     "currentStreak": {
       "type": "WIN",
       "length": 2
@@ -1490,15 +1503,15 @@
       },
       "2015": {
         "wins": 5,
-        "losses": 7,
+        "losses": 9,
         "ties": 0,
-        "winPercentage": 0.417,
-        "pointsFor": 1248.3400000000001,
-        "pointsAgainst": 1317.2400000000002,
-        "avgPointsFor": 104.02833333333335,
+        "winPercentage": 0.357,
+        "pointsFor": 1413.68,
+        "pointsAgainst": 1567.7399999999998,
+        "avgPointsFor": 100.97714285714287,
         "madePlayoffs": true,
         "regularSeasonWins": 3,
-        "regularSeasonLosses": 7
+        "regularSeasonLosses": 9
       },
       "2016": {
         "wins": 9,
@@ -1643,10 +1656,10 @@
     "bestSeasonYear": 2013,
     "bestSeasonWins": 11,
     "bestSeasonLosses": 4,
-    "worstSeasonWinPct": 0.2857142857142857,
-    "worstSeasonYear": 2024,
-    "worstSeasonWins": 4,
-    "worstSeasonLosses": 10,
+    "worstSeasonWinPct": 0.25,
+    "worstSeasonYear": 2015,
+    "worstSeasonWins": 3,
+    "worstSeasonLosses": 9,
     "mostWinsSeason": 11,
     "mostWinsSeasonYear": 2013,
     "mostLossesSeason": 10,
@@ -1676,12 +1689,12 @@
     "teamName": "Taylor and Travis Swift \ud83d\udc51",
     "abbrev": "CARL",
     "allTeamNames": [
-      "Pussy Power",
+      "Duckman Kowalski",
       "Benching the Whole Team",
       "Taylor and Travis Swift \ud83d\udc51",
-      "Taylor Swift",
       "Greatest of All Time",
-      "Duckman Kowalski"
+      "Taylor Swift",
+      "Pussy Power"
     ],
     "playoffYears": [
       2016,
@@ -1693,12 +1706,12 @@
       2026
     ],
     "seasonsPlayed": 14,
-    "totalGames": 205,
+    "totalGames": 208,
     "regularSeason": {
-      "wins": 91,
-      "losses": 99,
+      "wins": 93,
+      "losses": 100,
       "ties": 0,
-      "winPercentage": 0.479
+      "winPercentage": 0.482
     },
     "playoffs": {
       "wins": 11,
@@ -1707,10 +1720,10 @@
       "winPercentage": 0.733
     },
     "overall": {
-      "wins": 102,
-      "losses": 103,
+      "wins": 104,
+      "losses": 104,
       "ties": 0,
-      "winPercentage": 0.498
+      "winPercentage": 0.5
     },
     "playoffAppearances": 7,
     "championships": 2,
@@ -1721,10 +1734,10 @@
     ],
     "mostMovesSeason": 44,
     "mostMovesSeasonYear": 2022,
-    "totalPointsFor": 23331.59999999999,
-    "totalPointsAgainst": 23459.880000000012,
-    "avgPointsFor": 113.81268292682923,
-    "avgPointsAgainst": 114.4384390243903,
+    "totalPointsFor": 23613.139999999992,
+    "totalPointsAgainst": 23714.220000000012,
+    "avgPointsFor": 113.5247115384615,
+    "avgPointsAgainst": 114.01067307692314,
     "highestScore": 269.94,
     "lowestScore": 60.42,
     "totalTrades": 1,
@@ -1764,16 +1777,16 @@
         "regularSeasonLosses": 8
       },
       "2015": {
-        "wins": 2,
-        "losses": 9,
+        "wins": 4,
+        "losses": 10,
         "ties": 0,
-        "winPercentage": 0.182,
-        "pointsFor": 1100.3600000000001,
-        "pointsAgainst": 1251.42,
-        "avgPointsFor": 100.03272727272729,
+        "winPercentage": 0.286,
+        "pointsFor": 1381.9,
+        "pointsAgainst": 1505.7600000000002,
+        "avgPointsFor": 98.70714285714287,
         "madePlayoffs": true,
-        "regularSeasonWins": 2,
-        "regularSeasonLosses": 7
+        "regularSeasonWins": 4,
+        "regularSeasonLosses": 8
       },
       "2016": {
         "wins": 8,
@@ -1918,10 +1931,10 @@
     "bestSeasonYear": 2017,
     "bestSeasonWins": 8,
     "bestSeasonLosses": 4,
-    "worstSeasonWinPct": 0.2222222222222222,
-    "worstSeasonYear": 2015,
-    "worstSeasonWins": 2,
-    "worstSeasonLosses": 7,
+    "worstSeasonWinPct": 0.3333333333333333,
+    "worstSeasonYear": 2013,
+    "worstSeasonWins": 5,
+    "worstSeasonLosses": 10,
     "mostWinsSeason": 9,
     "mostWinsSeasonYear": 2022,
     "mostLossesSeason": 10,
@@ -1957,12 +1970,12 @@
       2014
     ],
     "seasonsPlayed": 3,
-    "totalGames": 40,
+    "totalGames": 43,
     "regularSeason": {
-      "wins": 14,
-      "losses": 24,
+      "wins": 15,
+      "losses": 26,
       "ties": 0,
-      "winPercentage": 0.368
+      "winPercentage": 0.366
     },
     "playoffs": {
       "wins": 1,
@@ -1971,10 +1984,10 @@
       "winPercentage": 0.5
     },
     "overall": {
-      "wins": 15,
-      "losses": 25,
+      "wins": 16,
+      "losses": 27,
       "ties": 0,
-      "winPercentage": 0.375
+      "winPercentage": 0.372
     },
     "playoffAppearances": 1,
     "championships": 0,
@@ -1982,14 +1995,14 @@
     "championshipYears": [],
     "mostMovesSeason": 7,
     "mostMovesSeasonYear": 2014,
-    "totalPointsFor": 4079.5799999999986,
-    "totalPointsAgainst": 4588.839999999999,
-    "avgPointsFor": 101.98949999999996,
-    "avgPointsAgainst": 114.72099999999998,
+    "totalPointsFor": 4454.519999999999,
+    "totalPointsAgainst": 4963.42,
+    "avgPointsFor": 103.59348837209299,
+    "avgPointsAgainst": 115.42837209302326,
     "highestScore": 212.0,
     "lowestScore": 40.46,
     "totalTrades": null,
-    "biggestWin": 55.0,
+    "biggestWin": 58.62,
     "closestWin": 2.0,
     "biggestLoss": 93.0,
     "closestLoss": 1.0,
@@ -2013,16 +2026,16 @@
         "regularSeasonLosses": 7
       },
       "2015": {
-        "wins": 5,
-        "losses": 6,
+        "wins": 6,
+        "losses": 8,
         "ties": 0,
-        "winPercentage": 0.455,
-        "pointsFor": 1213.12,
-        "pointsAgainst": 1167.3400000000001,
-        "avgPointsFor": 110.28363636363635,
+        "winPercentage": 0.429,
+        "pointsFor": 1588.06,
+        "pointsAgainst": 1541.92,
+        "avgPointsFor": 113.43285714285715,
         "madePlayoffs": true,
-        "regularSeasonWins": 5,
-        "regularSeasonLosses": 5
+        "regularSeasonWins": 6,
+        "regularSeasonLosses": 6
       },
       "2016": {
         "wins": 3,
@@ -2045,8 +2058,8 @@
     "worstOpponentWinPct": 0.0,
     "bestSeasonWinPct": 0.5,
     "bestSeasonYear": 2015,
-    "bestSeasonWins": 5,
-    "bestSeasonLosses": 5,
+    "bestSeasonWins": 6,
+    "bestSeasonLosses": 6,
     "worstSeasonWinPct": 0.25,
     "worstSeasonYear": 2016,
     "worstSeasonWins": 3,
@@ -2085,24 +2098,24 @@
       2015
     ],
     "seasonsPlayed": 4,
-    "totalGames": 53,
+    "totalGames": 57,
     "regularSeason": {
-      "wins": 21,
-      "losses": 30,
+      "wins": 22,
+      "losses": 32,
       "ties": 1,
-      "winPercentage": 0.404
+      "winPercentage": 0.4
     },
     "playoffs": {
       "wins": 0,
-      "losses": 1,
+      "losses": 2,
       "ties": 0,
       "winPercentage": 0.0
     },
     "overall": {
-      "wins": 21,
-      "losses": 31,
+      "wins": 22,
+      "losses": 34,
       "ties": 1,
-      "winPercentage": 0.396
+      "winPercentage": 0.386
     },
     "playoffAppearances": 1,
     "championships": 0,
@@ -2110,10 +2123,10 @@
     "championshipYears": [],
     "mostMovesSeason": 21,
     "mostMovesSeasonYear": 2017,
-    "totalPointsFor": 5448.68,
-    "totalPointsAgainst": 5677.64,
-    "avgPointsFor": 102.80528301886793,
-    "avgPointsAgainst": 107.12528301886793,
+    "totalPointsFor": 5834.92,
+    "totalPointsAgainst": 6151.439999999999,
+    "avgPointsFor": 102.36701754385965,
+    "avgPointsAgainst": 107.91999999999997,
     "highestScore": 287.0,
     "lowestScore": 34.42,
     "totalTrades": null,
@@ -2141,16 +2154,16 @@
         "regularSeasonLosses": 6
       },
       "2015": {
-        "wins": 6,
-        "losses": 4,
+        "wins": 7,
+        "losses": 7,
         "ties": 0,
-        "winPercentage": 0.6,
-        "pointsFor": 1092.7600000000002,
-        "pointsAgainst": 1045.02,
-        "avgPointsFor": 109.27600000000002,
+        "winPercentage": 0.5,
+        "pointsFor": 1479.0,
+        "pointsAgainst": 1518.8200000000002,
+        "avgPointsFor": 105.64285714285714,
         "madePlayoffs": true,
-        "regularSeasonWins": 6,
-        "regularSeasonLosses": 3
+        "regularSeasonWins": 7,
+        "regularSeasonLosses": 5
       },
       "2016": {
         "wins": 5,
@@ -2183,16 +2196,16 @@
     "worstOpponent": "Carl Cummins",
     "worstOpponentRecord": "1-5",
     "worstOpponentWinPct": 0.16666666666666666,
-    "bestSeasonWinPct": 0.6666666666666666,
+    "bestSeasonWinPct": 0.5833333333333334,
     "bestSeasonYear": 2015,
-    "bestSeasonWins": 6,
-    "bestSeasonLosses": 3,
+    "bestSeasonWins": 7,
+    "bestSeasonLosses": 5,
     "worstSeasonWinPct": 0.16666666666666666,
     "worstSeasonYear": 2017,
     "worstSeasonWins": 2,
     "worstSeasonLosses": 10,
-    "mostWinsSeason": 6,
-    "mostWinsSeasonYear": 2014,
+    "mostWinsSeason": 7,
+    "mostWinsSeasonYear": 2015,
     "mostLossesSeason": 10,
     "mostLossesSeasonYear": 2017,
     "logoUrl": null,
@@ -2218,9 +2231,9 @@
     "teamName": "Salty Spitoon",
     "abbrev": "REXY",
     "allTeamNames": [
+      "Rex Grossman Fan Club",
       "Weenie Hut Jr's",
-      "Salty Spitoon",
-      "Rex Grossman Fan Club"
+      "Salty Spitoon"
     ],
     "playoffYears": [
       2016,
@@ -2235,12 +2248,12 @@
       2026
     ],
     "seasonsPlayed": 13,
-    "totalGames": 187,
+    "totalGames": 190,
     "regularSeason": {
       "wins": 101,
-      "losses": 66,
+      "losses": 69,
       "ties": 0,
-      "winPercentage": 0.605
+      "winPercentage": 0.594
     },
     "playoffs": {
       "wins": 10,
@@ -2250,9 +2263,9 @@
     },
     "overall": {
       "wins": 111,
-      "losses": 76,
+      "losses": 79,
       "ties": 0,
-      "winPercentage": 0.594
+      "winPercentage": 0.584
     },
     "playoffAppearances": 10,
     "championships": 3,
@@ -2264,10 +2277,10 @@
     ],
     "mostMovesSeason": 41,
     "mostMovesSeasonYear": 2017,
-    "totalPointsFor": 22656.519999999997,
-    "totalPointsAgainst": 21283.68,
-    "avgPointsFor": 121.15786096256683,
-    "avgPointsAgainst": 113.81647058823529,
+    "totalPointsFor": 22957.639999999996,
+    "totalPointsAgainst": 21612.359999999997,
+    "avgPointsFor": 120.8296842105263,
+    "avgPointsAgainst": 113.74926315789472,
     "highestScore": 297.72,
     "lowestScore": 53.0,
     "totalTrades": 0,
@@ -2296,15 +2309,15 @@
       },
       "2015": {
         "wins": 7,
-        "losses": 4,
+        "losses": 7,
         "ties": 0,
-        "winPercentage": 0.636,
-        "pointsFor": 1203.16,
-        "pointsAgainst": 1161.94,
-        "avgPointsFor": 109.37818181818183,
+        "winPercentage": 0.5,
+        "pointsFor": 1504.2800000000002,
+        "pointsAgainst": 1490.62,
+        "avgPointsFor": 107.44857142857144,
         "madePlayoffs": true,
         "regularSeasonWins": 6,
-        "regularSeasonLosses": 3
+        "regularSeasonLosses": 6
       },
       "2016": {
         "wins": 7,
@@ -2563,6 +2576,102 @@
       2014
     ]
   },
+  "Rob Cahill": {
+    "owner": "Rob Cahill",
+    "currentTeamName": "Team Cahill",
+    "currentTeamAbbrev": "CAHI",
+    "currentTeamId": 8,
+    "firstYear": 2015,
+    "lastYear": 2015,
+    "foundedYear": 2015,
+    "lastActiveYear": 2015,
+    "isActive": false,
+    "totalSeasons": 1,
+    "teamId": 8,
+    "teamName": "Team Cahill",
+    "abbrev": "CAHI",
+    "allTeamNames": [
+      "Team Cahill"
+    ],
+    "playoffYears": [],
+    "seasonsPlayed": 1,
+    "totalGames": 14,
+    "regularSeason": {
+      "wins": 7,
+      "losses": 7,
+      "ties": 0,
+      "winPercentage": 0.5
+    },
+    "playoffs": {
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "winPercentage": 0
+    },
+    "overall": {
+      "wins": 7,
+      "losses": 7,
+      "ties": 0,
+      "winPercentage": 0.5
+    },
+    "playoffAppearances": 0,
+    "championships": 0,
+    "championshipAppearances": 0,
+    "championshipYears": [],
+    "mostMovesSeason": 21,
+    "mostMovesSeasonYear": 2015,
+    "totalPointsFor": 1508.24,
+    "totalPointsAgainst": 1558.9599999999998,
+    "avgPointsFor": 107.73142857142857,
+    "avgPointsAgainst": 111.3542857142857,
+    "highestScore": 237.12,
+    "lowestScore": 52.18,
+    "totalTrades": null,
+    "biggestWin": 44.31999999999999,
+    "closestWin": 8.219999999999999,
+    "biggestLoss": 71.60000000000001,
+    "closestLoss": 2.3599999999999994,
+    "longestWinStreak": 4,
+    "longestLossStreak": 3,
+    "currentStreak": {
+      "type": "LOSS",
+      "length": 1
+    },
+    "yearlyRecords": {
+      "2015": {
+        "wins": 7,
+        "losses": 7,
+        "ties": 0,
+        "winPercentage": 0.5,
+        "pointsFor": 1508.24,
+        "pointsAgainst": 1558.9599999999998,
+        "avgPointsFor": 107.73142857142857,
+        "madePlayoffs": true,
+        "regularSeasonWins": 6,
+        "regularSeasonLosses": 6
+      }
+    },
+    "bestOpponent": null,
+    "worstOpponent": null,
+    "bestSeasonWinPct": 0.5,
+    "bestSeasonYear": 2015,
+    "bestSeasonWins": 6,
+    "bestSeasonLosses": 6,
+    "worstSeasonWinPct": 0.5,
+    "worstSeasonYear": 2015,
+    "worstSeasonWins": 6,
+    "worstSeasonLosses": 6,
+    "mostWinsSeason": 6,
+    "mostWinsSeasonYear": 2015,
+    "mostLossesSeason": 6,
+    "mostLossesSeasonYear": 2015,
+    "logoUrl": "http://i.imgur.com/goRTIw6.jpg",
+    "mostLoyalPlayer": "Odell Beckham Jr.",
+    "mostLoyalPlayerSeasons": 1,
+    "mostLoyalPlayerYears": [
+      2015
+    ]
+  },
   "Ben Bingert": {
     "owner": "Ben Bingert",
     "currentTeamName": "All You Need Is Love",
@@ -2579,15 +2688,15 @@
     "abbrev": "LOVE",
     "allTeamNames": [
       "We played Week 7, 8 and 13",
-      "Just a Chubb Tucker",
-      "Chubb Basshole",
-      "The Recycling Ben",
-      "Strouds in the Clouds",
-      "Joe Burrow Tiger King",
-      "The Mixon Administration",
-      "Two Girls One Kupp",
       "All You Need Is Love",
-      "Mail Fairy"
+      "The Mixon Administration",
+      "Joe Burrow Tiger King",
+      "The Recycling Ben",
+      "Mail Fairy",
+      "Two Girls One Kupp",
+      "Just a Chubb Tucker",
+      "Strouds in the Clouds",
+      "Chubb Basshole"
     ],
     "playoffYears": [
       2018,
@@ -2810,11 +2919,11 @@
     "abbrev": "CHE",
     "allTeamNames": [
       "RADrigo Is My Homeboy",
-      "All You Need is Love",
-      "Kraft Smack and Cheese",
       "Goodnight Again My Sweet Prince",
+      "Davante's Inferno",
+      "Kraft Smack and Cheese",
       "Hubba Chubba",
-      "Davante's Inferno"
+      "All You Need is Love"
     ],
     "playoffYears": [
       2024,
@@ -3019,9 +3128,9 @@
     "teamName": "OnlyIfIHadA2TE",
     "abbrev": "Yup",
     "allTeamNames": [
-      "Bye Week Part 2",
-      "Bye Week",
       "Loop, There it is!",
+      "Bye Week",
+      "Bye Week Part 2",
       "OnlyIfIHadA2TE"
     ],
     "playoffYears": [
@@ -3162,8 +3271,8 @@
     "teamName": "Paintin Peyton",
     "abbrev": "CRWD",
     "allTeamNames": [
-      "Peyton the Professor",
-      "Paintin Peyton"
+      "Paintin Peyton",
+      "Peyton the Professor"
     ],
     "playoffYears": [
       2026

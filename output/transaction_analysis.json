@@ -1030,6 +1030,10 @@
         {
           "player": "Jaguars D/ST",
           "count": 1
+        },
+        {
+          "player": "Jalen McMillan",
+          "count": 1
         }
       ],
       "Joe Jaramillo": [
@@ -1039,6 +1043,10 @@
         },
         {
           "player": "Travis Hunter",
+          "count": 1
+        },
+        {
+          "player": "Rashod Bateman",
           "count": 1
         }
       ],
@@ -1074,6 +1082,10 @@
         {
           "player": "Jaxson Dart",
           "count": 1
+        },
+        {
+          "player": "RJ Harvey",
+          "count": 1
         }
       ],
       "Randell Crawford": [
@@ -1089,6 +1101,18 @@
         },
         {
           "player": "Michael Wilson",
+          "count": 1
+        }
+      ],
+      "Carl Cummins": [
+        {
+          "player": "Rome Odunze",
+          "count": 1
+        }
+      ],
+      "Phil Torres": [
+        {
+          "player": "Odell Beckham Jr.",
           "count": 1
         }
       ]
@@ -4606,6 +4630,10 @@
           {
             "player": "Jaguars D/ST",
             "count": 1
+          },
+          {
+            "player": "Jalen McMillan",
+            "count": 1
           }
         ],
         "Joe Jaramillo": [
@@ -4615,6 +4643,10 @@
           },
           {
             "player": "Travis Hunter",
+            "count": 1
+          },
+          {
+            "player": "Rashod Bateman",
             "count": 1
           }
         ],
@@ -4650,6 +4682,10 @@
           {
             "player": "Jaxson Dart",
             "count": 1
+          },
+          {
+            "player": "RJ Harvey",
+            "count": 1
           }
         ],
         "Randell Crawford": [
@@ -4665,6 +4701,18 @@
           },
           {
             "player": "Michael Wilson",
+            "count": 1
+          }
+        ],
+        "Carl Cummins": [
+          {
+            "player": "Rome Odunze",
+            "count": 1
+          }
+        ],
+        "Phil Torres": [
+          {
+            "player": "Odell Beckham Jr.",
             "count": 1
           }
         ]

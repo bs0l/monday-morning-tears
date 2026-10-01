@@ -339,7 +339,7 @@
     "lowestScore": {
       "score": 52.18,
       "team": "Team Cahill",
-      "owner": null,
+      "owner": "Rob Cahill",
       "opponent": "Kish and Tell",
       "opponentScore": 110.8,
       "year": 2015,
@@ -350,7 +350,7 @@
     "closestWin": {
       "margin": 0.1599999999999966,
       "winner": "Really Just Sean Kessell",
-      "winnerOwner": null,
+      "winnerOwner": "Loren Kessell",
       "winnerScore": 105.1,
       "winnerTeamId": 5,
       "loser": "Bills New Team Name",
@@ -372,21 +372,22 @@
       "matchupPeriodId": 14
     },
     "longestWinStreak": {
-      "owner": "Bill Solecki",
-      "length": 5,
+      "owner": "Loren Kessell",
+      "length": 6,
       "owners": [
-        "Bill Solecki"
+        "Loren Kessell"
       ],
       "tied": false,
       "streaks": [
         {
-          "owner": "Bill Solecki",
+          "owner": "Loren Kessell",
           "weeks": [
+            2,
+            3,
+            4,
+            5,
             6,
-            7,
-            8,
-            9,
-            10
+            7
           ]
         }
       ]
@@ -415,12 +416,13 @@
       ]
     },
     "mostWeeklyHighScores": {
-      "owner": null,
+      "owner": "Mike Kovacs",
       "owners": [
-        null
+        "Mike Kovacs",
+        "Rob Cahill"
       ],
-      "count": 4,
-      "tied": false
+      "count": 3,
+      "tied": true
     },
     "mostWeeklyLowScores": {
       "owner": "Brian Dorward",
@@ -467,7 +469,7 @@
         "score": 99.76
       },
       {
-        "owner": null,
+        "owner": "Rob Cahill",
         "team": "Team Cahill",
         "amount": 5,
         "week": 5,
@@ -481,14 +483,14 @@
         "score": 133.46
       },
       {
-        "owner": null,
+        "owner": "Loren Kessell",
         "team": "Really Just Sean Kessell",
         "amount": 5,
         "week": 7,
         "score": 119.74
       },
       {
-        "owner": null,
+        "owner": "Rob Cahill",
         "team": "Team Cahill",
         "amount": 5,
         "week": 8,
@@ -516,7 +518,7 @@
         "score": 100.74
       },
       {
-        "owner": null,
+        "owner": "Rob Cahill",
         "team": "Team Cahill",
         "amount": 5,
         "week": 12,
@@ -538,7 +540,7 @@
         "place": "3rd"
       },
       {
-        "owner": null,
+        "owner": "Loren Kessell",
         "team": "Really Just Sean Kessell",
         "amount": 60,
         "place": "2nd"
@@ -4482,8 +4484,8 @@
         "6": 44.72,
         "7": 60.62,
         "8": 46.6,
-        "9": 57.18,
-        "10": 37.39,
+        "9": 54.91,
+        "10": 39.21,
         "11": 53.07,
         "12": 50.18,
         "13": 85.01,

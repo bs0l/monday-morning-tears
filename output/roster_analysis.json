@@ -5,11 +5,11 @@
       "owner": "Bill Solecki",
       "teamName": "Bovine University Stampede",
       "totalDrafted": 15,
-      "draftedKeptToPlayoffs": 12,
-      "draftedPointsScored": 446.78000000000003,
-      "waiverPickups": 3,
-      "waiverPointsScored": 152.18,
-      "draftRetentionRate": 80.0,
+      "draftedKeptToPlayoffs": 11,
+      "draftedPointsScored": 412.90000000000003,
+      "waiverPickups": 4,
+      "waiverPointsScored": 221.34,
+      "draftRetentionRate": 73.33333333333333,
       "draftedPlayers": [
         {
           "name": "Jonathan Taylor",
@@ -71,8 +71,8 @@
           "name": "Justin Herbert",
           "round": 9,
           "pick": 6,
-          "keptToPlayoffs": true,
-          "totalPoints": 33.88
+          "keptToPlayoffs": false,
+          "totalPoints": 0
         },
         {
           "name": "Jonathon Brooks",
@@ -122,11 +122,11 @@
       "owner": "Mike Kovacs",
       "teamName": "Chasing McBride",
       "totalDrafted": 15,
-      "draftedKeptToPlayoffs": 14,
-      "draftedPointsScored": 415.29999999999995,
-      "waiverPickups": 3,
-      "waiverPointsScored": 113.6,
-      "draftRetentionRate": 93.33333333333333,
+      "draftedKeptToPlayoffs": 13,
+      "draftedPointsScored": 397.69999999999993,
+      "waiverPickups": 4,
+      "waiverPointsScored": 146.2,
+      "draftRetentionRate": 86.66666666666667,
       "draftedPlayers": [
         {
           "name": "Ja'Marr Chase",
@@ -195,8 +195,8 @@
           "name": "Chris Godwin Jr.",
           "round": 10,
           "pick": 8,
-          "keptToPlayoffs": true,
-          "totalPoints": 17.6
+          "keptToPlayoffs": false,
+          "totalPoints": 0
         },
         {
           "name": "Jordan Mason",
@@ -239,11 +239,11 @@
       "owner": "Carl Cummins",
       "teamName": "Taylor and Travis Swift \ud83d\udc51",
       "totalDrafted": 15,
-      "draftedKeptToPlayoffs": 15,
-      "draftedPointsScored": 569.72,
-      "waiverPickups": 0,
-      "waiverPointsScored": 0,
-      "draftRetentionRate": 100.0,
+      "draftedKeptToPlayoffs": 14,
+      "draftedPointsScored": 551.82,
+      "waiverPickups": 2,
+      "waiverPointsScored": 68.2,
+      "draftRetentionRate": 93.33333333333333,
       "draftedPlayers": [
         {
           "name": "CeeDee Lamb",
@@ -284,8 +284,8 @@
           "name": "Rome Odunze",
           "round": 6,
           "pick": 3,
-          "keptToPlayoffs": true,
-          "totalPoints": 17.9
+          "keptToPlayoffs": false,
+          "totalPoints": 0
         },
         {
           "name": "Chuba Hubbard",
@@ -356,11 +356,11 @@
       "owner": "Phil Torres",
       "teamName": "Canadian Geeses",
       "totalDrafted": 15,
-      "draftedKeptToPlayoffs": 15,
+      "draftedKeptToPlayoffs": 14,
       "draftedPointsScored": 521.06,
-      "waiverPickups": 0,
-      "waiverPointsScored": 0,
-      "draftRetentionRate": 100.0,
+      "waiverPickups": 1,
+      "waiverPointsScored": 17.0,
+      "draftRetentionRate": 93.33333333333333,
       "draftedPlayers": [
         {
           "name": "Bijan Robinson",
@@ -464,8 +464,8 @@
           "name": "Odell Beckham Jr.",
           "round": 15,
           "pick": 2,
-          "keptToPlayoffs": true,
-          "totalPoints": 0.0
+          "keptToPlayoffs": false,
+          "totalPoints": 0
         }
       ]
     },
@@ -707,11 +707,11 @@
       "owner": "John Artiglier",
       "teamName": "Kraft Smack and Cheese",
       "totalDrafted": 15,
-      "draftedKeptToPlayoffs": 14,
+      "draftedKeptToPlayoffs": 13,
       "draftedPointsScored": 426.06,
-      "waiverPickups": 2,
-      "waiverPointsScored": 48.7,
-      "draftRetentionRate": 93.33333333333333,
+      "waiverPickups": 3,
+      "waiverPointsScored": 62.400000000000006,
+      "draftRetentionRate": 86.66666666666667,
       "draftedPlayers": [
         {
           "name": "Christian McCaffrey",
@@ -801,8 +801,8 @@
           "name": "Jalen McMillan",
           "round": 13,
           "pick": 5,
-          "keptToPlayoffs": true,
-          "totalPoints": 0.0
+          "keptToPlayoffs": false,
+          "totalPoints": 0
         },
         {
           "name": "Trey Smack",
@@ -941,11 +941,11 @@
       "owner": "john crawford",
       "teamName": "Paintin Peyton",
       "totalDrafted": 15,
-      "draftedKeptToPlayoffs": 14,
-      "draftedPointsScored": 424.37999999999994,
-      "waiverPickups": 1,
-      "waiverPointsScored": 1.4,
-      "draftRetentionRate": 93.33333333333333,
+      "draftedKeptToPlayoffs": 13,
+      "draftedPointsScored": 410.5799999999999,
+      "waiverPickups": 2,
+      "waiverPointsScored": 19.299999999999997,
+      "draftRetentionRate": 86.66666666666667,
       "draftedPlayers": [
         {
           "name": "Jahmyr Gibbs",
@@ -1007,8 +1007,8 @@
           "name": "RJ Harvey",
           "round": 9,
           "pick": 1,
-          "keptToPlayoffs": true,
-          "totalPoints": 13.8
+          "keptToPlayoffs": false,
+          "totalPoints": 0
         },
         {
           "name": "Romeo Doubs",
@@ -1060,8 +1060,8 @@
       "totalDrafted": 15,
       "draftedKeptToPlayoffs": 14,
       "draftedPointsScored": 340.32,
-      "waiverPickups": 2,
-      "waiverPointsScored": 42.1,
+      "waiverPickups": 1,
+      "waiverPointsScored": 15.2,
       "draftRetentionRate": 93.33333333333333,
       "draftedPlayers": [
         {
