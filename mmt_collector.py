@@ -1,6 +1,6 @@
-#v2.6
+#v2.61
 #28sep26
-#settings history now diffs ALL lineup slot counts (incl. QB) and per-position max-roster limits (QB/RB/WR/TE/K/DST), ported from tot_collector
+#restores OWNER_NAME_CORRECTIONS (lost since May) for team 5/8 2015 null-owner bug; fixes a latent unbound-'year' bug in the logo-block correction; extends coverage to calculate_player_loyalty_stats, added since May
 #!/usr/bin/env python3
 """
 ESPN Fantasy Football Data Collector using espn-api library
@@ -57,6 +57,18 @@ class ESPNDataCollectorV2:
         self.swid = swid
         self.espn_s2 = espn_s2
         self.all_seasons = []
+        # Manual owner-name corrections keyed by (team_id, year), for teams
+        # where ESPN's API returns an empty team.owners array for that
+        # season (confirmed for both of these: team.owners is genuinely
+        # empty, not a parsing issue) so get_owner_name_from_team() would
+        # otherwise return None. Both teams went inactive after 2015 -
+        # restored 28-Sep-2026 after being lost from the collector at some
+        # point since it was first added 2-May-2026 (caused null owners in
+        # 2015 payouts/team stats/matchup history; see espn-api-learnings.md).
+        self.OWNER_NAME_CORRECTIONS = {
+            (5, 2015): 'Loren Kessell',
+            (8, 2015): 'Rob Cahill',
+        }
     
     def fetch_all_seasons(self):
         """Fetch data for all seasons using espn-api library"""
@@ -216,11 +228,15 @@ class ESPNDataCollectorV2:
                 processed_matchups = set()
                 
                 for team in league.teams:
-                    team_owner = self.get_owner_name_from_team(team, members)
+                    team_owner = self.OWNER_NAME_CORRECTIONS.get(
+                        (team.team_id, year),
+                        self.get_owner_name_from_team(team, members))
                     
                     for week_idx in range(len(team.schedule)):
                         opponent = team.schedule[week_idx]
-                        opponent_owner = self.get_owner_name_from_team(opponent, members)
+                        opponent_owner = self.OWNER_NAME_CORRECTIONS.get(
+                            (opponent.team_id, year),
+                            self.get_owner_name_from_team(opponent, members))
                         week = week_idx + 1
                         
                         matchup_key = f"{year}_{week}_{min(team.team_id, opponent.team_id)}_{max(team.team_id, opponent.team_id)}"
@@ -399,7 +415,9 @@ class ESPNDataCollectorV2:
                     num_playoff_teams = getattr(league.settings, 'playoff_team_count', 4)
                     
                     if team.final_standing <= num_playoff_teams:
-                        owner = self.get_owner_name_from_team(team, members)
+                        owner = self.OWNER_NAME_CORRECTIONS.get(
+                            (team.team_id, year),
+                            self.get_owner_name_from_team(team, members))
                         
                         if owner:
                             playoff_teams[year].add(owner)
@@ -529,7 +547,16 @@ class ESPNDataCollectorV2:
                             pass
                     
                     for team in league.teams:
-                        team_owner = self.get_owner_name_from_team(team, members)
+                        # Uses most_recent_year, not a bare 'year' - the old
+                        # (May-2026) version of this fix referenced 'year'
+                        # here, but nothing in this function actually binds
+                        # that name at this point (the only 'year' nearby is
+                        # a set-comprehension variable, which doesn't leak
+                        # into this scope in Python 3) - most_recent_year is
+                        # the season this loop is actually operating on.
+                        team_owner = self.OWNER_NAME_CORRECTIONS.get(
+                            (team.team_id, most_recent_year),
+                            self.get_owner_name_from_team(team, members))
                         if team_owner == owner:
                             stats['logoUrl'] = team.logo_url if hasattr(team, 'logo_url') and team.logo_url else None
                             break
@@ -680,7 +707,9 @@ class ESPNDataCollectorV2:
                         pass
                 
                 for team in league.teams:
-                    team_owner = self.get_owner_name_from_team(team, members)
+                    team_owner = self.OWNER_NAME_CORRECTIONS.get(
+                        (team.team_id, year),
+                        self.get_owner_name_from_team(team, members))
                     if team_owner == owner:
                         if hasattr(team, 'final_standing') and team.final_standing is not None:
                             if team.final_standing == 1:
@@ -712,7 +741,9 @@ class ESPNDataCollectorV2:
                         pass
                 
                 for team in league.teams:
-                    team_owner = self.get_owner_name_from_team(team, members)
+                    team_owner = self.OWNER_NAME_CORRECTIONS.get(
+                        (team.team_id, year),
+                        self.get_owner_name_from_team(team, members))
                     if team_owner == owner:
                         # Check for acquisitions attribute
                         if hasattr(team, 'acquisitions'):
@@ -1507,7 +1538,9 @@ class ESPNDataCollectorV2:
                         pass
                 
                 for team in season_league.teams:
-                    owner = self.get_owner_name_from_team(team, members)
+                    owner = self.OWNER_NAME_CORRECTIONS.get(
+                        (team.team_id, year),
+                        self.get_owner_name_from_team(team, members))
                     if hasattr(team, 'final_standing') and team.final_standing:
                         if team.final_standing == 1:
                             playoff_payouts.append({
@@ -1590,7 +1623,9 @@ class ESPNDataCollectorV2:
                     pass
             
             for team in league.teams:
-                owner = self.get_owner_name_from_team(team, members)
+                owner = self.OWNER_NAME_CORRECTIONS.get(
+                    (team.team_id, year),
+                    self.get_owner_name_from_team(team, members))
                 if not owner or owner not in owner_stats:
                     continue
                 
@@ -1649,7 +1684,9 @@ class ESPNDataCollectorV2:
             reg_season_weeks = self._completed_weeks(league, reg_season_weeks)
             
             for team in league.teams:
-                owner = self.get_owner_name_from_team(team, members)
+                owner = self.OWNER_NAME_CORRECTIONS.get(
+                    (team.team_id, year),
+                    self.get_owner_name_from_team(team, members))
                 if not owner:
                     continue
                 
