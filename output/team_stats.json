@@ -15,13 +15,13 @@
     "teamName": "Bovine University Stampede",
     "abbrev": "STMP",
     "allTeamNames": [
-      "Scott's ConsolationTots",
-      "Bills New Team Name",
-      "Musconetcong Mantis Men",
-      "Barack Obama",
-      "Bovine University Stampede",
       "Wade Boggs Memorial Team",
       "Why's This So Sticky?",
+      "Musconetcong Mantis Men",
+      "Bills New Team Name",
+      "Barack Obama",
+      "Bovine University Stampede",
+      "Scott's ConsolationTots",
       "Arian Foster 2013"
     ],
     "playoffYears": [
@@ -424,8 +424,8 @@
     "teamName": "TDs In Your Face",
     "abbrev": "TDs",
     "allTeamNames": [
-      "Also Just Sean Kessell",
-      "TDs In Your Face"
+      "TDs In Your Face",
+      "Also Just Sean Kessell"
     ],
     "playoffYears": [],
     "seasonsPlayed": 2,
@@ -538,20 +538,20 @@
     "teamName": "Chasing McBride",
     "abbrev": "GRBG",
     "allTeamNames": [
-      "Al Tuck And No Action",
-      "Saquonda Forever",
-      "Colonel Sanders McCaffreys",
       "Dollar Dollar Bills Y'all",
-      "All Aboard The J Train",
-      "Saquanda Strikes Back",
-      "The Bell Is Dead",
-      "Chase My Butker",
-      "Its Mike Vick In a Box!",
-      "Why Pass to Top Wide Receivers?",
-      "Less Morals Than Mike Vick",
       "I wanta Free the NewtMan!",
-      "Chasing McBride",
-      "Yobogoya In the Bushes!"
+      "All Aboard The J Train",
+      "The Bell Is Dead",
+      "Its Mike Vick In a Box!",
+      "Colonel Sanders McCaffreys",
+      "Chase My Butker",
+      "Saquonda Forever",
+      "Saquanda Strikes Back",
+      "Why Pass to Top Wide Receivers?",
+      "Yobogoya In the Bushes!",
+      "Al Tuck And No Action",
+      "Less Morals Than Mike Vick",
+      "Chasing McBride"
     ],
     "playoffYears": [
       2016,
@@ -820,13 +820,13 @@
     "teamName": "Insane in the Ukraine",
     "abbrev": "B00B",
     "allTeamNames": [
-      "oh no its John Snooooooow",
+      "Insane in the Ukraine",
+      "Erection Protection",
       "I Do Respect You Bro",
+      "oh no its John Snooooooow",
       "Will Trade Wins For Alcohol",
       "The HipShire Hobbits",
-      "19 Problems and Covid is One",
-      "Erection Protection",
-      "Insane in the Ukraine"
+      "19 Problems and Covid is One"
     ],
     "playoffYears": [
       2023,
@@ -1408,15 +1408,15 @@
     "teamName": "Canadian Geeses",
     "abbrev": "CA",
     "allTeamNames": [
-      "Go Fudge Yourselves",
-      "Canadian Geeses",
-      "Duke Nukems",
-      "Christmas Devil Krampus",
-      "Skattebo's Ankle",
-      "Rafi Bombs",
       "Chef's choclate Salty Balls",
+      "Canadian Geeses",
+      "Skattebo's Ankle",
+      "Christmas Devil Krampus",
+      "Hawk Tua",
+      "Go Fudge Yourselves",
+      "Rafi Bombs",
       "Pickle Ricks",
-      "Hawk Tua"
+      "Duke Nukems"
     ],
     "playoffYears": [
       2016,
@@ -1689,12 +1689,12 @@
     "teamName": "Taylor and Travis Swift \ud83d\udc51",
     "abbrev": "CARL",
     "allTeamNames": [
+      "Pussy Power",
       "Duckman Kowalski",
-      "Benching the Whole Team",
-      "Taylor and Travis Swift \ud83d\udc51",
       "Greatest of All Time",
+      "Taylor and Travis Swift \ud83d\udc51",
       "Taylor Swift",
-      "Pussy Power"
+      "Benching the Whole Team"
     ],
     "playoffYears": [
       2016,
@@ -2232,8 +2232,8 @@
     "abbrev": "REXY",
     "allTeamNames": [
       "Rex Grossman Fan Club",
-      "Weenie Hut Jr's",
-      "Salty Spitoon"
+      "Salty Spitoon",
+      "Weenie Hut Jr's"
     ],
     "playoffYears": [
       2016,
@@ -2687,16 +2687,16 @@
     "teamName": "All You Need Is Love",
     "abbrev": "LOVE",
     "allTeamNames": [
-      "We played Week 7, 8 and 13",
       "All You Need Is Love",
-      "The Mixon Administration",
       "Joe Burrow Tiger King",
-      "The Recycling Ben",
-      "Mail Fairy",
-      "Two Girls One Kupp",
+      "We played Week 7, 8 and 13",
+      "The Mixon Administration",
       "Just a Chubb Tucker",
       "Strouds in the Clouds",
-      "Chubb Basshole"
+      "Two Girls One Kupp",
+      "Mail Fairy",
+      "Chubb Basshole",
+      "The Recycling Ben"
     ],
     "playoffYears": [
       2018,
@@ -2918,12 +2918,12 @@
     "teamName": "Kraft Smack and Cheese",
     "abbrev": "CHE",
     "allTeamNames": [
-      "RADrigo Is My Homeboy",
-      "Goodnight Again My Sweet Prince",
       "Davante's Inferno",
-      "Kraft Smack and Cheese",
+      "Goodnight Again My Sweet Prince",
       "Hubba Chubba",
-      "All You Need is Love"
+      "All You Need is Love",
+      "RADrigo Is My Homeboy",
+      "Kraft Smack and Cheese"
     ],
     "playoffYears": [
       2024,
@@ -3128,8 +3128,8 @@
     "teamName": "OnlyIfIHadA2TE",
     "abbrev": "Yup",
     "allTeamNames": [
-      "Loop, There it is!",
       "Bye Week",
+      "Loop, There it is!",
       "Bye Week Part 2",
       "OnlyIfIHadA2TE"
     ],
