@@ -8846,14 +8846,14 @@
       "opponent": "Phil Torres",
       "opponentName": "Canadian Geeses",
       "wins": 11,
-      "losses": 19,
+      "losses": 20,
       "ties": 0,
-      "winPercentage": 0.36666666666666664,
-      "totalGames": 30,
-      "pointsFor": 3618.76,
-      "pointsAgainst": 3847.28,
-      "avgPointsFor": 120.62533333333334,
-      "avgPointsAgainst": 128.24266666666668,
+      "winPercentage": 0.3548387096774194,
+      "totalGames": 31,
+      "pointsFor": 3730.7000000000003,
+      "pointsAgainst": 4023.26,
+      "avgPointsFor": 120.3451612903226,
+      "avgPointsAgainst": 129.7825806451613,
       "highestScore": 244.22000000000003,
       "lowestScore": 64.18,
       "biggestWin": 57.80000000000001,
@@ -8861,7 +8861,7 @@
       "longestWinStreak": 2,
       "currentStreak": {
         "type": "LOSS",
-        "length": 1
+        "length": 2
       },
       "matchups": [
         {
@@ -9553,6 +9553,29 @@
             "score": 105.1
           },
           "winner": "AWAY"
+        },
+        {
+          "id": "2026_3_4_2",
+          "year": 2026,
+          "week": 3,
+          "matchupPeriodId": 3,
+          "isPlayoff": false,
+          "playoffType": "NONE",
+          "home": {
+            "teamId": 4,
+            "teamName": "Canadian Geeses",
+            "teamAbbrev": "CA",
+            "owner": "Phil Torres",
+            "score": 175.98
+          },
+          "away": {
+            "teamId": 2,
+            "teamName": "Chasing McBride",
+            "teamAbbrev": "GRBG",
+            "owner": "Mike Kovacs",
+            "score": 111.94
+          },
+          "winner": "HOME"
         }
       ]
     },
@@ -15562,14 +15585,14 @@
       "opponent": "Ray Engleking",
       "opponentName": "Salty Spitoon",
       "wins": 13,
-      "losses": 12,
+      "losses": 13,
       "ties": 0,
-      "winPercentage": 0.52,
-      "totalGames": 25,
-      "pointsFor": 2934.14,
-      "pointsAgainst": 2972.52,
-      "avgPointsFor": 117.3656,
-      "avgPointsAgainst": 118.9008,
+      "winPercentage": 0.5,
+      "totalGames": 26,
+      "pointsFor": 3040.56,
+      "pointsAgainst": 3097.56,
+      "avgPointsFor": 116.94461538461539,
+      "avgPointsAgainst": 119.13692307692307,
       "highestScore": 171.84,
       "lowestScore": 59.46,
       "biggestWin": 69.24000000000001,
@@ -15577,7 +15600,7 @@
       "longestWinStreak": 4,
       "currentStreak": {
         "type": "LOSS",
-        "length": 1
+        "length": 2
       },
       "matchups": [
         {
@@ -16152,6 +16175,29 @@
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 99.72
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2026_3_9_6",
+          "year": 2026,
+          "week": 3,
+          "matchupPeriodId": 3,
+          "isPlayoff": false,
+          "playoffType": "NONE",
+          "home": {
+            "teamId": 9,
+            "teamName": "Salty Spitoon",
+            "teamAbbrev": "REXY",
+            "owner": "Ray Engleking",
+            "score": 125.04
+          },
+          "away": {
+            "teamId": 6,
+            "teamName": "Insane in the Ukraine",
+            "teamAbbrev": "B00B",
+            "owner": "Randell Crawford",
+            "score": 106.42
           },
           "winner": "HOME"
         }
@@ -20301,15 +20347,15 @@
     "Mike Kovacs": {
       "opponent": "Mike Kovacs",
       "opponentName": "Chasing McBride",
-      "wins": 19,
+      "wins": 20,
       "losses": 11,
       "ties": 0,
-      "winPercentage": 0.6333333333333333,
-      "totalGames": 30,
-      "pointsFor": 3847.28,
-      "pointsAgainst": 3618.76,
-      "avgPointsFor": 128.24266666666668,
-      "avgPointsAgainst": 120.62533333333334,
+      "winPercentage": 0.6451612903225806,
+      "totalGames": 31,
+      "pointsFor": 4023.26,
+      "pointsAgainst": 3730.7000000000003,
+      "avgPointsFor": 129.7825806451613,
+      "avgPointsAgainst": 120.3451612903226,
       "highestScore": 247.9,
       "lowestScore": 73.18,
       "biggestWin": 94.72,
@@ -20317,7 +20363,7 @@
       "longestWinStreak": 4,
       "currentStreak": {
         "type": "WIN",
-        "length": 1
+        "length": 2
       },
       "matchups": [
         {
@@ -21009,6 +21055,29 @@
             "score": 105.1
           },
           "winner": "AWAY"
+        },
+        {
+          "id": "2026_3_4_2",
+          "year": 2026,
+          "week": 3,
+          "matchupPeriodId": 3,
+          "isPlayoff": false,
+          "playoffType": "NONE",
+          "home": {
+            "teamId": 4,
+            "teamName": "Canadian Geeses",
+            "teamAbbrev": "CA",
+            "owner": "Phil Torres",
+            "score": 175.98
+          },
+          "away": {
+            "teamId": 2,
+            "teamName": "Chasing McBride",
+            "teamAbbrev": "GRBG",
+            "owner": "Mike Kovacs",
+            "score": 111.94
+          },
+          "winner": "HOME"
         }
       ]
     },
@@ -29532,23 +29601,23 @@
     "Joe Jaramillo": {
       "opponent": "Joe Jaramillo",
       "opponentName": "OnlyIfIHadA2TE",
-      "wins": 3,
+      "wins": 4,
       "losses": 1,
       "ties": 0,
-      "winPercentage": 0.75,
-      "totalGames": 4,
-      "pointsFor": 479.49999999999994,
-      "pointsAgainst": 357.3,
-      "avgPointsFor": 119.87499999999999,
-      "avgPointsAgainst": 89.325,
+      "winPercentage": 0.8,
+      "totalGames": 5,
+      "pointsFor": 581.9799999999999,
+      "pointsAgainst": 445.28000000000003,
+      "avgPointsFor": 116.39599999999999,
+      "avgPointsAgainst": 89.05600000000001,
       "highestScore": 133.6,
       "lowestScore": 100.16,
       "biggestWin": 67.75999999999999,
-      "closestWin": 19.059999999999988,
+      "closestWin": 14.5,
       "longestWinStreak": 2,
       "currentStreak": {
         "type": "WIN",
-        "length": 1
+        "length": 2
       },
       "matchups": [
         {
@@ -29640,6 +29709,29 @@
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 117.2
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2026_3_14_3",
+          "year": 2026,
+          "week": 3,
+          "matchupPeriodId": 3,
+          "isPlayoff": false,
+          "playoffType": "NONE",
+          "home": {
+            "teamId": 14,
+            "teamName": "OnlyIfIHadA2TE",
+            "teamAbbrev": "Yup",
+            "owner": "Joe Jaramillo",
+            "score": 87.98
+          },
+          "away": {
+            "teamId": 3,
+            "teamName": "Taylor and Travis Swift \ud83d\udc51",
+            "teamAbbrev": "CARL",
+            "owner": "Carl Cummins",
+            "score": 102.48
           },
           "winner": "AWAY"
         }
@@ -33776,15 +33868,15 @@
     "Randell Crawford": {
       "opponent": "Randell Crawford",
       "opponentName": "Insane in the Ukraine",
-      "wins": 12,
+      "wins": 13,
       "losses": 13,
       "ties": 0,
-      "winPercentage": 0.48,
-      "totalGames": 25,
-      "pointsFor": 2972.52,
-      "pointsAgainst": 2934.14,
-      "avgPointsFor": 118.9008,
-      "avgPointsAgainst": 117.3656,
+      "winPercentage": 0.5,
+      "totalGames": 26,
+      "pointsFor": 3097.56,
+      "pointsAgainst": 3040.56,
+      "avgPointsFor": 119.13692307692307,
+      "avgPointsAgainst": 116.94461538461539,
       "highestScore": 185.58,
       "lowestScore": 62.62,
       "biggestWin": 59.120000000000005,
@@ -33792,7 +33884,7 @@
       "longestWinStreak": 3,
       "currentStreak": {
         "type": "WIN",
-        "length": 1
+        "length": 2
       },
       "matchups": [
         {
@@ -34367,6 +34459,29 @@
             "teamAbbrev": "B00B",
             "owner": "Randell Crawford",
             "score": 99.72
+          },
+          "winner": "HOME"
+        },
+        {
+          "id": "2026_3_9_6",
+          "year": 2026,
+          "week": 3,
+          "matchupPeriodId": 3,
+          "isPlayoff": false,
+          "playoffType": "NONE",
+          "home": {
+            "teamId": 9,
+            "teamName": "Salty Spitoon",
+            "teamAbbrev": "REXY",
+            "owner": "Ray Engleking",
+            "score": 125.04
+          },
+          "away": {
+            "teamId": 6,
+            "teamName": "Insane in the Ukraine",
+            "teamAbbrev": "B00B",
+            "owner": "Randell Crawford",
+            "score": 106.42
           },
           "winner": "HOME"
         }
@@ -41194,23 +41309,23 @@
     "john crawford": {
       "opponent": "john crawford",
       "opponentName": "Paintin Peyton",
-      "wins": 4,
+      "wins": 5,
       "losses": 3,
       "ties": 0,
-      "winPercentage": 0.5714285714285714,
-      "totalGames": 7,
-      "pointsFor": 682.32,
-      "pointsAgainst": 761.04,
-      "avgPointsFor": 97.47428571428573,
-      "avgPointsAgainst": 108.72,
+      "winPercentage": 0.625,
+      "totalGames": 8,
+      "pointsFor": 774.58,
+      "pointsAgainst": 841.0799999999999,
+      "avgPointsFor": 96.8225,
+      "avgPointsAgainst": 105.13499999999999,
       "highestScore": 135.78,
       "lowestScore": 50.16,
       "biggestWin": 19.22,
       "closestWin": 5.280000000000001,
       "longestWinStreak": 4,
       "currentStreak": {
-        "type": "LOSS",
-        "length": 3
+        "type": "WIN",
+        "length": 1
       },
       "matchups": [
         {
@@ -41371,6 +41486,29 @@
             "teamAbbrev": "CRWD",
             "owner": "john crawford",
             "score": 77.28
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2026_3_13_12",
+          "year": 2026,
+          "week": 3,
+          "matchupPeriodId": 3,
+          "isPlayoff": false,
+          "playoffType": "NONE",
+          "home": {
+            "teamId": 13,
+            "teamName": "Paintin Peyton",
+            "teamAbbrev": "CRWD",
+            "owner": "john crawford",
+            "score": 80.04
+          },
+          "away": {
+            "teamId": 12,
+            "teamName": "All You Need Is Love",
+            "teamAbbrev": "LOVE",
+            "owner": "Ben Bingert",
+            "score": 92.26
           },
           "winner": "AWAY"
         }
@@ -45284,14 +45422,14 @@
       "opponent": "Carl Cummins",
       "opponentName": "Taylor and Travis Swift \ud83d\udc51",
       "wins": 1,
-      "losses": 3,
+      "losses": 4,
       "ties": 0,
-      "winPercentage": 0.25,
-      "totalGames": 4,
-      "pointsFor": 357.3,
-      "pointsAgainst": 479.49999999999994,
-      "avgPointsFor": 89.325,
-      "avgPointsAgainst": 119.87499999999999,
+      "winPercentage": 0.2,
+      "totalGames": 5,
+      "pointsFor": 445.28000000000003,
+      "pointsAgainst": 581.9799999999999,
+      "avgPointsFor": 89.05600000000001,
+      "avgPointsAgainst": 116.39599999999999,
       "highestScore": 109.48,
       "lowestScore": 65.84,
       "biggestWin": 0.38000000000000966,
@@ -45299,7 +45437,7 @@
       "longestWinStreak": 1,
       "currentStreak": {
         "type": "LOSS",
-        "length": 1
+        "length": 2
       },
       "matchups": [
         {
@@ -45391,6 +45529,29 @@
             "teamAbbrev": "CARL",
             "owner": "Carl Cummins",
             "score": 117.2
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2026_3_14_3",
+          "year": 2026,
+          "week": 3,
+          "matchupPeriodId": 3,
+          "isPlayoff": false,
+          "playoffType": "NONE",
+          "home": {
+            "teamId": 14,
+            "teamName": "OnlyIfIHadA2TE",
+            "teamAbbrev": "Yup",
+            "owner": "Joe Jaramillo",
+            "score": 87.98
+          },
+          "away": {
+            "teamId": 3,
+            "teamName": "Taylor and Travis Swift \ud83d\udc51",
+            "teamAbbrev": "CARL",
+            "owner": "Carl Cummins",
+            "score": 102.48
           },
           "winner": "AWAY"
         }
@@ -46930,22 +47091,22 @@
       "opponent": "Ben Bingert",
       "opponentName": "All You Need Is Love",
       "wins": 3,
-      "losses": 4,
+      "losses": 5,
       "ties": 0,
-      "winPercentage": 0.42857142857142855,
-      "totalGames": 7,
-      "pointsFor": 761.04,
-      "pointsAgainst": 682.32,
-      "avgPointsFor": 108.72,
-      "avgPointsAgainst": 97.47428571428573,
+      "winPercentage": 0.375,
+      "totalGames": 8,
+      "pointsFor": 841.0799999999999,
+      "pointsAgainst": 774.58,
+      "avgPointsFor": 105.13499999999999,
+      "avgPointsAgainst": 96.8225,
       "highestScore": 140.74,
       "lowestScore": 77.28,
       "biggestWin": 90.58000000000001,
       "closestWin": 16.240000000000002,
       "longestWinStreak": 3,
       "currentStreak": {
-        "type": "WIN",
-        "length": 3
+        "type": "LOSS",
+        "length": 1
       },
       "matchups": [
         {
@@ -47106,6 +47267,29 @@
             "teamAbbrev": "CRWD",
             "owner": "john crawford",
             "score": 77.28
+          },
+          "winner": "AWAY"
+        },
+        {
+          "id": "2026_3_13_12",
+          "year": 2026,
+          "week": 3,
+          "matchupPeriodId": 3,
+          "isPlayoff": false,
+          "playoffType": "NONE",
+          "home": {
+            "teamId": 13,
+            "teamName": "Paintin Peyton",
+            "teamAbbrev": "CRWD",
+            "owner": "john crawford",
+            "score": 80.04
+          },
+          "away": {
+            "teamId": 12,
+            "teamName": "All You Need Is Love",
+            "teamAbbrev": "LOVE",
+            "owner": "Ben Bingert",
+            "score": 92.26
           },
           "winner": "AWAY"
         }

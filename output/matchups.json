@@ -21597,6 +21597,75 @@
     "winner": "HOME"
   },
   {
+    "id": "2026_3_14_3",
+    "year": 2026,
+    "week": 3,
+    "matchupPeriodId": 3,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 14,
+      "teamName": "OnlyIfIHadA2TE",
+      "teamAbbrev": "Yup",
+      "owner": "Joe Jaramillo",
+      "score": 87.98
+    },
+    "away": {
+      "teamId": 3,
+      "teamName": "Taylor and Travis Swift \ud83d\udc51",
+      "teamAbbrev": "CARL",
+      "owner": "Carl Cummins",
+      "score": 102.48
+    },
+    "winner": "AWAY"
+  },
+  {
+    "id": "2026_3_13_12",
+    "year": 2026,
+    "week": 3,
+    "matchupPeriodId": 3,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 13,
+      "teamName": "Paintin Peyton",
+      "teamAbbrev": "CRWD",
+      "owner": "john crawford",
+      "score": 80.04
+    },
+    "away": {
+      "teamId": 12,
+      "teamName": "All You Need Is Love",
+      "teamAbbrev": "LOVE",
+      "owner": "Ben Bingert",
+      "score": 92.26
+    },
+    "winner": "AWAY"
+  },
+  {
+    "id": "2026_3_4_2",
+    "year": 2026,
+    "week": 3,
+    "matchupPeriodId": 3,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 4,
+      "teamName": "Canadian Geeses",
+      "teamAbbrev": "CA",
+      "owner": "Phil Torres",
+      "score": 175.98
+    },
+    "away": {
+      "teamId": 2,
+      "teamName": "Chasing McBride",
+      "teamAbbrev": "GRBG",
+      "owner": "Mike Kovacs",
+      "score": 111.94
+    },
+    "winner": "HOME"
+  },
+  {
     "id": "2026_3_11_1",
     "year": 2026,
     "week": 3,
@@ -21616,6 +21685,29 @@
       "teamAbbrev": "STMP",
       "owner": "Bill Solecki",
       "score": 115.7
+    },
+    "winner": "HOME"
+  },
+  {
+    "id": "2026_3_9_6",
+    "year": 2026,
+    "week": 3,
+    "matchupPeriodId": 3,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 9,
+      "teamName": "Salty Spitoon",
+      "teamAbbrev": "REXY",
+      "owner": "Ray Engleking",
+      "score": 125.04
+    },
+    "away": {
+      "teamId": 6,
+      "teamName": "Insane in the Ukraine",
+      "teamAbbrev": "B00B",
+      "owner": "Randell Crawford",
+      "score": 106.42
     },
     "winner": "HOME"
   }
