@@ -6,7 +6,7 @@
       "teamName": "Bovine University Stampede",
       "totalDrafted": 15,
       "draftedKeptToPlayoffs": 11,
-      "draftedPointsScored": 412.90000000000003,
+      "draftedPointsScored": 419.40000000000003,
       "waiverPickups": 4,
       "waiverPointsScored": 221.34,
       "draftRetentionRate": 73.33333333333333,
@@ -65,7 +65,7 @@
           "round": 8,
           "pick": 5,
           "keptToPlayoffs": true,
-          "totalPoints": 35.6
+          "totalPoints": 42.1
         },
         {
           "name": "Justin Herbert",
@@ -474,9 +474,9 @@
       "teamName": "Insane in the Ukraine",
       "totalDrafted": 15,
       "draftedKeptToPlayoffs": 14,
-      "draftedPointsScored": 424.14,
+      "draftedPointsScored": 430.34,
       "waiverPickups": 2,
-      "waiverPointsScored": 48.9,
+      "waiverPointsScored": 49.9,
       "draftRetentionRate": 93.33333333333333,
       "draftedPlayers": [
         {
@@ -526,7 +526,7 @@
           "round": 7,
           "pick": 9,
           "keptToPlayoffs": true,
-          "totalPoints": 21.3
+          "totalPoints": 24.5
         },
         {
           "name": "Alec Pierce",
@@ -561,7 +561,7 @@
           "round": 12,
           "pick": 2,
           "keptToPlayoffs": true,
-          "totalPoints": 35.0
+          "totalPoints": 38.0
         },
         {
           "name": "Daniel Jones",
@@ -825,7 +825,7 @@
       "teamName": "All You Need Is Love",
       "totalDrafted": 15,
       "draftedKeptToPlayoffs": 14,
-      "draftedPointsScored": 410.32000000000005,
+      "draftedPointsScored": 412.62000000000006,
       "waiverPickups": 2,
       "waiverPointsScored": 37.3,
       "draftRetentionRate": 93.33333333333333,
@@ -863,7 +863,7 @@
           "round": 5,
           "pick": 4,
           "keptToPlayoffs": true,
-          "totalPoints": 22.2
+          "totalPoints": 24.5
         },
         {
           "name": "Marvin Harrison Jr.",
@@ -1059,7 +1059,7 @@
       "teamName": "OnlyIfIHadA2TE",
       "totalDrafted": 15,
       "draftedKeptToPlayoffs": 14,
-      "draftedPointsScored": 340.32,
+      "draftedPointsScored": 343.52,
       "waiverPickups": 1,
       "waiverPointsScored": 15.2,
       "draftRetentionRate": 93.33333333333333,
@@ -1118,7 +1118,7 @@
           "round": 8,
           "pick": 1,
           "keptToPlayoffs": true,
-          "totalPoints": 9.9
+          "totalPoints": 11.3
         },
         {
           "name": "Stefon Diggs",
@@ -1132,7 +1132,7 @@
           "round": 10,
           "pick": 1,
           "keptToPlayoffs": true,
-          "totalPoints": 31.6
+          "totalPoints": 33.4
         },
         {
           "name": "Josh Jacobs",
