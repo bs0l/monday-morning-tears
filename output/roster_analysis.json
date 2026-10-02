@@ -6,7 +6,7 @@
       "teamName": "Bovine University Stampede",
       "totalDrafted": 15,
       "draftedKeptToPlayoffs": 11,
-      "draftedPointsScored": 419.40000000000003,
+      "draftedPointsScored": 427.0,
       "waiverPickups": 4,
       "waiverPointsScored": 221.34,
       "draftRetentionRate": 73.33333333333333,
@@ -65,7 +65,7 @@
           "round": 8,
           "pick": 5,
           "keptToPlayoffs": true,
-          "totalPoints": 42.1
+          "totalPoints": 49.7
         },
         {
           "name": "Justin Herbert",
@@ -474,9 +474,9 @@
       "teamName": "Insane in the Ukraine",
       "totalDrafted": 15,
       "draftedKeptToPlayoffs": 14,
-      "draftedPointsScored": 430.34,
+      "draftedPointsScored": 446.14,
       "waiverPickups": 2,
-      "waiverPointsScored": 49.9,
+      "waiverPointsScored": 59.8,
       "draftRetentionRate": 93.33333333333333,
       "draftedPlayers": [
         {
@@ -526,7 +526,7 @@
           "round": 7,
           "pick": 9,
           "keptToPlayoffs": true,
-          "totalPoints": 24.5
+          "totalPoints": 35.3
         },
         {
           "name": "Alec Pierce",
@@ -561,7 +561,7 @@
           "round": 12,
           "pick": 2,
           "keptToPlayoffs": true,
-          "totalPoints": 38.0
+          "totalPoints": 43.0
         },
         {
           "name": "Daniel Jones",
@@ -709,8 +709,8 @@
       "totalDrafted": 15,
       "draftedKeptToPlayoffs": 13,
       "draftedPointsScored": 426.06,
-      "waiverPickups": 3,
-      "waiverPointsScored": 62.400000000000006,
+      "waiverPickups": 4,
+      "waiverPointsScored": 70.4,
       "draftRetentionRate": 86.66666666666667,
       "draftedPlayers": [
         {
@@ -824,11 +824,11 @@
       "owner": "Ben Bingert",
       "teamName": "All You Need Is Love",
       "totalDrafted": 15,
-      "draftedKeptToPlayoffs": 14,
-      "draftedPointsScored": 412.62000000000006,
-      "waiverPickups": 2,
-      "waiverPointsScored": 37.3,
-      "draftRetentionRate": 93.33333333333333,
+      "draftedKeptToPlayoffs": 13,
+      "draftedPointsScored": 409.92,
+      "waiverPickups": 3,
+      "waiverPointsScored": 51.099999999999994,
+      "draftRetentionRate": 86.66666666666667,
       "draftedPlayers": [
         {
           "name": "Amon-Ra St. Brown",
@@ -863,7 +863,7 @@
           "round": 5,
           "pick": 4,
           "keptToPlayoffs": true,
-          "totalPoints": 24.5
+          "totalPoints": 40.8
         },
         {
           "name": "Marvin Harrison Jr.",
@@ -932,8 +932,8 @@
           "name": "Lions D/ST",
           "round": 15,
           "pick": 4,
-          "keptToPlayoffs": true,
-          "totalPoints": 19.0
+          "keptToPlayoffs": false,
+          "totalPoints": 0
         }
       ]
     },
@@ -1059,7 +1059,7 @@
       "teamName": "OnlyIfIHadA2TE",
       "totalDrafted": 15,
       "draftedKeptToPlayoffs": 14,
-      "draftedPointsScored": 343.52,
+      "draftedPointsScored": 353.02,
       "waiverPickups": 1,
       "waiverPointsScored": 15.2,
       "draftRetentionRate": 93.33333333333333,
@@ -1118,7 +1118,7 @@
           "round": 8,
           "pick": 1,
           "keptToPlayoffs": true,
-          "totalPoints": 11.3
+          "totalPoints": 12.4
         },
         {
           "name": "Stefon Diggs",
@@ -1132,7 +1132,7 @@
           "round": 10,
           "pick": 1,
           "keptToPlayoffs": true,
-          "totalPoints": 33.4
+          "totalPoints": 41.8
         },
         {
           "name": "Josh Jacobs",

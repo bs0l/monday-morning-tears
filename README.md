@@ -85,6 +85,54 @@ scp mmt_keepers.py pi@<server-ip>:/home/pi/fantasystats/mmt
 
 The `.env` file should be `chmod 600` on the server since it holds auth cookies.
 
+### Local development (Windows)
+
+Test runs on a dev PC mirror the Pi layout: the `.env` and the virtual environment live one level **above** the repo, so credentials and packages can never be committed. (The Pi's venv is `~/fantasy-env`; the local one is simply `venv`.)
+
+```
+<projects-folder>\
+├── .env                     # MMT_SWID, MMT_S2, etc
+├── venv\
+├── monday-morning-tears\    # this repo (plus mmt_keepers.py, gitignored)
+└── [other fantasy leagues]\
+```
+
+The collectors call `load_dotenv()`, which searches the script's folder and then each parent folder for a `.env`, so no path configuration is needed. On the Pi the hardcoded `/home/pi/fantasystats/.env` path is loaded first, and `load_dotenv()` never overrides variables that are already set.
+
+**One-time setup (PowerShell):**
+
+```powershell
+cd <projects-folder>
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+pip install espn-api python-dotenv requests
+```
+
+If activation is blocked, run `Set-ExecutionPolicy -Scope Process Bypass` and try again. Your prompt should start with `(venv)` once it's active.
+
+**Each test session:**
+
+```powershell
+cd <projects-folder>
+.\venv\Scripts\Activate.ps1
+cd monday-morning-tears
+python mmt_collector.py --skip-bench
+```
+
+In a second terminal, from the same repo folder, serve the site and open <http://localhost:8000>:
+
+```powershell
+python -m http.server 8000
+```
+
+Notes:
+
+- The leading `.\` on the activate command is required in PowerShell. Without it, PowerShell treats the path as a module name and fails with "module could not be loaded".
+- `mmt_keepers.py` must sit in the repo folder next to the collector; it is imported directly and is not searched for in parent folders.
+- `output/*.json` is tracked in git, so a local run overwrites committed files. Check `git status` before committing frontend changes, and use `git restore output/` to discard test data.
+- `%-d` in the settings-history date formatter isn't valid on Windows; the existing fallback produces zero-padded days locally, which is harmless.
+- If you ever create the venv inside the repo folder instead, add `venv/` to `.gitignore`.
+
 ### Scheduling
 
 A cron job runs a wrapper shell script weekly during the season, which:

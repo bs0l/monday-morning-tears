@@ -17,6 +17,7 @@ import requests
 from dotenv import load_dotenv
 
 load_dotenv("/home/pi/fantasystats/.env")
+load_dotenv()                               # local: finds a .env next to the script
 
 # Configuration
 LEAGUE_ID = 1483079

@@ -114,15 +114,15 @@
     ],
     "2026": [
       {
+        "player": "Lions D/ST",
+        "count": 2
+      },
+      {
         "player": "Patriots D/ST",
         "count": 1
       },
       {
         "player": "Browns D/ST",
-        "count": 1
-      },
-      {
-        "player": "Kaleb Johnson",
         "count": 1
       }
     ]
@@ -1032,7 +1032,7 @@
           "count": 1
         },
         {
-          "player": "Jalen McMillan",
+          "player": "49ers D/ST",
           "count": 1
         }
       ],
@@ -1053,7 +1053,7 @@
       "Ben Bingert": [
         {
           "player": "Lions D/ST",
-          "count": 1
+          "count": 2
         },
         {
           "player": "Tyjae Spears",
@@ -3714,15 +3714,15 @@
       ],
       "2026": [
         {
+          "player": "Lions D/ST",
+          "count": 2
+        },
+        {
           "player": "Patriots D/ST",
           "count": 1
         },
         {
           "player": "Browns D/ST",
-          "count": 1
-        },
-        {
-          "player": "Kaleb Johnson",
           "count": 1
         }
       ]
@@ -4632,7 +4632,7 @@
             "count": 1
           },
           {
-            "player": "Jalen McMillan",
+            "player": "49ers D/ST",
             "count": 1
           }
         ],
@@ -4653,7 +4653,7 @@
         "Ben Bingert": [
           {
             "player": "Lions D/ST",
-            "count": 1
+            "count": 2
           },
           {
             "player": "Tyjae Spears",
