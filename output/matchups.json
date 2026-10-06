@@ -21710,5 +21710,120 @@
       "score": 106.42
     },
     "winner": "HOME"
+  },
+  {
+    "id": "2026_4_3_12",
+    "year": 2026,
+    "week": 4,
+    "matchupPeriodId": 4,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 3,
+      "teamName": "Taylor and Travis Swift \ud83d\udc51",
+      "teamAbbrev": "CARL",
+      "owner": "Carl Cummins",
+      "score": 129.08
+    },
+    "away": {
+      "teamId": 12,
+      "teamName": "All You Need Is Love",
+      "teamAbbrev": "LOVE",
+      "owner": "Ben Bingert",
+      "score": 105.22
+    },
+    "winner": "HOME"
+  },
+  {
+    "id": "2026_4_2_14",
+    "year": 2026,
+    "week": 4,
+    "matchupPeriodId": 4,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 2,
+      "teamName": "Chasing McBride",
+      "teamAbbrev": "GRBG",
+      "owner": "Mike Kovacs",
+      "score": 79.1
+    },
+    "away": {
+      "teamId": 14,
+      "teamName": "OnlyIfIHadA2TE",
+      "teamAbbrev": "Yup",
+      "owner": "Joe Jaramillo",
+      "score": 94.82
+    },
+    "winner": "AWAY"
+  },
+  {
+    "id": "2026_4_1_13",
+    "year": 2026,
+    "week": 4,
+    "matchupPeriodId": 4,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 1,
+      "teamName": "Bovine University Stampede",
+      "teamAbbrev": "STMP",
+      "owner": "Bill Solecki",
+      "score": 101.04
+    },
+    "away": {
+      "teamId": 13,
+      "teamName": "Paintin Peyton",
+      "teamAbbrev": "CRWD",
+      "owner": "john crawford",
+      "score": 103.9
+    },
+    "winner": "AWAY"
+  },
+  {
+    "id": "2026_4_6_4",
+    "year": 2026,
+    "week": 4,
+    "matchupPeriodId": 4,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 6,
+      "teamName": "Insane in the Ukraine",
+      "teamAbbrev": "B00B",
+      "owner": "Randell Crawford",
+      "score": 77.32
+    },
+    "away": {
+      "teamId": 4,
+      "teamName": "Canadian Geeses",
+      "teamAbbrev": "CA",
+      "owner": "Phil Torres",
+      "score": 129.12
+    },
+    "winner": "AWAY"
+  },
+  {
+    "id": "2026_4_9_11",
+    "year": 2026,
+    "week": 4,
+    "matchupPeriodId": 4,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 9,
+      "teamName": "Salty Spitoon",
+      "teamAbbrev": "REXY",
+      "owner": "Ray Engleking",
+      "score": 166.88
+    },
+    "away": {
+      "teamId": 11,
+      "teamName": "Kraft Smack and Cheese",
+      "teamAbbrev": "CHE",
+      "owner": "John Artiglier",
+      "score": 96.46
+    },
+    "winner": "HOME"
   }
 ]

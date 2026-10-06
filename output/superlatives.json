@@ -351,17 +351,18 @@
     "mostWeeklyHighScores": {
       "owner": "Bill Solecki",
       "owners": [
-        "Bill Solecki"
+        "Bill Solecki",
+        "Ray Engleking"
       ],
       "count": 36,
-      "tied": false
+      "tied": true
     },
     "mostWeeklyLowScores": {
       "owner": "Randell Crawford",
       "owners": [
         "Randell Crawford"
       ],
-      "count": 23,
+      "count": 24,
       "tied": false
     },
     "mostConsolationDollars": {
@@ -717,7 +718,7 @@
       "owners": [
         "Ray Engleking"
       ],
-      "count": 30,
+      "count": 31,
       "tied": false
     },
     "mostWeeklyLowScores": {
@@ -725,7 +726,7 @@
       "owners": [
         "Randell Crawford"
       ],
-      "count": 21,
+      "count": 22,
       "tied": false
     },
     "mostConsolationDollars": {
@@ -773,31 +774,31 @@
         "owner": "Carl Cummins",
         "teamName": "Taylor and Travis Swift \ud83d\udc51",
         "year": 2026,
-        "pointsAgainst": 270.0
-      },
-      {
-        "owner": "Bill Solecki",
-        "teamName": "Bovine University Stampede",
-        "year": 2026,
-        "pointsAgainst": 297.86
-      },
-      {
-        "owner": "Ben Bingert",
-        "teamName": "All You Need Is Love",
-        "year": 2026,
-        "pointsAgainst": 308.48
+        "pointsAgainst": 375.22
       },
       {
         "owner": "Joe Jaramillo",
         "teamName": "OnlyIfIHadA2TE",
         "year": 2026,
-        "pointsAgainst": 308.82
+        "pointsAgainst": 387.91999999999996
+      },
+      {
+        "owner": "Bill Solecki",
+        "teamName": "Bovine University Stampede",
+        "year": 2026,
+        "pointsAgainst": 401.76
+      },
+      {
+        "owner": "Phil Torres",
+        "teamName": "Canadian Geeses",
+        "year": 2026,
+        "pointsAgainst": 402.44
       },
       {
         "owner": "Ray Engleking",
         "teamName": "Salty Spitoon",
         "year": 2026,
-        "pointsAgainst": 311.14
+        "pointsAgainst": 407.59999999999997
       }
     ]
   }
