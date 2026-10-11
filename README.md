@@ -10,9 +10,9 @@ Every score, matchup, and roster move going back to 2013 is pulled straight from
 
 - **All-time records** — career win/loss, points for/against, championships, playoff appearances, per-owner history across team-name and ownership changes
 - **Head-to-head** — every pairing's full history, streaks, and margins
-- **Superlatives** — highest/lowest scores, biggest blowouts, closest wins, longest streaks, weekly high/low scorers
+- **Superlatives** — highest/lowest scores, biggest blowouts, closest wins, longest streaks, weekly high/low scorers. Scores are true single-week scores: two-week playoff matchups are split into their two weeks using ESPN's per-week scoring data, and two-week matchup records are shown beside the single-week ones where they apply
 - **Season pages** — a dedicated breakdown for every year the league has played
-- **Two-week playoff analysis** — how often a week-1 deficit got overturned in week 2
+- **Two-week playoff analysis** — every two-week playoff matchup compared week by week: how often a team trailing after week 1 won on the combined score (its own page)
 - **Transactions & draft** — trade history, waiver activity, draft-pick retention
 
 ## How it works
@@ -60,7 +60,7 @@ cd /home/pi/fantasystats/mmt
 python mmt_collector.py
 ```
 
-Add `--skip-bench` to skip the (slower) bench-points calculation while testing other changes:
+Add `--skip-bench` to omit the best-bench stats from the output (bench totals are now gathered during the matchup pass, so this no longer saves time):
 
 ```bash
 python mmt_collector.py --skip-bench
@@ -147,7 +147,7 @@ Logs append indefinitely to a dedicated log file.
 
 - `END_YEAR` in the collector is computed dynamically (current year from September onward, previous year otherwise) — no manual bump needed each season
 - Auth cookies are read from environment variables at runtime rather than hardcoded in the script
-- If the ESPN session cookies expire, the collector exits with a distinct error code and triggers a targeted "cookies expired" notification rather than a generic failure email
+- Exit codes: `1` means a season (or its per-week scores) could not be fetched or the data was inconsistent, so nothing is written or pushed; `2` means the ESPN session cookies expired and triggers the targeted "cookies expired" notification rather than a generic failure email
 
 ---
 

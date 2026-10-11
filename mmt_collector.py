@@ -1,6 +1,6 @@
-#v2.7
-#06oct26
-#abort (exit 1) if any season fails to fetch, exit 2 on expired cookies, retries + logged week errors, bench points gathered in matchup pass, _direct_api memoized, owner/team lookup helpers, final week from matchup_periods, removed roster_analysis/two_week outputs and unused fields, skip final_standing 0 (in-progress season) in playoff detection
+#v2.8
+#07oct26
+#per-week scores for every matchup (ESPN pointsByScoringPeriod), 2019 duplicate playoff rows collapsed, single-week score stats, two-week matchup companions, per-week averages, consolation dollars 2020+ regular season only, two-week playoff analysis; earlier: abort (exit 1) if any season fails to fetch, exit 2 on expired cookies, retries + logged week errors, bench points gathered in matchup pass, _direct_api memoized, owner/team lookup helpers, final week from matchup_periods, removed roster_analysis/two_week outputs and unused fields, skip final_standing 0 (in-progress season) in playoff detection
 #!/usr/bin/env python3
 """
 ESPN Fantasy Football Data Collector using espn-api library
@@ -26,6 +26,8 @@ load_dotenv()                               # local: finds a .env next to the sc
 LEAGUE_ID = 1483079
 OUTPUT_DIR = "output"
 MAX_FETCH_ATTEMPTS = 3   # per-season / per-request retries before giving up
+CONSOLATION_START_YEAR = 2020   # consolation dollar rule introduced (regular season only)
+WEEKLY_TOLERANCE = 0.02  # allowed rounding gap between weekly scores and a matchup total
 
 # Hardcoded keeper identities (2017-2021), manual point overrides for keepers
 # ESPN has scrubbed from historical API data, and season-stats-page notes for
@@ -83,6 +85,9 @@ class ESPNDataCollectorV2:
         self._api_cache = {}
         # Bench points gathered during the matchup pass: year -> {team_id: total}
         self._bench_points = {}
+        # Raw schedule data per (year, frozenset of the two team ids): list of
+        # {period, tier, weeks, scores{teamId: [per-week]}} - see fetch_schedule_data
+        self.sched_entries = {}
     
     def fetch_all_seasons(self):
         """Fetch data for all seasons using espn-api library.
@@ -141,6 +146,135 @@ class ESPNDataCollectorV2:
         print(f"\n  ✓ Successfully fetched {len(self.all_seasons)} seasons")
         self._build_owner_maps()
         return True
+
+    def fetch_schedule_data(self):
+        """Fetch ESPN's raw schedule for every season (one request each) and
+        keep, for every matchup, its real matchup period, bracket tier, the
+        scoring weeks it covers and each team's score in each of those weeks
+        (pointsByScoringPeriod). This is what lets two-week playoff matchups
+        (2014-2019) be split into their real single-week scores.
+        Returns False if any season's schedule can't be fetched."""
+        print(f"\n{'='*80}")
+        print(" Fetching Per-Week Scores (raw schedule)")
+        print(f"{'='*80}")
+        self.sched_entries = {}
+        for season in self.all_seasons:
+            year = season['year']
+            data = None
+            for attempt in range(1, MAX_FETCH_ATTEMPTS + 1):
+                data = self._direct_api(year, "mMatchupScore", "&view=mScoreboard")
+                if data and data.get('schedule'):
+                    break
+                print(f"    ⚠️  {year}: schedule fetch failed (attempt {attempt}/{MAX_FETCH_ATTEMPTS})")
+                if attempt < MAX_FETCH_ATTEMPTS:
+                    time.sleep(3 * attempt)
+            if not data or not data.get('schedule'):
+                print(f"  ✗ Could not fetch the schedule for {year}")
+                return False
+
+            count = 0
+            for m in data['schedule']:
+                home = m.get('home') or {}
+                away = m.get('away') or {}
+                hid, aid = home.get('teamId'), away.get('teamId')
+                if hid is None or aid is None:
+                    continue    # bye / empty side
+                h_pb = {int(k): v for k, v in (home.get('pointsByScoringPeriod') or {}).items()}
+                a_pb = {int(k): v for k, v in (away.get('pointsByScoringPeriod') or {}).items()}
+                weeks = sorted(h_pb)
+                if not weeks or weeks != sorted(a_pb):
+                    continue    # not played yet / no weekly data
+                self.sched_entries.setdefault((year, frozenset((hid, aid))), []).append({
+                    'period': m.get('matchupPeriodId'),
+                    'tier': m.get('playoffTierType') or 'NONE',
+                    'weeks': weeks,
+                    'scores': {hid: [h_pb[w] for w in weeks], aid: [a_pb[w] for w in weeks]},
+                })
+                count += 1
+            # Raw responses are large (cumulativeScore blobs); free them now
+            self._api_cache.pop((year, "mMatchupScore", "&view=mScoreboard"), None)
+            print(f"  ✓ {year}: {count} matchups with weekly scores")
+        return True
+
+    def apply_weekly_scores(self, all_matchups):
+        """Attach per-week scores to every matchup and collapse duplicates.
+
+        After this, every matchup is exactly ONE record whose 'score' is the
+        matchup total (the combined score for a two-week matchup) and which
+        also carries:
+          weeks            scoring weeks it covers, e.g. [13, 14] (or [5])
+          isTwoWeek        True for a two-week matchup
+          home/away.weeklyScores   per-week scores, aligned with 'weeks'
+          matchupPeriodId  ESPN's real matchup period
+          playoffType      ESPN's bracket tier (WINNERS_BRACKET, ...)
+        'week' becomes the first scoring week for every year.
+
+        2019 playoffs came from box_scores once per week, giving two identical
+        rows per two-week matchup; those are collapsed here (dropped rows are
+        counted in the log). Missing or inconsistent data aborts the run
+        (exit 1) rather than publishing wrong numbers.
+        """
+        print(f"\n{'='*80}")
+        print(" Applying Per-Week Scores to Matchups")
+        print(f"{'='*80}")
+        result = []
+        seen = set()
+        collapsed = 0
+        problems = []
+
+        for m in all_matchups:
+            year = m['year']
+            hid, aid = m['home']['teamId'], m['away']['teamId']
+            entries = self.sched_entries.get((year, frozenset((hid, aid))), [])
+            if year < 2019:
+                # team.schedule order == ESPN matchup period
+                entry = next((e for e in entries if e['period'] == m['week']), None)
+            else:
+                # box_scores are per scoring week
+                entry = next((e for e in entries if m['week'] in e['weeks']), None)
+            if entry is None:
+                problems.append(f"{year} week {m['week']}: no raw schedule entry for teams {hid}/{aid}")
+                continue
+
+            key = (year, entry['period'], frozenset((hid, aid)))
+            if key in seen:
+                collapsed += 1
+                continue
+            seen.add(key)
+
+            for side, tid in (('home', hid), ('away', aid)):
+                weekly = list(entry['scores'][tid])
+                if abs(sum(weekly) - m[side]['score']) > WEEKLY_TOLERANCE:
+                    msg = (f"{year} week {m['week']} {side}: weekly scores sum to {sum(weekly):.2f} "
+                           f"but matchup total is {m[side]['score']:.2f}")
+                    if year < self.end_year:
+                        problems.append(msg)
+                    else:
+                        # Current season: live scores can shift slightly between
+                        # the two requests. Trust the matchup total.
+                        print(f"    ⚠️  {msg} (current season - using the matchup total)")
+                        if len(weekly) == 1:
+                            weekly = [m[side]['score']]
+                m[side]['weeklyScores'] = weekly
+
+            m['weeks'] = list(entry['weeks'])
+            m['isTwoWeek'] = len(entry['weeks']) > 1
+            m['week'] = entry['weeks'][0]
+            m['matchupPeriodId'] = entry['period']
+            m['playoffType'] = entry['tier']
+            m['id'] = f"{year}_{m['week']}_{hid}_{aid}"
+            result.append(m)
+
+        if problems:
+            print(f"\n  ✗ {len(problems)} matchup(s) could not be matched to per-week scores:")
+            for line in problems[:10]:
+                print(f"     {line}")
+            print("  Aborting so inconsistent data is not published.")
+            sys.exit(1)
+
+        two_week = sum(1 for m in result if m['isTwoWeek'])
+        print(f"  ✓ {len(result)} matchups ({two_week} two-week), {collapsed} duplicate rows collapsed")
+        return result
 
     def _get_members(self, league):
         """Return league.members as an id -> member dict ({} if unavailable)."""
@@ -516,6 +650,8 @@ class ESPNDataCollectorV2:
                 'isHome': True,
                 'teamScore': matchup['home']['score'],
                 'opponentScore': matchup['away']['score'],
+                'teamWeekly': matchup['home']['weeklyScores'],
+                'opponentWeekly': matchup['away']['weeklyScores'],
                 'opponentOwner': away_owner,
                 'opponentName': matchup['away']['teamName']
             })
@@ -525,6 +661,8 @@ class ESPNDataCollectorV2:
                 'isHome': False,
                 'teamScore': matchup['away']['score'],
                 'opponentScore': matchup['home']['score'],
+                'teamWeekly': matchup['away']['weeklyScores'],
+                'opponentWeekly': matchup['home']['weeklyScores'],
                 'opponentOwner': home_owner,
                 'opponentName': matchup['home']['teamName']
             })
@@ -596,6 +734,8 @@ class ESPNDataCollectorV2:
                 ties = 0
                 points_for = []
                 points_against = []
+                weekly_for = []
+                weekly_against = []
                 win_margins = []
                 current_streak = {'type': None, 'length': 0}
                 longest_win_streak = 0
@@ -607,11 +747,15 @@ class ESPNDataCollectorV2:
                     if match['home']['owner'] == owner:
                         my_score = match['home']['score']
                         opp_score = match['away']['score']
+                        weekly_for.extend(match['home']['weeklyScores'])
+                        weekly_against.extend(match['away']['weeklyScores'])
                         i_won = match['winner'] == 'HOME'
                         i_lost = match['winner'] == 'AWAY'
                     else:
                         my_score = match['away']['score']
                         opp_score = match['home']['score']
+                        weekly_for.extend(match['away']['weeklyScores'])
+                        weekly_against.extend(match['home']['weeklyScores'])
                         i_won = match['winner'] == 'AWAY'
                         i_lost = match['winner'] == 'HOME'
                     
@@ -650,10 +794,10 @@ class ESPNDataCollectorV2:
                     'totalGames': len(matchups),
                     'pointsFor': sum(points_for),
                     'pointsAgainst': sum(points_against),
-                    'avgPointsFor': sum(points_for) / len(points_for) if points_for else 0,
-                    'avgPointsAgainst': sum(points_against) / len(points_against) if points_against else 0,
-                    'highestScore': max(points_for) if points_for else 0,
-                    'lowestScore': min(points_for) if points_for else 0,
+                    'avgPointsFor': sum(weekly_for) / len(weekly_for) if weekly_for else 0,
+                    'avgPointsAgainst': sum(weekly_against) / len(weekly_against) if weekly_against else 0,
+                    'highestScore': max(weekly_for) if weekly_for else 0,
+                    'lowestScore': min(weekly_for) if weekly_for else 0,
                     'biggestWin': max(win_margins) if win_margins else 0,
                     'closestWin': min(win_margins) if win_margins else 0,
                     'longestWinStreak': longest_win_streak,
@@ -671,10 +815,13 @@ class ESPNDataCollectorV2:
         (drops id, playoffType and teamAbbrev, which only matchups.json needs)."""
         def side(t):
             return {'teamId': t['teamId'], 'teamName': t['teamName'],
-                    'owner': t['owner'], 'score': t['score']}
+                    'owner': t['owner'], 'score': t['score'],
+                    'weeklyScores': t['weeklyScores']}
         return {
             'year': m['year'],
             'week': m['week'],
+            'weeks': m['weeks'],
+            'isTwoWeek': m['isTwoWeek'],
             'matchupPeriodId': m['matchupPeriodId'],
             'isPlayoff': m['isPlayoff'],
             'home': side(m['home']),
@@ -746,13 +893,19 @@ class ESPNDataCollectorV2:
             stats['mostMovesSeason'] = None
             stats['mostMovesSeasonYear'] = None
         
+        # Totals are summed over matchup totals (each matchup once). Averages
+        # are per WEEK played, since a two-week matchup holds two weeks of
+        # points; highest/lowest are true single-week scores.
         all_scores = [m['teamScore'] for m in matches]
+        weekly_scores = [w for m in matches for w in m['teamWeekly']]
+        weeks_played = len(weekly_scores)
+        stats['weeksPlayed'] = weeks_played
         stats['totalPointsFor'] = sum(all_scores)
         stats['totalPointsAgainst'] = sum(m['opponentScore'] for m in matches)
-        stats['avgPointsFor'] = stats['totalPointsFor'] / len(matches) if matches else 0
-        stats['avgPointsAgainst'] = stats['totalPointsAgainst'] / len(matches) if matches else 0
-        stats['highestScore'] = max(all_scores) if all_scores else 0
-        stats['lowestScore'] = min(all_scores) if all_scores else 0
+        stats['avgPointsFor'] = stats['totalPointsFor'] / weeks_played if weeks_played else 0
+        stats['avgPointsAgainst'] = stats['totalPointsAgainst'] / weeks_played if weeks_played else 0
+        stats['highestScore'] = max(weekly_scores) if weekly_scores else 0
+        stats['lowestScore'] = min(weekly_scores) if weekly_scores else 0
         stats['totalTrades'] = total_trades
         
         wins = [m for m in matches if self.is_winner(m)]
@@ -958,7 +1111,7 @@ class ESPNDataCollectorV2:
             scores = [m['teamScore'] for m in year_matches]
             record['pointsFor'] = sum(scores)
             record['pointsAgainst'] = sum(m['opponentScore'] for m in year_matches)
-            record['avgPointsFor'] = record['pointsFor'] / len(year_matches)
+            record['avgPointsFor'] = record['pointsFor'] / sum(len(m['weeks']) for m in year_matches)
             record['madePlayoffs'] = len(playoff_games) > 0
             
             if regular_games:
@@ -1002,60 +1155,95 @@ class ESPNDataCollectorV2:
         
         return superlatives
     
+    def _weekly_score_entries(self, m):
+        """One entry per team per SCORING WEEK of a matchup (two entries per
+        week; a two-week matchup yields four). 'week' is the actual scoring
+        week and the opponent score is that week's score, so every entry is a
+        true single-week result."""
+        entries = []
+        for i, wk in enumerate(m['weeks']):
+            for side, other in (('home', 'away'), ('away', 'home')):
+                entries.append({
+                    'score': m[side]['weeklyScores'][i],
+                    'team': m[side]['teamName'],
+                    'teamId': m[side]['teamId'],
+                    'owner': m[side]['owner'],
+                    'opponent': m[other]['teamName'],
+                    'opponentScore': m[other]['weeklyScores'][i],
+                    'year': m['year'],
+                    'week': wk,
+                    'matchupPeriodId': m['matchupPeriodId']
+                })
+        return entries
+
+    def _margin_record(self, m):
+        """Winner/loser/margin for a decided matchup (matchup totals)."""
+        winner_data = m['home'] if m['winner'] == 'HOME' else m['away']
+        loser_data = m['away'] if m['winner'] == 'HOME' else m['home']
+        return {
+            'margin': abs(m['home']['score'] - m['away']['score']),
+            'winner': winner_data['teamName'],
+            'winnerOwner': winner_data['owner'],
+            'winnerTeamId': winner_data['teamId'],
+            'winnerScore': winner_data['score'],
+            'loser': loser_data['teamName'],
+            'loserScore': loser_data['score'],
+            'year': m['year'],
+            'week': m['week'],
+            'weeks': m['weeks'],
+            'isTwoWeek': m['isTwoWeek'],
+            'matchupPeriodId': m['matchupPeriodId']
+        }
+
+    def _combined_record(self, m):
+        """Both teams' matchup totals added together (matchup totals)."""
+        return {
+            'total': m['home']['score'] + m['away']['score'],
+            'team1': m['home']['teamName'],
+            'owner1': m['home']['owner'],
+            'score1': m['home']['score'],
+            'team2': m['away']['teamName'],
+            'owner2': m['away']['owner'],
+            'score2': m['away']['score'],
+            'teamId': m['home']['teamId'],
+            'year': m['year'],
+            'week': m['week'],
+            'weeks': m['weeks'],
+            'isTwoWeek': m['isTwoWeek'],
+            'matchupPeriodId': m['matchupPeriodId']
+        }
+
+    def _two_week_companion(self, main, best_two_week, field, higher_is_better):
+        """The two-week-matchup record to show beneath a single-week record,
+        or None when it would not beat the single-week record (a two-week
+        matchup that isn't a bigger/lower record isn't worth a line)."""
+        if not best_two_week:
+            return None
+        if main is None:
+            return best_two_week
+        if higher_is_better and best_two_week[field] > main[field]:
+            return best_two_week
+        if not higher_is_better and best_two_week[field] < main[field]:
+            return best_two_week
+        return None
+
     def calculate_single_superlatives(self, matchups, label):
-        """Calculate superlatives for a set of matchups"""
+        """Calculate superlatives for a set of matchups.
+
+        Highest/lowest score and the Top 10 lists use true single-week scores
+        (a two-week matchup contributes its two real weekly scores). Closest
+        Win uses all matchups. Biggest Blowout and Highest/Lowest Scoring Game
+        compare matchup totals, so the main record uses single-week matchups
+        only, with a '...TwoWeek' companion when a two-week matchup beats it.
+        """
         if not matchups:
             return {}
         
         print(f"  Calculating {label} superlatives...")
         
-        # Detect 2-week playoff matchups by finding duplicate matchups in consecutive weeks
-        two_week_playoff_weeks = set()
-        
-        for m in matchups:
-            if m['isPlayoff']:
-                # Look for the same matchup in the next week (2-week playoff)
-                for m2 in matchups:
-                    if (m2['isPlayoff'] and 
-                        m2['year'] == m['year'] and 
-                        m2['week'] == m['week'] + 1 and
-                        ((m2['home']['teamId'] == m['home']['teamId'] and m2['away']['teamId'] == m['away']['teamId']) or
-                         (m2['home']['teamId'] == m['away']['teamId'] and m2['away']['teamId'] == m['home']['teamId']))):
-                        # Found a 2-week playoff - skip the second week
-                        two_week_playoff_weeks.add((m2['year'], m2['week']))
-        
-        # Track individual scores - filter out 2-week playoff duplicates
         all_scores = []
-        
         for m in matchups:
-            # Skip second week of 2-week playoff matchups
-            if (m['year'], m['week']) in two_week_playoff_weeks:
-                continue
-            
-            all_scores.append({
-                'score': m['home']['score'],
-                'team': m['home']['teamName'],
-                'teamId': m['home']['teamId'],
-                'owner': m['home']['owner'],
-                'opponent': m['away']['teamName'],
-                'opponentScore': m['away']['score'],
-                'year': m['year'],
-                'week': m['week'],
-                'matchupPeriodId': m['matchupPeriodId']
-            })
-            all_scores.append({
-                'score': m['away']['score'],
-                'team': m['away']['teamName'],
-                'teamId': m['away']['teamId'],
-                'owner': m['away']['owner'],
-                'opponent': m['home']['teamName'],
-                'opponentScore': m['home']['score'],
-                'year': m['year'],
-                'week': m['week'],
-                'matchupPeriodId': m['matchupPeriodId']
-            })
-        
-        # Rest stays the same...
+            all_scores.extend(self._weekly_score_entries(m))
         
         non_zero_scores = [s for s in all_scores if s['score'] > 0]
         sorted_high = sorted(all_scores, key=lambda x: x['score'], reverse=True)
@@ -1068,60 +1256,37 @@ class ESPNDataCollectorV2:
             'top10LowestScores': sorted_low[:10]
         }
         
-        matchup_margins = []
-        for m in matchups:
-            if m['winner'] == 'TIE':
-                continue
-            
-            margin = abs(m['home']['score'] - m['away']['score'])
-            winner_data = m['home'] if m['winner'] == 'HOME' else m['away']
-            loser_data = m['away'] if m['winner'] == 'HOME' else m['home']
-            
-            matchup_margins.append({
-                'margin': margin,
-                'winner': winner_data['teamName'],
-                'winnerTeamId': winner_data['teamId'],
-                'winnerScore': winner_data['score'],
-                'loser': loser_data['teamName'],
-                'loserScore': loser_data['score'],
-                'year': m['year'],
-                'week': m['week'],
-                'matchupPeriodId': m['matchupPeriodId']
-            })
-        
-        # Just keep it simple - no owner names needed
-        if matchup_margins:
-            superlatives['closestWin'] = min(matchup_margins, key=lambda x: x['margin'])
-            superlatives['biggestBlowout'] = max(matchup_margins, key=lambda x: x['margin'])
+        margins = [self._margin_record(m) for m in matchups if m['winner'] != 'TIE']
+        single_margins = [r for r in margins if not r['isTwoWeek']]
+        two_margins = [r for r in margins if r['isTwoWeek']]
+        if margins:
+            superlatives['closestWin'] = min(margins, key=lambda x: x['margin'])
+        if single_margins:
+            superlatives['biggestBlowout'] = max(single_margins, key=lambda x: x['margin'])
+        superlatives['biggestBlowoutTwoWeek'] = self._two_week_companion(
+            superlatives.get('biggestBlowout'),
+            max(two_margins, key=lambda x: x['margin']) if two_margins else None,
+            'margin', True)
 
-        # For combined scoring, add owner names
-        combined_scores = []
-        for m in matchups:
-            # Skip second week of 2-week playoff matchups
-            if (m['year'], m['week']) in two_week_playoff_weeks:
-                continue
-                
-            total = m['home']['score'] + m['away']['score']
-            combined_scores.append({
-                'total': total,
-                'team1': m['home']['teamName'],
-                'owner1': m['home']['owner'],
-                'score1': m['home']['score'],
-                'team2': m['away']['teamName'],
-                'owner2': m['away']['owner'],
-                'score2': m['away']['score'],
-                'year': m['year'],
-                'week': m['week'],
-                'matchupPeriodId': m['matchupPeriodId']
-            })
-        
-        non_zero_combined = [s for s in combined_scores if s['score1'] > 0 and s['score2'] > 0]
-        
-        superlatives['highestScoringGame'] = max(combined_scores, key=lambda x: x['total'])
-        superlatives['lowestScoringGame'] = min(non_zero_combined, key=lambda x: x['total']) if non_zero_combined else None
+        combined = [self._combined_record(m) for m in matchups]
+        single_combined = [c for c in combined if not c['isTwoWeek']]
+        two_combined = [c for c in combined if c['isTwoWeek']]
+        non_zero_single = [c for c in single_combined if c['score1'] > 0 and c['score2'] > 0]
+        non_zero_two = [c for c in two_combined if c['score1'] > 0 and c['score2'] > 0]
+
+        superlatives['highestScoringGame'] = max(single_combined, key=lambda x: x['total']) if single_combined else None
+        superlatives['highestScoringGameTwoWeek'] = self._two_week_companion(
+            superlatives['highestScoringGame'],
+            max(two_combined, key=lambda x: x['total']) if two_combined else None,
+            'total', True)
+        superlatives['lowestScoringGame'] = min(non_zero_single, key=lambda x: x['total']) if non_zero_single else None
+        superlatives['lowestScoringGameTwoWeek'] = self._two_week_companion(
+            superlatives['lowestScoringGame'],
+            min(non_zero_two, key=lambda x: x['total']) if non_zero_two else None,
+            'total', False)
         
         return superlatives
-    
+
     def calculate_all_time_streaks(self, matchups):
         """Calculate longest win and loss streaks across all owners"""
         owner_games = defaultdict(list)
@@ -1129,6 +1294,7 @@ class ESPNDataCollectorV2:
             owner_games[m['home']['owner']].append({
                 'year': m['year'],
                 'week': m['week'],
+                'period': m['matchupPeriodId'],
                 'won': m['winner'] == 'HOME',
                 'lost': m['winner'] == 'AWAY',
                 'teamName': m['home']['teamName']
@@ -1136,6 +1302,7 @@ class ESPNDataCollectorV2:
             owner_games[m['away']['owner']].append({
                 'year': m['year'],
                 'week': m['week'],
+                'period': m['matchupPeriodId'],
                 'won': m['winner'] == 'AWAY',
                 'lost': m['winner'] == 'HOME',
                 'teamName': m['away']['teamName']
@@ -1164,43 +1331,52 @@ class ESPNDataCollectorV2:
         }
 
     def calculate_weekly_performance(self, matchups):
-        """Calculate weekly high/low scorer stats and consolation dollars"""
+        """Weekly high/low scorer counts (every scoring week, using true
+        single-week scores) and consolation dollars (regular season only,
+        from CONSOLATION_START_YEAR - the weeks the dollar was actually paid)."""
         weekly_scores = defaultdict(list)
         for m in matchups:
-            key = (m['year'], m['week'])
-            weekly_scores[key].append({
-                'owner': m['home']['owner'],
-                'teamName': m['home']['teamName'],
-                'score': m['home']['score'],
-                'won': m['winner'] == 'HOME'
-            })
-            weekly_scores[key].append({
-                'owner': m['away']['owner'],
-                'teamName': m['away']['teamName'],
-                'score': m['away']['score'],
-                'won': m['winner'] == 'AWAY'
-            })
+            for i, wk in enumerate(m['weeks']):
+                key = (m['year'], wk)
+                weekly_scores[key].append({
+                    'owner': m['home']['owner'],
+                    'score': m['home']['weeklyScores'][i]
+                })
+                weekly_scores[key].append({
+                    'owner': m['away']['owner'],
+                    'score': m['away']['weeklyScores'][i]
+                })
         
         high_scorer_count = defaultdict(int)
         low_scorer_count = defaultdict(int)
         consolation_count = defaultdict(int)
         
-        for (year, week), scores in weekly_scores.items():
+        for scores in weekly_scores.values():
             if not scores:
                 continue
-            
             sorted_scores = sorted(scores, key=lambda x: x['score'], reverse=True)
-            
-            highest = sorted_scores[0]
-            high_scorer_count[highest['owner']] += 1
-            
-            lowest = sorted_scores[-1]
-            low_scorer_count[lowest['owner']] += 1
-            
-            if len(sorted_scores) >= 2:
-                second_highest = sorted_scores[1]
-                if not second_highest['won']:
-                    consolation_count[second_highest['owner']] += 1
+            high_scorer_count[sorted_scores[0]['owner']] += 1
+            low_scorer_count[sorted_scores[-1]['owner']] += 1
+        
+        consolation_weeks = defaultdict(list)
+        for m in matchups:
+            if m['isPlayoff'] or m['year'] < CONSOLATION_START_YEAR:
+                continue
+            key = (m['year'], m['week'])
+            consolation_weeks[key].append({
+                'owner': m['home']['owner'],
+                'score': m['home']['score'],
+                'won': m['winner'] == 'HOME'
+            })
+            consolation_weeks[key].append({
+                'owner': m['away']['owner'],
+                'score': m['away']['score'],
+                'won': m['winner'] == 'AWAY'
+            })
+        for scores in consolation_weeks.values():
+            sorted_scores = sorted(scores, key=lambda x: x['score'], reverse=True)
+            if len(sorted_scores) >= 2 and not sorted_scores[1]['won']:
+                consolation_count[sorted_scores[1]['owner']] += 1
         
         high_owners, high_count = self._counter_ties_at_max(high_scorer_count)
         low_owners, low_count = self._counter_ties_at_max(low_scorer_count)
@@ -1307,68 +1483,40 @@ class ESPNDataCollectorV2:
             
             print(f"  Processing {year}...")
             
-            # Basic superlatives for this season
+            # Basic superlatives for this season. Highest/lowest score use true
+            # single-week scores; closest win uses all matchups; biggest
+            # blowout uses single-week matchups with a two-week companion
+            # (same rules as the all-time superlatives).
             all_scores = []
             for m in year_matchups:
-                all_scores.append({
-                    'score': m['home']['score'],
-                    'team': m['home']['teamName'],
-                    'owner': m['home']['owner'],
-                    'opponent': m['away']['teamName'],
-                    'opponentScore': m['away']['score'],
-                    'year': m['year'],
-                    'teamId': m['home']['teamId'],
-                    'week': m['week'],
-                    'matchupPeriodId': m['matchupPeriodId']
-                })
-                all_scores.append({
-                    'score': m['away']['score'],
-                    'team': m['away']['teamName'],
-                    'owner': m['away']['owner'],
-                    'opponent': m['home']['teamName'],
-                    'opponentScore': m['home']['score'],
-                    'year': m['year'],
-                    'teamId': m['away']['teamId'],
-                    'week': m['week'],
-                    'matchupPeriodId': m['matchupPeriodId']
-                })
+                all_scores.extend(self._weekly_score_entries(m))
             
             sorted_scores = sorted(all_scores, key=lambda x: x['score'], reverse=True)
             non_zero = [s for s in all_scores if s['score'] > 0]
             sorted_low = sorted(non_zero, key=lambda x: x['score'])
             
-            # Closest/biggest wins
-            matchup_margins = []
-            for m in year_matchups:
-                if m['winner'] == 'TIE':
-                    continue
-                margin = abs(m['home']['score'] - m['away']['score'])
-                winner_data = m['home'] if m['winner'] == 'HOME' else m['away']
-                loser_data = m['away'] if m['winner'] == 'HOME' else m['home']
-                matchup_margins.append({
-                    'margin': margin,
-                    'winner': winner_data['teamName'],
-                    'winnerOwner': winner_data['owner'],
-                    'winnerScore': winner_data['score'],
-                    'winnerTeamId': winner_data['teamId'],
-                    'loser': loser_data['teamName'],
-                    'loserScore': loser_data['score'],
-                    'year': m['year'],
-                    'week': m['week'],
-                    'matchupPeriodId': m['matchupPeriodId']
-                })
+            matchup_margins = [self._margin_record(m) for m in year_matchups if m['winner'] != 'TIE']
+            single_margins = [r for r in matchup_margins if not r['isTwoWeek']]
+            two_margins = [r for r in matchup_margins if r['isTwoWeek']]
+            season_blowout = max(single_margins, key=lambda x: x['margin']) if single_margins else None
+            season_blowout_two_week = self._two_week_companion(
+                season_blowout,
+                max(two_margins, key=lambda x: x['margin']) if two_margins else None,
+                'margin', True)
             
             # Streaks for this season
             owner_games = defaultdict(list)
             for m in year_matchups:
                 owner_games[m['home']['owner']].append({
                     'week': m['week'],
+                    'period': m['matchupPeriodId'],
                     'won': m['winner'] == 'HOME',
                     'lost': m['winner'] == 'AWAY',
                     'teamName': m['home']['teamName']
                 })
                 owner_games[m['away']['owner']].append({
                     'week': m['week'],
+                    'period': m['matchupPeriodId'],
                     'won': m['winner'] == 'AWAY',
                     'lost': m['winner'] == 'HOME',
                     'teamName': m['away']['teamName']
@@ -1381,15 +1529,15 @@ class ESPNDataCollectorV2:
             season_win_owners = [d['owner'] for d in season_win_ties]
             season_loss_owners = [d['owner'] for d in season_loss_ties]
 
-            # Per-owner week ranges for linking - safe to build a simple
-            # week-number list here (unlike the all-time version) since a
-            # season-level streak never crosses a year boundary.
+            # Per-owner matchup periods of each streak, for the scoreboard
+            # links (the page links by matchup period; a two-week playoff
+            # matchup is one period, so it counts as one game in the streak).
             season_win_streaks = [
-                {'owner': d['owner'], 'weeks': list(range(d['startWeek'], d['endWeek'] + 1))}
+                {'owner': d['owner'], 'weeks': d['periods']}
                 for d in season_win_ties
             ]
             season_loss_streaks = [
-                {'owner': d['owner'], 'weeks': list(range(d['startWeek'], d['endWeek'] + 1))}
+                {'owner': d['owner'], 'weeks': d['periods']}
                 for d in season_loss_ties
             ]
 
@@ -1449,7 +1597,7 @@ class ESPNDataCollectorV2:
                 weekly_payout = 10  # $10/week
 
             # Consolation dollar introduced in 2020
-            has_consolation = year >= 2020
+            has_consolation = year >= CONSOLATION_START_YEAR
 
             for week, scores in weekly_scores.items():
                 if not scores:
@@ -1533,7 +1681,8 @@ class ESPNDataCollectorV2:
                 'highestScore': sorted_scores[0] if sorted_scores else None,
                 'lowestScore': sorted_low[0] if sorted_low else None,
                 'closestWin': min(matchup_margins, key=lambda x: x['margin']) if matchup_margins else None,
-                'biggestBlowout': max(matchup_margins, key=lambda x: x['margin']) if matchup_margins else None,
+                'biggestBlowout': season_blowout,
+                'biggestBlowoutTwoWeek': season_blowout_two_week,
                 'longestWinStreak': longest_win,
                 'longestLossStreak': longest_loss,
                 'mostWeeklyHighScores': {
@@ -1640,6 +1789,126 @@ class ESPNDataCollectorV2:
                 print(f"      ✗ No bench data available")
         
         return bench_points_by_season
+
+    def _summarize_two_week(self, rows):
+        """Counts and rates for a list of two-week matchup rows."""
+        decided = [r for r in rows if r['week1Leader'] is not None]
+        comebacks = [r for r in decided if r['outcome'] == 'COMEBACK']
+        held = [r for r in decided if r['outcome'] == 'HELD']
+        tied_overall = [r for r in decided if r['outcome'] == 'TIED']
+        largest = max(comebacks, key=lambda r: r['week1Lead']) if comebacks else None
+        return {
+            'matchups': len(rows),
+            'week1Ties': len(rows) - len(decided),
+            'decidedAfterWeek1': len(decided),
+            'comebacks': len(comebacks),
+            'held': len(held),
+            'tiedOverall': len(tied_overall),
+            'comebackRate': len(comebacks) / len(decided) if decided else None,
+            'avgWeek1Lead': sum(r['week1Lead'] for r in decided) / len(decided) if decided else None,
+            'avgLeadOvercome': sum(r['week1Lead'] for r in comebacks) / len(comebacks) if comebacks else None,
+            'avgLeadHeld': sum(r['week1Lead'] for r in held) / len(held) if held else None,
+            'largestComeback': ({
+                'year': largest['year'], 'weeks': largest['weeks'],
+                'lead': largest['week1Lead'], 'bracket': largest['bracket'],
+                'leader': largest[largest['week1Leader']]['owner'],
+                'winner': largest[largest['winner']]['owner'],
+            } if largest else None),
+        }
+
+    def analyze_two_week_playoffs(self, all_matchups):
+        """Was the two-week playoff format ever decisive? For every two-week
+        matchup (all brackets, flagged by bracket tier), compare who led after
+        week 1 with who won overall. A COMEBACK is a team that trailed after
+        week 1 and won on the two-week total. Built from the true per-week
+        scores, so it covers every season ESPN recorded as two-week."""
+        print(f"\n{'='*80}")
+        print(" Analyzing Two-Week Playoff Matchups")
+        print(f"{'='*80}")
+
+        two_week = [m for m in all_matchups if m['isTwoWeek']]
+        periods_by_year = defaultdict(set)
+        for m in two_week:
+            periods_by_year[m['year']].add(m['matchupPeriodId'])
+
+        rows = []
+        for m in sorted(two_week, key=lambda x: (x['year'], x['matchupPeriodId'], x['id'])):
+            if len(m['weeks']) != 2:
+                print(f"  ⚠️  Skipping {m['year']} matchup spanning {len(m['weeks'])} weeks")
+                continue
+            year = m['year']
+            round_no = sorted(periods_by_year[year]).index(m['matchupPeriodId']) + 1
+            last_round = len(periods_by_year[year])
+            h, a = m['home'], m['away']
+            h1, h2 = h['weeklyScores']
+            a1, a2 = a['weeklyScores']
+
+            if h1 == a1:
+                leader = None
+            else:
+                leader = 'home' if h1 > a1 else 'away'
+            winner = {'HOME': 'home', 'AWAY': 'away'}.get(m['winner'])
+            if leader is None:
+                outcome = 'WEEK1_TIE'
+            elif winner is None:
+                outcome = 'TIED'
+            elif winner == leader:
+                outcome = 'HELD'
+            else:
+                outcome = 'COMEBACK'
+
+            trailer = None if leader is None else ('away' if leader == 'home' else 'home')
+            week2 = {'home': h2, 'away': a2}
+            tier = m['playoffType']
+            side = lambda t, w1, w2: {
+                'owner': t['owner'], 'teamName': t['teamName'], 'teamId': t['teamId'],
+                'week1': w1, 'week2': w2, 'total': t['score']
+            }
+            rows.append({
+                'year': year,
+                'matchupPeriodId': m['matchupPeriodId'],
+                'weeks': m['weeks'],
+                'round': round_no,
+                'bracket': tier,
+                'isWinnersBracket': tier == 'WINNERS_BRACKET',
+                'isChampionship': tier == 'WINNERS_BRACKET' and round_no == last_round,
+                'home': side(h, h1, h2),
+                'away': side(a, a1, a2),
+                'week1Leader': leader,
+                'winner': winner,
+                'week1Lead': round(abs(h1 - a1), 2),
+                'week2Swing': None if leader is None else round(week2[trailer] - week2[leader], 2),
+                'finalMargin': round(abs(h['score'] - a['score']), 2),
+                'outcome': outcome
+            })
+
+        winners = [r for r in rows if r['isWinnersBracket']]
+        others = [r for r in rows if not r['isWinnersBracket']]
+        by_year = []
+        for year in sorted(periods_by_year):
+            yr = [r for r in rows if r['year'] == year]
+            summary = self._summarize_two_week(yr)
+            by_year.append({'year': year, **{k: summary[k] for k in
+                            ('matchups', 'week1Ties', 'comebacks', 'held', 'tiedOverall')}})
+
+        result = {
+            'summary': {
+                'all': self._summarize_two_week(rows),
+                'winnersBracket': self._summarize_two_week(winners),
+                'otherBrackets': self._summarize_two_week(others)
+            },
+            'byYear': by_year,
+            'matchups': rows,
+            'meta': {
+                'twoWeekYears': sorted(periods_by_year),
+                'oneWeekPlayoffYears': sorted(
+                    {m['year'] for m in all_matchups if m['isPlayoff']} - set(periods_by_year))
+            }
+        }
+        total = result['summary']['all']
+        print(f"  ✓ {total['matchups']} two-week matchups ({len(winners)} winners' bracket) in "
+              f"{len(periods_by_year)} seasons; {total['comebacks']} comebacks")
+        return result
 
     def _matchup_is_final(self, box_score):
         """Whether a box_scores() matchup has actually finished, checked
@@ -2974,10 +3243,11 @@ class ESPNDataCollectorV2:
     def _compute_owner_streaks(self, owner_games):
         """For each owner, walk their games in chronological order and find
         their OWN best win streak and best loss streak (length plus detail:
-        team, start/end year+week, whether it's still active as of their
-        most recent game). Games only need 'won'/'lost' booleans and 'week';
-        'year' and 'teamName' are optional and included in the detail when
-        present. Returns (best_win_by_owner, best_loss_by_owner) dicts."""
+        team, start/end year+week, the matchup periods of the games in the
+        streak, whether it's still active as of their most recent game).
+        Games only need 'won'/'lost' booleans and 'week'; 'year', 'period'
+        and 'teamName' are optional. Returns (best_win_by_owner,
+        best_loss_by_owner) dicts."""
         best_win = {}
         best_loss = {}
 
@@ -2986,17 +3256,23 @@ class ESPNDataCollectorV2:
 
             current_win = 0
             current_win_start = None
+            current_win_periods = []
             current_loss = 0
             current_loss_start = None
+            current_loss_periods = []
 
             for i, game in enumerate(games):
                 is_last = (i == len(games) - 1)
+                period = game.get('period', game['week'])
 
                 if game['won']:
                     if current_win == 0:
                         current_win_start = game
+                        current_win_periods = []
                     current_win += 1
+                    current_win_periods.append(period)
                     current_loss = 0
+                    current_loss_periods = []
 
                     if owner not in best_win or current_win > best_win[owner]['length']:
                         best_win[owner] = {
@@ -3007,13 +3283,17 @@ class ESPNDataCollectorV2:
                             'startWeek': current_win_start['week'],
                             'endYear': game.get('year'),
                             'endWeek': game['week'],
+                            'periods': list(current_win_periods),
                             'isOngoing': is_last
                         }
                 elif game['lost']:
                     if current_loss == 0:
                         current_loss_start = game
+                        current_loss_periods = []
                     current_loss += 1
+                    current_loss_periods.append(period)
                     current_win = 0
+                    current_win_periods = []
 
                     if owner not in best_loss or current_loss > best_loss[owner]['length']:
                         best_loss[owner] = {
@@ -3024,11 +3304,14 @@ class ESPNDataCollectorV2:
                             'startWeek': current_loss_start['week'],
                             'endYear': game.get('year'),
                             'endWeek': game['week'],
+                            'periods': list(current_loss_periods),
                             'isOngoing': is_last
                         }
                 else:
                     current_win = 0
+                    current_win_periods = []
                     current_loss = 0
+                    current_loss_periods = []
 
         return best_win, best_loss
 
@@ -3327,10 +3610,15 @@ class ESPNDataCollectorV2:
             sys.exit(1)
         
         all_matchups = self.process_all_matchups()
+        if not self.fetch_schedule_data():
+            print("\n✗ Per-week scores could not be fetched for every season. Aborting so inconsistent data is not published.")
+            sys.exit(1)
+        all_matchups = self.apply_weekly_scores(all_matchups)
         team_stats = self.calculate_team_stats(all_matchups)
         team_stats = self.calculate_player_loyalty_stats(team_stats)
         h2h_stats = self.calculate_head_to_head_stats(all_matchups, team_stats)
         superlatives = self.calculate_superlatives(all_matchups)
+        two_week_analysis = self.analyze_two_week_playoffs(all_matchups)
         keepers_by_year = self.fetch_keeper_data_by_year()
         season_stats = self.calculate_season_stats(
             all_matchups,
@@ -3350,6 +3638,7 @@ class ESPNDataCollectorV2:
         self.save_output(superlatives, 'superlatives.json')
         self.save_output(season_stats, 'season_stats.json')
         self.save_output(transaction_analysis, 'transaction_analysis.json')
+        self.save_output(two_week_analysis, 'two_week_playoff_analysis.json')
         self.save_output(settings_history, 'settings_history.json')
         
         metadata = {

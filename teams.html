@@ -504,6 +504,7 @@
             <a href="head-to-head.html">Head-to-Head</a>
             <a href="season-stats.html">Season Stats</a>
             <a href="league-history.html">League History</a>
+            <a href="two-week-playoffs.html">Two-Week Playoffs</a>
             <!--<a href="rosters.html">Rosters</a>-->
             <!--<a href="roasts.html">Roasts</a>-->
         </nav>
@@ -772,7 +773,7 @@
                         <span class="stat-value ${currentSort === 'pointsFor' ? 'highlight' : ''}">${team.totalPointsFor.toFixed(2)}</span>
                     </div>
                     <div class="stat-row">
-                        <span class="stat-label">Avg Points For</span>
+                        <span class="stat-label">Avg Points For (per week)</span>
                         <span class="stat-value ${currentSort === 'avgPoints' ? 'highlight' : ''}">${team.avgPointsFor.toFixed(2)}</span>
                     </div>
                     <div class="stat-row">
@@ -780,15 +781,15 @@
                         <span class="stat-value ${currentSort === 'pointsAgainst' ? 'highlight' : ''}">${team.totalPointsAgainst.toFixed(2)}</span>
                     </div>
                     <div class="stat-row">
-                        <span class="stat-label">Avg Points Against</span>
+                        <span class="stat-label">Avg Points Against (per week)</span>
                         <span class="stat-value">${team.avgPointsAgainst.toFixed(2)}</span>
                     </div>
                     <div class="stat-row">
-                        <span class="stat-label">Highest Score</span>
+                        <span class="stat-label">Highest Score (single week)</span>
                         <span class="stat-value">${team.highestScore.toFixed(2)}</span>
                     </div>
                     <div class="stat-row">
-                        <span class="stat-label">Lowest Score</span>
+                        <span class="stat-label">Lowest Score (single week)</span>
                         <span class="stat-value">${team.lowestScore.toFixed(2)}</span>
                     </div>
 

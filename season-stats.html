@@ -650,6 +650,7 @@
         <a href="head-to-head.html">Head-to-Head</a>
         <a href="season-stats.html" class="active">Season Stats</a>
         <a href="league-history.html">League History</a>
+        <a href="two-week-playoffs.html">Two-Week Playoffs</a>
         <!--<a href="rosters.html">Rosters</a>-->
         <!--<a href="roasts.html">Roasts</a>-->
     </nav>
@@ -736,6 +737,12 @@
 
     function createStandingsLink(year) {
         return `https://fantasy.espn.com/football/league/standings?leagueId=${LEAGUE_ID}&seasonId=${year}`;
+    }
+
+    // "Wk 13" or, for a two-week playoff matchup, "Wk 13-14"
+    function weekLabelShort(rec) {
+        const w = rec.weeks;
+        return (w && w.length > 1) ? `Wk ${w[0]}\u2013${w[w.length - 1]}` : `Wk ${rec.week}`;
     }
 
     function firstName(fullName) {
@@ -882,7 +889,7 @@
                         <div class="stat-title">Closest Win</div>
                         <div class="stat-content">${season.closestWin.margin.toFixed(2)}</div>
                         <div class="stat-details">${season.closestWin.winner} vs ${season.closestWin.loser}<br>
-                            <a href="${createBoxScoreLink(season.closestWin)}" target="_blank">Wk ${season.closestWin.week}</a>
+                            <a href="${createBoxScoreLink(season.closestWin)}" target="_blank">${weekLabelShort(season.closestWin)}</a>${season.closestWin.isTwoWeek ? ' <em>(two-week matchup)</em>' : ''}
                         </div>
                     </div>` : ''}
 
@@ -891,7 +898,13 @@
                         <div class="stat-title">Biggest Blowout</div>
                         <div class="stat-content">${season.biggestBlowout.margin.toFixed(2)}</div>
                         <div class="stat-details">${season.biggestBlowout.winner} vs ${season.biggestBlowout.loser}<br>
-                            <a href="${createBoxScoreLink(season.biggestBlowout)}" target="_blank">Wk ${season.biggestBlowout.week}</a>
+                            <a href="${createBoxScoreLink(season.biggestBlowout)}" target="_blank">${weekLabelShort(season.biggestBlowout)}</a>
+                            ${season.biggestBlowoutTwoWeek ? `
+                            <div style="margin-top:6px; padding-top:6px; border-top:1px dashed rgba(255,215,0,0.35);">
+                                Two-week matchup record: <strong style="color:var(--gold);">${season.biggestBlowoutTwoWeek.margin.toFixed(2)}</strong><br>
+                                ${season.biggestBlowoutTwoWeek.winner} vs ${season.biggestBlowoutTwoWeek.loser}<br>
+                                <a href="${createBoxScoreLink(season.biggestBlowoutTwoWeek)}" target="_blank">${weekLabelShort(season.biggestBlowoutTwoWeek)}</a>
+                            </div>` : ''}
                         </div>
                     </div>` : ''}
 
