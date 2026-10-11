@@ -512,11 +512,10 @@
                 document.getElementById('content').innerHTML = `
                     <p class="intro">
                         Playoff matchups in <strong>${yearsText(years)}</strong> were decided on the <strong>combined score of two weeks</strong>;
-                        ${oneWeek.length ? 'in the other seasons they were a single week.' : ''}
-                        The question: when a team was <strong>losing after week 1</strong>, did it ever make up the difference in week 2 &mdash;
+                        ${oneWeek.length ? 'in all other seasons they have been a single week.' : ''}
+                        The question: when a team was <strong>losing after week 1</strong>, did it ever make up the difference in week 2
                         or was the second week just a formality? Below are all <strong>${total}</strong> two-week matchups
                         (${winners} in the winners&rsquo; bracket, the rest consolation and third-place games), each compared week by week.
-                        With a sample this small, read the counts as well as the percentages.
                     </p>
                     <div class="filter-pills">
                         <span class="filter-pill active" data-filter="all" onclick="setFilter('all')">All matchups</span>
