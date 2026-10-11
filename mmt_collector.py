@@ -1,6 +1,6 @@
-#v2.63
-#01oct26
-#positionLimits: hardcode IDs 7 (Punter) and 15 (Defensive Player), confirmed via ESPN roster-settings UI; suppress 0<->-1 sentinel flips ("N/A" display change ESPN made in 2023) so they stop showing as false limit changes
+#v2.7
+#06oct26
+#abort (exit 1) if any season fails to fetch, exit 2 on expired cookies, retries + logged week errors, bench points gathered in matchup pass, _direct_api memoized, owner/team lookup helpers, final week from matchup_periods, removed roster_analysis/two_week outputs and unused fields, skip final_standing 0 (in-progress season) in playoff detection
 #!/usr/bin/env python3
 """
 ESPN Fantasy Football Data Collector using espn-api library
@@ -14,7 +14,10 @@ from collections import defaultdict, Counter
 import os
 import argparse
 import requests
+import sys
+import time
 from dotenv import load_dotenv
+from espn_api.requests.espn_requests import ESPNAccessDenied
 
 load_dotenv("/home/pi/fantasystats/.env")
 load_dotenv()                               # local: finds a .env next to the script
@@ -22,6 +25,7 @@ load_dotenv()                               # local: finds a .env next to the sc
 # Configuration
 LEAGUE_ID = 1483079
 OUTPUT_DIR = "output"
+MAX_FETCH_ATTEMPTS = 3   # per-season / per-request retries before giving up
 
 # Hardcoded keeper identities (2017-2021), manual point overrides for keepers
 # ESPN has scrubbed from historical API data, and season-stats-page notes for
@@ -70,91 +74,122 @@ class ESPNDataCollectorV2:
             (5, 2015): 'Loren Kessell',
             (8, 2015): 'Rob Cahill',
         }
+        # Lookup maps built once after seasons are fetched (_build_owner_maps)
+        self.leagues = {}       # year -> League
+        self.team_owner = {}    # (year, team_id) -> owner name (corrections applied)
+        self.owner_team = {}    # (year, owner) -> Team (first match wins)
+        # Memoized successful _direct_api responses; cleared per season in
+        # fetch_keeper_data_by_year to keep memory bounded on the Pi.
+        self._api_cache = {}
+        # Bench points gathered during the matchup pass: year -> {team_id: total}
+        self._bench_points = {}
     
     def fetch_all_seasons(self):
-        """Fetch data for all seasons using espn-api library"""
+        """Fetch data for all seasons using espn-api library.
+
+        Each season is retried up to MAX_FETCH_ATTEMPTS times. Expired or
+        invalid ESPN cookies (ESPNAccessDenied) are never retried - they
+        propagate to main(), which exits with code 2. Returns True only if
+        EVERY season in the configured range was fetched: a partial set would
+        silently understate all-time records, so the caller aborts instead
+        of publishing it.
+        """
         print(f"\n{'='*80}")
         print(" Fetching Season Data")
         print(f"{'='*80}")
-        
+
+        failed_years = []
+
         for year in range(self.start_year, self.end_year + 1):
-            try:
-                print(f"\n  Fetching {year} season...")
-                
-                league = League(
-                    league_id=self.league_id,
-                    year=year,
-                    espn_s2=self.espn_s2,
-                    swid=self.swid
-                )
-                
-                print(f"    ✓ League: {league.settings.name}")
-                print(f"    ✓ Teams: {len(league.teams)}")
-                print(f"    ✓ Weeks: {league.current_week if hasattr(league, 'current_week') else 'N/A'}")
-                
-                self.all_seasons.append({
-                    'year': year,
-                    'league': league
-                })
-                
-            except Exception as e:
-                print(f"    ✗ Error fetching {year}: {e}")
+            league = None
+            for attempt in range(1, MAX_FETCH_ATTEMPTS + 1):
+                try:
+                    suffix = f" (attempt {attempt}/{MAX_FETCH_ATTEMPTS})" if attempt > 1 else ""
+                    print(f"\n  Fetching {year} season...{suffix}")
+
+                    league = League(
+                        league_id=self.league_id,
+                        year=year,
+                        espn_s2=self.espn_s2,
+                        swid=self.swid
+                    )
+                    break
+                except ESPNAccessDenied:
+                    raise
+                except Exception as e:
+                    print(f"    ✗ Error fetching {year} (attempt {attempt}/{MAX_FETCH_ATTEMPTS}): {e}")
+                    if attempt < MAX_FETCH_ATTEMPTS:
+                        time.sleep(5 * attempt)
+
+            if league is None:
+                failed_years.append(year)
                 continue
-        
+
+            print(f"    ✓ League: {league.settings.name}")
+            print(f"    ✓ Teams: {len(league.teams)}")
+            print(f"    ✓ Weeks: {league.current_week if hasattr(league, 'current_week') else 'N/A'}")
+
+            self.all_seasons.append({
+                'year': year,
+                'league': league
+            })
+
+        if failed_years:
+            print(f"\n  ✗ Could not fetch season(s): {failed_years}")
+            return False
+
         print(f"\n  ✓ Successfully fetched {len(self.all_seasons)} seasons")
-        return len(self.all_seasons) > 0
-    
-    def get_most_recent_team_names(self):
-        """Get most recent team names and track ALL teams ever in league"""
-        team_history = {}
-        
-        print(f"\n{'='*80}")
-        print(" Tracking Team Names & History")
-        print(f"{'='*80}")
-        
-        for season_data in self.all_seasons:
-            year = season_data['year']
-            league = season_data['league']
-            
+        self._build_owner_maps()
+        return True
+
+    def _get_members(self, league):
+        """Return league.members as an id -> member dict ({} if unavailable)."""
+        members = {}
+        if hasattr(league, 'members') and league.members:
+            try:
+                if hasattr(league.members, 'items'):
+                    members = league.members
+                else:
+                    members = {m.id: m for m in league.members}
+            except (AttributeError, TypeError):
+                members = {}
+        return members
+
+    def _build_owner_maps(self):
+        """Build the year/team/owner lookup maps once, so every stat method
+        resolves owners the same way (including OWNER_NAME_CORRECTIONS)
+        instead of re-deriving it inline."""
+        self.leagues = {}
+        self.team_owner = {}
+        self.owner_team = {}
+        for season in self.all_seasons:
+            year = season['year']
+            league = season['league']
+            self.leagues[year] = league
+            members = self._get_members(league)
             for team in league.teams:
-                team_id = team.team_id
-                
-                if team_id not in team_history:
-                    team_history[team_id] = {
-                        'names': [],
-                        'firstYear': year,
-                        'lastYear': year,
-                        'seasons': []
-                    }
-                
-                team_history[team_id]['names'].append({
-                    'year': year,
-                    'name': self._clean_team_name(team.team_name),
-                    'abbrev': team.team_abbrev,
-                    'owner': team.owner if hasattr(team, 'owner') else None
-                })
-                team_history[team_id]['lastYear'] = max(team_history[team_id]['lastYear'], year)
-                team_history[team_id]['firstYear'] = min(team_history[team_id]['firstYear'], year)
-                team_history[team_id]['seasons'].append(year)
-        
-        team_names = {}
-        for team_id, history in team_history.items():
-            most_recent = max(history['names'], key=lambda x: x['year'])
-            
-            team_names[team_id] = {
-                'name': most_recent['name'],
-                'abbrev': most_recent['abbrev'],
-                'owner': most_recent['owner'],
-                'firstYear': history['firstYear'],
-                'lastYear': history['lastYear'],
-                'isActive': history['lastYear'] == self.end_year,
-                'totalSeasons': len(set(history['seasons']))
-            }
-            
-            status = 'Active' if team_names[team_id]['isActive'] else 'Inactive'
-            print(f"    Team {team_id}: {most_recent['name']} ({history['firstYear']}-{history['lastYear']}) - {status}")
-        
-        return team_names
+                owner = self.OWNER_NAME_CORRECTIONS.get(
+                    (team.team_id, year),
+                    self.get_owner_name_from_team(team, members))
+                self.team_owner[(year, team.team_id)] = owner
+                if owner:
+                    self.owner_team.setdefault((year, owner), team)
+
+    def _final_week(self, league):
+        """Last scoring week of the season (regular season + playoffs), taken
+        from league.settings.matchup_periods (matchup period -> scoring
+        periods). Falls back to the old reg_season_count + 4 bound (17 if
+        reg_season_count is unavailable) if the attribute is missing or
+        looks wrong."""
+        reg = getattr(league.settings, 'reg_season_count', None)
+        fallback = reg + 4 if reg else 17
+        try:
+            derived = max(int(w) for periods in league.settings.matchup_periods.values() for w in periods)
+            if reg and derived < reg:
+                return fallback
+            return derived
+        except Exception:
+            return fallback
 
     def get_owner_name_from_team(self, team, members):
         """Extract owner display name from team object"""
@@ -200,7 +235,7 @@ class ESPNDataCollectorV2:
             
             return str(owner_id)
             
-    def process_all_matchups(self, team_names):
+    def process_all_matchups(self):
         """Process all matchups from all seasons"""
         print(f"\n{'='*80}")
         print(" Processing Matchups")
@@ -215,29 +250,15 @@ class ESPNDataCollectorV2:
             print(f"  Processing {year}...")
             week_count = 0
             
-            members = {}
-            if hasattr(league, 'members') and league.members:
-                try:
-                    if hasattr(league.members, 'items'):
-                        members = league.members
-                    else:
-                        members = {m.id: m for m in league.members}
-                except (AttributeError, TypeError):
-                    members = {}
-            
             if year < 2019:
                 processed_matchups = set()
                 
                 for team in league.teams:
-                    team_owner = self.OWNER_NAME_CORRECTIONS.get(
-                        (team.team_id, year),
-                        self.get_owner_name_from_team(team, members))
+                    team_owner = self.team_owner.get((year, team.team_id))
                     
                     for week_idx in range(len(team.schedule)):
                         opponent = team.schedule[week_idx]
-                        opponent_owner = self.OWNER_NAME_CORRECTIONS.get(
-                            (opponent.team_id, year),
-                            self.get_owner_name_from_team(opponent, members))
+                        opponent_owner = self.team_owner.get((year, opponent.team_id))
                         week = week_idx + 1
                         
                         matchup_key = f"{year}_{week}_{min(team.team_id, opponent.team_id)}_{max(team.team_id, opponent.team_id)}"
@@ -307,11 +328,9 @@ class ESPNDataCollectorV2:
                 print(f"    ✓ Loaded {week_count} matchups from {year} (via team schedules)")
             
             else:
-                if hasattr(league.settings, 'reg_season_count'):
-                    total_weeks = league.settings.reg_season_count + 4
-                else:
-                    total_weeks = 17
-                total_weeks = self._completed_weeks(league, total_weeks)
+                reg_count = getattr(league.settings, 'reg_season_count', 14)
+                total_weeks = self._completed_weeks(league, self._final_week(league))
+                print(f"    Scanning weeks 1-{total_weeks} (regular season: {reg_count})")
                 
                 for week in range(1, total_weeks + 1):
                     try:
@@ -327,8 +346,8 @@ class ESPNDataCollectorV2:
                             if not matchup.home_team or not matchup.away_team:
                                 continue
                             
-                            home_owner = self.get_owner_name_from_team(matchup.home_team, members)
-                            away_owner = self.get_owner_name_from_team(matchup.away_team, members)
+                            home_owner = self.team_owner.get((year, matchup.home_team.team_id))
+                            away_owner = self.team_owner.get((year, matchup.away_team.team_id))
                             
                             is_playoff = False
                             if hasattr(league.settings, 'reg_season_count'):
@@ -338,6 +357,21 @@ class ESPNDataCollectorV2:
                             
                             home_score = matchup.home_score
                             away_score = matchup.away_score
+
+                            # Bench points are gathered here from the box scores
+                            # already being fetched, so the bench stat needs no
+                            # additional API calls (see
+                            # calculate_bench_points_by_season). Regular season
+                            # weeks only.
+                            if week <= reg_count:
+                                year_bench = self._bench_points.setdefault(year, defaultdict(float))
+                                for side_team, side_lineup in (
+                                    (matchup.home_team, matchup.home_lineup),
+                                    (matchup.away_team, matchup.away_lineup),
+                                ):
+                                    for player in side_lineup or []:
+                                        if getattr(player, 'slot_position', None) == 'BE':
+                                            year_bench[side_team.team_id] += getattr(player, 'points', 0) or 0
 
                             # Skip matchups that haven't actually finished
                             # yet. league.current_week can advance (e.g. on
@@ -381,7 +415,10 @@ class ESPNDataCollectorV2:
                             all_matchups.append(clean_matchup)
                             week_count += 1
                     
+                    except ESPNAccessDenied:
+                        raise
                     except Exception as e:
+                        print(f"    ⚠️  {year} week {week}: skipped due to error: {e}")
                         continue
                 
                 print(f"    ✓ Loaded {week_count} matchups from {year} (via box_scores)")
@@ -389,7 +426,7 @@ class ESPNDataCollectorV2:
         print(f"\n  ✓ Processed {len(all_matchups)} total matchups")
         return all_matchups
 
-    def get_playoff_teams_by_year(self, all_matchups):
+    def get_playoff_teams_by_year(self):
         """Determine which teams made playoffs each year based on actual playoff performance"""
         playoff_teams = defaultdict(set)
         
@@ -399,26 +436,14 @@ class ESPNDataCollectorV2:
             year = season_data['year']
             league = season_data['league']
             
-            members = {}
-            if hasattr(league, 'members') and league.members:
-                try:
-                    if hasattr(league.members, 'items'):
-                        members = league.members
-                    else:
-                        members = {m.id: m for m in league.members}
-                except (AttributeError, TypeError):
-                    pass
-            
             year_playoff_owners = []
             
             for team in league.teams:
-                if hasattr(team, 'final_standing') and team.final_standing is not None:
+                if hasattr(team, 'final_standing') and team.final_standing:
                     num_playoff_teams = getattr(league.settings, 'playoff_team_count', 4)
                     
                     if team.final_standing <= num_playoff_teams:
-                        owner = self.OWNER_NAME_CORRECTIONS.get(
-                            (team.team_id, year),
-                            self.get_owner_name_from_team(team, members))
+                        owner = self.team_owner.get((year, team.team_id))
                         
                         if owner:
                             playoff_teams[year].add(owner)
@@ -429,7 +454,7 @@ class ESPNDataCollectorV2:
         
         return playoff_teams
 
-    def calculate_team_stats(self, all_matchups, team_names):
+    def calculate_team_stats(self, all_matchups):
         """Calculate comprehensive statistics BY OWNER"""
         print(f"\n{'='*80}")
         print(" Calculating Owner Statistics")
@@ -504,7 +529,7 @@ class ESPNDataCollectorV2:
                 'opponentName': matchup['home']['teamName']
             })
             
-        playoff_teams_by_year = self.get_playoff_teams_by_year(all_matchups)
+        playoff_teams_by_year = self.get_playoff_teams_by_year()
         
         owner_stats = {}
                 
@@ -529,38 +554,11 @@ class ESPNDataCollectorV2:
             stats = self.calculate_single_team_stats(owner, matches, info, owner_matchups)
             owner_stats[owner] = stats
 
-            # NOW add the logo fetching code HERE (after owner_stats is populated)
-            for owner, stats in owner_stats.items():
-                # Get logo from most recent season
-                most_recent_year = stats['lastActiveYear']
-                season_data = next((s for s in self.all_seasons if s['year'] == most_recent_year), None)
-                
-                if season_data:
-                    league = season_data['league']
-                    members = {}
-                    if hasattr(league, 'members') and league.members:
-                        try:
-                            if hasattr(league.members, 'items'):
-                                members = league.members
-                            else:
-                                members = {m.id: m for m in league.members}
-                        except (AttributeError, TypeError):
-                            pass
-                    
-                    for team in league.teams:
-                        # Uses most_recent_year, not a bare 'year' - the old
-                        # (May-2026) version of this fix referenced 'year'
-                        # here, but nothing in this function actually binds
-                        # that name at this point (the only 'year' nearby is
-                        # a set-comprehension variable, which doesn't leak
-                        # into this scope in Python 3) - most_recent_year is
-                        # the season this loop is actually operating on.
-                        team_owner = self.OWNER_NAME_CORRECTIONS.get(
-                            (team.team_id, most_recent_year),
-                            self.get_owner_name_from_team(team, members))
-                        if team_owner == owner:
-                            stats['logoUrl'] = team.logo_url if hasattr(team, 'logo_url') and team.logo_url else None
-                            break
+        # Attach each owner's logo from their most recent season
+        for owner, stats in owner_stats.items():
+            team = self.owner_team.get((stats['lastActiveYear'], owner))
+            if team is not None:
+                stats['logoUrl'] = team.logo_url if hasattr(team, 'logo_url') and team.logo_url else None
         
         print(f"  ✓ Calculated stats for {len(owner_stats)} owners")
         return owner_stats
@@ -645,8 +643,6 @@ class ESPNDataCollectorV2:
                         current_streak = {'type': None, 'length': 0}
                 
                 h2h_record = {
-                    'opponent': opponent,
-                    'opponentName': owner_stats[opponent]['teamName'],
                     'wins': wins,
                     'losses': losses,
                     'ties': ties,
@@ -662,13 +658,29 @@ class ESPNDataCollectorV2:
                     'closestWin': min(win_margins) if win_margins else 0,
                     'longestWinStreak': longest_win_streak,
                     'currentStreak': current_streak,
-                    'matchups': matchups
+                    'matchups': [self._slim_matchup(m) for m in matchups]
                 }
                 
                 h2h_data[owner][opponent] = h2h_record
         
         print(f"  ✓ Calculated head-to-head for {len(all_owners)} owners")
         return h2h_data
+
+    def _slim_matchup(self, m):
+        """Matchup record trimmed to the fields head-to-head.html reads
+        (drops id, playoffType and teamAbbrev, which only matchups.json needs)."""
+        def side(t):
+            return {'teamId': t['teamId'], 'teamName': t['teamName'],
+                    'owner': t['owner'], 'score': t['score']}
+        return {
+            'year': m['year'],
+            'week': m['week'],
+            'matchupPeriodId': m['matchupPeriodId'],
+            'isPlayoff': m['isPlayoff'],
+            'home': side(m['home']),
+            'away': side(m['away']),
+            'winner': m['winner']
+        }
 
     def calculate_single_team_stats(self, owner, matches, info, all_owner_data):
         """Calculate all stats for a single team"""
@@ -694,32 +706,14 @@ class ESPNDataCollectorV2:
         championship_years = []
 
         for year in playoff_years:
-            season_data = next((s for s in self.all_seasons if s['year'] == year), None)
-            if season_data:
-                league = season_data['league']
-                members = {}
-                if hasattr(league, 'members') and league.members:
-                    try:
-                        if hasattr(league.members, 'items'):
-                            members = league.members
-                        else:
-                            members = {m.id: m for m in league.members}
-                    except (AttributeError, TypeError):
-                        pass
-                
-                for team in league.teams:
-                    team_owner = self.OWNER_NAME_CORRECTIONS.get(
-                        (team.team_id, year),
-                        self.get_owner_name_from_team(team, members))
-                    if team_owner == owner:
-                        if hasattr(team, 'final_standing') and team.final_standing is not None:
-                            if team.final_standing == 1:
-                                stats['championships'] += 1
-                                stats['championshipAppearances'] += 1
-                                championship_years.append(year)
-                            elif team.final_standing == 2:
-                                stats['championshipAppearances'] += 1
-                        break
+            team = self.owner_team.get((year, owner))
+            if team is not None and getattr(team, 'final_standing', None) is not None:
+                if team.final_standing == 1:
+                    stats['championships'] += 1
+                    stats['championshipAppearances'] += 1
+                    championship_years.append(year)
+                elif team.final_standing == 2:
+                    stats['championshipAppearances'] += 1
 
         stats['championshipYears'] = championship_years
         
@@ -728,37 +722,21 @@ class ESPNDataCollectorV2:
         total_trades = None
 
         for year in set(m['year'] for m in matches):
-            season_data = next((s for s in self.all_seasons if s['year'] == year), None)
-            if season_data:
-                league = season_data['league']
-                members = {}
-                if hasattr(league, 'members') and league.members:
-                    try:
-                        if hasattr(league.members, 'items'):
-                            members = league.members
-                        else:
-                            members = {m.id: m for m in league.members}
-                    except (AttributeError, TypeError):
-                        pass
-                
-                for team in league.teams:
-                    team_owner = self.OWNER_NAME_CORRECTIONS.get(
-                        (team.team_id, year),
-                        self.get_owner_name_from_team(team, members))
-                    if team_owner == owner:
-                        # Check for acquisitions attribute
-                        if hasattr(team, 'acquisitions'):
-                            acquisitions_by_season[year] = team.acquisitions
-                        elif hasattr(team, 'moves'):
-                            acquisitions_by_season[year] = team.moves
-                        elif hasattr(team, 'transactions'):
-                            acquisitions_by_season[year] = len(team.transactions) if isinstance(team.transactions, list) else team.transactions
-                        
-                        # Check for trades (only reliable 2019+)
-                        if year >= 2019 and hasattr(team, 'trades') and isinstance(team.trades, int):
-                            total_trades = (total_trades or 0) + team.trades
-                        
-                        break
+            team = self.owner_team.get((year, owner))
+            if team is None:
+                continue
+
+            # Check for acquisitions attribute
+            if hasattr(team, 'acquisitions'):
+                acquisitions_by_season[year] = team.acquisitions
+            elif hasattr(team, 'moves'):
+                acquisitions_by_season[year] = team.moves
+            elif hasattr(team, 'transactions'):
+                acquisitions_by_season[year] = len(team.transactions) if isinstance(team.transactions, list) else team.transactions
+
+            # Check for trades (only reliable 2019+)
+            if year >= 2019 and hasattr(team, 'trades') and isinstance(team.trades, int):
+                total_trades = (total_trades or 0) + team.trades
 
         if acquisitions_by_season:
             most_moves_year = max(acquisitions_by_season.items(), key=lambda x: x[1])
@@ -842,7 +820,14 @@ class ESPNDataCollectorV2:
         complete_seasons = {}
         for year, record in stats['yearlyRecords'].items():
             total_games = record['regularSeasonWins'] + record['regularSeasonLosses']
-            if year < self.end_year or total_games >= 13:
+            # A past season is always complete; the current one only counts
+            # once all of THAT season's regular-season games (ESPN's
+            # reg_season_count for that year) have been played.
+            season_league = self.leagues.get(year)
+            season_reg_games = getattr(season_league.settings, 'reg_season_count', None) if season_league else None
+            season_complete = year < self.end_year or (
+                season_reg_games is not None and total_games >= season_reg_games)
+            if season_complete:
                 if total_games > 0:
                     reg_win_pct = record['regularSeasonWins'] / total_games
                     complete_seasons[year] = {
@@ -1294,7 +1279,7 @@ class ESPNDataCollectorV2:
             'fewestPointsAgainstSeasons': sorted_low_pa[:5]
         }
 
-    def calculate_season_stats(self, all_matchups, skip_bench=False, keepers_by_year=None, benchmarks_by_year=None):
+    def calculate_season_stats(self, all_matchups, skip_bench=False, keepers_by_year=None):
         """Calculate stats for each individual season"""
         print(f"\n{'='*80}")
         print(" Calculating Season-by-Season Statistics")
@@ -1305,7 +1290,7 @@ class ESPNDataCollectorV2:
             print(f"  ⚠️  Skipping bench points calculation")
             bench_points = {}
         else:
-            bench_points = self.calculate_bench_points_by_season(all_matchups)
+            bench_points = self.calculate_bench_points_by_season()
         
         season_data = {}
 
@@ -1442,7 +1427,6 @@ class ESPNDataCollectorV2:
 
             high_scorer_count = defaultdict(int)
             low_scorer_count = defaultdict(int)
-            consolation_count = defaultdict(int)
 
             # Weekly high score payouts - amounts changed over time
             weekly_high_payouts = []
@@ -1483,14 +1467,11 @@ class ESPNDataCollectorV2:
                 if has_consolation and len(sorted_week) >= 2:
                     second = sorted_week[1]
                     if not second['won']:  # 2nd highest lost
-                        consolation_count[second['owner']] += 1
                         consolation_this_week = True
                         consolation_payouts.append({
                             'owner': second['owner'],
-                            'team': second['team'],
                             'amount': 1,
-                            'week': week,
-                            'score': second['score']
+                            'week': week
                         })
                 
                 # Weekly high payout
@@ -1498,20 +1479,17 @@ class ESPNDataCollectorV2:
                     payout_amount = (weekly_payout - 1) if consolation_this_week else weekly_payout
                     weekly_high_payouts.append({
                         'owner': highest['owner'],
-                        'team': highest['team'],
                         'amount': payout_amount,
-                        'week': week,
-                        'score': highest['score']
+                        'week': week
                     })
 
             # NOW calculate the most values AFTER the loop
             season_high_owners, season_high_count = self._counter_ties_at_max(high_scorer_count)
             season_low_owners, season_low_count = self._counter_ties_at_max(low_scorer_count)
-            season_consolation_owners, season_consolation_count = self._counter_ties_at_max(consolation_count)
 
             # Playoff payouts - amounts changed over time
             playoff_payouts = []
-            season_league = next((s['league'] for s in self.all_seasons if s['year'] == year), None)
+            season_league = self.leagues.get(year)
 
             # Determine playoff payouts based on year
             if year == 2013:
@@ -1528,39 +1506,24 @@ class ESPNDataCollectorV2:
                 playoff_amounts = {'1st': 210, '2nd': 100, '3rd': 50}
 
             if season_league:
-                members = {}
-                if hasattr(season_league, 'members') and season_league.members:
-                    try:
-                        if hasattr(season_league.members, 'items'):
-                            members = season_league.members
-                        else:
-                            members = {m.id: m for m in season_league.members}
-                    except (AttributeError, TypeError):
-                        pass
-                
                 for team in season_league.teams:
-                    owner = self.OWNER_NAME_CORRECTIONS.get(
-                        (team.team_id, year),
-                        self.get_owner_name_from_team(team, members))
+                    owner = self.team_owner.get((year, team.team_id))
                     if hasattr(team, 'final_standing') and team.final_standing:
                         if team.final_standing == 1:
                             playoff_payouts.append({
                                 'owner': owner,
-                                'team': self._clean_team_name(team.team_name),
                                 'amount': playoff_amounts['1st'],
                                 'place': '1st'
                             })
                         elif team.final_standing == 2:
                             playoff_payouts.append({
                                 'owner': owner,
-                                'team': self._clean_team_name(team.team_name),
                                 'amount': playoff_amounts['2nd'],
                                 'place': '2nd'
                             })
                         elif team.final_standing == 3:
                             playoff_payouts.append({
                                 'owner': owner,
-                                'team': self._clean_team_name(team.team_name),
                                 'amount': playoff_amounts['3rd'],
                                 'place': '3rd'
                             })
@@ -1585,19 +1548,12 @@ class ESPNDataCollectorV2:
                     'count': season_low_count,
                     'tied': len(season_low_owners) > 1
                 },
-                'mostConsolationDollars': {
-                    'owner': season_consolation_owners[0] if season_consolation_owners else None,
-                    'owners': season_consolation_owners,
-                    'count': season_consolation_count,
-                    'tied': len(season_consolation_owners) > 1
-                },
                 'bestBenchWarmers': bench_points.get(year),
                 'weeklyHighPayouts': weekly_high_payouts,
                 'consolationPayouts': consolation_payouts,
                 'playoffPayouts': playoff_payouts,
                 'keeperAnalysis': {
-                    'keepers':         (keepers_by_year or {}).get(year, []),
-                    'roundBenchmarks': (benchmarks_by_year or {}).get(year, {}),
+                    'keepers': (keepers_by_year or {}).get(year, []),
                 },
             }
         
@@ -1613,20 +1569,8 @@ class ESPNDataCollectorV2:
             year = season_data['year']
             league = season_data['league']
             
-            members = {}
-            if hasattr(league, 'members') and league.members:
-                try:
-                    if hasattr(league.members, 'items'):
-                        members = league.members
-                    else:
-                        members = {m.id: m for m in league.members}
-                except (AttributeError, TypeError):
-                    pass
-            
             for team in league.teams:
-                owner = self.OWNER_NAME_CORRECTIONS.get(
-                    (team.team_id, year),
-                    self.get_owner_name_from_team(team, members))
+                owner = self.team_owner.get((year, team.team_id))
                 if not owner or owner not in owner_stats:
                     continue
                 
@@ -1652,8 +1596,10 @@ class ESPNDataCollectorV2:
         
         return owner_stats
         
-    def calculate_bench_points_by_season(self, all_matchups):
-        """Calculate bench points for each team by season"""
+    def calculate_bench_points_by_season(self):
+        """Best bench-points team per season (2019+; earlier seasons have no
+        reliable bench data). Totals are gathered during process_all_matchups
+        from the box scores it already fetches, so this makes no API calls."""
         print(f"\n  Calculating bench points by season...")
         
         bench_points_by_season = {}
@@ -1668,52 +1614,15 @@ class ESPNDataCollectorV2:
             
             print(f"    Processing {year} bench scores...")
             
-            members = {}
-            if hasattr(league, 'members') and league.members:
-                try:
-                    if hasattr(league.members, 'items'):
-                        members = league.members
-                    else:
-                        members = {m.id: m for m in league.members}
-                except (AttributeError, TypeError):
-                    pass
-            
+            year_totals = self._bench_points.get(year, {})
             year_bench_points = {}
             
-            # Get regular season week count
-            reg_season_weeks = getattr(league.settings, 'reg_season_count', 14)
-            reg_season_weeks = self._completed_weeks(league, reg_season_weeks)
-            
             for team in league.teams:
-                owner = self.OWNER_NAME_CORRECTIONS.get(
-                    (team.team_id, year),
-                    self.get_owner_name_from_team(team, members))
+                owner = self.team_owner.get((year, team.team_id))
                 if not owner:
                     continue
                 
-                total_bench_points = 0
-                
-                # Go through each week of regular season
-                for week in range(1, reg_season_weeks + 1):
-                    try:
-                        box_scores = league.box_scores(week)
-                        for box in box_scores:
-                            if box.home_team.team_id == team.team_id:
-                                # Sum bench points
-                                if hasattr(box, 'home_lineup') and box.home_lineup:
-                                    for player in box.home_lineup:
-                                        if hasattr(player, 'slot_position') and player.slot_position == 'BE':
-                                            total_bench_points += getattr(player, 'points', 0)
-                                break
-                            elif box.away_team.team_id == team.team_id:
-                                if hasattr(box, 'away_lineup') and box.away_lineup:
-                                    for player in box.away_lineup:
-                                        if hasattr(player, 'slot_position') and player.slot_position == 'BE':
-                                            total_bench_points += getattr(player, 'points', 0)
-                                break
-                    except Exception as e:
-                        # Skip this week if there's an error
-                        continue
+                total_bench_points = year_totals.get(team.team_id, 0)
                 
                 if total_bench_points > 0:
                     year_bench_points[owner] = {
@@ -1731,217 +1640,6 @@ class ESPNDataCollectorV2:
                 print(f"      ✗ No bench data available")
         
         return bench_points_by_season
-
-    def analyze_rosters_and_trades(self):
-        """Analyze draft performance, trades, and roster moves"""
-        print(f"\n{'='*80}")
-        print(" Analyzing Rosters, Trades & Draft Performance")
-        print(f"{'='*80}")
-        
-        all_trades = []
-        draft_analysis = {}
-        
-        for season_data in self.all_seasons:
-            year = season_data['year']
-            league = season_data['league']
-            
-            print(f"  Processing {year}...")
-            
-            members = {}
-            if hasattr(league, 'members') and league.members:
-                try:
-                    if hasattr(league.members, 'items'):
-                        members = league.members
-                    else:
-                        members = {m.id: m for m in league.members}
-                except (AttributeError, TypeError):
-                    pass
-            
-            # Trade data is not available via the ESPN API for historical
-            # seasons in private leagues. recent_activity() hits ESPN's
-            # /communication/ endpoint, which only works for the current
-            # live season — passing a historical year returns "league does
-            # not exist" regardless of valid credentials. mTransactions2
-            # returns TRADE_ACCEPT entries but omits the affected players,
-            # and the relatedTransactionId field doesn't resolve to usable
-            # data. Confirmed dead end for this league (June 2026 testing).
-            # The all_trades list remains empty; totalTrades on team stats
-            # reflects team.trades which is also unreliable for history.
-            
-            # Draft performance analysis for most recent season only
-            if year == self.end_year:
-                try:
-                    reg_season_weeks = getattr(league.settings, 'reg_season_count', 14)
-                    
-                    for team in league.teams:
-                        owner = self.get_owner_name_from_team(team, members)
-                        if not owner:
-                            continue
-                        
-                        # Get draft picks
-                        drafted_players = {}
-                        try:
-                            if hasattr(league, 'draft') and league.draft:
-                                for pick in league.draft:
-                                    if pick.team.team_id == team.team_id:
-                                        drafted_players[pick.playerName] = {
-                                            'name': pick.playerName,
-                                            'round': pick.round_num,
-                                            'pick': pick.round_pick,
-                                            'keptToPlayoffs': False,
-                                            'totalPoints': 0
-                                        }
-                        except Exception as e:
-                            print(f"    ⚠️  Could not fetch draft data for {owner}: {e}")
-                        
-                        drafted_kept = 0
-                        drafted_points = 0
-                        waiver_count = 0
-                        waiver_points = 0
-                        
-                        for player in team.roster:
-                            player_name = player.name
-                            
-                            # Check if this was a drafted player
-                            if player_name in drafted_players:
-                                drafted_players[player_name]['keptToPlayoffs'] = True
-                                drafted_players[player_name]['totalPoints'] = getattr(player, 'total_points', 0)
-                                drafted_kept += 1
-                                drafted_points += getattr(player, 'total_points', 0)
-                            else:
-                                # This is a waiver pickup
-                                waiver_count += 1
-                                waiver_points += getattr(player, 'total_points', 0)
-                        
-                        draft_analysis[owner] = {
-                            'owner': owner,
-                            'teamName': self._clean_team_name(team.team_name),
-                            'totalDrafted': len(drafted_players),
-                            'draftedKeptToPlayoffs': drafted_kept,
-                            'draftedPointsScored': drafted_points,
-                            'waiverPickups': waiver_count,
-                            'waiverPointsScored': waiver_points,
-                            'draftRetentionRate': (drafted_kept / len(drafted_players) * 100) if drafted_players else 0,
-                            'draftedPlayers': list(drafted_players.values())
-                        }
-                except Exception as e:
-                    print(f"    ⚠️  Could not analyze {self.end_year} draft: {e}")
-        
-        print(f"  ✓ Found {len(all_trades)} trades")
-        print(f"  ✓ Analyzed draft for {len(draft_analysis)} teams")
-        
-        return {
-            'trades': all_trades,
-            f'draft_analysis_{self.end_year}': draft_analysis
-        }
-
-    def analyze_two_week_playoff_comebacks(self, all_matchups):
-        """Analyze 2-week playoff matchups to see how many were won because of week 2"""
-        print(f"\n{'='*80}")
-        print(" Analyzing Two-Week Playoff Comebacks")
-        print(f"{'='*80}")
-        
-        try:
-            # Find all 2-week playoff matchups
-            playoff_matchups = [m for m in all_matchups if m['isPlayoff']]
-            
-            # Group by year and matchup
-            two_week_matchups = {}
-            
-            for m in playoff_matchups:
-                # Look for consecutive weeks with same teams
-                for m2 in playoff_matchups:
-                    if (m2['year'] == m['year'] and 
-                        m2['week'] == m['week'] + 1 and
-                        ((m2['home']['teamId'] == m['home']['teamId'] and m2['away']['teamId'] == m['away']['teamId']) or
-                         (m2['home']['teamId'] == m['away']['teamId'] and m2['away']['teamId'] == m['home']['teamId']))):
-                        
-                        # Found a 2-week matchup
-                        matchup_key = f"{m['year']}_week{m['week']}-{m2['week']}"
-                        
-                        if matchup_key not in two_week_matchups:
-                            # Determine which team is which across both weeks
-                            if m['home']['teamId'] == m2['home']['teamId']:
-                                team_a_id = m['home']['teamId']
-                                team_a_name = m['home']['teamName']
-                                team_a_owner = m['home']['owner']
-                                team_b_id = m['away']['teamId']
-                                team_b_name = m['away']['teamName']
-                                team_b_owner = m['away']['owner']
-                                week1_team_a_score = m['home']['score']
-                                week1_team_b_score = m['away']['score']
-                                week2_team_a_score = m2['home']['score']
-                                week2_team_b_score = m2['away']['score']
-                            else:
-                                team_a_id = m['home']['teamId']
-                                team_a_name = m['home']['teamName']
-                                team_a_owner = m['home']['owner']
-                                team_b_id = m['away']['teamId']
-                                team_b_name = m['away']['teamName']
-                                team_b_owner = m['away']['owner']
-                                week1_team_a_score = m['home']['score']
-                                week1_team_b_score = m['away']['score']
-                                week2_team_a_score = m2['away']['score']
-                                week2_team_b_score = m2['home']['score']
-                            
-                            # Calculate totals
-                            team_a_total = week1_team_a_score + week2_team_a_score
-                            team_b_total = week1_team_b_score + week2_team_b_score
-                            
-                            # Determine if there was a comeback
-                            week1_leader = 'team_a' if week1_team_a_score > week1_team_b_score else 'team_b'
-                            final_winner = 'team_a' if team_a_total > team_b_total else 'team_b'
-                            
-                            comeback = (week1_leader != final_winner)
-                            
-                            two_week_matchups[matchup_key] = {
-                                'year': m['year'],
-                                'week1': m['week'],
-                                'week2': m2['week'],
-                                'teamA': {
-                                    'name': team_a_name,
-                                    'owner': team_a_owner,
-                                    'week1Score': week1_team_a_score,
-                                    'week2Score': week2_team_a_score,
-                                    'totalScore': team_a_total
-                                },
-                                'teamB': {
-                                    'name': team_b_name,
-                                    'owner': team_b_owner,
-                                    'week1Score': week1_team_b_score,
-                                    'week2Score': week2_team_b_score,
-                                    'totalScore': team_b_total
-                                },
-                                'week1Leader': week1_leader,
-                                'finalWinner': final_winner,
-                                'comeback': comeback,
-                                'week1Margin': abs(week1_team_a_score - week1_team_b_score),
-                                'finalMargin': abs(team_a_total - team_b_total)
-                            }
-            
-            comebacks = [m for m in two_week_matchups.values() if m['comeback']]
-            
-            print(f"  ✓ Found {len(two_week_matchups)} two-week playoff matchups")
-            print(f"  ✓ {len(comebacks)} comebacks (losing after week 1 but won overall)")
-            if two_week_matchups:
-                print(f"  ✓ Comeback rate: {len(comebacks) / len(two_week_matchups) * 100:.1f}%")
-            
-            return {
-                'totalTwoWeekMatchups': len(two_week_matchups),
-                'comebacks': len(comebacks),
-                'comebackRate': len(comebacks) / len(two_week_matchups) if two_week_matchups else 0,
-                'matchups': list(two_week_matchups.values()),
-                'comebackMatchups': comebacks
-            }
-        except Exception as e:
-            print(f"  ✗ Error analyzing two-week playoffs: {e}")
-            return {
-                'totalTwoWeekMatchups': 0,
-                'comebacks': 0,
-                'comebackRate': 0,
-                'matchups': [],
-                'comebackMatchups': []
-            }
 
     def _matchup_is_final(self, box_score):
         """Whether a box_scores() matchup has actually finished, checked
@@ -2021,8 +1719,15 @@ class ESPNDataCollectorV2:
         season. In practice this fallback should only ever trigger for
         self.end_year while that season is still ongoing.
 
-        Returns the unwrapped response dict, or None on failure.
+        Returns the unwrapped response dict, or None on failure. Successful
+        responses are memoized by (year, view, extra_params) in self._api_cache
+        so repeated sweeps (e.g. the per-keeper fallback) cost no extra calls;
+        failures are never cached.
         """
+        cache_key = (year, view, extra_params)
+        if cache_key in self._api_cache:
+            return self._api_cache[cache_key]
+
         cookies = {"SWID": self.swid, "espn_s2": self.espn_s2}
         headers = {"Accept": "application/json"}
 
@@ -2036,6 +1741,7 @@ class ESPNDataCollectorV2:
             if resp.status_code == 200:
                 data = resp.json()
                 if isinstance(data, list) and data:
+                    self._api_cache[cache_key] = data[0]
                     return data[0]
         except Exception as e:
             print(f"    ✗ Direct API error (leagueHistory {year} {view}): {e}")
@@ -2050,7 +1756,10 @@ class ESPNDataCollectorV2:
             if resp.status_code != 200:
                 return None
             data = resp.json()
-            return data if data else None
+            if data:
+                self._api_cache[cache_key] = data
+                return data
+            return None
         except Exception as e:
             print(f"    ✗ Direct API error (live endpoint {year} {view}): {e}")
             return None
@@ -2352,10 +2061,8 @@ class ESPNDataCollectorV2:
         players in the same round, giving a fair "expected value" baseline.
 
         Returns:
-            keepers_by_year:    { year: [ keeperEntry, ... ] }
-            benchmarks_by_year: { year: { round_int: avg_points } }
+            keepers_by_year: { year: [ keeperEntry, ... ] }
         """
-        import re
 
         print(f"\n{'='*80}")
         print(" Fetching Keeper Data & Round Benchmarks")
@@ -2367,11 +2074,13 @@ class ESPNDataCollectorV2:
         # 2016 is excluded due to a chaotic draft with no reliable records.
         FIRST_KEEPER_YEAR  = 2017
 
-        keepers_by_year    = {}
-        benchmarks_by_year = {}
+        keepers_by_year = {}
 
         for year in range(FIRST_KEEPER_YEAR, self.end_year + 1):
             print(f"\n  Processing {year}...")
+            # Drop the previous season's memoized API responses (the weekly
+            # sweeps are large); repeats within THIS season still hit the cache.
+            self._api_cache.clear()
 
             # ── Get teamId -> owner mapping from already-fetched league ───
             season_obj = next(
@@ -2382,18 +2091,8 @@ class ESPNDataCollectorV2:
             season_in_progress = False
             if season_obj:
                 league = season_obj['league']
-                members = {}
-                if hasattr(league, 'members') and league.members:
-                    try:
-                        members = (
-                            league.members
-                            if hasattr(league.members, 'items')
-                            else {m.id: m for m in league.members}
-                        )
-                    except (AttributeError, TypeError):
-                        pass
                 for team in league.teams:
-                    owner = self.get_owner_name_from_team(team, members)
+                    owner = self.team_owner.get((year, team.team_id))
                     if owner:
                         team_id_to_owner[team.team_id] = (
                             self._title_case_owner(owner)
@@ -2496,7 +2195,6 @@ class ESPNDataCollectorV2:
                 for rnd, pts in round_totals.items()
                 if pts
             }
-            benchmarks_by_year[year] = benchmarks
             print(f"    ✓ Benchmarks: {len(benchmarks)} rounds, "
                   f"{sum(len(v) for v in round_totals.values())} players")
 
@@ -2691,7 +2389,8 @@ class ESPNDataCollectorV2:
             keepers_by_year[year] = enriched
             print(f"    → {len(enriched)} keepers for {year}")
 
-        return keepers_by_year, benchmarks_by_year
+        self._api_cache.clear()
+        return keepers_by_year
 
     def _resolve_position_limit_name(self, pos_id, year, cache, slot_names):
         """Resolve a rosterSettings.positionLimits ID to a readable name.
@@ -2749,6 +2448,27 @@ class ESPNDataCollectorV2:
 
         return cache.get(pos_id, f"position ID {pos_id}")
 
+    def _get_json_with_retry(self, url, params, cookies, label=""):
+        """GET a JSON endpoint, retrying transient failures (network errors,
+        5xx) up to MAX_FETCH_ATTEMPTS times. 4xx responses are not retried.
+        Every failure is printed. Returns parsed JSON, or None if all
+        attempts fail."""
+        for attempt in range(1, MAX_FETCH_ATTEMPTS + 1):
+            retryable = True
+            try:
+                r = requests.get(url, params=params, cookies=cookies, timeout=10)
+                if r.status_code == 200:
+                    return r.json()
+                print(f"  ⚠️  {label}: HTTP {r.status_code} (attempt {attempt}/{MAX_FETCH_ATTEMPTS})")
+                retryable = r.status_code >= 500
+            except Exception as e:
+                print(f"  ⚠️  {label}: {e} (attempt {attempt}/{MAX_FETCH_ATTEMPTS})")
+            if not retryable:
+                break
+            if attempt < MAX_FETCH_ATTEMPTS:
+                time.sleep(3 * attempt)
+        return None
+
     def calculate_settings_history(self):
         """Fetch and diff league settings year-over-year via direct API calls.
 
@@ -2763,9 +2483,6 @@ class ESPNDataCollectorV2:
 
         Returns a list of { year, changes: [...] } dicts, one per season.
         """
-        import requests
-        from datetime import datetime as _dt
-
         print(f"\n{'='*80}")
         print(" Fetching Settings History")
         print(f"{'='*80}")
@@ -2930,10 +2647,10 @@ class ESPNDataCollectorV2:
             if not epoch_ms or epoch_ms <= 0:
                 return None
             try:
-                return _dt.fromtimestamp(epoch_ms / 1000).strftime('%b %-d, %Y')
+                return datetime.fromtimestamp(epoch_ms / 1000).strftime('%b %-d, %Y')
             except Exception:
                 try:
-                    return _dt.fromtimestamp(epoch_ms / 1000).strftime('%b %d, %Y')
+                    return datetime.fromtimestamp(epoch_ms / 1000).strftime('%b %d, %Y')
                 except Exception:
                     return None
 
@@ -2953,12 +2670,10 @@ class ESPNDataCollectorV2:
                 params = {"view": "mSettings", "seasonId": year}
 
             try:
-                r = requests.get(url, params=params, cookies=cookies, timeout=10)
-                if r.status_code != 200:
-                    print(f"  ⚠️  {year}: HTTP {r.status_code}")
+                d = self._get_json_with_retry(url, params, cookies, label=str(year))
+                if d is None:
+                    print(f"  ✗ {year}: settings unavailable after {MAX_FETCH_ATTEMPTS} attempts, skipping")
                     continue
-
-                d = r.json()
                 if isinstance(d, list):
                     d = d[0]
 
@@ -3061,6 +2776,14 @@ class ESPNDataCollectorV2:
                 )
                 changes.append(f"Scoring: {len(curr['scoring'])} active rules")
             else:
+                prev_year = history[-1]['year']
+                if year != prev_year + 1:
+                    gap = (f"{prev_year + 1}" if year - prev_year == 2
+                           else f"{prev_year + 1}-{year - 1}")
+                    changes.append(
+                        f"Note: settings for {gap} could not be fetched, "
+                        f"so the changes below span multiple seasons"
+                    )
                 # Structure
                 if curr['teamCount'] != prev['teamCount']:
                     changes.append(
@@ -3322,7 +3045,7 @@ class ESPNDataCollectorV2:
         )
         return tied, max_length
 
-    def _compute_period_transaction_stats(self, executed, members, year, team_attribution_start_year):
+    def _compute_period_transaction_stats(self, executed, year, team_attribution_start_year):
         """Compute most-dropped/sloppy-seconds stats for a given list of EXECUTED
         transactions. Caller decides which weeks to include (e.g. all weeks for
         the full-season view, or scoring_period <= reg_season_count for a
@@ -3351,7 +3074,7 @@ class ESPNDataCollectorV2:
         for t in executed:
             if t.team is None:
                 continue
-            owner = self.get_owner_name_from_team(t.team, members)
+            owner = self.team_owner.get((year, t.team.team_id))
             if not owner:
                 continue
             for item in t.items:
@@ -3372,7 +3095,7 @@ class ESPNDataCollectorV2:
         for t in executed_sorted:
             if t.team is None:
                 continue
-            owner = self.get_owner_name_from_team(t.team, members)
+            owner = self.team_owner.get((year, t.team.team_id))
             if not owner:
                 continue
             for item in t.items:
@@ -3485,19 +3208,8 @@ class ESPNDataCollectorV2:
 
             print(f"  Processing {year} transactions...")
 
-            members = {}
-            if hasattr(league, 'members') and league.members:
-                try:
-                    if hasattr(league.members, 'items'):
-                        members = league.members
-                    else:
-                        members = {m.id: m for m in league.members}
-                except (AttributeError, TypeError):
-                    members = {}
-
             reg_weeks = getattr(league.settings, 'reg_season_count', 14)
-            total_weeks_to_try = reg_weeks + 4
-            total_weeks_to_try = self._completed_weeks(league, total_weeks_to_try)
+            total_weeks_to_try = self._completed_weeks(league, self._final_week(league))
 
             all_transactions = []
             for week in range(1, total_weeks_to_try + 1):
@@ -3507,7 +3219,10 @@ class ESPNDataCollectorV2:
                         types={"FREEAGENT", "WAIVER", "WAIVER_ERROR"}
                     )
                     all_transactions.extend(week_transactions)
-                except Exception:
+                except ESPNAccessDenied:
+                    raise
+                except Exception as e:
+                    print(f"    ⚠️  {year} week {week}: transactions skipped due to error: {e}")
                     continue
 
             executed = [t for t in all_transactions if t.status == 'EXECUTED']
@@ -3515,7 +3230,7 @@ class ESPNDataCollectorV2:
 
             # --- Full season (unchanged behavior - includes playoff weeks) ---
             full = self._compute_period_transaction_stats(
-                executed, members, year, TEAM_ATTRIBUTION_START_YEAR
+                executed, year, TEAM_ATTRIBUTION_START_YEAR
             )
             league_wide_most_dropped[year] = full['league_wide_top3']
             per_team_most_dropped[year] = full['per_team_top3']
@@ -3526,7 +3241,7 @@ class ESPNDataCollectorV2:
 
             # --- Regular season only (new - excludes playoff weeks) ---
             reg = self._compute_period_transaction_stats(
-                reg_season_executed, members, year, TEAM_ATTRIBUTION_START_YEAR
+                reg_season_executed, year, TEAM_ATTRIBUTION_START_YEAR
             )
             reg_league_wide_most_dropped[year] = reg['league_wide_top3']
             reg_per_team_most_dropped[year] = reg['per_team_top3']
@@ -3608,28 +3323,19 @@ class ESPNDataCollectorV2:
             print(f"⚠️  SKIPPING BENCH POINTS CALCULATION")
         
         if not self.fetch_all_seasons():
-            print("\n✗ No data fetched. Exiting.")
-            return
+            print("\n✗ Not every season could be fetched. Aborting so a partial dataset is not published.")
+            sys.exit(1)
         
-        print(f"\n{'='*80}")
-        print(" Tracking Team Names")
-        print(f"{'='*80}")
-        team_names = self.get_most_recent_team_names()
-        print(f"  ✓ Tracked {len(team_names)} teams")
-        
-        all_matchups = self.process_all_matchups(team_names)
-        team_stats = self.calculate_team_stats(all_matchups, team_names)
+        all_matchups = self.process_all_matchups()
+        team_stats = self.calculate_team_stats(all_matchups)
         team_stats = self.calculate_player_loyalty_stats(team_stats)
         h2h_stats = self.calculate_head_to_head_stats(all_matchups, team_stats)
         superlatives = self.calculate_superlatives(all_matchups)
-        roster_analysis = self.analyze_rosters_and_trades()
-        two_week_analysis = self.analyze_two_week_playoff_comebacks(all_matchups)
-        keepers_by_year, benchmarks_by_year = self.fetch_keeper_data_by_year()
+        keepers_by_year = self.fetch_keeper_data_by_year()
         season_stats = self.calculate_season_stats(
             all_matchups,
             skip_bench=skip_bench,
             keepers_by_year=keepers_by_year,
-            benchmarks_by_year=benchmarks_by_year,
         )
         transaction_analysis = self.calculate_transaction_analysis()
         settings_history = self.calculate_settings_history()
@@ -3643,8 +3349,6 @@ class ESPNDataCollectorV2:
         self.save_output(h2h_stats, 'head_to_head.json')
         self.save_output(superlatives, 'superlatives.json')
         self.save_output(season_stats, 'season_stats.json')
-        self.save_output(roster_analysis, 'roster_analysis.json')
-        self.save_output(two_week_analysis, 'two_week_playoff_analysis.json')
         self.save_output(transaction_analysis, 'transaction_analysis.json')
         self.save_output(settings_history, 'settings_history.json')
         
@@ -3669,11 +3373,15 @@ class ESPNDataCollectorV2:
 def main():
     parser = argparse.ArgumentParser(description='ESPN Fantasy Football Data Collector')
     parser.add_argument('--skip-bench', action='store_true', 
-                        help='Skip bench points calculation (faster for testing)')
+                        help='Omit best-bench stats from the output (bench totals are now gathered during the matchup pass, so this no longer saves time)')
     args = parser.parse_args()
     
     collector = ESPNDataCollectorV2(LEAGUE_ID, START_YEAR, END_YEAR, SWID, ESPN_S2)
-    collector.run(skip_bench=args.skip_bench)
+    try:
+        collector.run(skip_bench=args.skip_bench)
+    except ESPNAccessDenied as e:
+        print(f"\n✗ ESPN access denied - the SWID/espn_s2 cookies have likely expired: {e}")
+        sys.exit(2)
 
 if __name__ == "__main__":
-    main()
+    main()

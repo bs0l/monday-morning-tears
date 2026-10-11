@@ -126,38 +126,28 @@
       "count": 3,
       "tied": false
     },
-    "mostConsolationDollars": {
-      "owner": null,
-      "owners": [],
-      "count": 0,
-      "tied": false
-    },
     "bestBenchWarmers": null,
     "weeklyHighPayouts": [],
     "consolationPayouts": [],
     "playoffPayouts": [
       {
         "owner": "Phil Torres",
-        "team": "Rafi Bombs",
         "amount": 0,
         "place": "1st"
       },
       {
         "owner": "Loren Kessell",
-        "team": "Da Kessell Krew",
         "amount": 0,
         "place": "2nd"
       },
       {
         "owner": "Keegan Hayes",
-        "team": "DidntSetLineUp InPlayoffs",
         "amount": 0,
         "place": "3rd"
       }
     ],
     "keeperAnalysis": {
-      "keepers": [],
-      "roundBenchmarks": {}
+      "keepers": []
     }
   },
   "2014": {
@@ -289,38 +279,28 @@
       "count": 5,
       "tied": false
     },
-    "mostConsolationDollars": {
-      "owner": null,
-      "owners": [],
-      "count": 0,
-      "tied": false
-    },
     "bestBenchWarmers": null,
     "weeklyHighPayouts": [],
     "consolationPayouts": [],
     "playoffPayouts": [
       {
         "owner": "Mike Kovacs",
-        "team": "Its Mike Vick In a Box!",
         "amount": 35,
         "place": "1st"
       },
       {
         "owner": "Loren Kessell",
-        "team": "Really Just Sean Kessell",
         "amount": 15,
         "place": "2nd"
       },
       {
         "owner": "Brandon Kish",
-        "team": "Kish and Tell",
         "amount": 10,
         "place": "3rd"
       }
     ],
     "keeperAnalysis": {
-      "keepers": [],
-      "roundBenchmarks": {}
+      "keepers": []
     }
   },
   "2015": {
@@ -432,123 +412,89 @@
       "count": 3,
       "tied": false
     },
-    "mostConsolationDollars": {
-      "owner": null,
-      "owners": [],
-      "count": 0,
-      "tied": false
-    },
     "bestBenchWarmers": null,
     "weeklyHighPayouts": [
       {
         "owner": "Brandon Kish",
-        "team": "Kish and Tell",
         "amount": 5,
-        "week": 1,
-        "score": 132.32
+        "week": 1
       },
       {
         "owner": "Brandon Kish",
-        "team": "Kish and Tell",
         "amount": 5,
-        "week": 2,
-        "score": 102.94
+        "week": 2
       },
       {
         "owner": "Mike Kovacs",
-        "team": "I wanta Free the NewtMan!",
         "amount": 5,
-        "week": 3,
-        "score": 137.5
+        "week": 3
       },
       {
         "owner": "Bill Solecki",
-        "team": "Bills New Team Name",
         "amount": 5,
-        "week": 4,
-        "score": 99.76
+        "week": 4
       },
       {
         "owner": "Rob Cahill",
-        "team": "Team Cahill",
         "amount": 5,
-        "week": 5,
-        "score": 130.76
+        "week": 5
       },
       {
         "owner": "Mike Kovacs",
-        "team": "I wanta Free the NewtMan!",
         "amount": 5,
-        "week": 6,
-        "score": 133.46
+        "week": 6
       },
       {
         "owner": "Loren Kessell",
-        "team": "Really Just Sean Kessell",
         "amount": 5,
-        "week": 7,
-        "score": 119.74
+        "week": 7
       },
       {
         "owner": "Rob Cahill",
-        "team": "Team Cahill",
         "amount": 5,
-        "week": 8,
-        "score": 117.6
+        "week": 8
       },
       {
         "owner": "Brian Dorward",
-        "team": "Plainsboro Owls",
         "amount": 5,
-        "week": 9,
-        "score": 147.38
+        "week": 9
       },
       {
         "owner": "Bill Solecki",
-        "team": "Bills New Team Name",
         "amount": 5,
-        "week": 10,
-        "score": 107.98
+        "week": 10
       },
       {
         "owner": "Mike Kovacs",
-        "team": "I wanta Free the NewtMan!",
         "amount": 5,
-        "week": 11,
-        "score": 100.74
+        "week": 11
       },
       {
         "owner": "Rob Cahill",
-        "team": "Team Cahill",
         "amount": 5,
-        "week": 12,
-        "score": 134.5
+        "week": 12
       }
     ],
     "consolationPayouts": [],
     "playoffPayouts": [
       {
         "owner": "Bill Solecki",
-        "team": "Bills New Team Name",
         "amount": 109,
         "place": "1st"
       },
       {
         "owner": "Mike Kovacs",
-        "team": "I wanta Free the NewtMan!",
         "amount": 31,
         "place": "3rd"
       },
       {
         "owner": "Loren Kessell",
-        "team": "Really Just Sean Kessell",
         "amount": 60,
         "place": "2nd"
       }
     ],
     "keeperAnalysis": {
-      "keepers": [],
-      "roundBenchmarks": {}
+      "keepers": []
     }
   },
   "2016": {
@@ -667,123 +613,89 @@
       "count": 4,
       "tied": false
     },
-    "mostConsolationDollars": {
-      "owner": null,
-      "owners": [],
-      "count": 0,
-      "tied": false
-    },
     "bestBenchWarmers": null,
     "weeklyHighPayouts": [
       {
         "owner": "Ray Engleking",
-        "team": "Rex Grossman Fan Club",
         "amount": 5,
-        "week": 1,
-        "score": 152.02
+        "week": 1
       },
       {
         "owner": "Bill Solecki",
-        "team": "Barack Obama",
         "amount": 5,
-        "week": 2,
-        "score": 135.46
+        "week": 2
       },
       {
         "owner": "Mike Kovacs",
-        "team": "Yobogoya In the Bushes!",
         "amount": 5,
-        "week": 3,
-        "score": 145.16
+        "week": 3
       },
       {
         "owner": "Mike Kovacs",
-        "team": "Yobogoya In the Bushes!",
         "amount": 5,
-        "week": 4,
-        "score": 118.42
+        "week": 4
       },
       {
         "owner": "Randell Crawford",
-        "team": "I Do Respect You Bro",
         "amount": 5,
-        "week": 5,
-        "score": 130.2
+        "week": 5
       },
       {
         "owner": "Ray Engleking",
-        "team": "Rex Grossman Fan Club",
         "amount": 5,
-        "week": 6,
-        "score": 151.14
+        "week": 6
       },
       {
         "owner": "Mike Kovacs",
-        "team": "Yobogoya In the Bushes!",
         "amount": 5,
-        "week": 7,
-        "score": 131.88
+        "week": 7
       },
       {
         "owner": "Phil Torres",
-        "team": "Duke Nukems",
         "amount": 5,
-        "week": 8,
-        "score": 131.6
+        "week": 8
       },
       {
         "owner": "Bill Solecki",
-        "team": "Barack Obama",
         "amount": 5,
-        "week": 9,
-        "score": 148.56
+        "week": 9
       },
       {
         "owner": "Randell Crawford",
-        "team": "I Do Respect You Bro",
         "amount": 5,
-        "week": 10,
-        "score": 138.22
+        "week": 10
       },
       {
         "owner": "Mike Kovacs",
-        "team": "Yobogoya In the Bushes!",
         "amount": 5,
-        "week": 11,
-        "score": 122.0
+        "week": 11
       },
       {
         "owner": "Mike Kovacs",
-        "team": "Yobogoya In the Bushes!",
         "amount": 5,
-        "week": 12,
-        "score": 148.5
+        "week": 12
       }
     ],
     "consolationPayouts": [],
     "playoffPayouts": [
       {
         "owner": "Mike Kovacs",
-        "team": "Yobogoya In the Bushes!",
         "amount": 150,
         "place": "1st"
       },
       {
         "owner": "Carl Cummins",
-        "team": "Duckman Kowalski",
         "amount": 40,
         "place": "3rd"
       },
       {
         "owner": "Phil Torres",
-        "team": "Duke Nukems",
         "amount": 70,
         "place": "2nd"
       }
     ],
     "keeperAnalysis": {
-      "keepers": [],
-      "roundBenchmarks": {}
+      "keepers": []
     }
   },
   "2017": {
@@ -894,116 +806,83 @@
       "count": 5,
       "tied": false
     },
-    "mostConsolationDollars": {
-      "owner": null,
-      "owners": [],
-      "count": 0,
-      "tied": false
-    },
     "bestBenchWarmers": null,
     "weeklyHighPayouts": [
       {
         "owner": "Mike Kovacs",
-        "team": "Why Pass to Top Wide Receivers?",
         "amount": 5,
-        "week": 1,
-        "score": 99.3
+        "week": 1
       },
       {
         "owner": "Carl Cummins",
-        "team": "Duckman Kowalski",
         "amount": 5,
-        "week": 2,
-        "score": 138.32
+        "week": 2
       },
       {
         "owner": "Mike Kovacs",
-        "team": "Why Pass to Top Wide Receivers?",
         "amount": 5,
-        "week": 3,
-        "score": 114.6
+        "week": 3
       },
       {
         "owner": "Ray Engleking",
-        "team": "Rex Grossman Fan Club",
         "amount": 5,
-        "week": 4,
-        "score": 123.68
+        "week": 4
       },
       {
         "owner": "Ray Engleking",
-        "team": "Rex Grossman Fan Club",
         "amount": 5,
-        "week": 5,
-        "score": 142.94
+        "week": 5
       },
       {
         "owner": "Mike Kovacs",
-        "team": "Why Pass to Top Wide Receivers?",
         "amount": 5,
-        "week": 6,
-        "score": 119.7
+        "week": 6
       },
       {
         "owner": "Bill Solecki",
-        "team": "Wade Boggs Memorial Team",
         "amount": 5,
-        "week": 7,
-        "score": 136.92
+        "week": 7
       },
       {
         "owner": "Ray Engleking",
-        "team": "Rex Grossman Fan Club",
         "amount": 5,
-        "week": 8,
-        "score": 118.34
+        "week": 8
       },
       {
         "owner": "Ray Engleking",
-        "team": "Rex Grossman Fan Club",
         "amount": 5,
-        "week": 9,
-        "score": 120.16
+        "week": 9
       },
       {
         "owner": "Phil Torres",
-        "team": "Pickle Ricks",
         "amount": 5,
-        "week": 10,
-        "score": 103.56
+        "week": 10
       },
       {
         "owner": "Ray Engleking",
-        "team": "Rex Grossman Fan Club",
         "amount": 5,
-        "week": 11,
-        "score": 149.02
+        "week": 11
       },
       {
         "owner": "Ben Bingert",
-        "team": "The Recycling Ben",
         "amount": 5,
-        "week": 12,
-        "score": 153.86
+        "week": 12
       }
     ],
     "consolationPayouts": [],
     "playoffPayouts": [
       {
         "owner": "Mike Kovacs",
-        "team": "Why Pass to Top Wide Receivers?",
         "amount": 40,
         "place": "3rd"
       },
       {
         "owner": "Carl Cummins",
-        "team": "Duckman Kowalski",
         "amount": 150,
         "place": "1st"
       },
       {
         "owner": "Ray Engleking",
-        "team": "Rex Grossman Fan Club",
         "amount": 70,
         "place": "2nd"
       }
@@ -1192,24 +1071,7 @@
           "lastActiveWeek": null,
           "note": null
         }
-      ],
-      "roundBenchmarks": {
-        "5": 119.6,
-        "12": 36.87,
-        "1": 97.25,
-        "6": 51.59,
-        "3": 93.86,
-        "15": 85.72,
-        "13": 45.65,
-        "11": 135.24,
-        "2": 94.03,
-        "7": 61.09,
-        "10": 51.8,
-        "8": 28.96,
-        "4": 63.69,
-        "14": 44.2,
-        "9": 16.82
-      }
+      ]
     }
   },
   "2018": {
@@ -1316,116 +1178,83 @@
       "count": 5,
       "tied": false
     },
-    "mostConsolationDollars": {
-      "owner": null,
-      "owners": [],
-      "count": 0,
-      "tied": false
-    },
     "bestBenchWarmers": null,
     "weeklyHighPayouts": [
       {
         "owner": "Bill Solecki",
-        "team": "Wade Boggs Memorial Team",
         "amount": 5,
-        "week": 1,
-        "score": 139.96
+        "week": 1
       },
       {
         "owner": "Ray Engleking",
-        "team": "Rex Grossman Fan Club",
         "amount": 5,
-        "week": 2,
-        "score": 141.94
+        "week": 2
       },
       {
         "owner": "John Artiglier",
-        "team": "Davante's Inferno",
         "amount": 5,
-        "week": 3,
-        "score": 124.92
+        "week": 3
       },
       {
         "owner": "Ray Engleking",
-        "team": "Rex Grossman Fan Club",
         "amount": 5,
-        "week": 4,
-        "score": 165.16
+        "week": 4
       },
       {
         "owner": "Bill Solecki",
-        "team": "Wade Boggs Memorial Team",
         "amount": 5,
-        "week": 5,
-        "score": 138.04
+        "week": 5
       },
       {
         "owner": "Bill Solecki",
-        "team": "Wade Boggs Memorial Team",
         "amount": 5,
-        "week": 6,
-        "score": 148.9
+        "week": 6
       },
       {
         "owner": "Ray Engleking",
-        "team": "Rex Grossman Fan Club",
         "amount": 5,
-        "week": 7,
-        "score": 146.62
+        "week": 7
       },
       {
         "owner": "Ray Engleking",
-        "team": "Rex Grossman Fan Club",
         "amount": 5,
-        "week": 8,
-        "score": 149.12
+        "week": 8
       },
       {
         "owner": "Ben Bingert",
-        "team": "The Mixon Administration",
         "amount": 5,
-        "week": 9,
-        "score": 148.92
+        "week": 9
       },
       {
         "owner": "Bill Solecki",
-        "team": "Wade Boggs Memorial Team",
         "amount": 5,
-        "week": 10,
-        "score": 163.72
+        "week": 10
       },
       {
         "owner": "Ray Engleking",
-        "team": "Rex Grossman Fan Club",
         "amount": 5,
-        "week": 11,
-        "score": 143.92
+        "week": 11
       },
       {
         "owner": "Ben Bingert",
-        "team": "The Mixon Administration",
         "amount": 5,
-        "week": 12,
-        "score": 149.66
+        "week": 12
       }
     ],
     "consolationPayouts": [],
     "playoffPayouts": [
       {
         "owner": "Bill Solecki",
-        "team": "Wade Boggs Memorial Team",
         "amount": 40,
         "place": "3rd"
       },
       {
         "owner": "Ray Engleking",
-        "team": "Rex Grossman Fan Club",
         "amount": 150,
         "place": "1st"
       },
       {
         "owner": "Ben Bingert",
-        "team": "The Mixon Administration",
         "amount": 70,
         "place": "2nd"
       }
@@ -1588,24 +1417,7 @@
           "lastActiveWeek": null,
           "note": null
         }
-      ],
-      "roundBenchmarks": {
-        "1": 389.3,
-        "2": 254.45,
-        "4": 339.4,
-        "5": 226.42,
-        "6": 239.55,
-        "7": 288.8,
-        "10": 272.74,
-        "14": 181.52,
-        "11": 201.54,
-        "8": 319.32,
-        "3": 276.02,
-        "12": 270.91,
-        "15": 335.7,
-        "13": 234.96,
-        "9": 176.2
-      }
+      ]
     }
   },
   "2019": {
@@ -1718,12 +1530,6 @@
       "count": 3,
       "tied": true
     },
-    "mostConsolationDollars": {
-      "owner": null,
-      "owners": [],
-      "count": 0,
-      "tied": false
-    },
     "bestBenchWarmers": {
       "owner": "Mike Kovacs",
       "teamName": "Saquonda Forever",
@@ -1732,106 +1538,79 @@
     "weeklyHighPayouts": [
       {
         "owner": "Carl Cummins",
-        "team": "Pussy Power",
         "amount": 5,
-        "week": 1,
-        "score": 155.7
+        "week": 1
       },
       {
         "owner": "John Artiglier",
-        "team": "Hubba Chubba",
         "amount": 5,
-        "week": 2,
-        "score": 141.02
+        "week": 2
       },
       {
         "owner": "Randell Crawford",
-        "team": "The HipShire Hobbits",
         "amount": 5,
-        "week": 3,
-        "score": 170.64
+        "week": 3
       },
       {
         "owner": "Mike Kovacs",
-        "team": "Saquonda Forever",
         "amount": 5,
-        "week": 4,
-        "score": 156.88
+        "week": 4
       },
       {
         "owner": "Ben Bingert",
-        "team": "Two Girls One Kupp",
         "amount": 5,
-        "week": 5,
-        "score": 166.72
+        "week": 5
       },
       {
         "owner": "Mike Kovacs",
-        "team": "Saquonda Forever",
         "amount": 5,
-        "week": 6,
-        "score": 183.94
+        "week": 6
       },
       {
         "owner": "Bill Solecki",
-        "team": "Wade Boggs Memorial Team",
         "amount": 5,
-        "week": 7,
-        "score": 115.58
+        "week": 7
       },
       {
         "owner": "Mike Kovacs",
-        "team": "Saquonda Forever",
         "amount": 5,
-        "week": 8,
-        "score": 191.2
+        "week": 8
       },
       {
         "owner": "Carl Cummins",
-        "team": "Pussy Power",
         "amount": 5,
-        "week": 9,
-        "score": 158.68
+        "week": 9
       },
       {
         "owner": "Carl Cummins",
-        "team": "Pussy Power",
         "amount": 5,
-        "week": 10,
-        "score": 134.62
+        "week": 10
       },
       {
         "owner": "Bill Solecki",
-        "team": "Wade Boggs Memorial Team",
         "amount": 5,
-        "week": 11,
-        "score": 126.92
+        "week": 11
       },
       {
         "owner": "Ray Engleking",
-        "team": "Weenie Hut Jr's",
         "amount": 5,
-        "week": 12,
-        "score": 145.4
+        "week": 12
       }
     ],
     "consolationPayouts": [],
     "playoffPayouts": [
       {
         "owner": "Mike Kovacs",
-        "team": "Saquonda Forever",
         "amount": 40,
         "place": "3rd"
       },
       {
         "owner": "Phil Torres",
-        "team": "Go Fudge Yourselves",
         "amount": 150,
         "place": "1st"
       },
       {
         "owner": "Ben Bingert",
-        "team": "Two Girls One Kupp",
         "amount": 70,
         "place": "2nd"
       }
@@ -1895,8 +1674,8 @@
           "player": "Tyler Lockett",
           "roundKept": 9,
           "pointsScored": 295.9,
-          "roundAvgPoints": 224.58,
-          "pointsVsAvg": 71.32,
+          "roundAvgPoints": 224.57,
+          "pointsVsAvg": 71.33,
           "pointsVsAvgPct": 0.3176,
           "verdict": "STEAL",
           "droppedMidSeason": false,
@@ -1929,24 +1708,7 @@
           "lastActiveWeek": null,
           "note": null
         }
-      ],
-      "roundBenchmarks": {
-        "1": 291.57,
-        "2": 320.65,
-        "3": 262.35,
-        "4": 200.96,
-        "6": 252.79,
-        "8": 218.68,
-        "15": 139.67,
-        "5": 268.69,
-        "7": 247.26,
-        "10": 233.93,
-        "13": 243.2,
-        "11": 315.26,
-        "12": 131.5,
-        "14": 163.6,
-        "9": 224.58
-      }
+      ]
     }
   },
   "2020": {
@@ -2056,15 +1818,6 @@
       "count": 3,
       "tied": true
     },
-    "mostConsolationDollars": {
-      "owner": "Carl Cummins",
-      "owners": [
-        "Carl Cummins",
-        "Ray Engleking"
-      ],
-      "count": 1,
-      "tied": true
-    },
     "bestBenchWarmers": {
       "owner": "Phil Torres",
       "teamName": "Go Fudge Yourselves",
@@ -2073,135 +1826,100 @@
     "weeklyHighPayouts": [
       {
         "owner": "Bill Solecki",
-        "team": "Wade Boggs Memorial Team",
         "amount": 4,
-        "week": 1,
-        "score": 152.6
+        "week": 1
       },
       {
         "owner": "Carl Cummins",
-        "team": "Pussy Power",
         "amount": 4,
-        "week": 2,
-        "score": 153.0
+        "week": 2
       },
       {
         "owner": "Phil Torres",
-        "team": "Go Fudge Yourselves",
         "amount": 5,
-        "week": 3,
-        "score": 193.9
+        "week": 3
       },
       {
         "owner": "John Artiglier",
-        "team": "RADrigo Is My Homeboy",
         "amount": 5,
-        "week": 4,
-        "score": 203.12
+        "week": 4
       },
       {
         "owner": "Mike Kovacs",
-        "team": "All Aboard The J Train",
         "amount": 5,
-        "week": 5,
-        "score": 167.7
+        "week": 5
       },
       {
         "owner": "John Artiglier",
-        "team": "RADrigo Is My Homeboy",
         "amount": 5,
-        "week": 6,
-        "score": 113.58
+        "week": 6
       },
       {
         "owner": "Bill Solecki",
-        "team": "Wade Boggs Memorial Team",
         "amount": 5,
-        "week": 7,
-        "score": 167.42
+        "week": 7
       },
       {
         "owner": "Bill Solecki",
-        "team": "Wade Boggs Memorial Team",
         "amount": 5,
-        "week": 8,
-        "score": 143.34
+        "week": 8
       },
       {
         "owner": "Ray Engleking",
-        "team": "Salty Spitoon",
         "amount": 5,
-        "week": 9,
-        "score": 151.0
+        "week": 9
       },
       {
         "owner": "Bill Solecki",
-        "team": "Wade Boggs Memorial Team",
         "amount": 5,
-        "week": 10,
-        "score": 128.3
+        "week": 10
       },
       {
         "owner": "John Artiglier",
-        "team": "RADrigo Is My Homeboy",
         "amount": 5,
-        "week": 11,
-        "score": 147.18
+        "week": 11
       },
       {
         "owner": "Ray Engleking",
-        "team": "Salty Spitoon",
         "amount": 5,
-        "week": 12,
-        "score": 188.5
+        "week": 12
       },
       {
         "owner": "Bill Solecki",
-        "team": "Wade Boggs Memorial Team",
         "amount": 5,
-        "week": 13,
-        "score": 154.3
+        "week": 13
       },
       {
         "owner": "Ray Engleking",
-        "team": "Salty Spitoon",
         "amount": 5,
-        "week": 14,
-        "score": 167.64
+        "week": 14
       }
     ],
     "consolationPayouts": [
       {
         "owner": "Carl Cummins",
-        "team": "Pussy Power",
         "amount": 1,
-        "week": 1,
-        "score": 144.04
+        "week": 1
       },
       {
         "owner": "Ray Engleking",
-        "team": "Salty Spitoon",
         "amount": 1,
-        "week": 2,
-        "score": 143.32
+        "week": 2
       }
     ],
     "playoffPayouts": [
       {
         "owner": "Bill Solecki",
-        "team": "Wade Boggs Memorial Team",
         "amount": 40,
         "place": "3rd"
       },
       {
         "owner": "Phil Torres",
-        "team": "Go Fudge Yourselves",
         "amount": 150,
         "place": "1st"
       },
       {
         "owner": "John Artiglier",
-        "team": "RADrigo Is My Homeboy",
         "amount": 70,
         "place": "2nd"
       }
@@ -2291,8 +2009,8 @@
           "player": "Lamar Jackson",
           "roundKept": 4,
           "pointsScored": 481.12,
-          "roundAvgPoints": 320.61,
-          "pointsVsAvg": 160.51,
+          "roundAvgPoints": 320.62,
+          "pointsVsAvg": 160.5,
           "pointsVsAvgPct": 0.5006,
           "verdict": "STEAL",
           "droppedMidSeason": false,
@@ -2312,23 +2030,7 @@
           "lastActiveWeek": null,
           "note": null
         }
-      ],
-      "roundBenchmarks": {
-        "1": 316.84,
-        "2": 360.24,
-        "4": 320.61,
-        "5": 262.99,
-        "6": 269.85,
-        "7": 340.36,
-        "9": 249.02,
-        "3": 289.5,
-        "12": 290.11,
-        "11": 204.72,
-        "10": 317.8,
-        "8": 302.2,
-        "14": 275.91,
-        "13": 296.08
-      }
+      ]
     }
   },
   "2021": {
@@ -2457,14 +2159,6 @@
       "count": 3,
       "tied": false
     },
-    "mostConsolationDollars": {
-      "owner": "John Artiglier",
-      "owners": [
-        "John Artiglier"
-      ],
-      "count": 2,
-      "tied": false
-    },
     "bestBenchWarmers": {
       "owner": "Ben Bingert",
       "teamName": "Chubb Basshole",
@@ -2473,156 +2167,115 @@
     "weeklyHighPayouts": [
       {
         "owner": "Mike Kovacs",
-        "team": "Colonel Sanders McCaffreys",
         "amount": 5,
-        "week": 1,
-        "score": 142.68
+        "week": 1
       },
       {
         "owner": "John Artiglier",
-        "team": "RADrigo Is My Homeboy",
         "amount": 5,
-        "week": 2,
-        "score": 154.54
+        "week": 2
       },
       {
         "owner": "Bill Solecki",
-        "team": "Wade Boggs Memorial Team",
         "amount": 5,
-        "week": 3,
-        "score": 130.14
+        "week": 3
       },
       {
         "owner": "Bill Solecki",
-        "team": "Wade Boggs Memorial Team",
         "amount": 5,
-        "week": 4,
-        "score": 146.02
+        "week": 4
       },
       {
         "owner": "Ray Engleking",
-        "team": "Salty Spitoon",
         "amount": 5,
-        "week": 5,
-        "score": 177.18
+        "week": 5
       },
       {
         "owner": "Mike Kovacs",
-        "team": "Colonel Sanders McCaffreys",
         "amount": 4,
-        "week": 6,
-        "score": 151.48
+        "week": 6
       },
       {
         "owner": "Phil Torres",
-        "team": "Go Fudge Yourselves",
         "amount": 5,
-        "week": 7,
-        "score": 150.06
+        "week": 7
       },
       {
         "owner": "John Artiglier",
-        "team": "RADrigo Is My Homeboy",
         "amount": 5,
-        "week": 8,
-        "score": 140.4
+        "week": 8
       },
       {
         "owner": "Ray Engleking",
-        "team": "Salty Spitoon",
         "amount": 5,
-        "week": 9,
-        "score": 125.38
+        "week": 9
       },
       {
         "owner": "Mike Kovacs",
-        "team": "Colonel Sanders McCaffreys",
         "amount": 4,
-        "week": 10,
-        "score": 152.84
+        "week": 10
       },
       {
         "owner": "Ray Engleking",
-        "team": "Salty Spitoon",
         "amount": 4,
-        "week": 11,
-        "score": 157.74
+        "week": 11
       },
       {
         "owner": "Bill Solecki",
-        "team": "Wade Boggs Memorial Team",
         "amount": 5,
-        "week": 12,
-        "score": 134.06
+        "week": 12
       },
       {
         "owner": "Carl Cummins",
-        "team": "Pussy Power",
         "amount": 4,
-        "week": 13,
-        "score": 140.46
+        "week": 13
       },
       {
         "owner": "Carl Cummins",
-        "team": "Pussy Power",
         "amount": 5,
-        "week": 14,
-        "score": 144.8
+        "week": 14
       },
       {
         "owner": "Ben Bingert",
-        "team": "Chubb Basshole",
         "amount": 5,
-        "week": 15,
-        "score": 133.14
+        "week": 15
       }
     ],
     "consolationPayouts": [
       {
         "owner": "Phil Torres",
-        "team": "Go Fudge Yourselves",
         "amount": 1,
-        "week": 6,
-        "score": 144.32
+        "week": 6
       },
       {
         "owner": "Ray Engleking",
-        "team": "Salty Spitoon",
         "amount": 1,
-        "week": 10,
-        "score": 128.84
+        "week": 10
       },
       {
         "owner": "John Artiglier",
-        "team": "RADrigo Is My Homeboy",
         "amount": 1,
-        "week": 11,
-        "score": 132.68
+        "week": 11
       },
       {
         "owner": "John Artiglier",
-        "team": "RADrigo Is My Homeboy",
         "amount": 1,
-        "week": 13,
-        "score": 128.22
+        "week": 13
       }
     ],
     "playoffPayouts": [
       {
         "owner": "Bill Solecki",
-        "team": "Wade Boggs Memorial Team",
         "amount": 90,
         "place": "2nd"
       },
       {
         "owner": "Ray Engleking",
-        "team": "Salty Spitoon",
         "amount": 50,
         "place": "3rd"
       },
       {
         "owner": "Ben Bingert",
-        "team": "Chubb Basshole",
         "amount": 185,
         "place": "1st"
       }
@@ -2720,24 +2373,7 @@
           "lastActiveWeek": null,
           "note": null
         }
-      ],
-      "roundBenchmarks": {
-        "1": 342.95,
-        "2": 354.83,
-        "3": 395.28,
-        "4": 321.2,
-        "5": 414.94,
-        "9": 271.73,
-        "10": 263.75,
-        "6": 350.48,
-        "12": 241.77,
-        "8": 247.64,
-        "7": 336.86,
-        "11": 411.53,
-        "13": 287.33,
-        "15": 247.88,
-        "14": 298.24
-      }
+      ]
     }
   },
   "2022": {
@@ -2868,14 +2504,6 @@
       "count": 4,
       "tied": false
     },
-    "mostConsolationDollars": {
-      "owner": "Ray Engleking",
-      "owners": [
-        "Ray Engleking"
-      ],
-      "count": 1,
-      "tied": false
-    },
     "bestBenchWarmers": {
       "owner": "Ben Bingert",
       "teamName": "Joe Burrow Tiger King",
@@ -2884,135 +2512,100 @@
     "weeklyHighPayouts": [
       {
         "owner": "Bill Solecki",
-        "team": "Musconetcong Mantis Men",
         "amount": 5,
-        "week": 1,
-        "score": 149.96
+        "week": 1
       },
       {
         "owner": "Ray Engleking",
-        "team": "Salty Spitoon",
         "amount": 5,
-        "week": 2,
-        "score": 152.32
+        "week": 2
       },
       {
         "owner": "John Artiglier",
-        "team": "Goodnight Again My Sweet Prince",
         "amount": 5,
-        "week": 3,
-        "score": 118.12
+        "week": 3
       },
       {
         "owner": "Ben Bingert",
-        "team": "Joe Burrow Tiger King",
         "amount": 5,
-        "week": 4,
-        "score": 147.66
+        "week": 4
       },
       {
         "owner": "Ben Bingert",
-        "team": "Joe Burrow Tiger King",
         "amount": 5,
-        "week": 5,
-        "score": 161.28
+        "week": 5
       },
       {
         "owner": "Bill Solecki",
-        "team": "Musconetcong Mantis Men",
         "amount": 5,
-        "week": 6,
-        "score": 137.22
+        "week": 6
       },
       {
         "owner": "Ben Bingert",
-        "team": "Joe Burrow Tiger King",
         "amount": 5,
-        "week": 7,
-        "score": 146.72
+        "week": 7
       },
       {
         "owner": "Phil Torres",
-        "team": "Go Fudge Yourselves",
         "amount": 5,
-        "week": 8,
-        "score": 150.34
+        "week": 8
       },
       {
         "owner": "Ben Bingert",
-        "team": "Joe Burrow Tiger King",
         "amount": 5,
-        "week": 9,
-        "score": 145.84
+        "week": 9
       },
       {
         "owner": "Mike Kovacs",
-        "team": "Al Tuck And No Action",
         "amount": 5,
-        "week": 10,
-        "score": 138.48
+        "week": 10
       },
       {
         "owner": "Randell Crawford",
-        "team": "Insane in the Ukraine",
         "amount": 5,
-        "week": 11,
-        "score": 171.84
+        "week": 11
       },
       {
         "owner": "Bill Solecki",
-        "team": "Musconetcong Mantis Men",
         "amount": 5,
-        "week": 12,
-        "score": 149.46
+        "week": 12
       },
       {
         "owner": "Ray Engleking",
-        "team": "Salty Spitoon",
         "amount": 5,
-        "week": 13,
-        "score": 150.6
+        "week": 13
       },
       {
         "owner": "Phil Torres",
-        "team": "Go Fudge Yourselves",
         "amount": 4,
-        "week": 14,
-        "score": 116.52
+        "week": 14
       },
       {
         "owner": "Randell Crawford",
-        "team": "Insane in the Ukraine",
         "amount": 5,
-        "week": 15,
-        "score": 135.66
+        "week": 15
       }
     ],
     "consolationPayouts": [
       {
         "owner": "Ray Engleking",
-        "team": "Salty Spitoon",
         "amount": 1,
-        "week": 14,
-        "score": 116.48
+        "week": 14
       }
     ],
     "playoffPayouts": [
       {
         "owner": "Bill Solecki",
-        "team": "Musconetcong Mantis Men",
         "amount": 50,
         "place": "3rd"
       },
       {
         "owner": "Carl Cummins",
-        "team": "Pussy Power",
         "amount": 185,
         "place": "1st"
       },
       {
         "owner": "Ben Bingert",
-        "team": "Joe Burrow Tiger King",
         "amount": 90,
         "place": "2nd"
       }
@@ -3084,24 +2677,7 @@
           "lastActiveWeek": 5,
           "note": null
         }
-      ],
-      "roundBenchmarks": {
-        "1": 409.6,
-        "2": 408.23,
-        "3": 342.55,
-        "5": 257.75,
-        "6": 356.55,
-        "11": 244.96,
-        "14": 308.5,
-        "12": 293.1,
-        "7": 342.39,
-        "4": 325.66,
-        "13": 372.73,
-        "8": 262.45,
-        "10": 356.43,
-        "15": 205.25,
-        "9": 282.7
-      }
+      ]
     }
   },
   "2023": {
@@ -3239,16 +2815,6 @@
       "count": 3,
       "tied": true
     },
-    "mostConsolationDollars": {
-      "owner": "Bill Solecki",
-      "owners": [
-        "Bill Solecki",
-        "Carl Cummins",
-        "Phil Torres"
-      ],
-      "count": 1,
-      "tied": true
-    },
     "bestBenchWarmers": {
       "owner": "Carl Cummins",
       "teamName": "Taylor Swift",
@@ -3257,142 +2823,105 @@
     "weeklyHighPayouts": [
       {
         "owner": "Carl Cummins",
-        "team": "Taylor Swift",
         "amount": 9,
-        "week": 1,
-        "score": 132.94
+        "week": 1
       },
       {
         "owner": "Randell Crawford",
-        "team": "Insane in the Ukraine",
         "amount": 10,
-        "week": 2,
-        "score": 135.36
+        "week": 2
       },
       {
         "owner": "Randell Crawford",
-        "team": "Insane in the Ukraine",
         "amount": 9,
-        "week": 3,
-        "score": 178.62
+        "week": 3
       },
       {
         "owner": "Carl Cummins",
-        "team": "Taylor Swift",
         "amount": 10,
-        "week": 4,
-        "score": 150.76
+        "week": 4
       },
       {
         "owner": "Mike Kovacs",
-        "team": "Chase My Butker",
         "amount": 10,
-        "week": 5,
-        "score": 138.26
+        "week": 5
       },
       {
         "owner": "Ray Engleking",
-        "team": "Salty Spitoon",
         "amount": 10,
-        "week": 6,
-        "score": 113.0
+        "week": 6
       },
       {
         "owner": "Phil Torres",
-        "team": "Go Fudge Yourselves",
         "amount": 10,
-        "week": 7,
-        "score": 129.76
+        "week": 7
       },
       {
         "owner": "Mike Kovacs",
-        "team": "Chase My Butker",
         "amount": 10,
-        "week": 8,
-        "score": 143.46
+        "week": 8
       },
       {
         "owner": "Phil Torres",
-        "team": "Go Fudge Yourselves",
         "amount": 9,
-        "week": 9,
-        "score": 135.9
+        "week": 9
       },
       {
         "owner": "Bill Solecki",
-        "team": "Why's This So Sticky?",
         "amount": 10,
-        "week": 10,
-        "score": 130.46
+        "week": 10
       },
       {
         "owner": "Phil Torres",
-        "team": "Go Fudge Yourselves",
         "amount": 10,
-        "week": 11,
-        "score": 139.58
+        "week": 11
       },
       {
         "owner": "Ray Engleking",
-        "team": "Salty Spitoon",
         "amount": 10,
-        "week": 12,
-        "score": 166.8
+        "week": 12
       },
       {
         "owner": "Bill Solecki",
-        "team": "Why's This So Sticky?",
         "amount": 10,
-        "week": 13,
-        "score": 153.46
+        "week": 13
       },
       {
         "owner": "Phil Torres",
-        "team": "Go Fudge Yourselves",
         "amount": 10,
-        "week": 14,
-        "score": 141.74
+        "week": 14
       }
     ],
     "consolationPayouts": [
       {
         "owner": "Bill Solecki",
-        "team": "Why's This So Sticky?",
         "amount": 1,
-        "week": 1,
-        "score": 127.16
+        "week": 1
       },
       {
         "owner": "Phil Torres",
-        "team": "Go Fudge Yourselves",
         "amount": 1,
-        "week": 3,
-        "score": 146.28
+        "week": 3
       },
       {
         "owner": "Carl Cummins",
-        "team": "Taylor Swift",
         "amount": 1,
-        "week": 9,
-        "score": 111.54
+        "week": 9
       }
     ],
     "playoffPayouts": [
       {
         "owner": "Bill Solecki",
-        "team": "Why's This So Sticky?",
         "amount": 50,
         "place": "3rd"
       },
       {
         "owner": "Mike Kovacs",
-        "team": "Chase My Butker",
         "amount": 100,
         "place": "2nd"
       },
       {
         "owner": "Ray Engleking",
-        "team": "Salty Spitoon",
         "amount": 210,
         "place": "1st"
       }
@@ -3404,8 +2933,8 @@
           "player": "Nick Chubb",
           "roundKept": 2,
           "pointsScored": 42.2,
-          "roundAvgPoints": 379.16,
-          "pointsVsAvg": -336.96,
+          "roundAvgPoints": 379.15,
+          "pointsVsAvg": -336.95,
           "pointsVsAvgPct": -0.8887,
           "verdict": "BUST",
           "droppedMidSeason": true,
@@ -3417,8 +2946,8 @@
           "player": "Saquon Barkley",
           "roundKept": 2,
           "pointsScored": 278.6,
-          "roundAvgPoints": 379.16,
-          "pointsVsAvg": -100.56,
+          "roundAvgPoints": 379.15,
+          "pointsVsAvg": -100.55,
           "pointsVsAvgPct": -0.2652,
           "verdict": "BUST",
           "droppedMidSeason": false,
@@ -3477,24 +3006,7 @@
           "lastActiveWeek": null,
           "note": null
         }
-      ],
-      "roundBenchmarks": {
-        "1": 337.38,
-        "2": 379.16,
-        "3": 274.85,
-        "5": 181.8,
-        "6": 268.02,
-        "7": 331.44,
-        "10": 323.17,
-        "13": 257.36,
-        "11": 219.04,
-        "4": 311.03,
-        "8": 205.43,
-        "12": 232.63,
-        "15": 307.42,
-        "9": 220.84,
-        "14": 194.05
-      }
+      ]
     }
   },
   "2024": {
@@ -3607,12 +3119,6 @@
       "count": 3,
       "tied": true
     },
-    "mostConsolationDollars": {
-      "owner": null,
-      "owners": [],
-      "count": 0,
-      "tied": false
-    },
     "bestBenchWarmers": {
       "owner": "Mike Kovacs",
       "teamName": "Dollar Dollar Bills Y'all",
@@ -3621,120 +3127,89 @@
     "weeklyHighPayouts": [
       {
         "owner": "Ray Engleking",
-        "team": "Salty Spitoon",
         "amount": 10,
-        "week": 1,
-        "score": 124.28
+        "week": 1
       },
       {
         "owner": "Joe Jaramillo",
-        "team": "Bye Week Part 2",
         "amount": 10,
-        "week": 2,
-        "score": 127.12
+        "week": 2
       },
       {
         "owner": "Carl Cummins",
-        "team": "Taylor Swift",
         "amount": 10,
-        "week": 3,
-        "score": 162.98
+        "week": 3
       },
       {
         "owner": "Phil Torres",
-        "team": "Hawk Tua",
         "amount": 10,
-        "week": 4,
-        "score": 146.74
+        "week": 4
       },
       {
         "owner": "Ben Bingert",
-        "team": "Strouds in the Clouds",
         "amount": 10,
-        "week": 5,
-        "score": 135.44
+        "week": 5
       },
       {
         "owner": "Ray Engleking",
-        "team": "Salty Spitoon",
         "amount": 10,
-        "week": 6,
-        "score": 130.3
+        "week": 6
       },
       {
         "owner": "Carl Cummins",
-        "team": "Taylor Swift",
         "amount": 10,
-        "week": 7,
-        "score": 133.6
+        "week": 7
       },
       {
         "owner": "John Artiglier",
-        "team": "All You Need is Love",
         "amount": 10,
-        "week": 8,
-        "score": 148.1
+        "week": 8
       },
       {
         "owner": "Carl Cummins",
-        "team": "Taylor Swift",
         "amount": 10,
-        "week": 9,
-        "score": 137.86
+        "week": 9
       },
       {
         "owner": "John Artiglier",
-        "team": "All You Need is Love",
         "amount": 10,
-        "week": 10,
-        "score": 123.84
+        "week": 10
       },
       {
         "owner": "john crawford",
-        "team": "Paintin Peyton",
         "amount": 10,
-        "week": 11,
-        "score": 144.16
+        "week": 11
       },
       {
         "owner": "Ben Bingert",
-        "team": "Strouds in the Clouds",
         "amount": 10,
-        "week": 12,
-        "score": 126.62
+        "week": 12
       },
       {
         "owner": "Mike Kovacs",
-        "team": "Dollar Dollar Bills Y'all",
         "amount": 10,
-        "week": 13,
-        "score": 133.94
+        "week": 13
       },
       {
         "owner": "Bill Solecki",
-        "team": "Bovine University Stampede",
         "amount": 10,
-        "week": 14,
-        "score": 153.6
+        "week": 14
       }
     ],
     "consolationPayouts": [],
     "playoffPayouts": [
       {
         "owner": "Bill Solecki",
-        "team": "Bovine University Stampede",
         "amount": 210,
         "place": "1st"
       },
       {
         "owner": "Carl Cummins",
-        "team": "Taylor Swift",
         "amount": 100,
         "place": "2nd"
       },
       {
         "owner": "Ben Bingert",
-        "team": "Strouds in the Clouds",
         "amount": 50,
         "place": "3rd"
       }
@@ -3845,24 +3320,7 @@
           "lastActiveWeek": null,
           "note": null
         }
-      ],
-      "roundBenchmarks": {
-        "1": 342.56,
-        "2": 279.29,
-        "3": 311.38,
-        "7": 290.49,
-        "12": 243.06,
-        "10": 268.21,
-        "11": 258.06,
-        "6": 282.17,
-        "4": 309.28,
-        "5": 230.46,
-        "13": 206.86,
-        "15": 299.75,
-        "8": 275.91,
-        "9": 245.7,
-        "14": 195.58
-      }
+      ]
     }
   },
   "2025": {
@@ -3974,12 +3432,6 @@
       "count": 4,
       "tied": false
     },
-    "mostConsolationDollars": {
-      "owner": null,
-      "owners": [],
-      "count": 0,
-      "tied": false
-    },
     "bestBenchWarmers": {
       "owner": "Carl Cummins",
       "teamName": "Taylor and Travis Swift \ud83d\udc51",
@@ -3988,120 +3440,89 @@
     "weeklyHighPayouts": [
       {
         "owner": "Ray Engleking",
-        "team": "Salty Spitoon",
         "amount": 10,
-        "week": 1,
-        "score": 126.36
+        "week": 1
       },
       {
         "owner": "Bill Solecki",
-        "team": "Bovine University Stampede",
         "amount": 10,
-        "week": 2,
-        "score": 147.3
+        "week": 2
       },
       {
         "owner": "john crawford",
-        "team": "Paintin Peyton",
         "amount": 10,
-        "week": 3,
-        "score": 140.74
+        "week": 3
       },
       {
         "owner": "Randell Crawford",
-        "team": "Insane in the Ukraine",
         "amount": 10,
-        "week": 4,
-        "score": 137.44
+        "week": 4
       },
       {
         "owner": "John Artiglier",
-        "team": "All You Need is Love",
         "amount": 10,
-        "week": 5,
-        "score": 137.48
+        "week": 5
       },
       {
         "owner": "John Artiglier",
-        "team": "All You Need is Love",
         "amount": 10,
-        "week": 6,
-        "score": 154.24
+        "week": 6
       },
       {
         "owner": "Joe Jaramillo",
-        "team": "Loop, There it is!",
         "amount": 10,
-        "week": 7,
-        "score": 162.72
+        "week": 7
       },
       {
         "owner": "Mike Kovacs",
-        "team": "Saquanda Strikes Back",
         "amount": 10,
-        "week": 8,
-        "score": 137.3
+        "week": 8
       },
       {
         "owner": "Ray Engleking",
-        "team": "Salty Spitoon",
         "amount": 10,
-        "week": 9,
-        "score": 131.42
+        "week": 9
       },
       {
         "owner": "Bill Solecki",
-        "team": "Bovine University Stampede",
         "amount": 10,
-        "week": 10,
-        "score": 152.34
+        "week": 10
       },
       {
         "owner": "Randell Crawford",
-        "team": "Insane in the Ukraine",
         "amount": 10,
-        "week": 11,
-        "score": 152.7
+        "week": 11
       },
       {
         "owner": "Joe Jaramillo",
-        "team": "Loop, There it is!",
         "amount": 10,
-        "week": 12,
-        "score": 147.54
+        "week": 12
       },
       {
         "owner": "Ray Engleking",
-        "team": "Salty Spitoon",
         "amount": 10,
-        "week": 13,
-        "score": 120.52
+        "week": 13
       },
       {
         "owner": "Ray Engleking",
-        "team": "Salty Spitoon",
         "amount": 10,
-        "week": 14,
-        "score": 169.54
+        "week": 14
       }
     ],
     "consolationPayouts": [],
     "playoffPayouts": [
       {
         "owner": "Bill Solecki",
-        "team": "Bovine University Stampede",
         "amount": 100,
         "place": "2nd"
       },
       {
         "owner": "Carl Cummins",
-        "team": "Taylor and Travis Swift \ud83d\udc51",
         "amount": 50,
         "place": "3rd"
       },
       {
         "owner": "Ray Engleking",
-        "team": "Salty Spitoon",
         "amount": 210,
         "place": "1st"
       }
@@ -4199,24 +3620,7 @@
           "lastActiveWeek": null,
           "note": null
         }
-      ],
-      "roundBenchmarks": {
-        "1": 381.73,
-        "2": 318.97,
-        "3": 303.13,
-        "4": 249.96,
-        "8": 276.5,
-        "10": 232.67,
-        "13": 288.15,
-        "9": 223.02,
-        "6": 255.67,
-        "14": 259.46,
-        "15": 173.45,
-        "7": 263.35,
-        "5": 267.55,
-        "11": 253.83,
-        "12": 224.21
-      }
+      ]
     }
   },
   "2026": {
@@ -4324,12 +3728,6 @@
       "count": 2,
       "tied": false
     },
-    "mostConsolationDollars": {
-      "owner": null,
-      "owners": [],
-      "count": 0,
-      "tied": false
-    },
     "bestBenchWarmers": {
       "owner": "Carl Cummins",
       "teamName": "Taylor and Travis Swift \ud83d\udc51",
@@ -4338,31 +3736,23 @@
     "weeklyHighPayouts": [
       {
         "owner": "john crawford",
-        "team": "Paintin Peyton",
         "amount": 10,
-        "week": 1,
-        "score": 147.9
+        "week": 1
       },
       {
         "owner": "Carl Cummins",
-        "team": "Taylor and Travis Swift \ud83d\udc51",
         "amount": 10,
-        "week": 2,
-        "score": 121.86
+        "week": 2
       },
       {
         "owner": "Phil Torres",
-        "team": "Canadian Geeses",
         "amount": 10,
-        "week": 3,
-        "score": 175.98
+        "week": 3
       },
       {
         "owner": "Ray Engleking",
-        "team": "Salty Spitoon",
         "amount": 10,
-        "week": 4,
-        "score": 166.88
+        "week": 4
       }
     ],
     "consolationPayouts": [],
@@ -4473,24 +3863,7 @@
           "lastActiveWeek": null,
           "note": null
         }
-      ],
-      "roundBenchmarks": {
-        "1": 142.51,
-        "2": 94.5,
-        "3": 98.75,
-        "4": 82.98,
-        "5": 86.68,
-        "6": 62.76,
-        "7": 86.31,
-        "8": 65.0,
-        "9": 69.12,
-        "10": 55.66,
-        "11": 66.12,
-        "12": 65.22,
-        "13": 106.35,
-        "14": 61.44,
-        "15": 52.2
-      }
+      ]
     }
   }
 }
