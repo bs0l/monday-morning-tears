@@ -118,11 +118,11 @@
         "count": 2
       },
       {
-        "player": "Patriots D/ST",
-        "count": 1
+        "player": "Kaelon Black",
+        "count": 2
       },
       {
-        "player": "Browns D/ST",
+        "player": "Patriots D/ST",
         "count": 1
       }
     ]
@@ -1086,11 +1086,19 @@
         {
           "player": "RJ Harvey",
           "count": 1
+        },
+        {
+          "player": "Harrison Butker",
+          "count": 1
         }
       ],
       "Randell Crawford": [
         {
           "player": "Quentin Johnston",
+          "count": 1
+        },
+        {
+          "player": "Daniel Jones",
           "count": 1
         }
       ],
@@ -1107,6 +1115,14 @@
       "Carl Cummins": [
         {
           "player": "Rome Odunze",
+          "count": 1
+        },
+        {
+          "player": "Dalton Schultz",
+          "count": 1
+        },
+        {
+          "player": "Kalif Raymond",
           "count": 1
         }
       ],
@@ -3570,16 +3586,43 @@
       "2026": {
         "players": [
           {
+            "player": "Tyler Allgeier",
+            "teamCount": 2,
+            "teams": [
+              "Joe Jaramillo",
+              "Carl Cummins"
+            ]
+          },
+          {
             "player": "Kaelon Black",
             "teamCount": 2,
             "teams": [
               "Bill Solecki",
               "Ben Bingert"
             ]
+          },
+          {
+            "player": "49ers D/ST",
+            "teamCount": 2,
+            "teams": [
+              "John Artiglier",
+              "Joe Jaramillo"
+            ]
+          },
+          {
+            "player": "Braelon Allen",
+            "teamCount": 2,
+            "teams": [
+              "Joe Jaramillo",
+              "Mike Kovacs"
+            ]
           }
         ],
         "teamTally": {
-          "Ben Bingert": 1
+          "Carl Cummins": 1,
+          "Ben Bingert": 1,
+          "Joe Jaramillo": 1,
+          "Mike Kovacs": 1
         },
         "sameWeekAddsFlagged": 0
       }
@@ -3587,13 +3630,13 @@
     "allTimeTeamTally": {
       "Ray Engleking": 33,
       "John Artiglier": 35,
-      "Carl Cummins": 44,
+      "Carl Cummins": 45,
       "Ben Bingert": 30,
       "Bill Solecki": 65,
-      "Mike Kovacs": 48,
+      "Mike Kovacs": 49,
       "Phil Torres": 31,
       "Randell Crawford": 35,
-      "Joe Jaramillo": 13,
+      "Joe Jaramillo": 14,
       "john crawford": 10
     },
     "allTimeSameWeekAddsFlagged": 4
@@ -3718,11 +3761,11 @@
           "count": 2
         },
         {
-          "player": "Patriots D/ST",
-          "count": 1
+          "player": "Kaelon Black",
+          "count": 2
         },
         {
-          "player": "Browns D/ST",
+          "player": "Patriots D/ST",
           "count": 1
         }
       ]
@@ -4686,11 +4729,19 @@
           {
             "player": "RJ Harvey",
             "count": 1
+          },
+          {
+            "player": "Harrison Butker",
+            "count": 1
           }
         ],
         "Randell Crawford": [
           {
             "player": "Quentin Johnston",
+            "count": 1
+          },
+          {
+            "player": "Daniel Jones",
             "count": 1
           }
         ],
@@ -4707,6 +4758,14 @@
         "Carl Cummins": [
           {
             "player": "Rome Odunze",
+            "count": 1
+          },
+          {
+            "player": "Dalton Schultz",
+            "count": 1
+          },
+          {
+            "player": "Kalif Raymond",
             "count": 1
           }
         ],
@@ -6782,16 +6841,43 @@
         "2026": {
           "players": [
             {
+              "player": "Tyler Allgeier",
+              "teamCount": 2,
+              "teams": [
+                "Joe Jaramillo",
+                "Carl Cummins"
+              ]
+            },
+            {
               "player": "Kaelon Black",
               "teamCount": 2,
               "teams": [
                 "Bill Solecki",
                 "Ben Bingert"
               ]
+            },
+            {
+              "player": "49ers D/ST",
+              "teamCount": 2,
+              "teams": [
+                "John Artiglier",
+                "Joe Jaramillo"
+              ]
+            },
+            {
+              "player": "Braelon Allen",
+              "teamCount": 2,
+              "teams": [
+                "Joe Jaramillo",
+                "Mike Kovacs"
+              ]
             }
           ],
           "teamTally": {
-            "Ben Bingert": 1
+            "Carl Cummins": 1,
+            "Ben Bingert": 1,
+            "Joe Jaramillo": 1,
+            "Mike Kovacs": 1
           },
           "sameWeekAddsFlagged": 0
         }
@@ -6799,13 +6885,13 @@
       "allTimeTeamTally": {
         "Ray Engleking": 27,
         "John Artiglier": 33,
-        "Carl Cummins": 32,
+        "Carl Cummins": 33,
         "Ben Bingert": 25,
-        "Mike Kovacs": 44,
+        "Mike Kovacs": 45,
         "Bill Solecki": 47,
         "Phil Torres": 27,
         "Randell Crawford": 31,
-        "Joe Jaramillo": 11,
+        "Joe Jaramillo": 12,
         "john crawford": 9
       },
       "allTimeSameWeekAddsFlagged": 3

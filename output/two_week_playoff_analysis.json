@@ -1,0 +1,1980 @@
+{
+  "summary": {
+    "all": {
+      "matchups": 54,
+      "week1Ties": 0,
+      "decidedAfterWeek1": 54,
+      "comebacks": 7,
+      "held": 47,
+      "tiedOverall": 0,
+      "comebackRate": 0.12962962962962962,
+      "avgWeek1Lead": 23.031111111111112,
+      "avgLeadOvercome": 14.497142857142858,
+      "avgLeadHeld": 24.30212765957447,
+      "largestComeback": {
+        "year": 2014,
+        "weeks": [
+          16,
+          17
+        ],
+        "lead": 29.0,
+        "bracket": "LOSERS_CONSOLATION_LADDER",
+        "leader": "Bill Solecki",
+        "winner": "Brian Dorward"
+      }
+    },
+    "winnersBracket": {
+      "matchups": 18,
+      "week1Ties": 0,
+      "decidedAfterWeek1": 18,
+      "comebacks": 3,
+      "held": 15,
+      "tiedOverall": 0,
+      "comebackRate": 0.16666666666666666,
+      "avgWeek1Lead": 22.975555555555555,
+      "avgLeadOvercome": 12.126666666666667,
+      "avgLeadHeld": 25.145333333333333,
+      "largestComeback": {
+        "year": 2015,
+        "weeks": [
+          13,
+          14
+        ],
+        "lead": 20.52,
+        "bracket": "WINNERS_BRACKET",
+        "leader": "Brian Dorward",
+        "winner": "Loren Kessell"
+      }
+    },
+    "otherBrackets": {
+      "matchups": 36,
+      "week1Ties": 0,
+      "decidedAfterWeek1": 36,
+      "comebacks": 4,
+      "held": 32,
+      "tiedOverall": 0,
+      "comebackRate": 0.1111111111111111,
+      "avgWeek1Lead": 23.058888888888887,
+      "avgLeadOvercome": 16.275,
+      "avgLeadHeld": 23.906875,
+      "largestComeback": {
+        "year": 2014,
+        "weeks": [
+          16,
+          17
+        ],
+        "lead": 29.0,
+        "bracket": "LOSERS_CONSOLATION_LADDER",
+        "leader": "Bill Solecki",
+        "winner": "Brian Dorward"
+      }
+    }
+  },
+  "byYear": [
+    {
+      "year": 2014,
+      "matchups": 12,
+      "week1Ties": 0,
+      "comebacks": 2,
+      "held": 10,
+      "tiedOverall": 0
+    },
+    {
+      "year": 2015,
+      "matchups": 10,
+      "week1Ties": 0,
+      "comebacks": 2,
+      "held": 8,
+      "tiedOverall": 0
+    },
+    {
+      "year": 2016,
+      "matchups": 8,
+      "week1Ties": 0,
+      "comebacks": 2,
+      "held": 6,
+      "tiedOverall": 0
+    },
+    {
+      "year": 2017,
+      "matchups": 8,
+      "week1Ties": 0,
+      "comebacks": 0,
+      "held": 8,
+      "tiedOverall": 0
+    },
+    {
+      "year": 2018,
+      "matchups": 8,
+      "week1Ties": 0,
+      "comebacks": 1,
+      "held": 7,
+      "tiedOverall": 0
+    },
+    {
+      "year": 2019,
+      "matchups": 8,
+      "week1Ties": 0,
+      "comebacks": 0,
+      "held": 8,
+      "tiedOverall": 0
+    }
+  ],
+  "matchups": [
+    {
+      "year": 2014,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "Scott's ConsolationTots",
+        "teamId": 1,
+        "week1": 118.0,
+        "week2": 95.0,
+        "total": 213.0
+      },
+      "away": {
+        "owner": "Randell Crawford",
+        "teamName": "Erection Protection",
+        "teamId": 6,
+        "week1": 87.0,
+        "week2": 66.0,
+        "total": 153.0
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 31.0,
+      "week2Swing": -29.0,
+      "finalMargin": 60.0,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2014,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Mike Kovacs",
+        "teamName": "Its Mike Vick In a Box!",
+        "teamId": 2,
+        "week1": 153.0,
+        "week2": 112.0,
+        "total": 265.0
+      },
+      "away": {
+        "owner": "Brandon Kish",
+        "teamName": "Kish and Tell",
+        "teamId": 12,
+        "week1": 98.0,
+        "week2": 74.0,
+        "total": 172.0
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 55.0,
+      "week2Swing": -38.0,
+      "finalMargin": 93.0,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2014,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Carl Cummins",
+        "teamName": "Greatest of All Time",
+        "teamId": 3,
+        "week1": 116.0,
+        "week2": 107.0,
+        "total": 223.0
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "Rex Grossman Fan Club",
+        "teamId": 9,
+        "week1": 98.0,
+        "week2": 96.0,
+        "total": 194.0
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 18.0,
+      "week2Swing": -11.0,
+      "finalMargin": 29.0,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2014,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Phil Torres",
+        "teamName": "Christmas Devil Krampus",
+        "teamId": 4,
+        "week1": 79.0,
+        "week2": 83.0,
+        "total": 162.0
+      },
+      "away": {
+        "owner": "Brian Dorward",
+        "teamName": "Plainsboro Owls",
+        "teamId": 11,
+        "week1": 146.0,
+        "week2": 141.0,
+        "total": 287.0
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 67.0,
+      "week2Swing": -58.0,
+      "finalMargin": 125.0,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2014,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Loren Kessell",
+        "teamName": "Really Just Sean Kessell",
+        "teamId": 5,
+        "week1": 117.0,
+        "week2": 126.0,
+        "total": 243.0
+      },
+      "away": {
+        "owner": "Keegan Hayes",
+        "teamName": "T'EOMINATOR 2 RESURRECTION",
+        "teamId": 8,
+        "week1": 96.0,
+        "week2": 72.0,
+        "total": 168.0
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 21.0,
+      "week2Swing": -54.0,
+      "finalMargin": 75.0,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2014,
+      "matchupPeriodId": 14,
+      "weeks": [
+        14,
+        15
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Danielle Prizzi",
+        "teamName": "TDs In Your Face",
+        "teamId": 7,
+        "week1": 84.0,
+        "week2": 30.0,
+        "total": 114.0
+      },
+      "away": {
+        "owner": "BAHB Kerwersker",
+        "teamName": "Voodoo Mama Juju",
+        "teamId": 10,
+        "week1": 75.0,
+        "week2": 95.0,
+        "total": 170.0
+      },
+      "week1Leader": "home",
+      "winner": "away",
+      "week1Lead": 9.0,
+      "week2Swing": 65.0,
+      "finalMargin": 56.0,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2014,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "Scott's ConsolationTots",
+        "teamId": 1,
+        "week1": 126.0,
+        "week2": 93.0,
+        "total": 219.0
+      },
+      "away": {
+        "owner": "Brian Dorward",
+        "teamName": "Plainsboro Owls",
+        "teamId": 11,
+        "week1": 97.0,
+        "week2": 138.0,
+        "total": 235.0
+      },
+      "week1Leader": "home",
+      "winner": "away",
+      "week1Lead": 29.0,
+      "week2Swing": 45.0,
+      "finalMargin": 16.0,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2014,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": true,
+      "home": {
+        "owner": "Mike Kovacs",
+        "teamName": "Its Mike Vick In a Box!",
+        "teamId": 2,
+        "week1": 119.0,
+        "week2": 130.0,
+        "total": 249.0
+      },
+      "away": {
+        "owner": "Loren Kessell",
+        "teamName": "Really Just Sean Kessell",
+        "teamId": 5,
+        "week1": 109.0,
+        "week2": 82.0,
+        "total": 191.0
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 10.0,
+      "week2Swing": -48.0,
+      "finalMargin": 58.0,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2014,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Carl Cummins",
+        "teamName": "Greatest of All Time",
+        "teamId": 3,
+        "week1": 80.0,
+        "week2": 82.0,
+        "total": 162.0
+      },
+      "away": {
+        "owner": "Randell Crawford",
+        "teamName": "Erection Protection",
+        "teamId": 6,
+        "week1": 105.0,
+        "week2": 92.0,
+        "total": 197.0
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 25.0,
+      "week2Swing": -10.0,
+      "finalMargin": 35.0,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2014,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Phil Torres",
+        "teamName": "Christmas Devil Krampus",
+        "teamId": 4,
+        "week1": 82.0,
+        "week2": 71.0,
+        "total": 153.0
+      },
+      "away": {
+        "owner": "BAHB Kerwersker",
+        "teamName": "Voodoo Mama Juju",
+        "teamId": 10,
+        "week1": 83.0,
+        "week2": 103.0,
+        "total": 186.0
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 1.0,
+      "week2Swing": -32.0,
+      "finalMargin": 33.0,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2014,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Danielle Prizzi",
+        "teamName": "TDs In Your Face",
+        "teamId": 7,
+        "week1": 19.0,
+        "week2": 48.0,
+        "total": 67.0
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "Rex Grossman Fan Club",
+        "teamId": 9,
+        "week1": 62.0,
+        "week2": 82.0,
+        "total": 144.0
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 43.0,
+      "week2Swing": -34.0,
+      "finalMargin": 77.0,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2014,
+      "matchupPeriodId": 15,
+      "weeks": [
+        16,
+        17
+      ],
+      "round": 2,
+      "bracket": "WINNERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Keegan Hayes",
+        "teamName": "T'EOMINATOR 2 RESURRECTION",
+        "teamId": 8,
+        "week1": 71.0,
+        "week2": 95.0,
+        "total": 166.0
+      },
+      "away": {
+        "owner": "Brandon Kish",
+        "teamName": "Kish and Tell",
+        "teamId": 12,
+        "week1": 127.0,
+        "week2": 85.0,
+        "total": 212.0
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 56.0,
+      "week2Swing": 10.0,
+      "finalMargin": 46.0,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2015,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "Bills New Team Name",
+        "teamId": 1,
+        "week1": 123.96,
+        "week2": 72.68,
+        "total": 196.64
+      },
+      "away": {
+        "owner": "Mike Kovacs",
+        "teamName": "I wanta Free the NewtMan!",
+        "teamId": 2,
+        "week1": 120.48,
+        "week2": 71.7,
+        "total": 192.18
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 3.48,
+      "week2Swing": -0.98,
+      "finalMargin": 4.46,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2015,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Carl Cummins",
+        "teamName": "Duckman Kowalski",
+        "teamId": 3,
+        "week1": 72.5,
+        "week2": 96.9,
+        "total": 169.4
+      },
+      "away": {
+        "owner": "Phil Torres",
+        "teamName": "Chef's choclate Salty Balls",
+        "teamId": 4,
+        "week1": 94.24,
+        "week2": 117.5,
+        "total": 211.74
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 21.74,
+      "week2Swing": -20.6,
+      "finalMargin": 42.34,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2015,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Loren Kessell",
+        "teamName": "Really Just Sean Kessell",
+        "teamId": 5,
+        "week1": 82.06,
+        "week2": 104.18,
+        "total": 186.24
+      },
+      "away": {
+        "owner": "Brian Dorward",
+        "teamName": "Plainsboro Owls",
+        "teamId": 11,
+        "week1": 102.58,
+        "week2": 62.38,
+        "total": 164.96
+      },
+      "week1Leader": "away",
+      "winner": "home",
+      "week1Lead": 20.52,
+      "week2Swing": 41.8,
+      "finalMargin": 21.28,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2015,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Randell Crawford",
+        "teamName": "oh no its John Snooooooow",
+        "teamId": 6,
+        "week1": 101.62,
+        "week2": 65.42,
+        "total": 167.04000000000002
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "Rex Grossman Fan Club",
+        "teamId": 9,
+        "week1": 82.7,
+        "week2": 71.06,
+        "total": 153.76
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 18.92,
+      "week2Swing": 5.64,
+      "finalMargin": 13.28,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2015,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Rob Cahill",
+        "teamName": "Team Cahill",
+        "teamId": 8,
+        "week1": 120.62,
+        "week2": 116.5,
+        "total": 237.12
+      },
+      "away": {
+        "owner": "Brandon Kish",
+        "teamName": "Kish and Tell",
+        "teamId": 12,
+        "week1": 85.58,
+        "week2": 121.14,
+        "total": 206.72
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 35.04,
+      "week2Swing": 4.64,
+      "finalMargin": 30.4,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2015,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": true,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "Bills New Team Name",
+        "teamId": 1,
+        "week1": 102.5,
+        "week2": 109.4,
+        "total": 211.9
+      },
+      "away": {
+        "owner": "Loren Kessell",
+        "teamName": "Really Just Sean Kessell",
+        "teamId": 5,
+        "week1": 104.46,
+        "week2": 92.36,
+        "total": 196.82
+      },
+      "week1Leader": "away",
+      "winner": "home",
+      "week1Lead": 1.96,
+      "week2Swing": 17.04,
+      "finalMargin": 15.08,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2015,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "WINNERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Mike Kovacs",
+        "teamName": "I wanta Free the NewtMan!",
+        "teamId": 2,
+        "week1": 109.18,
+        "week2": 156.0,
+        "total": 265.18
+      },
+      "away": {
+        "owner": "Brian Dorward",
+        "teamName": "Plainsboro Owls",
+        "teamId": 11,
+        "week1": 87.38,
+        "week2": 176.54,
+        "total": 263.91999999999996
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 21.8,
+      "week2Swing": 20.54,
+      "finalMargin": 1.26,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2015,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Carl Cummins",
+        "teamName": "Duckman Kowalski",
+        "teamId": 3,
+        "week1": 97.22,
+        "week2": 106.28,
+        "total": 203.5
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "Rex Grossman Fan Club",
+        "teamId": 9,
+        "week1": 102.26,
+        "week2": 107.64,
+        "total": 209.9
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 5.04,
+      "week2Swing": -1.36,
+      "finalMargin": 6.4,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2015,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Phil Torres",
+        "teamName": "Chef's choclate Salty Balls",
+        "teamId": 4,
+        "week1": 127.0,
+        "week2": 87.46,
+        "total": 214.45999999999998
+      },
+      "away": {
+        "owner": "Brandon Kish",
+        "teamName": "Kish and Tell",
+        "teamId": 12,
+        "week1": 81.14,
+        "week2": 82.98,
+        "total": 164.12
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 45.86,
+      "week2Swing": -4.48,
+      "finalMargin": 50.34,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2015,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Randell Crawford",
+        "teamName": "oh no its John Snooooooow",
+        "teamId": 6,
+        "week1": 70.94,
+        "week2": 91.36,
+        "total": 162.3
+      },
+      "away": {
+        "owner": "Rob Cahill",
+        "teamName": "Team Cahill",
+        "teamId": 8,
+        "week1": 30.6,
+        "week2": 60.1,
+        "total": 90.7
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 40.34,
+      "week2Swing": -31.26,
+      "finalMargin": 71.6,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2016,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Brian Dorward",
+        "teamName": "Plainsboro Owls",
+        "teamId": 11,
+        "week1": 89.58,
+        "week2": 88.8,
+        "total": 178.38
+      },
+      "away": {
+        "owner": "Brandon Kish",
+        "teamName": "Kish and Tell",
+        "teamId": 12,
+        "week1": 90.06,
+        "week2": 34.84,
+        "total": 124.9
+      },
+      "week1Leader": "away",
+      "winner": "home",
+      "week1Lead": 0.48,
+      "week2Swing": 53.96,
+      "finalMargin": 53.48,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2016,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "Barack Obama",
+        "teamId": 1,
+        "week1": 97.38,
+        "week2": 68.18,
+        "total": 165.56
+      },
+      "away": {
+        "owner": "Randell Crawford",
+        "teamName": "I Do Respect You Bro",
+        "teamId": 6,
+        "week1": 78.76,
+        "week2": 69.0,
+        "total": 147.76
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 18.62,
+      "week2Swing": 0.82,
+      "finalMargin": 17.8,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2016,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Mike Kovacs",
+        "teamName": "Yobogoya In the Bushes!",
+        "teamId": 2,
+        "week1": 110.84,
+        "week2": 109.88,
+        "total": 220.72
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "Rex Grossman Fan Club",
+        "teamId": 9,
+        "week1": 106.06,
+        "week2": 93.94,
+        "total": 200.0
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 4.78,
+      "week2Swing": -15.94,
+      "finalMargin": 20.72,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2016,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Carl Cummins",
+        "teamName": "Duckman Kowalski",
+        "teamId": 3,
+        "week1": 79.3,
+        "week2": 80.94,
+        "total": 160.24
+      },
+      "away": {
+        "owner": "Phil Torres",
+        "teamName": "Duke Nukems",
+        "teamId": 4,
+        "week1": 117.22,
+        "week2": 110.84,
+        "total": 228.06
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 37.92,
+      "week2Swing": -29.9,
+      "finalMargin": 67.82,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2016,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "Barack Obama",
+        "teamId": 1,
+        "week1": 132.58,
+        "week2": 102.74,
+        "total": 235.32
+      },
+      "away": {
+        "owner": "Brian Dorward",
+        "teamName": "Plainsboro Owls",
+        "teamId": 11,
+        "week1": 82.52,
+        "week2": 102.3,
+        "total": 184.82
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 50.06,
+      "week2Swing": -0.44,
+      "finalMargin": 50.5,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2016,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": true,
+      "home": {
+        "owner": "Mike Kovacs",
+        "teamName": "Yobogoya In the Bushes!",
+        "teamId": 2,
+        "week1": 142.96,
+        "week2": 101.26,
+        "total": 244.22000000000003
+      },
+      "away": {
+        "owner": "Phil Torres",
+        "teamName": "Duke Nukems",
+        "teamId": 4,
+        "week1": 89.92,
+        "week2": 96.5,
+        "total": 186.42000000000002
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 53.04,
+      "week2Swing": -4.76,
+      "finalMargin": 57.8,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2016,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "WINNERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Carl Cummins",
+        "teamName": "Duckman Kowalski",
+        "teamId": 3,
+        "week1": 111.38,
+        "week2": 90.54,
+        "total": 201.92000000000002
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "Rex Grossman Fan Club",
+        "teamId": 9,
+        "week1": 108.36,
+        "week2": 76.8,
+        "total": 185.16
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 3.02,
+      "week2Swing": -13.74,
+      "finalMargin": 16.76,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2016,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Randell Crawford",
+        "teamName": "I Do Respect You Bro",
+        "teamId": 6,
+        "week1": 85.66,
+        "week2": 100.94,
+        "total": 186.6
+      },
+      "away": {
+        "owner": "Brandon Kish",
+        "teamName": "Kish and Tell",
+        "teamId": 12,
+        "week1": 112.28,
+        "week2": 56.28,
+        "total": 168.56
+      },
+      "week1Leader": "away",
+      "winner": "home",
+      "week1Lead": 26.62,
+      "week2Swing": 44.66,
+      "finalMargin": 18.04,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2017,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Brian Dorward",
+        "teamName": "Plainsboro Owls",
+        "teamId": 11,
+        "week1": 67.66,
+        "week2": 78.14,
+        "total": 145.8
+      },
+      "away": {
+        "owner": "Ben Bingert",
+        "teamName": "The Recycling Ben",
+        "teamId": 12,
+        "week1": 97.96,
+        "week2": 88.66,
+        "total": 186.62
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 30.3,
+      "week2Swing": -10.52,
+      "finalMargin": 40.82,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2017,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "Wade Boggs Memorial Team",
+        "teamId": 1,
+        "week1": 124.3,
+        "week2": 99.4,
+        "total": 223.7
+      },
+      "away": {
+        "owner": "Randell Crawford",
+        "teamName": "I Do Respect You Bro",
+        "teamId": 6,
+        "week1": 99.04,
+        "week2": 80.22,
+        "total": 179.26
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 25.26,
+      "week2Swing": -19.18,
+      "finalMargin": 44.44,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2017,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Mike Kovacs",
+        "teamName": "Why Pass to Top Wide Receivers?",
+        "teamId": 2,
+        "week1": 75.54,
+        "week2": 102.44,
+        "total": 177.98000000000002
+      },
+      "away": {
+        "owner": "Carl Cummins",
+        "teamName": "Duckman Kowalski",
+        "teamId": 3,
+        "week1": 125.58,
+        "week2": 114.34,
+        "total": 239.92000000000002
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 50.04,
+      "week2Swing": -11.9,
+      "finalMargin": 61.94,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2017,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Phil Torres",
+        "teamName": "Pickle Ricks",
+        "teamId": 4,
+        "week1": 92.92,
+        "week2": 91.12,
+        "total": 184.04000000000002
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "Rex Grossman Fan Club",
+        "teamId": 9,
+        "week1": 105.92,
+        "week2": 123.64,
+        "total": 229.56
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 13.0,
+      "week2Swing": -32.52,
+      "finalMargin": 45.52,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2017,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "Wade Boggs Memorial Team",
+        "teamId": 1,
+        "week1": 89.4,
+        "week2": 109.24,
+        "total": 198.64
+      },
+      "away": {
+        "owner": "Ben Bingert",
+        "teamName": "The Recycling Ben",
+        "teamId": 12,
+        "week1": 82.8,
+        "week2": 79.18,
+        "total": 161.98000000000002
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 6.6,
+      "week2Swing": -30.06,
+      "finalMargin": 36.66,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2017,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "WINNERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Mike Kovacs",
+        "teamName": "Why Pass to Top Wide Receivers?",
+        "teamId": 2,
+        "week1": 102.4,
+        "week2": 123.78,
+        "total": 226.18
+      },
+      "away": {
+        "owner": "Phil Torres",
+        "teamName": "Pickle Ricks",
+        "teamId": 4,
+        "week1": 95.86,
+        "week2": 73.08,
+        "total": 168.94
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 6.54,
+      "week2Swing": -50.7,
+      "finalMargin": 57.24,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2017,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": true,
+      "home": {
+        "owner": "Carl Cummins",
+        "teamName": "Duckman Kowalski",
+        "teamId": 3,
+        "week1": 122.52,
+        "week2": 134.98,
+        "total": 257.5
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "Rex Grossman Fan Club",
+        "teamId": 9,
+        "week1": 98.62,
+        "week2": 122.68,
+        "total": 221.3
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 23.9,
+      "week2Swing": -12.3,
+      "finalMargin": 36.2,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2017,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Randell Crawford",
+        "teamName": "I Do Respect You Bro",
+        "teamId": 6,
+        "week1": 62.46,
+        "week2": 76.64,
+        "total": 139.1
+      },
+      "away": {
+        "owner": "Brian Dorward",
+        "teamName": "Plainsboro Owls",
+        "teamId": 11,
+        "week1": 55.26,
+        "week2": 74.04,
+        "total": 129.3
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 7.2,
+      "week2Swing": -2.6,
+      "finalMargin": 9.8,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2018,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "Wade Boggs Memorial Team",
+        "teamId": 1,
+        "week1": 137.26,
+        "week2": 121.22,
+        "total": 258.48
+      },
+      "away": {
+        "owner": "Ben Bingert",
+        "teamName": "The Mixon Administration",
+        "teamId": 12,
+        "week1": 123.36,
+        "week2": 136.8,
+        "total": 260.16
+      },
+      "week1Leader": "home",
+      "winner": "away",
+      "week1Lead": 13.9,
+      "week2Swing": 15.58,
+      "finalMargin": 1.68,
+      "outcome": "COMEBACK"
+    },
+    {
+      "year": 2018,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Mike Kovacs",
+        "teamName": "The Bell Is Dead",
+        "teamId": 2,
+        "week1": 87.72,
+        "week2": 95.54,
+        "total": 183.26
+      },
+      "away": {
+        "owner": "Carl Cummins",
+        "teamName": "Duckman Kowalski",
+        "teamId": 3,
+        "week1": 69.28,
+        "week2": 98.8,
+        "total": 168.07999999999998
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 18.44,
+      "week2Swing": 3.26,
+      "finalMargin": 15.18,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2018,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Phil Torres",
+        "teamName": "Go Fudge Yourselves",
+        "teamId": 4,
+        "week1": 114.6,
+        "week2": 113.78,
+        "total": 228.38
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "Rex Grossman Fan Club",
+        "teamId": 9,
+        "week1": 141.56,
+        "week2": 99.78,
+        "total": 241.34
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 26.96,
+      "week2Swing": 14.0,
+      "finalMargin": 12.96,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2018,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Randell Crawford",
+        "teamName": "I Do Respect You Bro",
+        "teamId": 6,
+        "week1": 79.3,
+        "week2": 104.3,
+        "total": 183.6
+      },
+      "away": {
+        "owner": "John Artiglier",
+        "teamName": "Davante's Inferno",
+        "teamId": 11,
+        "week1": 95.42,
+        "week2": 117.16,
+        "total": 212.57999999999998
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 16.12,
+      "week2Swing": -12.86,
+      "finalMargin": 28.98,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2018,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "WINNERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "Wade Boggs Memorial Team",
+        "teamId": 1,
+        "week1": 171.36,
+        "week2": 72.1,
+        "total": 243.46
+      },
+      "away": {
+        "owner": "Phil Torres",
+        "teamName": "Go Fudge Yourselves",
+        "teamId": 4,
+        "week1": 152.34,
+        "week2": 80.08,
+        "total": 232.42
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 19.02,
+      "week2Swing": 7.98,
+      "finalMargin": 11.04,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2018,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Mike Kovacs",
+        "teamName": "The Bell Is Dead",
+        "teamId": 2,
+        "week1": 90.54,
+        "week2": 93.1,
+        "total": 183.64
+      },
+      "away": {
+        "owner": "John Artiglier",
+        "teamName": "Davante's Inferno",
+        "teamId": 11,
+        "week1": 79.5,
+        "week2": 89.58,
+        "total": 169.08
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 11.04,
+      "week2Swing": -3.52,
+      "finalMargin": 14.56,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2018,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Carl Cummins",
+        "teamName": "Duckman Kowalski",
+        "teamId": 3,
+        "week1": 119.84,
+        "week2": 94.3,
+        "total": 214.14
+      },
+      "away": {
+        "owner": "Randell Crawford",
+        "teamName": "I Do Respect You Bro",
+        "teamId": 6,
+        "week1": 104.76,
+        "week2": 75.34,
+        "total": 180.1
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 15.08,
+      "week2Swing": -18.96,
+      "finalMargin": 34.04,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2018,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": true,
+      "home": {
+        "owner": "Ray Engleking",
+        "teamName": "Rex Grossman Fan Club",
+        "teamId": 9,
+        "week1": 136.32,
+        "week2": 136.42,
+        "total": 272.74
+      },
+      "away": {
+        "owner": "Ben Bingert",
+        "teamName": "The Mixon Administration",
+        "teamId": 12,
+        "week1": 86.04,
+        "week2": 106.72,
+        "total": 192.76
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 50.28,
+      "week2Swing": -29.7,
+      "finalMargin": 79.98,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2019,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Bill Solecki",
+        "teamName": "Wade Boggs Memorial Team",
+        "teamId": 1,
+        "week1": 82.38,
+        "week2": 124.04,
+        "total": 206.42
+      },
+      "away": {
+        "owner": "Ben Bingert",
+        "teamName": "Two Girls One Kupp",
+        "teamId": 12,
+        "week1": 99.94,
+        "week2": 126.4,
+        "total": 226.34
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 17.56,
+      "week2Swing": -2.36,
+      "finalMargin": 19.92,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2019,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": false,
+      "home": {
+        "owner": "Mike Kovacs",
+        "teamName": "Saquonda Forever",
+        "teamId": 2,
+        "week1": 94.6,
+        "week2": 103.1,
+        "total": 197.7
+      },
+      "away": {
+        "owner": "Phil Torres",
+        "teamName": "Go Fudge Yourselves",
+        "teamId": 4,
+        "week1": 103.66,
+        "week2": 144.24,
+        "total": 247.9
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 9.06,
+      "week2Swing": -41.14,
+      "finalMargin": 50.2,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2019,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Carl Cummins",
+        "teamName": "Pussy Power",
+        "teamId": 3,
+        "week1": 106.8,
+        "week2": 129.0,
+        "total": 235.8
+      },
+      "away": {
+        "owner": "John Artiglier",
+        "teamName": "Hubba Chubba",
+        "teamId": 11,
+        "week1": 73.6,
+        "week2": 94.72,
+        "total": 168.32
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 33.2,
+      "week2Swing": -34.28,
+      "finalMargin": 67.48,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2019,
+      "matchupPeriodId": 13,
+      "weeks": [
+        13,
+        14
+      ],
+      "round": 1,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Randell Crawford",
+        "teamName": "The HipShire Hobbits",
+        "teamId": 6,
+        "week1": 81.6,
+        "week2": 81.78,
+        "total": 163.38
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "Weenie Hut Jr's",
+        "teamId": 9,
+        "week1": 102.94,
+        "week2": 82.64,
+        "total": 185.58
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 21.34,
+      "week2Swing": -0.86,
+      "finalMargin": 22.2,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2019,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "John Artiglier",
+        "teamName": "Hubba Chubba",
+        "teamId": 11,
+        "week1": 118.5,
+        "week2": 100.84,
+        "total": 219.34
+      },
+      "away": {
+        "owner": "Randell Crawford",
+        "teamName": "The HipShire Hobbits",
+        "teamId": 6,
+        "week1": 90.02,
+        "week2": 116.66,
+        "total": 206.68
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 28.48,
+      "week2Swing": 15.82,
+      "finalMargin": 12.66,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2019,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "WINNERS_BRACKET",
+      "isWinnersBracket": true,
+      "isChampionship": true,
+      "home": {
+        "owner": "Ben Bingert",
+        "teamName": "Two Girls One Kupp",
+        "teamId": 12,
+        "week1": 118.14,
+        "week2": 45.96,
+        "total": 164.1
+      },
+      "away": {
+        "owner": "Phil Torres",
+        "teamName": "Go Fudge Yourselves",
+        "teamId": 4,
+        "week1": 119.3,
+        "week2": 130.36,
+        "total": 249.66
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 1.16,
+      "week2Swing": -84.4,
+      "finalMargin": 85.56,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2019,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "WINNERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Mike Kovacs",
+        "teamName": "Saquonda Forever",
+        "teamId": 2,
+        "week1": 136.98,
+        "week2": 145.42,
+        "total": 282.4
+      },
+      "away": {
+        "owner": "Bill Solecki",
+        "teamName": "Wade Boggs Memorial Team",
+        "teamId": 1,
+        "week1": 131.68,
+        "week2": 116.66,
+        "total": 248.34
+      },
+      "week1Leader": "home",
+      "winner": "home",
+      "week1Lead": 5.3,
+      "week2Swing": -28.76,
+      "finalMargin": 34.06,
+      "outcome": "HELD"
+    },
+    {
+      "year": 2019,
+      "matchupPeriodId": 14,
+      "weeks": [
+        15,
+        16
+      ],
+      "round": 2,
+      "bracket": "LOSERS_CONSOLATION_LADDER",
+      "isWinnersBracket": false,
+      "isChampionship": false,
+      "home": {
+        "owner": "Carl Cummins",
+        "teamName": "Pussy Power",
+        "teamId": 3,
+        "week1": 132.96,
+        "week2": 136.98,
+        "total": 269.94
+      },
+      "away": {
+        "owner": "Ray Engleking",
+        "teamName": "Weenie Hut Jr's",
+        "teamId": 9,
+        "week1": 152.62,
+        "week2": 145.1,
+        "total": 297.72
+      },
+      "week1Leader": "away",
+      "winner": "away",
+      "week1Lead": 19.66,
+      "week2Swing": -8.12,
+      "finalMargin": 27.78,
+      "outcome": "HELD"
+    }
+  ],
+  "meta": {
+    "twoWeekYears": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "oneWeekPlayoffYears": [
+      2013,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  }
+}
