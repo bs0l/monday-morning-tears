@@ -491,7 +491,7 @@
       "owners": [
         "Ray Engleking"
       ],
-      "count": 3,
+      "count": 4,
       "tied": false
     }
   },
@@ -942,7 +942,7 @@
       "owners": [
         "Ray Engleking"
       ],
-      "count": 3,
+      "count": 4,
       "tied": false
     },
     "mostPointsAgainstSeasons": [
@@ -979,34 +979,34 @@
     ],
     "fewestPointsAgainstSeasons": [
       {
-        "owner": "Carl Cummins",
-        "teamName": "Taylor and Travis Swift \ud83d\udc51",
-        "year": 2026,
-        "pointsAgainst": 375.22
-      },
-      {
         "owner": "Joe Jaramillo",
         "teamName": "OnlyIfIHadA2TE",
         "year": 2026,
-        "pointsAgainst": 387.91999999999996
-      },
-      {
-        "owner": "Bill Solecki",
-        "teamName": "Bovine University Stampede",
-        "year": 2026,
-        "pointsAgainst": 401.76
+        "pointsAgainst": 478.91999999999996
       },
       {
         "owner": "Phil Torres",
         "teamName": "Canadian Geeses",
         "year": 2026,
-        "pointsAgainst": 402.44
+        "pointsAgainst": 492.96
+      },
+      {
+        "owner": "Bill Solecki",
+        "teamName": "Bovine University Stampede",
+        "year": 2026,
+        "pointsAgainst": 506.76
+      },
+      {
+        "owner": "Carl Cummins",
+        "teamName": "Taylor and Travis Swift \ud83d\udc51",
+        "year": 2026,
+        "pointsAgainst": 507.66
       },
       {
         "owner": "Ray Engleking",
         "teamName": "Salty Spitoon",
         "year": 2026,
-        "pointsAgainst": 407.59999999999997
+        "pointsAgainst": 550.9
       }
     ]
   }

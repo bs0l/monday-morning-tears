@@ -138,7 +138,7 @@ Notes:
 A cron job runs a wrapper shell script weekly during the season, which:
 1. `git fetch` + `git reset --hard origin/main` in the league directory
 2. Runs the collector via the venv Python
-3. On success, commits/pushes the updated `output/*.json` and sends a success notification
+3. On success, commits/pushes the updated `output/*.json` and sends a success notification (or a "completed with warnings" notification listing them - see below)
 4. On failure (collector error or push failure), sends a failure notification with the trailing log lines instead
 
 Logs append indefinitely to a dedicated log file.
@@ -147,6 +147,7 @@ Logs append indefinitely to a dedicated log file.
 
 - `END_YEAR` in the collector is computed dynamically (current year from September onward, previous year otherwise) — no manual bump needed each season
 - Auth cookies are read from environment variables at runtime rather than hardcoded in the script
+- Warnings: the collector collects data-quality warnings (teams with no resolvable owner, failed requests, skipped weeks, keeper points that may be undercounted, ...) and prints them in one block at the very end of the log. If `MMT_WARNINGS_FILE` is set (`run_mmt.sh` sets it), the same text is written there, and `run_mmt.sh` includes it in the notification email; no file is written when there are no warnings
 - Exit codes: `1` means a season (or its per-week scores) could not be fetched or the data was inconsistent, so nothing is written or pushed; `2` means the ESPN session cookies expired and triggers the targeted "cookies expired" notification rather than a generic failure email
 
 ---

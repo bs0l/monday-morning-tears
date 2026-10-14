@@ -283,6 +283,15 @@
             margin: 20px 0;
         }
 
+        .chart-note {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-align: center;
+            font-style: italic;
+            margin-top: -8px;
+            margin-bottom: 8px;
+        }
+
         .yearly-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
@@ -717,6 +726,9 @@
                 }).join('') : '';
 
             const chartId = `chart-${team.owner.replace(/[^a-zA-Z0-9]/g, '_')}`;
+            const inProgressYear = team.yearlyRecords
+                ? Object.entries(team.yearlyRecords).find(([y, r]) => r.seasonComplete === false)
+                : null;
 
             return `
                 <div class="team-card ${inactiveClass}">
@@ -748,10 +760,11 @@
                         <span class="stat-value">${team.playoffs.wins}-${team.playoffs.losses} (${(team.playoffs.winPercentage * 100).toFixed(1)}%)</span>
                     </div>
 
-                    <div class="section-title">Yearly Performance</div>
+                    <div class="section-title">Yearly Performance (regular-season win %)</div>
                     <div class="chart-container">
                         <canvas id="${chartId}"></canvas>
                     </div>
+                    ${inProgressYear ? `<div class="chart-note">Dashed segment: ${inProgressYear[0]} is in progress (${inProgressYear[1].regularSeasonWins}-${inProgressYear[1].regularSeasonLosses} so far)</div>` : ''}
 
                     <div class="section-title">Championships</div>
                     <div class="stat-row">
@@ -883,8 +896,13 @@
             if (!team.yearlyRecords) return;
 
             const years = Object.keys(team.yearlyRecords).sort();
-            const wins   = years.map(y => team.yearlyRecords[y].regularSeasonWins ?? team.yearlyRecords[y].wins);
-            const losses = years.map(y => team.yearlyRecords[y].regularSeasonLosses ?? team.yearlyRecords[y].losses);
+            const rec = y => team.yearlyRecords[y];
+            const wins   = years.map(y => rec(y).regularSeasonWins ?? rec(y).wins);
+            const losses = years.map(y => rec(y).regularSeasonLosses ?? rec(y).losses);
+            // Win % (not raw wins) so seasons of different lengths compare, and a
+            // season still in progress doesn't look like a collapse
+            const winPct = years.map((y, i) => (wins[i] + losses[i]) > 0 ? wins[i] / (wins[i] + losses[i]) : null);
+            const inProgress = years.map(y => rec(y).seasonComplete === false);
 
             const chartId = `chart-${team.owner.replace(/[^a-zA-Z0-9]/g, '_')}`;
             const ctx = document.getElementById(chartId);
@@ -898,19 +916,18 @@
                 data: {
                     labels: years,
                     datasets: [{
-                        label: 'Wins',
-                        data: wins,
-                        borderColor: '#00ff64',
-                        backgroundColor: 'rgba(0, 255, 100, 0.1)',
+                        label: 'Regular-season win %',
+                        data: winPct,
+                        borderColor: '#00d4ff',
+                        backgroundColor: 'rgba(0, 212, 255, 0.1)',
                         tension: 0.3,
-                        yAxisID: 'y'
-                    }, {
-                        label: 'Losses',
-                        data: losses,
-                        borderColor: '#ff6b6b',
-                        backgroundColor: 'rgba(255, 107, 107, 0.1)',
-                        tension: 0.3,
-                        yAxisID: 'y'
+                        spanGaps: true,
+                        pointRadius: 4,
+                        pointBorderWidth: 2,
+                        pointBorderColor: '#00d4ff',
+                        // A season in progress: hollow marker, dashed segment leading to it
+                        pointBackgroundColor: c => inProgress[c.dataIndex] ? 'transparent' : '#00d4ff',
+                        segment: { borderDash: c => inProgress[c.p1DataIndex] ? [6, 4] : undefined }
                     }]
                 },
                 options: {
@@ -918,22 +935,22 @@
                     maintainAspectRatio: false,
                     interaction: { mode: 'index', intersect: false },
                     plugins: {
-                        legend: { labels: { color: '#ffffff', font: { size: 11 } } }
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: c => {
+                                    const i = c.dataIndex;
+                                    return `${(c.parsed.y * 100).toFixed(1)}% (${wins[i]}-${losses[i]}${inProgress[i] ? ', in progress' : ''})`;
+                                }
+                            }
+                        }
                     },
                     scales: {
                         y: {
-                            type: 'linear',
-                            display: true,
-                            position: 'left',
-                            ticks: { color: '#ffffff' },
+                            min: 0,
+                            max: 1,
+                            ticks: { color: '#ffffff', callback: v => `${Math.round(v * 100)}%` },
                             grid: { color: 'rgba(255, 255, 255, 0.1)' }
-                        },
-                        y1: {
-                            type: 'linear',
-                            display: false,
-                            position: 'right',
-                            ticks: { color: '#ffffff' },
-                            grid: { drawOnChartArea: false }
                         },
                         x: {
                             ticks: { color: '#ffffff' },

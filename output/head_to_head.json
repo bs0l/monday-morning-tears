@@ -4889,23 +4889,23 @@
       ]
     },
     "Ben Bingert": {
-      "wins": 11,
+      "wins": 12,
       "losses": 12,
       "ties": 0,
-      "winPercentage": 0.4782608695652174,
-      "totalGames": 23,
-      "pointsFor": 3070.52,
-      "pointsAgainst": 2948.18,
-      "avgPointsFor": 118.09692307692308,
-      "avgPointsAgainst": 113.39153846153846,
+      "winPercentage": 0.5,
+      "totalGames": 24,
+      "pointsFor": 3204.8,
+      "pointsAgainst": 3053.18,
+      "avgPointsFor": 118.6962962962963,
+      "avgPointsAgainst": 113.08074074074074,
       "highestScore": 169.62,
       "lowestScore": 58.7,
       "biggestWin": 72.8,
       "closestWin": 6.439999999999998,
       "longestWinStreak": 3,
       "currentStreak": {
-        "type": "LOSS",
-        "length": 2
+        "type": "WIN",
+        "length": 1
       },
       "matchups": [
         {
@@ -5580,6 +5580,35 @@
             "score": 108.44,
             "weeklyScores": [
               108.44
+            ]
+          },
+          "winner": "AWAY"
+        },
+        {
+          "year": 2026,
+          "week": 5,
+          "weeks": [
+            5
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 5,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 12,
+            "teamName": "All You Need Is Love",
+            "owner": "Ben Bingert",
+            "score": 105.0,
+            "weeklyScores": [
+              105.0
+            ]
+          },
+          "away": {
+            "teamId": 1,
+            "teamName": "Bovine University Stampede",
+            "owner": "Bill Solecki",
+            "score": 134.28,
+            "weeklyScores": [
+              134.28
             ]
           },
           "winner": "AWAY"
@@ -12236,15 +12265,15 @@
       ]
     },
     "Carl Cummins": {
-      "wins": 18,
+      "wins": 19,
       "losses": 11,
       "ties": 0,
-      "winPercentage": 0.6206896551724138,
-      "totalGames": 29,
-      "pointsFor": 3374.24,
-      "pointsAgainst": 3265.78,
-      "avgPointsFor": 108.84645161290322,
-      "avgPointsAgainst": 105.34774193548388,
+      "winPercentage": 0.6333333333333333,
+      "totalGames": 30,
+      "pointsFor": 3506.68,
+      "pointsAgainst": 3341.2,
+      "avgPointsFor": 109.58375,
+      "avgPointsAgainst": 104.4125,
       "highestScore": 191.2,
       "lowestScore": 66.4,
       "biggestWin": 75.96,
@@ -12252,7 +12281,7 @@
       "longestWinStreak": 8,
       "currentStreak": {
         "type": "WIN",
-        "length": 2
+        "length": 3
       },
       "matchups": [
         {
@@ -13101,6 +13130,35 @@
             ]
           },
           "winner": "AWAY"
+        },
+        {
+          "year": 2026,
+          "week": 5,
+          "weeks": [
+            5
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 5,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 2,
+            "teamName": "Chasing McBride",
+            "owner": "Mike Kovacs",
+            "score": 132.44,
+            "weeklyScores": [
+              132.44
+            ]
+          },
+          "away": {
+            "teamId": 3,
+            "teamName": "Taylor and Travis Swift \ud83d\udc51",
+            "owner": "Carl Cummins",
+            "score": 75.42,
+            "weeklyScores": [
+              75.42
+            ]
+          },
+          "winner": "HOME"
         }
       ]
     },
@@ -21768,22 +21826,22 @@
     },
     "Joe Jaramillo": {
       "wins": 6,
-      "losses": 1,
+      "losses": 2,
       "ties": 0,
-      "winPercentage": 0.8571428571428571,
-      "totalGames": 7,
-      "pointsFor": 804.18,
-      "pointsAgainst": 611.04,
-      "avgPointsFor": 114.88285714285713,
-      "avgPointsAgainst": 87.29142857142857,
+      "winPercentage": 0.75,
+      "totalGames": 8,
+      "pointsFor": 895.18,
+      "pointsAgainst": 717.74,
+      "avgPointsFor": 111.8975,
+      "avgPointsAgainst": 89.7175,
       "highestScore": 141.0,
       "lowestScore": 77.16,
       "biggestWin": 85.47999999999999,
       "closestWin": 7.8999999999999915,
       "longestWinStreak": 4,
       "currentStreak": {
-        "type": "WIN",
-        "length": 2
+        "type": "LOSS",
+        "length": 1
       },
       "matchups": [
         {
@@ -21988,6 +22046,35 @@
             ]
           },
           "winner": "AWAY"
+        },
+        {
+          "year": 2026,
+          "week": 5,
+          "weeks": [
+            5
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 5,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 14,
+            "teamName": "OnlyIfIHadA2TE",
+            "owner": "Joe Jaramillo",
+            "score": 106.7,
+            "weeklyScores": [
+              106.7
+            ]
+          },
+          "away": {
+            "teamId": 6,
+            "teamName": "Insane in the Ukraine",
+            "owner": "Randell Crawford",
+            "score": 91.0,
+            "weeklyScores": [
+              91.0
+            ]
+          },
+          "winner": "HOME"
         }
       ]
     },
@@ -30210,23 +30297,23 @@
       ]
     },
     "John Artiglier": {
-      "wins": 9,
+      "wins": 10,
       "losses": 6,
       "ties": 0,
-      "winPercentage": 0.6,
-      "totalGames": 15,
-      "pointsFor": 1693.7,
-      "pointsAgainst": 1599.16,
-      "avgPointsFor": 112.91333333333334,
-      "avgPointsAgainst": 106.61066666666667,
+      "winPercentage": 0.625,
+      "totalGames": 16,
+      "pointsFor": 1799.46,
+      "pointsAgainst": 1689.68,
+      "avgPointsFor": 112.46625,
+      "avgPointsAgainst": 105.605,
       "highestScore": 138.06,
       "lowestScore": 79.92,
       "biggestWin": 34.89999999999999,
       "closestWin": 1.6799999999999926,
       "longestWinStreak": 5,
       "currentStreak": {
-        "type": "LOSS",
-        "length": 3
+        "type": "WIN",
+        "length": 1
       },
       "matchups": [
         {
@@ -30663,6 +30750,35 @@
             ]
           },
           "winner": "AWAY"
+        },
+        {
+          "year": 2026,
+          "week": 5,
+          "weeks": [
+            5
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 5,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 4,
+            "teamName": "Canadian Geeses",
+            "owner": "Phil Torres",
+            "score": 105.76,
+            "weeklyScores": [
+              105.76
+            ]
+          },
+          "away": {
+            "teamId": 11,
+            "teamName": "Kraft Smack and Cheese",
+            "owner": "John Artiglier",
+            "score": 90.52,
+            "weeklyScores": [
+              90.52
+            ]
+          },
+          "winner": "HOME"
         }
       ]
     },
@@ -32085,14 +32201,14 @@
     },
     "Mike Kovacs": {
       "wins": 11,
-      "losses": 18,
+      "losses": 19,
       "ties": 0,
-      "winPercentage": 0.3793103448275862,
-      "totalGames": 29,
-      "pointsFor": 3265.78,
-      "pointsAgainst": 3374.24,
-      "avgPointsFor": 105.34774193548388,
-      "avgPointsAgainst": 108.84645161290322,
+      "winPercentage": 0.36666666666666664,
+      "totalGames": 30,
+      "pointsFor": 3341.2,
+      "pointsAgainst": 3506.68,
+      "avgPointsFor": 104.4125,
+      "avgPointsAgainst": 109.58375,
       "highestScore": 155.7,
       "lowestScore": 69.28,
       "biggestWin": 68.05999999999999,
@@ -32100,7 +32216,7 @@
       "longestWinStreak": 3,
       "currentStreak": {
         "type": "LOSS",
-        "length": 2
+        "length": 3
       },
       "matchups": [
         {
@@ -32949,6 +33065,35 @@
             ]
           },
           "winner": "AWAY"
+        },
+        {
+          "year": 2026,
+          "week": 5,
+          "weeks": [
+            5
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 5,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 2,
+            "teamName": "Chasing McBride",
+            "owner": "Mike Kovacs",
+            "score": 132.44,
+            "weeklyScores": [
+              132.44
+            ]
+          },
+          "away": {
+            "teamId": 3,
+            "teamName": "Taylor and Travis Swift \ud83d\udc51",
+            "owner": "Carl Cummins",
+            "score": 75.42,
+            "weeklyScores": [
+              75.42
+            ]
+          },
+          "winner": "HOME"
         }
       ]
     },
@@ -46784,22 +46929,22 @@
     },
     "john crawford": {
       "wins": 3,
-      "losses": 2,
+      "losses": 3,
       "ties": 0,
-      "winPercentage": 0.6,
-      "totalGames": 5,
-      "pointsFor": 570.24,
-      "pointsAgainst": 552.58,
-      "avgPointsFor": 114.048,
-      "avgPointsAgainst": 110.516,
+      "winPercentage": 0.5,
+      "totalGames": 6,
+      "pointsFor": 710.86,
+      "pointsAgainst": 695.88,
+      "avgPointsFor": 118.47666666666667,
+      "avgPointsAgainst": 115.98,
       "highestScore": 166.8,
       "lowestScore": 78.08,
       "biggestWin": 58.94000000000001,
       "closestWin": 10.319999999999993,
       "longestWinStreak": 2,
       "currentStreak": {
-        "type": "WIN",
-        "length": 2
+        "type": "LOSS",
+        "length": 1
       },
       "matchups": [
         {
@@ -46943,6 +47088,35 @@
             "score": 110.2,
             "weeklyScores": [
               110.2
+            ]
+          },
+          "winner": "HOME"
+        },
+        {
+          "year": 2026,
+          "week": 5,
+          "weeks": [
+            5
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 5,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 13,
+            "teamName": "Paintin Peyton",
+            "owner": "john crawford",
+            "score": 143.3,
+            "weeklyScores": [
+              143.3
+            ]
+          },
+          "away": {
+            "teamId": 9,
+            "teamName": "Salty Spitoon",
+            "owner": "Ray Engleking",
+            "score": 140.62,
+            "weeklyScores": [
+              140.62
             ]
           },
           "winner": "HOME"
@@ -48250,22 +48424,22 @@
   "Ben Bingert": {
     "Bill Solecki": {
       "wins": 12,
-      "losses": 11,
+      "losses": 12,
       "ties": 0,
-      "winPercentage": 0.5217391304347826,
-      "totalGames": 23,
-      "pointsFor": 2948.18,
-      "pointsAgainst": 3070.52,
-      "avgPointsFor": 113.39153846153846,
-      "avgPointsAgainst": 118.09692307692308,
+      "winPercentage": 0.5,
+      "totalGames": 24,
+      "pointsFor": 3053.18,
+      "pointsAgainst": 3204.8,
+      "avgPointsFor": 113.08074074074074,
+      "avgPointsAgainst": 118.6962962962963,
       "highestScore": 149.92,
       "lowestScore": 66.02,
       "biggestWin": 49.84,
       "closestWin": 1.6800000000000068,
       "longestWinStreak": 3,
       "currentStreak": {
-        "type": "WIN",
-        "length": 2
+        "type": "LOSS",
+        "length": 1
       },
       "matchups": [
         {
@@ -48940,6 +49114,35 @@
             "score": 108.44,
             "weeklyScores": [
               108.44
+            ]
+          },
+          "winner": "AWAY"
+        },
+        {
+          "year": 2026,
+          "week": 5,
+          "weeks": [
+            5
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 5,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 12,
+            "teamName": "All You Need Is Love",
+            "owner": "Ben Bingert",
+            "score": 105.0,
+            "weeklyScores": [
+              105.0
+            ]
+          },
+          "away": {
+            "teamId": 1,
+            "teamName": "Bovine University Stampede",
+            "owner": "Bill Solecki",
+            "score": 134.28,
+            "weeklyScores": [
+              134.28
             ]
           },
           "winner": "AWAY"
@@ -54307,22 +54510,22 @@
     },
     "Phil Torres": {
       "wins": 6,
-      "losses": 9,
+      "losses": 10,
       "ties": 0,
-      "winPercentage": 0.4,
-      "totalGames": 15,
-      "pointsFor": 1599.16,
-      "pointsAgainst": 1693.7,
-      "avgPointsFor": 106.61066666666667,
-      "avgPointsAgainst": 112.91333333333334,
+      "winPercentage": 0.375,
+      "totalGames": 16,
+      "pointsFor": 1689.68,
+      "pointsAgainst": 1799.46,
+      "avgPointsFor": 105.605,
+      "avgPointsAgainst": 112.46625,
       "highestScore": 129.0,
       "lowestScore": 83.06,
       "biggestWin": 26.939999999999998,
       "closestWin": 2.6199999999999903,
       "longestWinStreak": 3,
       "currentStreak": {
-        "type": "WIN",
-        "length": 3
+        "type": "LOSS",
+        "length": 1
       },
       "matchups": [
         {
@@ -54759,6 +54962,35 @@
             ]
           },
           "winner": "AWAY"
+        },
+        {
+          "year": 2026,
+          "week": 5,
+          "weeks": [
+            5
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 5,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 4,
+            "teamName": "Canadian Geeses",
+            "owner": "Phil Torres",
+            "score": 105.76,
+            "weeklyScores": [
+              105.76
+            ]
+          },
+          "away": {
+            "teamId": 11,
+            "teamName": "Kraft Smack and Cheese",
+            "owner": "John Artiglier",
+            "score": 90.52,
+            "weeklyScores": [
+              90.52
+            ]
+          },
+          "winner": "HOME"
         }
       ]
     },
@@ -57126,23 +57358,23 @@
       ]
     },
     "Randell Crawford": {
-      "wins": 1,
+      "wins": 2,
       "losses": 6,
       "ties": 0,
-      "winPercentage": 0.14285714285714285,
-      "totalGames": 7,
-      "pointsFor": 611.04,
-      "pointsAgainst": 804.18,
-      "avgPointsFor": 87.29142857142857,
-      "avgPointsAgainst": 114.88285714285713,
-      "highestScore": 103.28,
+      "winPercentage": 0.25,
+      "totalGames": 8,
+      "pointsFor": 717.74,
+      "pointsAgainst": 895.18,
+      "avgPointsFor": 89.7175,
+      "avgPointsAgainst": 111.8975,
+      "highestScore": 106.7,
       "lowestScore": 55.52,
-      "biggestWin": 1.740000000000009,
+      "biggestWin": 15.700000000000003,
       "closestWin": 1.740000000000009,
       "longestWinStreak": 1,
       "currentStreak": {
-        "type": "LOSS",
-        "length": 2
+        "type": "WIN",
+        "length": 1
       },
       "matchups": [
         {
@@ -57347,6 +57579,35 @@
             ]
           },
           "winner": "AWAY"
+        },
+        {
+          "year": 2026,
+          "week": 5,
+          "weeks": [
+            5
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 5,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 14,
+            "teamName": "OnlyIfIHadA2TE",
+            "owner": "Joe Jaramillo",
+            "score": 106.7,
+            "weeklyScores": [
+              106.7
+            ]
+          },
+          "away": {
+            "teamId": 6,
+            "teamName": "Insane in the Ukraine",
+            "owner": "Randell Crawford",
+            "score": 91.0,
+            "weeklyScores": [
+              91.0
+            ]
+          },
+          "winner": "HOME"
         }
       ]
     },
@@ -59451,23 +59712,23 @@
       ]
     },
     "Ray Engleking": {
-      "wins": 2,
+      "wins": 3,
       "losses": 3,
       "ties": 0,
-      "winPercentage": 0.4,
-      "totalGames": 5,
-      "pointsFor": 552.58,
-      "pointsAgainst": 570.24,
-      "avgPointsFor": 110.516,
-      "avgPointsAgainst": 114.048,
-      "highestScore": 121.66,
+      "winPercentage": 0.5,
+      "totalGames": 6,
+      "pointsFor": 695.88,
+      "pointsAgainst": 710.86,
+      "avgPointsFor": 115.98,
+      "avgPointsAgainst": 118.47666666666667,
+      "highestScore": 143.3,
       "lowestScore": 98.9,
       "biggestWin": 41.879999999999995,
-      "closestWin": 35.879999999999995,
+      "closestWin": 2.680000000000007,
       "longestWinStreak": 1,
       "currentStreak": {
-        "type": "LOSS",
-        "length": 2
+        "type": "WIN",
+        "length": 1
       },
       "matchups": [
         {
@@ -59611,6 +59872,35 @@
             "score": 110.2,
             "weeklyScores": [
               110.2
+            ]
+          },
+          "winner": "HOME"
+        },
+        {
+          "year": 2026,
+          "week": 5,
+          "weeks": [
+            5
+          ],
+          "isTwoWeek": false,
+          "matchupPeriodId": 5,
+          "isPlayoff": false,
+          "home": {
+            "teamId": 13,
+            "teamName": "Paintin Peyton",
+            "owner": "john crawford",
+            "score": 143.3,
+            "weeklyScores": [
+              143.3
+            ]
+          },
+          "away": {
+            "teamId": 9,
+            "teamName": "Salty Spitoon",
+            "owner": "Ray Engleking",
+            "score": 140.62,
+            "weeklyScores": [
+              140.62
             ]
           },
           "winner": "HOME"

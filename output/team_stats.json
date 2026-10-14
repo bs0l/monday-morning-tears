@@ -15,14 +15,14 @@
     "teamName": "Bovine University Stampede",
     "abbrev": "STMP",
     "allTeamNames": [
-      "Wade Boggs Memorial Team",
       "Arian Foster 2013",
-      "Bills New Team Name",
       "Musconetcong Mantis Men",
-      "Bovine University Stampede",
-      "Scott's ConsolationTots",
+      "Wade Boggs Memorial Team",
       "Barack Obama",
-      "Why's This So Sticky?"
+      "Bovine University Stampede",
+      "Bills New Team Name",
+      "Why's This So Sticky?",
+      "Scott's ConsolationTots"
     ],
     "playoffYears": [
       2018,
@@ -36,12 +36,12 @@
       2015
     ],
     "seasonsPlayed": 14,
-    "totalGames": 205,
+    "totalGames": 206,
     "regularSeason": {
-      "wins": 112,
+      "wins": 113,
       "losses": 74,
       "ties": 0,
-      "winPercentage": 0.602
+      "winPercentage": 0.604
     },
     "playoffs": {
       "wins": 11,
@@ -50,10 +50,10 @@
       "winPercentage": 0.579
     },
     "overall": {
-      "wins": 123,
+      "wins": 124,
       "losses": 82,
       "ties": 0,
-      "winPercentage": 0.6
+      "winPercentage": 0.602
     },
     "playoffAppearances": 9,
     "championships": 2,
@@ -64,11 +64,11 @@
     ],
     "mostMovesSeason": 53,
     "mostMovesSeasonYear": 2017,
-    "weeksPlayed": 217,
-    "totalPointsFor": 24483.28,
-    "totalPointsAgainst": 23287.0,
-    "avgPointsFor": 112.82617511520736,
-    "avgPointsAgainst": 107.31336405529954,
+    "weeksPlayed": 218,
+    "totalPointsFor": 24617.56,
+    "totalPointsAgainst": 23392.0,
+    "avgPointsFor": 112.92458715596331,
+    "avgPointsAgainst": 107.30275229357798,
     "highestScore": 171.36,
     "lowestScore": 58.7,
     "totalTrades": 2,
@@ -79,8 +79,8 @@
     "longestWinStreak": 10,
     "longestLossStreak": 5,
     "currentStreak": {
-      "type": "LOSS",
-      "length": 2
+      "type": "WIN",
+      "length": 1
     },
     "yearlyRecords": {
       "2013": {
@@ -93,7 +93,9 @@
         "avgPointsFor": 106.70588235294117,
         "madePlayoffs": true,
         "regularSeasonWins": 5,
-        "regularSeasonLosses": 10
+        "regularSeasonLosses": 10,
+        "regularSeasonGames": 15,
+        "seasonComplete": true
       },
       "2014": {
         "wins": 10,
@@ -105,7 +107,9 @@
         "avgPointsFor": 111.3529411764706,
         "madePlayoffs": true,
         "regularSeasonWins": 9,
-        "regularSeasonLosses": 4
+        "regularSeasonLosses": 4,
+        "regularSeasonGames": 13,
+        "seasonComplete": true
       },
       "2015": {
         "wins": 10,
@@ -117,7 +121,9 @@
         "avgPointsFor": 99.6375,
         "madePlayoffs": true,
         "regularSeasonWins": 8,
-        "regularSeasonLosses": 4
+        "regularSeasonLosses": 4,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2016": {
         "wins": 7,
@@ -129,7 +135,9 @@
         "avgPointsFor": 99.18,
         "madePlayoffs": true,
         "regularSeasonWins": 5,
-        "regularSeasonLosses": 7
+        "regularSeasonLosses": 7,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2017": {
         "wins": 7,
@@ -141,7 +149,9 @@
         "avgPointsFor": 95.2775,
         "madePlayoffs": true,
         "regularSeasonWins": 5,
-        "regularSeasonLosses": 7
+        "regularSeasonLosses": 7,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2018": {
         "wins": 7,
@@ -153,7 +163,9 @@
         "avgPointsFor": 132.3775,
         "madePlayoffs": true,
         "regularSeasonWins": 6,
-        "regularSeasonLosses": 6
+        "regularSeasonLosses": 6,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2019": {
         "wins": 8,
@@ -165,7 +177,9 @@
         "avgPointsFor": 114.68625,
         "madePlayoffs": true,
         "regularSeasonWins": 8,
-        "regularSeasonLosses": 4
+        "regularSeasonLosses": 4,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2020": {
         "wins": 11,
@@ -177,7 +191,9 @@
         "avgPointsFor": 130.7025,
         "madePlayoffs": true,
         "regularSeasonWins": 10,
-        "regularSeasonLosses": 4
+        "regularSeasonLosses": 4,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2021": {
         "wins": 8,
@@ -189,7 +205,9 @@
         "avgPointsFor": 115.27764705882353,
         "madePlayoffs": true,
         "regularSeasonWins": 7,
-        "regularSeasonLosses": 8
+        "regularSeasonLosses": 8,
+        "regularSeasonGames": 15,
+        "seasonComplete": true
       },
       "2022": {
         "wins": 9,
@@ -201,7 +219,9 @@
         "avgPointsFor": 108.89176470588235,
         "madePlayoffs": true,
         "regularSeasonWins": 8,
-        "regularSeasonLosses": 7
+        "regularSeasonLosses": 7,
+        "regularSeasonGames": 15,
+        "seasonComplete": true
       },
       "2023": {
         "wins": 12,
@@ -213,7 +233,9 @@
         "avgPointsFor": 112.82375,
         "madePlayoffs": true,
         "regularSeasonWins": 11,
-        "regularSeasonLosses": 3
+        "regularSeasonLosses": 3,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2024": {
         "wins": 13,
@@ -225,7 +247,9 @@
         "avgPointsFor": 121.41375000000001,
         "madePlayoffs": true,
         "regularSeasonWins": 11,
-        "regularSeasonLosses": 3
+        "regularSeasonLosses": 3,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2025": {
         "wins": 12,
@@ -237,19 +261,23 @@
         "avgPointsFor": 119.91411764705882,
         "madePlayoffs": true,
         "regularSeasonWins": 10,
-        "regularSeasonLosses": 4
+        "regularSeasonLosses": 4,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2026": {
-        "wins": 2,
+        "wins": 3,
         "losses": 2,
         "ties": 0,
-        "winPercentage": 0.5,
-        "pointsFor": 429.28000000000003,
-        "pointsAgainst": 401.76,
-        "avgPointsFor": 107.32000000000001,
+        "winPercentage": 0.6,
+        "pointsFor": 563.5600000000001,
+        "pointsAgainst": 506.76,
+        "avgPointsFor": 112.71200000000002,
         "madePlayoffs": false,
-        "regularSeasonWins": 2,
-        "regularSeasonLosses": 2
+        "regularSeasonWins": 3,
+        "regularSeasonLosses": 2,
+        "regularSeasonGames": 14,
+        "seasonComplete": false
       }
     },
     "bestOpponent": "john crawford",
@@ -357,7 +385,9 @@
         "avgPointsFor": 120.23529411764706,
         "madePlayoffs": true,
         "regularSeasonWins": 10,
-        "regularSeasonLosses": 5
+        "regularSeasonLosses": 5,
+        "regularSeasonGames": 15,
+        "seasonComplete": true
       },
       "2014": {
         "wins": 9,
@@ -369,7 +399,9 @@
         "avgPointsFor": 105.70588235294117,
         "madePlayoffs": true,
         "regularSeasonWins": 8,
-        "regularSeasonLosses": 5
+        "regularSeasonLosses": 5,
+        "regularSeasonGames": 13,
+        "seasonComplete": true
       },
       "2015": {
         "wins": 9,
@@ -381,7 +413,9 @@
         "avgPointsFor": 94.5,
         "madePlayoffs": true,
         "regularSeasonWins": 8,
-        "regularSeasonLosses": 4
+        "regularSeasonLosses": 4,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       }
     },
     "bestOpponent": "Randell Crawford",
@@ -425,8 +459,8 @@
     "teamName": "TDs In Your Face",
     "abbrev": "TDs",
     "allTeamNames": [
-      "TDs In Your Face",
-      "Also Just Sean Kessell"
+      "Also Just Sean Kessell",
+      "TDs In Your Face"
     ],
     "playoffYears": [],
     "seasonsPlayed": 2,
@@ -484,7 +518,9 @@
         "avgPointsFor": 99.29411764705883,
         "madePlayoffs": true,
         "regularSeasonWins": 7,
-        "regularSeasonLosses": 8
+        "regularSeasonLosses": 8,
+        "regularSeasonGames": 15,
+        "seasonComplete": true
       },
       "2014": {
         "wins": 3,
@@ -496,7 +532,9 @@
         "avgPointsFor": 72.70588235294117,
         "madePlayoffs": true,
         "regularSeasonWins": 3,
-        "regularSeasonLosses": 10
+        "regularSeasonLosses": 10,
+        "regularSeasonGames": 13,
+        "seasonComplete": true
       }
     },
     "bestOpponent": "Randell Crawford",
@@ -540,20 +578,20 @@
     "teamName": "Chasing McBride",
     "abbrev": "GRBG",
     "allTeamNames": [
-      "All Aboard The J Train",
-      "Less Morals Than Mike Vick",
       "Colonel Sanders McCaffreys",
-      "I wanta Free the NewtMan!",
       "Why Pass to Top Wide Receivers?",
-      "Al Tuck And No Action",
-      "Chase My Butker",
       "Saquonda Forever",
-      "Saquanda Strikes Back",
-      "Yobogoya In the Bushes!",
-      "Dollar Dollar Bills Y'all",
+      "All Aboard The J Train",
+      "Al Tuck And No Action",
       "Chasing McBride",
+      "The Bell Is Dead",
+      "Dollar Dollar Bills Y'all",
+      "I wanta Free the NewtMan!",
+      "Less Morals Than Mike Vick",
+      "Yobogoya In the Bushes!",
+      "Saquanda Strikes Back",
       "Its Mike Vick In a Box!",
-      "The Bell Is Dead"
+      "Chase My Butker"
     ],
     "playoffYears": [
       2016,
@@ -564,12 +602,12 @@
       2015
     ],
     "seasonsPlayed": 14,
-    "totalGames": 207,
+    "totalGames": 208,
     "regularSeason": {
-      "wins": 97,
+      "wins": 98,
       "losses": 97,
       "ties": 0,
-      "winPercentage": 0.5
+      "winPercentage": 0.503
     },
     "playoffs": {
       "wins": 9,
@@ -578,10 +616,10 @@
       "winPercentage": 0.692
     },
     "overall": {
-      "wins": 106,
+      "wins": 107,
       "losses": 101,
       "ties": 0,
-      "winPercentage": 0.512
+      "winPercentage": 0.514
     },
     "playoffAppearances": 6,
     "championships": 2,
@@ -592,11 +630,11 @@
     ],
     "mostMovesSeason": 43,
     "mostMovesSeasonYear": 2018,
-    "weeksPlayed": 219,
-    "totalPointsFor": 23877.14,
-    "totalPointsAgainst": 23632.02,
-    "avgPointsFor": 109.02803652968036,
-    "avgPointsAgainst": 107.90876712328767,
+    "weeksPlayed": 220,
+    "totalPointsFor": 24009.58,
+    "totalPointsAgainst": 23707.44,
+    "avgPointsFor": 109.13445454545456,
+    "avgPointsAgainst": 107.7610909090909,
     "highestScore": 191.2,
     "lowestScore": 12.0,
     "totalTrades": 1,
@@ -607,8 +645,8 @@
     "longestWinStreak": 10,
     "longestLossStreak": 7,
     "currentStreak": {
-      "type": "LOSS",
-      "length": 2
+      "type": "WIN",
+      "length": 1
     },
     "yearlyRecords": {
       "2013": {
@@ -621,7 +659,9 @@
         "avgPointsFor": 108.88235294117646,
         "madePlayoffs": true,
         "regularSeasonWins": 5,
-        "regularSeasonLosses": 10
+        "regularSeasonLosses": 10,
+        "regularSeasonGames": 15,
+        "seasonComplete": true
       },
       "2014": {
         "wins": 12,
@@ -633,7 +673,9 @@
         "avgPointsFor": 108.88235294117646,
         "madePlayoffs": true,
         "regularSeasonWins": 10,
-        "regularSeasonLosses": 3
+        "regularSeasonLosses": 3,
+        "regularSeasonGames": 13,
+        "seasonComplete": true
       },
       "2015": {
         "wins": 8,
@@ -645,7 +687,9 @@
         "avgPointsFor": 103.00625,
         "madePlayoffs": true,
         "regularSeasonWins": 7,
-        "regularSeasonLosses": 5
+        "regularSeasonLosses": 5,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2016": {
         "wins": 11,
@@ -657,7 +701,9 @@
         "avgPointsFor": 118.65875,
         "madePlayoffs": true,
         "regularSeasonWins": 9,
-        "regularSeasonLosses": 3
+        "regularSeasonLosses": 3,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2017": {
         "wins": 10,
@@ -669,7 +715,9 @@
         "avgPointsFor": 97.21625,
         "madePlayoffs": true,
         "regularSeasonWins": 9,
-        "regularSeasonLosses": 3
+        "regularSeasonLosses": 3,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2018": {
         "wins": 5,
@@ -681,7 +729,9 @@
         "avgPointsFor": 107.8625,
         "madePlayoffs": true,
         "regularSeasonWins": 3,
-        "regularSeasonLosses": 9
+        "regularSeasonLosses": 9,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2019": {
         "wins": 10,
@@ -693,7 +743,9 @@
         "avgPointsFor": 125.13875,
         "madePlayoffs": true,
         "regularSeasonWins": 9,
-        "regularSeasonLosses": 3
+        "regularSeasonLosses": 3,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2020": {
         "wins": 6,
@@ -705,7 +757,9 @@
         "avgPointsFor": 108.80625,
         "madePlayoffs": true,
         "regularSeasonWins": 5,
-        "regularSeasonLosses": 9
+        "regularSeasonLosses": 9,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2021": {
         "wins": 6,
@@ -717,7 +771,9 @@
         "avgPointsFor": 108.3835294117647,
         "madePlayoffs": true,
         "regularSeasonWins": 6,
-        "regularSeasonLosses": 9
+        "regularSeasonLosses": 9,
+        "regularSeasonGames": 15,
+        "seasonComplete": true
       },
       "2022": {
         "wins": 5,
@@ -729,7 +785,9 @@
         "avgPointsFor": 110.25411764705882,
         "madePlayoffs": true,
         "regularSeasonWins": 4,
-        "regularSeasonLosses": 11
+        "regularSeasonLosses": 11,
+        "regularSeasonGames": 15,
+        "seasonComplete": true
       },
       "2023": {
         "wins": 10,
@@ -741,7 +799,9 @@
         "avgPointsFor": 110.62588235294118,
         "madePlayoffs": true,
         "regularSeasonWins": 8,
-        "regularSeasonLosses": 6
+        "regularSeasonLosses": 6,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2024": {
         "wins": 7,
@@ -753,7 +813,9 @@
         "avgPointsFor": 111.01529411764706,
         "madePlayoffs": true,
         "regularSeasonWins": 5,
-        "regularSeasonLosses": 9
+        "regularSeasonLosses": 9,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2025": {
         "wins": 8,
@@ -765,19 +827,23 @@
         "avgPointsFor": 100.63411764705882,
         "madePlayoffs": true,
         "regularSeasonWins": 6,
-        "regularSeasonLosses": 8
+        "regularSeasonLosses": 8,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2026": {
-        "wins": 1,
+        "wins": 2,
         "losses": 3,
         "ties": 0,
-        "winPercentage": 0.25,
-        "pointsFor": 408.6,
-        "pointsAgainst": 476.96,
-        "avgPointsFor": 102.15,
+        "winPercentage": 0.4,
+        "pointsFor": 541.04,
+        "pointsAgainst": 552.38,
+        "avgPointsFor": 108.208,
         "madePlayoffs": false,
-        "regularSeasonWins": 1,
-        "regularSeasonLosses": 3
+        "regularSeasonWins": 2,
+        "regularSeasonLosses": 3,
+        "regularSeasonGames": 14,
+        "seasonComplete": false
       }
     },
     "bestOpponent": "john crawford",
@@ -800,11 +866,12 @@
     "mostLossesSeasonYear": 2022,
     "logoUrl": "https://g.espncdn.com/s/ffllm/logos/Referee-MartinLaksman/referee-08.svg",
     "mostLoyalPlayer": "Chiefs D/ST",
-    "mostLoyalPlayerSeasons": 3,
+    "mostLoyalPlayerSeasons": 4,
     "mostLoyalPlayerYears": [
       2013,
       2015,
-      2022
+      2022,
+      2026
     ]
   },
   "Randell Crawford": {
@@ -822,13 +889,13 @@
     "teamName": "Insane in the Ukraine",
     "abbrev": "B00B",
     "allTeamNames": [
-      "oh no its John Snooooooow",
       "The HipShire Hobbits",
-      "Erection Protection",
-      "19 Problems and Covid is One",
-      "Insane in the Ukraine",
       "Will Trade Wins For Alcohol",
-      "I Do Respect You Bro"
+      "Insane in the Ukraine",
+      "19 Problems and Covid is One",
+      "oh no its John Snooooooow",
+      "I Do Respect You Bro",
+      "Erection Protection"
     ],
     "playoffYears": [
       2024,
@@ -837,12 +904,12 @@
       2023
     ],
     "seasonsPlayed": 14,
-    "totalGames": 206,
+    "totalGames": 207,
     "regularSeason": {
       "wins": 92,
-      "losses": 104,
+      "losses": 105,
       "ties": 0,
-      "winPercentage": 0.469
+      "winPercentage": 0.467
     },
     "playoffs": {
       "wins": 3,
@@ -852,9 +919,9 @@
     },
     "overall": {
       "wins": 95,
-      "losses": 111,
+      "losses": 112,
       "ties": 0,
-      "winPercentage": 0.461
+      "winPercentage": 0.459
     },
     "playoffAppearances": 4,
     "championships": 0,
@@ -862,11 +929,11 @@
     "championshipYears": [],
     "mostMovesSeason": 23,
     "mostMovesSeasonYear": 2024,
-    "weeksPlayed": 218,
-    "totalPointsFor": 22245.96,
-    "totalPointsAgainst": 22663.5,
-    "avgPointsFor": 102.04568807339449,
-    "avgPointsAgainst": 103.96100917431193,
+    "weeksPlayed": 219,
+    "totalPointsFor": 22336.96,
+    "totalPointsAgainst": 22770.2,
+    "avgPointsFor": 101.9952511415525,
+    "avgPointsAgainst": 103.97351598173516,
     "highestScore": 178.62,
     "lowestScore": 55.32,
     "totalTrades": 0,
@@ -878,7 +945,7 @@
     "longestLossStreak": 7,
     "currentStreak": {
       "type": "LOSS",
-      "length": 4
+      "length": 5
     },
     "yearlyRecords": {
       "2013": {
@@ -891,7 +958,9 @@
         "avgPointsFor": 107.11764705882354,
         "madePlayoffs": true,
         "regularSeasonWins": 8,
-        "regularSeasonLosses": 7
+        "regularSeasonLosses": 7,
+        "regularSeasonGames": 15,
+        "seasonComplete": true
       },
       "2014": {
         "wins": 8,
@@ -903,7 +972,9 @@
         "avgPointsFor": 100.29411764705883,
         "madePlayoffs": true,
         "regularSeasonWins": 7,
-        "regularSeasonLosses": 6
+        "regularSeasonLosses": 6,
+        "regularSeasonGames": 13,
+        "seasonComplete": true
       },
       "2015": {
         "wins": 7,
@@ -915,7 +986,9 @@
         "avgPointsFor": 82.42750000000001,
         "madePlayoffs": true,
         "regularSeasonWins": 5,
-        "regularSeasonLosses": 7
+        "regularSeasonLosses": 7,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2016": {
         "wins": 6,
@@ -927,7 +1000,9 @@
         "avgPointsFor": 97.03125,
         "madePlayoffs": true,
         "regularSeasonWins": 5,
-        "regularSeasonLosses": 7
+        "regularSeasonLosses": 7,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2017": {
         "wins": 6,
@@ -939,7 +1014,9 @@
         "avgPointsFor": 83.69375,
         "madePlayoffs": true,
         "regularSeasonWins": 5,
-        "regularSeasonLosses": 7
+        "regularSeasonLosses": 7,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2018": {
         "wins": 5,
@@ -951,7 +1028,9 @@
         "avgPointsFor": 105.0375,
         "madePlayoffs": true,
         "regularSeasonWins": 5,
-        "regularSeasonLosses": 7
+        "regularSeasonLosses": 7,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2019": {
         "wins": 5,
@@ -963,7 +1042,9 @@
         "avgPointsFor": 103.90375,
         "madePlayoffs": true,
         "regularSeasonWins": 5,
-        "regularSeasonLosses": 7
+        "regularSeasonLosses": 7,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2020": {
         "wins": 7,
@@ -975,7 +1056,9 @@
         "avgPointsFor": 109.79625,
         "madePlayoffs": true,
         "regularSeasonWins": 5,
-        "regularSeasonLosses": 9
+        "regularSeasonLosses": 9,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2021": {
         "wins": 9,
@@ -987,7 +1070,9 @@
         "avgPointsFor": 103.56705882352942,
         "madePlayoffs": true,
         "regularSeasonWins": 7,
-        "regularSeasonLosses": 8
+        "regularSeasonLosses": 8,
+        "regularSeasonGames": 15,
+        "seasonComplete": true
       },
       "2022": {
         "wins": 8,
@@ -999,7 +1084,9 @@
         "avgPointsFor": 107.03176470588235,
         "madePlayoffs": true,
         "regularSeasonWins": 6,
-        "regularSeasonLosses": 9
+        "regularSeasonLosses": 9,
+        "regularSeasonGames": 15,
+        "seasonComplete": true
       },
       "2023": {
         "wins": 10,
@@ -1011,7 +1098,9 @@
         "avgPointsFor": 107.7525,
         "madePlayoffs": true,
         "regularSeasonWins": 10,
-        "regularSeasonLosses": 4
+        "regularSeasonLosses": 4,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2024": {
         "wins": 7,
@@ -1023,7 +1112,9 @@
         "avgPointsFor": 103.83529411764707,
         "madePlayoffs": true,
         "regularSeasonWins": 6,
-        "regularSeasonLosses": 8
+        "regularSeasonLosses": 8,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2025": {
         "wins": 9,
@@ -1035,24 +1126,28 @@
         "avgPointsFor": 115.99294117647058,
         "madePlayoffs": true,
         "regularSeasonWins": 7,
-        "regularSeasonLosses": 7
+        "regularSeasonLosses": 7,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2026": {
         "wins": 0,
-        "losses": 4,
+        "losses": 5,
         "ties": 0,
         "winPercentage": 0.0,
-        "pointsFor": 368.42,
-        "pointsAgainst": 471.1,
-        "avgPointsFor": 92.105,
+        "pointsFor": 459.42,
+        "pointsAgainst": 577.8000000000001,
+        "avgPointsFor": 91.884,
         "madePlayoffs": false,
         "regularSeasonWins": 0,
-        "regularSeasonLosses": 4
+        "regularSeasonLosses": 5,
+        "regularSeasonGames": 14,
+        "seasonComplete": false
       }
     },
     "bestOpponent": "Joe Jaramillo",
-    "bestOpponentRecord": "6-1",
-    "bestOpponentWinPct": 0.8571428571428571,
+    "bestOpponentRecord": "6-2",
+    "bestOpponentWinPct": 0.75,
     "worstOpponent": "John Artiglier",
     "worstOpponentRecord": "4-13",
     "worstOpponentWinPct": 0.23529411764705882,
@@ -1151,7 +1246,9 @@
         "avgPointsFor": 100.70588235294117,
         "madePlayoffs": true,
         "regularSeasonWins": 6,
-        "regularSeasonLosses": 9
+        "regularSeasonLosses": 9,
+        "regularSeasonGames": 15,
+        "seasonComplete": true
       }
     },
     "bestOpponent": "Carl Cummins",
@@ -1252,7 +1349,9 @@
         "avgPointsFor": 106.23529411764706,
         "madePlayoffs": true,
         "regularSeasonWins": 8,
-        "regularSeasonLosses": 7
+        "regularSeasonLosses": 7,
+        "regularSeasonGames": 15,
+        "seasonComplete": true
       }
     },
     "bestOpponent": "Mike Kovacs",
@@ -1357,7 +1456,9 @@
         "avgPointsFor": 114.3529411764706,
         "madePlayoffs": true,
         "regularSeasonWins": 10,
-        "regularSeasonLosses": 5
+        "regularSeasonLosses": 5,
+        "regularSeasonGames": 15,
+        "seasonComplete": true
       },
       "2014": {
         "wins": 8,
@@ -1369,7 +1470,9 @@
         "avgPointsFor": 93.47058823529412,
         "madePlayoffs": true,
         "regularSeasonWins": 8,
-        "regularSeasonLosses": 5
+        "regularSeasonLosses": 5,
+        "regularSeasonGames": 13,
+        "seasonComplete": true
       }
     },
     "bestOpponent": "Carl Cummins",
@@ -1413,15 +1516,15 @@
     "teamName": "Canadian Geeses",
     "abbrev": "CA",
     "allTeamNames": [
-      "Go Fudge Yourselves",
-      "Hawk Tua",
-      "Canadian Geeses",
-      "Chef's choclate Salty Balls",
-      "Pickle Ricks",
-      "Skattebo's Ankle",
-      "Duke Nukems",
       "Christmas Devil Krampus",
-      "Rafi Bombs"
+      "Pickle Ricks",
+      "Go Fudge Yourselves",
+      "Skattebo's Ankle",
+      "Chef's choclate Salty Balls",
+      "Canadian Geeses",
+      "Hawk Tua",
+      "Rafi Bombs",
+      "Duke Nukems"
     ],
     "playoffYears": [
       2016,
@@ -1434,12 +1537,12 @@
       2013
     ],
     "seasonsPlayed": 14,
-    "totalGames": 207,
+    "totalGames": 208,
     "regularSeason": {
-      "wins": 98,
+      "wins": 99,
       "losses": 92,
       "ties": 0,
-      "winPercentage": 0.516
+      "winPercentage": 0.518
     },
     "playoffs": {
       "wins": 7,
@@ -1448,10 +1551,10 @@
       "winPercentage": 0.412
     },
     "overall": {
-      "wins": 105,
+      "wins": 106,
       "losses": 102,
       "ties": 0,
-      "winPercentage": 0.507
+      "winPercentage": 0.51
     },
     "playoffAppearances": 8,
     "championships": 3,
@@ -1463,11 +1566,11 @@
     ],
     "mostMovesSeason": 18,
     "mostMovesSeasonYear": 2014,
-    "weeksPlayed": 219,
-    "totalPointsFor": 23613.22,
-    "totalPointsAgainst": 23612.4,
-    "avgPointsFor": 107.82292237442923,
-    "avgPointsAgainst": 107.81917808219178,
+    "weeksPlayed": 220,
+    "totalPointsFor": 23718.98,
+    "totalPointsAgainst": 23702.92,
+    "avgPointsFor": 107.81354545454545,
+    "avgPointsAgainst": 107.74054545454544,
     "highestScore": 193.9,
     "lowestScore": 45.58,
     "totalTrades": 0,
@@ -1479,7 +1582,7 @@
     "longestLossStreak": 9,
     "currentStreak": {
       "type": "WIN",
-      "length": 3
+      "length": 4
     },
     "yearlyRecords": {
       "2013": {
@@ -1492,7 +1595,9 @@
         "avgPointsFor": 136.88235294117646,
         "madePlayoffs": true,
         "regularSeasonWins": 11,
-        "regularSeasonLosses": 4
+        "regularSeasonLosses": 4,
+        "regularSeasonGames": 15,
+        "seasonComplete": true
       },
       "2014": {
         "wins": 7,
@@ -1504,7 +1609,9 @@
         "avgPointsFor": 93.0,
         "madePlayoffs": true,
         "regularSeasonWins": 7,
-        "regularSeasonLosses": 6
+        "regularSeasonLosses": 6,
+        "regularSeasonGames": 13,
+        "seasonComplete": true
       },
       "2015": {
         "wins": 5,
@@ -1516,7 +1623,9 @@
         "avgPointsFor": 88.355,
         "madePlayoffs": true,
         "regularSeasonWins": 3,
-        "regularSeasonLosses": 9
+        "regularSeasonLosses": 9,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2016": {
         "wins": 9,
@@ -1528,7 +1637,9 @@
         "avgPointsFor": 97.90375,
         "madePlayoffs": true,
         "regularSeasonWins": 8,
-        "regularSeasonLosses": 4
+        "regularSeasonLosses": 4,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2017": {
         "wins": 8,
@@ -1540,7 +1651,9 @@
         "avgPointsFor": 98.59625,
         "madePlayoffs": true,
         "regularSeasonWins": 8,
-        "regularSeasonLosses": 4
+        "regularSeasonLosses": 4,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2018": {
         "wins": 6,
@@ -1552,7 +1665,9 @@
         "avgPointsFor": 121.5925,
         "madePlayoffs": true,
         "regularSeasonWins": 6,
-        "regularSeasonLosses": 6
+        "regularSeasonLosses": 6,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2019": {
         "wins": 8,
@@ -1564,7 +1679,9 @@
         "avgPointsFor": 106.62,
         "madePlayoffs": true,
         "regularSeasonWins": 6,
-        "regularSeasonLosses": 6
+        "regularSeasonLosses": 6,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2020": {
         "wins": 10,
@@ -1576,7 +1693,9 @@
         "avgPointsFor": 120.545,
         "madePlayoffs": true,
         "regularSeasonWins": 8,
-        "regularSeasonLosses": 6
+        "regularSeasonLosses": 6,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2021": {
         "wins": 9,
@@ -1588,7 +1707,9 @@
         "avgPointsFor": 119.45176470588235,
         "madePlayoffs": true,
         "regularSeasonWins": 9,
-        "regularSeasonLosses": 6
+        "regularSeasonLosses": 6,
+        "regularSeasonGames": 15,
+        "seasonComplete": true
       },
       "2022": {
         "wins": 8,
@@ -1600,7 +1721,9 @@
         "avgPointsFor": 106.63999999999999,
         "madePlayoffs": true,
         "regularSeasonWins": 7,
-        "regularSeasonLosses": 8
+        "regularSeasonLosses": 8,
+        "regularSeasonGames": 15,
+        "seasonComplete": true
       },
       "2023": {
         "wins": 7,
@@ -1612,7 +1735,9 @@
         "avgPointsFor": 109.86823529411765,
         "madePlayoffs": true,
         "regularSeasonWins": 7,
-        "regularSeasonLosses": 7
+        "regularSeasonLosses": 7,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2024": {
         "wins": 6,
@@ -1624,7 +1749,9 @@
         "avgPointsFor": 101.72941176470589,
         "madePlayoffs": true,
         "regularSeasonWins": 4,
-        "regularSeasonLosses": 10
+        "regularSeasonLosses": 10,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2025": {
         "wins": 6,
@@ -1636,19 +1763,23 @@
         "avgPointsFor": 95.29411764705883,
         "madePlayoffs": true,
         "regularSeasonWins": 4,
-        "regularSeasonLosses": 10
+        "regularSeasonLosses": 10,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2026": {
-        "wins": 3,
+        "wins": 4,
         "losses": 1,
         "ties": 0,
-        "winPercentage": 0.75,
-        "pointsFor": 506.7,
-        "pointsAgainst": 402.44,
-        "avgPointsFor": 126.675,
+        "winPercentage": 0.8,
+        "pointsFor": 612.46,
+        "pointsAgainst": 492.96,
+        "avgPointsFor": 122.492,
         "madePlayoffs": false,
-        "regularSeasonWins": 3,
-        "regularSeasonLosses": 1
+        "regularSeasonWins": 4,
+        "regularSeasonLosses": 1,
+        "regularSeasonGames": 14,
+        "seasonComplete": false
       }
     },
     "bestOpponent": "john crawford",
@@ -1694,12 +1825,12 @@
     "teamName": "Taylor and Travis Swift \ud83d\udc51",
     "abbrev": "CARL",
     "allTeamNames": [
-      "Benching the Whole Team",
-      "Duckman Kowalski",
-      "Greatest of All Time",
-      "Taylor Swift",
       "Taylor and Travis Swift \ud83d\udc51",
-      "Pussy Power"
+      "Benching the Whole Team",
+      "Taylor Swift",
+      "Pussy Power",
+      "Greatest of All Time",
+      "Duckman Kowalski"
     ],
     "playoffYears": [
       2016,
@@ -1710,12 +1841,12 @@
       2025
     ],
     "seasonsPlayed": 14,
-    "totalGames": 207,
+    "totalGames": 208,
     "regularSeason": {
       "wins": 93,
-      "losses": 99,
+      "losses": 100,
       "ties": 0,
-      "winPercentage": 0.484
+      "winPercentage": 0.482
     },
     "playoffs": {
       "wins": 11,
@@ -1725,9 +1856,9 @@
     },
     "overall": {
       "wins": 104,
-      "losses": 103,
+      "losses": 104,
       "ties": 0,
-      "winPercentage": 0.502
+      "winPercentage": 0.5
     },
     "playoffAppearances": 6,
     "championships": 2,
@@ -1738,11 +1869,11 @@
     ],
     "mostMovesSeason": 44,
     "mostMovesSeasonYear": 2022,
-    "weeksPlayed": 219,
-    "totalPointsFor": 23236.48,
-    "totalPointsAgainst": 23353.4,
-    "avgPointsFor": 106.10264840182649,
-    "avgPointsAgainst": 106.6365296803653,
+    "weeksPlayed": 220,
+    "totalPointsFor": 23311.9,
+    "totalPointsAgainst": 23485.84,
+    "avgPointsFor": 105.96318181818182,
+    "avgPointsAgainst": 106.75381818181818,
     "highestScore": 180.0,
     "lowestScore": 60.42,
     "totalTrades": 1,
@@ -1753,8 +1884,8 @@
     "longestWinStreak": 8,
     "longestLossStreak": 10,
     "currentStreak": {
-      "type": "WIN",
-      "length": 5
+      "type": "LOSS",
+      "length": 1
     },
     "yearlyRecords": {
       "2013": {
@@ -1767,7 +1898,9 @@
         "avgPointsFor": 101.88235294117646,
         "madePlayoffs": true,
         "regularSeasonWins": 5,
-        "regularSeasonLosses": 10
+        "regularSeasonLosses": 10,
+        "regularSeasonGames": 15,
+        "seasonComplete": true
       },
       "2014": {
         "wins": 6,
@@ -1779,7 +1912,9 @@
         "avgPointsFor": 98.29411764705883,
         "madePlayoffs": true,
         "regularSeasonWins": 5,
-        "regularSeasonLosses": 8
+        "regularSeasonLosses": 8,
+        "regularSeasonGames": 13,
+        "seasonComplete": true
       },
       "2015": {
         "wins": 4,
@@ -1791,7 +1926,9 @@
         "avgPointsFor": 86.36875,
         "madePlayoffs": true,
         "regularSeasonWins": 4,
-        "regularSeasonLosses": 8
+        "regularSeasonLosses": 8,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2016": {
         "wins": 8,
@@ -1803,7 +1940,9 @@
         "avgPointsFor": 91.9725,
         "madePlayoffs": true,
         "regularSeasonWins": 7,
-        "regularSeasonLosses": 5
+        "regularSeasonLosses": 5,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2017": {
         "wins": 10,
@@ -1815,7 +1954,9 @@
         "avgPointsFor": 104.08,
         "madePlayoffs": true,
         "regularSeasonWins": 8,
-        "regularSeasonLosses": 4
+        "regularSeasonLosses": 4,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2018": {
         "wins": 6,
@@ -1827,7 +1968,9 @@
         "avgPointsFor": 100.49,
         "madePlayoffs": true,
         "regularSeasonWins": 5,
-        "regularSeasonLosses": 7
+        "regularSeasonLosses": 7,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2019": {
         "wins": 6,
@@ -1839,7 +1982,9 @@
         "avgPointsFor": 120.0125,
         "madePlayoffs": true,
         "regularSeasonWins": 5,
-        "regularSeasonLosses": 7
+        "regularSeasonLosses": 7,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2020": {
         "wins": 5,
@@ -1851,7 +1996,9 @@
         "avgPointsFor": 111.6625,
         "madePlayoffs": true,
         "regularSeasonWins": 5,
-        "regularSeasonLosses": 9
+        "regularSeasonLosses": 9,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2021": {
         "wins": 7,
@@ -1863,7 +2010,9 @@
         "avgPointsFor": 108.89999999999999,
         "madePlayoffs": true,
         "regularSeasonWins": 6,
-        "regularSeasonLosses": 9
+        "regularSeasonLosses": 9,
+        "regularSeasonGames": 15,
+        "seasonComplete": true
       },
       "2022": {
         "wins": 11,
@@ -1875,7 +2024,9 @@
         "avgPointsFor": 113.21176470588235,
         "madePlayoffs": true,
         "regularSeasonWins": 9,
-        "regularSeasonLosses": 6
+        "regularSeasonLosses": 6,
+        "regularSeasonGames": 15,
+        "seasonComplete": true
       },
       "2023": {
         "wins": 10,
@@ -1887,7 +2038,9 @@
         "avgPointsFor": 114.53411764705882,
         "madePlayoffs": true,
         "regularSeasonWins": 8,
-        "regularSeasonLosses": 6
+        "regularSeasonLosses": 6,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2024": {
         "wins": 11,
@@ -1899,7 +2052,9 @@
         "avgPointsFor": 120.64235294117647,
         "madePlayoffs": true,
         "regularSeasonWins": 9,
-        "regularSeasonLosses": 5
+        "regularSeasonLosses": 5,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2025": {
         "wins": 10,
@@ -1911,19 +2066,23 @@
         "avgPointsFor": 102.64588235294117,
         "madePlayoffs": true,
         "regularSeasonWins": 8,
-        "regularSeasonLosses": 6
+        "regularSeasonLosses": 6,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2026": {
         "wins": 4,
-        "losses": 0,
+        "losses": 1,
         "ties": 0,
-        "winPercentage": 1.0,
-        "pointsFor": 481.22,
-        "pointsAgainst": 375.22,
-        "avgPointsFor": 120.305,
+        "winPercentage": 0.8,
+        "pointsFor": 556.64,
+        "pointsAgainst": 507.66,
+        "avgPointsFor": 111.328,
         "madePlayoffs": false,
         "regularSeasonWins": 4,
-        "regularSeasonLosses": 0
+        "regularSeasonLosses": 1,
+        "regularSeasonGames": 14,
+        "seasonComplete": false
       }
     },
     "bestOpponent": "john crawford",
@@ -2029,7 +2188,9 @@
         "avgPointsFor": 95.6470588235294,
         "madePlayoffs": true,
         "regularSeasonWins": 6,
-        "regularSeasonLosses": 7
+        "regularSeasonLosses": 7,
+        "regularSeasonGames": 13,
+        "seasonComplete": true
       },
       "2015": {
         "wins": 6,
@@ -2041,7 +2202,9 @@
         "avgPointsFor": 99.25375,
         "madePlayoffs": true,
         "regularSeasonWins": 6,
-        "regularSeasonLosses": 6
+        "regularSeasonLosses": 6,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2016": {
         "wins": 3,
@@ -2053,7 +2216,9 @@
         "avgPointsFor": 77.52875,
         "madePlayoffs": true,
         "regularSeasonWins": 3,
-        "regularSeasonLosses": 9
+        "regularSeasonLosses": 9,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       }
     },
     "bestOpponent": "Ray Engleking",
@@ -2158,7 +2323,9 @@
         "avgPointsFor": 105.70588235294117,
         "madePlayoffs": true,
         "regularSeasonWins": 6,
-        "regularSeasonLosses": 6
+        "regularSeasonLosses": 6,
+        "regularSeasonGames": 13,
+        "seasonComplete": true
       },
       "2015": {
         "wins": 7,
@@ -2170,7 +2337,9 @@
         "avgPointsFor": 92.4375,
         "madePlayoffs": true,
         "regularSeasonWins": 7,
-        "regularSeasonLosses": 5
+        "regularSeasonLosses": 5,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2016": {
         "wins": 5,
@@ -2182,7 +2351,9 @@
         "avgPointsFor": 86.9675,
         "madePlayoffs": true,
         "regularSeasonWins": 4,
-        "regularSeasonLosses": 8
+        "regularSeasonLosses": 8,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2017": {
         "wins": 2,
@@ -2194,7 +2365,9 @@
         "avgPointsFor": 72.965,
         "madePlayoffs": true,
         "regularSeasonWins": 2,
-        "regularSeasonLosses": 10
+        "regularSeasonLosses": 10,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       }
     },
     "bestOpponent": "Phil Torres",
@@ -2239,8 +2412,8 @@
     "abbrev": "REXY",
     "allTeamNames": [
       "Rex Grossman Fan Club",
-      "Salty Spitoon",
-      "Weenie Hut Jr's"
+      "Weenie Hut Jr's",
+      "Salty Spitoon"
     ],
     "playoffYears": [
       2016,
@@ -2254,12 +2427,12 @@
       2025
     ],
     "seasonsPlayed": 13,
-    "totalGames": 189,
+    "totalGames": 190,
     "regularSeason": {
       "wins": 100,
-      "losses": 69,
+      "losses": 70,
       "ties": 0,
-      "winPercentage": 0.592
+      "winPercentage": 0.588
     },
     "playoffs": {
       "wins": 10,
@@ -2269,9 +2442,9 @@
     },
     "overall": {
       "wins": 110,
-      "losses": 79,
+      "losses": 80,
       "ties": 0,
-      "winPercentage": 0.582
+      "winPercentage": 0.579
     },
     "playoffAppearances": 9,
     "championships": 3,
@@ -2283,11 +2456,11 @@
     ],
     "mostMovesSeason": 41,
     "mostMovesSeasonYear": 2017,
-    "weeksPlayed": 201,
-    "totalPointsFor": 22641.22,
-    "totalPointsAgainst": 21275.5,
-    "avgPointsFor": 112.6428855721393,
-    "avgPointsAgainst": 105.84825870646766,
+    "weeksPlayed": 202,
+    "totalPointsFor": 22781.84,
+    "totalPointsAgainst": 21418.8,
+    "avgPointsFor": 112.78138613861387,
+    "avgPointsAgainst": 106.03366336633663,
     "highestScore": 188.5,
     "lowestScore": 53.0,
     "totalTrades": 0,
@@ -2298,8 +2471,8 @@
     "longestWinStreak": 8,
     "longestLossStreak": 5,
     "currentStreak": {
-      "type": "WIN",
-      "length": 2
+      "type": "LOSS",
+      "length": 1
     },
     "yearlyRecords": {
       "2014": {
@@ -2312,7 +2485,9 @@
         "avgPointsFor": 100.52941176470588,
         "madePlayoffs": true,
         "regularSeasonWins": 5,
-        "regularSeasonLosses": 8
+        "regularSeasonLosses": 8,
+        "regularSeasonGames": 13,
+        "seasonComplete": true
       },
       "2015": {
         "wins": 7,
@@ -2324,7 +2499,9 @@
         "avgPointsFor": 94.0175,
         "madePlayoffs": true,
         "regularSeasonWins": 6,
-        "regularSeasonLosses": 6
+        "regularSeasonLosses": 6,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2016": {
         "wins": 7,
@@ -2336,7 +2513,9 @@
         "avgPointsFor": 106.02125,
         "madePlayoffs": true,
         "regularSeasonWins": 7,
-        "regularSeasonLosses": 5
+        "regularSeasonLosses": 5,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2017": {
         "wins": 9,
@@ -2348,7 +2527,9 @@
         "avgPointsFor": 106.88375,
         "madePlayoffs": true,
         "regularSeasonWins": 8,
-        "regularSeasonLosses": 4
+        "regularSeasonLosses": 4,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2018": {
         "wins": 12,
@@ -2360,7 +2541,9 @@
         "avgPointsFor": 132.24625,
         "madePlayoffs": true,
         "regularSeasonWins": 10,
-        "regularSeasonLosses": 2
+        "regularSeasonLosses": 2,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2019": {
         "wins": 5,
@@ -2372,7 +2555,9 @@
         "avgPointsFor": 104.0875,
         "madePlayoffs": true,
         "regularSeasonWins": 3,
-        "regularSeasonLosses": 9
+        "regularSeasonLosses": 9,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2020": {
         "wins": 8,
@@ -2384,7 +2569,9 @@
         "avgPointsFor": 121.6425,
         "madePlayoffs": true,
         "regularSeasonWins": 8,
-        "regularSeasonLosses": 6
+        "regularSeasonLosses": 6,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2021": {
         "wins": 11,
@@ -2396,7 +2583,9 @@
         "avgPointsFor": 124.66705882352942,
         "madePlayoffs": true,
         "regularSeasonWins": 10,
-        "regularSeasonLosses": 5
+        "regularSeasonLosses": 5,
+        "regularSeasonGames": 15,
+        "seasonComplete": true
       },
       "2022": {
         "wins": 9,
@@ -2408,7 +2597,9 @@
         "avgPointsFor": 117.61411764705883,
         "madePlayoffs": true,
         "regularSeasonWins": 9,
-        "regularSeasonLosses": 6
+        "regularSeasonLosses": 6,
+        "regularSeasonGames": 15,
+        "seasonComplete": true
       },
       "2023": {
         "wins": 12,
@@ -2420,7 +2611,9 @@
         "avgPointsFor": 116.51176470588236,
         "madePlayoffs": true,
         "regularSeasonWins": 9,
-        "regularSeasonLosses": 5
+        "regularSeasonLosses": 5,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2024": {
         "wins": 8,
@@ -2432,7 +2625,9 @@
         "avgPointsFor": 106.98941176470588,
         "madePlayoffs": true,
         "regularSeasonWins": 7,
-        "regularSeasonLosses": 7
+        "regularSeasonLosses": 7,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2025": {
         "wins": 13,
@@ -2444,19 +2639,23 @@
         "avgPointsFor": 117.4975,
         "madePlayoffs": true,
         "regularSeasonWins": 11,
-        "regularSeasonLosses": 3
+        "regularSeasonLosses": 3,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2026": {
         "wins": 3,
-        "losses": 1,
+        "losses": 2,
         "ties": 0,
-        "winPercentage": 0.75,
-        "pointsFor": 495.58,
-        "pointsAgainst": 407.6,
-        "avgPointsFor": 123.895,
+        "winPercentage": 0.6,
+        "pointsFor": 636.2,
+        "pointsAgainst": 550.9,
+        "avgPointsFor": 127.24000000000001,
         "madePlayoffs": false,
         "regularSeasonWins": 3,
-        "regularSeasonLosses": 1
+        "regularSeasonLosses": 2,
+        "regularSeasonGames": 14,
+        "seasonComplete": false
       }
     },
     "bestOpponent": "John Artiglier",
@@ -2560,7 +2759,9 @@
         "avgPointsFor": 94.29411764705883,
         "madePlayoffs": true,
         "regularSeasonWins": 3,
-        "regularSeasonLosses": 9
+        "regularSeasonLosses": 9,
+        "regularSeasonGames": 13,
+        "seasonComplete": true
       }
     },
     "bestOpponent": null,
@@ -2657,7 +2858,9 @@
         "avgPointsFor": 94.265,
         "madePlayoffs": true,
         "regularSeasonWins": 6,
-        "regularSeasonLosses": 6
+        "regularSeasonLosses": 6,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       }
     },
     "bestOpponent": null,
@@ -2696,15 +2899,15 @@
     "teamName": "All You Need Is Love",
     "abbrev": "LOVE",
     "allTeamNames": [
-      "Mail Fairy",
-      "Two Girls One Kupp",
-      "Joe Burrow Tiger King",
-      "We played Week 7, 8 and 13",
-      "The Recycling Ben",
-      "All You Need Is Love",
-      "Strouds in the Clouds",
       "Chubb Basshole",
+      "Two Girls One Kupp",
+      "The Recycling Ben",
+      "Joe Burrow Tiger King",
       "Just a Chubb Tucker",
+      "We played Week 7, 8 and 13",
+      "All You Need Is Love",
+      "Mail Fairy",
+      "Strouds in the Clouds",
       "The Mixon Administration"
     ],
     "playoffYears": [
@@ -2715,12 +2918,12 @@
       2024
     ],
     "seasonsPlayed": 10,
-    "totalGames": 147,
+    "totalGames": 148,
     "regularSeason": {
       "wins": 65,
-      "losses": 71,
+      "losses": 72,
       "ties": 0,
-      "winPercentage": 0.478
+      "winPercentage": 0.474
     },
     "playoffs": {
       "wins": 7,
@@ -2730,9 +2933,9 @@
     },
     "overall": {
       "wins": 72,
-      "losses": 75,
+      "losses": 76,
       "ties": 0,
-      "winPercentage": 0.49
+      "winPercentage": 0.486
     },
     "playoffAppearances": 5,
     "championships": 1,
@@ -2742,11 +2945,11 @@
     ],
     "mostMovesSeason": 40,
     "mostMovesSeasonYear": 2017,
-    "weeksPlayed": 153,
-    "totalPointsFor": 16664.44,
-    "totalPointsAgainst": 17152.7,
-    "avgPointsFor": 108.91790849673201,
-    "avgPointsAgainst": 112.10915032679739,
+    "weeksPlayed": 154,
+    "totalPointsFor": 16769.44,
+    "totalPointsAgainst": 17286.98,
+    "avgPointsFor": 108.89246753246752,
+    "avgPointsAgainst": 112.25311688311687,
     "highestScore": 166.72,
     "lowestScore": 45.96,
     "totalTrades": 3,
@@ -2758,7 +2961,7 @@
     "longestLossStreak": 7,
     "currentStreak": {
       "type": "LOSS",
-      "length": 1
+      "length": 2
     },
     "yearlyRecords": {
       "2017": {
@@ -2771,7 +2974,9 @@
         "avgPointsFor": 88.19500000000001,
         "madePlayoffs": true,
         "regularSeasonWins": 3,
-        "regularSeasonLosses": 9
+        "regularSeasonLosses": 9,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2018": {
         "wins": 9,
@@ -2783,7 +2988,9 @@
         "avgPointsFor": 123.27,
         "madePlayoffs": true,
         "regularSeasonWins": 8,
-        "regularSeasonLosses": 4
+        "regularSeasonLosses": 4,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2019": {
         "wins": 8,
@@ -2795,7 +3002,9 @@
         "avgPointsFor": 112.22875,
         "madePlayoffs": true,
         "regularSeasonWins": 7,
-        "regularSeasonLosses": 5
+        "regularSeasonLosses": 5,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2020": {
         "wins": 8,
@@ -2807,7 +3016,9 @@
         "avgPointsFor": 115.03125,
         "madePlayoffs": true,
         "regularSeasonWins": 7,
-        "regularSeasonLosses": 7
+        "regularSeasonLosses": 7,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2021": {
         "wins": 10,
@@ -2819,7 +3030,9 @@
         "avgPointsFor": 115.87411764705882,
         "madePlayoffs": true,
         "regularSeasonWins": 8,
-        "regularSeasonLosses": 7
+        "regularSeasonLosses": 7,
+        "regularSeasonGames": 15,
+        "seasonComplete": true
       },
       "2022": {
         "wins": 12,
@@ -2831,7 +3044,9 @@
         "avgPointsFor": 124.68117647058823,
         "madePlayoffs": true,
         "regularSeasonWins": 11,
-        "regularSeasonLosses": 4
+        "regularSeasonLosses": 4,
+        "regularSeasonGames": 15,
+        "seasonComplete": true
       },
       "2023": {
         "wins": 5,
@@ -2843,7 +3058,9 @@
         "avgPointsFor": 100.39176470588235,
         "madePlayoffs": true,
         "regularSeasonWins": 3,
-        "regularSeasonLosses": 11
+        "regularSeasonLosses": 11,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2024": {
         "wins": 10,
@@ -2855,7 +3072,9 @@
         "avgPointsFor": 114.21529411764706,
         "madePlayoffs": true,
         "regularSeasonWins": 8,
-        "regularSeasonLosses": 6
+        "regularSeasonLosses": 6,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2025": {
         "wins": 4,
@@ -2867,19 +3086,23 @@
         "avgPointsFor": 87.04235294117647,
         "madePlayoffs": true,
         "regularSeasonWins": 4,
-        "regularSeasonLosses": 10
+        "regularSeasonLosses": 10,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2026": {
         "wins": 2,
-        "losses": 2,
+        "losses": 3,
         "ties": 0,
-        "winPercentage": 0.5,
-        "pointsFor": 427.36,
-        "pointsAgainst": 437.56,
-        "avgPointsFor": 106.84,
+        "winPercentage": 0.4,
+        "pointsFor": 532.36,
+        "pointsAgainst": 571.84,
+        "avgPointsFor": 106.47200000000001,
         "madePlayoffs": false,
         "regularSeasonWins": 2,
-        "regularSeasonLosses": 2
+        "regularSeasonLosses": 3,
+        "regularSeasonGames": 14,
+        "seasonComplete": false
       }
     },
     "bestOpponent": "Randell Crawford",
@@ -2927,12 +3150,12 @@
     "teamName": "Kraft Smack and Cheese",
     "abbrev": "CHE",
     "allTeamNames": [
-      "Hubba Chubba",
-      "Davante's Inferno",
-      "RADrigo Is My Homeboy",
       "Goodnight Again My Sweet Prince",
+      "All You Need is Love",
       "Kraft Smack and Cheese",
-      "All You Need is Love"
+      "Hubba Chubba",
+      "RADrigo Is My Homeboy",
+      "Davante's Inferno"
     ],
     "playoffYears": [
       2024,
@@ -2940,12 +3163,12 @@
       2020
     ],
     "seasonsPlayed": 9,
-    "totalGames": 131,
+    "totalGames": 132,
     "regularSeason": {
       "wins": 65,
-      "losses": 60,
+      "losses": 61,
       "ties": 0,
-      "winPercentage": 0.52
+      "winPercentage": 0.516
     },
     "playoffs": {
       "wins": 1,
@@ -2955,9 +3178,9 @@
     },
     "overall": {
       "wins": 66,
-      "losses": 65,
+      "losses": 66,
       "ties": 0,
-      "winPercentage": 0.504
+      "winPercentage": 0.5
     },
     "playoffAppearances": 3,
     "championships": 0,
@@ -2965,11 +3188,11 @@
     "championshipYears": [],
     "mostMovesSeason": 24,
     "mostMovesSeasonYear": 2019,
-    "weeksPlayed": 135,
-    "totalPointsFor": 14956.26,
-    "totalPointsAgainst": 15022.56,
-    "avgPointsFor": 110.78711111111112,
-    "avgPointsAgainst": 111.27822222222221,
+    "weeksPlayed": 136,
+    "totalPointsFor": 15046.78,
+    "totalPointsAgainst": 15128.32,
+    "avgPointsFor": 110.63808823529412,
+    "avgPointsAgainst": 111.23764705882353,
     "highestScore": 203.12,
     "lowestScore": 66.44,
     "totalTrades": 1,
@@ -2981,7 +3204,7 @@
     "longestLossStreak": 5,
     "currentStreak": {
       "type": "LOSS",
-      "length": 1
+      "length": 2
     },
     "yearlyRecords": {
       "2018": {
@@ -2994,7 +3217,9 @@
         "avgPointsFor": 111.7775,
         "madePlayoffs": true,
         "regularSeasonWins": 5,
-        "regularSeasonLosses": 7
+        "regularSeasonLosses": 7,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2019": {
         "wins": 6,
@@ -3006,7 +3231,9 @@
         "avgPointsFor": 106.02,
         "madePlayoffs": true,
         "regularSeasonWins": 5,
-        "regularSeasonLosses": 7
+        "regularSeasonLosses": 7,
+        "regularSeasonGames": 12,
+        "seasonComplete": true
       },
       "2020": {
         "wins": 9,
@@ -3018,7 +3245,9 @@
         "avgPointsFor": 120.605,
         "madePlayoffs": true,
         "regularSeasonWins": 8,
-        "regularSeasonLosses": 6
+        "regularSeasonLosses": 6,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2021": {
         "wins": 8,
@@ -3030,7 +3259,9 @@
         "avgPointsFor": 112.30117647058823,
         "madePlayoffs": true,
         "regularSeasonWins": 7,
-        "regularSeasonLosses": 8
+        "regularSeasonLosses": 8,
+        "regularSeasonGames": 15,
+        "seasonComplete": true
       },
       "2022": {
         "wins": 6,
@@ -3042,7 +3273,9 @@
         "avgPointsFor": 105.67764705882352,
         "madePlayoffs": true,
         "regularSeasonWins": 6,
-        "regularSeasonLosses": 9
+        "regularSeasonLosses": 9,
+        "regularSeasonGames": 15,
+        "seasonComplete": true
       },
       "2023": {
         "wins": 9,
@@ -3054,7 +3287,9 @@
         "avgPointsFor": 103.33529411764707,
         "madePlayoffs": true,
         "regularSeasonWins": 7,
-        "regularSeasonLosses": 7
+        "regularSeasonLosses": 7,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2024": {
         "wins": 10,
@@ -3066,7 +3301,9 @@
         "avgPointsFor": 113.34875,
         "madePlayoffs": true,
         "regularSeasonWins": 10,
-        "regularSeasonLosses": 4
+        "regularSeasonLosses": 4,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2025": {
         "wins": 10,
@@ -3078,19 +3315,23 @@
         "avgPointsFor": 112.99875,
         "madePlayoffs": true,
         "regularSeasonWins": 10,
-        "regularSeasonLosses": 4
+        "regularSeasonLosses": 4,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2026": {
         "wins": 2,
-        "losses": 2,
+        "losses": 3,
         "ties": 0,
-        "winPercentage": 0.5,
-        "pointsFor": 457.91999999999996,
-        "pointsAgainst": 544.6,
-        "avgPointsFor": 114.47999999999999,
+        "winPercentage": 0.4,
+        "pointsFor": 548.4399999999999,
+        "pointsAgainst": 650.36,
+        "avgPointsFor": 109.68799999999999,
         "madePlayoffs": false,
         "regularSeasonWins": 2,
-        "regularSeasonLosses": 2
+        "regularSeasonLosses": 3,
+        "regularSeasonGames": 14,
+        "seasonComplete": false
       }
     },
     "bestOpponent": "john crawford",
@@ -3137,21 +3378,21 @@
     "teamName": "OnlyIfIHadA2TE",
     "abbrev": "Yup",
     "allTeamNames": [
+      "Loop, There it is!",
       "OnlyIfIHadA2TE",
-      "Bye Week",
       "Bye Week Part 2",
-      "Loop, There it is!"
+      "Bye Week"
     ],
     "playoffYears": [
       2025
     ],
     "seasonsPlayed": 4,
-    "totalGames": 55,
+    "totalGames": 56,
     "regularSeason": {
-      "wins": 22,
+      "wins": 23,
       "losses": 30,
       "ties": 0,
-      "winPercentage": 0.423
+      "winPercentage": 0.434
     },
     "playoffs": {
       "wins": 0,
@@ -3160,10 +3401,10 @@
       "winPercentage": 0.0
     },
     "overall": {
-      "wins": 22,
+      "wins": 23,
       "losses": 33,
       "ties": 0,
-      "winPercentage": 0.4
+      "winPercentage": 0.411
     },
     "playoffAppearances": 1,
     "championships": 0,
@@ -3171,11 +3412,11 @@
     "championshipYears": [],
     "mostMovesSeason": 23,
     "mostMovesSeasonYear": 2023,
-    "weeksPlayed": 55,
-    "totalPointsFor": 5730.34,
-    "totalPointsAgainst": 5945.56,
-    "avgPointsFor": 104.188,
-    "avgPointsAgainst": 108.10109090909091,
+    "weeksPlayed": 56,
+    "totalPointsFor": 5837.04,
+    "totalPointsAgainst": 6036.56,
+    "avgPointsFor": 104.23285714285714,
+    "avgPointsAgainst": 107.7957142857143,
     "highestScore": 162.72,
     "lowestScore": 55.52,
     "totalTrades": 2,
@@ -3187,7 +3428,7 @@
     "longestLossStreak": 6,
     "currentStreak": {
       "type": "WIN",
-      "length": 1
+      "length": 2
     },
     "yearlyRecords": {
       "2023": {
@@ -3200,7 +3441,9 @@
         "avgPointsFor": 102.15529411764706,
         "madePlayoffs": true,
         "regularSeasonWins": 3,
-        "regularSeasonLosses": 11
+        "regularSeasonLosses": 11,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2024": {
         "wins": 8,
@@ -3212,7 +3455,9 @@
         "avgPointsFor": 105.99176470588235,
         "madePlayoffs": true,
         "regularSeasonWins": 6,
-        "regularSeasonLosses": 8
+        "regularSeasonLosses": 8,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2025": {
         "wins": 8,
@@ -3224,27 +3469,31 @@
         "avgPointsFor": 107.66470588235293,
         "madePlayoffs": true,
         "regularSeasonWins": 8,
-        "regularSeasonLosses": 6
+        "regularSeasonLosses": 6,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2026": {
-        "wins": 1,
+        "wins": 2,
         "losses": 3,
         "ties": 0,
-        "winPercentage": 0.25,
-        "pointsFor": 361.53999999999996,
-        "pointsAgainst": 387.92,
-        "avgPointsFor": 90.38499999999999,
+        "winPercentage": 0.4,
+        "pointsFor": 468.24,
+        "pointsAgainst": 478.92,
+        "avgPointsFor": 93.648,
         "madePlayoffs": false,
-        "regularSeasonWins": 1,
-        "regularSeasonLosses": 3
+        "regularSeasonWins": 2,
+        "regularSeasonLosses": 3,
+        "regularSeasonGames": 14,
+        "seasonComplete": false
       }
     },
     "bestOpponent": "Ben Bingert",
     "bestOpponentRecord": "3-2",
     "bestOpponentWinPct": 0.6,
-    "worstOpponent": "Randell Crawford",
-    "worstOpponentRecord": "1-6",
-    "worstOpponentWinPct": 0.14285714285714285,
+    "worstOpponent": "Carl Cummins",
+    "worstOpponentRecord": "1-4",
+    "worstOpponentWinPct": 0.2,
     "bestSeasonWinPct": 0.5714285714285714,
     "bestSeasonYear": 2025,
     "bestSeasonWins": 8,
@@ -3280,17 +3529,17 @@
     "teamName": "Paintin Peyton",
     "abbrev": "CRWD",
     "allTeamNames": [
-      "Paintin Peyton",
-      "Peyton the Professor"
+      "Peyton the Professor",
+      "Paintin Peyton"
     ],
     "playoffYears": [],
     "seasonsPlayed": 4,
-    "totalGames": 55,
+    "totalGames": 56,
     "regularSeason": {
-      "wins": 14,
+      "wins": 15,
       "losses": 41,
       "ties": 0,
-      "winPercentage": 0.255
+      "winPercentage": 0.268
     },
     "playoffs": {
       "wins": 0,
@@ -3299,10 +3548,10 @@
       "winPercentage": 0
     },
     "overall": {
-      "wins": 14,
+      "wins": 15,
       "losses": 41,
       "ties": 0,
-      "winPercentage": 0.255
+      "winPercentage": 0.268
     },
     "playoffAppearances": 0,
     "championships": 0,
@@ -3310,23 +3559,23 @@
     "championshipYears": [],
     "mostMovesSeason": 19,
     "mostMovesSeasonYear": 2024,
-    "weeksPlayed": 55,
-    "totalPointsFor": 5393.42,
-    "totalPointsAgainst": 6073.2,
-    "avgPointsFor": 98.06218181818181,
-    "avgPointsAgainst": 110.42181818181818,
+    "weeksPlayed": 56,
+    "totalPointsFor": 5536.72,
+    "totalPointsAgainst": 6213.82,
+    "avgPointsFor": 98.87,
+    "avgPointsAgainst": 110.96107142857143,
     "highestScore": 147.9,
     "lowestScore": 49.22,
     "totalTrades": 0,
     "biggestWin": 90.58000000000001,
-    "closestWin": 2.8599999999999994,
+    "closestWin": 2.680000000000007,
     "biggestLoss": 98.43999999999998,
     "closestLoss": 0.5600000000000023,
     "longestWinStreak": 3,
     "longestLossStreak": 13,
     "currentStreak": {
       "type": "WIN",
-      "length": 1
+      "length": 2
     },
     "yearlyRecords": {
       "2023": {
@@ -3339,7 +3588,9 @@
         "avgPointsFor": 94.3329411764706,
         "madePlayoffs": true,
         "regularSeasonWins": 4,
-        "regularSeasonLosses": 10
+        "regularSeasonLosses": 10,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2024": {
         "wins": 4,
@@ -3351,7 +3602,9 @@
         "avgPointsFor": 97.76823529411764,
         "madePlayoffs": true,
         "regularSeasonWins": 4,
-        "regularSeasonLosses": 10
+        "regularSeasonLosses": 10,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2025": {
         "wins": 4,
@@ -3363,24 +3616,28 @@
         "avgPointsFor": 101.0564705882353,
         "madePlayoffs": true,
         "regularSeasonWins": 2,
-        "regularSeasonLosses": 12
+        "regularSeasonLosses": 12,
+        "regularSeasonGames": 14,
+        "seasonComplete": true
       },
       "2026": {
-        "wins": 2,
+        "wins": 3,
         "losses": 2,
         "ties": 0,
-        "winPercentage": 0.5,
-        "pointsFor": 409.74,
-        "pointsAgainst": 441.20000000000005,
-        "avgPointsFor": 102.435,
+        "winPercentage": 0.6,
+        "pointsFor": 553.0400000000001,
+        "pointsAgainst": 581.82,
+        "avgPointsFor": 110.60800000000002,
         "madePlayoffs": false,
-        "regularSeasonWins": 2,
-        "regularSeasonLosses": 2
+        "regularSeasonWins": 3,
+        "regularSeasonLosses": 2,
+        "regularSeasonGames": 14,
+        "seasonComplete": false
       }
     },
-    "bestOpponent": "Joe Jaramillo",
-    "bestOpponentRecord": "3-4",
-    "bestOpponentWinPct": 0.42857142857142855,
+    "bestOpponent": "Ray Engleking",
+    "bestOpponentRecord": "3-3",
+    "bestOpponentWinPct": 0.5,
     "worstOpponent": "Carl Cummins",
     "worstOpponentRecord": "0-6",
     "worstOpponentWinPct": 0.0,

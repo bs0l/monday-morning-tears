@@ -1,6 +1,6 @@
-#v2.8
-#07oct26
-#per-week scores for every matchup (ESPN pointsByScoringPeriod), 2019 duplicate playoff rows collapsed, single-week score stats, two-week matchup companions, per-week averages, consolation dollars 2020+ regular season only, two-week playoff analysis; earlier: abort (exit 1) if any season fails to fetch, exit 2 on expired cookies, retries + logged week errors, bench points gathered in matchup pass, _direct_api memoized, owner/team lookup helpers, final week from matchup_periods, removed roster_analysis/two_week outputs and unused fields, skip final_standing 0 (in-progress season) in playoff detection
+#v2.9
+#11oct26
+#end-of-run WARNINGS block + MMT_WARNINGS_FILE for the weekly email, seasonComplete flag on yearly records, weekly high/low score links (games list), keeper points shown mid-season, retries inside _direct_api + warning when a keeper sweep week still fails, warnings for owners that resolve to None or an unresolved ESPN ID; earlier: per-week scores for every matchup (ESPN pointsByScoringPeriod), 2019 duplicate playoff rows collapsed, single-week score stats, two-week matchup companions, per-week averages, consolation dollars 2020+ regular season only, two-week playoff analysis; earlier: abort (exit 1) if any season fails to fetch, exit 2 on expired cookies, retries + logged week errors, bench points gathered in matchup pass, _direct_api memoized, owner/team lookup helpers, final week from matchup_periods, removed roster_analysis/two_week outputs and unused fields, skip final_standing 0 (in-progress season) in playoff detection
 #!/usr/bin/env python3
 """
 ESPN Fantasy Football Data Collector using espn-api library
@@ -88,7 +88,13 @@ class ESPNDataCollectorV2:
         # Raw schedule data per (year, frozenset of the two team ids): list of
         # {period, tier, weeks, scores{teamId: [per-week]}} - see fetch_schedule_data
         self.sched_entries = {}
-    
+        # Weeks whose weekly API sweep still failed after retries, per year -
+        # keeper points for that year may be undercounted (see fetch_keeper_data_by_year)
+        self._sweep_failed = {}
+        # Data-quality warnings collected during the run (printed in a block at the
+        # very end and, if MMT_WARNINGS_FILE is set, written there for the notifier)
+        self.warnings = []
+
     def fetch_all_seasons(self):
         """Fetch data for all seasons using espn-api library.
 
@@ -253,6 +259,7 @@ class ESPNDataCollectorV2:
                         # Current season: live scores can shift slightly between
                         # the two requests. Trust the matchup total.
                         print(f"    ⚠️  {msg} (current season - using the matchup total)")
+                        self._record_warning(f"{msg} (current season - used the matchup total)")
                         if len(weekly) == 1:
                             weekly = [m[side]['score']]
                 m[side]['weeklyScores'] = weekly
@@ -306,8 +313,76 @@ class ESPNDataCollectorV2:
                     (team.team_id, year),
                     self.get_owner_name_from_team(team, members))
                 self.team_owner[(year, team.team_id)] = owner
-                if owner:
+                if not owner:
+                    msg = (f"{year}: no owner found for team ID {team.team_id} ({team.team_name}) - "
+                           f"its games will be SKIPPED in owner/head-to-head stats. "
+                           f"Add it to OWNER_NAME_CORRECTIONS if ESPN returns no owner for it.")
+                    print(f"  ⚠️  {msg}")
+                    self._record_warning(msg)
+                else:
+                    if str(owner).startswith('{') and str(owner).endswith('}'):
+                        msg = (f"{year}: team ID {team.team_id} ({team.team_name}) has an unresolved ESPN "
+                               f"member ID as its owner ({owner}) - it will show up as a separate 'owner'.")
+                        print(f"  ⚠️  {msg}")
+                        self._record_warning(msg)
                     self.owner_team.setdefault((year, owner), team)
+
+    def _record_warning(self, msg):
+        """Remember a data-quality warning for the end-of-run summary."""
+        self.warnings.append(msg)
+
+    def _warnings_path(self):
+        return os.environ.get('MMT_WARNINGS_FILE')
+
+    def _clear_warnings_file(self):
+        """Remove last run's warnings file at the start of a run, so a stale
+        file can never be mistaken for this run's warnings."""
+        path = self._warnings_path()
+        if path and os.path.exists(path):
+            os.remove(path)
+
+    def report_warnings(self):
+        """Print every collected warning in one block at the very end of the
+        run (so it is in the trailing log lines) and, if MMT_WARNINGS_FILE is
+        set, write the same text there for the weekly notification email.
+        No file is written when there are no warnings."""
+        print(f"\n{'='*80}")
+        if not self.warnings:
+            print(" ✓ Run finished with no warnings")
+            print(f"{'='*80}")
+            return
+        print(f" ⚠️  RUN FINISHED WITH {len(self.warnings)} WARNING(S)")
+        print(f"{'='*80}")
+        for w in self.warnings:
+            print(f"  - {w}")
+        path = self._warnings_path()
+        if path:
+            os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
+            with open(path, 'w') as f:
+                f.write(f"{len(self.warnings)} warning(s) from the collector run:\n")
+                for w in self.warnings:
+                    f.write(f"- {w}\n")
+            print(f"  (also written to {path})")
+
+    def warn_missing_owners(self, all_matchups):
+        """Matchups with a side that has no owner are silently dropped from
+        the owner and head-to-head stats. List every affected team (year,
+        team ID, weeks) so a dropped owner is visible in the run log."""
+        missing = defaultdict(list)
+        for m in all_matchups:
+            for side in ('home', 'away'):
+                if not m[side].get('owner'):
+                    missing[(m['year'], m[side]['teamId'], m[side]['teamName'])].append(m['week'])
+        if not missing:
+            return
+        print(f"\n{'='*80}")
+        print(" ⚠️  WARNING: matchups with no owner (skipped in owner/head-to-head stats)")
+        print(f"{'='*80}")
+        for (year, team_id, name), weeks in sorted(missing.items()):
+            print(f"  ⚠️  {year}: team ID {team_id} ({name}) - weeks {sorted(weeks)}")
+            self._record_warning(f"{year}: team ID {team_id} ({name}) - weeks {sorted(weeks)} skipped in owner/head-to-head stats (no owner)")
+        total = sum(len(w) for w in missing.values())
+        print(f"  {total} team-games affected. Fix the owner lookup (OWNER_NAME_CORRECTIONS) and rerun.")
 
     def _final_week(self, league):
         """Last scoring week of the season (regular season + playoffs), taken
@@ -553,6 +628,7 @@ class ESPNDataCollectorV2:
                         raise
                     except Exception as e:
                         print(f"    ⚠️  {year} week {week}: skipped due to error: {e}")
+                        self._record_warning(f"{year} week {week}: matchups skipped due to error: {e}")
                         continue
                 
                 print(f"    ✓ Loaded {week_count} matchups from {year} (via box_scores)")
@@ -1122,6 +1198,16 @@ class ESPNDataCollectorV2:
                 record['regularSeasonWins'] = 0
                 record['regularSeasonLosses'] = 0
             
+            # Whether this regular season is finished (a past season always is;
+            # the current one only once all of ESPN's reg_season_count games
+            # have been played) - lets teams.html draw an in-progress season
+            # differently instead of showing a partial record as a collapse.
+            season_league = self.leagues.get(year)
+            reg_games = getattr(season_league.settings, 'reg_season_count', None) if season_league else None
+            record['regularSeasonGames'] = reg_games
+            record['seasonComplete'] = year < self.end_year or (
+                reg_games is not None and len(regular_games) >= reg_games)
+            
             records[year] = record
         
         return records
@@ -1563,18 +1649,24 @@ class ESPNDataCollectorV2:
                 weekly_scores[key].append({
                     'owner': m['home']['owner'],
                     'team': m['home']['teamName'],
+                    'teamId': m['home']['teamId'],
+                    'period': m['matchupPeriodId'],
                     'score': m['home']['score'],
                     'won': m['winner'] == 'HOME'
                 })
                 weekly_scores[key].append({
                     'owner': m['away']['owner'],
                     'team': m['away']['teamName'],
+                    'teamId': m['away']['teamId'],
+                    'period': m['matchupPeriodId'],
                     'score': m['away']['score'],
                     'won': m['winner'] == 'AWAY'
                 })
 
             high_scorer_count = defaultdict(int)
             low_scorer_count = defaultdict(int)
+            high_games = []   # every weekly high/low game, for the page's per-week links
+            low_games = []
 
             # Weekly high score payouts - amounts changed over time
             weekly_high_payouts = []
@@ -1609,6 +1701,10 @@ class ESPNDataCollectorV2:
                 
                 high_scorer_count[highest['owner']] += 1
                 low_scorer_count[lowest['owner']] += 1
+                high_games.append({'owner': highest['owner'], 'week': week, 'matchupPeriodId': highest['period'],
+                                   'teamId': highest['teamId'], 'score': highest['score']})
+                low_games.append({'owner': lowest['owner'], 'week': week, 'matchupPeriodId': lowest['period'],
+                                  'teamId': lowest['teamId'], 'score': lowest['score']})
                 
                 # Check for consolation dollar (only 2020+)
                 consolation_this_week = False
@@ -1689,13 +1785,17 @@ class ESPNDataCollectorV2:
                     'owner': season_high_owners[0] if season_high_owners else None,
                     'owners': season_high_owners,
                     'count': season_high_count,
-                    'tied': len(season_high_owners) > 1
+                    'tied': len(season_high_owners) > 1,
+                    'games': sorted((g for g in high_games if g['owner'] in season_high_owners),
+                                    key=lambda g: g['week'])
                 },
                 'mostWeeklyLowScores': {
                     'owner': season_low_owners[0] if season_low_owners else None,
                     'owners': season_low_owners,
                     'count': season_low_count,
-                    'tied': len(season_low_owners) > 1
+                    'tied': len(season_low_owners) > 1,
+                    'games': sorted((g for g in low_games if g['owner'] in season_low_owners),
+                                    key=lambda g: g['week'])
                 },
                 'bestBenchWarmers': bench_points.get(year),
                 'weeklyHighPayouts': weekly_high_payouts,
@@ -1787,6 +1887,7 @@ class ESPNDataCollectorV2:
             else:
                 bench_points_by_season[year] = None
                 print(f"      ✗ No bench data available")
+                self._record_warning(f"{year}: no bench data available")
         
         return bench_points_by_season
 
@@ -1835,6 +1936,7 @@ class ESPNDataCollectorV2:
         for m in sorted(two_week, key=lambda x: (x['year'], x['matchupPeriodId'], x['id'])):
             if len(m['weeks']) != 2:
                 print(f"  ⚠️  Skipping {m['year']} matchup spanning {len(m['weeks'])} weeks")
+                self._record_warning(f"{m['year']}: a two-week analysis matchup spans {len(m['weeks'])} weeks and was skipped")
                 continue
             year = m['year']
             round_no = sorted(periods_by_year[year]).index(m['matchupPeriodId']) + 1
@@ -1970,6 +2072,29 @@ class ESPNDataCollectorV2:
             return requested_weeks
         return min(requested_weeks, current_week)
 
+    def _get_with_retry(self, url, cookies, headers, label):
+        """GET a JSON endpoint, retrying transient failures (network errors,
+        5xx, unparseable bodies) up to MAX_FETCH_ATTEMPTS times. 4xx responses
+        are not retried (and not printed - leagueHistory legitimately has
+        nothing for an in-progress season). Returns parsed JSON or None."""
+        for attempt in range(1, MAX_FETCH_ATTEMPTS + 1):
+            retryable = True
+            try:
+                resp = requests.get(url, cookies=cookies, headers=headers, timeout=20)
+                if resp.status_code == 200:
+                    return resp.json()
+                retryable = resp.status_code >= 500
+                if retryable:
+                    print(f"    ⚠️  {label}: HTTP {resp.status_code} (attempt {attempt}/{MAX_FETCH_ATTEMPTS})")
+            except Exception as e:
+                print(f"    ⚠️  {label}: {e} (attempt {attempt}/{MAX_FETCH_ATTEMPTS})")
+            if not retryable:
+                return None
+            if attempt < MAX_FETCH_ATTEMPTS:
+                time.sleep(2 * attempt)
+        print(f"    ✗ {label}: giving up after {MAX_FETCH_ATTEMPTS} attempts")
+        return None
+
     def _direct_api(self, year, view, extra_params=""):
         """
         Make a direct request to ESPN's league data.
@@ -1988,9 +2113,10 @@ class ESPNDataCollectorV2:
         season. In practice this fallback should only ever trigger for
         self.end_year while that season is still ongoing.
 
-        Returns the unwrapped response dict, or None on failure. Successful
-        responses are memoized by (year, view, extra_params) in self._api_cache
-        so repeated sweeps (e.g. the per-keeper fallback) cost no extra calls;
+        Transient failures are retried (see _get_with_retry). Returns the
+        unwrapped response dict, or None on failure. Successful responses
+        are memoized by (year, view, extra_params) in self._api_cache so
+        repeated sweeps (e.g. the per-keeper fallback) cost no extra calls;
         failures are never cached.
         """
         cache_key = (year, view, extra_params)
@@ -2005,33 +2131,21 @@ class ESPNDataCollectorV2:
             f"https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl"
             f"/leagueHistory/{self.league_id}?seasonId={year}&view={view}{extra_params}"
         )
-        try:
-            resp = requests.get(history_url, cookies=cookies, headers=headers, timeout=20)
-            if resp.status_code == 200:
-                data = resp.json()
-                if isinstance(data, list) and data:
-                    self._api_cache[cache_key] = data[0]
-                    return data[0]
-        except Exception as e:
-            print(f"    ✗ Direct API error (leagueHistory {year} {view}): {e}")
+        data = self._get_with_retry(history_url, cookies, headers, f"leagueHistory {year} {view}")
+        if isinstance(data, list) and data:
+            self._api_cache[cache_key] = data[0]
+            return data[0]
 
         # 2. Live endpoint fallback - the response is a single dict, not a list
         live_url = (
             f"https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl"
             f"/seasons/{year}/segments/0/leagues/{self.league_id}?view={view}{extra_params}"
         )
-        try:
-            resp = requests.get(live_url, cookies=cookies, headers=headers, timeout=20)
-            if resp.status_code != 200:
-                return None
-            data = resp.json()
-            if data:
-                self._api_cache[cache_key] = data
-                return data
-            return None
-        except Exception as e:
-            print(f"    ✗ Direct API error (live endpoint {year} {view}): {e}")
-            return None
+        data = self._get_with_retry(live_url, cookies, headers, f"live endpoint {year} {view}")
+        if data:
+            self._api_cache[cache_key] = data
+            return data
+        return None
 
     def _normalize_name(self, name):
         """Lowercase + strip punctuation for fuzzy player name matching."""
@@ -2073,6 +2187,7 @@ class ESPNDataCollectorV2:
                 extra_params=f"&scoringPeriodId={week}"
             )
             if not week_data:
+                self._sweep_failed.setdefault(year, set()).add(week)
                 continue
             for team in week_data.get("teams", []):
                 team_id = team.get("id")
@@ -2146,6 +2261,7 @@ class ESPNDataCollectorV2:
                 extra_params=f"&scoringPeriodId={week}"
             )
             if not week_data:
+                self._sweep_failed.setdefault(year, set()).add(week)
                 continue
             for matchup in week_data.get("schedule", []):
                 for side in ("home", "away"):
@@ -2207,6 +2323,7 @@ class ESPNDataCollectorV2:
                 extra_params=f"&scoringPeriodId={week}"
             )
             if not week_data:
+                self._sweep_failed.setdefault(year, set()).add(week)
                 continue
             for team in week_data.get("teams", []):
                 for entry in team.get("roster", {}).get("entries", []):
@@ -2239,6 +2356,7 @@ class ESPNDataCollectorV2:
                     extra_params=f"&scoringPeriodId={week}"
                 )
                 if not week_data:
+                    self._sweep_failed.setdefault(year, set()).add(week)
                     continue
                 for matchup in week_data.get("schedule", []):
                     for side in ("home", "away"):
@@ -2381,11 +2499,13 @@ class ESPNDataCollectorV2:
             draft_data = self._direct_api(year, "mDraftDetail")
             if not draft_data:
                 print(f"    ✗ Could not fetch mDraftDetail for {year}, skipping")
+                self._record_warning(f"{year}: could not fetch the draft board - keeper analysis skipped for this season")
                 continue
 
             picks = draft_data.get("draftDetail", {}).get("picks", [])
             if not picks:
                 print(f"    ✗ No draft picks returned for {year}, skipping")
+                self._record_warning(f"{year}: no draft picks returned - keeper analysis skipped for this season")
                 continue
 
             # playerId -> { round, pick, teamId, keeper, keeperValue }
@@ -2545,7 +2665,8 @@ class ESPNDataCollectorV2:
                         "owner":            k["owner"],
                         "player":           k["player"],
                         "roundKept":        k["roundKept"],
-                        "pointsScored":     None,
+                        "pointsScored":     round(p_info["points"], 2) if p_info else None,
+                        "pointsThroughWeek": reg_season_weeks,
                         "roundAvgPoints":   None,
                         "pointsVsAvg":      None,
                         "pointsVsAvgPct":   None,
@@ -2554,8 +2675,9 @@ class ESPNDataCollectorV2:
                         "lastActiveWeek":   None,
                         "note":             KEEPER_NOTES.get((year, k["owner"], k["player"])),
                     })
+                    pts_note = f"{p_info['points']:.1f} pts thru Wk {reg_season_weeks}" if p_info else "no points yet"
                     print(f"    ⏳ {k['owner']:<20} {k['player']:<25} "
-                          f"Rd {k['roundKept']}  TBD (season in progress)")
+                          f"Rd {k['roundKept']}  TBD ({pts_note}, season in progress)")
                     continue
 
                 # Resolve points from player_points
@@ -2655,6 +2777,12 @@ class ESPNDataCollectorV2:
                       f"Rd {round_kept}  {pts_str} pts (avg {avg_str})"
                       f"  {verdict}{drop_str}")
 
+            failed_weeks = sorted(self._sweep_failed.get(year, ()))
+            if failed_weeks:
+                msg = (f"{year}: weekly player-point request failed after retries for week(s) "
+                       f"{failed_weeks} - keeper points for this season may be UNDERCOUNTED")
+                print(f"    ⚠️  {msg}")
+                self._record_warning(msg)
             keepers_by_year[year] = enriched
             print(f"    → {len(enriched)} keepers for {year}")
 
@@ -2942,6 +3070,7 @@ class ESPNDataCollectorV2:
                 d = self._get_json_with_retry(url, params, cookies, label=str(year))
                 if d is None:
                     print(f"  ✗ {year}: settings unavailable after {MAX_FETCH_ATTEMPTS} attempts, skipping")
+                    self._record_warning(f"{year}: settings history unavailable after {MAX_FETCH_ATTEMPTS} attempts")
                     continue
                 if isinstance(d, list):
                     d = d[0]
@@ -3009,6 +3138,7 @@ class ESPNDataCollectorV2:
 
             except Exception as e:
                 print(f"  ⚠️  {year}: {e}")
+                self._record_warning(f"{year}: settings history failed: {e}")
                 continue
 
         # Diff year-over-year to build changelog
@@ -3049,6 +3179,8 @@ class ESPNDataCollectorV2:
                 if year != prev_year + 1:
                     gap = (f"{prev_year + 1}" if year - prev_year == 2
                            else f"{prev_year + 1}-{year - 1}")
+                    self._record_warning(f"Settings for {gap} could not be fetched; the settings-history "
+                                         f"changes listed for {year} span multiple seasons")
                     changes.append(
                         f"Note: settings for {gap} could not be fetched, "
                         f"so the changes below span multiple seasons"
@@ -3237,7 +3369,7 @@ class ESPNDataCollectorV2:
         if not counter:
             return [], 0
         max_count = max(counter.values())
-        owners = sorted(o for o, c in counter.items() if c == max_count)
+        owners = sorted((o for o, c in counter.items() if c == max_count), key=lambda o: o or '')
         return owners, max_count
 
     def _compute_owner_streaks(self, owner_games):
@@ -3324,7 +3456,7 @@ class ESPNDataCollectorV2:
         max_length = max(d['length'] for d in best_by_owner.values())
         tied = sorted(
             (d for d in best_by_owner.values() if d['length'] == max_length),
-            key=lambda d: d['owner']
+            key=lambda d: d['owner'] or ''
         )
         return tied, max_length
 
@@ -3506,6 +3638,7 @@ class ESPNDataCollectorV2:
                     raise
                 except Exception as e:
                     print(f"    ⚠️  {year} week {week}: transactions skipped due to error: {e}")
+                    self._record_warning(f"{year} week {week}: transactions skipped due to error: {e}")
                     continue
 
             executed = [t for t in all_transactions if t.status == 'EXECUTED']
@@ -3604,6 +3737,7 @@ class ESPNDataCollectorV2:
         print(f"Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
         if skip_bench:
             print(f"⚠️  SKIPPING BENCH POINTS CALCULATION")
+        self._clear_warnings_file()
         
         if not self.fetch_all_seasons():
             print("\n✗ Not every season could be fetched. Aborting so a partial dataset is not published.")
@@ -3614,6 +3748,7 @@ class ESPNDataCollectorV2:
             print("\n✗ Per-week scores could not be fetched for every season. Aborting so inconsistent data is not published.")
             sys.exit(1)
         all_matchups = self.apply_weekly_scores(all_matchups)
+        self.warn_missing_owners(all_matchups)
         team_stats = self.calculate_team_stats(all_matchups)
         team_stats = self.calculate_player_loyalty_stats(team_stats)
         h2h_stats = self.calculate_head_to_head_stats(all_matchups, team_stats)
@@ -3658,6 +3793,7 @@ class ESPNDataCollectorV2:
         print(f"\nTotal matchups: {len(all_matchups)}")
         print(f"Total teams: {len(team_stats)}")
         print(f"Seasons: {self.start_year}-{self.end_year}")
+        self.report_warnings()
 
 def main():
     parser = argparse.ArgumentParser(description='ESPN Fantasy Football Data Collector')

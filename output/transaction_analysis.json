@@ -1100,6 +1100,10 @@
         {
           "player": "Daniel Jones",
           "count": 1
+        },
+        {
+          "player": "Harrison Mevis",
+          "count": 1
         }
       ],
       "Ray Engleking": [
@@ -3586,6 +3590,22 @@
       "2026": {
         "players": [
           {
+            "player": "Woody Marks",
+            "teamCount": 2,
+            "teams": [
+              "Joe Jaramillo",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Tyjae Spears",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "Joe Jaramillo"
+            ]
+          },
+          {
             "player": "Tyler Allgeier",
             "teamCount": 2,
             "teams": [
@@ -3619,10 +3639,10 @@
           }
         ],
         "teamTally": {
+          "Mike Kovacs": 2,
+          "Joe Jaramillo": 2,
           "Carl Cummins": 1,
-          "Ben Bingert": 1,
-          "Joe Jaramillo": 1,
-          "Mike Kovacs": 1
+          "Ben Bingert": 1
         },
         "sameWeekAddsFlagged": 0
       }
@@ -3633,10 +3653,10 @@
       "Carl Cummins": 45,
       "Ben Bingert": 30,
       "Bill Solecki": 65,
-      "Mike Kovacs": 49,
+      "Mike Kovacs": 50,
       "Phil Torres": 31,
       "Randell Crawford": 35,
-      "Joe Jaramillo": 14,
+      "Joe Jaramillo": 15,
       "john crawford": 10
     },
     "allTimeSameWeekAddsFlagged": 4
@@ -4742,6 +4762,10 @@
           },
           {
             "player": "Daniel Jones",
+            "count": 1
+          },
+          {
+            "player": "Harrison Mevis",
             "count": 1
           }
         ],
@@ -6841,6 +6865,22 @@
         "2026": {
           "players": [
             {
+              "player": "Woody Marks",
+              "teamCount": 2,
+              "teams": [
+                "Joe Jaramillo",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Tyjae Spears",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "Joe Jaramillo"
+              ]
+            },
+            {
               "player": "Tyler Allgeier",
               "teamCount": 2,
               "teams": [
@@ -6874,10 +6914,10 @@
             }
           ],
           "teamTally": {
+            "Mike Kovacs": 2,
+            "Joe Jaramillo": 2,
             "Carl Cummins": 1,
-            "Ben Bingert": 1,
-            "Joe Jaramillo": 1,
-            "Mike Kovacs": 1
+            "Ben Bingert": 1
           },
           "sameWeekAddsFlagged": 0
         }
@@ -6887,11 +6927,11 @@
         "John Artiglier": 33,
         "Carl Cummins": 33,
         "Ben Bingert": 25,
-        "Mike Kovacs": 45,
+        "Mike Kovacs": 46,
         "Bill Solecki": 47,
         "Phil Torres": 27,
         "Randell Crawford": 31,
-        "Joe Jaramillo": 12,
+        "Joe Jaramillo": 13,
         "john crawford": 9
       },
       "allTimeSameWeekAddsFlagged": 3

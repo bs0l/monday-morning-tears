@@ -125,7 +125,65 @@
         "Phil Torres"
       ],
       "count": 8,
-      "tied": false
+      "tied": false,
+      "games": [
+        {
+          "owner": "Phil Torres",
+          "week": 1,
+          "matchupPeriodId": 1,
+          "teamId": 4,
+          "score": 174.0
+        },
+        {
+          "owner": "Phil Torres",
+          "week": 2,
+          "matchupPeriodId": 2,
+          "teamId": 4,
+          "score": 136.0
+        },
+        {
+          "owner": "Phil Torres",
+          "week": 3,
+          "matchupPeriodId": 3,
+          "teamId": 4,
+          "score": 121.0
+        },
+        {
+          "owner": "Phil Torres",
+          "week": 7,
+          "matchupPeriodId": 7,
+          "teamId": 4,
+          "score": 174.0
+        },
+        {
+          "owner": "Phil Torres",
+          "week": 11,
+          "matchupPeriodId": 11,
+          "teamId": 4,
+          "score": 147.0
+        },
+        {
+          "owner": "Phil Torres",
+          "week": 13,
+          "matchupPeriodId": 13,
+          "teamId": 4,
+          "score": 179.0
+        },
+        {
+          "owner": "Phil Torres",
+          "week": 14,
+          "matchupPeriodId": 14,
+          "teamId": 4,
+          "score": 154.0
+        },
+        {
+          "owner": "Phil Torres",
+          "week": 15,
+          "matchupPeriodId": 15,
+          "teamId": 4,
+          "score": 150.0
+        }
+      ]
     },
     "mostWeeklyLowScores": {
       "owner": "Danielle Prizzi",
@@ -133,7 +191,30 @@
         "Danielle Prizzi"
       ],
       "count": 3,
-      "tied": false
+      "tied": false,
+      "games": [
+        {
+          "owner": "Danielle Prizzi",
+          "week": 5,
+          "matchupPeriodId": 5,
+          "teamId": 7,
+          "score": 82.0
+        },
+        {
+          "owner": "Danielle Prizzi",
+          "week": 8,
+          "matchupPeriodId": 8,
+          "teamId": 7,
+          "score": 77.0
+        },
+        {
+          "owner": "Danielle Prizzi",
+          "week": 9,
+          "matchupPeriodId": 9,
+          "teamId": 7,
+          "score": 70.0
+        }
+      ]
     },
     "bestBenchWarmers": null,
     "weeklyHighPayouts": [],
@@ -303,7 +384,51 @@
         "Mike Kovacs"
       ],
       "count": 3,
-      "tied": true
+      "tied": true,
+      "games": [
+        {
+          "owner": "Mike Kovacs",
+          "week": 2,
+          "matchupPeriodId": 2,
+          "teamId": 2,
+          "score": 129.0
+        },
+        {
+          "owner": "Mike Kovacs",
+          "week": 4,
+          "matchupPeriodId": 4,
+          "teamId": 2,
+          "score": 121.0
+        },
+        {
+          "owner": "Loren Kessell",
+          "week": 5,
+          "matchupPeriodId": 5,
+          "teamId": 5,
+          "score": 124.0
+        },
+        {
+          "owner": "Mike Kovacs",
+          "week": 7,
+          "matchupPeriodId": 7,
+          "teamId": 2,
+          "score": 119.0
+        },
+        {
+          "owner": "Loren Kessell",
+          "week": 8,
+          "matchupPeriodId": 8,
+          "teamId": 5,
+          "score": 157.0
+        },
+        {
+          "owner": "Loren Kessell",
+          "week": 12,
+          "matchupPeriodId": 12,
+          "teamId": 5,
+          "score": 128.0
+        }
+      ]
     },
     "mostWeeklyLowScores": {
       "owner": "Danielle Prizzi",
@@ -311,7 +436,44 @@
         "Danielle Prizzi"
       ],
       "count": 5,
-      "tied": false
+      "tied": false,
+      "games": [
+        {
+          "owner": "Danielle Prizzi",
+          "week": 2,
+          "matchupPeriodId": 2,
+          "teamId": 7,
+          "score": 40.0
+        },
+        {
+          "owner": "Danielle Prizzi",
+          "week": 5,
+          "matchupPeriodId": 5,
+          "teamId": 7,
+          "score": 58.0
+        },
+        {
+          "owner": "Danielle Prizzi",
+          "week": 6,
+          "matchupPeriodId": 6,
+          "teamId": 7,
+          "score": 84.0
+        },
+        {
+          "owner": "Danielle Prizzi",
+          "week": 8,
+          "matchupPeriodId": 8,
+          "teamId": 7,
+          "score": 76.0
+        },
+        {
+          "owner": "Danielle Prizzi",
+          "week": 12,
+          "matchupPeriodId": 12,
+          "teamId": 7,
+          "score": 71.0
+        }
+      ]
     },
     "bestBenchWarmers": null,
     "weeklyHighPayouts": [],
@@ -461,7 +623,51 @@
         "Rob Cahill"
       ],
       "count": 3,
-      "tied": true
+      "tied": true,
+      "games": [
+        {
+          "owner": "Mike Kovacs",
+          "week": 3,
+          "matchupPeriodId": 3,
+          "teamId": 2,
+          "score": 137.5
+        },
+        {
+          "owner": "Rob Cahill",
+          "week": 5,
+          "matchupPeriodId": 5,
+          "teamId": 8,
+          "score": 130.76
+        },
+        {
+          "owner": "Mike Kovacs",
+          "week": 6,
+          "matchupPeriodId": 6,
+          "teamId": 2,
+          "score": 133.46
+        },
+        {
+          "owner": "Rob Cahill",
+          "week": 8,
+          "matchupPeriodId": 8,
+          "teamId": 8,
+          "score": 117.6
+        },
+        {
+          "owner": "Mike Kovacs",
+          "week": 11,
+          "matchupPeriodId": 11,
+          "teamId": 2,
+          "score": 100.74
+        },
+        {
+          "owner": "Rob Cahill",
+          "week": 12,
+          "matchupPeriodId": 12,
+          "teamId": 8,
+          "score": 134.5
+        }
+      ]
     },
     "mostWeeklyLowScores": {
       "owner": "Brian Dorward",
@@ -469,7 +675,30 @@
         "Brian Dorward"
       ],
       "count": 3,
-      "tied": false
+      "tied": false,
+      "games": [
+        {
+          "owner": "Brian Dorward",
+          "week": 2,
+          "matchupPeriodId": 2,
+          "teamId": 11,
+          "score": 66.4
+        },
+        {
+          "owner": "Brian Dorward",
+          "week": 3,
+          "matchupPeriodId": 3,
+          "teamId": 11,
+          "score": 82.5
+        },
+        {
+          "owner": "Brian Dorward",
+          "week": 12,
+          "matchupPeriodId": 12,
+          "teamId": 11,
+          "score": 61.02
+        }
+      ]
     },
     "bestBenchWarmers": null,
     "weeklyHighPayouts": [
@@ -671,7 +900,44 @@
         "Mike Kovacs"
       ],
       "count": 5,
-      "tied": false
+      "tied": false,
+      "games": [
+        {
+          "owner": "Mike Kovacs",
+          "week": 3,
+          "matchupPeriodId": 3,
+          "teamId": 2,
+          "score": 145.16
+        },
+        {
+          "owner": "Mike Kovacs",
+          "week": 4,
+          "matchupPeriodId": 4,
+          "teamId": 2,
+          "score": 118.42
+        },
+        {
+          "owner": "Mike Kovacs",
+          "week": 7,
+          "matchupPeriodId": 7,
+          "teamId": 2,
+          "score": 131.88
+        },
+        {
+          "owner": "Mike Kovacs",
+          "week": 11,
+          "matchupPeriodId": 11,
+          "teamId": 2,
+          "score": 122.0
+        },
+        {
+          "owner": "Mike Kovacs",
+          "week": 12,
+          "matchupPeriodId": 12,
+          "teamId": 2,
+          "score": 148.5
+        }
+      ]
     },
     "mostWeeklyLowScores": {
       "owner": "Brandon Kish",
@@ -679,7 +945,37 @@
         "Brandon Kish"
       ],
       "count": 4,
-      "tied": false
+      "tied": false,
+      "games": [
+        {
+          "owner": "Brandon Kish",
+          "week": 3,
+          "matchupPeriodId": 3,
+          "teamId": 12,
+          "score": 72.7
+        },
+        {
+          "owner": "Brandon Kish",
+          "week": 4,
+          "matchupPeriodId": 4,
+          "teamId": 12,
+          "score": 58.44
+        },
+        {
+          "owner": "Brandon Kish",
+          "week": 5,
+          "matchupPeriodId": 5,
+          "teamId": 12,
+          "score": 40.46
+        },
+        {
+          "owner": "Brandon Kish",
+          "week": 9,
+          "matchupPeriodId": 9,
+          "teamId": 12,
+          "score": 68.78
+        }
+      ]
     },
     "bestBenchWarmers": null,
     "weeklyHighPayouts": [
@@ -873,7 +1169,44 @@
         "Ray Engleking"
       ],
       "count": 5,
-      "tied": false
+      "tied": false,
+      "games": [
+        {
+          "owner": "Ray Engleking",
+          "week": 4,
+          "matchupPeriodId": 4,
+          "teamId": 9,
+          "score": 123.68
+        },
+        {
+          "owner": "Ray Engleking",
+          "week": 5,
+          "matchupPeriodId": 5,
+          "teamId": 9,
+          "score": 142.94
+        },
+        {
+          "owner": "Ray Engleking",
+          "week": 8,
+          "matchupPeriodId": 8,
+          "teamId": 9,
+          "score": 118.34
+        },
+        {
+          "owner": "Ray Engleking",
+          "week": 9,
+          "matchupPeriodId": 9,
+          "teamId": 9,
+          "score": 120.16
+        },
+        {
+          "owner": "Ray Engleking",
+          "week": 11,
+          "matchupPeriodId": 11,
+          "teamId": 9,
+          "score": 149.02
+        }
+      ]
     },
     "mostWeeklyLowScores": {
       "owner": "Brian Dorward",
@@ -881,7 +1214,44 @@
         "Brian Dorward"
       ],
       "count": 5,
-      "tied": false
+      "tied": false,
+      "games": [
+        {
+          "owner": "Brian Dorward",
+          "week": 5,
+          "matchupPeriodId": 5,
+          "teamId": 11,
+          "score": 55.86
+        },
+        {
+          "owner": "Brian Dorward",
+          "week": 6,
+          "matchupPeriodId": 6,
+          "teamId": 11,
+          "score": 58.64
+        },
+        {
+          "owner": "Brian Dorward",
+          "week": 7,
+          "matchupPeriodId": 7,
+          "teamId": 11,
+          "score": 55.16
+        },
+        {
+          "owner": "Brian Dorward",
+          "week": 8,
+          "matchupPeriodId": 8,
+          "teamId": 11,
+          "score": 60.76
+        },
+        {
+          "owner": "Brian Dorward",
+          "week": 9,
+          "matchupPeriodId": 9,
+          "teamId": 11,
+          "score": 34.42
+        }
+      ]
     },
     "bestBenchWarmers": null,
     "weeklyHighPayouts": [
@@ -1270,7 +1640,44 @@
         "Ray Engleking"
       ],
       "count": 5,
-      "tied": false
+      "tied": false,
+      "games": [
+        {
+          "owner": "Ray Engleking",
+          "week": 2,
+          "matchupPeriodId": 2,
+          "teamId": 9,
+          "score": 141.94
+        },
+        {
+          "owner": "Ray Engleking",
+          "week": 4,
+          "matchupPeriodId": 4,
+          "teamId": 9,
+          "score": 165.16
+        },
+        {
+          "owner": "Ray Engleking",
+          "week": 7,
+          "matchupPeriodId": 7,
+          "teamId": 9,
+          "score": 146.62
+        },
+        {
+          "owner": "Ray Engleking",
+          "week": 8,
+          "matchupPeriodId": 8,
+          "teamId": 9,
+          "score": 149.12
+        },
+        {
+          "owner": "Ray Engleking",
+          "week": 11,
+          "matchupPeriodId": 11,
+          "teamId": 9,
+          "score": 143.92
+        }
+      ]
     },
     "mostWeeklyLowScores": {
       "owner": "Carl Cummins",
@@ -1278,7 +1685,44 @@
         "Carl Cummins"
       ],
       "count": 5,
-      "tied": false
+      "tied": false,
+      "games": [
+        {
+          "owner": "Carl Cummins",
+          "week": 3,
+          "matchupPeriodId": 3,
+          "teamId": 3,
+          "score": 67.3
+        },
+        {
+          "owner": "Carl Cummins",
+          "week": 4,
+          "matchupPeriodId": 4,
+          "teamId": 3,
+          "score": 77.78
+        },
+        {
+          "owner": "Carl Cummins",
+          "week": 5,
+          "matchupPeriodId": 5,
+          "teamId": 3,
+          "score": 69.44
+        },
+        {
+          "owner": "Carl Cummins",
+          "week": 6,
+          "matchupPeriodId": 6,
+          "teamId": 3,
+          "score": 60.94
+        },
+        {
+          "owner": "Carl Cummins",
+          "week": 8,
+          "matchupPeriodId": 8,
+          "teamId": 3,
+          "score": 102.8
+        }
+      ]
     },
     "bestBenchWarmers": null,
     "weeklyHighPayouts": [
@@ -1672,7 +2116,51 @@
         "Mike Kovacs"
       ],
       "count": 3,
-      "tied": true
+      "tied": true,
+      "games": [
+        {
+          "owner": "Carl Cummins",
+          "week": 1,
+          "matchupPeriodId": 1,
+          "teamId": 3,
+          "score": 155.7
+        },
+        {
+          "owner": "Mike Kovacs",
+          "week": 4,
+          "matchupPeriodId": 4,
+          "teamId": 2,
+          "score": 156.88
+        },
+        {
+          "owner": "Mike Kovacs",
+          "week": 6,
+          "matchupPeriodId": 6,
+          "teamId": 2,
+          "score": 183.94
+        },
+        {
+          "owner": "Mike Kovacs",
+          "week": 8,
+          "matchupPeriodId": 8,
+          "teamId": 2,
+          "score": 191.2
+        },
+        {
+          "owner": "Carl Cummins",
+          "week": 9,
+          "matchupPeriodId": 9,
+          "teamId": 3,
+          "score": 158.68
+        },
+        {
+          "owner": "Carl Cummins",
+          "week": 10,
+          "matchupPeriodId": 10,
+          "teamId": 3,
+          "score": 134.62
+        }
+      ]
     },
     "mostWeeklyLowScores": {
       "owner": "John Artiglier",
@@ -1683,7 +2171,93 @@
         "Ray Engleking"
       ],
       "count": 3,
-      "tied": true
+      "tied": true,
+      "games": [
+        {
+          "owner": "John Artiglier",
+          "week": 1,
+          "matchupPeriodId": 1,
+          "teamId": 11,
+          "score": 69.72
+        },
+        {
+          "owner": "Ray Engleking",
+          "week": 2,
+          "matchupPeriodId": 2,
+          "teamId": 9,
+          "score": 89.14
+        },
+        {
+          "owner": "John Artiglier",
+          "week": 3,
+          "matchupPeriodId": 3,
+          "teamId": 11,
+          "score": 100.06
+        },
+        {
+          "owner": "Randell Crawford",
+          "week": 4,
+          "matchupPeriodId": 4,
+          "teamId": 6,
+          "score": 77.1
+        },
+        {
+          "owner": "Phil Torres",
+          "week": 5,
+          "matchupPeriodId": 5,
+          "teamId": 4,
+          "score": 98.5
+        },
+        {
+          "owner": "Phil Torres",
+          "week": 6,
+          "matchupPeriodId": 6,
+          "teamId": 4,
+          "score": 71.32
+        },
+        {
+          "owner": "Ray Engleking",
+          "week": 7,
+          "matchupPeriodId": 7,
+          "teamId": 9,
+          "score": 68.16
+        },
+        {
+          "owner": "Randell Crawford",
+          "week": 8,
+          "matchupPeriodId": 8,
+          "teamId": 6,
+          "score": 87.36
+        },
+        {
+          "owner": "John Artiglier",
+          "week": 9,
+          "matchupPeriodId": 9,
+          "teamId": 11,
+          "score": 77.74
+        },
+        {
+          "owner": "Ray Engleking",
+          "week": 10,
+          "matchupPeriodId": 10,
+          "teamId": 9,
+          "score": 62.62
+        },
+        {
+          "owner": "Phil Torres",
+          "week": 11,
+          "matchupPeriodId": 11,
+          "teamId": 4,
+          "score": 79.92
+        },
+        {
+          "owner": "Randell Crawford",
+          "week": 12,
+          "matchupPeriodId": 12,
+          "teamId": 6,
+          "score": 68.22
+        }
+      ]
     },
     "bestBenchWarmers": {
       "owner": "Mike Kovacs",
@@ -1971,7 +2545,44 @@
         "Bill Solecki"
       ],
       "count": 5,
-      "tied": false
+      "tied": false,
+      "games": [
+        {
+          "owner": "Bill Solecki",
+          "week": 1,
+          "matchupPeriodId": 1,
+          "teamId": 1,
+          "score": 152.6
+        },
+        {
+          "owner": "Bill Solecki",
+          "week": 7,
+          "matchupPeriodId": 7,
+          "teamId": 1,
+          "score": 167.42
+        },
+        {
+          "owner": "Bill Solecki",
+          "week": 8,
+          "matchupPeriodId": 8,
+          "teamId": 1,
+          "score": 143.34
+        },
+        {
+          "owner": "Bill Solecki",
+          "week": 10,
+          "matchupPeriodId": 10,
+          "teamId": 1,
+          "score": 128.3
+        },
+        {
+          "owner": "Bill Solecki",
+          "week": 13,
+          "matchupPeriodId": 13,
+          "teamId": 1,
+          "score": 154.3
+        }
+      ]
     },
     "mostWeeklyLowScores": {
       "owner": "Ben Bingert",
@@ -1980,7 +2591,51 @@
         "Ray Engleking"
       ],
       "count": 3,
-      "tied": true
+      "tied": true,
+      "games": [
+        {
+          "owner": "Ben Bingert",
+          "week": 1,
+          "matchupPeriodId": 1,
+          "teamId": 12,
+          "score": 100.5
+        },
+        {
+          "owner": "Ray Engleking",
+          "week": 4,
+          "matchupPeriodId": 4,
+          "teamId": 9,
+          "score": 81.8
+        },
+        {
+          "owner": "Ben Bingert",
+          "week": 5,
+          "matchupPeriodId": 5,
+          "teamId": 12,
+          "score": 97.0
+        },
+        {
+          "owner": "Ray Engleking",
+          "week": 10,
+          "matchupPeriodId": 10,
+          "teamId": 9,
+          "score": 82.12
+        },
+        {
+          "owner": "Ray Engleking",
+          "week": 11,
+          "matchupPeriodId": 11,
+          "teamId": 9,
+          "score": 96.48
+        },
+        {
+          "owner": "Ben Bingert",
+          "week": 14,
+          "matchupPeriodId": 14,
+          "teamId": 12,
+          "score": 97.56
+        }
+      ]
     },
     "bestBenchWarmers": {
       "owner": "Phil Torres",
@@ -2322,7 +2977,72 @@
         "Ray Engleking"
       ],
       "count": 3,
-      "tied": true
+      "tied": true,
+      "games": [
+        {
+          "owner": "Mike Kovacs",
+          "week": 1,
+          "matchupPeriodId": 1,
+          "teamId": 2,
+          "score": 142.68
+        },
+        {
+          "owner": "Bill Solecki",
+          "week": 3,
+          "matchupPeriodId": 3,
+          "teamId": 1,
+          "score": 130.14
+        },
+        {
+          "owner": "Bill Solecki",
+          "week": 4,
+          "matchupPeriodId": 4,
+          "teamId": 1,
+          "score": 146.02
+        },
+        {
+          "owner": "Ray Engleking",
+          "week": 5,
+          "matchupPeriodId": 5,
+          "teamId": 9,
+          "score": 177.18
+        },
+        {
+          "owner": "Mike Kovacs",
+          "week": 6,
+          "matchupPeriodId": 6,
+          "teamId": 2,
+          "score": 151.48
+        },
+        {
+          "owner": "Ray Engleking",
+          "week": 9,
+          "matchupPeriodId": 9,
+          "teamId": 9,
+          "score": 125.38
+        },
+        {
+          "owner": "Mike Kovacs",
+          "week": 10,
+          "matchupPeriodId": 10,
+          "teamId": 2,
+          "score": 152.84
+        },
+        {
+          "owner": "Ray Engleking",
+          "week": 11,
+          "matchupPeriodId": 11,
+          "teamId": 9,
+          "score": 157.74
+        },
+        {
+          "owner": "Bill Solecki",
+          "week": 12,
+          "matchupPeriodId": 12,
+          "teamId": 1,
+          "score": 134.06
+        }
+      ]
     },
     "mostWeeklyLowScores": {
       "owner": "Randell Crawford",
@@ -2330,7 +3050,30 @@
         "Randell Crawford"
       ],
       "count": 3,
-      "tied": false
+      "tied": false,
+      "games": [
+        {
+          "owner": "Randell Crawford",
+          "week": 6,
+          "matchupPeriodId": 6,
+          "teamId": 6,
+          "score": 85.5
+        },
+        {
+          "owner": "Randell Crawford",
+          "week": 10,
+          "matchupPeriodId": 10,
+          "teamId": 6,
+          "score": 61.2
+        },
+        {
+          "owner": "Randell Crawford",
+          "week": 14,
+          "matchupPeriodId": 14,
+          "teamId": 6,
+          "score": 93.28
+        }
+      ]
     },
     "bestBenchWarmers": {
       "owner": "Ben Bingert",
@@ -2676,7 +3419,37 @@
         "Ben Bingert"
       ],
       "count": 4,
-      "tied": false
+      "tied": false,
+      "games": [
+        {
+          "owner": "Ben Bingert",
+          "week": 4,
+          "matchupPeriodId": 4,
+          "teamId": 12,
+          "score": 147.66
+        },
+        {
+          "owner": "Ben Bingert",
+          "week": 5,
+          "matchupPeriodId": 5,
+          "teamId": 12,
+          "score": 161.28
+        },
+        {
+          "owner": "Ben Bingert",
+          "week": 7,
+          "matchupPeriodId": 7,
+          "teamId": 12,
+          "score": 146.72
+        },
+        {
+          "owner": "Ben Bingert",
+          "week": 9,
+          "matchupPeriodId": 9,
+          "teamId": 12,
+          "score": 145.84
+        }
+      ]
     },
     "mostWeeklyLowScores": {
       "owner": "Randell Crawford",
@@ -2684,7 +3457,37 @@
         "Randell Crawford"
       ],
       "count": 4,
-      "tied": false
+      "tied": false,
+      "games": [
+        {
+          "owner": "Randell Crawford",
+          "week": 1,
+          "matchupPeriodId": 1,
+          "teamId": 6,
+          "score": 65.18
+        },
+        {
+          "owner": "Randell Crawford",
+          "week": 2,
+          "matchupPeriodId": 2,
+          "teamId": 6,
+          "score": 91.4
+        },
+        {
+          "owner": "Randell Crawford",
+          "week": 12,
+          "matchupPeriodId": 12,
+          "teamId": 6,
+          "score": 86.46
+        },
+        {
+          "owner": "Randell Crawford",
+          "week": 14,
+          "matchupPeriodId": 14,
+          "teamId": 6,
+          "score": 91.2
+        }
+      ]
     },
     "bestBenchWarmers": {
       "owner": "Ben Bingert",
@@ -2995,7 +3798,37 @@
         "Phil Torres"
       ],
       "count": 4,
-      "tied": false
+      "tied": false,
+      "games": [
+        {
+          "owner": "Phil Torres",
+          "week": 7,
+          "matchupPeriodId": 7,
+          "teamId": 4,
+          "score": 129.76
+        },
+        {
+          "owner": "Phil Torres",
+          "week": 9,
+          "matchupPeriodId": 9,
+          "teamId": 4,
+          "score": 135.9
+        },
+        {
+          "owner": "Phil Torres",
+          "week": 11,
+          "matchupPeriodId": 11,
+          "teamId": 4,
+          "score": 139.58
+        },
+        {
+          "owner": "Phil Torres",
+          "week": 14,
+          "matchupPeriodId": 14,
+          "teamId": 4,
+          "score": 141.74
+        }
+      ]
     },
     "mostWeeklyLowScores": {
       "owner": "Ben Bingert",
@@ -3004,7 +3837,51 @@
         "john crawford"
       ],
       "count": 3,
-      "tied": true
+      "tied": true,
+      "games": [
+        {
+          "owner": "john crawford",
+          "week": 1,
+          "matchupPeriodId": 1,
+          "teamId": 13,
+          "score": 68.48
+        },
+        {
+          "owner": "Ben Bingert",
+          "week": 3,
+          "matchupPeriodId": 3,
+          "teamId": 12,
+          "score": 67.98
+        },
+        {
+          "owner": "Ben Bingert",
+          "week": 6,
+          "matchupPeriodId": 6,
+          "teamId": 12,
+          "score": 75.62
+        },
+        {
+          "owner": "john crawford",
+          "week": 9,
+          "matchupPeriodId": 9,
+          "teamId": 13,
+          "score": 49.22
+        },
+        {
+          "owner": "john crawford",
+          "week": 10,
+          "matchupPeriodId": 10,
+          "teamId": 13,
+          "score": 55.68
+        },
+        {
+          "owner": "Ben Bingert",
+          "week": 12,
+          "matchupPeriodId": 12,
+          "teamId": 12,
+          "score": 79.98
+        }
+      ]
     },
     "bestBenchWarmers": {
       "owner": "Carl Cummins",
@@ -3308,7 +4185,30 @@
         "Carl Cummins"
       ],
       "count": 3,
-      "tied": false
+      "tied": false,
+      "games": [
+        {
+          "owner": "Carl Cummins",
+          "week": 3,
+          "matchupPeriodId": 3,
+          "teamId": 3,
+          "score": 162.98
+        },
+        {
+          "owner": "Carl Cummins",
+          "week": 7,
+          "matchupPeriodId": 7,
+          "teamId": 3,
+          "score": 133.6
+        },
+        {
+          "owner": "Carl Cummins",
+          "week": 9,
+          "matchupPeriodId": 9,
+          "teamId": 3,
+          "score": 137.86
+        }
+      ]
     },
     "mostWeeklyLowScores": {
       "owner": "Ray Engleking",
@@ -3317,7 +4217,51 @@
         "john crawford"
       ],
       "count": 3,
-      "tied": true
+      "tied": true,
+      "games": [
+        {
+          "owner": "john crawford",
+          "week": 3,
+          "matchupPeriodId": 3,
+          "teamId": 13,
+          "score": 64.54
+        },
+        {
+          "owner": "john crawford",
+          "week": 5,
+          "matchupPeriodId": 5,
+          "teamId": 13,
+          "score": 96.26
+        },
+        {
+          "owner": "Ray Engleking",
+          "week": 8,
+          "matchupPeriodId": 8,
+          "teamId": 9,
+          "score": 79.78
+        },
+        {
+          "owner": "Ray Engleking",
+          "week": 10,
+          "matchupPeriodId": 10,
+          "teamId": 9,
+          "score": 81.04
+        },
+        {
+          "owner": "john crawford",
+          "week": 12,
+          "matchupPeriodId": 12,
+          "teamId": 13,
+          "score": 84.66
+        },
+        {
+          "owner": "Ray Engleking",
+          "week": 13,
+          "matchupPeriodId": 13,
+          "teamId": 9,
+          "score": 92.84
+        }
+      ]
     },
     "bestBenchWarmers": {
       "owner": "Mike Kovacs",
@@ -3631,7 +4575,37 @@
         "Ray Engleking"
       ],
       "count": 4,
-      "tied": false
+      "tied": false,
+      "games": [
+        {
+          "owner": "Ray Engleking",
+          "week": 1,
+          "matchupPeriodId": 1,
+          "teamId": 9,
+          "score": 126.36
+        },
+        {
+          "owner": "Ray Engleking",
+          "week": 9,
+          "matchupPeriodId": 9,
+          "teamId": 9,
+          "score": 131.42
+        },
+        {
+          "owner": "Ray Engleking",
+          "week": 13,
+          "matchupPeriodId": 13,
+          "teamId": 9,
+          "score": 120.52
+        },
+        {
+          "owner": "Ray Engleking",
+          "week": 14,
+          "matchupPeriodId": 14,
+          "teamId": 9,
+          "score": 169.54
+        }
+      ]
     },
     "mostWeeklyLowScores": {
       "owner": "Phil Torres",
@@ -3639,7 +4613,37 @@
         "Phil Torres"
       ],
       "count": 4,
-      "tied": false
+      "tied": false,
+      "games": [
+        {
+          "owner": "Phil Torres",
+          "week": 1,
+          "matchupPeriodId": 1,
+          "teamId": 4,
+          "score": 51.22
+        },
+        {
+          "owner": "Phil Torres",
+          "week": 4,
+          "matchupPeriodId": 4,
+          "teamId": 4,
+          "score": 89.68
+        },
+        {
+          "owner": "Phil Torres",
+          "week": 9,
+          "matchupPeriodId": 9,
+          "teamId": 4,
+          "score": 85.08
+        },
+        {
+          "owner": "Phil Torres",
+          "week": 10,
+          "matchupPeriodId": 10,
+          "teamId": 4,
+          "score": 88.7
+        }
+      ]
     },
     "bestBenchWarmers": {
       "owner": "Carl Cummins",
@@ -3857,20 +4861,20 @@
       "matchupPeriodId": 2
     },
     "closestWin": {
-      "margin": 2.6999999999999886,
-      "winner": "Kraft Smack and Cheese",
-      "winnerOwner": "John Artiglier",
-      "winnerTeamId": 11,
-      "winnerScore": 116.82,
-      "loser": "All You Need Is Love",
-      "loserScore": 114.12,
+      "margin": 2.680000000000007,
+      "winner": "Paintin Peyton",
+      "winnerOwner": "john crawford",
+      "winnerTeamId": 13,
+      "winnerScore": 143.3,
+      "loser": "Salty Spitoon",
+      "loserScore": 140.62,
       "year": 2026,
-      "week": 2,
+      "week": 5,
       "weeks": [
-        2
+        5
       ],
       "isTwoWeek": false,
-      "matchupPeriodId": 2
+      "matchupPeriodId": 5
     },
     "biggestBlowout": {
       "margin": 70.42,
@@ -3893,9 +4897,10 @@
       "owner": "Carl Cummins",
       "length": 4,
       "owners": [
-        "Carl Cummins"
+        "Carl Cummins",
+        "Phil Torres"
       ],
-      "tied": false,
+      "tied": true,
       "streaks": [
         {
           "owner": "Carl Cummins",
@@ -3905,12 +4910,21 @@
             3,
             4
           ]
+        },
+        {
+          "owner": "Phil Torres",
+          "weeks": [
+            2,
+            3,
+            4,
+            5
+          ]
         }
       ]
     },
     "longestLossStreak": {
       "owner": "Randell Crawford",
-      "length": 4,
+      "length": 5,
       "owners": [
         "Randell Crawford"
       ],
@@ -3922,21 +4936,35 @@
             1,
             2,
             3,
-            4
+            4,
+            5
           ]
         }
       ]
     },
     "mostWeeklyHighScores": {
-      "owner": "Carl Cummins",
+      "owner": "john crawford",
       "owners": [
-        "Carl Cummins",
-        "Phil Torres",
-        "Ray Engleking",
         "john crawford"
       ],
-      "count": 1,
-      "tied": true
+      "count": 2,
+      "tied": false,
+      "games": [
+        {
+          "owner": "john crawford",
+          "week": 1,
+          "matchupPeriodId": 1,
+          "teamId": 13,
+          "score": 147.9
+        },
+        {
+          "owner": "john crawford",
+          "week": 5,
+          "matchupPeriodId": 5,
+          "teamId": 13,
+          "score": 143.3
+        }
+      ]
     },
     "mostWeeklyLowScores": {
       "owner": "Randell Crawford",
@@ -3944,12 +4972,28 @@
         "Randell Crawford"
       ],
       "count": 2,
-      "tied": false
+      "tied": false,
+      "games": [
+        {
+          "owner": "Randell Crawford",
+          "week": 2,
+          "matchupPeriodId": 2,
+          "teamId": 6,
+          "score": 73.06
+        },
+        {
+          "owner": "Randell Crawford",
+          "week": 4,
+          "matchupPeriodId": 4,
+          "teamId": 6,
+          "score": 77.32
+        }
+      ]
     },
     "bestBenchWarmers": {
-      "owner": "Bill Solecki",
-      "teamName": "Bovine University Stampede",
-      "benchPoints": 307.5
+      "owner": "Carl Cummins",
+      "teamName": "Taylor and Travis Swift \ud83d\udc51",
+      "benchPoints": 354.90000000000003
     },
     "weeklyHighPayouts": [
       {
@@ -3971,9 +5015,20 @@
         "owner": "Ray Engleking",
         "amount": 10,
         "week": 4
+      },
+      {
+        "owner": "john crawford",
+        "amount": 9,
+        "week": 5
       }
     ],
-    "consolationPayouts": [],
+    "consolationPayouts": [
+      {
+        "owner": "Ray Engleking",
+        "amount": 1,
+        "week": 5
+      }
+    ],
     "playoffPayouts": [],
     "keeperAnalysis": {
       "keepers": [
@@ -3981,7 +5036,8 @@
           "owner": "Randell Crawford",
           "player": "James Cook III",
           "roundKept": 1,
-          "pointsScored": null,
+          "pointsScored": 171.6,
+          "pointsThroughWeek": 6,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -3994,7 +5050,8 @@
           "owner": "John Artiglier",
           "player": "Jaxon Smith-Njigba",
           "roundKept": 3,
-          "pointsScored": null,
+          "pointsScored": 241.92,
+          "pointsThroughWeek": 6,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4007,7 +5064,8 @@
           "owner": "Phil Torres",
           "player": "Kenneth Walker III",
           "roundKept": 4,
-          "pointsScored": null,
+          "pointsScored": 208.2,
+          "pointsThroughWeek": 6,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4020,7 +5078,8 @@
           "owner": "John Crawford",
           "player": "David Montgomery",
           "roundKept": 5,
-          "pointsScored": null,
+          "pointsScored": 84.0,
+          "pointsThroughWeek": 6,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4033,7 +5092,8 @@
           "owner": "Ray Engleking",
           "player": "Brock Bowers",
           "roundKept": 9,
-          "pointsScored": null,
+          "pointsScored": 118.4,
+          "pointsThroughWeek": 6,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4046,7 +5106,8 @@
           "owner": "Carl Cummins",
           "player": "Javonte Williams",
           "roundKept": 10,
-          "pointsScored": null,
+          "pointsScored": 175.0,
+          "pointsThroughWeek": 6,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4059,7 +5120,8 @@
           "owner": "Mike Kovacs",
           "player": "Jayden Daniels",
           "roundKept": 13,
-          "pointsScored": null,
+          "pointsScored": 129.32,
+          "pointsThroughWeek": 6,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -4072,7 +5134,8 @@
           "owner": "Bill Solecki",
           "player": "Bhayshul Tuten",
           "roundKept": 14,
-          "pointsScored": null,
+          "pointsScored": 118.4,
+          "pointsThroughWeek": 6,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
