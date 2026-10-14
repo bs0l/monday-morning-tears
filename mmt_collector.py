@@ -1,6 +1,6 @@
-#v2.9
-#11oct26
-#end-of-run WARNINGS block + MMT_WARNINGS_FILE for the weekly email, seasonComplete flag on yearly records, weekly high/low score links (games list), keeper points shown mid-season, retries inside _direct_api + warning when a keeper sweep week still fails, warnings for owners that resolve to None or an unresolved ESPN ID; earlier: per-week scores for every matchup (ESPN pointsByScoringPeriod), 2019 duplicate playoff rows collapsed, single-week score stats, two-week matchup companions, per-week averages, consolation dollars 2020+ regular season only, two-week playoff analysis; earlier: abort (exit 1) if any season fails to fetch, exit 2 on expired cookies, retries + logged week errors, bench points gathered in matchup pass, _direct_api memoized, owner/team lookup helpers, final week from matchup_periods, removed roster_analysis/two_week outputs and unused fields, skip final_standing 0 (in-progress season) in playoff detection
+#v2.91
+#14oct26
+#download ESPN-hosted team logos (they need an ESPN login) into output/logos/, end-of-run WARNINGS block + MMT_WARNINGS_FILE for the weekly email, seasonComplete flag on yearly records, weekly high/low score links (games list), keeper points shown mid-season, retries inside _direct_api + warning when a keeper sweep week still fails, warnings for owners that resolve to None or an unresolved ESPN ID; earlier: per-week scores for every matchup (ESPN pointsByScoringPeriod), 2019 duplicate playoff rows collapsed, single-week score stats, two-week matchup companions, per-week averages, consolation dollars 2020+ regular season only, two-week playoff analysis; earlier: abort (exit 1) if any season fails to fetch, exit 2 on expired cookies, retries + logged week errors, bench points gathered in matchup pass, _direct_api memoized, owner/team lookup helpers, final week from matchup_periods, removed roster_analysis/two_week outputs and unused fields, skip final_standing 0 (in-progress season) in playoff detection
 #!/usr/bin/env python3
 """
 ESPN Fantasy Football Data Collector using espn-api library
@@ -16,6 +16,9 @@ import argparse
 import requests
 import sys
 import time
+import re
+import hashlib
+from urllib.parse import urlparse
 from dotenv import load_dotenv
 from espn_api.requests.espn_requests import ESPNAccessDenied
 
@@ -26,6 +29,9 @@ load_dotenv()                               # local: finds a .env next to the sc
 LEAGUE_ID = 1483079
 OUTPUT_DIR = "output"
 MAX_FETCH_ATTEMPTS = 3   # per-season / per-request retries before giving up
+LOGO_DIR = os.path.join("output", "logos")   # self-hosted copies of ESPN-uploaded team logos
+AUTH_LOGO_HOST = "mystique-api.fantasy.espn.com"   # images uploaded directly to ESPN; need an ESPN login to load
+MAX_LOGO_BYTES = 2 * 1024 * 1024
 CONSOLATION_START_YEAR = 2020   # consolation dollar rule introduced (regular season only)
 WEEKLY_TOLERANCE = 0.02  # allowed rounding gap between weekly scores and a matchup total
 
@@ -777,6 +783,92 @@ class ESPNDataCollectorV2:
         print(f"  ✓ Calculated stats for {len(owner_stats)} owners")
         return owner_stats
         
+    def _sniff_image_ext(self, data):
+        """File extension from the image's own bytes (ESPN labels JPEGs
+        'image/jpg', so the content type isn't trusted). None if not an image."""
+        if data.startswith(b'\xff\xd8\xff'):
+            return '.jpg'
+        if data.startswith(b'\x89PNG'):
+            return '.png'
+        if data.startswith(b'GIF8'):
+            return '.gif'
+        if data[:4] == b'RIFF' and data[8:12] == b'WEBP':
+            return '.webp'
+        head = data[:1000].lstrip().lower()
+        if head.startswith(b'<svg') or (head.startswith(b'<?xml') and b'<svg' in head):
+            return '.svg'
+        return None
+
+    def _download_image(self, url):
+        """GET an image with the collector's ESPN cookies, retrying transient
+        failures like _get_with_retry. Returns the bytes or None."""
+        cookies = {"SWID": self.swid, "espn_s2": self.espn_s2}
+        headers = {"Accept": "image/*,*/*;q=0.8"}
+        for attempt in range(1, MAX_FETCH_ATTEMPTS + 1):
+            retryable = True
+            try:
+                resp = requests.get(url, cookies=cookies, headers=headers, timeout=20)
+                if resp.status_code == 200:
+                    return resp.content
+                retryable = resp.status_code >= 500
+                print(f"    ⚠️  logo {url.rsplit('/', 1)[-1]}: HTTP {resp.status_code} (attempt {attempt}/{MAX_FETCH_ATTEMPTS})")
+            except Exception as e:
+                print(f"    ⚠️  logo {url.rsplit('/', 1)[-1]}: {e} (attempt {attempt}/{MAX_FETCH_ATTEMPTS})")
+            if not retryable:
+                return None
+            if attempt < MAX_FETCH_ATTEMPTS:
+                time.sleep(2 * attempt)
+        return None
+
+    def localize_logos(self, owner_stats):
+        """Logos uploaded directly to ESPN (mystique-api.fantasy.espn.com) need
+        an ESPN login, so a visitor's browser gets a 401 and the page shows
+        nothing. Download them with the collector's cookies into output/logos/
+        and point logoUrl at the local copy. Files are named by ESPN's image id,
+        so an unchanged logo is never downloaded again (no weekly commit churn)
+        and a replaced logo gets a new file; files no owner uses are deleted.
+        Logos on public hosts (ESPN clipart, imgur) are left as they are. If a
+        download fails the remote URL is kept and a warning is recorded."""
+        print(f"\n{'='*80}")
+        print(" Localizing ESPN-hosted team logos")
+        print(f"{'='*80}")
+        os.makedirs(LOGO_DIR, exist_ok=True)
+        keep = set()
+        downloaded = reused = failed = 0
+        for owner, stats in sorted(owner_stats.items()):
+            url = stats.get('logoUrl')
+            if not url or urlparse(url).netloc != AUTH_LOGO_HOST:
+                continue
+            key = re.sub(r'[^A-Za-z0-9_-]', '', url.rstrip('/').rsplit('/', 1)[-1]) \
+                or hashlib.sha1(url.encode()).hexdigest()
+            existing = [f for f in os.listdir(LOGO_DIR) if os.path.splitext(f)[0] == key]
+            if existing:
+                filename = existing[0]
+                reused += 1
+            else:
+                data = self._download_image(url)
+                ext = self._sniff_image_ext(data) if data and len(data) <= MAX_LOGO_BYTES else None
+                if not ext:
+                    failed += 1
+                    msg = f"logo for {owner} could not be downloaded ({url}) - keeping the ESPN URL, which visitors cannot load"
+                    print(f"  ⚠️  {msg}")
+                    self._record_warning(msg)
+                    continue
+                filename = key + ext
+                with open(os.path.join(LOGO_DIR, filename), 'wb') as f:
+                    f.write(data)
+                downloaded += 1
+                print(f"  ✓ {owner}: saved {filename} ({len(data)} bytes)")
+            keep.add(filename)
+            stats['logoUrl'] = f"{LOGO_DIR.replace(os.sep, '/')}/{filename}"
+        removed = 0
+        for f in os.listdir(LOGO_DIR):
+            if f not in keep:
+                os.remove(os.path.join(LOGO_DIR, f))
+                removed += 1
+        print(f"  ✓ {downloaded} downloaded, {reused} already saved, {failed} failed, {removed} unused file(s) removed")
+        return owner_stats
+
     def calculate_head_to_head_stats(self, all_matchups, owner_stats):
         """Calculate head-to-head records between all owners"""
         print(f"\n{'='*80}")
@@ -3750,6 +3842,7 @@ class ESPNDataCollectorV2:
         all_matchups = self.apply_weekly_scores(all_matchups)
         self.warn_missing_owners(all_matchups)
         team_stats = self.calculate_team_stats(all_matchups)
+        team_stats = self.localize_logos(team_stats)
         team_stats = self.calculate_player_loyalty_stats(team_stats)
         h2h_stats = self.calculate_head_to_head_stats(all_matchups, team_stats)
         superlatives = self.calculate_superlatives(all_matchups)

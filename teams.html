@@ -176,6 +176,16 @@
             opacity: 0.5;
         }
 
+        .team-logo-fallback {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            color: var(--electric-blue);
+        }
+
         .team-header {
             margin-bottom: 20px;
             padding-bottom: 15px;
@@ -476,6 +486,7 @@
             .team-card { padding: 18px 16px; }
 
             .team-logo { width: 44px; height: 44px; top: 12px; right: 12px; }
+            .team-logo-fallback { font-size: 1.1rem; }
             .team-name { font-size: 1.2rem; padding-right: 52px; }
             .team-abbrev { font-size: 0.82rem; }
 
@@ -692,6 +703,18 @@
             });
         }
 
+        // Initials badge shown when a team has no logo or its image fails to load
+        function teamInitials(name) {
+            const letters = String(name || '').split(/\s+/).map(w => (w.match(/[A-Za-z0-9]/) || [''])[0]).filter(Boolean);
+            return (letters.slice(0, 2).join('') || '?').toUpperCase();
+        }
+        function logoFallback(img) {
+            const badge = document.createElement('div');
+            badge.className = 'team-logo team-logo-fallback';
+            badge.textContent = img.dataset.initials || '?';
+            img.replaceWith(badge);
+        }
+
         function createTeamCard(team) {
             if (!team.owner) return '<div class="stat-card"><div class="stat-row">Error: Missing owner data</div></div>';
 
@@ -732,7 +755,7 @@
 
             return `
                 <div class="team-card ${inactiveClass}">
-                    ${team.logoUrl ? `<img src="${team.logoUrl}" alt="${team.teamName}" class="team-logo" onerror="this.style.display='none'">` : ''}
+                    ${team.logoUrl ? `<img src="${team.logoUrl}" alt="${team.teamName}" class="team-logo" data-initials="${teamInitials(team.teamName)}" onerror="logoFallback(this)">` : `<div class="team-logo team-logo-fallback">${teamInitials(team.teamName)}</div>`}
                     <div class="team-header">
                         <div class="team-name">${team.teamName}${inactiveBadge}</div>
                         <div class="team-abbrev">
