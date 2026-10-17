@@ -122,8 +122,8 @@
         "count": 2
       },
       {
-        "player": "Patriots D/ST",
-        "count": 1
+        "player": "Courtland Sutton",
+        "count": 2
       }
     ]
   },
@@ -1113,6 +1113,10 @@
         },
         {
           "player": "Michael Wilson",
+          "count": 1
+        },
+        {
+          "player": "Devin Singletary",
           "count": 1
         }
       ],
@@ -3636,13 +3640,21 @@
               "Joe Jaramillo",
               "Mike Kovacs"
             ]
+          },
+          {
+            "player": "Keon Coleman",
+            "teamCount": 2,
+            "teams": [
+              "Joe Jaramillo",
+              "Ben Bingert"
+            ]
           }
         ],
         "teamTally": {
           "Mike Kovacs": 2,
           "Joe Jaramillo": 2,
           "Carl Cummins": 1,
-          "Ben Bingert": 1
+          "Ben Bingert": 2
         },
         "sameWeekAddsFlagged": 0
       }
@@ -3651,7 +3663,7 @@
       "Ray Engleking": 33,
       "John Artiglier": 35,
       "Carl Cummins": 45,
-      "Ben Bingert": 30,
+      "Ben Bingert": 31,
       "Bill Solecki": 65,
       "Mike Kovacs": 50,
       "Phil Torres": 31,
@@ -3785,8 +3797,8 @@
           "count": 2
         },
         {
-          "player": "Patriots D/ST",
-          "count": 1
+          "player": "Courtland Sutton",
+          "count": 2
         }
       ]
     },
@@ -4776,6 +4788,10 @@
           },
           {
             "player": "Michael Wilson",
+            "count": 1
+          },
+          {
+            "player": "Devin Singletary",
             "count": 1
           }
         ],
@@ -6911,13 +6927,21 @@
                 "Joe Jaramillo",
                 "Mike Kovacs"
               ]
+            },
+            {
+              "player": "Keon Coleman",
+              "teamCount": 2,
+              "teams": [
+                "Joe Jaramillo",
+                "Ben Bingert"
+              ]
             }
           ],
           "teamTally": {
             "Mike Kovacs": 2,
             "Joe Jaramillo": 2,
             "Carl Cummins": 1,
-            "Ben Bingert": 1
+            "Ben Bingert": 2
           },
           "sameWeekAddsFlagged": 0
         }
@@ -6926,7 +6950,7 @@
         "Ray Engleking": 27,
         "John Artiglier": 33,
         "Carl Cummins": 33,
-        "Ben Bingert": 25,
+        "Ben Bingert": 26,
         "Mike Kovacs": 46,
         "Bill Solecki": 47,
         "Phil Torres": 27,

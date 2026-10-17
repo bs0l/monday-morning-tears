@@ -1,6 +1,6 @@
-#v2.91
-#14oct26
-#download ESPN-hosted team logos (they need an ESPN login) into output/logos/, end-of-run WARNINGS block + MMT_WARNINGS_FILE for the weekly email, seasonComplete flag on yearly records, weekly high/low score links (games list), keeper points shown mid-season, retries inside _direct_api + warning when a keeper sweep week still fails, warnings for owners that resolve to None or an unresolved ESPN ID; earlier: per-week scores for every matchup (ESPN pointsByScoringPeriod), 2019 duplicate playoff rows collapsed, single-week score stats, two-week matchup companions, per-week averages, consolation dollars 2020+ regular season only, two-week playoff analysis; earlier: abort (exit 1) if any season fails to fetch, exit 2 on expired cookies, retries + logged week errors, bench points gathered in matchup pass, _direct_api memoized, owner/team lookup helpers, final week from matchup_periods, removed roster_analysis/two_week outputs and unused fields, skip final_standing 0 (in-progress season) in playoff detection
+#v2.92
+#16oct26
+#score adjustments (e.g. week-1 dues bonus/penalty) reconciled with per-week scores; earlier: download ESPN-hosted team logos (they need an ESPN login) into output/logos/, end-of-run WARNINGS block + MMT_WARNINGS_FILE for the weekly email, seasonComplete flag on yearly records, weekly high/low score links (games list), keeper points shown mid-season, retries inside _direct_api + warning when a keeper sweep week still fails, warnings for owners that resolve to None or an unresolved ESPN ID; earlier: per-week scores for every matchup (ESPN pointsByScoringPeriod), 2019 duplicate playoff rows collapsed, single-week score stats, two-week matchup companions, per-week averages, consolation dollars 2020+ regular season only, two-week playoff analysis; earlier: abort (exit 1) if any season fails to fetch, exit 2 on expired cookies, retries + logged week errors, bench points gathered in matchup pass, _direct_api memoized, owner/team lookup helpers, final week from matchup_periods, removed roster_analysis/two_week outputs and unused fields, skip final_standing 0 (in-progress season) in playoff detection
 #!/usr/bin/env python3
 """
 ESPN Fantasy Football Data Collector using espn-api library
@@ -201,6 +201,9 @@ class ESPNDataCollectorV2:
                     'tier': m.get('playoffTierType') or 'NONE',
                     'weeks': weeks,
                     'scores': {hid: [h_pb[w] for w in weeks], aid: [a_pb[w] for w in weeks]},
+                    # ESPN's matchup total includes any scoring adjustment (a dues
+                    # bonus/penalty, say) but pointsByScoringPeriod does not
+                    'adjustments': {hid: home.get('adjustment') or 0.0, aid: away.get('adjustment') or 0.0},
                 })
                 count += 1
             # Raw responses are large (cumulativeScore blobs); free them now
@@ -256,19 +259,35 @@ class ESPNDataCollectorV2:
 
             for side, tid in (('home', hid), ('away', aid)):
                 weekly = list(entry['scores'][tid])
-                if abs(sum(weekly) - m[side]['score']) > WEEKLY_TOLERANCE:
-                    msg = (f"{year} week {m['week']} {side}: weekly scores sum to {sum(weekly):.2f} "
-                           f"but matchup total is {m[side]['score']:.2f}")
-                    if year < self.end_year:
-                        problems.append(msg)
-                    else:
-                        # Current season: live scores can shift slightly between
-                        # the two requests. Trust the matchup total.
-                        print(f"    ⚠️  {msg} (current season - using the matchup total)")
-                        self._record_warning(f"{msg} (current season - used the matchup total)")
+                total = m[side]['score']
+                adjustment = entry['adjustments'].get(tid) or 0.0
+                gap = total - sum(weekly)
+                if abs(gap) > WEEKLY_TOLERANCE:
+                    if adjustment and abs(gap - adjustment) <= WEEKLY_TOLERANCE:
+                        # The gap is exactly ESPN's scoring adjustment (e.g. a week-1
+                        # dues bonus), which is part of the official score.
                         if len(weekly) == 1:
-                            weekly = [m[side]['score']]
+                            weekly = [total]        # that week's official score
+                        else:
+                            self._record_warning(
+                                f"{year} matchup period {entry['period']} (team ID {tid}): a score adjustment of "
+                                f"{adjustment:+.2f} sits in a two-week matchup and can't be assigned to a week - "
+                                f"the weekly scores exclude it, the matchup total includes it")
+                    else:
+                        msg = (f"{year} week {m['week']} {side}: weekly scores sum to {sum(weekly):.2f} "
+                               f"but matchup total is {total:.2f}"
+                               f"{f' (ESPN adjustment {adjustment:+.2f})' if adjustment else ''}")
+                        if year < self.end_year:
+                            problems.append(msg)
+                        else:
+                            # Current season: live scores can shift slightly between
+                            # the two requests. Trust the matchup total.
+                            print(f"    ⚠️  {msg} (current season - using the matchup total)")
+                            self._record_warning(f"{msg} (current season - used the matchup total)")
+                            if len(weekly) == 1:
+                                weekly = [total]
                 m[side]['weeklyScores'] = weekly
+                m[side]['adjustment'] = adjustment
 
             m['weeks'] = list(entry['weeks'])
             m['isTwoWeek'] = len(entry['weeks']) > 1
