@@ -33270,5 +33270,180 @@
       5
     ],
     "isTwoWeek": false
+  },
+  {
+    "id": "2026_6_3_1",
+    "year": 2026,
+    "week": 6,
+    "matchupPeriodId": 6,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 3,
+      "teamName": "Taylor and Travis Swift \ud83d\udc51",
+      "teamAbbrev": "CARL",
+      "owner": "Carl Cummins",
+      "score": 106.04,
+      "weeklyScores": [
+        106.04
+      ],
+      "adjustment": 0.0
+    },
+    "away": {
+      "teamId": 1,
+      "teamName": "Bovine University Stampede",
+      "teamAbbrev": "STMP",
+      "owner": "Bill Solecki",
+      "score": 99.06,
+      "weeklyScores": [
+        99.06
+      ],
+      "adjustment": 0.0
+    },
+    "winner": "HOME",
+    "weeks": [
+      6
+    ],
+    "isTwoWeek": false
+  },
+  {
+    "id": "2026_6_6_2",
+    "year": 2026,
+    "week": 6,
+    "matchupPeriodId": 6,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 6,
+      "teamName": "Insane in the Ukraine",
+      "teamAbbrev": "B00B",
+      "owner": "Randell Crawford",
+      "score": 123.12,
+      "weeklyScores": [
+        123.12
+      ],
+      "adjustment": 0.0
+    },
+    "away": {
+      "teamId": 2,
+      "teamName": "Chasing McBride",
+      "teamAbbrev": "GRBG",
+      "owner": "Mike Kovacs",
+      "score": 87.82,
+      "weeklyScores": [
+        87.82
+      ],
+      "adjustment": 0.0
+    },
+    "winner": "HOME",
+    "weeks": [
+      6
+    ],
+    "isTwoWeek": false
+  },
+  {
+    "id": "2026_6_9_12",
+    "year": 2026,
+    "week": 6,
+    "matchupPeriodId": 6,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 9,
+      "teamName": "Salty Spitoon",
+      "teamAbbrev": "REXY",
+      "owner": "Ray Engleking",
+      "score": 89.68,
+      "weeklyScores": [
+        89.68
+      ],
+      "adjustment": 0.0
+    },
+    "away": {
+      "teamId": 12,
+      "teamName": "All You Need Is Love",
+      "teamAbbrev": "LOVE",
+      "owner": "Ben Bingert",
+      "score": 91.0,
+      "weeklyScores": [
+        91.0
+      ],
+      "adjustment": 0.0
+    },
+    "winner": "AWAY",
+    "weeks": [
+      6
+    ],
+    "isTwoWeek": false
+  },
+  {
+    "id": "2026_6_11_14",
+    "year": 2026,
+    "week": 6,
+    "matchupPeriodId": 6,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 11,
+      "teamName": "Kraft Smack and Cheese",
+      "teamAbbrev": "CHE",
+      "owner": "John Artiglier",
+      "score": 93.08,
+      "weeklyScores": [
+        93.08
+      ],
+      "adjustment": 0.0
+    },
+    "away": {
+      "teamId": 14,
+      "teamName": "OnlyIfIHadA2TE",
+      "teamAbbrev": "Yup",
+      "owner": "Joe Jaramillo",
+      "score": 105.44,
+      "weeklyScores": [
+        105.44
+      ],
+      "adjustment": 0.0
+    },
+    "winner": "AWAY",
+    "weeks": [
+      6
+    ],
+    "isTwoWeek": false
+  },
+  {
+    "id": "2026_6_4_13",
+    "year": 2026,
+    "week": 6,
+    "matchupPeriodId": 6,
+    "isPlayoff": false,
+    "playoffType": "NONE",
+    "home": {
+      "teamId": 4,
+      "teamName": "Canadian Geeses",
+      "teamAbbrev": "CA",
+      "owner": "Phil Torres",
+      "score": 103.56,
+      "weeklyScores": [
+        103.56
+      ],
+      "adjustment": 0.0
+    },
+    "away": {
+      "teamId": 13,
+      "teamName": "Paintin Peyton",
+      "teamAbbrev": "CRWD",
+      "owner": "john crawford",
+      "score": 81.88,
+      "weeklyScores": [
+        81.88
+      ],
+      "adjustment": 0.0
+    },
+    "winner": "HOME",
+    "weeks": [
+      6
+    ],
+    "isTwoWeek": false
   }
 ]

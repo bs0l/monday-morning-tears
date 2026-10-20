@@ -2403,8 +2403,8 @@
           "player": "Tyler Lockett",
           "roundKept": 9,
           "pointsScored": 295.9,
-          "roundAvgPoints": 224.57,
-          "pointsVsAvg": 71.33,
+          "roundAvgPoints": 224.58,
+          "pointsVsAvg": 71.32,
           "pointsVsAvgPct": 0.3176,
           "verdict": "STEAL",
           "droppedMidSeason": false,
@@ -2828,8 +2828,8 @@
           "player": "Lamar Jackson",
           "roundKept": 4,
           "pointsScored": 481.12,
-          "roundAvgPoints": 320.62,
-          "pointsVsAvg": 160.5,
+          "roundAvgPoints": 320.61,
+          "pointsVsAvg": 160.51,
           "pointsVsAvgPct": 0.5006,
           "verdict": "STEAL",
           "droppedMidSeason": false,
@@ -4001,8 +4001,8 @@
           "player": "Nick Chubb",
           "roundKept": 2,
           "pointsScored": 42.2,
-          "roundAvgPoints": 379.15,
-          "pointsVsAvg": -336.95,
+          "roundAvgPoints": 379.16,
+          "pointsVsAvg": -336.96,
           "pointsVsAvgPct": -0.8887,
           "verdict": "BUST",
           "droppedMidSeason": true,
@@ -4014,8 +4014,8 @@
           "player": "Saquon Barkley",
           "roundKept": 2,
           "pointsScored": 278.6,
-          "roundAvgPoints": 379.15,
-          "pointsVsAvg": -100.55,
+          "roundAvgPoints": 379.16,
+          "pointsVsAvg": -100.56,
           "pointsVsAvgPct": -0.2652,
           "verdict": "BUST",
           "droppedMidSeason": false,
@@ -4861,20 +4861,20 @@
       "matchupPeriodId": 2
     },
     "closestWin": {
-      "margin": 2.680000000000007,
-      "winner": "Paintin Peyton",
-      "winnerOwner": "john crawford",
-      "winnerTeamId": 13,
-      "winnerScore": 143.3,
+      "margin": 1.3199999999999932,
+      "winner": "All You Need Is Love",
+      "winnerOwner": "Ben Bingert",
+      "winnerTeamId": 12,
+      "winnerScore": 91.0,
       "loser": "Salty Spitoon",
-      "loserScore": 140.62,
+      "loserScore": 89.68,
       "year": 2026,
-      "week": 5,
+      "week": 6,
       "weeks": [
-        5
+        6
       ],
       "isTwoWeek": false,
-      "matchupPeriodId": 5
+      "matchupPeriodId": 6
     },
     "biggestBlowout": {
       "margin": 70.42,
@@ -4894,30 +4894,21 @@
     },
     "biggestBlowoutTwoWeek": null,
     "longestWinStreak": {
-      "owner": "Carl Cummins",
-      "length": 4,
+      "owner": "Phil Torres",
+      "length": 5,
       "owners": [
-        "Carl Cummins",
         "Phil Torres"
       ],
-      "tied": true,
+      "tied": false,
       "streaks": [
-        {
-          "owner": "Carl Cummins",
-          "weeks": [
-            1,
-            2,
-            3,
-            4
-          ]
-        },
         {
           "owner": "Phil Torres",
           "weeks": [
             2,
             3,
             4,
-            5
+            5,
+            6
           ]
         }
       ]
@@ -4969,10 +4960,11 @@
     "mostWeeklyLowScores": {
       "owner": "Randell Crawford",
       "owners": [
-        "Randell Crawford"
+        "Randell Crawford",
+        "john crawford"
       ],
       "count": 2,
-      "tied": false,
+      "tied": true,
       "games": [
         {
           "owner": "Randell Crawford",
@@ -4982,18 +4974,32 @@
           "score": 73.06
         },
         {
+          "owner": "john crawford",
+          "week": 3,
+          "matchupPeriodId": 3,
+          "teamId": 13,
+          "score": 80.04
+        },
+        {
           "owner": "Randell Crawford",
           "week": 4,
           "matchupPeriodId": 4,
           "teamId": 6,
           "score": 77.32
+        },
+        {
+          "owner": "john crawford",
+          "week": 6,
+          "matchupPeriodId": 6,
+          "teamId": 13,
+          "score": 81.88
         }
       ]
     },
     "bestBenchWarmers": {
       "owner": "Carl Cummins",
       "teamName": "Taylor and Travis Swift \ud83d\udc51",
-      "benchPoints": 354.90000000000003
+      "benchPoints": 397.5
     },
     "weeklyHighPayouts": [
       {
@@ -5020,6 +5026,11 @@
         "owner": "john crawford",
         "amount": 9,
         "week": 5
+      },
+      {
+        "owner": "Randell Crawford",
+        "amount": 10,
+        "week": 6
       }
     ],
     "consolationPayouts": [
@@ -5036,8 +5047,8 @@
           "owner": "Randell Crawford",
           "player": "James Cook III",
           "roundKept": 1,
-          "pointsScored": 171.6,
-          "pointsThroughWeek": 6,
+          "pointsScored": 217.2,
+          "pointsThroughWeek": 7,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -5050,8 +5061,8 @@
           "owner": "John Artiglier",
           "player": "Jaxon Smith-Njigba",
           "roundKept": 3,
-          "pointsScored": 261.32,
-          "pointsThroughWeek": 6,
+          "pointsScored": 280.72,
+          "pointsThroughWeek": 7,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -5064,8 +5075,8 @@
           "owner": "Phil Torres",
           "player": "Kenneth Walker III",
           "roundKept": 4,
-          "pointsScored": 208.2,
-          "pointsThroughWeek": 6,
+          "pointsScored": 262.0,
+          "pointsThroughWeek": 7,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -5079,7 +5090,7 @@
           "player": "David Montgomery",
           "roundKept": 5,
           "pointsScored": 84.0,
-          "pointsThroughWeek": 6,
+          "pointsThroughWeek": 7,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -5092,8 +5103,8 @@
           "owner": "Ray Engleking",
           "player": "Brock Bowers",
           "roundKept": 9,
-          "pointsScored": 118.4,
-          "pointsThroughWeek": 6,
+          "pointsScored": 136.4,
+          "pointsThroughWeek": 7,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -5106,8 +5117,8 @@
           "owner": "Carl Cummins",
           "player": "Javonte Williams",
           "roundKept": 10,
-          "pointsScored": 175.0,
-          "pointsThroughWeek": 6,
+          "pointsScored": 199.0,
+          "pointsThroughWeek": 7,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -5120,8 +5131,8 @@
           "owner": "Mike Kovacs",
           "player": "Jayden Daniels",
           "roundKept": 13,
-          "pointsScored": 129.32,
-          "pointsThroughWeek": 6,
+          "pointsScored": 171.32,
+          "pointsThroughWeek": 7,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -5134,8 +5145,8 @@
           "owner": "Bill Solecki",
           "player": "Bhayshul Tuten",
           "roundKept": 14,
-          "pointsScored": 118.4,
-          "pointsThroughWeek": 6,
+          "pointsScored": 163.8,
+          "pointsThroughWeek": 7,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
