@@ -114,15 +114,15 @@
     ],
     "2026": [
       {
+        "player": "Patriots D/ST",
+        "count": 2
+      },
+      {
         "player": "Lions D/ST",
         "count": 2
       },
       {
-        "player": "Kaelon Black",
-        "count": 2
-      },
-      {
-        "player": "Courtland Sutton",
+        "player": "Jaguars D/ST",
         "count": 2
       }
     ]
@@ -1024,11 +1024,11 @@
       ],
       "John Artiglier": [
         {
-          "player": "Browns D/ST",
-          "count": 1
+          "player": "Jaguars D/ST",
+          "count": 2
         },
         {
-          "player": "Jaguars D/ST",
+          "player": "Browns D/ST",
           "count": 1
         },
         {
@@ -1137,6 +1137,10 @@
       "Phil Torres": [
         {
           "player": "Odell Beckham Jr.",
+          "count": 1
+        },
+        {
+          "player": "Wan'Dale Robinson",
           "count": 1
         }
       ]
@@ -3595,10 +3599,11 @@
         "players": [
           {
             "player": "Woody Marks",
-            "teamCount": 2,
+            "teamCount": 3,
             "teams": [
               "Joe Jaramillo",
-              "Mike Kovacs"
+              "Mike Kovacs",
+              "Ben Bingert"
             ]
           },
           {
@@ -3642,19 +3647,44 @@
             ]
           },
           {
+            "player": "RJ Harvey",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "Aaron Rodgers",
+            "teamCount": 2,
+            "teams": [
+              "john crawford",
+              "Randell Crawford"
+            ]
+          },
+          {
             "player": "Keon Coleman",
             "teamCount": 2,
             "teams": [
               "Joe Jaramillo",
               "Ben Bingert"
             ]
+          },
+          {
+            "player": "Germie Bernard",
+            "teamCount": 2,
+            "teams": [
+              "Randell Crawford",
+              "Mike Kovacs"
+            ]
           }
         ],
         "teamTally": {
-          "Mike Kovacs": 2,
+          "Mike Kovacs": 4,
+          "Ben Bingert": 3,
           "Joe Jaramillo": 2,
           "Carl Cummins": 1,
-          "Ben Bingert": 2
+          "Randell Crawford": 1
         },
         "sameWeekAddsFlagged": 0
       }
@@ -3663,11 +3693,11 @@
       "Ray Engleking": 33,
       "John Artiglier": 35,
       "Carl Cummins": 45,
-      "Ben Bingert": 31,
+      "Ben Bingert": 32,
       "Bill Solecki": 65,
-      "Mike Kovacs": 50,
+      "Mike Kovacs": 52,
       "Phil Torres": 31,
-      "Randell Crawford": 35,
+      "Randell Crawford": 36,
       "Joe Jaramillo": 15,
       "john crawford": 10
     },
@@ -3789,15 +3819,15 @@
       ],
       "2026": [
         {
+          "player": "Patriots D/ST",
+          "count": 2
+        },
+        {
           "player": "Lions D/ST",
           "count": 2
         },
         {
-          "player": "Kaelon Black",
-          "count": 2
-        },
-        {
-          "player": "Courtland Sutton",
+          "player": "Jaguars D/ST",
           "count": 2
         }
       ]
@@ -4699,11 +4729,11 @@
         ],
         "John Artiglier": [
           {
-            "player": "Browns D/ST",
-            "count": 1
+            "player": "Jaguars D/ST",
+            "count": 2
           },
           {
-            "player": "Jaguars D/ST",
+            "player": "Browns D/ST",
             "count": 1
           },
           {
@@ -4812,6 +4842,10 @@
         "Phil Torres": [
           {
             "player": "Odell Beckham Jr.",
+            "count": 1
+          },
+          {
+            "player": "Wan'Dale Robinson",
             "count": 1
           }
         ]
@@ -6882,10 +6916,11 @@
           "players": [
             {
               "player": "Woody Marks",
-              "teamCount": 2,
+              "teamCount": 3,
               "teams": [
                 "Joe Jaramillo",
-                "Mike Kovacs"
+                "Mike Kovacs",
+                "Ben Bingert"
               ]
             },
             {
@@ -6929,19 +6964,44 @@
               ]
             },
             {
+              "player": "RJ Harvey",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "Aaron Rodgers",
+              "teamCount": 2,
+              "teams": [
+                "john crawford",
+                "Randell Crawford"
+              ]
+            },
+            {
               "player": "Keon Coleman",
               "teamCount": 2,
               "teams": [
                 "Joe Jaramillo",
                 "Ben Bingert"
               ]
+            },
+            {
+              "player": "Germie Bernard",
+              "teamCount": 2,
+              "teams": [
+                "Randell Crawford",
+                "Mike Kovacs"
+              ]
             }
           ],
           "teamTally": {
-            "Mike Kovacs": 2,
+            "Mike Kovacs": 4,
+            "Ben Bingert": 3,
             "Joe Jaramillo": 2,
             "Carl Cummins": 1,
-            "Ben Bingert": 2
+            "Randell Crawford": 1
           },
           "sameWeekAddsFlagged": 0
         }
@@ -6950,11 +7010,11 @@
         "Ray Engleking": 27,
         "John Artiglier": 33,
         "Carl Cummins": 33,
-        "Ben Bingert": 26,
-        "Mike Kovacs": 46,
+        "Ben Bingert": 27,
+        "Mike Kovacs": 48,
         "Bill Solecki": 47,
         "Phil Torres": 27,
-        "Randell Crawford": 31,
+        "Randell Crawford": 32,
         "Joe Jaramillo": 13,
         "john crawford": 9
       },
