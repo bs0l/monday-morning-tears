@@ -118,11 +118,11 @@
         "count": 2
       },
       {
-        "player": "Lions D/ST",
+        "player": "Browns D/ST",
         "count": 2
       },
       {
-        "player": "Jaguars D/ST",
+        "player": "Lions D/ST",
         "count": 2
       }
     ]
@@ -1141,6 +1141,10 @@
         },
         {
           "player": "Wan'Dale Robinson",
+          "count": 1
+        },
+        {
+          "player": "Dallas Goedert",
           "count": 1
         }
       ]
@@ -3607,6 +3611,14 @@
             ]
           },
           {
+            "player": "Jaguars D/ST",
+            "teamCount": 2,
+            "teams": [
+              "John Artiglier",
+              "Bill Solecki"
+            ]
+          },
+          {
             "player": "Tyjae Spears",
             "teamCount": 2,
             "teams": [
@@ -3655,6 +3667,30 @@
             ]
           },
           {
+            "player": "Bears D/ST",
+            "teamCount": 2,
+            "teams": [
+              "John Artiglier",
+              "Phil Torres"
+            ]
+          },
+          {
+            "player": "Bengals D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Mike Kovacs"
+            ]
+          },
+          {
+            "player": "T.J. Hockenson",
+            "teamCount": 2,
+            "teams": [
+              "Ben Bingert",
+              "john crawford"
+            ]
+          },
+          {
             "player": "Aaron Rodgers",
             "teamCount": 2,
             "teams": [
@@ -3677,13 +3713,24 @@
               "Randell Crawford",
               "Mike Kovacs"
             ]
+          },
+          {
+            "player": "Omar Cooper Jr.",
+            "teamCount": 2,
+            "teams": [
+              "Randell Crawford",
+              "Carl Cummins"
+            ]
           }
         ],
         "teamTally": {
-          "Mike Kovacs": 4,
+          "Bill Solecki": 1,
+          "Mike Kovacs": 5,
           "Ben Bingert": 3,
           "Joe Jaramillo": 2,
-          "Carl Cummins": 1,
+          "Carl Cummins": 2,
+          "Phil Torres": 1,
+          "john crawford": 1,
           "Randell Crawford": 1
         },
         "sameWeekAddsFlagged": 0
@@ -3692,14 +3739,14 @@
     "allTimeTeamTally": {
       "Ray Engleking": 33,
       "John Artiglier": 35,
-      "Carl Cummins": 45,
+      "Carl Cummins": 46,
       "Ben Bingert": 32,
-      "Bill Solecki": 65,
-      "Mike Kovacs": 52,
-      "Phil Torres": 31,
+      "Bill Solecki": 66,
+      "Mike Kovacs": 53,
+      "Phil Torres": 32,
       "Randell Crawford": 36,
       "Joe Jaramillo": 15,
-      "john crawford": 10
+      "john crawford": 11
     },
     "allTimeSameWeekAddsFlagged": 4
   },
@@ -3823,11 +3870,11 @@
           "count": 2
         },
         {
-          "player": "Lions D/ST",
+          "player": "Browns D/ST",
           "count": 2
         },
         {
-          "player": "Jaguars D/ST",
+          "player": "Lions D/ST",
           "count": 2
         }
       ]
@@ -4846,6 +4893,10 @@
           },
           {
             "player": "Wan'Dale Robinson",
+            "count": 1
+          },
+          {
+            "player": "Dallas Goedert",
             "count": 1
           }
         ]
@@ -6924,6 +6975,14 @@
               ]
             },
             {
+              "player": "Jaguars D/ST",
+              "teamCount": 2,
+              "teams": [
+                "John Artiglier",
+                "Bill Solecki"
+              ]
+            },
+            {
               "player": "Tyjae Spears",
               "teamCount": 2,
               "teams": [
@@ -6972,6 +7031,30 @@
               ]
             },
             {
+              "player": "Bears D/ST",
+              "teamCount": 2,
+              "teams": [
+                "John Artiglier",
+                "Phil Torres"
+              ]
+            },
+            {
+              "player": "Bengals D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Mike Kovacs"
+              ]
+            },
+            {
+              "player": "T.J. Hockenson",
+              "teamCount": 2,
+              "teams": [
+                "Ben Bingert",
+                "john crawford"
+              ]
+            },
+            {
               "player": "Aaron Rodgers",
               "teamCount": 2,
               "teams": [
@@ -6994,13 +7077,24 @@
                 "Randell Crawford",
                 "Mike Kovacs"
               ]
+            },
+            {
+              "player": "Omar Cooper Jr.",
+              "teamCount": 2,
+              "teams": [
+                "Randell Crawford",
+                "Carl Cummins"
+              ]
             }
           ],
           "teamTally": {
-            "Mike Kovacs": 4,
+            "Bill Solecki": 1,
+            "Mike Kovacs": 5,
             "Ben Bingert": 3,
             "Joe Jaramillo": 2,
-            "Carl Cummins": 1,
+            "Carl Cummins": 2,
+            "Phil Torres": 1,
+            "john crawford": 1,
             "Randell Crawford": 1
           },
           "sameWeekAddsFlagged": 0
@@ -7009,14 +7103,14 @@
       "allTimeTeamTally": {
         "Ray Engleking": 27,
         "John Artiglier": 33,
-        "Carl Cummins": 33,
+        "Carl Cummins": 34,
         "Ben Bingert": 27,
-        "Mike Kovacs": 48,
-        "Bill Solecki": 47,
-        "Phil Torres": 27,
+        "Mike Kovacs": 49,
+        "Bill Solecki": 48,
+        "Phil Torres": 28,
         "Randell Crawford": 32,
         "Joe Jaramillo": 13,
-        "john crawford": 9
+        "john crawford": 10
       },
       "allTimeSameWeekAddsFlagged": 3
     }

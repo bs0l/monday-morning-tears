@@ -4855,26 +4855,26 @@
       "teamId": 13,
       "owner": "john crawford",
       "opponent": "OnlyIfIHadA2TE",
-      "opponentScore": 94.26,
+      "opponentScore": 95.26,
       "year": 2026,
       "week": 7,
       "matchupPeriodId": 7
     },
     "closestWin": {
-      "margin": 1.3199999999999932,
-      "winner": "All You Need Is Love",
-      "winnerOwner": "Ben Bingert",
-      "winnerTeamId": 12,
-      "winnerScore": 91.0,
-      "loser": "Salty Spitoon",
-      "loserScore": 89.68,
+      "margin": 1.0,
+      "winner": "Bovine University Stampede",
+      "winnerOwner": "Bill Solecki",
+      "winnerTeamId": 1,
+      "winnerScore": 106.76,
+      "loser": "Canadian Geeses",
+      "loserScore": 105.76,
       "year": 2026,
-      "week": 6,
+      "week": 8,
       "weeks": [
-        6
+        8
       ],
       "isTwoWeek": false,
-      "matchupPeriodId": 6
+      "matchupPeriodId": 8
     },
     "biggestBlowout": {
       "margin": 70.42,
@@ -4992,7 +4992,7 @@
     "bestBenchWarmers": {
       "owner": "Bill Solecki",
       "teamName": "Bovine University Stampede",
-      "benchPoints": 422.6599999999999
+      "benchPoints": 476.0199999999999
     },
     "weeklyHighPayouts": [
       {
@@ -5029,6 +5029,11 @@
         "owner": "John Artiglier",
         "amount": 9,
         "week": 7
+      },
+      {
+        "owner": "Joe Jaramillo",
+        "amount": 10,
+        "week": 8
       }
     ],
     "consolationPayouts": [
@@ -5050,8 +5055,8 @@
           "owner": "Randell Crawford",
           "player": "James Cook III",
           "roundKept": 1,
-          "pointsScored": 217.2,
-          "pointsThroughWeek": 8,
+          "pointsScored": 251.4,
+          "pointsThroughWeek": 9,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -5064,8 +5069,8 @@
           "owner": "John Artiglier",
           "player": "Jaxon Smith-Njigba",
           "roundKept": 3,
-          "pointsScored": 334.32,
-          "pointsThroughWeek": 8,
+          "pointsScored": 375.92,
+          "pointsThroughWeek": 9,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -5078,8 +5083,8 @@
           "owner": "Phil Torres",
           "player": "Kenneth Walker III",
           "roundKept": 4,
-          "pointsScored": 277.4,
-          "pointsThroughWeek": 8,
+          "pointsScored": 298.2,
+          "pointsThroughWeek": 9,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -5093,7 +5098,7 @@
           "player": "David Montgomery",
           "roundKept": 5,
           "pointsScored": 84.0,
-          "pointsThroughWeek": 8,
+          "pointsThroughWeek": 9,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -5106,8 +5111,8 @@
           "owner": "Ray Engleking",
           "player": "Brock Bowers",
           "roundKept": 9,
-          "pointsScored": 157.0,
-          "pointsThroughWeek": 8,
+          "pointsScored": 206.4,
+          "pointsThroughWeek": 9,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -5120,8 +5125,8 @@
           "owner": "Carl Cummins",
           "player": "Javonte Williams",
           "roundKept": 10,
-          "pointsScored": 242.0,
-          "pointsThroughWeek": 8,
+          "pointsScored": 254.4,
+          "pointsThroughWeek": 9,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -5134,8 +5139,8 @@
           "owner": "Mike Kovacs",
           "player": "Jayden Daniels",
           "roundKept": 13,
-          "pointsScored": 150.32,
-          "pointsThroughWeek": 8,
+          "pointsScored": 180.28,
+          "pointsThroughWeek": 9,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -5148,8 +5153,8 @@
           "owner": "Bill Solecki",
           "player": "Bhayshul Tuten",
           "roundKept": 14,
-          "pointsScored": 163.8,
-          "pointsThroughWeek": 8,
+          "pointsScored": 221.6,
+          "pointsThroughWeek": 9,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
