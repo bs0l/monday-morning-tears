@@ -1066,15 +1066,15 @@
       ],
       "Bill Solecki": [
         {
+          "player": "Jacoby Brissett",
+          "count": 2
+        },
+        {
           "player": "Jonathon Brooks",
           "count": 1
         },
         {
           "player": "Lil'Jordan Humphrey",
-          "count": 1
-        },
-        {
-          "player": "Cameron Dicker",
           "count": 1
         }
       ],
@@ -3611,6 +3611,24 @@
             ]
           },
           {
+            "player": "Kaelon Black",
+            "teamCount": 3,
+            "teams": [
+              "Bill Solecki",
+              "Ben Bingert",
+              "Ray Engleking"
+            ]
+          },
+          {
+            "player": "Omar Cooper Jr.",
+            "teamCount": 3,
+            "teams": [
+              "Randell Crawford",
+              "Carl Cummins",
+              "Ben Bingert"
+            ]
+          },
+          {
             "player": "Jaguars D/ST",
             "teamCount": 2,
             "teams": [
@@ -3635,10 +3653,10 @@
             ]
           },
           {
-            "player": "Kaelon Black",
+            "player": "Devin Singletary",
             "teamCount": 2,
             "teams": [
-              "Bill Solecki",
+              "Ray Engleking",
               "Ben Bingert"
             ]
           },
@@ -3707,41 +3725,51 @@
             ]
           },
           {
+            "player": "Kendre Miller",
+            "teamCount": 2,
+            "teams": [
+              "john crawford",
+              "Bill Solecki"
+            ]
+          },
+          {
+            "player": "Chiefs D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "John Artiglier"
+            ]
+          },
+          {
             "player": "Germie Bernard",
             "teamCount": 2,
             "teams": [
               "Randell Crawford",
               "Mike Kovacs"
             ]
-          },
-          {
-            "player": "Omar Cooper Jr.",
-            "teamCount": 2,
-            "teams": [
-              "Randell Crawford",
-              "Carl Cummins"
-            ]
           }
         ],
         "teamTally": {
-          "Bill Solecki": 1,
+          "Bill Solecki": 2,
           "Mike Kovacs": 5,
-          "Ben Bingert": 3,
+          "Ben Bingert": 5,
           "Joe Jaramillo": 2,
           "Carl Cummins": 2,
+          "Ray Engleking": 1,
           "Phil Torres": 1,
           "john crawford": 1,
-          "Randell Crawford": 1
+          "Randell Crawford": 1,
+          "John Artiglier": 1
         },
         "sameWeekAddsFlagged": 0
       }
     },
     "allTimeTeamTally": {
-      "Ray Engleking": 33,
-      "John Artiglier": 35,
+      "Ray Engleking": 34,
+      "John Artiglier": 36,
       "Carl Cummins": 46,
-      "Ben Bingert": 32,
-      "Bill Solecki": 66,
+      "Ben Bingert": 34,
+      "Bill Solecki": 67,
       "Mike Kovacs": 53,
       "Phil Torres": 32,
       "Randell Crawford": 36,
@@ -4818,15 +4846,15 @@
         ],
         "Bill Solecki": [
           {
+            "player": "Jacoby Brissett",
+            "count": 2
+          },
+          {
             "player": "Jonathon Brooks",
             "count": 1
           },
           {
             "player": "Lil'Jordan Humphrey",
-            "count": 1
-          },
-          {
-            "player": "Cameron Dicker",
             "count": 1
           }
         ],
@@ -6975,6 +7003,24 @@
               ]
             },
             {
+              "player": "Kaelon Black",
+              "teamCount": 3,
+              "teams": [
+                "Bill Solecki",
+                "Ben Bingert",
+                "Ray Engleking"
+              ]
+            },
+            {
+              "player": "Omar Cooper Jr.",
+              "teamCount": 3,
+              "teams": [
+                "Randell Crawford",
+                "Carl Cummins",
+                "Ben Bingert"
+              ]
+            },
+            {
               "player": "Jaguars D/ST",
               "teamCount": 2,
               "teams": [
@@ -6999,10 +7045,10 @@
               ]
             },
             {
-              "player": "Kaelon Black",
+              "player": "Devin Singletary",
               "teamCount": 2,
               "teams": [
-                "Bill Solecki",
+                "Ray Engleking",
                 "Ben Bingert"
               ]
             },
@@ -7071,42 +7117,52 @@
               ]
             },
             {
+              "player": "Kendre Miller",
+              "teamCount": 2,
+              "teams": [
+                "john crawford",
+                "Bill Solecki"
+              ]
+            },
+            {
+              "player": "Chiefs D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "John Artiglier"
+              ]
+            },
+            {
               "player": "Germie Bernard",
               "teamCount": 2,
               "teams": [
                 "Randell Crawford",
                 "Mike Kovacs"
               ]
-            },
-            {
-              "player": "Omar Cooper Jr.",
-              "teamCount": 2,
-              "teams": [
-                "Randell Crawford",
-                "Carl Cummins"
-              ]
             }
           ],
           "teamTally": {
-            "Bill Solecki": 1,
+            "Bill Solecki": 2,
             "Mike Kovacs": 5,
-            "Ben Bingert": 3,
+            "Ben Bingert": 5,
             "Joe Jaramillo": 2,
             "Carl Cummins": 2,
+            "Ray Engleking": 1,
             "Phil Torres": 1,
             "john crawford": 1,
-            "Randell Crawford": 1
+            "Randell Crawford": 1,
+            "John Artiglier": 1
           },
           "sameWeekAddsFlagged": 0
         }
       },
       "allTimeTeamTally": {
-        "Ray Engleking": 27,
-        "John Artiglier": 33,
+        "Ray Engleking": 28,
+        "John Artiglier": 34,
         "Carl Cummins": 34,
-        "Ben Bingert": 27,
+        "Ben Bingert": 29,
         "Mike Kovacs": 49,
-        "Bill Solecki": 48,
+        "Bill Solecki": 49,
         "Phil Torres": 28,
         "Randell Crawford": 32,
         "Joe Jaramillo": 13,
