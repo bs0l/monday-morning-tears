@@ -1070,11 +1070,11 @@
           "count": 2
         },
         {
-          "player": "Jonathon Brooks",
-          "count": 1
+          "player": "Will Reichard",
+          "count": 2
         },
         {
-          "player": "Lil'Jordan Humphrey",
+          "player": "Jonathon Brooks",
           "count": 1
         }
       ],
@@ -3685,6 +3685,14 @@
             ]
           },
           {
+            "player": "Bryce Young",
+            "teamCount": 2,
+            "teams": [
+              "Bill Solecki",
+              "Randell Crawford"
+            ]
+          },
+          {
             "player": "Bears D/ST",
             "teamCount": 2,
             "teams": [
@@ -3747,6 +3755,14 @@
               "Randell Crawford",
               "Mike Kovacs"
             ]
+          },
+          {
+            "player": "Seahawks D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Randell Crawford",
+              "Ray Engleking"
+            ]
           }
         ],
         "teamTally": {
@@ -3755,24 +3771,24 @@
           "Ben Bingert": 5,
           "Joe Jaramillo": 2,
           "Carl Cummins": 2,
-          "Ray Engleking": 1,
+          "Ray Engleking": 2,
+          "Randell Crawford": 2,
           "Phil Torres": 1,
           "john crawford": 1,
-          "Randell Crawford": 1,
           "John Artiglier": 1
         },
         "sameWeekAddsFlagged": 0
       }
     },
     "allTimeTeamTally": {
-      "Ray Engleking": 34,
+      "Ray Engleking": 35,
       "John Artiglier": 36,
       "Carl Cummins": 46,
       "Ben Bingert": 34,
       "Bill Solecki": 67,
       "Mike Kovacs": 53,
       "Phil Torres": 32,
-      "Randell Crawford": 36,
+      "Randell Crawford": 37,
       "Joe Jaramillo": 15,
       "john crawford": 11
     },
@@ -4850,11 +4866,11 @@
             "count": 2
           },
           {
-            "player": "Jonathon Brooks",
-            "count": 1
+            "player": "Will Reichard",
+            "count": 2
           },
           {
-            "player": "Lil'Jordan Humphrey",
+            "player": "Jonathon Brooks",
             "count": 1
           }
         ],
@@ -7077,6 +7093,14 @@
               ]
             },
             {
+              "player": "Bryce Young",
+              "teamCount": 2,
+              "teams": [
+                "Bill Solecki",
+                "Randell Crawford"
+              ]
+            },
+            {
               "player": "Bears D/ST",
               "teamCount": 2,
               "teams": [
@@ -7139,6 +7163,14 @@
                 "Randell Crawford",
                 "Mike Kovacs"
               ]
+            },
+            {
+              "player": "Seahawks D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Randell Crawford",
+                "Ray Engleking"
+              ]
             }
           ],
           "teamTally": {
@@ -7147,24 +7179,24 @@
             "Ben Bingert": 5,
             "Joe Jaramillo": 2,
             "Carl Cummins": 2,
-            "Ray Engleking": 1,
+            "Ray Engleking": 2,
+            "Randell Crawford": 2,
             "Phil Torres": 1,
             "john crawford": 1,
-            "Randell Crawford": 1,
             "John Artiglier": 1
           },
           "sameWeekAddsFlagged": 0
         }
       },
       "allTimeTeamTally": {
-        "Ray Engleking": 28,
+        "Ray Engleking": 29,
         "John Artiglier": 34,
         "Carl Cummins": 34,
         "Ben Bingert": 29,
         "Mike Kovacs": 49,
         "Bill Solecki": 49,
         "Phil Torres": 28,
-        "Randell Crawford": 32,
+        "Randell Crawford": 33,
         "Joe Jaramillo": 13,
         "john crawford": 10
       },
