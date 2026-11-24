@@ -114,15 +114,15 @@
     ],
     "2026": [
       {
+        "player": "Jacoby Brissett",
+        "count": 3
+      },
+      {
         "player": "Patriots D/ST",
         "count": 2
       },
       {
         "player": "Browns D/ST",
-        "count": 2
-      },
-      {
-        "player": "Lions D/ST",
         "count": 2
       }
     ]
@@ -1067,15 +1067,15 @@
       "Bill Solecki": [
         {
           "player": "Jacoby Brissett",
+          "count": 3
+        },
+        {
+          "player": "Tyler Shough",
           "count": 2
         },
         {
-          "player": "Will Reichard",
+          "player": "Evan McPherson",
           "count": 2
-        },
-        {
-          "player": "Jonathon Brooks",
-          "count": 1
         }
       ],
       "john crawford": [
@@ -1122,16 +1122,16 @@
       ],
       "Carl Cummins": [
         {
-          "player": "Rome Odunze",
-          "count": 1
+          "player": "Rams D/ST",
+          "count": 2
         },
         {
-          "player": "Dalton Schultz",
-          "count": 1
+          "player": "Dalton Kincaid",
+          "count": 2
         },
         {
-          "player": "Kalif Raymond",
-          "count": 1
+          "player": "Tyler Allgeier",
+          "count": 2
         }
       ],
       "Phil Torres": [
@@ -3653,6 +3653,14 @@
             ]
           },
           {
+            "player": "Buccaneers D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "Carl Cummins"
+            ]
+          },
+          {
             "player": "Devin Singletary",
             "teamCount": 2,
             "teams": [
@@ -3701,6 +3709,14 @@
             ]
           },
           {
+            "player": "Bills D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Phil Torres",
+              "Carl Cummins"
+            ]
+          },
+          {
             "player": "Bengals D/ST",
             "teamCount": 2,
             "teams": [
@@ -3709,11 +3725,27 @@
             ]
           },
           {
+            "player": "Kirk Cousins",
+            "teamCount": 2,
+            "teams": [
+              "Randell Crawford",
+              "Bill Solecki"
+            ]
+          },
+          {
             "player": "T.J. Hockenson",
             "teamCount": 2,
             "teams": [
               "Ben Bingert",
               "john crawford"
+            ]
+          },
+          {
+            "player": "Mike Gesicki",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Ray Engleking"
             ]
           },
           {
@@ -3757,6 +3789,30 @@
             ]
           },
           {
+            "player": "Jets D/ST",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "john crawford"
+            ]
+          },
+          {
+            "player": "Chris Boswell",
+            "teamCount": 2,
+            "teams": [
+              "Mike Kovacs",
+              "John Artiglier"
+            ]
+          },
+          {
+            "player": "Keenan Allen",
+            "teamCount": 2,
+            "teams": [
+              "Carl Cummins",
+              "Ben Bingert"
+            ]
+          },
+          {
             "player": "Seahawks D/ST",
             "teamCount": 2,
             "teams": [
@@ -3766,31 +3822,31 @@
           }
         ],
         "teamTally": {
-          "Bill Solecki": 2,
+          "Bill Solecki": 3,
           "Mike Kovacs": 5,
-          "Ben Bingert": 5,
+          "Ben Bingert": 6,
           "Joe Jaramillo": 2,
-          "Carl Cummins": 2,
-          "Ray Engleking": 2,
+          "Carl Cummins": 4,
+          "Ray Engleking": 3,
           "Randell Crawford": 2,
           "Phil Torres": 1,
-          "john crawford": 1,
-          "John Artiglier": 1
+          "john crawford": 2,
+          "John Artiglier": 2
         },
         "sameWeekAddsFlagged": 0
       }
     },
     "allTimeTeamTally": {
-      "Ray Engleking": 35,
-      "John Artiglier": 36,
-      "Carl Cummins": 46,
-      "Ben Bingert": 34,
-      "Bill Solecki": 67,
+      "Ray Engleking": 36,
+      "John Artiglier": 37,
+      "Carl Cummins": 48,
+      "Ben Bingert": 35,
+      "Bill Solecki": 68,
       "Mike Kovacs": 53,
       "Phil Torres": 32,
       "Randell Crawford": 37,
       "Joe Jaramillo": 15,
-      "john crawford": 11
+      "john crawford": 12
     },
     "allTimeSameWeekAddsFlagged": 4
   },
@@ -3910,15 +3966,15 @@
       ],
       "2026": [
         {
+          "player": "Jacoby Brissett",
+          "count": 3
+        },
+        {
           "player": "Patriots D/ST",
           "count": 2
         },
         {
           "player": "Browns D/ST",
-          "count": 2
-        },
-        {
-          "player": "Lions D/ST",
           "count": 2
         }
       ]
@@ -4863,15 +4919,15 @@
         "Bill Solecki": [
           {
             "player": "Jacoby Brissett",
+            "count": 3
+          },
+          {
+            "player": "Tyler Shough",
             "count": 2
           },
           {
-            "player": "Will Reichard",
+            "player": "Evan McPherson",
             "count": 2
-          },
-          {
-            "player": "Jonathon Brooks",
-            "count": 1
           }
         ],
         "john crawford": [
@@ -4918,16 +4974,16 @@
         ],
         "Carl Cummins": [
           {
-            "player": "Rome Odunze",
-            "count": 1
+            "player": "Rams D/ST",
+            "count": 2
           },
           {
-            "player": "Dalton Schultz",
-            "count": 1
+            "player": "Dalton Kincaid",
+            "count": 2
           },
           {
-            "player": "Kalif Raymond",
-            "count": 1
+            "player": "Tyler Allgeier",
+            "count": 2
           }
         ],
         "Phil Torres": [
@@ -7061,6 +7117,14 @@
               ]
             },
             {
+              "player": "Buccaneers D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "Carl Cummins"
+              ]
+            },
+            {
               "player": "Devin Singletary",
               "teamCount": 2,
               "teams": [
@@ -7109,6 +7173,14 @@
               ]
             },
             {
+              "player": "Bills D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Phil Torres",
+                "Carl Cummins"
+              ]
+            },
+            {
               "player": "Bengals D/ST",
               "teamCount": 2,
               "teams": [
@@ -7117,11 +7189,27 @@
               ]
             },
             {
+              "player": "Kirk Cousins",
+              "teamCount": 2,
+              "teams": [
+                "Randell Crawford",
+                "Bill Solecki"
+              ]
+            },
+            {
               "player": "T.J. Hockenson",
               "teamCount": 2,
               "teams": [
                 "Ben Bingert",
                 "john crawford"
+              ]
+            },
+            {
+              "player": "Mike Gesicki",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Ray Engleking"
               ]
             },
             {
@@ -7165,6 +7253,30 @@
               ]
             },
             {
+              "player": "Jets D/ST",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "john crawford"
+              ]
+            },
+            {
+              "player": "Chris Boswell",
+              "teamCount": 2,
+              "teams": [
+                "Mike Kovacs",
+                "John Artiglier"
+              ]
+            },
+            {
+              "player": "Keenan Allen",
+              "teamCount": 2,
+              "teams": [
+                "Carl Cummins",
+                "Ben Bingert"
+              ]
+            },
+            {
               "player": "Seahawks D/ST",
               "teamCount": 2,
               "teams": [
@@ -7174,31 +7286,31 @@
             }
           ],
           "teamTally": {
-            "Bill Solecki": 2,
+            "Bill Solecki": 3,
             "Mike Kovacs": 5,
-            "Ben Bingert": 5,
+            "Ben Bingert": 6,
             "Joe Jaramillo": 2,
-            "Carl Cummins": 2,
-            "Ray Engleking": 2,
+            "Carl Cummins": 4,
+            "Ray Engleking": 3,
             "Randell Crawford": 2,
             "Phil Torres": 1,
-            "john crawford": 1,
-            "John Artiglier": 1
+            "john crawford": 2,
+            "John Artiglier": 2
           },
           "sameWeekAddsFlagged": 0
         }
       },
       "allTimeTeamTally": {
-        "Ray Engleking": 29,
-        "John Artiglier": 34,
-        "Carl Cummins": 34,
-        "Ben Bingert": 29,
+        "Ray Engleking": 30,
+        "John Artiglier": 35,
+        "Carl Cummins": 36,
+        "Ben Bingert": 30,
         "Mike Kovacs": 49,
-        "Bill Solecki": 49,
+        "Bill Solecki": 50,
         "Phil Torres": 28,
         "Randell Crawford": 33,
         "Joe Jaramillo": 13,
-        "john crawford": 10
+        "john crawford": 11
       },
       "allTimeSameWeekAddsFlagged": 3
     }

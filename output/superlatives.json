@@ -982,7 +982,7 @@
         "owner": "Joe Jaramillo",
         "teamName": "OnlyIfIHadA2TE",
         "year": 2026,
-        "pointsAgainst": 881.08
+        "pointsAgainst": 968.38
       },
       {
         "owner": "Randell Crawford",
@@ -997,16 +997,16 @@
         "pointsAgainst": 1008.84
       },
       {
-        "owner": "Carl Cummins",
-        "teamName": "Taylor and Travis Swift \ud83d\udc51",
-        "year": 2026,
-        "pointsAgainst": 1029.66
-      },
-      {
         "owner": "Ray Engleking",
         "teamName": "Rex Grossman Fan Club",
         "year": 2017,
         "pointsAgainst": 1032.1999999999998
+      },
+      {
+        "owner": "Loren Kessell",
+        "teamName": "Really Just Sean Kessell",
+        "year": 2015,
+        "pointsAgainst": 1063.92
       }
     ]
   }

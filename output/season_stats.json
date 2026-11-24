@@ -4935,12 +4935,13 @@
       ]
     },
     "mostWeeklyHighScores": {
-      "owner": "john crawford",
+      "owner": "Carl Cummins",
       "owners": [
+        "Carl Cummins",
         "john crawford"
       ],
       "count": 3,
-      "tied": false,
+      "tied": true,
       "games": [
         {
           "owner": "john crawford",
@@ -4950,6 +4951,13 @@
           "score": 147.9
         },
         {
+          "owner": "Carl Cummins",
+          "week": 2,
+          "matchupPeriodId": 2,
+          "teamId": 3,
+          "score": 121.86
+        },
+        {
           "owner": "john crawford",
           "week": 5,
           "matchupPeriodId": 5,
@@ -4957,21 +4965,36 @@
           "score": 143.3
         },
         {
+          "owner": "Carl Cummins",
+          "week": 9,
+          "matchupPeriodId": 9,
+          "teamId": 3,
+          "score": 131.38
+        },
+        {
           "owner": "john crawford",
           "week": 10,
           "matchupPeriodId": 10,
           "teamId": 13,
           "score": 152.52
+        },
+        {
+          "owner": "Carl Cummins",
+          "week": 11,
+          "matchupPeriodId": 11,
+          "teamId": 3,
+          "score": 141.44
         }
       ]
     },
     "mostWeeklyLowScores": {
-      "owner": "john crawford",
+      "owner": "Ben Bingert",
       "owners": [
+        "Ben Bingert",
         "john crawford"
       ],
       "count": 3,
-      "tied": false,
+      "tied": true,
       "games": [
         {
           "owner": "john crawford",
@@ -4993,13 +5016,34 @@
           "matchupPeriodId": 7,
           "teamId": 13,
           "score": 57.6
+        },
+        {
+          "owner": "Ben Bingert",
+          "week": 8,
+          "matchupPeriodId": 8,
+          "teamId": 12,
+          "score": 69.36
+        },
+        {
+          "owner": "Ben Bingert",
+          "week": 9,
+          "matchupPeriodId": 9,
+          "teamId": 12,
+          "score": 84.26
+        },
+        {
+          "owner": "Ben Bingert",
+          "week": 11,
+          "matchupPeriodId": 11,
+          "teamId": 12,
+          "score": 74.66
         }
       ]
     },
     "bestBenchWarmers": {
       "owner": "Bill Solecki",
       "teamName": "Bovine University Stampede",
-      "benchPoints": 596.2199999999998
+      "benchPoints": 631.3199999999998
     },
     "weeklyHighPayouts": [
       {
@@ -5051,6 +5095,11 @@
         "owner": "john crawford",
         "amount": 10,
         "week": 10
+      },
+      {
+        "owner": "Carl Cummins",
+        "amount": 9,
+        "week": 11
       }
     ],
     "consolationPayouts": [
@@ -5063,6 +5112,11 @@
         "owner": "Mike Kovacs",
         "amount": 1,
         "week": 7
+      },
+      {
+        "owner": "john crawford",
+        "amount": 1,
+        "week": 11
       }
     ],
     "playoffPayouts": [],
@@ -5072,8 +5126,8 @@
           "owner": "Randell Crawford",
           "player": "James Cook III",
           "roundKept": 1,
-          "pointsScored": 328.2,
-          "pointsThroughWeek": 11,
+          "pointsScored": 360.6,
+          "pointsThroughWeek": 12,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -5087,7 +5141,7 @@
           "player": "Jaxon Smith-Njigba",
           "roundKept": 3,
           "pointsScored": 447.32,
-          "pointsThroughWeek": 11,
+          "pointsThroughWeek": 12,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -5101,7 +5155,7 @@
           "player": "Kenneth Walker III",
           "roundKept": 4,
           "pointsScored": 366.8,
-          "pointsThroughWeek": 11,
+          "pointsThroughWeek": 12,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -5114,8 +5168,8 @@
           "owner": "John Crawford",
           "player": "David Montgomery",
           "roundKept": 5,
-          "pointsScored": 84.0,
-          "pointsThroughWeek": 11,
+          "pointsScored": 111.8,
+          "pointsThroughWeek": 12,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -5129,7 +5183,7 @@
           "player": "Brock Bowers",
           "roundKept": 9,
           "pointsScored": 249.6,
-          "pointsThroughWeek": 11,
+          "pointsThroughWeek": 12,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -5142,8 +5196,8 @@
           "owner": "Carl Cummins",
           "player": "Javonte Williams",
           "roundKept": 10,
-          "pointsScored": 309.6,
-          "pointsThroughWeek": 11,
+          "pointsScored": 354.8,
+          "pointsThroughWeek": 12,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -5156,8 +5210,8 @@
           "owner": "Mike Kovacs",
           "player": "Jayden Daniels",
           "roundKept": 13,
-          "pointsScored": 250.92,
-          "pointsThroughWeek": 11,
+          "pointsScored": 285.04,
+          "pointsThroughWeek": 12,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
@@ -5170,8 +5224,8 @@
           "owner": "Bill Solecki",
           "player": "Bhayshul Tuten",
           "roundKept": 14,
-          "pointsScored": 277.0,
-          "pointsThroughWeek": 11,
+          "pointsScored": 290.6,
+          "pointsThroughWeek": 12,
           "roundAvgPoints": null,
           "pointsVsAvg": null,
           "pointsVsAvgPct": null,
